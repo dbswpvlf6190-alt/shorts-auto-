@@ -1,0 +1,10 @@
+credentials/
+output/
+temp/
+input/backlog/
+input/bgm/
+input/broll/
+input/broll_images/
+input/voice/
+__pycache__/
+*.pyc

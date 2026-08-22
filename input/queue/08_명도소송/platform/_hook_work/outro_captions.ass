@@ -1,0 +1,19 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Malgun Gothic,72,&H00FFFFFF,&H0040C7FF,&H00000000,&H60000000,-1,0,0,0,100,100,0,0,3,18,0,2,80,80,340,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:01.68,Caption,,0,0,0,,{\k35}오늘 {\k53}내용, {\k35}나나 {\k35}우리
+Dialogue: 0,0:00:01.68,0:00:03.26,Caption,,0,0,0,,{\k70}가족한테 {\k88}해당되는지
+Dialogue: 0,0:00:03.26,0:00:05.19,Caption,,0,0,0,,{\k53}댓글로 {\k35}한번 {\k105}남겨보세요.
+Dialogue: 0,0:00:05.14,0:00:06.40,Caption,,0,0,0,,{\k31}매일 {\k31}이런 {\k31}정책 {\k31}정보
+Dialogue: 0,0:00:06.40,0:00:08.13,Caption,,0,0,0,,{\k94}올려드리니까 {\k78}팔로우하고
+Dialogue: 0,0:00:08.13,0:00:09.85,Caption,,0,0,0,,{\k63}다음편도 {\k47}놓치지 {\k63}마세요.

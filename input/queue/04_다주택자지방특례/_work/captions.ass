@@ -1,0 +1,34 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Malgun Gothic,72,&H00FFFFFF,&H0040C7FF,&H00000000,&H60000000,-1,0,0,0,100,100,0,0,3,18,0,2,80,80,340,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:01.97,Caption,,0,0,0,,{\k102}다주택자한테 {\k34}세금 {\k51}폭탄만
+Dialogue: 0,0:00:01.97,0:00:03.60,Caption,,0,0,0,,{\k34}있는 {\k17}게 {\k80}아니에요. {\k31}지방
+Dialogue: 0,0:00:03.60,0:00:05.15,Caption,,0,0,0,,{\k47}주택을 {\k31}사면 {\k47}종부세 {\k31}주택
+Dialogue: 0,0:00:05.15,0:00:06.39,Caption,,0,0,0,,{\k16}수 {\k62}계산에서 {\k47}빼주는
+Dialogue: 0,0:00:06.39,0:00:07.95,Caption,,0,0,0,,{\k47}특례가 {\k62}있는데, {\k31}이게 {\k16}더
+Dialogue: 0,0:00:07.95,0:00:09.30,Caption,,0,0,0,,{\k93}넓어졌어요. {\k42}원래는
+Dialogue: 0,0:00:09.30,0:00:10.42,Caption,,0,0,0,,{\k112}인구감소지역이나
+Dialogue: 0,0:00:10.42,0:00:11.83,Caption,,0,0,0,,{\k70}관심지역의 {\k42}공시가 {\k28}9억
+Dialogue: 0,0:00:11.83,0:00:13.09,Caption,,0,0,0,,{\k28}이하 {\k42}주택만 {\k56}됐는데,
+Dialogue: 0,0:00:13.09,0:00:14.22,Caption,,0,0,0,,{\k28}이제 {\k42}광역시 {\k42}제외한
+Dialogue: 0,0:00:14.22,0:00:15.20,Caption,,0,0,0,,{\k56}비수도권 {\k42}전체로
+Dialogue: 0,0:00:15.20,0:00:16.80,Caption,,0,0,0,,{\k70}확대돼요. {\k36}취득 {\k54}기한도
+Dialogue: 0,0:00:16.80,0:00:18.22,Caption,,0,0,0,,{\k89}2026년 {\k54}말에서
+Dialogue: 0,0:00:18.22,0:00:20.01,Caption,,0,0,0,,{\k89}2029년 {\k54}말까지 {\k36}3년
+Dialogue: 0,0:00:20.01,0:00:21.54,Caption,,0,0,0,,{\k107}늘어났고요. {\k46}요건만
+Dialogue: 0,0:00:21.54,0:00:22.91,Caption,,0,0,0,,{\k46}맞으면 {\k46}종부세 {\k31}주택 {\k15}수
+Dialogue: 0,0:00:22.91,0:00:24.44,Caption,,0,0,0,,{\k61}산정이랑 {\k46}양도세 {\k46}다주택
+Dialogue: 0,0:00:24.44,0:00:25.97,Caption,,0,0,0,,{\k31}중과 {\k76}대상에서도 {\k31}빠질 {\k15}수
+Dialogue: 0,0:00:25.97,0:00:27.72,Caption,,0,0,0,,{\k61}있어요. {\k114}다주택자분들은
+Dialogue: 0,0:00:27.72,0:00:28.87,Caption,,0,0,0,,{\k16}이 {\k33}특례 {\k65}요건부터
+Dialogue: 0,0:00:28.87,0:00:30.67,Caption,,0,0,0,,{\k98}확인해보시는 {\k16}게 {\k65}좋아요.

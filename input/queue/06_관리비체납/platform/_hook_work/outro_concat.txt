@@ -1,0 +1,2 @@
+file 'C:\Users\dbswp\OneDrive\shorts_auto\input\queue\06_관리비체납\base.mp4'
+file 'C:\Users\dbswp\OneDrive\shorts_auto\input\queue\06_관리비체납\platform\outro.mp4'

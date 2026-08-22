@@ -1,0 +1,2 @@
+file 'C:\Users\dbswp\OneDrive\shorts_auto\input\queue\07_LTV지역차이\base.mp4'
+file 'C:\Users\dbswp\OneDrive\shorts_auto\input\queue\07_LTV지역차이\platform\outro.mp4'

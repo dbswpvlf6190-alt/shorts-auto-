@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Malgun Gothic,72,&H00FFFFFF,&H0040C7FF,&H00000000,&H60000000,-1,0,0,0,100,100,0,0,3,18,0,2,80,80,340,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:01.24,Caption,,0,0,0,,{\k29}이번 {\k86}세제개편으로
+Dialogue: 0,0:00:01.24,0:00:02.24,Caption,,0,0,0,,{\k57}1주택자 {\k43}종부세
+Dialogue: 0,0:00:02.24,0:00:03.53,Caption,,0,0,0,,{\k71}기본공제가 {\k57}공시가격
+Dialogue: 0,0:00:03.53,0:00:04.96,Caption,,0,0,0,,{\k71}12억에서 {\k71}14억으로
+Dialogue: 0,0:00:04.96,0:00:06.55,Caption,,0,0,0,,{\k66}올라가요. {\k46}그러면 {\k46}시가로
+Dialogue: 0,0:00:06.55,0:00:07.62,Caption,,0,0,0,,{\k15}약 {\k46}20억 {\k15}원 {\k31}이하
+Dialogue: 0,0:00:07.62,0:00:09.31,Caption,,0,0,0,,{\k46}실거주 {\k77}1주택자는 {\k46}대부분
+Dialogue: 0,0:00:09.31,0:00:10.69,Caption,,0,0,0,,{\k46}종부세 {\k61}대상에서 {\k31}아예
+Dialogue: 0,0:00:10.69,0:00:12.43,Caption,,0,0,0,,{\k61}빠져요. {\k32}집값 {\k80}20억이면
+Dialogue: 0,0:00:12.43,0:00:14.04,Caption,,0,0,0,,{\k32}부자 {\k64}같은데, {\k64}실제로는
+Dialogue: 0,0:00:14.04,0:00:15.33,Caption,,0,0,0,,{\k32}세금 {\k16}안 {\k32}내는 {\k48}구간이
+Dialogue: 0,0:00:15.33,0:00:16.61,Caption,,0,0,0,,{\k32}되는 {\k64}거예요. {\k32}대신
+Dialogue: 0,0:00:16.61,0:00:18.06,Caption,,0,0,0,,{\k48}투기성 {\k48}보유나 {\k48}초고가
+Dialogue: 0,0:00:18.06,0:00:19.51,Caption,,0,0,0,,{\k48}주택, {\k48}비거주 {\k48}주택은
+Dialogue: 0,0:00:19.51,0:00:20.64,Caption,,0,0,0,,{\k48}오히려 {\k48}세금이 {\k16}더
+Dialogue: 0,0:00:20.64,0:00:22.33,Caption,,0,0,0,,{\k81}강화돼요. {\k44}정부는 {\k44}실거주
+Dialogue: 0,0:00:22.33,0:00:23.81,Caption,,0,0,0,,{\k59}1주택자 {\k44}부담은 {\k44}낮추고
+Dialogue: 0,0:00:23.81,0:00:24.85,Caption,,0,0,0,,{\k59}나머지는 {\k44}조이는
+Dialogue: 0,0:00:24.85,0:00:26.33,Caption,,0,0,0,,{\k74}방향이라고 {\k74}밝혔어요.
+Dialogue: 0,0:00:26.33,0:00:27.33,Caption,,0,0,0,,{\k33}본인 {\k33}집이 {\k33}여기
+Dialogue: 0,0:00:27.33,0:00:29.16,Caption,,0,0,0,,{\k83}해당되는지 {\k100}공시가격부터
+Dialogue: 0,0:00:29.16,0:00:30.32,Caption,,0,0,0,,{\k116}확인해보세요.

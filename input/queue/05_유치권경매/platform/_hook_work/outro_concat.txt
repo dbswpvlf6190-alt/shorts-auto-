@@ -1,0 +1,2 @@
+file 'C:\Users\dbswp\OneDrive\shorts_auto\input\queue\05_유치권경매\base.mp4'
+file 'C:\Users\dbswp\OneDrive\shorts_auto\input\queue\05_유치권경매\platform\outro.mp4'

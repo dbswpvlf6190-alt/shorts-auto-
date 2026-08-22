@@ -1,0 +1,36 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Malgun Gothic,72,&H00FFFFFF,&H0040C7FF,&H00000000,&H60000000,-1,0,0,0,100,100,0,0,3,18,0,2,80,80,340,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:01.42,Caption,,0,0,0,,{\k66}LTV는 {\k33}집값 {\k33}대비
+Dialogue: 0,0:00:01.42,0:00:03.06,Caption,,0,0,0,,{\k66}얼마까지 {\k33}빌릴 {\k16}수 {\k49}있는지
+Dialogue: 0,0:00:03.06,0:00:04.54,Caption,,0,0,0,,{\k49}정하는 {\k99}비율이에요.
+Dialogue: 0,0:00:04.49,0:00:06.16,Caption,,0,0,0,,{\k56}그런데 {\k37}이게 {\k74}지역마다
+Dialogue: 0,0:00:06.16,0:00:07.46,Caption,,0,0,0,,{\k56}완전히 {\k74}달라요.
+Dialogue: 0,0:00:07.46,0:00:08.99,Caption,,0,0,0,,{\k96}규제지역은 {\k57}LTV
+Dialogue: 0,0:00:08.99,0:00:10.91,Caption,,0,0,0,,{\k76}40%, {\k115}비규제지역은
+Dialogue: 0,0:00:10.91,0:00:12.82,Caption,,0,0,0,,{\k96}70%까지 {\k96}적용돼요.
+Dialogue: 0,0:00:12.82,0:00:13.85,Caption,,0,0,0,,{\k59}5억짜리 {\k44}집이면
+Dialogue: 0,0:00:13.85,0:00:15.33,Caption,,0,0,0,,{\k103}규제지역에서는 {\k44}2억,
+Dialogue: 0,0:00:15.33,0:00:16.80,Caption,,0,0,0,,{\k118}비규제지역에서는 {\k30}3억
+Dialogue: 0,0:00:16.80,0:00:18.28,Caption,,0,0,0,,{\k59}5천까지 {\k30}빌릴 {\k15}수 {\k44}있다는
+Dialogue: 0,0:00:18.28,0:00:19.91,Caption,,0,0,0,,{\k74}뜻이에요. {\k30}같은 {\k59}집값인데
+Dialogue: 0,0:00:19.91,0:00:21.23,Caption,,0,0,0,,{\k44}어디에 {\k59}있느냐에 {\k30}따라
+Dialogue: 0,0:00:21.23,0:00:22.56,Caption,,0,0,0,,{\k30}대출 {\k30}가능 {\k44}금액이 {\k30}1억
+Dialogue: 0,0:00:22.56,0:00:23.75,Caption,,0,0,0,,{\k59}5천이나 {\k59}차이나는
+Dialogue: 0,0:00:23.75,0:00:24.81,Caption,,0,0,0,,{\k59}거예요. {\k47}여기에
+Dialogue: 0,0:00:24.81,0:00:26.06,Caption,,0,0,0,,{\k78}DSR까지 {\k47}은행권
+Dialogue: 0,0:00:26.06,0:00:27.32,Caption,,0,0,0,,{\k63}40%, {\k63}2금융권
+Dialogue: 0,0:00:27.32,0:00:29.05,Caption,,0,0,0,,{\k63}50%로 {\k31}따로 {\k78}걸리니까,
+Dialogue: 0,0:00:29.05,0:00:30.62,Caption,,0,0,0,,{\k16}집 {\k63}알아보실 {\k31}때는 {\k47}지역이
+Dialogue: 0,0:00:30.62,0:00:32.03,Caption,,0,0,0,,{\k126}규제지역인지부터 {\k16}꼭
+Dialogue: 0,0:00:32.03,0:00:33.28,Caption,,0,0,0,,{\k78}확인하셔야 {\k47}해요.

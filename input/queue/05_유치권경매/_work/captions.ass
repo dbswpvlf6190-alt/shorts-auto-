@@ -1,0 +1,39 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Malgun Gothic,72,&H00FFFFFF,&H0040C7FF,&H00000000,&H60000000,-1,0,0,0,100,100,0,0,3,18,0,2,80,80,340,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.10,0:00:01.72,Caption,,0,0,0,,{\k72}경매에서 {\k54}유치권 {\k36}붙은
+Dialogue: 0,0:00:01.72,0:00:03.16,Caption,,0,0,0,,{\k36}물건 {\k36}보면 {\k36}다들 {\k36}일단
+Dialogue: 0,0:00:03.16,0:00:04.50,Caption,,0,0,0,,{\k54}피하고 {\k49}봐요. {\k31}근데
+Dialogue: 0,0:00:04.50,0:00:05.89,Caption,,0,0,0,,{\k62}유치권은 {\k62}등기부에 {\k15}안
+Dialogue: 0,0:00:05.89,0:00:07.27,Caption,,0,0,0,,{\k62}나와서, {\k46}오히려 {\k31}아는
+Dialogue: 0,0:00:07.27,0:00:08.81,Caption,,0,0,0,,{\k46}사람만 {\k62}걸러내는 {\k46}필터가
+Dialogue: 0,0:00:08.81,0:00:10.01,Caption,,0,0,0,,{\k46}되기도 {\k46}해요. {\k28}진짜
+Dialogue: 0,0:00:10.01,0:00:11.41,Caption,,0,0,0,,{\k70}유치권인지 {\k70}확인하려면
+Dialogue: 0,0:00:11.41,0:00:12.80,Caption,,0,0,0,,{\k42}현장에 {\k28}가서 {\k42}유치권 {\k28}행사
+Dialogue: 0,0:00:12.80,0:00:14.06,Caption,,0,0,0,,{\k56}중이라는 {\k70}현수막이나
+Dialogue: 0,0:00:14.06,0:00:15.59,Caption,,0,0,0,,{\k56}안내문이 {\k98}붙어있는지부터
+Dialogue: 0,0:00:15.59,0:00:16.29,Caption,,0,0,0,,{\k28}봐야 {\k42}해요.
+Dialogue: 0,0:00:16.29,0:00:17.93,Caption,,0,0,0,,{\k104}매각물건명세서 {\k60}비고란에
+Dialogue: 0,0:00:17.93,0:00:19.12,Caption,,0,0,0,,{\k45}유치권 {\k30}신고 {\k45}여부가
+Dialogue: 0,0:00:19.12,0:00:20.61,Caption,,0,0,0,,{\k60}적혀있긴 {\k45}한데, {\k45}신고만
+Dialogue: 0,0:00:20.61,0:00:21.95,Caption,,0,0,0,,{\k45}됐다고 {\k15}다 {\k60}성립하는 {\k15}건
+Dialogue: 0,0:00:21.95,0:00:23.59,Caption,,0,0,0,,{\k74}아니에요. {\k60}점유자가 {\k30}진짜
+Dialogue: 0,0:00:23.59,0:00:24.78,Caption,,0,0,0,,{\k60}적법하게 {\k60}점유하고
+Dialogue: 0,0:00:24.78,0:00:26.28,Caption,,0,0,0,,{\k60}있는지, {\k30}채권 {\k60}변제기가
+Dialogue: 0,0:00:26.28,0:00:27.77,Caption,,0,0,0,,{\k90}지났는지까지 {\k60}따져봐야
+Dialogue: 0,0:00:27.77,0:00:29.11,Caption,,0,0,0,,{\k30}진짜 {\k30}성립 {\k45}여부를 {\k15}알 {\k15}수
+Dialogue: 0,0:00:29.11,0:00:30.18,Caption,,0,0,0,,{\k60}있어요. {\k47}무조건
+Dialogue: 0,0:00:30.18,0:00:31.42,Caption,,0,0,0,,{\k78}피하기보다 {\k47}제대로
+Dialogue: 0,0:00:31.42,0:00:32.98,Caption,,0,0,0,,{\k62}분석하면 {\k47}오히려 {\k47}경쟁자
+Dialogue: 0,0:00:32.98,0:00:34.07,Caption,,0,0,0,,{\k31}적은 {\k47}기회가 {\k16}될 {\k16}수
+Dialogue: 0,0:00:34.07,0:00:34.69,Caption,,0,0,0,,{\k62}있어요.

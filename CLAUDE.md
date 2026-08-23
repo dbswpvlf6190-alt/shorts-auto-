@@ -6,6 +6,17 @@
 
 Claude Code의 대화 세션·auto-memory는 각 컴퓨터의 로컬 사용자 프로필(`~/.claude/`)에 저장되고 컴퓨터 간 동기화되지 않으므로, 새 컴퓨터/새 세션에서는 이 파일(git으로 pull된 최신 사본)이 유일한 맥락 소스입니다. 작업하면서 알게 된 중요한 결정/제약은 이 파일에 계속 업데이트하고 **push까지 할 것**.
 
+## 프로젝트 헌장 — `PROJECT_CHARTER.md` (2026-08-22, 필독)
+장기 비전/브랜드 방향/Claude Code 역할 원칙을 담은 문서. 신규 기능 제안 시 이 헌장과의 정합성을 먼저 확인할 것. 이 CLAUDE.md는 현재 구현 상태 요약이고, 전문은 그 파일이 원본.
+
+## 중요 — 오늘(2026-08-22) 저녁, 서로 다른 두 세션이 같은 마이그레이션을 독립적으로 진행했던 일
+낮부터 저녁까지 **완전히 다른 Claude Code 세션 두 개**가, 서로의 존재를 모른 채 거의 같은 문제(OneDrive 사고 이후 git으로 전환)를 각자 풀고 있었음:
+- 세션 A: `C:\Users\dbswp\Desktop\클로드코드1\shorts_auto` (저장소 `shorts-auto-pipeline`) — 텍스트 오버플로 버그 2건, CTA 개편, discover_topics.py/new_queue_item.py/네이버 블로그 도구 4종을 이쪽에서 먼저 만듦
+- 세션 B(=지금 이 폴더): `C:\shorts_auto` (저장소 `shorts-auto-`) — 노트북 세팅 과정에서 별도로 git 전환을 진행, 요일별 컴퓨터 분리(평일 노트북/주말 데스크톱) 확정, 인스타그램 실패 원인 조사를 더 깊이 함
+
+저녁에 사용자가 이 상황을 발견하고 **`C:\shorts_auto`를 최종 채택**하기로 결정함. 세션 A에서 만든 산출물(위 도구들, 텍스트 오버플로 수정, PROJECT_CHARTER.md)은 이 폴더로 옮겨 반영 완료. 세션 A의 `Desktop\클로드코드1\shorts_auto` 폴더/`shorts-auto-pipeline` 저장소는 이제 안 씀(삭제는 안 했음, 필요하면 나중에 사용자가 정리).
+**교훈**: 새 세션을 열 때 이 프로젝트 관련이면 항상 `C:\shorts_auto`인지 먼저 확인하고, 다른 경로면 그 세션에서 이 사실을 사용자에게 알릴 것.
+
 ## 폴더 구조 (2026-08-22 재정리, 위치: `C:\shorts_auto`)
 - `scripts/` — 파이프라인 코드(.py)만. 문서/템플릿은 `docs/`로 분리함
 - `docs/` — 프로세스 문서 (`script_template.md`, `script_package_template.md`, `platform_checklist.md`, `daily_topic_scan_process.md`, `weekly_review_process.md`, `blog_template.md`)

@@ -6,5 +6,7 @@ input/bgm/
 input/broll/
 input/broll_images/
 input/voice/
+**/_work/
+**/platform/
 __pycache__/
 *.pyc

@@ -1,2 +1,0 @@
-file 'C:\Users\dbswp\OneDrive\shorts_auto\input\queue\04_다주택자지방특례\base.mp4'
-file 'C:\Users\dbswp\OneDrive\shorts_auto\input\queue\04_다주택자지방특례\platform\outro.mp4'

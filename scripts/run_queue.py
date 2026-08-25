@@ -5,6 +5,7 @@ import shutil
 import socket
 import subprocess
 import sys
+import winreg
 from datetime import datetime
 
 LOCK_STALE_HOURS = 3  # 이 시간이 지난 락은 이전 실행이 비정상 종료된 것으로 보고 무시
@@ -31,6 +32,17 @@ def log(msg):
 def sanitize_filename(text, max_len=150):
     text = re.sub(r'[\\/:*?"<>|]', '', text).strip()
     return text[:max_len].rstrip()
+
+
+def get_desktop_path():
+    """바탕화면 실제 경로를 레지스트리에서 읽음 — 컴퓨터마다 OneDrive로 리디렉션됐는지
+    여부가 달라서(노트북은 리디렉션됨, 데스크톱은 아님) 고정 경로를 쓰면 안 됨."""
+    key = winreg.OpenKey(
+        winreg.HKEY_CURRENT_USER,
+        r"Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders",
+    )
+    path, _ = winreg.QueryValueEx(key, "Desktop")
+    return os.path.expandvars(path)
 
 
 def run(cmd):
@@ -175,7 +187,14 @@ def process_item(item_dir):
         if os.path.exists(tiktok_video):
             caption = meta.get("tiktok_caption", "")
             caption_part = sanitize_filename(caption) if caption else name
-            shutil.copy2(tiktok_video, os.path.join(day_dir, f"틱톡_{date_str}_{caption_part}.mp4"))
+            tiktok_filename = f"틱톡_{date_str}_{caption_part}.mp4"
+            shutil.copy2(tiktok_video, os.path.join(day_dir, tiktok_filename))
+            try:
+                desktop_path = get_desktop_path()
+                shutil.copy2(tiktok_video, os.path.join(desktop_path, tiktok_filename))
+                log(f"  바탕화면에도 틱톡 파일 복사 완료: {tiktok_filename}")
+            except Exception as e:
+                log(f"  바탕화면 복사 실패(건너뜀): {e}")
         log(f"  정리 완료: {day_dir}")
 
         if meta.get("instagram", True) and os.path.exists(tiktok_video):

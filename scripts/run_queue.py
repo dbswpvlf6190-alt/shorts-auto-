@@ -191,11 +191,13 @@ def process_item(item_dir):
             shutil.copy2(tiktok_video, os.path.join(day_dir, tiktok_filename))
             try:
                 desktop_path = get_desktop_path()
-                # OneDrive로 리디렉션된 바탕화면에 shutil.copy2(메타데이터 포함 복사)를 쓰면
-                # 파일명에 이모지가 있을 때 OneDrive 동기화 필터가 개입해서 cp949 인코딩 에러가 남
-                # (2026-08-26 실제로 겪음, day_dir 쪽은 OneDrive 밖이라 같은 파일명이어도 문제없었음).
-                # 메타데이터(수정시각 등)는 안 중요하므로 copystat 없는 copyfile로 우회.
-                shutil.copyfile(tiktok_video, os.path.join(desktop_path, tiktok_filename))
+                # OneDrive로 리디렉션된 바탕화면에 파일명에 이모지가 들어간 채로 복사하면
+                # cp949 인코딩 에러가 남 (2026-08-26/27 실제로 겪음, day_dir는 OneDrive 밖이라 문제없었음).
+                # shutil.copy2는 물론 shutil.copyfile도 큰 파일(mp4)에서는 Windows용 내부 고속복사
+                # 경로(_winapi 기반)를 타면서 같은 문제가 재현됨 — 그 경로를 아예 안 쓰도록
+                # 순수 파이썬 청크 단위 read/write로 우회.
+                with open(tiktok_video, "rb") as fsrc, open(os.path.join(desktop_path, tiktok_filename), "wb") as fdst:
+                    shutil.copyfileobj(fsrc, fdst)
                 log(f"  바탕화면에도 틱톡 파일 복사 완료: {tiktok_filename}")
             except Exception as e:
                 log(f"  바탕화면 복사 실패(건너뜀): {e}")

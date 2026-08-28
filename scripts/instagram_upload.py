@@ -1,10 +1,14 @@
 import argparse
 import json
 import os
+import sys
 import time
 import urllib.parse
 
 import requests
+
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_PATH = os.path.join(BASE_DIR, "credentials", "instagram_secret.json")

@@ -1,6 +1,9 @@
 import sys
 from faster_whisper import WhisperModel
 
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
+
 
 def fmt_ts(t):
     h = int(t // 3600)

@@ -26,6 +26,9 @@ import sys
 
 from playwright.sync_api import sync_playwright
 
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RENDER_ROOT = os.environ.get("SHORTS_RENDER_DIR", os.path.join(os.path.expanduser("~"), "ShortsAutoRender"))
 PROFILE_DIR = os.path.join(RENDER_ROOT, "naver_browser_profile")  # 로그인 세션 저장 위치 — git 밖, 이 컴퓨터 로컬 전용

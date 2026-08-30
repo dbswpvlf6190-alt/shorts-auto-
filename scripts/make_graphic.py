@@ -1,6 +1,10 @@
 import argparse
+import sys
 
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 W, H = 1080, 1920
 BG_TOP = (15, 27, 46)      # 짙은 네이비 (밝은 쪽)

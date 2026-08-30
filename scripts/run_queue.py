@@ -8,6 +8,9 @@ import sys
 import winreg
 from datetime import datetime
 
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
+
 LOCK_STALE_HOURS = 3  # 이 시간이 지난 락은 이전 실행이 비정상 종료된 것으로 보고 무시
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,6 +33,9 @@ def log(msg):
 
 
 def sanitize_filename(text, max_len=150):
+    # 이모지(BMP 밖 문자)가 파일명에 남으면 콘솔/로그 인코딩(cp949)이 이걸 못 담아서
+    # 프로그램이 죽는 사고가 있었음(2026-08-28, 바탕화면 복사가 조용히 실패했었음) — 아예 제거.
+    text = "".join(ch for ch in text if ord(ch) <= 0xFFFF)
     text = re.sub(r'[\\/:*?"<>|]', '', text).strip()
     return text[:max_len].rstrip()
 

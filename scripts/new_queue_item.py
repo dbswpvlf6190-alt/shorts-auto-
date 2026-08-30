@@ -11,7 +11,11 @@ input/queue/NN_이름/ 폴더를 미리 만들고 원본 기사 정보를 notes.
 import argparse
 import os
 import re
+import sys
 from datetime import datetime
+
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE_DIR = os.path.join(BASE_DIR, "input", "queue")

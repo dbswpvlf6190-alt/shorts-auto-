@@ -12,11 +12,15 @@ import argparse
 import html
 import os
 import re
+import sys
 import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
 import requests
+
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE_DIR = os.path.join(BASE_DIR, "input", "queue")

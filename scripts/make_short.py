@@ -11,6 +11,9 @@ import json
 
 import edge_tts
 
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
+
 FPS = 25
 W, H = 1080, 1920
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

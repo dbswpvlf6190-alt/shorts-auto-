@@ -4,6 +4,9 @@ import os
 import subprocess
 import sys
 
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import make_graphic as gfx  # noqa: E402
 import make_short as base  # noqa: E402  (tts/caption/get_duration 재사용)

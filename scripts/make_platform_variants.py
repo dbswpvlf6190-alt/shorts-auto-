@@ -95,11 +95,22 @@ def build_hook_audio(work_dir, total_dur, punch_time_ms, voice_audio_path):
     return final
 
 
+def synth_voice(text, voice, rate, work_dir, audio_out):
+    """voice가 'cloned'이면 복제 목소리, 아니면 기존 edge-tts."""
+    if voice == "cloned":
+        return base.tts_cloned_voice(text, work_dir, audio_out)
+    return asyncio.run(base.tts_with_words(text, voice, audio_out, rate))
+
+
+def voice_audio_name(name_stem, voice):
+    return f"{name_stem}.wav" if voice == "cloned" else f"{name_stem}.mp3"
+
+
 def build_yt_hook(word_lines, work_dir, out_name, voice, rate):
     """훅 문구를 TTS로 실제로 읽고, 각 구절의 팝인 타이밍을 발화 타이밍에 맞춘다."""
     full_text = " ".join(word_lines)
-    voice_audio = os.path.join(work_dir, "yt_hook_voice.mp3")
-    words = asyncio.run(base.tts_with_words(full_text, voice, voice_audio, rate))
+    voice_audio = os.path.join(work_dir, voice_audio_name("yt_hook_voice", voice))
+    words = synth_voice(full_text, voice, rate, work_dir, voice_audio)
     total_duration = base.get_duration(voice_audio)
 
     if len(words) == len(word_lines):
@@ -130,8 +141,8 @@ def build_yt_hook(word_lines, work_dir, out_name, voice, rate):
 def build_tiktok_hook(text, work_dir, out_name, voice, rate):
     img_name = "tt_hook.png"
     make_hook_frame(text, os.path.join(work_dir, img_name), kicker_text="속보", danger=True)
-    voice_audio = os.path.join(work_dir, "tt_hook_voice.mp3")
-    asyncio.run(base.tts_with_words(text, voice, voice_audio, rate))
+    voice_audio = os.path.join(work_dir, voice_audio_name("tt_hook_voice", voice))
+    synth_voice(text, voice, rate, work_dir, voice_audio)
     duration = base.get_duration(voice_audio)
     zoompunch_clip(img_name, out_name, duration, work_dir, zoom_from=1.3, zoom_to=1.0, punch_time=0.22)
     return voice_audio, duration
@@ -178,8 +189,8 @@ def build_outro(work_dir, out_path, voice, rate, next_teaser=DEFAULT_NEXT_TEASER
     os.makedirs(work_dir, exist_ok=True)
     outro_text = f"여러분은 해당되시나요? 댓글로 알려주세요. {next_teaser}"
     sub_text = next_teaser
-    audio_path = os.path.join(work_dir, "outro_voice.mp3")
-    words = asyncio.run(base.tts_with_words(outro_text, voice, audio_path, rate))
+    audio_path = os.path.join(work_dir, voice_audio_name("outro_voice", voice))
+    words = synth_voice(outro_text, voice, rate, work_dir, audio_path)
 
     ass_path = os.path.join(work_dir, "outro_captions.ass")
     base.write_ass(words, ass_path)
@@ -232,7 +243,7 @@ def main():
     ap.add_argument("--tiktok-hook-text", required=True)
     ap.add_argument("--out-dir", required=True)
     ap.add_argument("--work", default=None)
-    ap.add_argument("--voice", default="ko-KR-InJoonNeural")
+    ap.add_argument("--voice", default="cloned")
     ap.add_argument("--rate", default="+30%")
     ap.add_argument("--next-teaser", default=DEFAULT_NEXT_TEASER, help="엔딩 CTA에 넣을 다음편 예고 문구")
     args = ap.parse_args()

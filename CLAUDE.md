@@ -6,6 +6,39 @@
 
 Claude Code의 대화 세션·auto-memory는 각 컴퓨터의 로컬 사용자 프로필(`~/.claude/`)에 저장되고 컴퓨터 간 동기화되지 않으므로, 새 컴퓨터/새 세션에서는 이 파일(git으로 pull된 최신 사본)이 유일한 맥락 소스입니다. 작업하면서 알게 된 중요한 결정/제약은 이 파일에 계속 업데이트하고 **push까지 할 것**.
 
+## 복제 목소리 (2026-08-30 도입, 기본값으로 전환됨) — 노트북 세팅 필수
+`make_short.py`/`make_platform_variants.py`의 `--voice` 기본값이 이제 **"cloned"**(edge-tts 아님). `run_queue.py`도 `meta.get("voice", "cloned")`로 기본값 변경됨. 즉 **노트북에 아래 세팅이 안 되어 있으면 내일부터 노트북 자동 처리가 실패**한다.
+
+- 목소리 자체(`assets/cloned_voice_style.json`)는 git으로 동기화됨(`assets/`는 gitignore 제외 대상 아님) — `git pull`만 하면 노트북에도 옴.
+- **근데 실행 엔진(`vendor/supertonic_clone/`)은 용량이 커서 일부러 `.gitignore`에 넣었음 — 노트북에서 따로 한 번 설치해야 함.** 아래 순서대로:
+  ```powershell
+  cd C:\shorts_auto
+  mkdir vendor
+  cd vendor
+  git clone https://github.com/saurabhv749/supertonic3-voice-clone.git supertonic_clone
+  cd supertonic_clone
+  python -m venv venv
+  .\venv\Scripts\pip install torch==2.9.1 torchvision==0.24.1 torchaudio==2.9.1 --index-url https://download.pytorch.org/whl/cpu
+  .\venv\Scripts\pip install onnxruntime onnx onnx2torch onnxslim numpy soundfile librosa transformers speechbrain torchcodec
+  .\venv\Scripts\pip install --upgrade huggingface_hub
+  .\venv\Scripts\hf download Supertone/supertonic-3 --local-dir supertonic3
+  ```
+  - **주의 1**: `requirements.txt`대로 GPU(cu128 등) torch 설치하지 말 것 — 웬만한 GPU는 sm_61 이하라 최신 PyTorch가 지원 안 함(데스크톱 GTX 1060에서 실제로 겪음). CPU 버전이면 무조건 됨(추론은 몇 초~몇십 초로 빠름, 느린 건 학습(4시간)뿐이고 노트북에선 학습 다시 할 필요 없음 — 이미 만든 스타일 파일 재사용).
+  - **주의 2**: `utils/loss.py`의 `load_audio_16khz_mono`가 `torchaudio.load()`를 쓰면 Windows에서 torchcodec dll 로드 실패로 죽음 — 노트북에서도 이 파일을 열어서 아래처럼 고칠 것 (vendor/ 전체가 git 추적 대상이 아니라 이 패치도 노트북에서 다시 해야 함):
+    ```python
+    # 파일 맨 위에 추가
+    import soundfile as sf
+
+    # load_audio_16khz_mono 함수 안, 기존 "signal, _ = torchaudio.load(file_path)" 줄을 아래로 교체
+    data, orig_sr = sf.read(file_path, dtype="float32", always_2d=True)
+    signal = torch.from_numpy(data.T)
+    _ = orig_sr
+    ```
+  - **주의 3**: `train_style.py`/`narrate.py` 둘 다 이모지(✅ 등) print 때문에 cp949 콘솔에서 죽는 문제 있었음 — `narrate.py`는 이미 UTF-8 재설정 코드 있음(git 추적됨, `scripts/`가 아니라 `vendor/` 안이라 이것도 노트북에 새로 만들어야 함 — `narrate.py`는 이 CLAUDE.md와 함께 대화 로그에 전체 코드 있으니 그대로 복사).
+  - `vendor/supertonic_clone/narrate.py` — 이 프로젝트 전용 나레이션 스크립트(문장 단위 생성 + 글자수 비례 타이밍). vendor/ 자체는 git 추적 대상이 아니라서, **git 추적되는 사본을 `scripts/supertonic_narrate_template.py`에 따로 저장해둠** — 노트북에서는 이 파일을 `vendor/supertonic_clone/narrate.py`로 복사해서 쓸 것 (`copy scripts\supertonic_narrate_template.py vendor\supertonic_clone\narrate.py`).
+- 검증: `cd vendor\supertonic_clone && .\venv\Scripts\python narrate.py --text-file <아무 스크립트> --style ..\..\assets\cloned_voice_style.json --out-audio test.wav --out-timing test.json` 실행해서 정상 생성되는지 확인.
+- **알려진 한계**: 이 목소리는 사용자 본인 목소리를 정확히 복제한 게 아니라 여성 목소리로 나옴(무료 커뮤니티 방식의 한계, README에도 "정체성보다 억양/톤 재현은 제한적"이라 명시돼 있음) — 사용자가 이 결과물을 보고 "이 정도면 만족"하고 채택하기로 결정함(2026-08-30). 나중에 진짜 본인 목소리로 바꾸고 싶으면 ElevenLabs 유료($5/월)가 대안.
+
 ## 프로젝트 헌장 — `PROJECT_CHARTER.md` (2026-08-22, 필독)
 장기 비전/브랜드 방향/Claude Code 역할 원칙을 담은 문서. 신규 기능 제안 시 이 헌장과의 정합성을 먼저 확인할 것. 이 CLAUDE.md는 현재 구현 상태 요약이고, 전문은 그 파일이 원본.
 
@@ -99,4 +132,6 @@ Claude Code의 대화 세션·auto-memory는 각 컴퓨터의 로컬 사용자 �
 - 2026-08-17: 그래픽/오프닝훅/엔딩CTA/로고 오버레이 전면 개선(어지러운 줌 전환 → 크로스페이드, 무음 훅 → 임팩트 사운드, 팔로우/댓글 유도 CTA 추가), 인스타그램 한글 파일명 버그 수정
 - 2026-08-21: 데스크톱-노트북 OneDrive 동기화 체계 구축 (`shorts_auto`, `업로드영상` 폴더를 `Desktop\클로드코드1`에서 `OneDrive\` 로 이동), 작업 스케줄러 경로 갱신
 - 2026-08-22: 노트북 최초 세팅(Python/ffmpeg/패키지 설치), 요일별 컴퓨터 분리(평일 노트북/주말 데스크톱) 확정 및 양쪽 스케줄러 등록, 노트북에서 유튜브 업로드 실사용 테스트 성공(08_명도소송, public). 인스타그램 6일 연속 실패 원인 조사 — OneDrive 용량 부족이 근본 원인으로 드러나 **OneDrive 동기화 전면 중단** → `C:\shorts_auto`로 이전, 렌더링 결과물/media_host를 `~\ShortsAutoRender\`로 분리. 컴퓨터 간 동기화는 USB 수동 복사를 거쳐 최종적으로 **git + GitHub 비공개 저장소**로 전환 (노트북·데스크톱 둘 다 clone/설정 완료, `run_queue.py`의 git 기반 상호배제 락도 이제 실제로 작동). 데스크톱의 대규모 변경사항(오프닝 훅 TTS화, CTA 개편, 네이버 블로그 도구 4종, 자막/폰트 버그 수정 2건)도 반영 완료. 폴더 구조 정리(`docs/`, `input/backlog/` 신설).
+- 2026-08-29~30: 유튜브 토큰 재차 만료 → 재인증(패턴 반복 확인, 7일 주기 그대로). 채널 SEO 개선(빈 키워드 채움, 소개글을 부동산 브랜드에 맞게 재작성), 재생목록 5개 신설(부동산 정책·세금/대출·금리/전세·전세사기/경매 노하우·실전/돈 버는 마인드셋) + 220개 중 193개 배정(나머지는 API 일일 할당량으로 다음날 마저 진행 필요). 첫 정식 주간 리뷰 실시 — 2주간 구독자가 199→200명으로 거의 정체된 것을 확인, "영상량보다 구독전환이 병목"이라는 결론.
+- 2026-08-30: **복제 목소리 도입, 이제 기본값** — 무료 오픈소스(Supertonic 3 + 커뮤니티 학습 스크립트)로 사용자 목소리 샘플을 학습시켜 `assets/cloned_voice_style.json` 생성, `make_short.py`/`make_platform_variants.py`/`run_queue.py`의 `--voice` 기본값을 "cloned"로 변경(edge-tts는 이제 명시적으로 지정할 때만 씀). ElevenLabs(유료 $5/월)도 검토했으나 무료 방식으로 먼저 검증하기로 함. **알려진 한계**: 복제 결과가 여성 목소리로 나옴(원 목소리 성별과 다름, 무료 방식의 한계로 파악) — 사용자가 확인 후 "이 정도면 만족"하고 그대로 채택. 실제 파이프라인 통합 테스트(자막 동기화 포함) 성공. 노트북에는 `vendor/`가 gitignore 대상이라 별도 설치 필요 — 위 "복제 목소리" 섹션 참고.
 - 2026-08-24(월): **유튜브 토큰 만료로 자동 실행 실패 발생, 실제로 겪음** — 이날 저녁 노트북 스케줄러가 (로그인 늦어져서 지연 실행) `09_선순위임차인` 처리 중 `google.auth.exceptions.RefreshError: invalid_grant: Token has been expired or revoked`로 크래시. `youtube_upload.py`의 `get_credentials()`는 refresh 실패 시 인터랙티브 로그인으로 자동 전환하지 않고 그냥 예외를 던지는 구조라(의도된 설계 — 무인 실행 중 브라우저 뜨는 채로 멈추는 것보다 명확히 실패하는 게 나음), 사람이 직접 재인증해야 했음. `credentials/token.json`을 지우고 `youtube_upload.py`를 직접 실행해서 브라우저로 재인증 → 이미 렌더링된 영상(`~\ShortsAutoRender\queue_render\09_선순위임차인\platform\`)으로 유튜브 업로드, 인스타그램 게시, 배송 폴더 정리, `done.txt` 기록까지 수동으로 이어서 완료. **교훈**: 7일 재인증 주기를 사람이 능동적으로 챙기지 않으면 이렇게 큐가 막힘 — 새 세션에서 큐 실패를 발견하면 `output/queue_log.txt`에서 `RefreshError`/`invalid_grant` 여부부터 확인할 것.

@@ -7,10 +7,16 @@ import shutil
 import subprocess
 import sys
 
+import json
+
 import edge_tts
 
 FPS = 25
 W, H = 1080, 1920
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SUPERTONIC_DIR = os.path.join(BASE_DIR, "vendor", "supertonic_clone")
+SUPERTONIC_PYTHON = os.path.join(SUPERTONIC_DIR, "venv", "Scripts", "python.exe")
+CLONED_VOICE_STYLE = os.path.join(BASE_DIR, "assets", "cloned_voice_style.json")
 
 
 def fmt_ts(t):
@@ -53,6 +59,28 @@ async def tts_with_words(text, voice, audio_out, rate="+0%"):
             pseudo.append((cursor, cursor + w_dur, t))
             cursor += w_dur
     return pseudo
+
+
+def tts_cloned_voice(text, work_dir, audio_out):
+    """복제된 목소리(vendor/supertonic_clone)로 나레이션 생성. 별도 venv라 서브프로세스로 호출.
+    edge-tts처럼 단어별 타이밍 이벤트가 없어서, narrate.py가 문장 단위로 만들고 그 안에서
+    글자 수 비례로 근사한 타이밍을 같이 돌려준다(기존 한국어 fallback과 같은 방식)."""
+    text_path = os.path.join(work_dir, "narration_text.txt")
+    timing_path = os.path.join(work_dir, "narration_timing.json")
+    with open(text_path, "w", encoding="utf-8") as f:
+        f.write(text)
+    subprocess.run(
+        [
+            SUPERTONIC_PYTHON, os.path.join(SUPERTONIC_DIR, "narrate.py"),
+            "--text-file", text_path,
+            "--style", CLONED_VOICE_STYLE,
+            "--out-audio", audio_out,
+            "--out-timing", timing_path,
+        ],
+        check=True,
+    )
+    with open(timing_path, "r", encoding="utf-8") as f:
+        return [tuple(w) for w in json.load(f)]
 
 
 def group_words(words, max_chars=14, max_dur=2.2):
@@ -206,7 +234,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--script", required=True)
     ap.add_argument("--images", required=True)
-    ap.add_argument("--voice", default="ko-KR-InJoonNeural")
+    ap.add_argument("--voice", default="cloned")
     ap.add_argument("--rate", default="+30%")
     ap.add_argument("--out", required=True)
     ap.add_argument("--work", default=None)
@@ -220,9 +248,14 @@ def main():
     work_dir = args.work or os.path.join(os.path.dirname(args.out), "_work")
     os.makedirs(work_dir, exist_ok=True)
 
-    audio_path = os.path.join(work_dir, "voice.mp3")
-    print("1/4 generating voice (edge-tts)...")
-    words = asyncio.run(tts_with_words(text, args.voice, audio_path, args.rate))
+    if args.voice == "cloned":
+        audio_path = os.path.join(work_dir, "voice.wav")
+        print("1/4 generating voice (cloned voice)...")
+        words = tts_cloned_voice(text, work_dir, audio_path)
+    else:
+        audio_path = os.path.join(work_dir, "voice.mp3")
+        print("1/4 generating voice (edge-tts)...")
+        words = asyncio.run(tts_with_words(text, args.voice, audio_path, args.rate))
 
     ass_path = os.path.join(work_dir, "captions.ass")
     n = write_ass(words, ass_path)

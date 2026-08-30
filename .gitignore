@@ -10,3 +10,4 @@ input/voice/
 **/platform/
 __pycache__/
 *.pyc
+vendor/

@@ -152,7 +152,7 @@ def process_item(item_dir):
         run([
             sys.executable, os.path.join(BASE_DIR, "scripts", "make_short.py"),
             "--script", script_path, "--images", images_dir,
-            "--voice", meta.get("voice", "ko-KR-InJoonNeural"),
+            "--voice", meta.get("voice", "cloned"),
             "--out", base_video, "--work", work_dir,
             "--img-dur", str(meta.get("img_dur", 5)),
         ])
@@ -164,7 +164,7 @@ def process_item(item_dir):
             "--yt-hook-lines", meta["yt_hook_lines"],
             "--tiktok-hook-text", meta["tiktok_hook_text"],
             "--out-dir", platform_dir,
-            "--voice", meta.get("voice", "ko-KR-InJoonNeural"),
+            "--voice", meta.get("voice", "cloned"),
             "--rate", meta.get("rate", "+30%"),
         ] + (["--next-teaser", meta["next_teaser"]] if meta.get("next_teaser") else []))
 

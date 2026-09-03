@@ -51,6 +51,19 @@ def get_desktop_path():
     return os.path.expandvars(path)
 
 
+def get_tiktok_delivery_path():
+    """틱톡 파일을 실제로 가져다 놓을 폴더. 사용자가 원래 몇 달째 수동으로 관리해오던
+    정리 폴더(바탕화면\\05_영상_SNS\\틱톡 영상)가 있으면 그걸 그대로 쓰고(2026-09-03에
+    바탕화면 루트에 떨어뜨려서 사용자가 못 찾은 사고 있었음 — 그 폴더엔 8/14 이후로
+    새 파일이 하나도 안 들어가고 있었던 게 증거), 없으면(다른 컴퓨터 등) 바탕화면
+    루트로 그냥 떨어뜨림."""
+    desktop = get_desktop_path()
+    organized = os.path.join(desktop, "05_영상_SNS", "틱톡 영상")
+    if os.path.isdir(organized):
+        return organized
+    return desktop
+
+
 def run(cmd):
     result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if result.returncode != 0:
@@ -196,15 +209,15 @@ def process_item(item_dir):
             tiktok_filename = f"틱톡_{date_str}_{caption_part}.mp4"
             shutil.copy2(tiktok_video, os.path.join(day_dir, tiktok_filename))
             try:
-                desktop_path = get_desktop_path()
+                tiktok_delivery_path = get_tiktok_delivery_path()
                 # OneDrive로 리디렉션된 바탕화면에 파일명에 이모지가 들어간 채로 복사하면
                 # cp949 인코딩 에러가 남 (2026-08-26/27 실제로 겪음, day_dir는 OneDrive 밖이라 문제없었음).
                 # shutil.copy2는 물론 shutil.copyfile도 큰 파일(mp4)에서는 Windows용 내부 고속복사
                 # 경로(_winapi 기반)를 타면서 같은 문제가 재현됨 — 그 경로를 아예 안 쓰도록
                 # 순수 파이썬 청크 단위 read/write로 우회.
-                with open(tiktok_video, "rb") as fsrc, open(os.path.join(desktop_path, tiktok_filename), "wb") as fdst:
+                with open(tiktok_video, "rb") as fsrc, open(os.path.join(tiktok_delivery_path, tiktok_filename), "wb") as fdst:
                     shutil.copyfileobj(fsrc, fdst)
-                log(f"  바탕화면에도 틱톡 파일 복사 완료: {tiktok_filename}")
+                log(f"  틱톡 파일 복사 완료 ({tiktok_delivery_path}): {tiktok_filename}")
             except Exception as e:
                 log(f"  바탕화면 복사 실패(건너뜀): {e}")
         log(f"  정리 완료: {day_dir}")

@@ -52,16 +52,11 @@ def get_desktop_path():
 
 
 def get_tiktok_delivery_path():
-    """틱톡 파일을 실제로 가져다 놓을 폴더. 사용자가 원래 몇 달째 수동으로 관리해오던
-    정리 폴더(바탕화면\\05_영상_SNS\\틱톡 영상)가 있으면 그걸 그대로 쓰고(2026-09-03에
-    바탕화면 루트에 떨어뜨려서 사용자가 못 찾은 사고 있었음 — 그 폴더엔 8/14 이후로
-    새 파일이 하나도 안 들어가고 있었던 게 증거), 없으면(다른 컴퓨터 등) 바탕화면
-    루트로 그냥 떨어뜨림."""
-    desktop = get_desktop_path()
-    organized = os.path.join(desktop, "05_영상_SNS", "틱톡 영상")
-    if os.path.isdir(organized):
-        return organized
-    return desktop
+    """틱톡 파일을 가져다 놓을 폴더. 바탕화면 루트로 고정 (2026-09-03: 기존
+    정리 폴더(05_영상_SNS/틱톡 영상)로 자동 리디렉션하는 걸 시도했었으나
+    사용자가 명시적으로 바탕화면 루트를 원한다고 확인함 — 그 정리 폴더는
+    이 파이프라인과 무관한 별도 용도로 보임, 건드리지 말 것)."""
+    return get_desktop_path()
 
 
 def run(cmd):

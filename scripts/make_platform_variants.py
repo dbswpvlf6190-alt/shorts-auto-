@@ -101,7 +101,7 @@ def build_hook_audio(work_dir, total_dur, punch_time_ms, voice_audio_path):
 def synth_voice(text, voice, rate, work_dir, audio_out):
     """voice가 'cloned'이면 복제 목소리, 아니면 기존 edge-tts."""
     if voice == "cloned":
-        return base.tts_cloned_voice(text, work_dir, audio_out)
+        return base.tts_cloned_voice(text, work_dir, audio_out, rate)
     return asyncio.run(base.tts_with_words(text, voice, audio_out, rate))
 
 

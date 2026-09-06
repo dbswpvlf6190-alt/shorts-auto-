@@ -64,7 +64,18 @@ async def tts_with_words(text, voice, audio_out, rate="+0%"):
     return pseudo
 
 
-def tts_cloned_voice(text, work_dir, audio_out):
+def rate_to_speed(rate):
+    """edge-tts 스타일 '+30%' 문자열을 narrate.py의 speed 배율(1.3)로 변환.
+    2026-09-06까지 이 변환이 빠져있어서 복제 목소리가 항상 기본값(1.05, 원래 채널 속도인
+    1.3배속보다 훨씬 느림)으로만 나갔었음 — 사용자가 "속도가 너무 느려"라고 지적해서 발견."""
+    try:
+        pct = float(rate.strip().replace("%", ""))
+        return round(1 + pct / 100, 3)
+    except (ValueError, AttributeError):
+        return 1.3
+
+
+def tts_cloned_voice(text, work_dir, audio_out, rate="+30%"):
     """복제된 목소리(vendor/supertonic_clone)로 나레이션 생성. 별도 venv라 서브프로세스로 호출.
     edge-tts처럼 단어별 타이밍 이벤트가 없어서, narrate.py가 문장 단위로 만들고 그 안에서
     글자 수 비례로 근사한 타이밍을 같이 돌려준다(기존 한국어 fallback과 같은 방식)."""
@@ -77,6 +88,7 @@ def tts_cloned_voice(text, work_dir, audio_out):
             SUPERTONIC_PYTHON, os.path.join(SUPERTONIC_DIR, "narrate.py"),
             "--text-file", text_path,
             "--style", CLONED_VOICE_STYLE,
+            "--speed", str(rate_to_speed(rate)),
             "--out-audio", audio_out,
             "--out-timing", timing_path,
         ],
@@ -119,21 +131,16 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Caption,Malgun Gothic,72,&H00FFFFFF,&H0040C7FF,&H00000000,&H60000000,-1,0,0,0,100,100,0,0,3,18,0,2,80,80,340,1
+Style: Caption,Malgun Gothic,72,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,6,2,2,80,80,340,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
 
 
-def build_karaoke_text(word_group):
-    """ASS karaoke: each word flips from Secondary(gold) to Primary(white) as it's spoken, and stays highlighted."""
-    parts = []
-    for i, (s, e, w) in enumerate(word_group):
-        nxt_start = word_group[i + 1][0] if i + 1 < len(word_group) else e
-        dur_cs = max(round((nxt_start - s) * 100), 1)
-        parts.append(f"{{\\k{dur_cs}}}{w}")
-    return " ".join(parts)
+def build_plain_text(word_group):
+    """2026-09-06: 노란색 카라오케 하이라이트 제거(사용자 피드백) — 그냥 흰색 고정 텍스트."""
+    return " ".join(w for _, _, w in word_group)
 
 
 def write_ass(words, ass_path):
@@ -144,7 +151,7 @@ def write_ass(words, ass_path):
             if not group:
                 continue
             start, end = group[0][0], group[-1][1]
-            text = build_karaoke_text(group)
+            text = build_plain_text(group)
             f.write(f"Dialogue: 0,{fmt_ts(start)},{fmt_ts(end)},Caption,,0,0,0,,{text}\n")
     return len(groups)
 
@@ -154,14 +161,9 @@ def run(cmd):
 
 
 def build_image_clip(image_path, out_path, duration):
-    """완만한 줌인만 사용(1.0->1.08). 컷 지점은 build_broll의 크로스페이드가 부드럽게 이어준다."""
-    frames = max(int(duration * FPS), 1)
-    zoom_expr = "min(zoom+0.0006,1.08)"
-    vf = (
-        f"scale={W*2}:{H*2}:force_original_aspect_ratio=increase,"
-        f"crop={W*2}:{H*2},"
-        f"zoompan=z='{zoom_expr}':d={frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={FPS}"
-    )
+    """고정 이미지, 줌/움직임 없음(2026-09-06, 사용자 피드백으로 줌인 효과 제거 — 부자연스럽다는 지적).
+    컷 지점은 build_broll의 크로스페이드가 부드럽게 이어준다."""
+    vf = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS}"
     cmd = [
         "ffmpeg", "-y", "-loop", "1", "-i", image_path,
         "-vf", vf, "-t", str(duration),
@@ -254,7 +256,7 @@ def main():
     if args.voice == "cloned":
         audio_path = os.path.join(work_dir, "voice.wav")
         print("1/4 generating voice (cloned voice)...")
-        words = tts_cloned_voice(text, work_dir, audio_path)
+        words = tts_cloned_voice(text, work_dir, audio_path, args.rate)
     else:
         audio_path = os.path.join(work_dir, "voice.mp3")
         print("1/4 generating voice (edge-tts)...")

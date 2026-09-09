@@ -4,6 +4,8 @@ import os
 import subprocess
 import sys
 
+from PIL import ImageDraw
+
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -29,25 +31,55 @@ def get_duration(path):
 # ---------- 오프닝 훅 (프리미엄 배경 + 임팩트 사운드) ----------
 
 def make_hook_frame(text, path, kicker_text=None, danger=False):
-    bg_top = (30, 10, 10) if danger else gfx.BG_TOP
-    bg_bottom = (10, 3, 3) if danger else gfx.BG_BOTTOM
-    accent = (255, 70, 70) if danger else gfx.ACCENT
+    bg_top = (36, 8, 8) if danger else gfx.BG_TOP
+    bg_bottom = (10, 2, 2) if danger else gfx.BG_BOTTOM
+    accent = (255, 64, 64) if danger else gfx.ACCENT
+    text_color = (255, 255, 255) if danger else gfx.WHITE
     img = gfx.vertical_gradient(W, H, bg_top, bg_bottom)
-    img = gfx.add_glow(img, (W // 2, H // 2), 520, accent, opacity=90)
-    from PIL import ImageDraw
+    img = gfx.add_glow(img, (W // 2, H // 2), 560, accent, opacity=95)
     d = ImageDraw.Draw(img)
+
+    # 좌측 액센트 바 + 우상단 코너 장식 — 다른 카드(gfx.base_canvas)와 톤을 맞춘다.
     d.rectangle([0, 0, 14, H], fill=accent)
+    d.line([(W - 100, 90), (W - 40, 90)], fill=accent, width=4)
+    d.line([(W - 40, 90), (W - 40, 150)], fill=accent, width=4)
+
     if kicker_text:
-        gfx.kicker(d, kicker_text)
-    size = 118
-    f = gfx.font(size)
-    while size > 50:
-        if d.textlength(text, font=f) <= 920:
-            break
-        size -= 8
+        f_k = gfx.font(40)
+        tw = d.textlength(kicker_text, font=f_k)
+        pad_x, pad_y = 30, 16
+        bx0, by0 = 64, 90
+        box = [bx0, by0, bx0 + tw + pad_x * 2, by0 + f_k.size + pad_y * 2]
+        d.rounded_rectangle(box, radius=(box[3] - box[1]) / 2, fill=accent)
+        badge_text_color = (30, 4, 4) if danger else (30, 22, 4)
+        d.text((bx0 + pad_x, by0 + pad_y - 4), kicker_text, font=f_k, fill=badge_text_color)
+
+    # 예전엔 한 줄 강제 + 최소 폰트 50까지만 줄여서, 문장이 길면 화면 밖으로 삐져나갔다.
+    # 이제 폭과 높이가 둘 다 맞을 때까지 실제로 줄바꿈해가며 폰트 크기를 찾는다.
+    max_w, max_h = 900, 1150
+    size = 132
+    while size > 44:
         f = gfx.font(size)
-    w = d.textlength(text, font=f)
-    d.text((W / 2 - w / 2, H / 2 - size / 2), text, font=f, fill=(255, 255, 255) if danger else gfx.WHITE)
+        lines = gfx.wrap_lines_by_word(d, text, f, max_w)
+        line_h = size + 22
+        if line_h * len(lines) <= max_h:
+            break
+        size -= 6
+    f = gfx.font(size)
+    lines = gfx.wrap_lines_by_word(d, text, f, max_w)
+    line_h = size + 22
+    total_h = line_h * len(lines)
+    y = H / 2 - total_h / 2
+    for line in lines:
+        w = d.textlength(line, font=f)
+        x = W / 2 - w / 2
+        d.text((x + 3, y + 3), line, font=f, fill=(0, 0, 0))  # 그림자로 가독성 보강
+        d.text((x, y), line, font=f, fill=text_color)
+        y += line_h
+
+    bar_y = y + 6
+    d.rounded_rectangle([W / 2 - 90, bar_y, W / 2 + 90, bar_y + 8], radius=4, fill=accent)
+
     gfx.watermark(d)
     img.save(path)
 

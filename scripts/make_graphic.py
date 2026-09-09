@@ -88,7 +88,8 @@ def make_logo_badge(out="logo.png", text="daily.factlab"):
     return w, h
 
 
-def wrap_draw(draw, text, f, max_width, y, fill, center_x=W // 2, line_gap=14, align="center"):
+def wrap_lines(draw, text, f, max_width):
+    """텍스트를 max_width 안에 들어가도록 글자 단위로 줄바꿈해 줄 리스트로 반환한다."""
     lines, cur = [], ""
     for ch in text:
         test = cur + ch
@@ -99,6 +100,33 @@ def wrap_draw(draw, text, f, max_width, y, fill, center_x=W // 2, line_gap=14, a
             cur = test
     if cur:
         lines.append(cur)
+    return lines
+
+
+def wrap_lines_by_word(draw, text, f, max_width):
+    """공백 기준으로 줄바꿈해 단어가 중간에 잘리지 않게 한다(글자 단위 wrap_lines보다 가독성이
+    좋음). 단어 하나가 max_width보다 길면 그 단어만 글자 단위로 쪼갠다."""
+    lines, cur = [], ""
+    for word in text.split(" "):
+        candidate = f"{cur} {word}".strip() if cur else word
+        if draw.textlength(candidate, font=f) <= max_width:
+            cur = candidate
+            continue
+        if cur:
+            lines.append(cur)
+            cur = ""
+        if draw.textlength(word, font=f) <= max_width:
+            cur = word
+        else:
+            *head, cur = wrap_lines(draw, word, f, max_width)
+            lines.extend(head)
+    if cur:
+        lines.append(cur)
+    return lines
+
+
+def wrap_draw(draw, text, f, max_width, y, fill, center_x=W // 2, line_gap=14, align="center"):
+    lines = wrap_lines(draw, text, f, max_width)
     for line in lines:
         w = draw.textlength(line, font=f)
         x = center_x - w / 2 if align == "center" else center_x - max_width / 2

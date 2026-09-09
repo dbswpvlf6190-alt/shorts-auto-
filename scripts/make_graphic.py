@@ -46,6 +46,19 @@ def add_glow(img, center, radius, color=ACCENT, opacity=90):
     return Image.alpha_composite(base, glow).convert("RGB")
 
 
+def add_vignette(img, strength=110, radius_frac=0.44, blur=260):
+    """중앙은 그대로 두고 가장자리·모서리만 은은하게 어둡게 해 시선을 중앙으로 모은다."""
+    mask = Image.new("L", img.size, 0)
+    md = ImageDraw.Draw(mask)
+    cx, cy = img.size[0] // 2, img.size[1] // 2
+    rx, ry = int(img.size[0] * radius_frac), int(img.size[1] * radius_frac * 1.3)
+    md.ellipse([cx - rx, cy - ry, cx + rx, cy + ry], fill=255)
+    mask = mask.filter(ImageFilter.GaussianBlur(blur))
+    dark_alpha = mask.point(lambda v: int((255 - v) * (strength / 255)))
+    black = Image.new("RGB", img.size, (0, 0, 0))
+    return Image.composite(black, img, dark_alpha)
+
+
 def base_canvas(glow_center=(W // 2, H // 2 - 200), glow_radius=420):
     img = vertical_gradient(W, H, BG_TOP, BG_BOTTOM)
     img = add_glow(img, glow_center, glow_radius, ACCENT, opacity=55)

@@ -31,12 +31,20 @@ def get_duration(path):
 # ---------- 오프닝 훅 (프리미엄 배경 + 임팩트 사운드) ----------
 
 def make_hook_frame(text, path, kicker_text=None, danger=False):
+    """오프닝 훅 프레임. '방송 속보' 톤으로 디자인(2026-09-09, 사용자가 3개 시안 중 선택):
+    스캔라인 텍스처 + 비네트로 입체감을 주고, 상단 풀폭 티커 바로 긴박감을 낸다."""
     bg_top = (36, 8, 8) if danger else gfx.BG_TOP
     bg_bottom = (10, 2, 2) if danger else gfx.BG_BOTTOM
     accent = (255, 64, 64) if danger else gfx.ACCENT
     text_color = (255, 255, 255) if danger else gfx.WHITE
+    bar_text_color = (30, 4, 4) if danger else (30, 22, 4)
+
     img = gfx.vertical_gradient(W, H, bg_top, bg_bottom)
-    img = gfx.add_glow(img, (W // 2, H // 2), 560, accent, opacity=95)
+    img = gfx.add_glow(img, (W // 2, H // 2 - 100), 520, accent, opacity=95)
+    d = ImageDraw.Draw(img)
+    for y in range(0, H, 5):
+        d.line([(0, y), (W, y)], fill=(0, 0, 0), width=1)  # 방송 스캔라인 텍스처
+    img = gfx.add_vignette(img, strength=100)
     d = ImageDraw.Draw(img)
 
     # 좌측 액센트 바 + 우상단 코너 장식 — 다른 카드(gfx.base_canvas)와 톤을 맞춘다.
@@ -44,19 +52,18 @@ def make_hook_frame(text, path, kicker_text=None, danger=False):
     d.line([(W - 100, 90), (W - 40, 90)], fill=accent, width=4)
     d.line([(W - 40, 90), (W - 40, 150)], fill=accent, width=4)
 
+    # 상단 풀폭 티커 바(예전엔 떠 있는 배지 하나였음) + 점 아이콘
+    bar_h = 66
+    d.rectangle([0, 0, W, bar_h], fill=accent)
+    dot_r = 9
+    dot_cx, dot_cy = 46, bar_h / 2
+    d.ellipse([dot_cx - dot_r, dot_cy - dot_r, dot_cx + dot_r, dot_cy + dot_r], fill=bar_text_color)
     if kicker_text:
-        f_k = gfx.font(40)
-        tw = d.textlength(kicker_text, font=f_k)
-        pad_x, pad_y = 30, 16
-        bx0, by0 = 64, 90
-        box = [bx0, by0, bx0 + tw + pad_x * 2, by0 + f_k.size + pad_y * 2]
-        d.rounded_rectangle(box, radius=(box[3] - box[1]) / 2, fill=accent)
-        badge_text_color = (30, 4, 4) if danger else (30, 22, 4)
-        d.text((bx0 + pad_x, by0 + pad_y - 4), kicker_text, font=f_k, fill=badge_text_color)
+        d.text((70, 16), kicker_text, font=gfx.font(34), fill=bar_text_color)
 
     # 예전엔 한 줄 강제 + 최소 폰트 50까지만 줄여서, 문장이 길면 화면 밖으로 삐져나갔다.
-    # 이제 폭과 높이가 둘 다 맞을 때까지 실제로 줄바꿈해가며 폰트 크기를 찾는다.
-    max_w, max_h = 900, 1150
+    # 이제 폭과 높이가 둘 다 맞을 때까지, 단어 단위로 줄바꿈해가며 폰트 크기를 찾는다.
+    max_w, max_h = 900, 1100
     size = 132
     while size > 44:
         f = gfx.font(size)
@@ -69,7 +76,7 @@ def make_hook_frame(text, path, kicker_text=None, danger=False):
     lines = gfx.wrap_lines_by_word(d, text, f, max_w)
     line_h = size + 22
     total_h = line_h * len(lines)
-    y = H / 2 - total_h / 2
+    y = H / 2 - total_h / 2 + 20
     for line in lines:
         w = d.textlength(line, font=f)
         x = W / 2 - w / 2
@@ -79,6 +86,7 @@ def make_hook_frame(text, path, kicker_text=None, danger=False):
 
     bar_y = y + 6
     d.rounded_rectangle([W / 2 - 90, bar_y, W / 2 + 90, bar_y + 8], radius=4, fill=accent)
+    d.rectangle([0, H - 14, W, H], fill=accent)  # 하단 티커 바 — 상단과 대칭
 
     gfx.watermark(d)
     img.save(path)

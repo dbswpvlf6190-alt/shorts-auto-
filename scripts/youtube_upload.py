@@ -14,6 +14,8 @@ from google.oauth2.credentials import Credentials
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube.readonly",
+    # videos().update()(공개상태 전환 등)에 필요 — 2026-09-10 재인증으로 추가.
+    "https://www.googleapis.com/auth/youtube",
 ]
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CLIENT_SECRET_PATH = os.path.join(BASE_DIR, "credentials", "client_secret.json")

@@ -98,8 +98,10 @@ def tts_cloned_voice(text, work_dir, audio_out, rate="+30%"):
         return [tuple(w) for w in json.load(f)]
 
 
-def group_words(words, max_chars=14, max_dur=2.2):
-    """Groups raw (start, end, word) tuples into short phrase groups, keeping per-word timing."""
+def group_words(words, max_chars=26, max_dur=4.0):
+    """Groups raw (start, end, word) tuples into short phrase groups, keeping per-word timing.
+    2026-09-12: 사용자 피드백으로 한 화면에 잘리던 문구를 최대 2문장 분량까지 늘림
+    (max_chars 14->26, max_dur 2.2->4.0)."""
     groups = []
     cur = []
     cur_start = None

@@ -24,7 +24,11 @@ GAP_SECONDS = 0.15
 def synthesize(text, style_path, lang="ko", total_step=6, speed=1.05):
     tts = load_text_to_speech(os.path.join(os.path.dirname(__file__), "supertonic3", "onnx"))
     voice_style = load_voice_style([style_path])
-    max_len = 120 if lang in ("ko", "ja") else 300
+    # 2026-09-12: 120자는 모델이 한 번에 처리하기엔 길어서, 특히 쉼표 여러 개 낀 복문에서
+    # 문장 뒷부분 음성이 깨지는 현상의 원인으로 추정됨(사용자가 실제 영상에서 반복 보고).
+    # 70자로 낮추고 helper.chunk_text의 절 단위 강제 분할(_split_long_sentence)과 함께 써서
+    # 한 번의 합성 호출이 처리하는 길이를 짧게 유지한다.
+    max_len = 70 if lang in ("ko", "ja") else 300
     chunks = chunk_text(text, max_len=max_len)
 
     sr = tts.sample_rate

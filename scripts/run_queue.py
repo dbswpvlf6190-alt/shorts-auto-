@@ -183,6 +183,7 @@ def process_item(item_dir):
         ] + (["--next-teaser", meta["next_teaser"]] if meta.get("next_teaser") else []))
 
         yt_video = os.path.join(platform_dir, "youtube.mp4")
+        yt_thumbnail = os.path.join(platform_dir, "_hook_work", "yt_hook_0.png")
         run([
             sys.executable, os.path.join(BASE_DIR, "scripts", "youtube_upload.py"),
             "--video", yt_video,
@@ -190,6 +191,7 @@ def process_item(item_dir):
             "--description", meta["youtube_description"],
             "--privacy", meta.get("privacy", "private"),
             "--tags", meta.get("tags", ""),
+            "--thumbnail", yt_thumbnail,
         ])
 
         date_str = datetime.now().strftime("%Y-%m-%d")

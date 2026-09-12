@@ -39,6 +39,54 @@ Claude Code의 대화 세션·auto-memory는 각 컴퓨터의 로컬 사용자 �
 - 검증: `cd vendor\supertonic_clone && .\venv\Scripts\python narrate.py --text-file <아무 스크립트> --style ..\..\assets\cloned_voice_style.json --out-audio test.wav --out-timing test.json` 실행해서 정상 생성되는지 확인.
 - **주의 4 (2026-08-31, 노트북 CPU 제약 실제로 겪음)**: 이 노트북 CPU(Intel i5-3230M, 2012년 아이비브릿지)는 **AVX2를 지원 안 함**. `pip install onnxruntime`이 기본으로 깔아주는 최신판(1.2x)은 AVX2 없으면 `DLL load failed... DLL 초기화 루틴을 처리할 수 없습니다` 에러로 무조건 죽음(VC++ 재배포 패키지 문제로 착각하기 쉬운데 아님, CPU 세대 문제). **`onnxruntime==1.17.0`**(이 Python 버전에서 pip으로 받을 수 있는 가장 오래된 판, AVX2 없이도 동작)으로 낮출 것. 근데 1.17.0은 NumPy 1.x용으로 빌드돼서 최신 numpy(2.x)랑 또 충돌 나므로 **`numpy<2`**(실제론 1.26.4로 낮춰짐)도 같이 낮춰야 함 — librosa/scipy/ml-dtypes가 numpy>=2를 요구한다는 pip 경고가 뜨지만 narrate.py 실제 동작에는 지장 없었음(경고 무시해도 됨). 데스크톱은 더 신형 CPU라 이 문제 없었을 가능성 높음 — 노트북에서만 이 버전 고정이 필요.
 - **알려진 한계**: 이 목소리는 사용자 본인 목소리를 정확히 복제한 게 아니라 여성 목소리로 나옴(무료 커뮤니티 방식의 한계, README에도 "정체성보다 억양/톤 재현은 제한적"이라 명시돼 있음) — 사용자가 이 결과물을 보고 "이 정도면 만족"하고 채택하기로 결정함(2026-08-30). 나중에 진짜 본인 목소리로 바꾸고 싶으면 ElevenLabs 유료($5/월)가 대안.
+- **주의 5 (2026-09-12, 긴 문장에서 음성 깨지는 문제 완화)**: `helper.py`의 `chunk_text()`가 문장이 `max_len`(한국어 70자, 예전엔 120자)을 넘어도 안 쪼개고 통째로 한 번에 합성 요청을 보내던 게 문제로 추정됨 — 긴 복문 뒷부분에서 음성이 깨지는 현상이 반복 보고됨(2026-09-06, 2026-09-12). `_split_long_sentence()` 헬퍼를 추가해서 쉼표 경계로 우선 쪼개고(그래도 넘으면 단어 단위 강제 분할), `chunk_text()` 내부 루프에서 문장 대신 이 함수의 결과 조각들을 순회하도록 수정. `narrate.py`의 `max_len`도 120→70으로 낮춤. **`vendor/` 전체가 git 추적 대상이 아니라서 노트북에서도 `helper.py`에 이 패치를 다시 적용해야 함** — 아래 그대로 복사:
+  ```python
+  # chunk_text() 안, "current_chunk = ""를 위한 for 루프 교체:
+  for sentence in sentences:
+      for piece in _split_long_sentence(sentence, max_len):
+          if len(current_chunk) + len(piece) + 1 <= max_len:
+              current_chunk += (" " if current_chunk else "") + piece
+          else:
+              if current_chunk:
+                  chunks.append(current_chunk.strip())
+              current_chunk = piece
+
+  # chunk_text() 함수 밖에 새로 추가:
+  def _split_long_sentence(sentence: str, max_len: int) -> list[str]:
+      import re
+      if len(sentence) <= max_len:
+          return [sentence]
+      clauses = re.split(r"(?<=,)\s*", sentence)
+      pieces = []
+      current = ""
+      for clause in clauses:
+          if len(current) + len(clause) + 1 <= max_len:
+              current += (" " if current else "") + clause
+          else:
+              if current:
+                  pieces.append(current.strip())
+              current = clause
+      if current:
+          pieces.append(current.strip())
+      final_pieces = []
+      for piece in pieces:
+          if len(piece) <= max_len:
+              final_pieces.append(piece)
+              continue
+          words = piece.split(" ")
+          cur = ""
+          for w in words:
+              if len(cur) + len(w) + 1 <= max_len:
+                  cur += (" " if cur else "") + w
+              else:
+                  if cur:
+                      final_pieces.append(cur.strip())
+                  cur = w
+          if cur:
+              final_pieces.append(cur.strip())
+      return final_pieces
+  ```
+  `narrate.py`는 `scripts/supertonic_narrate_template.py`(git 추적됨)에 이미 `max_len=70` 반영해뒀으니 노트북에서는 이 파일만 복사하면 됨(위 38번째 줄 참고).
 
 ## 프로젝트 헌장 — `PROJECT_CHARTER.md` (2026-08-22, 필독)
 장기 비전/브랜드 방향/Claude Code 역할 원칙을 담은 문서. 신규 기능 제안 시 이 헌장과의 정합성을 먼저 확인할 것. 이 CLAUDE.md는 현재 구현 상태 요약이고, 전문은 그 파일이 원본.
@@ -149,6 +197,21 @@ Claude Code의 대화 세션·auto-memory는 각 컴퓨터의 로컬 사용자 �
 - **조치**: 루틴 프롬프트를 수정해서 `discover_topics.py` 실패 시 **WebSearch 도구로 직접 검색**하도록 변경(2026-09-05). WebSearch/WebFetch는 Anthropic 자체 인프라를 통하는 도구라 이 네트워크 제약을 안 받음.
 - **앞으로 확인할 것**: 새 세션에서 "오늘 대기열 비었나 확인해줘" 같은 요청이 오면, 이 루틴이 전날 밤 정상 작동했는지(`RemoteTrigger` action `list_runs`/`get_run_log`로 확인) 먼저 볼 것 — 로컬 파이프라인은 정상인데 클라우드 쪽 원료 공급이 끊긴 경우가 있음.
 - 이 루틴은 `privacy: "public"`으로 고정되어 있음 — 사람 검토 없이 바로 공개 게시됨을 전제로 사용자가 명시적으로 선택함(2026-08-30).
+
+## 2026-09-12 — 중복 클라우드 루틴 발견·비활성화 (반복되던 "영상이 비공개로 방치됨" 버그의 진짜 원인)
+27번, 29번 항목이 각각 다른 날 "업로드는 됐는데 계속 비공개"로 방치된 걸 발견해서 조사한 결과, **클라우드에 대기열 등록 루틴이 사실 2개 동시 운영 중**이었음:
+1. `trig_01UW8hcHxM3y3TfRnrobD7ow` "아침 주제 자동 등록" (2026-08-30 생성, 매일 07:00 KST) — `privacy: "public"` 고정.
+2. `trig_01QKkknBvUB57hHT2pebYQcy` "신규 대기열 자동 생성" (2026-09-03 생성, 매일 06:00 KST) — `privacy: "private"` 고정("사용자가 검토 후 직접 공개로 바꿀 것" 전제).
+
+2번은 아마 다른 세션이 1번의 존재를 모르고 새로 만든 것으로 추정(이 프로젝트에서 반복돼온 "두 세션이 서로 모르고 같은 걸 중복 구축" 패턴, 위 두-세션 폴더 중복 사례 참고). 2026-09-08부터 매일 두 루틴이 각각 하나씩, 총 2개 항목이 등록되고 있었음(홀수 번호=비공개용 루틴, 짝수 번호=공개용 루틴으로 번갈아 생성된 걸로 역추적 확인). **결정적 문제**: `run_queue.py`는 meta.json의 `privacy` 값을 검토 없이 그대로 써서 업로드하기 때문에, 2번 루틴이 기대한 "비공개로 만들어두면 사람이 검토 후 공개 전환" 흐름이 실제로는 전혀 작동하지 않고, 그냥 비공개로 영구 방치되는 영상만 계속 생겼음.
+
+**조치(2026-09-12)**: 2번 루틴(`trig_01QKkknBvUB57hHT2pebYQcy`)을 사용자 확인 후 비활성화. 27번·29번 영상은 실제 유튜브에서 공개로 전환 완료. 이제 1번 루틴만 남아 매일 1개씩, 공개 상태로 정상 등록됨.
+- **앞으로 확인할 것**: 새 세션에서 "오늘 것도 처리됐나" 확인할 때, 로컬 done.txt/git 로그뿐 아니라 **실제 유튜브 API로 privacy 상태까지 직접 조회**할 것 — meta.json이나 로컬 기록만 보면 이런 종류의 문제를 놓침(이번에도 그렇게 발견함). `RemoteTrigger action:"list"`로 활성 루틴 전체를 가끔 점검해서 이런 중복이 또 생기지 않았는지 볼 것.
+
+## 2026-09-12 — 썸네일/자막/음성 품질 피드백 3건 추가 반영
+- **썸네일이 이상함(조회수 저조 원인으로 지목)**: 코드 어디에도 `thumbnails().set()` 호출이 없어서, 유튜브가 영상 중간 아무 프레임(주로 broll 통계 카드 + 자막이 중간에 끊긴 조각 문장)을 자동으로 골라 썸네일로 써왔음 — 실제로 최근 영상 3개를 다운받아 확인해서 확인함. **조치**: `youtube_upload.py`의 `upload()`가 이제 `--thumbnail` 인자를 받아 업로드 직후 `youtube.thumbnails().set()`을 호출함. `run_queue.py`는 오프닝 훅 첫 프레임(`platform/_hook_work/yt_hook_0.png` — 이미 파이프라인이 만들어두는, 임팩트 있는 헤드라인 카드)을 그 인자로 넘김. 오늘 영상(29번, `9dgEEj0AYZI`)에 실제로 적용해서 썸네일 교체 확인함. 과거 영상은 이 컴퓨터에 렌더 폴더가 남아있는 것만 소급 적용 가능(대부분 노트북에서 처리돼 렌더 폴더가 없음) — 필요하면 사용자가 지정하는 영상만 개별 소급 처리할 것.
+- **자막이 너무 짧게 끊김**: `make_short.py`의 `group_words()`가 한 화면에 14자/2.2초만 담아서 자막이 너무 자주(거의 1~2초마다) 바뀌었음 — 사용자 피드백으로 26자/4.0초로 완화(대략 2문장 분량). 문장이 워낙 다양한 길이라 "정확히 2문장" 규칙 대신 여유 있는 글자수/시간 상한으로 구현함.
+- **긴 문장에서 음성이 깨짐(2026-09-06에 이어 재발 보고)**: 원인을 더 파봄 — Supertonic 3 합성 호출이 문장 하나를 통째로(최대 120자) 한 번에 처리하는데, 한국어 복문(쉼표로 절이 여러 개 이어지는 문장)이 이 한계에 가까울수록 뒷부분에서 품질이 떨어지는 것으로 추정. `vendor/supertonic_clone/helper.py`의 `chunk_text()`에 `_split_long_sentence()`를 추가해서 쉼표 경계로 강제 분할하고, `narrate.py`의 `max_len`도 120→70으로 낮춤(위 "복제 목소리" 섹션 주의 5 참고, 노트북에도 수동 반영 필요). 테스트 문장(109자 복문)으로 실제 분할 확인함 — 이전엔 통째로 한 번에 합성되던 게 이제 쉼표 지점에서 2개 청크로 나뉨. **다만 실제로 "깨지는" 소리 자체를 직접 들어본 것은 아니라서(파일 분석상 클리핑/불연속은 못 찾음), 이 조치로 완전히 해결됐는지는 다음에 나오는 영상들로 계속 확인 필요.**
 
 ## 2026-09-06 — 깃허브 인증 문제 근본 해결 + 영상 품질 피드백 3건 반영
 - **`git push`가 계속 인증 팝업/행(hang) 걸리던 문제 드디어 해결**: 원인은 저장된 GitHub 토큰이 화면에 별표(•)로 가려진 걸 실수로 복사해서 저장해뒀던 가짜 값이었음(여러 세션에 걸쳐 방치돼 있었음). 새 fine-grained 토큰(`shorts-auto-` 저장소 전용, Contents: Read/write, 만료 없음)을 발급받아 `credentials/github_shorts_auto_token.txt`와 git remote URL 갱신 → 이후 push가 즉시 성공(더 이상 행 안 걸림).

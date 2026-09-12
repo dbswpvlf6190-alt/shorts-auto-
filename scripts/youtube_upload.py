@@ -42,7 +42,7 @@ def get_credentials():
     return creds
 
 
-def upload(video_path, title, description, privacy="private", made_for_kids=False, tags=None):
+def upload(video_path, title, description, privacy="private", made_for_kids=False, tags=None, thumbnail=None):
     creds = get_credentials()
     youtube = build("youtube", "v3", credentials=creds)
 
@@ -70,6 +70,17 @@ def upload(video_path, title, description, privacy="private", made_for_kids=Fals
 
     video_id = response["id"]
     print(f"완료: https://youtube.com/shorts/{video_id}")
+
+    # 썸네일을 안 정해주면 유튜브가 영상 중간 아무 프레임(대개 자막 문장이 중간에 끊긴 broll
+    # 카드)을 자동으로 골라서 썸네일이 이상하게 나옴(2026-09-12 사용자 피드백으로 발견) —
+    # 오프닝 훅 프레임(가장 임팩트 있는 첫 문구 카드)을 명시적으로 지정.
+    if thumbnail and os.path.exists(thumbnail):
+        try:
+            youtube.thumbnails().set(videoId=video_id, media_body=MediaFileUpload(thumbnail)).execute()
+            print(f"  썸네일 설정 완료: {thumbnail}")
+        except Exception as e:
+            print(f"  썸네일 설정 실패(건너뜀): {e}")
+
     return video_id
 
 
@@ -80,10 +91,11 @@ def main():
     ap.add_argument("--description", required=True)
     ap.add_argument("--privacy", default="private", choices=["private", "unlisted", "public"])
     ap.add_argument("--tags", default="")
+    ap.add_argument("--thumbnail", default=None)
     args = ap.parse_args()
 
     tags = [t.strip() for t in args.tags.split(",") if t.strip()]
-    upload(args.video, args.title, args.description, args.privacy, tags=tags)
+    upload(args.video, args.title, args.description, args.privacy, tags=tags, thumbnail=args.thumbnail)
 
 
 if __name__ == "__main__":

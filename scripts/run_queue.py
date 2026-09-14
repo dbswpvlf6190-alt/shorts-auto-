@@ -135,6 +135,23 @@ def release_lock(item_dir):
     git_commit_push([rel_lock_path], f"unlock: {os.path.basename(item_dir)}")
 
 
+def extract_closing_question(script_path):
+    """script.txt의 마지막 문장(대본 작성 규칙상 항상 댓글유도질문으로 끝남)을 뽑아 엔딩
+    CTA에 그대로 재사용한다. 예전엔 CTA가 모든 영상에서 토씨 하나 안 틀리고 똑같은 문구로
+    끝나서(완주율 72.5%인데 구독전환 0에 가까운 원인 중 하나로 진단됨, 2026-09-14) 시청자가
+    무시했을 가능성이 컸다. 추출 실패 시 None을 반환해 make_platform_variants.py의 기본
+    문구로 폴백한다."""
+    try:
+        with open(script_path, "r", encoding="utf-8") as f:
+            text = f.read().strip()
+        sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
+        if sentences:
+            return sentences[-1]
+    except OSError:
+        pass
+    return None
+
+
 def process_item(item_dir):
     name = os.path.basename(item_dir)
     meta_path = os.path.join(item_dir, "meta.json")
@@ -172,6 +189,7 @@ def process_item(item_dir):
         ])
 
         platform_dir = os.path.join(render_dir, "platform")
+        closing_question = extract_closing_question(script_path)
         run([
             sys.executable, os.path.join(BASE_DIR, "scripts", "make_platform_variants.py"),
             "--base-video", base_video,
@@ -180,7 +198,8 @@ def process_item(item_dir):
             "--out-dir", platform_dir,
             "--voice", meta.get("voice", "cloned"),
             "--rate", meta.get("rate", "+30%"),
-        ] + (["--next-teaser", meta["next_teaser"]] if meta.get("next_teaser") else []))
+        ] + (["--next-teaser", meta["next_teaser"]] if meta.get("next_teaser") else [])
+          + (["--closing-question", closing_question] if closing_question else []))
 
         yt_video = os.path.join(platform_dir, "youtube.mp4")
         yt_thumbnail = os.path.join(platform_dir, "_hook_work", "yt_hook_0.png")

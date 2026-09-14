@@ -224,13 +224,20 @@ def prepend_hook(hook_name, base_path, out_path, work_dir, voice_audio, punch_ti
 # 동시에 문장 길이를 줄여 완료율(50%+ 필요)을 지키는 것도 목표.
 
 DEFAULT_NEXT_TEASER = "내일도 놓치면 손해인 정책 하나 풀어드립니다"
-DEFAULT_OUTRO_MAIN = "댓글로 알려주세요"
+DEFAULT_CLOSING_QUESTION = "여러분은 해당되시나요?"
+
+# 2026-09-14: 완주율(72.5%, 상위권은 100~500%대 반복재생)은 이미 잘 나오는데 구독·댓글
+# 전환이 거의 0이었던 이유를 분석해보니, 모든 영상이 토씨 하나 안 틀리고 똑같은 이 문구로
+# 끝나고 있었음 — 시청자가 "또 저 말이네" 하고 무시했을 가능성이 큼. script.txt는 이미
+# 영상마다 다른 댓글유도질문으로 끝나도록 만들어지고 있었는데(대본 규칙), 그 질문을 본문
+# 안에서만 한 번 스치듯 말하고 정작 마지막 CTA 카드에는 재활용을 안 하고 있었다. 이제
+# run_queue.py가 그 질문을 뽑아서 넘겨주면 CTA에도 그대로 반영한다.
 
 
-def synth_outro_audio(work_dir, voice, rate, next_teaser):
+def synth_outro_audio(work_dir, voice, rate, next_teaser, closing_question=DEFAULT_CLOSING_QUESTION):
     """엔딩 CTA의 음성/자막은 플랫폼 공통이라 한 번만 합성해서 두 플랫폼 렌더에 재사용한다."""
     os.makedirs(work_dir, exist_ok=True)
-    outro_text = f"여러분은 해당되시나요? 댓글로 알려주세요. {next_teaser}"
+    outro_text = f"{closing_question} 댓글로 알려주세요. {next_teaser}"
     audio_path = os.path.join(work_dir, voice_audio_name("outro_voice", voice))
     words = synth_voice(outro_text, voice, rate, work_dir, audio_path)
     ass_path = os.path.join(work_dir, "outro_captions.ass")
@@ -240,7 +247,7 @@ def synth_outro_audio(work_dir, voice, rate, next_teaser):
 
 
 def build_outro(work_dir, out_path, audio_path, ass_path, duration, next_teaser=DEFAULT_NEXT_TEASER,
-                 main_text=DEFAULT_OUTRO_MAIN, button_text="+ 팔로우"):
+                 main_text=DEFAULT_CLOSING_QUESTION, button_text="+ 팔로우"):
     """엔딩 CTA 영상. button_text는 플랫폼별로 달라야 한다 — 예전엔 유튜브 영상에도
     "+ 팔로우"가 찍혀 나갔는데, 유튜브에는 팔로우가 아니라 구독 개념이라 맞지 않는
     문구였다(2026-09-14 발견, 240개 영상 전부 해당). 이제 호출부(main)에서 유튜브용은
@@ -298,24 +305,28 @@ def main():
     ap.add_argument("--voice", default="cloned")
     ap.add_argument("--rate", default="+30%")
     ap.add_argument("--next-teaser", default=DEFAULT_NEXT_TEASER, help="엔딩 CTA에 넣을 다음편 예고 문구")
+    ap.add_argument("--closing-question", default=DEFAULT_CLOSING_QUESTION,
+                     help="엔딩 CTA에 넣을 영상별 댓글유도질문(script.txt 마지막 문장) — "
+                          "안 넘기면 모든 영상이 똑같은 문구로 끝나서 시청자가 무시하게 됨")
     args = ap.parse_args()
 
     work_dir = args.work or os.path.join(args.out_dir, "_hook_work")
     os.makedirs(work_dir, exist_ok=True)
     os.makedirs(args.out_dir, exist_ok=True)
 
-    print("0/3 엔딩 CTA(구독/팔로우 + 댓글 유도) 생성 중...")
-    audio_path, ass_path, duration = synth_outro_audio(work_dir, args.voice, args.rate, args.next_teaser)
+    print("0/3 엔딩 CTA(구독/팔로우 + 영상별 댓글 유도질문) 생성 중...")
+    audio_path, ass_path, duration = synth_outro_audio(
+        work_dir, args.voice, args.rate, args.next_teaser, closing_question=args.closing_question)
 
     outro_yt = os.path.join(args.out_dir, "outro_youtube.mp4")
     build_outro(work_dir, outro_yt, audio_path, ass_path, duration,
-                next_teaser=args.next_teaser, button_text="+ 구독")
+                next_teaser=args.next_teaser, main_text=args.closing_question, button_text="+ 구독")
     base_with_outro_yt = os.path.join(args.out_dir, "base_with_outro_youtube.mp4")
     append_outro(args.base_video, outro_yt, base_with_outro_yt, work_dir)
 
     outro_tt = os.path.join(args.out_dir, "outro_tiktok.mp4")
     build_outro(work_dir, outro_tt, audio_path, ass_path, duration,
-                next_teaser=args.next_teaser, button_text="+ 팔로우")
+                next_teaser=args.next_teaser, main_text=args.closing_question, button_text="+ 팔로우")
     base_with_outro_tt = os.path.join(args.out_dir, "base_with_outro_tiktok.mp4")
     append_outro(args.base_video, outro_tt, base_with_outro_tt, work_dir)
 

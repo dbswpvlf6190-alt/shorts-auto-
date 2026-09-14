@@ -227,22 +227,31 @@ DEFAULT_NEXT_TEASER = "내일도 놓치면 손해인 정책 하나 풀어드립�
 DEFAULT_OUTRO_MAIN = "댓글로 알려주세요"
 
 
-def build_outro(work_dir, out_path, voice, rate, next_teaser=DEFAULT_NEXT_TEASER,
-                 main_text=DEFAULT_OUTRO_MAIN):
+def synth_outro_audio(work_dir, voice, rate, next_teaser):
+    """엔딩 CTA의 음성/자막은 플랫폼 공통이라 한 번만 합성해서 두 플랫폼 렌더에 재사용한다."""
     os.makedirs(work_dir, exist_ok=True)
     outro_text = f"여러분은 해당되시나요? 댓글로 알려주세요. {next_teaser}"
-    sub_text = next_teaser
     audio_path = os.path.join(work_dir, voice_audio_name("outro_voice", voice))
     words = synth_voice(outro_text, voice, rate, work_dir, audio_path)
-
     ass_path = os.path.join(work_dir, "outro_captions.ass")
     base.write_ass(words, ass_path)
     duration = base.get_duration(audio_path)
+    return audio_path, ass_path, duration
 
-    cta_img = os.path.join(work_dir, "cta_card.png")
-    gfx.cta_card(main_text, sub_text, kicker_text="구독 안내", out=cta_img)
 
-    bg_clip = os.path.join(work_dir, "outro_bg.mp4")
+def build_outro(work_dir, out_path, audio_path, ass_path, duration, next_teaser=DEFAULT_NEXT_TEASER,
+                 main_text=DEFAULT_OUTRO_MAIN, button_text="+ 팔로우"):
+    """엔딩 CTA 영상. button_text는 플랫폼별로 달라야 한다 — 예전엔 유튜브 영상에도
+    "+ 팔로우"가 찍혀 나갔는데, 유튜브에는 팔로우가 아니라 구독 개념이라 맞지 않는
+    문구였다(2026-09-14 발견, 240개 영상 전부 해당). 이제 호출부(main)에서 유튜브용은
+    "+ 구독", 틱톡/인스타용은 "+ 팔로우"로 각각 한 번씩 렌더한다."""
+    sub_text = next_teaser
+    tag = "sub" if button_text == "+ 구독" else "follow"
+
+    cta_img = os.path.join(work_dir, f"cta_card_{tag}.png")
+    gfx.cta_card(main_text, sub_text, button_text=button_text, kicker_text="구독 안내", out=cta_img)
+
+    bg_clip = os.path.join(work_dir, f"outro_bg_{tag}.mp4")
     base.build_image_clip(cta_img, bg_clip, duration)
 
     ass_escaped = ass_path.replace("\\", "/").replace(":", "\\:")
@@ -295,11 +304,20 @@ def main():
     os.makedirs(work_dir, exist_ok=True)
     os.makedirs(args.out_dir, exist_ok=True)
 
-    print("0/3 엔딩 CTA(팔로우/댓글 유도) 생성 중...")
-    outro_video = os.path.join(args.out_dir, "outro.mp4")
-    build_outro(work_dir, outro_video, args.voice, args.rate, next_teaser=args.next_teaser)
-    base_with_outro = os.path.join(args.out_dir, "base_with_outro.mp4")
-    append_outro(args.base_video, outro_video, base_with_outro, work_dir)
+    print("0/3 엔딩 CTA(구독/팔로우 + 댓글 유도) 생성 중...")
+    audio_path, ass_path, duration = synth_outro_audio(work_dir, args.voice, args.rate, args.next_teaser)
+
+    outro_yt = os.path.join(args.out_dir, "outro_youtube.mp4")
+    build_outro(work_dir, outro_yt, audio_path, ass_path, duration,
+                next_teaser=args.next_teaser, button_text="+ 구독")
+    base_with_outro_yt = os.path.join(args.out_dir, "base_with_outro_youtube.mp4")
+    append_outro(args.base_video, outro_yt, base_with_outro_yt, work_dir)
+
+    outro_tt = os.path.join(args.out_dir, "outro_tiktok.mp4")
+    build_outro(work_dir, outro_tt, audio_path, ass_path, duration,
+                next_teaser=args.next_teaser, button_text="+ 팔로우")
+    base_with_outro_tt = os.path.join(args.out_dir, "base_with_outro_tiktok.mp4")
+    append_outro(args.base_video, outro_tt, base_with_outro_tt, work_dir)
 
     logo_path = os.path.join(work_dir, "logo.png")
     gfx.make_logo_badge(logo_path)
@@ -309,7 +327,7 @@ def main():
     print("1/3 유튜브 훅(음성 내레이션 동기화) 생성 중...")
     yt_voice, _ = build_yt_hook(yt_lines, work_dir, "yt_hook.mp4", args.voice, args.rate)
     yt_raw = os.path.join(args.out_dir, "youtube_raw.mp4")
-    prepend_hook("yt_hook.mp4", base_with_outro, yt_raw, work_dir, voice_audio=yt_voice, punch_time=0.18)
+    prepend_hook("yt_hook.mp4", base_with_outro_yt, yt_raw, work_dir, voice_audio=yt_voice, punch_time=0.18)
     yt_out = os.path.join(args.out_dir, "youtube.mp4")
     apply_logo_overlay(yt_raw, logo_path, yt_out)
     print(f"   -> {yt_out}")
@@ -317,7 +335,7 @@ def main():
     print("2/3 틱톡 훅(음성 내레이션 동기화) 생성 중...")
     tt_voice, _ = build_tiktok_hook(args.tiktok_hook_text, work_dir, "tt_hook.mp4", args.voice, args.rate)
     tt_raw = os.path.join(args.out_dir, "tiktok_raw.mp4")
-    prepend_hook("tt_hook.mp4", base_with_outro, tt_raw, work_dir, voice_audio=tt_voice, punch_time=0.22)
+    prepend_hook("tt_hook.mp4", base_with_outro_tt, tt_raw, work_dir, voice_audio=tt_voice, punch_time=0.22)
     tt_out = os.path.join(args.out_dir, "tiktok.mp4")
     apply_logo_overlay(tt_raw, logo_path, tt_out)
     print(f"3/3 -> {tt_out}")

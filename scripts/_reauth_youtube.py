@@ -12,10 +12,13 @@ TOKEN_PATH = os.path.join(BASE_DIR, "credentials", "token.json")
 
 # 기존 토큰(youtube.upload + youtube.readonly)엔 videos().update() 권한이 없어서
 # 비공개→공개 전환을 프로그램으로 못 했음(2026-09-10). 전체 관리 스코프를 추가해 재인증.
+# 2026-09-14: 완주율/평균 시청시간 등 Analytics 데이터를 직접 조회하려고 yt-analytics
+# 스코프도 추가.
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube.readonly",
     "https://www.googleapis.com/auth/youtube",
+    "https://www.googleapis.com/auth/yt-analytics.readonly",
 ]
 
 if not os.path.exists(CLIENT_SECRET_PATH):

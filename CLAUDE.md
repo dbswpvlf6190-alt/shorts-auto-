@@ -227,6 +227,29 @@ Claude Code의 대화 세션·auto-memory는 각 컴퓨터의 로컬 사용자 �
   3. 자막의 검은 배경 박스 + 노란색 카라오케 하이라이트가 별로라는 피드백 → ASS 스타일을 `BorderStyle: 1`(박스 없이 외곽선+그림자)로 바꾸고, 단어별 색깔 애니메이션 없이 흰색 고정 텍스트로 변경.
   4. (미해결) 특정 문장(길고 복잡한 질문형)에서 복제 목소리가 깨지는 현상 발견 — 파일 자체엔 클리핑/조기절단 없음, 모델 자체의 한계로 추정. 유료 전환(ElevenLabs) 제안했으나 사용자가 현재 상태 유지하기로 결정(2026-09-06).
 
+## 2026-09-16/17 — 인스타그램 게시 이틀 연속 실패, 근본 원인: GCM 인증 프롬프트 무한 대기 + 공유 토큰 만료 (⚠️ 데스크톱에서 추가 조치 필요)
+**증상**: 34번(경매고가양극화), 35번(종부세공동명의특례) 둘 다 유튜브는 정상 업로드됐는데 인스타그램 게시만 조용히 실패. `queue_log.txt`에 `git 명령 실패: git push`만 남고 실제 원인(stdout/stderr)이 비어있었음 — 게다가 34번은 첫 시도가 09:48~12:18(3시간 넘게) 그냥 멈춰있다가 스케줄러 다음 반복에서야 재시도됨.
+
+**근본 원인 (2단계)**:
+1. `publish_instagram.py`가 인스타 영상 호스팅용 `media_host`(`shorts-media-host` 저장소)에 push할 때 쓰는 토큰이, saju-app과 **공유하던 fine-grained PAT**(`github_pat_11CLUCWEA0xOvcoHuYoLKW_...`)였는데 이게 만료/폐기됨(GitHub API로 401 직접 확인). 이 저장소는 Git Credential Manager(GCM) 캐시로 몰래 땜빵되던 게 전혀 없어서, 만료된 토큰으로 인증 실패 → GCM이 **데스크톱 세션 없는 Task Scheduler 환경에서 응답 없는 인증창을 띄우려다 그대로 멈춤**(1~4시간, 심지어 saju-app 쪽 릴스는 22시간+).
+2. `publish_instagram.py`/`run_queue.py`의 subprocess 호출에 `sys.stderr`가 utf-8로 재설정 안 돼 있어서, 죽을 때 에러 메시지가 mojibake(`git ???? ????`)로 로그에 남아 원인 파악이 늦어짐.
+
+**조치 (코드, 완료·push됨)**:
+- `run_queue.py`의 `git()`, `publish_instagram.py`의 `run()` — 모든 git subprocess 호출에 `GIT_TERMINAL_PROMPT=0` + `GCM_INTERACTIVE=Never` env, `timeout=120` 추가. 앞으로 인증 문제가 또 생겨도 몇 시간 멈추는 대신 **2분 안에 빠르게 실패**하고 다음 스케줄러 반복이 이어받음.
+- `publish_instagram.py` 맨 위에 `sys.stderr.reconfigure(encoding="utf-8")` 추가 — 에러 로그 mojibake 방지.
+
+**조치 (토큰 교체, ⚠️ 이 컴퓨터에서만 완료 — 데스크톱은 아직 예전 만료 토큰 그대로임)**:
+새 fine-grained PAT 발급함(2026-09-17, 이름 "media-host-and-saju-app-write", 대상 저장소: `saju-app`/`saju-media-host`/`shorts-media-host` 3개, Contents: Read and write, 만료 없음). 이 컴퓨터에서 아래 반영 완료:
+- `C:\shorts_auto\credentials\github_token.txt` — 새 토큰으로 교체
+- `~\ShortsAutoRender\media_host\.git\config`의 origin remote — 새 토큰으로 교체
+- `C:\saju-app\credentials\github_token.txt`, saju-app 메인 저장소 remote, `~\SajuAutoRender\media_host\.git\config` remote도 같이 교체함(saju-app CLAUDE.md/OPS_NOTES 참고)
+
+**`credentials/`는 `.gitignore` 대상이라 이 교체는 git으로 안 넘어감 — 데스크톱 컴퓨터에서 다음에 작업할 때 반드시 위 파일들을 새 토큰으로 수동 교체할 것.** 토큰 값 자체는 보안상 여기 안 적음 — 사용자에게 직접 물어보거나(이미 알고 있음), 안 되면 GitHub Settings → Developer settings → Fine-grained tokens에서 "media-host-and-saju-app-write" 토큰이 있는지 확인(단, 토큰 값은 발급 시점에만 보이고 재조회 불가 — 잃어버렸으면 재발급 필요).
+
+**부수 발견**: saju-app 메인 저장소(락/언락 자동화)도 이 죽은 토큰을 쓰고 있었는데, GCM 캐시가 우연히 계속 버텨줘서 티가 안 났던 것 — 새 토큰 교체로 이 잠재 위험도 같이 해소됨.
+
+**캐치업 완료**: 34/35번 인스타그램 게시는 `instagram_upload.upload_reel()`을 이미 push된 영상 URL로 직접 호출해서 수동 완료함(media_id 확인됨). 유튜브는 원래부터 영향 없었음(비동기·별도 인증 경로).
+
 ## 최근 변경 이력
 - 2026-08-15: 파이프라인 최초 구축, 유튜브 완전자동, 인스타그램 완전자동, 대기열 방식 확정
 - 2026-08-17: 그래픽/오프닝훅/엔딩CTA/로고 오버레이 전면 개선(어지러운 줌 전환 → 크로스페이드, 무음 훅 → 임팩트 사운드, 팔로우/댓글 유도 CTA 추가), 인스타그램 한글 파일명 버그 수정
@@ -234,4 +257,5 @@ Claude Code의 대화 세션·auto-memory는 각 컴퓨터의 로컬 사용자 �
 - 2026-08-22: 노트북 최초 세팅(Python/ffmpeg/패키지 설치), 요일별 컴퓨터 분리(평일 노트북/주말 데스크톱) 확정 및 양쪽 스케줄러 등록, 노트북에서 유튜브 업로드 실사용 테스트 성공(08_명도소송, public). 인스타그램 6일 연속 실패 원인 조사 — OneDrive 용량 부족이 근본 원인으로 드러나 **OneDrive 동기화 전면 중단** → `C:\shorts_auto`로 이전, 렌더링 결과물/media_host를 `~\ShortsAutoRender\`로 분리. 컴퓨터 간 동기화는 USB 수동 복사를 거쳐 최종적으로 **git + GitHub 비공개 저장소**로 전환 (노트북·데스크톱 둘 다 clone/설정 완료, `run_queue.py`의 git 기반 상호배제 락도 이제 실제로 작동). 데스크톱의 대규모 변경사항(오프닝 훅 TTS화, CTA 개편, 네이버 블로그 도구 4종, 자막/폰트 버그 수정 2건)도 반영 완료. 폴더 구조 정리(`docs/`, `input/backlog/` 신설).
 - 2026-08-29~30: 유튜브 토큰 재차 만료 → 재인증(패턴 반복 확인, 7일 주기 그대로). 채널 SEO 개선(빈 키워드 채움, 소개글을 부동산 브랜드에 맞게 재작성), 재생목록 5개 신설(부동산 정책·세금/대출·금리/전세·전세사기/경매 노하우·실전/돈 버는 마인드셋) + 220개 중 193개 배정(나머지는 API 일일 할당량으로 다음날 마저 진행 필요). 첫 정식 주간 리뷰 실시 — 2주간 구독자가 199→200명으로 거의 정체된 것을 확인, "영상량보다 구독전환이 병목"이라는 결론.
 - 2026-08-30: **복제 목소리 도입, 이제 기본값** — 무료 오픈소스(Supertonic 3 + 커뮤니티 학습 스크립트)로 사용자 목소리 샘플을 학습시켜 `assets/cloned_voice_style.json` 생성, `make_short.py`/`make_platform_variants.py`/`run_queue.py`의 `--voice` 기본값을 "cloned"로 변경(edge-tts는 이제 명시적으로 지정할 때만 씀). ElevenLabs(유료 $5/월)도 검토했으나 무료 방식으로 먼저 검증하기로 함. **알려진 한계**: 복제 결과가 여성 목소리로 나옴(원 목소리 성별과 다름, 무료 방식의 한계로 파악) — 사용자가 확인 후 "이 정도면 만족"하고 그대로 채택. 실제 파이프라인 통합 테스트(자막 동기화 포함) 성공. 노트북에는 `vendor/`가 gitignore 대상이라 별도 설치 필요 — 위 "복제 목소리" 섹션 참고.
+- 2026-09-17: **인스타그램 게시 이틀 연속 실패 원인 규명·수정** — GCM 인증 프롬프트 무한 대기 + saju-app과 공유하던 media_host 토큰 만료가 원인. git 호출에 타임아웃/프롬프트 차단 추가, 새 fine-grained PAT 발급해 3개 저장소(saju-app/saju-media-host/shorts-media-host)에 반영. **데스크톱 컴퓨터의 `credentials/github_token.txt`는 아직 안 바뀌어 있음 — 위 상세 섹션 참고해서 다음 데스크톱 작업 시 꼭 교체할 것.**
 - 2026-08-24(월): **유튜브 토큰 만료로 자동 실행 실패 발생, 실제로 겪음** — 이날 저녁 노트북 스케줄러가 (로그인 늦어져서 지연 실행) `09_선순위임차인` 처리 중 `google.auth.exceptions.RefreshError: invalid_grant: Token has been expired or revoked`로 크래시. `youtube_upload.py`의 `get_credentials()`는 refresh 실패 시 인터랙티브 로그인으로 자동 전환하지 않고 그냥 예외를 던지는 구조라(의도된 설계 — 무인 실행 중 브라우저 뜨는 채로 멈추는 것보다 명확히 실패하는 게 나음), 사람이 직접 재인증해야 했음. `credentials/token.json`을 지우고 `youtube_upload.py`를 직접 실행해서 브라우저로 재인증 → 이미 렌더링된 영상(`~\ShortsAutoRender\queue_render\09_선순위임차인\platform\`)으로 유튜브 업로드, 인스타그램 게시, 배송 폴더 정리, `done.txt` 기록까지 수동으로 이어서 완료. **교훈**: 7일 재인증 주기를 사람이 능동적으로 챙기지 않으면 이렇게 큐가 막힘 — 새 세션에서 큐 실패를 발견하면 `output/queue_log.txt`에서 `RefreshError`/`invalid_grant` 여부부터 확인할 것.

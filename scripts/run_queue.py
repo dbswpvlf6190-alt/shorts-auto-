@@ -68,7 +68,19 @@ def run(cmd):
 
 
 def git(args):
-    return subprocess.run(["git"] + args, cwd=BASE_DIR, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    # publish_instagram.py에서 GCM(Git Credential Manager)이 데스크톱 세션 없이 응답 없는
+    # 인증창을 띄우려다 몇 시간씩 멈추는 문제를 실제로 겪었음(2026-09-16/17) — 이 저장소의
+    # git 호출도 같은 방식(URL에 토큰 내장)이라 동일 위험이 있어 예방적으로 동일하게 방어.
+    # timeout이 나도 기존 호출부들이 기대하는 "returncode 있는 결과 객체" 계약은 유지한다
+    # (그래야 git_pull 등 기존의 "실패해도 무시하고 계속" 로직이 그대로 작동함).
+    env = {**os.environ, "GIT_TERMINAL_PROMPT": "0", "GCM_INTERACTIVE": "Never"}
+    try:
+        return subprocess.run(
+            ["git"] + args, cwd=BASE_DIR, capture_output=True, text=True, encoding="utf-8", errors="replace",
+            env=env, timeout=120,
+        )
+    except subprocess.TimeoutExpired:
+        return subprocess.CompletedProcess(args, returncode=124, stdout="", stderr="git 명령이 120초 내에 끝나지 않아 중단함 (인증 프롬프트 등에서 멈췄을 가능성)")
 
 
 def git_pull():

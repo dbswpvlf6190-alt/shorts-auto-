@@ -215,15 +215,32 @@ def process_item(item_dir):
 
         yt_video = os.path.join(platform_dir, "youtube.mp4")
         yt_thumbnail = os.path.join(platform_dir, "_hook_work", "yt_hook_0.png")
-        run([
-            sys.executable, os.path.join(BASE_DIR, "scripts", "youtube_upload.py"),
-            "--video", yt_video,
-            "--title", meta["youtube_title"],
-            "--description", meta["youtube_description"],
-            "--privacy", meta.get("privacy", "private"),
-            "--tags", meta.get("tags", ""),
-            "--thumbnail", yt_thumbnail,
-        ])
+        yt_marker = os.path.join(item_dir, "youtube_uploaded.txt")
+        if os.path.exists(yt_marker):
+            # 2026-09-18: 34번이 유튜브 중복 업로드된 사고 재발 방지. 원인은 인스타그램 단계에서
+            # GCM 인증창이 응답 없이 멈춰서(구 버전 코드, 지금은 타임아웃 있음) 스케줄러가 프로세스를
+            # 강제 재시작했는데, done.txt가 없으니 유튜브 업로드까지 처음부터 다시 실행됐던 것.
+            # 이 마커는 git으로 커밋되어(아래) 어느 컴퓨터가 재시도하든 "이미 올렸음"을 알 수 있다.
+            with open(yt_marker, "r", encoding="utf-8") as f:
+                log(f"  유튜브는 이전 시도에서 이미 업로드됨, 건너뜀: {f.read().strip()}")
+        else:
+            out = run([
+                sys.executable, os.path.join(BASE_DIR, "scripts", "youtube_upload.py"),
+                "--video", yt_video,
+                "--title", meta["youtube_title"],
+                "--description", meta["youtube_description"],
+                "--privacy", meta.get("privacy", "private"),
+                "--tags", meta.get("tags", ""),
+                "--thumbnail", yt_thumbnail,
+            ])
+            match = re.search(r"https://youtube\.com/shorts/(\S+)", out)
+            video_id = match.group(1) if match else "unknown"
+            with open(yt_marker, "w", encoding="utf-8") as f:
+                f.write(f"{video_id} {datetime.now().isoformat()}")
+            git_commit_push(
+                [os.path.relpath(yt_marker, BASE_DIR)],
+                f"mark: {name} 유튜브 업로드 완료 ({video_id})",
+            )
 
         date_str = datetime.now().strftime("%Y-%m-%d")
         weekday_kr = ["월", "화", "수", "목", "금", "토", "일"][datetime.now().weekday()]

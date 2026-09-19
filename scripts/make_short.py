@@ -19,7 +19,10 @@ W, H = 1080, 1920
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SUPERTONIC_DIR = os.path.join(BASE_DIR, "vendor", "supertonic_clone")
 SUPERTONIC_PYTHON = os.path.join(SUPERTONIC_DIR, "venv", "Scripts", "python.exe")
-CLONED_VOICE_STYLE = os.path.join(BASE_DIR, "assets", "cloned_voice_style.json")
+# 2026-09-19: 복제 목소리(cloned_voice_style.json)는 발음이 흐려서 사용자가 Supertonic 기본 음성 M3로
+# 교체 확정. "--voice cloned"라는 이름은 meta.json/클라우드 루틴 호환 때문에 그대로 두고 가리키는 파일만 바꿈.
+# 예전 복제 스타일은 assets/cloned_voice_style.json에 남겨둠(되돌리려면 이 경로만 바꾸면 됨).
+CLONED_VOICE_STYLE = os.path.join(BASE_DIR, "assets", "voice_style_M3.json")
 
 
 def fmt_ts(t):

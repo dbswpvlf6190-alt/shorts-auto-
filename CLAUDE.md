@@ -6,6 +6,13 @@
 
 Claude Code의 대화 세션·auto-memory는 각 컴퓨터의 로컬 사용자 프로필(`~/.claude/`)에 저장되고 컴퓨터 간 동기화되지 않으므로, 새 컴퓨터/새 세션에서는 이 파일(git으로 pull된 최신 사본)이 유일한 맥락 소스입니다. 작업하면서 알게 된 중요한 결정/제약은 이 파일에 계속 업데이트하고 **push까지 할 것**.
 
+## ⚠️ 2026-09-19 목소리 교체: 복제 목소리 → Supertonic 기본 음성 M3 (아래 "복제 목소리" 섹션은 엔진 설치 안내로만 유효)
+복제 목소리는 발음이 흐리고 소리가 깨진다는 사용자 피드백이 반복돼(9/6, 9/12, 9/13, 9/19 "너무 엉망") 교체함. 무료 후보 8개(edge-tts 3종 + Supertonic 기본 음성 4종 + 복제 기준)를 같은 문장(숫자·긴 합성어 포함)으로 샘플 만들어 보내서 **사용자가 Supertonic M3(남성)를 직접 골랐음**.
+- 바뀐 것: `make_short.py`의 `CLONED_VOICE_STYLE`이 이제 `assets/voice_style_M3.json`(git 추적, `vendor/.../supertonic3/voice_styles/M3.json` 사본)을 가리킴. **`--voice cloned`라는 이름/meta.json/클라우드 루틴 프롬프트는 호환 때문에 그대로**(이름만 옛날 것이고 실제론 M3). 엔진·`narrate.py`·`helper.py` 패치는 그대로라 **노트북은 `git pull`만 하면 됨**(추가 설치 없음).
+- 되돌리기: 그 상수를 `assets/cloned_voice_style.json`으로 바꾸면 옛 복제 목소리로 복귀.
+- 다른 후보(미시도): MeloTTS(MIT), Qwen3-TTS 0.6B(Apache 2.0), CosyVoice2 — 모두 한국어·상업 이용 가능하나 이 CPU 환경 설치가 번거로움. M3도 불만이면 이쪽 검토. edge-tts(InJoon 등)는 발음은 정확하나 비공식 경로라 차단 위험 + "평범한 기계 목소리" 이유로 예전에 폐기했던 것.
+- 샘플 재생성: `output/voice_samples/make_samples.py`.
+
 ## 복제 목소리 (2026-08-30 도입, 기본값으로 전환됨) — 노트북 세팅 필수
 `make_short.py`/`make_platform_variants.py`의 `--voice` 기본값이 이제 **"cloned"**(edge-tts 아님). `run_queue.py`도 `meta.get("voice", "cloned")`로 기본값 변경됨. 즉 **노트북에 아래 세팅이 안 되어 있으면 내일부터 노트북 자동 처리가 실패**한다.
 

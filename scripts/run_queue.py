@@ -15,6 +15,7 @@ LOCK_STALE_HOURS = 3  # 이 시간이 지난 락은 이전 실행이 비정상 �
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE_DIR = os.path.join(BASE_DIR, "input", "queue")
+CLOUDFLARE_CRED = os.path.join(BASE_DIR, "credentials", "cloudflare.json")
 LOG_PATH = os.path.join(BASE_DIR, "output", "queue_log.txt")
 
 # 렌더링 결과물(영상)은 이 git 저장소 밖, 이 컴퓨터 로컬에만 저장한다(용량이 크고 자주 바뀌어 git에 안 맞음).
@@ -183,6 +184,12 @@ def process_item(item_dir):
     is_v2 = bool(meta_peek) and meta_peek.get("format") == "v2" and bool(meta_peek.get("scenes"))
     if not (meta_peek and (is_v2 or (os.path.exists(script_path) and os.path.isdir(images_dir)))):
         log(f"skip {name}: meta.json/script.txt/images 중 누락됨")
+        return "invalid"
+
+    if is_v2 and not os.path.exists(CLOUDFLARE_CRED):
+        # 이미지 키가 없는 컴퓨터(노트북 등)가 v2를 렌더하면 그라데이션 배경뿐인 저품질 영상이 공개 게시됨.
+        # 게시하지 않고 건너뛰어 키가 있는 컴퓨터(또는 키 배치 후)가 처리하게 둔다.
+        log(f"skip {name}: v2 항목인데 이 컴퓨터에 credentials/cloudflare.json 없음 — 이미지 생성 불가로 보류")
         return "invalid"
 
     acquired, holder = try_acquire_lock(item_dir)

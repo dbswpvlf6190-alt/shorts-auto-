@@ -1,0 +1,109 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 지방세법 제20조 · 지방세기본법(기한의 특례)",
+  "youtube_title": "집 사고 60일 넘기면 세금 20% 더 냅니다 #취득세 #취득세신고기한",
+  "youtube_description": "취득세는 집을 취득한 날부터 60일 이내에 신고하고 납부해야 합니다(지방세법 제20조). 기한을 넘기면 무신고가산세 20%가 붙고, 여기에 매일 조금씩 늘어나는 납부지연가산세까지 추가됩니다.\n\n취득일은 잔금을 낸 날과 등기접수일 중 더 빠른 날을 기준으로 봅니다. 신고·납부 기한이 토요일, 일요일, 공휴일과 겹치면 그다음 평일까지 자동으로 연장됩니다(지방세기본법, 기한의 특례).\n\n(영상 속 300만 원·60만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n신고·납부는 위택스나 관할 시군구청 세무과에서 할 수 있습니다.\n\n출처: 지방세법 제20조, 지방세기본법(기한의 특례)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#취득세 #취득세신고기한 #무신고가산세 #부동산세금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "취득세,취득세신고기한,무신고가산세,부동산세금,취득세가산세",
+  "tiktok_caption": "집 사고 60일 넘기면 세금이 20% 더 붙어요 😱 하루 차이로 가산세가 갈려요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 취득세 신고, 며칠 만에 하셨어요? #취득세 #취득세신고기한 #무신고가산세",
+  "instagram_caption": "집 사고 60일 넘기면 세금이 20% 더 붙어요 😱 하루 차이로 가산세가 갈려요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 취득세 신고, 며칠 만에 하셨어요? #취득세 #취득세신고기한 #무신고가산세",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "60일 넘기면 세금 20%?",
+      "caption": "{60일} 넘기면\n[세금 20%]?",
+      "image_prompt": "photorealistic brass house key resting on a stack of papers on a dark wooden desk, dramatic warm side light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 취득일로부터 60일 안에 신고하고 납부해야 해요.",
+      "caption": "결론\n취득일부터 {60일} 안에\n신고·납부",
+      "image_prompt": "photorealistic Korean apartment complex exterior on a clear bright day, tall residential towers, blue sky, high detail, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "하루만 넘겨도 무신고가산세 20%가 붙어요.",
+      "caption": "기한을 넘기면",
+      "big": "+20%",
+      "badge": "무신고가산세"
+    },
+    {
+      "kind": "big",
+      "voice": "취득일은 잔금일과 등기접수일 중 빠른 날이에요.",
+      "caption": "취득일 기준",
+      "big": "잔금일 · 등기접수일",
+      "badge": "둘 중 빠른 날"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 취득세가 300만 원인 집이에요.",
+      "caption": "예를 들어\n취득세가 {300만 원}",
+      "amount": 300,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "timeline",
+      "voice": "59일째까지 신고하면 가산세가 붙지 않아요.",
+      "caption": "{59일째}까지\n가산세 없어요",
+      "active": [0],
+      "cards": [
+        {"date": "59일째", "who": "가산세 없음", "color": "green"},
+        {"date": "61일째", "who": "20% 가산세", "color": "red"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "61일째부터는 300만 원의 20%, 60만 원이 더 붙어요.",
+      "caption": "{61일째}부터\n[60만 원] 더",
+      "active": [1],
+      "cards": [
+        {"date": "59일째", "who": "가산세 없음", "color": "green"},
+        {"date": "61일째", "who": "20% 가산세", "color": "red"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "딱 하루 차이로 60만 원이 갈리는 거예요.",
+      "caption": "하루 차이로\n{60만 원}이 갈려요",
+      "active": "all",
+      "cards": [
+        {"date": "59일째", "who": "가산세 없음", "color": "green"},
+        {"date": "61일째", "who": "20% 가산세", "color": "red"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 60일째 되는 날이 토요일이나 공휴일이면 어떻게 될까요?",
+      "caption": "근데 {60일째}가\n주말·공휴일이면?",
+      "image_prompt": "photorealistic quiet residential street on a sunny weekend morning, parked bicycles, soft light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "그다음 평일까지 기한이 자동으로 늘어나요.",
+      "caption": "주말·공휴일이면",
+      "big": "다음 평일까지",
+      "badge": "자동 연장",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "신고와 납부는 위택스나 시군구청 세무과에서 해요.",
+      "caption": "신고·납부는\n{위택스}에서",
+      "image_prompt": "photorealistic modern government office building exterior in daylight, clean glass facade, blue sky, high detail, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "곧 집을 살 가족이나 친구에게 꼭 보내주세요.",
+      "caption": "집 살 가족·친구에게\n{공유}해주세요",
+      "image_prompt": "photorealistic small wooden model house sitting next to two coffee cups on a table, warm morning light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 취득세 신고, 며칠 만에 하셨어요?",
+      "caption": "여러분은\n{며칠 만에} 신고하셨어요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

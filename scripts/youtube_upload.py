@@ -42,7 +42,7 @@ def get_credentials():
     return creds
 
 
-def upload(video_path, title, description, privacy="private", made_for_kids=False, tags=None, thumbnail=None):
+def upload(video_path, title, description, privacy="private", made_for_kids=False, tags=None, thumbnail=None, synthetic=False):
     creds = get_credentials()
     youtube = build("youtube", "v3", credentials=creds)
 
@@ -58,6 +58,9 @@ def upload(video_path, title, description, privacy="private", made_for_kids=Fals
             "selfDeclaredMadeForKids": made_for_kids,
         },
     }
+    if synthetic:
+        # 실사풍 AI 생성 이미지를 쓰는 영상은 "변형·합성 콘텐츠"로 표시(유튜브 정책, 2026-09-20 도입)
+        body["status"]["containsSyntheticMedia"] = True
 
     media = MediaFileUpload(video_path, chunksize=-1, resumable=True, mimetype="video/mp4")
     request = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
@@ -70,6 +73,12 @@ def upload(video_path, title, description, privacy="private", made_for_kids=Fals
 
     video_id = response["id"]
     print(f"완료: https://youtube.com/shorts/{video_id}")
+    if synthetic:
+        try:
+            flag = youtube.videos().list(part="status", id=video_id).execute()["items"][0]["status"].get("containsSyntheticMedia")
+            print("  AI 콘텐츠 표시: " + ("적용됨" if flag else "미확인 — 유튜브 스튜디오에서 '변형된 콘텐츠' 표시를 수동 확인할 것"))
+        except Exception as e:
+            print(f"  AI 콘텐츠 표시 확인 실패(무시): {e}")
 
     # 썸네일을 안 정해주면 유튜브가 영상 중간 아무 프레임(대개 자막 문장이 중간에 끊긴 broll
     # 카드)을 자동으로 골라서 썸네일이 이상하게 나옴(2026-09-12 사용자 피드백으로 발견) —
@@ -92,10 +101,11 @@ def main():
     ap.add_argument("--privacy", default="private", choices=["private", "unlisted", "public"])
     ap.add_argument("--tags", default="")
     ap.add_argument("--thumbnail", default=None)
+    ap.add_argument("--synthetic", action="store_true")
     args = ap.parse_args()
 
     tags = [t.strip() for t in args.tags.split(",") if t.strip()]
-    upload(args.video, args.title, args.description, args.privacy, tags=tags, thumbnail=args.thumbnail)
+    upload(args.video, args.title, args.description, args.privacy, tags=tags, thumbnail=args.thumbnail, synthetic=args.synthetic)
 
 
 if __name__ == "__main__":

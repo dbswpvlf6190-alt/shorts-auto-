@@ -173,7 +173,15 @@ def process_item(item_dir):
 
     if os.path.exists(done_marker):
         return "done_already"
-    if not (os.path.exists(meta_path) and os.path.exists(script_path) and os.path.isdir(images_dir)):
+    meta_peek = None
+    try:
+        with open(meta_path, "r", encoding="utf-8") as f:
+            meta_peek = json.load(f)
+    except (OSError, ValueError):
+        pass
+    # 2026-09-20: v2 포맷(결과 먼저·AI 이미지·애니메이션 자막)은 meta.json의 scenes만 있으면 됨
+    is_v2 = bool(meta_peek) and meta_peek.get("format") == "v2" and bool(meta_peek.get("scenes"))
+    if not (meta_peek and (is_v2 or (os.path.exists(script_path) and os.path.isdir(images_dir)))):
         log(f"skip {name}: meta.json/script.txt/images 중 누락됨")
         return "invalid"
 
@@ -191,30 +199,37 @@ def process_item(item_dir):
         work_dir = os.path.join(render_dir, "_work")
         os.makedirs(work_dir, exist_ok=True)
 
-        base_video = os.path.join(render_dir, "base.mp4")
-        run([
-            sys.executable, os.path.join(BASE_DIR, "scripts", "make_short.py"),
-            "--script", script_path, "--images", images_dir,
-            "--voice", meta.get("voice", "cloned"),
-            "--out", base_video, "--work", work_dir,
-            "--img-dur", str(meta.get("img_dur", 5)),
-        ])
-
         platform_dir = os.path.join(render_dir, "platform")
-        closing_question = extract_closing_question(script_path)
-        run([
-            sys.executable, os.path.join(BASE_DIR, "scripts", "make_platform_variants.py"),
-            "--base-video", base_video,
-            "--yt-hook-lines", meta["yt_hook_lines"],
-            "--tiktok-hook-text", meta["tiktok_hook_text"],
-            "--out-dir", platform_dir,
-            "--voice", meta.get("voice", "cloned"),
-            "--rate", meta.get("rate", "+30%"),
-        ] + (["--next-teaser", meta["next_teaser"]] if meta.get("next_teaser") else [])
-          + (["--closing-question", closing_question] if closing_question else []))
+        if is_v2:
+            run([
+                sys.executable, os.path.join(BASE_DIR, "scripts", "make_video_v2.py"),
+                "--meta", meta_path, "--out-dir", platform_dir, "--work", os.path.join(render_dir, "_v2_work"),
+            ])
+        else:
+            base_video = os.path.join(render_dir, "base.mp4")
+            run([
+                sys.executable, os.path.join(BASE_DIR, "scripts", "make_short.py"),
+                "--script", script_path, "--images", images_dir,
+                "--voice", meta.get("voice", "cloned"),
+                "--out", base_video, "--work", work_dir,
+                "--img-dur", str(meta.get("img_dur", 5)),
+            ])
+
+            platform_dir = os.path.join(render_dir, "platform")
+            closing_question = extract_closing_question(script_path)
+            run([
+                sys.executable, os.path.join(BASE_DIR, "scripts", "make_platform_variants.py"),
+                "--base-video", base_video,
+                "--yt-hook-lines", meta["yt_hook_lines"],
+                "--tiktok-hook-text", meta["tiktok_hook_text"],
+                "--out-dir", platform_dir,
+                "--voice", meta.get("voice", "cloned"),
+                "--rate", meta.get("rate", "+30%"),
+            ] + (["--next-teaser", meta["next_teaser"]] if meta.get("next_teaser") else [])
+              + (["--closing-question", closing_question] if closing_question else []))
 
         yt_video = os.path.join(platform_dir, "youtube.mp4")
-        yt_thumbnail = os.path.join(platform_dir, "_hook_work", "yt_hook_0.png")
+        yt_thumbnail = os.path.join(platform_dir, "thumb.png") if is_v2 else os.path.join(platform_dir, "_hook_work", "yt_hook_0.png")
         yt_marker = os.path.join(item_dir, "youtube_uploaded.txt")
         if os.path.exists(yt_marker):
             # 2026-09-18: 34번이 유튜브 중복 업로드된 사고 재발 방지. 원인은 인스타그램 단계에서
@@ -232,7 +247,7 @@ def process_item(item_dir):
                 "--privacy", meta.get("privacy", "private"),
                 "--tags", meta.get("tags", ""),
                 "--thumbnail", yt_thumbnail,
-            ])
+            ] + (["--synthetic"] if is_v2 else []))
             match = re.search(r"https://youtube\.com/shorts/(\S+)", out)
             video_id = match.group(1) if match else "unknown"
             with open(yt_marker, "w", encoding="utf-8") as f:

@@ -1,4 +1,4 @@
-# 클라우드 루틴(trig_01UW8hcHxM3y3TfRnrobD7ow) v2용 새 프롬프트 — 2026-09-20 작성, 적용 대기
+# 클라우드 루틴(trig_01UW8hcHxM3y3TfRnrobD7ow) v2용 새 프롬프트 — 2026-09-20 작성·적용 완료
 
 아래 코드블록 전체가 새 프롬프트다(기존 프롬프트는 script.txt+images 방식). 적용하면 루틴이 v2 meta.json 하나만 만들고 `scripts/validate_v2_meta.py`를 통과시킨 뒤 푸시한다.
 

@@ -11,6 +11,9 @@ from datetime import datetime
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8")
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import notify  # noqa: E402
+
 LOCK_STALE_HOURS = 3  # 이 시간이 지난 락은 이전 실행이 비정상 종료된 것으로 보고 무시
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -165,6 +168,22 @@ def extract_closing_question(script_path):
     return None
 
 
+def report_upload(name, meta, video_id, ig_status, ig_err):
+    """업로드 결과를 사용자 폰으로 푸시(2026-09-21). 실패해도 파이프라인엔 영향 없음."""
+    privacy = meta.get("privacy", "private")
+    url = f"https://youtube.com/shorts/{video_id}" if video_id and video_id != "unknown" else None
+    lines = [meta.get("youtube_title", name)]
+    lines.append(f"유튜브: {url or '업로드됨(링크 확인 필요)'} ({'공개' if privacy == 'public' else '⚠️ 비공개'})")
+    lines.append(f"인스타그램: {ig_status}" + (f" — {ig_err.strip()[:120]}" if ig_err else ""))
+    lines.append("틱톡: 바탕화면에 파일 준비됨(직접 업로드)")
+    lines.append(f"처리 컴퓨터: {socket.gethostname()}")
+    bad = ig_status == "실패" or privacy != "public"
+    notify.notify(
+        f"{'⚠️' if bad else '✅'} 업로드 완료 · {name}", "\n".join(lines),
+        priority=4 if bad else 3, tags=["warning" if bad else "white_check_mark"], click=url,
+    )
+
+
 def process_item(item_dir):
     name = os.path.basename(item_dir)
     meta_path = os.path.join(item_dir, "meta.json")
@@ -238,13 +257,16 @@ def process_item(item_dir):
         yt_video = os.path.join(platform_dir, "youtube.mp4")
         yt_thumbnail = os.path.join(platform_dir, "thumb.png") if is_v2 else os.path.join(platform_dir, "_hook_work", "yt_hook_0.png")
         yt_marker = os.path.join(item_dir, "youtube_uploaded.txt")
+        video_id = None
         if os.path.exists(yt_marker):
             # 2026-09-18: 34번이 유튜브 중복 업로드된 사고 재발 방지. 원인은 인스타그램 단계에서
             # GCM 인증창이 응답 없이 멈춰서(구 버전 코드, 지금은 타임아웃 있음) 스케줄러가 프로세스를
             # 강제 재시작했는데, done.txt가 없으니 유튜브 업로드까지 처음부터 다시 실행됐던 것.
             # 이 마커는 git으로 커밋되어(아래) 어느 컴퓨터가 재시도하든 "이미 올렸음"을 알 수 있다.
             with open(yt_marker, "r", encoding="utf-8") as f:
-                log(f"  유튜브는 이전 시도에서 이미 업로드됨, 건너뜀: {f.read().strip()}")
+                marker_text = f.read().strip()
+            video_id = marker_text.split()[0] if marker_text else None
+            log(f"  유튜브는 이전 시도에서 이미 업로드됨, 건너뜀: {marker_text}")
         else:
             out = run([
                 sys.executable, os.path.join(BASE_DIR, "scripts", "youtube_upload.py"),
@@ -289,6 +311,7 @@ def process_item(item_dir):
                 log(f"  바탕화면 복사 실패(건너뜀): {e}")
         log(f"  정리 완료: {day_dir}")
 
+        ig_status, ig_err = "건너뜀", ""
         if meta.get("instagram", True) and os.path.exists(tiktok_video):
             ig_caption = meta.get("instagram_caption", meta.get("tiktok_caption", ""))
             ig_name = re.sub(r'[^A-Za-z0-9_-]', '', name) or "video"
@@ -300,12 +323,15 @@ def process_item(item_dir):
                     "--name", f"{date_str}_{ig_name}.mp4",
                 ])
                 log("  인스타그램 게시 완료")
+                ig_status = "성공"
             except Exception as e:
                 log(f"  인스타그램 게시 실패(건너뜀): {e}")
+                ig_status, ig_err = "실패", str(e)[-200:]
 
         with open(done_marker, "w", encoding="utf-8") as f:
             f.write(datetime.now().isoformat())
         log(f"done: {name}")
+        report_upload(name, meta, video_id, ig_status, ig_err)
         rel_done = os.path.relpath(done_marker, BASE_DIR)
         rel_log = os.path.relpath(LOG_PATH, BASE_DIR)
         git_commit_push([rel_done, rel_log], f"done: {name}")
@@ -331,6 +357,11 @@ def main():
             status = process_item(item_dir)
         except Exception as e:
             log(f"error on {name}: {e}")
+            notify.notify(
+                f"❌ 처리 실패 · {name}",
+                f"{str(e)[-300:]}\n처리 컴퓨터: {socket.gethostname()}\n(output/queue_log.txt 확인)",
+                priority=5, tags=["rotating_light"],
+            )
             break
         if status == "processed":
             processed += 1

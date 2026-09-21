@@ -63,11 +63,18 @@ def get_tiktok_delivery_path():
     return get_desktop_path()
 
 
+class StepFailed(RuntimeError):
+    """단계 실패. 로그엔 자세히 남기고, 푸시 보고용 실제 원인은 detail에 담는다."""
+    def __init__(self, detail):
+        super().__init__("step failed")
+        self.detail = detail
+
+
 def run(cmd):
     result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if result.returncode != 0:
         log(f"  FAILED: {' '.join(cmd)}\n{result.stdout[-2000:]}\n{result.stderr[-2000:]}")
-        raise RuntimeError("step failed")
+        raise StepFailed(f"{os.path.basename(cmd[1]) if len(cmd) > 1 else cmd[0]}: {result.stderr[-800:]}\n{result.stdout[-400:]}")
     return result.stdout
 
 
@@ -172,14 +179,20 @@ def report_upload(name, meta, video_id, ig_status, ig_err):
     """업로드 결과를 사용자 폰으로 푸시(2026-09-21). 실패해도 파이프라인엔 영향 없음."""
     privacy = meta.get("privacy", "private")
     url = f"https://youtube.com/shorts/{video_id}" if video_id and video_id != "unknown" else None
-    lines = [meta.get("youtube_title", name)]
-    lines.append(f"유튜브: {url or '업로드됨(링크 확인 필요)'} ({'공개' if privacy == 'public' else '⚠️ 비공개'})")
-    lines.append(f"인스타그램: {ig_status}" + (f" — {ig_err.strip()[:120]}" if ig_err else ""))
-    lines.append("틱톡: 바탕화면에 파일 준비됨(직접 업로드)")
-    lines.append(f"처리 컴퓨터: {socket.gethostname()}")
+    # 제목의 해시태그는 빼고 한 줄로, 본문은 상태 한 줄만(링크는 알림을 누르면 열림).
+    short_title = re.sub(r"\s*#\S+", "", meta.get("youtube_title", name)).strip()[:40]
+    if ig_status == "성공":
+        result = "유튜브·인스타 성공"
+    elif ig_status == "실패":
+        result = "유튜브 성공 · 인스타 실패"
+    else:
+        result = "유튜브 성공"
+    if privacy != "public":
+        result += " (⚠️비공개)"
     bad = ig_status == "실패" or privacy != "public"
     notify.notify(
-        f"{'⚠️' if bad else '✅'} 업로드 완료 · {name}", "\n".join(lines),
+        f"{'⚠️' if bad else '✅'} daily.factlab {result}",
+        short_title + (f"\n{ig_err}" if ig_err else ""),
         priority=4 if bad else 3, tags=["warning" if bad else "white_check_mark"], click=url,
     )
 
@@ -326,7 +339,7 @@ def process_item(item_dir):
                 ig_status = "성공"
             except Exception as e:
                 log(f"  인스타그램 게시 실패(건너뜀): {e}")
-                ig_status, ig_err = "실패", str(e)[-200:]
+                ig_status, ig_err = "실패", notify.summarize_error(getattr(e, "detail", str(e)))
 
         with open(done_marker, "w", encoding="utf-8") as f:
             f.write(datetime.now().isoformat())
@@ -357,11 +370,7 @@ def main():
             status = process_item(item_dir)
         except Exception as e:
             log(f"error on {name}: {e}")
-            notify.notify(
-                f"❌ 처리 실패 · {name}",
-                f"{str(e)[-300:]}\n처리 컴퓨터: {socket.gethostname()}\n(output/queue_log.txt 확인)",
-                priority=5, tags=["rotating_light"],
-            )
+            notify.notify(f"❌ daily.factlab 처리 실패 ({name[:2]}번)", notify.summarize_error(getattr(e, "detail", str(e))), priority=5, tags=["rotating_light"])
             break
         if status == "processed":
             processed += 1

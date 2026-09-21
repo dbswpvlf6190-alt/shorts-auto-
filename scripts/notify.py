@@ -32,6 +32,30 @@ def notify(title, message, priority=3, tags=None, click=None):
         return False
 
 
+# 실패 메시지에서 흔한 원인을 한글 한 줄로 요약(못 알아보면 원문 끝부분만).
+_REASONS = [
+    (("fetch first", "non-fast-forward"), "미디어 저장소가 최신이 아니라 push 거부됨"),
+    (("Could not resolve host", "Failed to establish", "Max retries exceeded", "getaddrinfo"), "인터넷 연결 안 됨"),
+    (("timed out", "TimeoutExpired", "120초"), "시간 초과(인증 대기 등)"),
+    (("RefreshError", "invalid_grant"), "유튜브 토큰 만료(재인증 필요)"),
+    (("quotaExceeded", "quota"), "API 일일 한도 초과"),
+    (("OAuthException", "access token", "Invalid OAuth"), "인스타 토큰 문제"),
+    (("403", "Permission", "denied"), "권한 거부(토큰 확인)"),
+    (("401", "Authentication"), "인증 실패(토큰 만료?)"),
+    (("moov atom", "Invalid data found"), "영상 파일 손상"),
+    (("No such file", "FileNotFoundError"), "파일을 찾을 수 없음"),
+]
+
+
+def summarize_error(text):
+    t = str(text or "")
+    for keys, reason in _REASONS:
+        if any(k in t for k in keys):
+            return f"사유: {reason}"
+    tail = " ".join(t.split())[-100:]
+    return f"사유: {tail}" if tail else "사유: 알 수 없음(로그 확인)"
+
+
 if __name__ == "__main__":
     if "--test" in sys.argv:
         ok = notify("✅ 알림 테스트", "이 메시지가 폰에 보이면 업로드 보고 설정이 끝난 거예요.", tags=["white_check_mark"])

@@ -1,0 +1,99 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 주택도시보증공사·한국주택금융공사·SGI서울보증, 신용정보법 시행령",
+  "youtube_title": "10월부터 이 집주인, 전세보증 가입 자체가 막힙니다 #전세사기 #전세보증금",
+  "youtube_description": "주택도시보증공사(HUG)·한국주택금융공사·SGI서울보증 세 기관이 10월 1일부터 '임대인 보증금지 정보'를 공동 활용합니다. 한 기관에서 대위변제(보증기관이 세입자에게 대신 갚아주는 것)가 발생한 집주인은 세 기관 모두에서 전세보증금 반환보증 가입이 제한됩니다.\n\n임차인은 9월 21일부터 주택도시보증공사 안심전세 앱의 '임대인 정보조회' 메뉴에서 계약 전 집주인의 보증금지 여부를 확인할 수 있습니다.\n\n이 정보는 올해 2월 3일 개정·시행된 신용정보법 시행령에 따라 임대인 동의 없이도 수집·공유됩니다. 다만 임대인이 대신 갚아준 금액을 상환하면 보증금지 대상에서 제외됩니다. (영상 속 3억 원은 이해를 돕기 위한 가정 금액입니다.)\n\n출처: 주택도시보증공사·한국주택금융공사·SGI서울보증, 신용정보법 시행령\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#전세사기 #전세보증금 #안심전세앱 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "전세사기,전세보증금,안심전세앱,부동산정책,전세보증금반환보증",
+  "tiktok_caption": "10월부터 이 집주인, 전세보증 가입이 막혀요 😱 안심전세 앱으로 계약 전에 꼭 확인하세요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 계약 전에 집주인 정보 확인해보셨나요? #전세사기 #전세보증금 #안심전세앱",
+  "instagram_caption": "10월부터 이 집주인, 전세보증 가입이 막혀요 😱 안심전세 앱으로 계약 전에 꼭 확인하세요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 계약 전에 집주인 정보 확인해보셨나요? #전세사기 #전세보증금 #안심전세앱",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "곧 전세금 못 받을 수도",
+      "caption": "곧 {전세금}\n못 받을 수도",
+      "image_prompt": "photorealistic empty apartment balcony at dusk with warm interior light glowing through a window, moody atmosphere, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 전세금 안 돌려준 집주인은 보증 가입이 막혀요.",
+      "caption": "결론\n{전세금 안 돌려준 집주인}\n보증 가입 {막혀요}",
+      "image_prompt": "photorealistic Korean apartment complex exterior on an overcast day, tall residential towers, muted light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "이때 보증기관이 세입자한테 대신 돈을 갚아주는 걸 대위변제라고 해요.",
+      "caption": "{대위변제}\n보증기관이 대신 갚아줘요",
+      "big": "대위변제",
+      "badge": "보증기관이 대신 갚아줌"
+    },
+    {
+      "kind": "timeline",
+      "voice": "9월 21일부터 안심전세 앱에서 집주인 정보를 확인할 수 있어요.",
+      "caption": "{9/21}부터\n앱에서 확인 가능",
+      "active": [0],
+      "cards": [
+        {"date": "9월 21일", "who": "안심전세 앱 조회 시작", "color": "gold"},
+        {"date": "10월 1일", "who": "보증 가입 금지 시행", "color": "red"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "10월 1일부터는 그 집주인, 보증 가입 자체가 막혀요.",
+      "caption": "{10/1}부터\n보증 가입 {금지}",
+      "active": [1],
+      "cards": [
+        {"date": "9월 21일", "who": "안심전세 앱 조회 시작", "color": "gold"},
+        {"date": "10월 1일", "who": "보증 가입 금지 시행", "color": "red"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "보증기관 세 곳이 정보를 공유해서, 한 곳에서 막히면 다른 곳도 다 막혀요.",
+      "caption": "보증기관 {세 곳}이\n정보를 공유해요",
+      "image_prompt": "photorealistic three identical brass keys arranged in a row on a dark wooden table, dramatic side light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "올해 2월 3일 바뀐 신용정보법 덕분에, 동의 없이도 공유할 수 있게 됐어요.",
+      "caption": "{신용정보법} 개정\n동의 없이 {공유} 가능",
+      "big": "신용정보법 개정",
+      "badge": "동의 없이 공유"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 전세보증금이 3억 원인 집이 있다고 해볼게요.",
+      "caption": "예를 들어\n전세보증금이",
+      "amount": 3,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 집주인이 밀린 돈을 나중에 갚으면 어떻게 될까요?",
+      "caption": "근데 {밀린 돈}을\n갚으면?",
+      "image_prompt": "photorealistic ceramic piggy bank on a wooden table, soft warm side light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "갚으면 명단에서 빠져서, 다시 가입할 수 있어요.",
+      "caption": "{완납}하면 명단에서\n빠져요",
+      "big": "완납하면 제외",
+      "badge": "다시 가입 가능",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "전세 계약 앞둔 분께 꼭 보내주세요.",
+      "caption": "전세 계약 앞둔 분께\n{공유}해주세요",
+      "image_prompt": "photorealistic small wooden model house next to a magnifying glass on a desk, soft window light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 계약 전에 집주인 정보 확인해 보셨나요?",
+      "caption": "여러분은 {집주인 정보}\n확인해 보셨나요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

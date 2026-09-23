@@ -1,0 +1,95 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 행정안전부 고시 제2026-3호 · 생애최초 주택 취득세 감면 운영기준",
+  "youtube_title": "생애최초 취득세 감면, 3년 안에 팔면 다시 뱉어내요 #취득세 #생애최초",
+  "youtube_description": "생애최초로 주택을 구입하면 취득세를 최대 200만원(소형 비아파트·인구감소지역은 300만원)까지 감면받을 수 있어요.\n\n조건은 두 가지예요. 취득일로부터 90일 이내에 전입신고를 하고 실제로 거주해야 하고, 그 상태를 3년 동안 유지해야 해요.\n\n3년 안에 집을 매각·증여하거나 임대(전세 포함) 등 다른 용도로 쓰면 감면받았던 취득세를 다시 내야 하고, 가산세(10~40%)와 이자상당액도 추가로 붙어요. (영상 속 200만원은 이해를 돕기 위한 예시 금액입니다.)\n\n출처: 행정안전부 고시 제2026-3호(생애최초 주택 구입에 대한 취득세 감면 운영기준)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#취득세 #생애최초주택구입 #취득세감면 #부동산세금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "취득세,생애최초주택구입,취득세감면,부동산세금,부동산정책",
+  "tiktok_caption": "생애최초로 집 샀는데 취득세를 다시 내라고요? 😱 3년 안에 팔거나 세를 주면 감면받은 취득세가 추징돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집은 산 지 몇 년 되셨어요? #취득세 #생애최초주택구입 #부동산세금",
+  "instagram_caption": "생애최초로 집 샀는데 취득세를 다시 내라고요? 😱 3년 안에 팔거나 세를 주면 감면받은 취득세가 추징돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집은 산 지 몇 년 되셨어요? #취득세 #생애최초주택구입 #부동산세금",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "취득세 200만원, 반납?",
+      "caption": "취득세 {200만원},\n반납?",
+      "image_prompt": "photorealistic small moving boxes stacked near a bright front door of an apartment, soft morning light, shallow depth of field"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 3년 안에 팔면 감면받은 취득세를 다시 내야 해요.",
+      "caption": "결론\n{3년 안}에 팔면\n다시 내요",
+      "image_prompt": "photorealistic Korean apartment complex exterior on a sunny day, wide open sky, high detail, shallow depth of field"
+    },
+    {
+      "kind": "big",
+      "voice": "생애최초로 집을 사면 취득세를 최대 200만원까지 감면받아요.",
+      "caption": "생애최초 취득세",
+      "big": "최대 200만원 감면"
+    },
+    {
+      "kind": "photo",
+      "voice": "조건은 이 집에 실제로 들어가서 사는 거예요.",
+      "caption": "조건\n{실제 거주}해야 해요",
+      "image_prompt": "photorealistic cozy living room interior with sunlight streaming through a large window, warm tones, shallow depth of field"
+    },
+    {
+      "kind": "big",
+      "voice": "취득한 날부터 90일 안에 전입신고도 해야 해요.",
+      "caption": "90일 이내",
+      "big": "90일 이내 전입신고",
+      "badge": "안 하면 감면 취소"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 이 조건, 3년 동안 계속 지켜야 해요.",
+      "caption": "근데 이 조건\n{3년}은 지켜야 해요",
+      "image_prompt": "photorealistic minimalist wall clock hanging in a quiet room, soft afternoon light, shallow depth of field"
+    },
+    {
+      "kind": "big",
+      "voice": "3년 안에 팔거나, 세를 주거나, 증여하면 감면이 취소돼요.",
+      "caption": "3년 안에\n{팔거나·세주거나·증여}하면",
+      "big": "감면 취소"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 감면받은 취득세가 200만원이라면요.",
+      "caption": "예를 들어\n감면받은 취득세가",
+      "amount": 200,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "3년 안에 어기면 200만원을 다시 내고, 가산세도 최대 40퍼센트가 붙어요.",
+      "caption": "위반하면\n{200만원} + 가산세 [최대 40%]",
+      "big": "가산세 최대 +40%"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 팔지 않고 전세만 줘도 위반일까요?",
+      "caption": "근데 {전세만 줘도}\n위반일까요?",
+      "image_prompt": "photorealistic front door with a small potted plant beside it in a modern apartment corridor, warm ambient light, shallow depth of field"
+    },
+    {
+      "kind": "big",
+      "voice": "네, 전세도 임대라서 추징 대상이에요.",
+      "caption": "{전세도} 임대라서\n추징 대상이에요",
+      "big": "정답: 전세도 추징",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "생애최초로 집 사신 분은 꼭 공유해주세요.",
+      "caption": "생애최초로 사신 분\n{공유}해주세요",
+      "image_prompt": "photorealistic brass house key resting on a wooden table with warm soft lighting, shallow depth of field"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 지금 이 집에서 계속 사실 건가요?",
+      "caption": "여러분은\n{계속}이 집에\n사실 건가요?",
+      "image_prompt": "photorealistic city skyline at dusk with warm lit windows, soft bokeh lights, cinematic wide shot"
+    }
+  ]
+}

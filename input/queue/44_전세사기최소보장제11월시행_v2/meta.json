@@ -1,0 +1,110 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 전세사기피해자 지원 및 주거안정에 관한 특별법 개정안 · 국토교통부",
+  "youtube_title": "전세사기 보증금 3분의 1도 못 받으면 나라가 채워줘요 #전세사기 #최소보장제",
+  "youtube_description": "전세사기 피해자가 경매·반환 등으로 돌려받은 돈이 보증금의 3분의 1에 못 미치면, 그 부족분을 국가가 지원하는 '최소보장제'가 2026년 11월 13일부터 시행돼요.\n\n최소보장금 신청은 임대주택 퇴거 시점부터 가능하고, 피해자 결정일이 시행일보다 빠르면 2026년 11월부터 2029년 11월까지 신청할 수 있어요.\n\n다만 본인이 전세사기 피해주택을 직접 매수했거나, 경매·공매에서 배당요구를 하지 않았거나, 이미 최소보장금 일부를 선지급받았다면 신청이 제한됩니다. (영상 속 9천만 원·2천만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n출처: 전세사기피해자 지원 및 주거안정에 관한 특별법 개정안, 국토교통부\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#전세사기 #최소보장제 #전세사기특별법 #보증금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "전세사기,최소보장제,전세사기특별법,보증금,부동산정책",
+  "tiktok_caption": "보증금 3분의 1도 못 받으면 나라가 채워줘요 😱 11월 13일부터 전세사기 최소보장제가 시행돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 배당 신청 하셨어요? #전세사기 #최소보장제 #전세사기특별법",
+  "instagram_caption": "보증금 3분의 1도 못 받으면 나라가 채워줘요 😱 11월 13일부터 전세사기 최소보장제가 시행돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 배당 신청 하셨어요? #전세사기 #최소보장제 #전세사기특별법",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "보증금 3분의 1도 못 받으면?",
+      "caption": "보증금 {3분의 1}도\n못 받으면?",
+      "image_prompt": "photorealistic empty rental apartment living room with bare walls and afternoon light coming through a window, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "결론부터 말하면, 모자란 만큼 국가가 채워줘요.",
+      "caption": "결론",
+      "big": "국가가 채워줘요"
+    },
+    {
+      "kind": "big",
+      "voice": "전세사기 최소보장제가 11월 13일부터 시행돼요.",
+      "caption": "최소보장제\n시행일",
+      "big": "11월 13일",
+      "badge": "새로 시행"
+    },
+    {
+      "kind": "photo",
+      "voice": "받은 돈이 보증금의 3분의 1이 안 되면, 그 차액을 나라가 채워줘요.",
+      "caption": "기준\n{보증금의 3분의 1}\n못 미치면 차액 지원",
+      "image_prompt": "photorealistic house key resting on a small stack of gold coins on a dark wooden table, dramatic warm spotlight, shallow depth of field, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 보증금이 9천만 원인 집이었어요.",
+      "caption": "예를 들어\n보증금 {9천만 원}인 집",
+      "amount": 9000,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "timeline",
+      "voice": "그런데 실제로 돌려받은 돈은 2천만 원뿐이었어요.",
+      "caption": "{회수금}은\n2천만 원뿐",
+      "active": [0],
+      "cards": [
+        {"date": "회수금", "who": "2천만 원", "color": "red"},
+        {"date": "기준액", "who": "3천만 원", "color": "gold"},
+        {"date": "국가 지원", "who": "1천만 원", "color": "green"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "3분의 1 기준액은 3천만 원이에요.",
+      "caption": "기준액은\n{3천만 원}",
+      "active": [1],
+      "cards": [
+        {"date": "회수금", "who": "2천만 원", "color": "red"},
+        {"date": "기준액", "who": "3천만 원", "color": "gold"},
+        {"date": "국가 지원", "who": "1천만 원", "color": "green"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "그 차이 천만 원을 나라가 채워줘요.",
+      "caption": "차액 {천만 원}\n나라가 채워줘요",
+      "active": [2],
+      "cards": [
+        {"date": "회수금", "who": "2천만 원", "color": "red"},
+        {"date": "기준액", "who": "3천만 원", "color": "gold"},
+        {"date": "국가 지원", "who": "1천만 원", "color": "green"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 그 집을 내가 직접 샀다면 어떻게 될까요?",
+      "caption": "근데 그 집을\n{내가 직접 샀다면}?",
+      "image_prompt": "photorealistic empty living room with moving boxes stacked near a window, soft afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "이 경우엔 최소보장금을 못 받아요.",
+      "caption": "{신청 불가}\n최소보장금 못 받아요",
+      "sfx": "ding",
+      "image_prompt": "photorealistic closed wooden front door with a small doormat, dim evening light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "경매에서 배당 신청을 안 했어도 마찬가지로 못 받아요.",
+      "caption": "{배당 신청} 안 해도\n똑같이 못 받아요",
+      "image_prompt": "photorealistic small wooden judge's gavel on a dark table, dramatic spotlight, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "전세사기 피해 겪은 지인께 꼭 보내주세요.",
+      "caption": "피해 겪은 지인께\n{공유}해주세요",
+      "image_prompt": "photorealistic pair of house keys tied with a red ribbon resting on a windowsill, soft morning light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 배당 신청, 하셨나요?",
+      "caption": "여러분은\n{배당 신청} 하셨나요?",
+      "image_prompt": "photorealistic city skyline at dusk with warm lit apartment windows, soft bokeh lights, cinematic, shallow depth of field, no text"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 국토교통부 보도자료(2026-09-23), 입주자저축 전환제도 안내",
+  "youtube_title": "청약통장 마감일, 1년 뒤로 밀렸습니다 #청약통장 #청약통장전환",
+  "youtube_description": "청약예금·청약부금·청약저축(입주자저축) 가입자가 주택청약종합저축으로 전환할 수 있는 기한이 원래 2026년 9월 30일까지였는데, 국토교통부가 9월 23일 이 기한을 2027년 9월 30일까지 1년 연장했습니다.\n\n전환하면 국민주택과 민영주택을 모두 청약할 수 있고, 기존 가입 기간도 그대로 인정돼서 전환 즉시 최고 금리(연 3.1%)가 적용됩니다.\n\n전환 신청은 기존 통장을 가입한 은행 영업점이나 모바일 앱에서 할 수 있습니다.\n\n출처: 국토교통부 보도자료(2026-09-23)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#청약통장 #주택청약종합저축 #청약예금 #청약부금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "청약통장,주택청약종합저축,청약예금,청약부금,부동산정책",
+  "tiktok_caption": "청약통장 마감일이 1년 더 늘었어요 😮 예금·부금·저축 가입자라면 꼭 확인하세요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 청약통장 언제 만드셨어요? #청약통장 #주택청약종합저축 #청약예금",
+  "instagram_caption": "청약통장 마감일이 1년 더 늘었어요 😮 예금·부금·저축 가입자라면 꼭 확인하세요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 청약통장 언제 만드셨어요? #청약통장 #주택청약종합저축 #청약예금",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "청약통장 마감 연장됐어요",
+      "caption": "청약통장 마감\n{연장}됐어요",
+      "image_prompt": "photorealistic golden piggy bank next to a small brass house key on a wooden table, warm morning light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "결론부터 말하면, 마감이 1년 더 늘었어요.",
+      "caption": "결론\n마감이 {1년} 더 늘었어요",
+      "active": [1],
+      "cards": [
+        {"date": "2026년 9월 30일", "who": "원래 마감", "color": "red"},
+        {"date": "2027년 9월 30일", "who": "연장된 마감", "color": "green"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "국토교통부가 이번 달 23일에 이 연장을 발표했어요.",
+      "caption": "국토교통부\n{9월 23일} 발표",
+      "image_prompt": "photorealistic modern government office building exterior with glass facade, daytime, clear sky, wide angle, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "청약예금이나 청약부금, 청약저축에 가입했다면 대상이에요.",
+      "caption": "대상\n{청약예금·부금·저축} 가입자",
+      "big": "예금·부금·저축",
+      "badge": "가입자 전원"
+    },
+    {
+      "kind": "photo",
+      "voice": "전환하면 국민주택과 민영주택을 둘 다 청약할 수 있어요.",
+      "caption": "전환하면\n{국민+민영주택} 둘 다 청약",
+      "image_prompt": "photorealistic row of diverse modern apartment buildings against a blue sky, daytime, high detail, wide angle, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "전환해도 기존 가입 기간이 그대로 인정돼서 최고 금리를 받아요.",
+      "caption": "기존 가입기간 인정\n{즉시 최고금리}",
+      "big": "연 3.1%",
+      "badge": "즉시 적용"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 이미 마감 지난 줄 알고 포기했다면 어떻게 될까요?",
+      "caption": "근데 {마감 지났다고}\n포기했다면?",
+      "image_prompt": "photorealistic empty park bench under an autumn tree, soft afternoon light, shallow depth of field, quiet mood, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "아직 늦지 않았어요, 내년 9월 30일까지 신청하면 돼요.",
+      "caption": "{아직 늦지 않았어요}\n2027년 9월 30일까지",
+      "active": [1],
+      "sfx": "ding",
+      "cards": [
+        {"date": "2026년 9월 30일", "who": "원래 마감", "color": "red"},
+        {"date": "2027년 9월 30일", "who": "연장된 마감", "color": "green"}
+      ]
+    },
+    {
+      "kind": "big",
+      "voice": "가입한 은행 영업점이나 모바일 앱에서 신청하면 돼요.",
+      "caption": "신청 방법\n{은행 영업점·앱}",
+      "big": "은행·앱",
+      "badge": "바로 신청"
+    },
+    {
+      "kind": "big",
+      "voice": "결정할 시간이 1년 더 생긴 거예요.",
+      "caption": "결정할 시간\n{+1년} 생겼어요",
+      "big": "+1년",
+      "badge": "여유 생김"
+    },
+    {
+      "kind": "photo",
+      "voice": "오래된 청약통장 있는 가족에게 꼭 알려주세요.",
+      "caption": "가족의 {오래된 통장}\n꼭 알려주세요",
+      "image_prompt": "photorealistic warm living room with soft window light falling on a wooden side table, cozy atmosphere, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 청약통장 언제 만드셨어요?",
+      "caption": "여러분은\n{언제} 만드셨어요?",
+      "image_prompt": "photorealistic city skyline at dusk with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 금융위원회 9·7 주택시장 안정화를 위한 대출수요 관리 방안, 국토교통부",
+  "youtube_title": "1주택자인데 전세대출 최대 1억 줄었어요 #전세대출 #대출규제",
+  "youtube_description": "9월 7일 발표된 대책이 다음날부터 바로 시행되면서, 1주택자의 전세자금대출 한도가 보증기관과 상관없이 2억원으로 일원화됐어요. 그동안 서울보증보험 3억원, 주택금융공사 2억 2천만원까지 가능했던 분들은 최대 1억원까지 한도가 줄어들 수 있어요.\n\n이 규제는 1주택자가 보유한 집이 어디에 있든 상관없이 똑같이 적용돼요. 다만 9월 7일 이전에 이미 임대차 계약을 체결했다면, 대출을 연장할 때 기존 한도가 그대로 유지돼요. (영상 속 2억 5천만원은 이해를 돕기 위한 가정 금액입니다.)\n\n출처: 금융위원회 9·7 주택시장 안정화를 위한 대출수요 관리 방안, 국토교통부\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#전세대출 #1주택자 #대출규제 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "전세대출,1주택자,대출규제,부동산정책,부동산",
+  "tiktok_caption": "1주택자인데 전세대출 최대 1억 줄었어요 😱 9월 7일 이전 계약이면 기존 한도 그대로예요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 전세대출 한도 확인해보셨나요? #전세대출 #1주택자 #대출규제",
+  "instagram_caption": "1주택자인데 전세대출 최대 1억 줄었어요 😱 9월 7일 이전 계약이면 기존 한도가 유지돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 전세대출 한도 확인해보셨나요? #전세대출 #1주택자 #대출규제",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "1주택자 전세대출 줄었다고?",
+      "caption": "1주택자인데\n전세대출 {줄었다고?}",
+      "image_prompt": "photorealistic modern apartment building facade at dusk with warm window lights, empty quiet street, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 1주택자 전세대출 한도가 2억원으로 줄었어요.",
+      "caption": "결론\n전세대출 한도\n{2억원}으로 축소",
+      "image_prompt": "photorealistic Korean apartment complex under a clear blue sky, tall residential towers, bright daylight, high detail, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "9월 7일 대책이 나오고 바로 다음 날부터 시행됐어요.",
+      "caption": "{9월 7일} 발표 → {9월 8일} 시행",
+      "active": "all",
+      "cards": [
+        { "date": "9월 7일", "who": "대출 규제 대책 발표", "color": "gold" },
+        { "date": "9월 8일", "who": "새 한도 시행", "color": "red" }
+      ]
+    },
+    {
+      "kind": "big",
+      "voice": "원래는 보증기관마다 한도가 서로 달랐어요.",
+      "caption": "원래는\n보증기관마다 {제각각}",
+      "big": "보증기관마다 제각각",
+      "badge": "SGI·HF·HUG 다 달랐어요"
+    },
+    {
+      "kind": "big",
+      "voice": "이제는 어디서 받든 다 2억원으로 똑같아졌어요.",
+      "caption": "이제는\n{2억원}으로 통일",
+      "big": "2억원으로 통일",
+      "badge": "SGI·HF·HUG 전부"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 전세금 2억 5천만원짜리 집을 구한다고 해볼게요.",
+      "caption": "예를 들어\n전세금이",
+      "amount": 2.5,
+      "unit": "억원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "그런데 대출은 최대 2억원까지만 나와요.",
+      "caption": "대출은\n{최대 2억원}까지만",
+      "big": "대출 한도 2억원",
+      "badge": "나머지는 내 돈으로"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 이 한도 내 집이 지방에 있어도 똑같이 적용될까요?",
+      "caption": "근데 집이 지방에 있어도\n{똑같이} 적용될까요?",
+      "image_prompt": "photorealistic view of a city skyline with high-rise apartments in the foreground and distant suburban houses on the horizon, hazy afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "네 집이 어디 있든 상관없이 똑같이 적용돼요.",
+      "caption": "{소재지 상관없이}\n똑같이 적용돼요",
+      "big": "소재지 무관 적용",
+      "badge": "전국 어디든 2억원",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "다만 9월 7일 전에 이미 계약했다면 기존 한도 그대로예요.",
+      "caption": "{9월 7일} 전 계약이면\n기존 한도 그대로",
+      "image_prompt": "photorealistic pair of house keys resting on a small wooden house model, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "전세 대출 알아보는 분께 꼭 보내주세요.",
+      "caption": "전세 대출 알아보는 분께\n{꼭 보내}주세요",
+      "image_prompt": "photorealistic cardboard moving boxes stacked in an empty apartment room, soft daylight through a window, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 전세대출 한도 미리 확인해 보셨나요?",
+      "caption": "여러분은 {전세대출 한도}\n미리 확인해 보셨나요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

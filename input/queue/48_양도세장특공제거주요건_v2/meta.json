@@ -1,0 +1,104 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 기획재정부 2026년 세제개편안(양도소득세 장기보유특별공제 개편)",
+  "youtube_title": "2년 살고 8년 세줬더니 양도세 4억 원 더 냅니다 #양도세 #장기보유특별공제",
+  "youtube_description": "정부의 2026년 세제개편안에 따라 양도소득세 장기보유특별공제 기준이 '보유'에서 '거주'로 바뀝니다. 지금까지는 집을 오래 갖고만 있어도 공제를 받을 수 있었지만, 앞으로는 실제로 거주한 기간만 공제에 반영됩니다. 2027년까지 유예된 뒤 2029년부터 단계적으로 시행돼요.\n\n예를 들어 서울의 한 아파트에 2년만 거주하고 8년을 임대로 준 뒤 양도차익 20억 원에 판다면, 지금은 세금이 약 1억 원이지만 2029년 이후에는 4억 7000만 원까지 늘어날 수 있습니다. (영상 속 금액은 이해를 돕기 위한 가정입니다.)\n\n반대로 10년 이상 실제로 거주하고 양도가액 30억 원 이하로 판다면 기본공제가 연 250만 원에서 2500만 원으로 늘어나는 혜택도 있어요.\n\n출처: 기획재정부 2026년 세제개편안\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#양도세 #장기보유특별공제 #부동산세금 #1세대1주택 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "양도세,장기보유특별공제,부동산세금,1세대1주택,부동산정책",
+  "tiktok_caption": "2년만 살고 8년 세줬더니 양도세가 4억 원 넘게 뛴대요 😱 이제 '보유'가 아니라 '거주' 기간만 쳐줘요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집엔 지금 누가 살고 있나요? #양도세 #장기보유특별공제 #부동산세금",
+  "instagram_caption": "2년만 살고 8년 세줬더니 양도세가 4억 원 넘게 뛴대요 😱 이제 '보유'가 아니라 '거주' 기간만 쳐줘요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집엔 지금 누가 살고 있나요? #양도세 #장기보유특별공제 #부동산세금",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "안 살았더니 양도세 4억?",
+      "caption": "안 살았더니\n{양도세 4억}?",
+      "image_prompt": "photorealistic modern apartment building exterior at dusk with warm balcony lights, tall towers, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 집에 살지 않으면 양도세가 몇 배로 뛰어요.",
+      "caption": "결론\n{집에 안 살면} 세금 몇 배",
+      "image_prompt": "photorealistic empty living room with bare wooden floor and soft window light, minimalist interior, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "이번 세제개편안은 오래 갖고만 있는 걸로는 공제를 안 줘요.",
+      "caption": "장기보유특별공제\n{보유} 아니라 [거주] 기준",
+      "big": "보유 기준 폐지",
+      "badge": "2029년 시행"
+    },
+    {
+      "kind": "photo",
+      "voice": "지금까지는 실제로 안 살아도 오래 보유하면 공제를 받았어요.",
+      "caption": "지금까지는\n{오래 보유}만 해도 공제",
+      "image_prompt": "photorealistic countryside road leading toward a hillside apartment complex at sunrise, wide angle, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 이제는 실제로 거주한 기간만 인정해줘요.",
+      "caption": "이제는\n{실제 거주 기간}만 인정",
+      "image_prompt": "photorealistic house key resting on a wooden table beside a small potted plant, warm natural light, shallow depth of field, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 양도차익이 20억 원인 집이에요.",
+      "caption": "예를 들어\n양도차익이",
+      "amount": 20,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "timeline",
+      "voice": "2년만 살고 8년을 세줬다면, 지금 세금은 약 1억 원이에요.",
+      "caption": "{2년 거주} + 8년 임대\n지금은 [약 1억 원]",
+      "active": [0],
+      "cards": [
+        {"date": "지금", "who": "약 1억 원", "color": "green"},
+        {"date": "2029년부터", "who": "4억 7000만 원", "color": "red"}
+      ]
+    },
+    {
+      "kind": "big",
+      "voice": "근데 2029년부터는 세금이 얼마나 늘어날까요?",
+      "caption": "근데 {2029년}부터는?",
+      "big": "2029년부터는?"
+    },
+    {
+      "kind": "timeline",
+      "voice": "4억 7000만 원이에요.",
+      "caption": "[4억 7000만 원]이에요",
+      "active": [1],
+      "sfx": "ding",
+      "cards": [
+        {"date": "지금", "who": "약 1억 원", "color": "green"},
+        {"date": "2029년부터", "who": "4억 7000만 원", "color": "red"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "10년 이상 실제로 거주하면 오히려 공제를 더 받을 수 있어요.",
+      "caption": "{10년 이상 거주}하면\n공제 더 받아요",
+      "image_prompt": "photorealistic cozy living room interior with soft afternoon sunlight through sheer curtains, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "10년 거주하고 30억 원 이하로 팔면 기본공제가 2500만 원으로 늘어요.",
+      "caption": "{10년 거주} + 30억 이하\n기본공제 [2500만 원]",
+      "big": "2500만 원",
+      "badge": "10년 거주 · 30억 이하"
+    },
+    {
+      "kind": "photo",
+      "voice": "세주고 있는 가족에게 꼭 보내주세요.",
+      "caption": "세주고 있는 가족에게\n{공유}해주세요",
+      "image_prompt": "photorealistic silhouette of a city apartment skyline at blue hour with warm window lights, wide shot, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 집엔 지금 누가 살고 있나요?",
+      "caption": "여러분 집엔\n{지금 누가} 살고 있나요?",
+      "image_prompt": "photorealistic single potted plant on a sunlit apartment windowsill, soft bokeh city view, shallow depth of field, no text"
+    }
+  ]
+}

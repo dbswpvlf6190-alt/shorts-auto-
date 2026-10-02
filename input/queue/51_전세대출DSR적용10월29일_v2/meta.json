@@ -1,0 +1,97 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 금융위원회 9·7 주택시장 안정화를 위한 대출수요 관리 방안",
+  "youtube_title": "전세대출도 10월 29일부터 DSR 적용돼요 #전세대출 #DSR",
+  "youtube_description": "10월 29일부터 1주택자가 수도권·규제지역에서 새로 받는 전세자금대출은 이자상환분이 DSR(총부채원리금상환비율) 계산에 포함돼요. 지금까지는 전세대출이 DSR 계산에서 빠져 있었지만, 이제는 디딤돌·버팀목 같은 정책 전세대출을 제외하고는 다른 대출과 똑같이 DSR 한도 안에 들어가요.\n\n10월 28일까지 임대차 계약을 체결했다면 종전 규정이 그대로 적용돼 DSR과 상관없이 전세대출을 받을 수 있어요. 하지만 10월 29일 이후 새로 계약하면, 이미 주택담보대출 등으로 DSR을 많이 써둔 분은 전세대출 한도가 크게 줄거나 아예 안 나올 수 있어요. (영상 속 1억 원은 이해를 돕기 위한 가정 금액입니다.) 금융위원회는 연간 약 5만 2천 명이 이 규제의 영향을 받을 것으로 추산하고 있어요.\n\n출처: 금융위원회 9·7 주택시장 안정화를 위한 대출수요 관리 방안\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#전세대출 #DSR #대출규제 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "전세대출,DSR,대출규제,부동산정책,부동산",
+  "tiktok_caption": "전세대출도 10월 29일부터 DSR 적용돼요 😱 10월 28일까지 계약이면 예외예요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분의 DSR은 지금 몇 퍼센트인가요? #전세대출 #DSR #대출규제",
+  "instagram_caption": "전세대출도 10월 29일부터 DSR이 적용돼요 😱 10월 28일까지 계약이면 종전 규정 그대로예요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분의 DSR은 지금 몇 퍼센트인가요? #전세대출 #DSR #대출규제",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "전세대출 막힐 수도 있어요?",
+      "caption": "전세대출\n{막힐 수도} 있어요?",
+      "image_prompt": "photorealistic modern apartment building exterior at blue hour with lit windows, quiet empty street, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 10월 29일부터 전세대출에도 디에스알이 적용돼요.",
+      "caption": "결론\n{10월 29일}부터\n디에스알 적용",
+      "image_prompt": "photorealistic Korean apartment complex under a clear blue sky, tall residential towers, bright daylight, high detail, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "지금까지는 전세대출 이자가 디에스알 계산에서 빠져 있었어요.",
+      "caption": "지금까지는\n{디에스알 계산}에서 제외",
+      "big": "디에스알 계산 제외",
+      "badge": "지금까지는"
+    },
+    {
+      "kind": "big",
+      "voice": "10월 29일부터는 전세대출 이자도 디에스알에 포함돼요.",
+      "caption": "10월 29일부터\n이자가 {디에스알}에 포함",
+      "big": "이자가 디에스알에 포함",
+      "badge": "10월 29일부터"
+    },
+    {
+      "kind": "photo",
+      "voice": "대상은 수도권과 규제지역에서 전세를 구하는 1주택자예요.",
+      "caption": "대상은\n{수도권·규제지역} 1주택자",
+      "image_prompt": "photorealistic row of modern high-rise apartment towers skyline against an overcast sky, wide angle, soft natural light, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "10월 28일까지 계약했다면 종전 규정 그대로 적용받아요.",
+      "caption": "{10월 28일}까지 계약\n→ 종전 규정 그대로",
+      "active": "all",
+      "cards": [
+        { "date": "10월 28일까지", "who": "계약 체결 시 종전 규정", "color": "green" },
+        { "date": "10월 29일", "who": "새 규정 시행일", "color": "gold" },
+        { "date": "10월 29일 이후", "who": "신규 계약은 디에스알 적용", "color": "red" }
+      ]
+    },
+    {
+      "kind": "money",
+      "voice": "디에스알을 이미 많이 쓰고 있다면 전세대출 한도가 최대 1억 원까지 줄어들 수 있어요.",
+      "caption": "디에스알 많이 썼다면\n한도 [최대 1억 원]까지 축소",
+      "amount": 1,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "금융위원회는 연간 약 5만 2천 명이 영향받을 걸로 추산해요.",
+      "caption": "금융위원회 추산\n{연 5만 2천 명} 영향",
+      "big": "연 5만 2천 명",
+      "badge": "금융위원회 추산"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 버팀목 같은 정책 전세대출도 디에스알에 포함될까요?",
+      "caption": "근데 {버팀목} 같은\n정책대출도 포함될까요?",
+      "image_prompt": "photorealistic front door of a cozy house at dusk, warm light glowing through a frosted window, quiet residential street, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "아니에요, 정책 목적 전세대출은 빠져요.",
+      "caption": "정답은 [제외]\n{정책 전세대출}은 빠져요",
+      "big": "정책 전세대출 제외",
+      "badge": "버팀목 등 제외",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "전세 구하는 가족에게 꼭 보내주세요.",
+      "caption": "전세 구하는 가족에게\n{공유}해주세요",
+      "image_prompt": "photorealistic small wooden model house resting on a stack of coins on a dark wooden table, warm dramatic lighting, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분의 디에스알은 지금 몇 퍼센트인가요?",
+      "caption": "여러분의 디에스알은\n지금 {몇 퍼센트}인가요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

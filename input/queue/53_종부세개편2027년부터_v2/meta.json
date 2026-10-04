@@ -1,0 +1,106 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 기획재정부 2026년 세제개편안 · 국세청 종합부동산세 안내",
+  "youtube_title": "종부세 개편안 발표됐는데, 이번 12월은 그대로입니다 #종합부동산세 #세제개편안",
+  "youtube_description": "올해 8월 발표된 종합부동산세 개편안, 이번 12월 고지에는 아직 적용되지 않아요. 11월에 고지서가 나오고 12월 1일부터 15일까지 현행 법령대로 납부하면 됩니다.\n\n세액이 300만 원을 넘으면 이자 부담 없이 6개월까지 나눠 낼 수 있어요. (영상 속 300만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n개편안의 공정시장가액비율 인상은 2027년부터 70%로, 2028년부터는 80%까지 단계적으로 적용됩니다.\n\n출처: 기획재정부 2026년 세제개편안, 국세청 종합부동산세 안내\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#종합부동산세 #세제개편안 #종부세 #부동산세금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "종합부동산세,세제개편안,공정시장가액비율,종부세,부동산세금",
+  "tiktok_caption": "종부세 개편안 발표됐는데 이번 12월은 그대로예요 😲 진짜 변화는 2027년부터예요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 종부세 대상이신가요? #종합부동산세 #세제개편안 #종부세",
+  "instagram_caption": "종부세 개편안 발표됐는데 이번 12월은 그대로예요 😲 진짜 변화는 2027년부터예요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 종부세 대상이신가요? #종합부동산세 #세제개편안 #종부세",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "종부세, 올해 세진다더니?",
+      "caption": "종부세,\n올해 {세진다더니}?",
+      "image_prompt": "photorealistic skyline of high-rise apartment towers under dramatic orange sunset, warm light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 이번 12월엔 그대로예요.",
+      "caption": "결론\n이번 12월엔 {그대로}예요",
+      "image_prompt": "photorealistic calculator and stack of coins on a wooden desk, warm desk lamp light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "11월에 고지서가 나오고, 12월 1일부터 15일까지 내요.",
+      "caption": "12월 1일~15일\n{납부기간}",
+      "big": "12/1 ~ 12/15",
+      "badge": "11월에 고지서"
+    },
+    {
+      "kind": "big",
+      "voice": "8월에 발표된 종부세 개편안은, 아직 시행 전이에요.",
+      "caption": "8월 발표 개편안\n{아직 시행 전}",
+      "big": "아직 시행 전",
+      "badge": "8월 발표 개편안"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 종부세가 300만 원 넘는 집이에요.",
+      "caption": "예를 들어\n종부세가 한 해",
+      "amount": 300,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "이런 집은 이자 부담 없이 6개월 나눠 낼 수 있어요.",
+      "caption": "이자 부담 없이\n{6개월} 분납",
+      "big": "6개월",
+      "badge": "이자 부담 없이"
+    },
+    {
+      "kind": "timeline",
+      "voice": "지금은 공정시장가액비율 60퍼센트, 그대로 유지돼요.",
+      "caption": "지금은\n{60%} 유지",
+      "active": [0],
+      "cards": [
+        {"date": "2026년", "who": "60% 그대로", "color": "gold"},
+        {"date": "2027년", "who": "70%로 인상", "color": "red"},
+        {"date": "2028년", "who": "80%까지", "color": "red"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 이 비율, 언제부터 오를까요?",
+      "caption": "근데 이 비율\n{언제부터} 오를까요?",
+      "image_prompt": "photorealistic golden house key resting on a stack of coins, soft studio light, shallow depth of field, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "내년, 2027년부터 70퍼센트로 올라요.",
+      "caption": "{2027년}부터\n[70%]로 올라요",
+      "active": [1],
+      "sfx": "ding",
+      "cards": [
+        {"date": "2026년", "who": "60% 그대로", "color": "gold"},
+        {"date": "2027년", "who": "70%로 인상", "color": "red"},
+        {"date": "2028년", "who": "80%까지", "color": "red"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "2028년엔 80퍼센트까지 올라가요.",
+      "caption": "{2028년}엔\n[80%]까지",
+      "active": [2],
+      "cards": [
+        {"date": "2026년", "who": "60% 그대로", "color": "gold"},
+        {"date": "2027년", "who": "70%로 인상", "color": "red"},
+        {"date": "2028년", "who": "80%까지", "color": "red"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "종부세 내시는 분께 꼭 보내주세요.",
+      "caption": "종부세 내시는 분께\n{꼭 보내}주세요",
+      "image_prompt": "photorealistic two cups of coffee on a cafe table by a window, warm afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 종부세 대상이신가요?",
+      "caption": "여러분은\n{종부세 대상}이신가요?",
+      "image_prompt": "photorealistic city skyline at night with glowing apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

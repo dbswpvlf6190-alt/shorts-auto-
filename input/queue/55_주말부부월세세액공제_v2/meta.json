@@ -1,0 +1,98 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 조세특례제한법 시행령 제95조(2026년 개정, 2026년 7월 1일 시행)",
+  "youtube_title": "주말부부면 월세 공제를 두 번 받을 수 있어요 #월세공제 #주말부부",
+  "youtube_description": "2026년 7월 1일부터 시행된 조세특례제한법 시행령 제95조 개정으로, 세대주와 배우자의 주소지가 서로 다른 시·군·구에 있으면 월세 세액공제를 부부가 각각 받을 수 있게 됐어요.\n\n원래는 한 세대에서 한 사람만 받을 수 있었던 공제를, 주말부부처럼 따로 거주하는 경우 둘 다 받을 수 있는 거예요. (영상 속 50만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n단, 배우자와 함께 거주하는 가족이 있다면 그 가족도 무주택자여야 공제가 인정돼요. 공제율은 소득에 따라 15~17퍼센트, 한도는 부부 합산 연 1천만 원이에요.\n\n출처: 조세특례제한법 시행령 제95조(2026년 개정)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#월세공제 #주말부부 #연말정산 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "월세세액공제,주말부부,월세공제,연말정산,부동산정책",
+  "tiktok_caption": "주말부부면 월세 공제를 두 번 받을 수 있어요 😲 주소만 다른 동네면 부부가 각각 받아요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 같은 동네예요 다른 동네예요? #월세공제 #주말부부 #연말정산",
+  "instagram_caption": "주말부부면 월세 공제를 두 번 받을 수 있어요 😲 주소만 다른 동네면 부부가 각각 받아요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 같은 동네예요 다른 동네예요? #월세공제 #주말부부 #연말정산",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "주말부부면 공제 두 배?",
+      "caption": "주말부부면\n{공제 두 배}?",
+      "image_prompt": "photorealistic cozy small apartment living room at night with warm lamp light and a sofa, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 부부가 서로 다른 동네에 살면 월세 공제를 각각 받을 수 있어요.",
+      "caption": "결론\n{따로 살면} 각각 받아요",
+      "image_prompt": "photorealistic two apartment buildings in different neighborhoods under a bright blue sky, daytime, high detail, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "이 제도는 2026년 7월 1일부터 이미 시행되고 있어요.",
+      "caption": "시행일",
+      "big": "2026.7.1~",
+      "badge": "이미 시행 중"
+    },
+    {
+      "kind": "photo",
+      "voice": "원래는 한 세대에서 한 사람만 월세 세액공제를 받을 수 있었어요.",
+      "caption": "원래는\n{한 사람}만 받았어요",
+      "image_prompt": "photorealistic single brass door key resting on a wooden table, soft morning light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 두 사람이 월세를 50만 원씩 낸다고 해볼게요.",
+      "caption": "예를 들어\n월세를 각각",
+      "amount": 50,
+      "unit": "만 원씩",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "timeline",
+      "voice": "같은 동네에 살면 지금도 둘 중 한 명만 공제를 받아요.",
+      "caption": "{같은 동네}면\n한 명만 공제",
+      "active": [0],
+      "cards": [
+        {"date": "같은 동네", "who": "한 명만 공제", "color": "red"},
+        {"date": "다른 동네", "who": "부부 각각 공제", "color": "green"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "주소가 다른 동네로 나뉘면 둘 다 공제를 받을 수 있어요.",
+      "caption": "{다른 동네}면\n부부 각각 공제",
+      "active": [1],
+      "cards": [
+        {"date": "같은 동네", "who": "한 명만 공제", "color": "red"},
+        {"date": "다른 동네", "who": "부부 각각 공제", "color": "green"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 같이 사는 가족 중에 집이 있는 사람이 있으면 어떨까요?",
+      "caption": "근데 {같이 사는 가족}이\n집이 있으면?",
+      "image_prompt": "photorealistic warm living room interior with a sofa and a lit floor lamp in the evening, no people, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "그 가족도 집이 없어야 공제를 받을 수 있어요.",
+      "caption": "{무주택}이어야 해요",
+      "big": "가족도 무주택",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "이번에 바뀐 근거는 조세특례제한법 시행령 95조예요.",
+      "caption": "{조세특례제한법}\n시행령 제95조",
+      "big": "시행령 제95조",
+      "badge": "2026년 개정"
+    },
+    {
+      "kind": "photo",
+      "voice": "따로 사는 신혼부부나 주말부부께 꼭 보내주세요.",
+      "caption": "{주말부부}께\n꼭 보내주세요",
+      "image_prompt": "photorealistic brass house key next to a small wooden model house on a table, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 지금 같은 동네에 사세요 다른 동네에 사세요?",
+      "caption": "여러분은\n{같은 동네}예요 {다른 동네}예요?",
+      "image_prompt": "photorealistic city skyline at night with warm lit apartment windows, soft bokeh, cinematic, no text"
+    }
+  ]
+}

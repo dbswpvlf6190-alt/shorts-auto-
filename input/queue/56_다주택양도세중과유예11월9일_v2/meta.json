@@ -1,0 +1,99 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 소득세법 양도소득세 중과 규정 · 국토교통부·기획재정부 다주택자 양도세 중과 유예 종료 조치(2026.5)",
+  "youtube_title": "다주택자, 11월 9일 넘기면 양도세 폭탄 맞습니다 #양도소득세 #다주택자",
+  "youtube_description": "다주택자 양도소득세 중과 유예가 2026년 5월 9일에 끝났습니다. 다만 그 전에 토지거래허가를 신청해둔 경우에는 지역별로 기한을 더 받았어요.\n\n강남3구(강남·서초·송파)와 용산구는 9월 9일까지였고, 이후 새로 편입된 서울 21개 자치구와 경기 12개 지역은 11월 9일까지 잔금 지급과 소유권 이전 등기까지 모두 마쳐야 중과를 피할 수 있습니다. (영상 속 1억 원은 이해를 돕기 위한 가정 금액입니다.)\n\n기한을 넘기면 조정대상지역 기준으로 2주택자는 20%포인트, 3주택 이상은 30%포인트가 기본세율에 더해지고, 지방소득세까지 합치면 실효세율이 최대 82.5%까지 올라갑니다. 허가를 받은 뒤 계약 내용을 새로 바꾸면 유예가 인정되지 않습니다.\n\n출처: 소득세법 양도소득세 중과 규정, 국토교통부·기획재정부 다주택자 양도세 중과 유예 종료 관련 발표\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#양도소득세 #다주택자 #양도세중과 #토지거래허가 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "양도소득세,다주택자,양도세중과,토지거래허가,부동산정책",
+  "tiktok_caption": "다주택자인데 11월 9일 넘기면 양도세 폭탄 맞아요 😱 잔금·등기까지 다 마쳐야 피해요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 등기까지 끝내셨어요? #양도소득세 #다주택자 #양도세중과",
+  "instagram_caption": "다주택자인데 11월 9일 넘기면 양도세 폭탄 맞아요 😱 잔금·등기까지 다 마쳐야 피해요. 팔로우하면 매일 새로운 부동산·세금 소식 받아보실 수 있어요 🔔 댓글👇 여러분은 등기까지 끝내셨어요? #양도소득세 #다주택자 #양도세중과",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "11월 9일 넘기면 폭탄?",
+      "caption": "11월 9일 넘기면\n{폭탄}?",
+      "image_prompt": "photorealistic small model house sitting on top of a stack of golden coins on a dark wooden table, dramatic warm side light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 다주택자가 그날 넘기면 양도세가 확 늘어요.",
+      "caption": "결론\n{다주택자}가 그날 넘기면\n양도세 급증",
+      "image_prompt": "photorealistic Korean high-rise apartment complex under a clear blue sky, daytime, wide angle, high detail, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "다주택자 양도세 중과 유예가 5월 9일에 끝났어요.",
+      "caption": "양도세 중과 유예\n5월 9일 종료",
+      "big": "5/9 유예 종료",
+      "badge": "중과 부활"
+    },
+    {
+      "kind": "photo",
+      "voice": "토지거래허가를 미리 신청하면 기한을 더 받았어요.",
+      "caption": "토지거래허가 신청하면\n{기한 연장}",
+      "image_prompt": "photorealistic top-down view of a tidy wooden desk with a red ink stamp and a pen resting on blank paper, warm window light, shallow depth of field, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "강남 3구랑 용산은 9월 9일, 나머지는 11월 9일까지예요.",
+      "caption": "{강남3구·용산} 9/9\n{나머지} 11/9",
+      "active": [0, 1],
+      "cards": [
+        {"date": "9월 9일", "who": "강남3구·용산 (마감)", "color": "red"},
+        {"date": "11월 9일", "who": "서울 나머지·경기 12곳", "color": "gold"}
+      ]
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 집 팔아 번 돈이 1억 원이라면요.",
+      "caption": "예를 들어\n집 팔아 번 돈이",
+      "amount": 1,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "기한 넘기면 세율이 최대 30퍼센트포인트 올라서, 지방세까지 더하면 82.5퍼센트까지 올라가요.",
+      "caption": "넘기면 최대\n{82.5%}까지",
+      "big": "최대 82.5%",
+      "badge": "지방세 포함"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 허가만 받아두면 다 끝난 걸까요?",
+      "caption": "근데 {허가만} 받으면\n끝난 걸까요?",
+      "image_prompt": "photorealistic brass house key resting beside a small stack of blank papers on a wooden desk, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "아니에요, 11월 9일까지 잔금이랑 등기까지 다 마쳐야 해요.",
+      "caption": "{11/9}까지\n잔금·등기 다 마쳐야",
+      "active": [1],
+      "sfx": "ding",
+      "cards": [
+        {"date": "9월 9일", "who": "강남3구·용산 (마감)", "color": "red"},
+        {"date": "11월 9일", "who": "서울 나머지·경기 12곳", "color": "gold"}
+      ]
+    },
+    {
+      "kind": "big",
+      "voice": "허가 받은 뒤에 계약을 새로 바꾸면 유예가 안 돼요.",
+      "caption": "계약 바꾸면\n{유예 무효}",
+      "big": "계약 변경",
+      "badge": "유예 무효"
+    },
+    {
+      "kind": "photo",
+      "voice": "다주택자 지인께 꼭 보내주세요.",
+      "caption": "다주택자 지인께\n{꼭 보내}주세요",
+      "image_prompt": "photorealistic row of Korean apartment towers reflecting in a calm river at sunset, warm golden light, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 등기까지 끝내셨어요?",
+      "caption": "여러분은\n{등기}까지 끝내셨어요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

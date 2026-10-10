@@ -1,0 +1,99 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 부동산 거래신고 등에 관한 법률 제28조·시행령 · 서울시 자금조달계획서 안내",
+  "youtube_title": "집 사고 이 서류 안 내면 과태료 500만 원 나옵니다 #자금조달계획서 #부동산세금",
+  "youtube_description": "주택을 매수하면 계약체결일로부터 30일 이내에 '주택취득자금 조달 및 입주계획서'를 거래신고와 함께 내야 합니다.\n\n서울 등 투기과열지구·조정대상지역(규제지역)은 금액과 상관없이 제출 대상이고, 비규제지역은 6억 원 이상 주택을 살 때 제출해야 해요.\n\n기한 내 제출하지 않거나 거짓으로 작성하면 부동산 거래신고 등에 관한 법률 제28조에 따라 과태료가 부과됩니다. 미제출은 최대 500만 원, 거짓 작성은 취득가액의 최대 5%까지 나올 수 있어요.\n\n계획서를 내지 않으면 부동산거래신고필증이 발급되지 않아 소유권이전등기 자체가 지연될 수 있습니다. 대출이 아직 실행되지 않았거나 자금 증빙이 어려우면 사유서를 첨부하면 돼요.\n\n출처: 부동산 거래신고 등에 관한 법률 제28조·시행령, 서울시 자금조달계획서 안내\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#자금조달계획서 #부동산세금 #부동산거래신고 #주택취득 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "자금조달계획서,부동산거래신고,주택취득,부동산세금,부동산정책",
+  "tiktok_caption": "집 사고 계획서 안 내면 과태료 500만 원이에요 😱 거짓으로 쓰면 취득가액의 5%까지 나와요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 계획서 쓰면서 뭐가 가장 헷갈리셨어요? #자금조달계획서 #부동산세금 #부동산거래신고",
+  "instagram_caption": "집 사고 계획서 안 내면 과태료 500만 원이에요 😱 거짓으로 쓰면 취득가액의 5%까지 나와요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 계획서 쓰면서 뭐가 가장 헷갈리셨어요? #자금조달계획서 #부동산세금 #부동산거래신고",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "계획서 안 내면 과태료?",
+      "caption": "계획서 안 내면\n{과태료}?",
+      "image_prompt": "photorealistic close-up of a small moving box and brass house keys on a wooden floor in an empty apartment, warm afternoon light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "결론부터 말하면, 계약 후 30일 안에 안 내면 벌금이에요.",
+      "caption": "결론\n{30일 안}에 안 내면\n벌금이에요",
+      "big": "계약 후 30일",
+      "badge": "자금조달계획서 제출기한"
+    },
+    {
+      "kind": "money",
+      "voice": "제출을 안 하거나 거짓으로 쓰면 과태료가 최대 500만 원이에요.",
+      "caption": "미제출 과태료\n최대",
+      "amount": 500,
+      "unit": "만 원",
+      "note": "(예시 금액, 법정 상한액)"
+    },
+    {
+      "kind": "photo",
+      "voice": "자금조달계획서는 집값을 어떻게 마련했는지 적는 서류예요.",
+      "caption": "자금조달계획서란\n{돈 마련한 방법}을\n적는 서류",
+      "image_prompt": "photorealistic top-down view of a wooden desk with a blank paper form, a calculator and a pen, soft window light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "서울 등 규제지역은 집값과 상관없이 무조건 내야 해요.",
+      "caption": "규제지역은\n{금액 상관없이} 무조건 제출",
+      "big": "무조건 제출",
+      "badge": "규제지역"
+    },
+    {
+      "kind": "big",
+      "voice": "비규제지역이라면 6억 원이 넘을 때 내야 해요.",
+      "caption": "비규제지역은\n{6억 원} 넘으면 제출",
+      "big": "6억 원 이상",
+      "badge": "비규제지역"
+    },
+    {
+      "kind": "big",
+      "voice": "거짓으로 쓰면 과태료가 취득가액의 최대 5퍼센트예요.",
+      "caption": "거짓 작성 시\n취득가액 [최대 5%]",
+      "big": "취득가액 최대 5%",
+      "badge": "허위 작성"
+    },
+    {
+      "kind": "big",
+      "voice": "계획서를 안 내면 거래신고필증 자체가 안 나와요.",
+      "caption": "계획서 없으면\n{신고필증} 미발급",
+      "big": "신고필증 미발급",
+      "badge": "제출 안 하면"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 신고필증이 없으면 등기는 어떻게 될까요?",
+      "caption": "근데 {신고필증}이\n없으면?",
+      "image_prompt": "photorealistic front door of an apartment with a welcome mat, warm evening light glowing through a window, quiet hallway, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "소유권이전등기 자체가 막혀요.",
+      "caption": "{소유권이전등기}가\n막혀요",
+      "big": "등기 불가",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "자금 증빙이 부족하면 사유서를 첨부하면 돼요.",
+      "caption": "증빙이 부족하면\n{사유서} 첨부",
+      "image_prompt": "photorealistic stack of papers with a paperclip on a wooden table, soft natural light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "집 사는 가족에게 꼭 보내주세요.",
+      "caption": "집 사는 가족에게\n{공유}해주세요",
+      "image_prompt": "photorealistic brass house key resting on a small stack of folded papers on a wooden table, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 계획서 쓰면서 뭐가 가장 헷갈리셨나요?",
+      "caption": "여러분은\n{뭐가 가장} 헷갈리셨나요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic wide shot, no text"
+    }
+  ]
+}

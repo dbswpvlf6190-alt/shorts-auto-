@@ -1,0 +1,119 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 전세사기피해자 지원 및 주거안정에 관한 특별법 시행령 개정안, 국토교통부(2026-10-06 국무회의 의결)",
+  "youtube_title": "전세사기인데 계약도 무효면, 국가가 경매 끝나기 전에 돈을 먼저 줍니다 #전세사기 #선지급후정산",
+  "youtube_description": "전세사기 피해자 중에서도 신탁사기처럼 임대차 계약 자체의 효력을 인정받기 어려운 '무권계약' 피해자를 위한 '선지급-후정산' 제도가 2026년 11월 13일부터 시행돼요.\n\n기존 최소보장제는 경매·공매 등 처분 절차가 끝난 뒤 피해회복액이 보증금의 3분의 1에 못 미칠 때 그 부족분을 지원하는 방식이었는데, 선지급-후정산은 이 처분 절차가 끝나기도 전에 보증금의 3분의 1 범위에서 먼저 돈을 받고 나중에 정산하는 방식이에요. (영상 속 1억 5천만 원·5천만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n신청과 정산 실무는 한국토지주택공사(LH)가 맡고, 지급 여부는 신청일로부터 90일 이내에 결정되며 부득이한 경우 30일 범위에서 한 차례 연장될 수 있어요. 결정에 이의가 있으면 통지받은 날부터 30일 이내에 이의신청할 수 있습니다.\n\n출처: 전세사기피해자 지원 및 주거안정에 관한 특별법 시행령 개정안, 국토교통부\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#전세사기 #선지급후정산 #전세사기특별법 #최소보장제 #보증금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "전세사기,선지급후정산,전세사기특별법,최소보장제,보증금",
+  "tiktok_caption": "전세사기인데 계약 자체가 무효라면, 경매 끝나기도 전에 국가가 돈을 먼저 줘요 😮 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 신탁 등기 확인해보셨어요? #전세사기 #선지급후정산 #전세사기특별법",
+  "instagram_caption": "전세사기인데 계약 자체가 무효라면, 경매 끝나기도 전에 국가가 돈을 먼저 줘요 😮 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 신탁 등기 확인해보셨어요? #전세사기 #선지급후정산 #전세사기특별법",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "전세사기인데 계약도 무효면?",
+      "caption": "전세사기인데\n{계약도 무효}면?",
+      "image_prompt": "photorealistic apartment building entrance door at night, dim warm light, quiet empty street, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 보증금 3분의 1을 먼저 받을 수 있어요.",
+      "caption": "결론\n{보증금 3분의 1} 먼저 받아요",
+      "image_prompt": "photorealistic Korean apartment complex exterior under a bright clear sky, tall residential towers, high detail, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "선지급 후정산 제도가 11월 13일부터 시행돼요.",
+      "caption": "선지급·후정산 제도",
+      "big": "11/13 시행",
+      "badge": "경매 끝나기 전 지급"
+    },
+    {
+      "kind": "photo",
+      "voice": "신탁사기처럼 임대차 계약 자체가 무효로 인정되는 피해자가 대상이에요.",
+      "caption": "대상\n{신탁사기} 등\n계약 자체가 무효인 피해자",
+      "image_prompt": "photorealistic brass key resting on a small red wax seal on a wooden desk, warm lamp light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 보증금이 1억 5천만 원인 집이었어요.",
+      "caption": "예를 들어\n보증금이",
+      "amount": 15000,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "timeline",
+      "voice": "3분의 1인 5천만 원을, 경매가 끝나기 전에 먼저 받아요.",
+      "caption": "{경매 끝나기 전}\n[5천만 원] 먼저 받아요",
+      "active": [
+        0
+      ],
+      "cards": [
+        {
+          "date": "경매 전",
+          "who": "선지급금 5천만 원",
+          "color": "gold"
+        },
+        {
+          "date": "경매 후",
+          "who": "최종 정산",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "kind": "big",
+      "voice": "신청하면 90일 안에 지급 여부가 결정되고, 필요하면 30일 늘어나요.",
+      "caption": "결정 기한",
+      "big": "90일 이내",
+      "badge": "필요시 +30일"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 경매가 다 끝나야 돈이 나오는 거 아니었나요?",
+      "caption": "근데 {경매가 다 끝나야}\n돈이 나오는 거 아닌가요?",
+      "image_prompt": "photorealistic gavel and a small model house on a dark wooden table, dramatic warm spotlight, shallow depth of field, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "아니에요, 선지급금은 경매가 끝나기 전에 먼저 나와요.",
+      "caption": "{아니에요}\n경매 전에 먼저 나와요",
+      "active": [
+        0
+      ],
+      "sfx": "ding",
+      "cards": [
+        {
+          "date": "경매 전",
+          "who": "선지급금 5천만 원",
+          "color": "gold"
+        },
+        {
+          "date": "경매 후",
+          "who": "최종 정산",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "kind": "big",
+      "voice": "신청과 정산은 엘에이치, 한국토지주택공사가 전담해요.",
+      "caption": "신청·정산 담당",
+      "big": "LH 전담",
+      "badge": "한국토지주택공사"
+    },
+    {
+      "kind": "photo",
+      "voice": "신탁사기 피해 겪은 지인께 꼭 보내주세요.",
+      "caption": "신탁사기 피해\n지인께 {공유}해주세요",
+      "image_prompt": "photorealistic two brass house keys tied together with a red ribbon on a wooden table, soft daylight, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 전세 계약한 집, 신탁 등기 확인해보셨나요?",
+      "caption": "여러분은\n{신탁 등기} 확인해보셨나요?",
+      "image_prompt": "photorealistic city skyline at dusk with warm lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

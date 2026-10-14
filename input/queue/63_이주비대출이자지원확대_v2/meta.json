@@ -1,0 +1,93 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 국토교통부 보도자료(2026년 10월), HUG·LH·SH·GH 공공재개발 이차보전 협약 개정",
+  "youtube_title": "이주비 대출 이자 할인, 다주택자는 못 받습니다 #재건축이주비 #재개발",
+  "youtube_description": "국토교통부가 공공재개발 구역의 이주비 대출에 이자 지원을 새로 넣었습니다. 대상은 1주택자의 이주비 대출이고, 다주택자 대출은 제외됩니다.\n\n기본이주비는 보증금의 70% 이내에서 최대 3억 원까지 받을 수 있고, 금리 중 연 1.8%를 넘는 부분을 최대 2%포인트까지 지원합니다. (영상 속 600만 원은 3억 원을 연 4.8%로 빌렸다고 가정한 예시 금액입니다.)\n\n이번 조치는 지난 8월 13일 나온 주택 신속공급 방안의 후속조치로, HUG·LH·SH·GH와의 이차보전 협약을 개정해 적용됩니다.\n\n출처: 국토교통부 보도자료(2026년 10월), HUG·LH·SH·GH 이차보전 협약 개정\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#재건축이주비 #재개발 #이주비대출 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "이주비대출,재건축이주비,공공재개발,부동산정책,재개발",
+  "tiktok_caption": "재건축 이주비 대출 할인, 다주택자는 못 받는대요 😮 1주택자만 한 해 최대 600만 원 아낄 수 있어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 동네는 몇 주택자까지 받으셨어요? #재건축이주비 #재개발 #이주비대출",
+  "instagram_caption": "재건축 이주비 대출, 다주택자는 할인 못 받아요 😮 1주택자만 한 해 최대 600만 원 아낄 수 있어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 동네는 몇 주택자까지 받으셨어요? #재건축이주비 #재개발 #이주비대출",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "이주비 대출 600만 원 할인?",
+      "caption": "이주비 대출\n{600만 원} 할인?",
+      "image_prompt": "photorealistic high-rise apartment complex construction site with cranes at golden sunset, warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "결론부터 말하면, 집이 한 채인 사람만 이 할인을 받아요.",
+      "caption": "결론\n{1주택자}만 할인",
+      "big": "1주택자만",
+      "badge": "할인 대상"
+    },
+    {
+      "kind": "big",
+      "voice": "국토교통부가 재건축과 재개발 이주비 대출에, 이자 지원을 새로 넣었어요.",
+      "caption": "{이주비 대출}\n이자 지원 신설",
+      "big": "이자 지원",
+      "badge": "새로 생긴 제도"
+    },
+    {
+      "kind": "photo",
+      "voice": "공공이 함께하는 재개발 구역에서 받는 이주비 대출이 대상이에요.",
+      "caption": "{공공재개발} 구역\n이주비 대출",
+      "image_prompt": "photorealistic narrow alley in an old low-rise Korean neighborhood with city skyline in the background, overcast daylight, shallow depth of field, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "기본 이주비 3억 원을 빌렸다고 해볼게요.",
+      "caption": "예를 들어\n이주비 {3억 원}",
+      "amount": 3,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "금리가 일정 선을 넘으면, 그 초과분을 나라가 대신 내줘요.",
+      "caption": "{초과 이자}\n나라가 대신 지원",
+      "big": "초과 이자",
+      "badge": "국가 지원"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 집이 두 채 이상이면, 이 지원을 받을 수 있을까요?",
+      "caption": "근데 {집이 두 채}면\n받을 수 있을까요?",
+      "image_prompt": "photorealistic two separate house key rings resting on a dark marble table, dramatic side lighting, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "아니요, 다주택자는 이 지원에서 빠져요.",
+      "caption": "[다주택자]는\n{제외}예요",
+      "big": "다주택자 제외",
+      "sfx": "ding"
+    },
+    {
+      "kind": "money",
+      "voice": "1주택자는 이 지원으로, 한 해 최대 600만 원을 아낄 수 있어요.",
+      "caption": "1주택자는 한 해\n{600만 원} 절약",
+      "amount": 600,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "photo",
+      "voice": "이번 조치는 지난 8월 나온 주택공급대책의 후속이에요.",
+      "caption": "{8월 주택공급대책}\n후속 조치",
+      "image_prompt": "photorealistic government administration building exterior with a glass curtain wall facade, midday light, wide angle, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "재건축 앞둔 이웃에게 꼭 공유해주세요.",
+      "caption": "이웃에게\n{공유}해주세요",
+      "image_prompt": "photorealistic brass house key resting beside a small wooden model house on a table, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 동네는 몇 주택자까지 이 지원을 받을 수 있을까요?",
+      "caption": "여러분 동네는\n{몇 주택자}까지\n받을 수 있을까요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

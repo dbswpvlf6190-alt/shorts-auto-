@@ -1,0 +1,95 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 소득세법 시행령 제155조의3 · 국세청 상생임대주택 특례 안내",
+  "youtube_title": "전세 5% 이내로 올리면 2년 안 살아도 비과세, 올해까지만이에요 #상생임대인 #양도세비과세",
+  "youtube_description": "상생임대주택 특례는 전세금이나 보증금을 직전 계약보다 5% 이내로만 올리고 2년 이상 임대하면, 1세대 1주택 양도세 비과세를 받기 위한 2년 거주 요건을 면제해주는 제도예요.\n\n이 특례를 받으려면 2026년 12월 31일까지 상생임대차계약을 새로 체결하고 임대를 시작해야 해요. 2027년 1월 1일 이후에 계약하면 임대료를 안 올려도 특례를 받을 수 없어요.\n\n(영상 속 3000만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n출처: 소득세법 시행령 제155조의3, 국세청 상생임대주택 특례 안내\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#상생임대인 #상생임대주택 #양도세비과세 #전세금인상 #부동산세금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "상생임대인,상생임대주택,양도세비과세,전세금인상,부동산세금",
+  "tiktok_caption": "전세 5% 이내로만 올리면 2년 안 살아도 비과세예요 😲 근데 올해 12월 31일까지만 계약해야 돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 전세금 얼마나 올리셨어요? #상생임대인 #양도세비과세 #부동산세금",
+  "instagram_caption": "전세 5% 이내로만 올리면 2년 안 살아도 비과세예요 😲 근데 올해 12월 31일까지만 계약해야 돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔\n댓글👇 여러분은 전세금 얼마나 올리셨어요?\n#상생임대인 #양도세비과세 #부동산세금",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "전세 올리면 세금폭탄?",
+      "caption": "전세 올리면\n{세금폭탄}?",
+      "image_prompt": "photorealistic apartment building exterior at golden hour, warm window light, modern balconies, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 전세금을 5퍼센트 이내로만 올리면 2년 안 살아도 비과세예요.",
+      "caption": "결론\n{5퍼센트 이내}로 올리면\n2년 안 살아도 비과세",
+      "image_prompt": "photorealistic cozy living room with sunlight streaming through sheer curtains, empty furnished apartment, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "이 상생임대 특례는 올해 12월 31일까지 새로 계약해야 받을 수 있어요.",
+      "caption": "상생임대 특례\n신규 계약 기한",
+      "big": "12/31까지",
+      "badge": "올해뿐"
+    },
+    {
+      "kind": "photo",
+      "voice": "직전 전세 계약보다 적게 올리고, 2년 이상 임대하면 돼요.",
+      "caption": "직전 계약보다\n{적게 올리고}\n2년 이상 임대",
+      "image_prompt": "photorealistic house key and small notebook on a wooden desk, soft morning light, shallow depth of field, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 비과세를 못 받으면 양도세가 3000만 원 늘어날 수 있어요.",
+      "caption": "비과세 못 받으면\n{양도세 3000만 원}\n더 낼 수도",
+      "amount": 3000,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "timeline",
+      "voice": "12월 31일까지 계약하고 임대를 시작하면 특례를 받을 수 있어요.",
+      "caption": "{12월 31일}까지 계약\n특례 적용",
+      "active": [0],
+      "cards": [
+        { "date": "12월 31일까지", "who": "계약하면 특례 적용", "color": "green" },
+        { "date": "1월 1일부터", "who": "특례 자체가 사라짐", "color": "red" }
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "1월 1일부터는 임대료를 안 올려도 특례 자체가 없어져요.",
+      "caption": "{1월 1일}부터는\n특례가 사라져요",
+      "active": [1],
+      "cards": [
+        { "date": "12월 31일까지", "who": "계약하면 특례 적용", "color": "green" },
+        { "date": "1월 1일부터", "who": "특례 자체가 사라짐", "color": "red" }
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 계약을 내년에 갱신하면 특례를 받을 수 있을까요?",
+      "caption": "근데 {내년에}\n갱신하면?",
+      "image_prompt": "photorealistic desk scene with a small potted plant and a pen on a wooden table by a window, soft afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "아니요, 올해 안에 새로 계약하고 임대를 시작해야만 특례를 받아요.",
+      "caption": "{올해 안에}\n새로 계약해야만",
+      "active": [0],
+      "sfx": "ding",
+      "cards": [
+        { "date": "12월 31일까지", "who": "계약하면 특례 적용", "color": "green" },
+        { "date": "1월 1일부터", "who": "특례 자체가 사라짐", "color": "red" }
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "전세 놓은 지인께 꼭 보내주세요.",
+      "caption": "전세 놓은 지인께\n{꼭 보내}주세요",
+      "image_prompt": "photorealistic small model house next to a stack of coins on a wooden table, warm side light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 전세금을 얼마나 올리셨어요?",
+      "caption": "여러분은\n{전세금}을 얼마나 올리셨어요?",
+      "image_prompt": "photorealistic city skyline at night with glowing apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 국토교통부 전세사기피해지원위원회 심의 결과(2026년 10월 12일 발표)",
+  "youtube_title": "보증보험 있으면, 전세사기 피해자에서 빠집니다 #전세사기 #전세사기피해자",
+  "youtube_description": "국토교통부가 9월 한 달간 전세사기피해지원위원회 전체회의를 열어 1,642건을 심의했고, 그중 623건을 전세사기 피해자 등으로 결정했습니다.\n\n나머지 1,019건 가운데 583건은 요건 미충족으로 부결됐고, 208건은 보증보험이나 최우선변제금으로 보증금 전액을 돌려받을 수 있어 피해자 지원 대상에서 제외됐습니다.\n\n법 시행 이후 지금까지 누적 71,058건 중 41,559건이 피해자로 인정됐고(인정률 58.5%), 이 중 76%는 만 40세 미만 청년층이었습니다. LH가 사들인 피해 주택도 11,148가구를 넘었습니다.\n\n출처: 국토교통부 전세사기피해지원위원회 심의 결과(2026년 10월 12일 발표)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#전세사기 #전세사기피해자 #전세사기피해지원위원회 #LH매입 #국토교통부 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "전세사기,전세사기피해자,전세사기피해지원위원회,LH매입,국토교통부",
+  "tiktok_caption": "전세사기 피해 신청했는데 보증보험 있으면 오히려 제외될 수 있어요 😳 9월에만 623건 인정, 583건은 부결됐어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 주변엔 전세사기 피해 겪은 분 있으세요? #전세사기 #전세사기피해자 #LH매입",
+  "instagram_caption": "전세사기 피해 신청했는데 보증보험 있으면 오히려 제외될 수 있어요 😳 9월에만 623건 인정, 583건은 부결됐어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 주변엔 전세사기 피해 겪은 분 있으세요? #전세사기 #전세사기피해자 #LH매입",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "보증보험 있으면 제외?",
+      "caption": "보증보험\n있으면 {제외}?",
+      "image_prompt": "photorealistic golden house key resting on a small stack of coins on a dark wooden table, dramatic warm light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 전액 돌려받을 수 있으면 피해자로 인정 안 돼요.",
+      "caption": "결론\n전액 받을 수 있으면\n{피해자 인정} 안 돼요",
+      "image_prompt": "photorealistic empty rental apartment room with bare white walls and a single sunlit window, soft daylight, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "구월 한 달, 1642건 가운데 623건만 인정됐어요.",
+      "caption": "9월 심의\n1642건 중 {623건} 인정",
+      "big": "623건 인정",
+      "badge": "1642건 심의"
+    },
+    {
+      "kind": "big",
+      "voice": "피해자로 인정돼야 엘에이치 매입과 금융 지원을 받아요.",
+      "caption": "피해자 인정돼야\n{LH 매입}·금융지원",
+      "big": "LH 매입·금융지원",
+      "badge": "피해자 인정이 조건"
+    },
+    {
+      "kind": "big",
+      "voice": "583건은 요건을 못 채워서 떨어졌어요.",
+      "caption": "{583건}\n요건 미충족 부결",
+      "big": "583건 부결",
+      "badge": "요건 미충족"
+    },
+    {
+      "kind": "big",
+      "voice": "208건은 전액 받을 수 있어서 빠졌어요.",
+      "caption": "{208건}\n전액 반환 가능해서 제외",
+      "big": "208건 제외",
+      "badge": "보증보험·최우선변제금"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 보증보험이 있으면 왜 피해자에서 빠질까요?",
+      "caption": "근데 보증보험 있으면\n왜 {빠질까요}?",
+      "image_prompt": "photorealistic magnifying glass resting on a wooden desk under warm lamp light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "법이 정한 피해자는, 돌려받을 길이 없는 사람이에요.",
+      "caption": "{돌려받을 길}이 없는\n사람만 피해자예요",
+      "big": "전액 반환 가능 = 제외",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "지금까지 7만1058건 중 4만1559건이 인정됐어요.",
+      "caption": "누적\n7만1058건 중 {4만1559건} 인정",
+      "big": "4만1559건",
+      "badge": "인정률 58.5%"
+    },
+    {
+      "kind": "photo",
+      "voice": "인정된 사람 100명 중 76명은 마흔 살 미만이에요.",
+      "caption": "인정된 사람 중\n{76%}는 마흔 살 미만",
+      "image_prompt": "photorealistic small cardboard moving boxes stacked near an apartment entrance, soft morning light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "엘에이치 매입 주택도 1만 가구 넘었어요.",
+      "caption": "LH 매입 피해주택\n{1만 가구} 넘었어요",
+      "image_prompt": "photorealistic modern apartment building entrance with a small garden, late afternoon warm light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "전세 사는 가족이나 친구께 꼭 보내주세요.",
+      "caption": "전세 사는 가족·친구께\n{꼭 보내}주세요",
+      "image_prompt": "photorealistic two warm cups of tea on a small wooden table by a window, soft afternoon light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 주변엔 전세사기 피해 겪은 분 있으세요?",
+      "caption": "여러분 주변엔\n{전세사기 피해} 겪은 분 있으세요?",
+      "image_prompt": "photorealistic city street at dusk lined with low-rise apartment buildings, warm street lights glowing, shallow depth of field, cinematic, no text"
+    }
+  ]
+}

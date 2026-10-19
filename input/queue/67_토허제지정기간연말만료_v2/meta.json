@@ -1,0 +1,83 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 국토교통부 10·15 부동산 대책 보도자료(2025.10.15)",
+  "youtube_title": "서울 토허제, 12월 31일 지나면 풀릴까요? #토지거래허가구역 #토허제",
+  "youtube_description": "작년 10월 15일, 서울 25개 자치구 전역과 경기 12개 지역이 토지거래허가구역(토허제)으로 지정됐어요. 지정 기간은 이번 2026년 12월 31일까지입니다.\n\n이 구역에서 아파트 등을 사면 매수자는 실거주 의무(2년)를 지켜야 하고, 주택담보대출비율(LTV)도 40%로 제한돼요. (영상 속 2억 원은 이해를 돕기 위한 가정 금액입니다.)\n\n연장 여부는 아직 정해지지 않았어요. 다만 이미 계약을 맺은 매수인은 연장·해제 여부와 무관하게 계약 시점 기준 규제를 그대로 적용받습니다.\n\n출처: 국토교통부 10·15 부동산 대책 보도자료\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#토지거래허가구역 #토허제 #부동산규제 #부동산정책 #실거주의무 #부동산 #재테크 #shorts",
+  "tags": "토지거래허가구역,토허제,부동산규제,부동산정책,실거주의무",
+  "tiktok_caption": "서울 토허제, 12월 31일 지나면 풀릴까요 😳 아직 정부도 결정 안 했대요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 올해 안에 사실 건가요, 내년을 기다리실 건가요? #토지거래허가구역 #토허제 #부동산규제",
+  "instagram_caption": "서울 토허제, 12월 31일 지나면 풀릴까요 😳 아직 정부도 결정 안 했대요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 올해 안에 사실 건가요, 내년을 기다리실 건가요? #토지거래허가구역 #토허제 #부동산규제",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "토허제, 연말에 풀려요?",
+      "caption": "토허제,\n{연말}에 풀려요?",
+      "image_prompt": "photorealistic wide shot of a dense Seoul apartment complex skyline under an overcast sky, natural daylight, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 아직 몰라요. 정부가 연말에 다시 정해요.",
+      "caption": "결론\n{아직 몰라요}\n정부가 다시 정해요",
+      "image_prompt": "photorealistic exterior of a government office building with glass facade, blue sky, daytime, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "서울 전역과 경기 12곳 지정 기간이 이번 12월 31일까지예요.",
+      "caption": "지정기간",
+      "big": "~12/31",
+      "badge": "연장 미정"
+    },
+    {
+      "kind": "photo",
+      "voice": "작년 10월에 이 제도가 갑자기 시작됐어요.",
+      "caption": "작년 10월\n갑자기 시작됐어요",
+      "image_prompt": "photorealistic street level view of a quiet residential neighborhood with parked cars, morning light, shallow depth of field, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 5억짜리 집이면, 대출이 2억 원까지만 나와요.",
+      "caption": "5억 집이면\n대출 {2억}까지",
+      "amount": 2,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "그리고 집을 사면 2년 동안 꼭 거기 살아야 해요.",
+      "caption": "실거주 의무",
+      "big": "2년"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 연말에 풀리면, 이미 산 사람도 똑같이 될까요?",
+      "caption": "근데 {연말}에 풀리면?\n이미 산 사람도?",
+      "image_prompt": "photorealistic modern apartment building entrance at dusk with warm glowing lights, empty street, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "아니요, 이미 산 사람은 계약 시점 기준으로 그대로 적용돼요.",
+      "caption": "{계약 시점} 기준\n그대로 적용돼요",
+      "big": "계약시점 기준",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "그래서 연말까지 계속 지켜봐야 하는 거예요.",
+      "caption": "연장 여부\n계속 지켜봐야해요",
+      "big": "연장 여부 미정"
+    },
+    {
+      "kind": "photo",
+      "voice": "집 알아보는 지인께 꼭 보내주세요.",
+      "caption": "집 알아보는 지인께\n{공유}해주세요",
+      "image_prompt": "photorealistic close-up of a brass house key resting on a dark wooden table, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 올해 안에 사실 건가요, 내년을 기다리실 건가요?",
+      "caption": "여러분은\n{올해}? {내년}?",
+      "image_prompt": "photorealistic city skyline at night with illuminated apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

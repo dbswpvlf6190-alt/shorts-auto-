@@ -1,0 +1,104 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 소득세법 · 국세청 양도소득세 신고 안내",
+  "youtube_title": "양도일로부터 두 달, 이 날짜를 넘기면 세금 20%를 더 냅니다 #양도소득세 #양도세신고",
+  "youtube_description": "집을 판 뒤 양도소득세 예정신고 기한은 양도일(통상 잔금일)이 속한 달의 말일부터 2개월 이내입니다. 예를 들어 8월 10일에 잔금을 받았다면 10월 31일까지 신고해야 해요.\n\n기한을 넘기면 무신고가산세가 붙는데, 일반 무신고는 20%, 부정행위로 확인되면 40%까지 올라갑니다. 여기에 납부가 늦어진 기간만큼 하루 0.022%의 납부지연가산세도 별도로 더 붙어요. (영상 속 500만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n다만 기한을 넘겼어도 1개월 안에 스스로 신고하면 무신고가산세의 50%를 감면받을 수 있습니다.\n\n출처: 소득세법, 국세청 양도소득세 신고 안내\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#양도소득세 #양도세신고 #양도세가산세 #부동산세금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "양도소득세,양도세신고,양도세가산세,부동산세금,부동산정책",
+  "tiktok_caption": "집 팔고 두 달 안에 신고 안 하면 세금 20% 더 내요 😱 기한 넘겨도 1개월 안에 자진신고하면 가산세가 반으로 줄어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 집 팔고 몇 개월 안에 신고하셨어요? #양도소득세 #양도세신고 #부동산세금",
+  "instagram_caption": "집 팔고 두 달 안에 신고 안 하면 세금 20% 더 내요 😱 기한 넘겨도 1개월 안에 자진신고하면 가산세가 반으로 줄어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 집 팔고 몇 개월 안에 신고하셨어요? #양도소득세 #양도세신고 #부동산세금",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "집 팔고 신고 안 하면?",
+      "caption": "집 팔고\n{신고 안 하면}?",
+      "image_prompt": "photorealistic empty apartment living room with moving boxes stacked near a window, soft daylight, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 두 달 안에 신고 안 하면 가산세가 붙어요.",
+      "caption": "결론\n{두 달} 안에 신고 안 하면\n가산세가 붙어요",
+      "image_prompt": "photorealistic Korean apartment complex exterior under a clear blue sky, bright daylight, high detail, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "신고 기한은 양도일이 속한 달 말일부터 2개월이에요.",
+      "caption": "신고 기한",
+      "big": "말일부터 2개월",
+      "badge": "양도소득세 예정신고"
+    },
+    {
+      "kind": "timeline",
+      "voice": "예를 들어 8월 10일에 잔금 받았다면 10월 31일까지예요.",
+      "caption": "{8월 10일} 잔금이면\n{10월 31일}까지",
+      "active": [0, 1],
+      "cards": [
+        {"date": "8/10", "who": "잔금(양도일)", "color": "green"},
+        {"date": "10/31", "who": "신고 기한", "color": "gold"},
+        {"date": "11/30", "who": "자진신고 50% 감면 마감", "color": "red"}
+      ]
+    },
+    {
+      "kind": "big",
+      "voice": "기한을 넘기면 무신고가산세로 세금의 20퍼센트가 더 붙어요.",
+      "caption": "기한 넘기면\n세금의 {+20%}",
+      "big": "+20%",
+      "badge": "무신고가산세"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 양도세가 500만 원인 경우를 가정해볼게요.",
+      "caption": "예를 들어\n양도세가",
+      "amount": 500,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "20퍼센트면 100만 원이 가산세로 그대로 더 붙는 거예요.",
+      "caption": "{100만 원}이\n가산세로 더 붙어요",
+      "big": "+100만 원",
+      "badge": "가산세만"
+    },
+    {
+      "kind": "photo",
+      "voice": "거짓으로 꾸며서 신고하면 가산세가 40퍼센트까지 올라가요.",
+      "caption": "거짓으로 꾸미면\n{+40%}",
+      "image_prompt": "photorealistic judge's gavel resting on a dark wooden desk, dramatic warm spotlight, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 기한 넘긴 걸 알고 바로 신고하면 어떻게 될까요?",
+      "caption": "근데 기한 넘긴 걸\n알고 바로 {신고}하면?",
+      "image_prompt": "photorealistic single desk lamp glowing on an empty wooden office desk at night, quiet mood, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "1개월 안에 자진신고하면 가산세가 절반으로 줄어요.",
+      "caption": "{1개월 안}에 신고하면\n가산세 [-50%]",
+      "big": "가산세 -50%",
+      "badge": "1개월 내 자진신고",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "납부가 늦어질수록 하루 0.022퍼센트씩 더 붙어요.",
+      "caption": "늦어진 날마다\n{0.022%}씩 추가",
+      "big": "하루 0.022%",
+      "badge": "납부지연가산세"
+    },
+    {
+      "kind": "photo",
+      "voice": "집 파신 분께 이 두 달 기한을 꼭 알려주세요.",
+      "caption": "집 파신 분께\n{두 달 기한} 알려주세요",
+      "image_prompt": "photorealistic brass house key resting on a small wooden side table, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 집 팔고 몇 개월 안에 신고하셨어요?",
+      "caption": "여러분은 집 팔고\n{몇 개월} 안에 신고하셨어요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

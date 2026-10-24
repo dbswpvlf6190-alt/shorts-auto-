@@ -1,0 +1,94 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 금융위원회 가계부채 관리방안(2025.6.27) · 주택구입목적 주담대 전입의무 후속조치(2026.3)",
+  "youtube_title": "대출받고 6개월 안에 이사 안 가면, 대출이 통째로 회수됩니다 #주택담보대출 #전입신고",
+  "youtube_description": "수도권·규제지역에서 주택구입용 주담대를 받으면, 대출 실행일로부터 6개월 안에 그 집에 전입해야 해요(2025년 6월 27일 가계부채 관리방안).\n\n이 기한을 넘기면 대출금 전액을 한 번에 갚아야 하고, 이후 3년 동안 주택 관련 대출도 받을 수 없어요. (영상 속 3억 원은 이해를 돕기 위한 가정 금액입니다.)\n\n다만 세입자가 살고 있는 집(전세 낀 매물)을 조정대상지역에서 무주택자가 살 때는 예외가 있어요. 기존 임대차 계약이 끝난 날로부터 한 달 안에만 전입하면 대출 회수를 피할 수 있어요(2026년 3월 은행권 후속 조치).\n\n출처: 금융위원회 가계부채 관리방안(2025.6.27), 주택구입목적 주담대 전입의무 후속조치(2026.3)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#주택담보대출 #전입신고 #대출회수 #가계부채관리방안 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "주택담보대출,전입신고,대출회수,가계부채관리방안,부동산정책",
+  "tiktok_caption": "대출받고 6개월 안에 이사 안 가면 대출이 통째로 회수돼요 😱 세입자 낀 집 사면 한 달 유예가 있어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 지금 사는 집에 전입신고 하셨나요? #주택담보대출 #전입신고 #대출회수",
+  "instagram_caption": "대출받고 6개월 안에 이사 안 가면 대출이 통째로 회수돼요 😱 세입자 낀 집 사면 한 달 유예가 있어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 지금 사는 집에 전입신고 하셨나요? #주택담보대출 #전입신고 #대출회수",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "대출받고 이사 안 가면?",
+      "caption": "대출받고\n{이사 안 가면}?",
+      "image_prompt": "photorealistic moving boxes stacked in an empty apartment living room, soft daylight through window, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 6개월 안에 이사 안 가면 대출이 바로 회수돼요.",
+      "caption": "결론\n{6개월} 안에 이사 안 가면\n대출이 {바로 회수}돼요",
+      "image_prompt": "photorealistic bank building exterior with glass facade under a clear blue sky, daytime, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "수도권과 규제지역에서 집 살 때 받은 대출은 6개월 안에 전입해야 해요.",
+      "caption": "전입 의무",
+      "big": "6개월",
+      "badge": "수도권·규제지역 주담대"
+    },
+    {
+      "kind": "big",
+      "voice": "전입을 안 하면 대출금을 한 번에 다 갚아야 해요.",
+      "caption": "전입 안 하면\n{대출금 전액} 한 번에",
+      "big": "대출 즉시 회수",
+      "badge": "전입 안 하면"
+    },
+    {
+      "kind": "big",
+      "voice": "거기다 3년 동안 주택 관련 대출도 막혀요.",
+      "caption": "게다가\n{3년}간 대출 제한",
+      "big": "3년간 대출 제한",
+      "badge": "추가 제재"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 대출받은 돈이 3억 원이라고 해볼게요.",
+      "caption": "예를 들어\n대출받은 돈이",
+      "amount": 3,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "회수되면 이 3억 원을 한 번에 갚아야 하는 거예요.",
+      "caption": "회수되면\n{3억 원} 한 번에",
+      "big": "3억 원 일시상환",
+      "badge": "예시 기준"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 세입자가 아직 살고 있는 집을 샀으면 어떻게 될까요?",
+      "caption": "근데 {세입자}가\n살고 있는 집이면?",
+      "image_prompt": "photorealistic apartment front door with a welcome mat in a quiet hallway, warm ambient light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "임대차 계약이 끝난 날로부터 한 달 안에만 들어가면 괜찮아요.",
+      "caption": "{계약 끝난 날}부터\n[한 달] 안에만",
+      "big": "계약종료 +1개월",
+      "badge": "예외 인정",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "이 예외는 조정대상지역에서 무주택자가 다주택자 매물을 살 때만 적용돼요.",
+      "caption": "조건은\n{무주택자}가 다주택자 매물 매수",
+      "big": "무주택자 매수 시만",
+      "badge": "조정대상지역"
+    },
+    {
+      "kind": "photo",
+      "voice": "집 사고 대출받을 계획인 분께 꼭 보내주세요.",
+      "caption": "대출 계획 있는 분께\n{꼭 보내}주세요",
+      "image_prompt": "photorealistic brass house key resting beside a small wooden house model on a desk, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 지금 사는 집에 전입신고 하셨나요?",
+      "caption": "여러분은 지금 사는 집에\n{전입신고} 하셨나요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

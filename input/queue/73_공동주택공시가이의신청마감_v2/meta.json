@@ -1,0 +1,104 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 국토교통부 부동산공시가격알리미 공고(2026-09-30)",
+  "youtube_title": "공시가 틀렸는데 가만있으면 그 가격으로 세금 확정돼요 #공시가격 #이의신청",
+  "youtube_description": "국토교통부가 올해 1~5월 사이 새로 짓거나 고친 공동주택 7만1,853가구의 공시가격을 9월 30일에 발표했어요.\n\n이의신청 기한은 10월 29일까지입니다. 이 기한을 넘기면 지금 발표된 가격이 그대로 확정되고, 이 가격이 재산세·종합부동산세 등 보유세 산정 기준이 됩니다.\n\n이의신청은 서면 또는 부동산공시가격알리미 누리집에서 할 수 있고, 신청된 건은 재조사와 부동산가격공시위원회 심의를 거쳐 11월 20일 조정·공시됩니다. (영상 속 2,000만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n출처: 국토교통부 부동산공시가격알리미 공고(2026-09-30)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#공시가격 #이의신청 #부동산공시가격알리미 #재산세 #종합부동산세 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "공시가격,이의신청,부동산공시가격알리미,재산세,종합부동산세",
+  "tiktok_caption": "새 아파트 공시가, 틀려도 그냥 두면 세금까지 그대로 확정돼요 😱 이의신청 기한은 10월 29일까지예요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집 공시가격은 확인해 보셨어요? #공시가격 #이의신청 #재산세",
+  "instagram_caption": "새 아파트 공시가, 틀려도 그냥 두면 세금까지 그대로 확정돼요 😱 이의신청 기한은 10월 29일까지예요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집 공시가격은 확인해 보셨어요? #공시가격 #이의신청 #재산세",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "공시가 틀렸는데 그냥 둬요?",
+      "caption": "공시가 틀렸는데\n{그냥 둬요}?",
+      "image_prompt": "photorealistic magnifying glass resting over a small wooden model house on a wooden desk, warm side light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 10월 29일까지 신청 안 하면 그 가격으로 확정돼요.",
+      "caption": "결론\n{10월 29일}까지 신청 안 하면\n그 가격으로 확정",
+      "image_prompt": "photorealistic modern Korean apartment complex exterior under midday sun, tall towers, blue sky, high detail, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "국토교통부가 올해 새로 짓거나 고친 공동주택 공시가격을 9월 30일에 발표했어요.",
+      "caption": "{9월 30일}\n새 공동주택 공시가격 발표",
+      "big": "9/30 발표",
+      "badge": "7만여 채 대상"
+    },
+    {
+      "kind": "photo",
+      "voice": "대상은 1월부터 5월 사이에 짓거나 고치거나 용도가 바뀐 공동주택이에요.",
+      "caption": "대상\n{1월~5월}에\n짓거나 고친 공동주택",
+      "image_prompt": "photorealistic newly built apartment building facade with scaffolding removed, clean concrete and glass exterior, soft daylight, shallow depth of field, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 공시가격이 2000만 원 올랐다고 해볼게요.",
+      "caption": "예를 들어\n공시가격이 {2000만 원}\n올랐다면",
+      "amount": 2000,
+      "unit": "만 원",
+      "note": "(예시 상승액)"
+    },
+    {
+      "kind": "timeline",
+      "voice": "9월 30일에 이 가격이 먼저 공시됐어요.",
+      "caption": "{9/30}\n먼저 공시돼요",
+      "active": [0],
+      "cards": [
+        {"date": "9월 30일", "who": "최초 발표", "color": "white"},
+        {"date": "10월 29일", "who": "이의신청 마감", "color": "red"},
+        {"date": "11월 20일", "who": "조정 · 공시", "color": "green"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "이의신청은 10월 29일까지만 받아요.",
+      "caption": "{10월 29일}까지만\n이의신청 받아요",
+      "active": [1],
+      "cards": [
+        {"date": "9월 30일", "who": "최초 발표", "color": "white"},
+        {"date": "10월 29일", "who": "이의신청 마감", "color": "red"},
+        {"date": "11월 20일", "who": "조정 · 공시", "color": "green"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "신청 안 하면 그 가격 그대로 넘어가요.",
+      "caption": "신청 안 하면\n{그대로} 넘어가요",
+      "active": "all",
+      "cards": [
+        {"date": "9월 30일", "who": "최초 발표", "color": "white"},
+        {"date": "10월 29일", "who": "이의신청 마감", "color": "red"},
+        {"date": "11월 20일", "who": "조정 · 공시", "color": "green"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 이의신청, 어떻게 하는지 아세요?",
+      "caption": "근데 {이의신청}\n어떻게 하죠?",
+      "image_prompt": "photorealistic exterior of a modern government office building with glass facade, daytime, clear sky, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "서면이나 부동산공시가격알리미 홈페이지에서 신청하면 돼요.",
+      "caption": "{서면}이나\n{부동산공시가격알리미}에서",
+      "big": "서면 · 온라인 신청",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "새 아파트로 이사한 지인께 꼭 보내주세요.",
+      "caption": "새 아파트 이사한 지인께\n{공유}해주세요",
+      "image_prompt": "photorealistic two house keys tied with a ribbon on a wooden table, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 집 공시가격은 확인해 보셨어요?",
+      "caption": "여러분 집 공시가격은\n{확인}해 보셨어요?",
+      "image_prompt": "photorealistic city skyline at dusk with warm lit apartment windows, soft bokeh, cinematic, no text"
+    }
+  ]
+}

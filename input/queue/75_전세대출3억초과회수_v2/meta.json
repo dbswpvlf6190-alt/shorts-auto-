@@ -1,0 +1,111 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 금융위원회 10·15 대책 대출수요 관리방안 FAQ",
+  "youtube_title": "전세대출 있는데 규제지역 집 사면 대출 전액 회수돼요 #전세대출 #갭투자",
+  "youtube_description": "전세대출을 받은 채로 규제지역 안에서 3억 원이 넘는 아파트를 사면, 전세대출을 그 자리에서 전액 갚아야 해요.\n\n지금 규제지역은 서울 전역과 경기 열두 곳(과천·광명·성남 분당·수정·중원 등)이에요. 배우자 이름으로 사도 똑같이 적용되고, 반대로 그 집을 먼저 산 사람은 전세대출을 새로 받는 것 자체가 막혀요.\n\n다만 규제지역 지정 효력일인 10월 16일 전날까지 매매계약을 맺고 계약금을 낸 걸 증명하면 예외로 인정받을 수 있어요. (영상 속 2억 원은 이해를 돕기 위한 가정 금액입니다.)\n\n전세대출을 지렛대로 삼아 집을 사는 갭투자를 막기 위한 조치예요.\n\n출처: 금융위원회 10·15 대책 대출수요 관리방안 FAQ\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#전세대출 #갭투자 #대출규제 #부동산정책 #부동산세금 #부동산 #재테크 #shorts",
+  "tags": "전세대출,갭투자,대출규제,부동산정책,부동산세금",
+  "tiktok_caption": "전세대출 있는데 규제지역 집 사면 대출이 통째로 회수돼요 😱 배우자 이름으로 사도 똑같이 적용돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 전세대출 지금 얼마나 남으셨어요? #전세대출 #갭투자 #대출규제",
+  "instagram_caption": "전세대출 있는데 규제지역 집 사면 대출이 통째로 회수돼요 😱 배우자 이름으로 사도 똑같이 적용돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 전세대출 지금 얼마나 남으셨어요? #전세대출 #갭투자 #대출규제",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "전세대출 받았는데 집 사면?",
+      "caption": "전세대출 받았는데\n{집 사면}?",
+      "image_prompt": "photorealistic small wooden model house beside a glowing red alarm clock on a dark wooden table, dramatic warm light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 전세대출을 그 자리에서 다 갚아야 해요.",
+      "caption": "결론\n전세대출을 {그 자리에서} 다 갚아요",
+      "image_prompt": "photorealistic stack of gold coins toppling over on a dark wooden table, dramatic warm spotlight, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "규제지역에서 3억 원 넘는 아파트를 사는 순간이에요.",
+      "caption": "규제지역 + {3억 원} 초과 아파트",
+      "big": "3억원 초과",
+      "badge": "전세대출 회수"
+    },
+    {
+      "kind": "photo",
+      "voice": "지금은 서울 전역과 경기 열두 곳이 규제지역이에요.",
+      "caption": "서울 전역 + 경기 {12곳}",
+      "image_prompt": "photorealistic Korean high-rise apartment complex under a clear blue sky, tall residential towers, bright daylight, high detail, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 전세대출을 2억 원 받은 상태라고 해볼게요.",
+      "caption": "예를 들어\n전세대출 받은 돈",
+      "amount": 2,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "timeline",
+      "voice": "10월 16일 전에 계약하고 계약금을 냈다면 그대로 인정돼요.",
+      "caption": "{10월 16일} 전 계약\n인정",
+      "active": [0],
+      "cards": [
+        {"date": "10월 15일까지", "who": "계약금 증명하면 인정", "color": "green"},
+        {"date": "10월 16일", "who": "규제지역 지정 효력일", "color": "gold"},
+        {"date": "10월 16일 이후", "who": "계약하면 전세대출 회수", "color": "red"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "16일 이후에 계약하면 바로 회수 대상이 돼요.",
+      "caption": "{16일 이후} 계약\n[회수 대상]",
+      "active": [2],
+      "cards": [
+        {"date": "10월 15일까지", "who": "계약금 증명하면 인정", "color": "green"},
+        {"date": "10월 16일", "who": "규제지역 지정 효력일", "color": "gold"},
+        {"date": "10월 16일 이후", "who": "계약하면 전세대출 회수", "color": "red"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "결국 계약일 하루 차이로 전세대출이 통째로 날아가는 거예요.",
+      "caption": "하루 차이로\n{전세대출}이 날아가요",
+      "active": "all",
+      "cards": [
+        {"date": "10월 15일까지", "who": "계약금 증명하면 인정", "color": "green"},
+        {"date": "10월 16일", "who": "규제지역 지정 효력일", "color": "gold"},
+        {"date": "10월 16일 이후", "who": "계약하면 전세대출 회수", "color": "red"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "배우자 이름으로 사도 똑같이 적용돼요.",
+      "caption": "{배우자} 이름으로 사도\n똑같이 적용",
+      "image_prompt": "photorealistic two gold wedding rings resting on a dark wooden table, soft warm light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 그 집을 이미 산 사람은 어떨까요?",
+      "caption": "근데 {이미 산 사람}은\n어떨까요?",
+      "image_prompt": "photorealistic front door of a modern apartment at dusk, warm light glowing from a window, quiet hallway, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "그 사람은 전세대출을 새로 받는 것 자체가 막혀요.",
+      "caption": "{전세대출} 신규 신청\n자체가 막혀요",
+      "big": "신규 전세대출",
+      "badge": "불가",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "전세대출 있는 지인께 꼭 보내주세요.",
+      "caption": "전세대출 있는 지인께\n{꼭 보내}주세요",
+      "image_prompt": "photorealistic brass house key resting on a wooden table with soft bokeh city lights in the background, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 전세대출, 지금 얼마나 남으셨어요?",
+      "caption": "여러분은 전세대출\n{지금 얼마} 남으셨어요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

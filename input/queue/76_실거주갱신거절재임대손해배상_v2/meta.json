@@ -1,0 +1,105 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 대법원 2부 판결(2026년 10월 12일 보도) · 주택임대차보호법 제6조의3",
+  "youtube_title": "실거주한다며 내보냈는데, 2년 안에 세 놓으면 집주인이 배상해야 해요 #계약갱신청구권 #실거주거절",
+  "youtube_description": "집주인이 본인이 들어와 산다며 계약갱신을 거절했는데, 2년도 안 돼서 다른 사람에게 다시 세를 줬다면 세입자에게 손해를 배상해야 해요.\n\n실제로 서울의 한 세입자가 2020년 보증금 6억6천만원으로 계약했다가 2022년 갱신을 거절당했는데, 집주인이 2024년 같은 집을 보증금 8억2천만원에 다른 사람에게 다시 세 준 사건에서 대법원이 처음으로 집주인의 배상 책임을 확정했어요.\n\n핵심은 '증명 책임'이 집주인에게 있다는 거예요. 예측할 수 없었던 불가피한 사정이 있었다는 걸 집주인이 직접 증명하지 못하면 그냥 배상해야 해요. 배상액은 갱신거절 당시 월세 3개월분, 재임대로 생긴 월세 차액의 2년분, 실제 손해액 중 가장 큰 금액으로 정해져요. (영상 속 100만원 차액과 2400만원은 이해를 돕기 위한 가정입니다.)\n\n출처: 대법원 2부 판결(2026년 10월 12일 보도) · 주택임대차보호법 제6조의3\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#계약갱신청구권 #실거주거절 #손해배상 #주택임대차보호법 #전세 #부동산정책 #부동산세금 #shorts",
+  "tags": "계약갱신청구권,실거주거절,손해배상,주택임대차보호법,전세",
+  "tiktok_caption": "집주인이 실거주한다며 내보내고 2년 안에 다시 세 놓으면 배상해야 해요 😲 증명 책임은 집주인에게 있대요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 집주인 말 믿으셨어요? #계약갱신청구권 #실거주거절 #전세",
+  "instagram_caption": "집주인이 실거주한다며 내보내고 2년 안에 다시 세 놓으면 배상해야 해요 😲 증명 책임은 집주인에게 있대요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 집주인 말 믿으셨어요? #계약갱신청구권 #실거주거절 #전세",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "실거주한다며 내보냈는데",
+      "caption": "{실거주}한다며\n내보냈는데",
+      "image_prompt": "photorealistic moving boxes stacked in an empty apartment living room, soft natural light through a window, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 거짓이면 집주인이 배상해야 해요.",
+      "caption": "결론\n거짓이면 {집주인이 배상}해요",
+      "image_prompt": "photorealistic bronze scales of justice statue on a dark wooden desk, dramatic warm spotlight, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "2020년에 서울에서 보증금 6억6천만원으로 계약을 맺었어요.",
+      "caption": "2020년\n보증금 {6억6천만원}",
+      "active": [0],
+      "cards": [
+        {"date": "2020년 계약", "who": "보증금 6억6천만원", "color": "white"},
+        {"date": "2022년 갱신거절", "who": "실거주한다며 거절", "color": "red"},
+        {"date": "2024년 재임대", "who": "보증금 8억2천만원", "color": "gold"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "2022년에 갱신을 요구했는데, 본인이 들어와 살겠다며 거절했어요.",
+      "caption": "갱신 요구했더니\n[실거주한다며 거절]",
+      "active": [1],
+      "cards": [
+        {"date": "2020년 계약", "who": "보증금 6억6천만원", "color": "white"},
+        {"date": "2022년 갱신거절", "who": "실거주한다며 거절", "color": "red"},
+        {"date": "2024년 재임대", "who": "보증금 8억2천만원", "color": "gold"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "근데 2024년에 다른 사람에게 8억2천만원으로 다시 세를 줬어요.",
+      "caption": "근데 2024년\n{8억2천만원}에 재임대",
+      "active": [2],
+      "cards": [
+        {"date": "2020년 계약", "who": "보증금 6억6천만원", "color": "white"},
+        {"date": "2022년 갱신거절", "who": "실거주한다며 거절", "color": "red"},
+        {"date": "2024년 재임대", "who": "보증금 8억2천만원", "color": "gold"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 집주인이 억울한 사정이 있었다고 하면 어떨까요?",
+      "caption": "근데 집주인이\n{억울한 사정}이 있었다면?",
+      "image_prompt": "photorealistic apartment building entrance at dusk with warm lights glowing from windows, quiet empty street, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "그 사정을 증명할 책임은, 집주인에게 있어요.",
+      "caption": "증명 책임은\n[집주인]에게 있어요",
+      "big": "증명 책임",
+      "badge": "집주인에게",
+      "sfx": "ding"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 월세 차액이 100만원이면, 2년치로 2400만원이에요.",
+      "caption": "예시로\n{2400만원}",
+      "amount": 2400,
+      "unit": "만원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "3개월치 월세, 2년치 차액, 실제 손해 중 가장 큰 금액을 받아요.",
+      "caption": "셋 중 {가장 큰 금액}을 받아요",
+      "big": "셋 중 최대 금액",
+      "badge": "손해배상"
+    },
+    {
+      "kind": "photo",
+      "voice": "세입자가 2년 안에 바뀌면, 이 책임은 똑같이 적용돼요.",
+      "caption": "세입자 바뀌면\n{똑같이 적용}돼요",
+      "image_prompt": "photorealistic softly lit apartment hallway at night, warm lamp glow, quiet corridor, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "실거주한다고 나가라는 집주인 있는 지인께 꼭 보내주세요.",
+      "caption": "집주인 있는 지인께\n{꼭 보내}주세요",
+      "image_prompt": "photorealistic brass house key resting on a wooden table with soft bokeh city lights in the background, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 실거주한다는 집주인 말, 믿으셨어요?",
+      "caption": "여러분은 집주인 말\n{믿으셨}어요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

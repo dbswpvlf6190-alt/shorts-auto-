@@ -31,6 +31,7 @@ import make_graphic as gfx  # noqa: E402
 import make_short as base  # noqa: E402
 import make_video_v2 as v2  # noqa: E402
 
+BRAND = "도장찍기전에"  # 10/29 채널 이름 변경(데일리.팩트랩 → 도장찍기전에). 롱폼은 유튜브 전용이라 새 이름을 쓴다
 W, H, FPS = 1920, 1080, 30
 ENC = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "17", "-pix_fmt", "yuv420p", "-r", str(FPS)]  # 10/29: 어두운 그림이 많아 유튜브 변환 후 화질 확보용으로 20→17
 CHAPTER_GAP = 0.6  # 장 사이 쉼(초)
@@ -154,7 +155,7 @@ def frame_base(ctx, dark=False):
     if tag:
         d.text((48, 22), tag, font=gfx.font(42), fill=(255, 255, 255))
     lf = gfx.font(36)
-    d.text((W - 48 - d.textlength("daily.factlab", font=lf), 28), "daily.factlab", font=lf, fill=GOLD)
+    d.text((W - 48 - d.textlength(BRAND, font=lf), 28), BRAND, font=lf, fill=GOLD)
     src = ctx.get("source", "")
     if src:
         sf_ = gfx.font(26, bold=False)
@@ -374,7 +375,7 @@ def draw_photo(sc, ctx, t, img_path):
         im = gfx.add_glow(gfx.vertical_gradient(W, H, gfx.BG_TOP, gfx.BG_BOTTOM), (W // 2, H // 2), 600, gfx.ACCENT, opacity=40)
     d = ImageDraw.Draw(im)
     lf = gfx.font(34)
-    d.text((W - 48 - d.textlength("daily.factlab", font=lf), 30), "daily.factlab", font=lf, fill=GOLD)
+    d.text((W - 48 - d.textlength(BRAND, font=lf), 30), BRAND, font=lf, fill=GOLD)
     lines = sc["caption"].split("\n")
     f = fit(d, lines, W - 260, 96, 56)
     p = ease(t / 0.4)
@@ -564,8 +565,8 @@ def art_overlay(sc, title, en):
             draw_rich(d, (90, y), ln, bf, (255, 255, 255), stroke=9, stroke_fill=(0, 0, 0), hi=hi, warn=warn)
             y += bf.size + 20
     lf = gfx.font(32)
-    d.rounded_rectangle([40, 36, 80 + d.textlength("daily.factlab", font=lf), 92], radius=28, fill=(10, 14, 22, 170), outline=GOLD + (255,), width=2)
-    d.text((60, 42), "daily.factlab", font=lf, fill=GOLD + (255,))
+    d.rounded_rectangle([40, 36, 80 + d.textlength(BRAND, font=lf), 92], radius=28, fill=(10, 14, 22, 170), outline=GOLD + (255,), width=2)
+    d.text((60, 42), BRAND, font=lf, fill=GOLD + (255,))
     return lay
 
 
@@ -779,9 +780,9 @@ def make_thumb_v3(meta, img_dir, out):
     d = ImageDraw.Draw(im)
     if th.get("logo"):
         lf = gfx.font(30)
-        lw = d.textlength("daily.factlab", font=lf) + 36
+        lw = d.textlength(BRAND, font=lf) + 36
         d.rounded_rectangle([tw - lw - 26, 26, tw - 26, 26 + 52], radius=26, fill=(10, 14, 22), outline=GOLD, width=3)
-        d.text((tw - lw - 8, 33), "daily.factlab", font=lf, fill=GOLD)
+        d.text((tw - lw - 8, 33), BRAND, font=lf, fill=GOLD)
     im.convert("RGB").save(out)
 
 
@@ -811,9 +812,9 @@ def make_thumb(meta, img_dir, out):
         d.rounded_rectangle([40, 36, 40 + bw, 36 + 86], radius=18, fill=(226, 36, 36))
         d.text((68, 46), th["badge"], font=bf, fill=(255, 255, 255))
     lf = gfx.font(34)
-    lw = d.textlength("daily.factlab", font=lf) + 40
+    lw = d.textlength(BRAND, font=lf) + 40
     d.rounded_rectangle([tw - lw - 30, 36, tw - 30, 36 + 58], radius=29, fill=(10, 14, 22), outline=GOLD, width=3)
-    d.text((tw - lw - 10, 44), "daily.factlab", font=lf, fill=GOLD)
+    d.text((tw - lw - 10, 44), BRAND, font=lf, fill=GOLD)
     im.save(out)
 
 
@@ -839,8 +840,8 @@ def validate(meta):
 
 DISCLAIMER = ("⚠️ 유의사항\n이 영상은 정보 제공을 목적으로 하며 세무·법률 자문이 아닙니다. 세법과 제도는 바뀔 수 있고 개인 상황에 따라 "
               "적용이 달라지니, 실제 거래·신고 전에는 세무서·세무사·관할 시군구청에 꼭 확인하세요. 영상 속 금액은 이해를 돕기 위한 예시입니다.")
-SIGNATURE = "팩트로 확인하고, 돈이 되는 부동산 지식만 전합니다 📌 daily.factlab"
-BASE_HASHTAGS = ["#데일리팩트랩", "#부동산", "#부동산세금", "#재테크"]
+SIGNATURE = "도장은 천천히, 팩트는 먼저 🔴 도장찍기전에 — 부동산 세금, 아는 만큼 아낍니다"
+BASE_HASHTAGS = ["#도장찍기전에", "#부동산", "#부동산세금", "#재테크"]
 
 
 def build_upload(meta, out_dir):

@@ -42,7 +42,10 @@ def get_credentials():
     return creds
 
 
-def upload(video_path, title, description, privacy="private", made_for_kids=False, tags=None, thumbnail=None, synthetic=False):
+def upload(video_path, title, description, privacy="private", made_for_kids=False, tags=None, thumbnail=None, synthetic=False,
+           category="22", language=None, publish_at=None):
+    """category·language·publish_at은 롱폼용(2026-10-29): 벤치마크 정보 채널은 교육(27)·한국어 지정·저녁 예약 공개를 쓴다.
+    publish_at(RFC3339, 예: 2026-11-01T10:00:00Z)을 주면 비공개로 올렸다가 그 시각에 자동 공개된다. 쇼츠 호출은 기본값 그대로."""
     creds = get_credentials()
     youtube = build("youtube", "v3", credentials=creds)
 
@@ -51,13 +54,19 @@ def upload(video_path, title, description, privacy="private", made_for_kids=Fals
             "title": title,
             "description": description,
             "tags": tags or [],
-            "categoryId": "22",
+            "categoryId": category,
         },
         "status": {
             "privacyStatus": privacy,
             "selfDeclaredMadeForKids": made_for_kids,
         },
     }
+    if language:
+        body["snippet"]["defaultLanguage"] = language
+        body["snippet"]["defaultAudioLanguage"] = language
+    if publish_at:
+        body["status"]["privacyStatus"] = "private"
+        body["status"]["publishAt"] = publish_at
     if synthetic:
         # 실사풍 AI 생성 이미지를 쓰는 영상은 "변형·합성 콘텐츠"로 표시(유튜브 정책, 2026-09-20 도입)
         body["status"]["containsSyntheticMedia"] = True

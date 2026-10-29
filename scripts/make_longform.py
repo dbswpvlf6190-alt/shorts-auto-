@@ -594,22 +594,36 @@ def render_art(work, idx, sc, img_path, dur, title, en):
     return out, final
 
 
-def chapter_voice(ci, ch, work, rate, fresh):
+def voice_style_path(name):
+    """meta "voice_style"(M1·M3 등) → assets/voice_style_<이름>.json. 롱폼 목소리는 10/29 사용자가 M1로 골랐다(쇼츠는 M3 그대로)."""
+    path = os.path.join(base.BASE_DIR, "assets", f"voice_style_{name}.json")
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"목소리 스타일 없음: {path} (vendor/supertonic_clone/supertonic3/voice_styles/에서 복사)")
+    return path
+
+
+def chapter_voice(ci, ch, work, rate, fresh, style="M3"):
     cdir = os.path.join(work, f"voice_ch{ci:02d}")
     os.makedirs(cdir, exist_ok=True)
     wav = os.path.join(cdir, "voice.wav")
     words_p = os.path.join(cdir, "words.json")
     text = " ".join(s["voice"].strip() for s in ch["scenes"])
     text_p = os.path.join(cdir, "source.txt")
-    same = os.path.exists(text_p) and open(text_p, encoding="utf-8").read() == text + "|" + rate
+    key = text + "|" + rate + "|" + style
+    same = os.path.exists(text_p) and open(text_p, encoding="utf-8").read() == key
     if not fresh and same and os.path.exists(wav) and os.path.exists(words_p):
         with open(words_p, encoding="utf-8") as f:
             return wav, [tuple(w) for w in json.load(f)]
-    words = base.tts_cloned_voice(text, cdir, wav, rate)
+    prev = base.CLONED_VOICE_STYLE
+    base.CLONED_VOICE_STYLE = voice_style_path(style)  # tts_cloned_voice가 이 상수를 읽는다
+    try:
+        words = base.tts_cloned_voice(text, cdir, wav, rate)
+    finally:
+        base.CLONED_VOICE_STYLE = prev
     with open(words_p, "w", encoding="utf-8") as f:
         json.dump(words, f, ensure_ascii=False)
     with open(text_p, "w", encoding="utf-8") as f:
-        f.write(text + "|" + rate)
+        f.write(key)
     return wav, words
 
 
@@ -721,6 +735,51 @@ def validate(meta):
                     raise ValueError(f"{where}: {k} 누락")
 
 
+DISCLAIMER = ("⚠️ 유의사항\n이 영상은 정보 제공을 목적으로 하며 세무·법률 자문이 아닙니다. 세법과 제도는 바뀔 수 있고 개인 상황에 따라 "
+              "적용이 달라지니, 실제 거래·신고 전에는 세무서·세무사·관할 시군구청에 꼭 확인하세요. 영상 속 금액은 이해를 돕기 위한 예시입니다.")
+SIGNATURE = "팩트로 확인하고, 돈이 되는 부동산 지식만 전합니다 📌 daily.factlab"
+BASE_HASHTAGS = ["#데일리팩트랩", "#부동산", "#부동산세금", "#재테크"]
+
+
+def build_upload(meta, out_dir):
+    """벤치마크(경제해적단·머니클래스·집구석·부자의 경제학, 10/29 분석) 공통 형식으로 업로드 정보를 만든다.
+    설명 순서: 훅 2~3줄 → 📌 다루는 내용 → ⏱ 타임라인(챕터) → [기준일] → 출처 → ⚠️ 유의사항 → 댓글 질문·구독 → 서명 → 해시태그 15~25개.
+    태그 30~40개, 카테고리 27(교육), 한국어 지정, 공개는 평일 저녁 19~20시(벤치마크 업로드 시각 최빈값)."""
+    up = meta.get("upload", {})
+    chapters_p = os.path.join(out_dir, "chapters.txt")
+    chapters = open(chapters_p, encoding="utf-8").read().strip() if os.path.exists(chapters_p) else ""
+    parts = [up.get("hook", "").strip()]
+    if up.get("covers"):
+        parts.append("📌 이번 영상에서 다루는 내용\n" + "\n".join(f"▶ {c}" for c in up["covers"]))
+    if chapters:
+        parts.append("⏱ 타임라인\n" + chapters)
+    if up.get("as_of"):
+        parts.append(f"[{up['as_of']} 기준으로 제작된 영상입니다]")
+    if up.get("sources"):
+        parts.append("📚 출처\n" + "\n".join(f"· {x}" for x in up["sources"]))
+    parts.append(DISCLAIMER)
+    if up.get("comment_question"):
+        parts.append(f"💬 {up['comment_question']}\n댓글로 남겨 주시면 다음 영상 주제에 반영할게요.")
+    parts.append("👍 도움이 되셨다면 좋아요, 🔔 구독과 알림 설정 부탁드려요.\n" + SIGNATURE)
+    tags_h = list(dict.fromkeys(up.get("hashtags", []) + BASE_HASHTAGS))[:25]
+    parts.append(" ".join(tags_h))
+    desc = "\n\n".join(x for x in parts if x)
+    if len(desc) > 4900:  # 유튜브 설명 한도 5,000자
+        desc = desc[:4900]
+    tags = list(dict.fromkeys(up.get("tags", meta.get("tags", []))))
+    while len(",".join(tags)) > 480 and tags:  # 유튜브 태그 합계 500자 한도
+        tags.pop()
+    info = {"title": up.get("title", meta.get("youtube_title", ""))[:100], "description": desc, "tags": tags,
+            "category": "27", "language": "ko", "privacy": meta.get("privacy", "private"),
+            "publish_slot": up.get("publish_slot", "평일 19:00~20:00 KST"), "thumbnail": os.path.join(out_dir, "thumb.png"),
+            "synthetic": True}
+    with open(os.path.join(out_dir, "upload.json"), "w", encoding="utf-8") as f:
+        json.dump(info, f, ensure_ascii=False, indent=1)
+    with open(os.path.join(out_dir, "description.txt"), "w", encoding="utf-8") as f:
+        f.write(info["title"] + "\n\n" + desc + "\n\n[태그] " + ", ".join(tags) + "\n")
+    return info
+
+
 def fmt_chapter(t):
     t = int(t)
     return f"{t // 3600}:{t % 3600 // 60:02d}:{t % 60:02d}" if t >= 3600 else f"{t // 60}:{t % 60:02d}"
@@ -732,6 +791,7 @@ def main():
     ap.add_argument("--out-dir", required=True)
     ap.add_argument("--fresh-voice", action="store_true")
     ap.add_argument("--only-thumb", action="store_true")
+    ap.add_argument("--only-upload-meta", action="store_true", help="렌더 없이 upload.json·description.txt만 다시 만든다(chapters.txt 필요)")
     args = ap.parse_args()
     with open(args.meta, encoding="utf-8") as f:
         meta = json.load(f)
@@ -743,6 +803,9 @@ def main():
     frames_dir = os.path.join(out_dir, "frames")
     for p in (work, img_dir, frames_dir):
         os.makedirs(p, exist_ok=True)
+    if args.only_upload_meta:
+        print(build_upload(meta, out_dir)["description"])
+        return
     make_thumb(meta, img_dir, os.path.join(out_dir, "thumb.png"))
     if args.only_thumb:
         print("thumb only")
@@ -753,7 +816,7 @@ def main():
     voices, all_words, chapter_starts, scene_spans = [], [], [], []
     cursor, sr = 0.0, None
     for ci, ch in enumerate(meta["chapters"]):
-        wav, words = chapter_voice(ci, ch, work, rate, args.fresh_voice)
+        wav, words = chapter_voice(ci, ch, work, rate, args.fresh_voice, meta.get("voice_style", "M3"))
         y, sr_ = sf.read(wav, dtype="float32")
         if y.ndim > 1:
             y = y.mean(axis=1)
@@ -778,7 +841,7 @@ def main():
     print(f"voice {total:.1f}s ({time.time() - t0:.0f}s)", flush=True)
 
     # 2) 장면 렌더
-    clips, report, k = [], [], 0
+    clips, report, k, used_imgs = [], [], 0, []
     for ci, ch in enumerate(meta["chapters"]):
         ctx = {"tag": ch.get("tag", ch["title"]), "source": ch.get("source", "")}
         cur_title, cur_en = ch.get("art_title", ""), ch.get("art_en", "")
@@ -789,6 +852,11 @@ def main():
                     cur_title, cur_en = sc["title"], sc.get("en", "")
                 p = os.path.join(img_dir, "art_" + hashlib.md5(sc["image_prompt"].encode("utf-8")).hexdigest()[:12] + ".png")  # 문구 기준 캐시(장면 순서가 바뀌어도 그림 유지)
                 img = p if os.path.exists(p) else gen_art(sc["image_prompt"], p)
+                if img:
+                    used_imgs.append(img)
+                elif used_imgs:  # 그날 한도(429) 등으로 실패하면 앞에서 쓴 그림을 돌려 쓴다(빈 배경보다 낫다)
+                    img = used_imgs[-(1 + k % min(len(used_imgs), 7))]
+                    print(f"  앞 그림 재사용: {os.path.basename(img)}", flush=True)
                 clip, final = render_art(work, k, sc, img, max(e - s, 0.4), cur_title, cur_en)
                 final.save(os.path.join(frames_dir, f"{k:03d}_art.png"))
                 clips.append(clip)
@@ -829,6 +897,7 @@ def main():
     with open(os.path.join(out_dir, "long_report.json"), "w", encoding="utf-8") as f:
         json.dump({"duration": round(total, 2), "chars": sum(len(s["voice"]) for ch in meta["chapters"] for s in ch["scenes"]),
                    "subtitles": n_subs, "chapters": chapters.split("\n"), "scenes": report}, f, ensure_ascii=False, indent=1)
+    build_upload(meta, out_dir)
     print(f"done: {out} ({base.get_duration(out):.1f}s, {time.time() - t0:.0f}s)\n{chapters}", flush=True)
 
 

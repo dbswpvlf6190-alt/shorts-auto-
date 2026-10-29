@@ -685,11 +685,39 @@ def mix(voice, sr, scene_starts, chapter_starts, out):
     sf.write(out, track[:len(voice)], sr)
 
 
+THUMB_FONT = os.path.join(base.BASE_DIR, "assets", "fonts", "BlackHanSans-Regular.ttf")  # 경제해적단식 굵은 제목 글꼴(OFL, 10/29)
+
+
+def tfont(size):
+    from PIL import ImageFont
+    return ImageFont.truetype(THUMB_FONT, size) if os.path.exists(THUMB_FONT) else gfx.font(size)
+
+
+def tfit(d, text, max_w, start, min_size=40):
+    size = start
+    while size > min_size and d.textlength(plain(text), font=tfont(size)) > max_w:
+        size -= 4
+    return tfont(size)
+
+
+def _rich_layer(size, xy, text, f, cols, stroke, stroke_fill):
+    """마크업 글자를 투명 레이어에 그린다(그림자 흐림용)."""
+    from PIL import ImageDraw as _D
+    lay = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = _D.Draw(lay)
+    x, y = xy
+    for seg, col in segs_of(text, *cols):
+        d.text((x, y), seg, font=f, fill=col, stroke_width=stroke, stroke_fill=stroke_fill)
+        x += d.textlength(seg, font=f)
+    return lay
+
+
 def make_thumb_v3(meta, img_dir, out):
     """경제해적단 썸네일 분석(10/29, 상위 16 vs 하위 16) 반영.
     상위: 어둡고 진한 영화풍 그림이 '이야기'를 보여 주고(그림 속 숫자 팻말·라벨), 아래 1/3에 큰 글자 2줄
     (1줄 흰색 설정 → 2줄 더 크게 노랑/빨강 결론), 구체 숫자·vs·'이것', 채널 로고 없음, 날짜 등은 글자 위 작은 빨간 라벨.
-    하위: 밝은 낮 배경 + 해적 마스코트(10월 이후) + 막연한 문구. 마스코트는 쓰지 않는다(사용자)."""
+    하위: 밝은 낮 배경 + 해적 마스코트(10월 이후) + 막연한 문구. 마스코트는 쓰지 않는다(사용자).
+    품질(10/29 2차): Black Han Sans, 흐린 그림자+두꺼운 테두리, 색 보정·비네트·선명도, 팻말 그림자."""
     th = meta.get("thumbnail", {})
     tw, thh = 1280, 720
     p = th.get("image_path")
@@ -704,44 +732,57 @@ def make_thumb_v3(meta, img_dir, out):
         s = max(tw / im.width, thh / im.height)
         im = im.resize((int(im.width * s) + 1, int(im.height * s) + 1), Image.LANCZOS)
         im = im.crop(((im.width - tw) // 2, (im.height - thh) // 2, (im.width - tw) // 2 + tw, (im.height - thh) // 2 + thh))
-        im = ImageEnhance.Contrast(ImageEnhance.Color(im).enhance(1.2)).enhance(1.08)
+        im = ImageEnhance.Brightness(im).enhance(th.get("brightness", 1.12))
+        im = ImageEnhance.Contrast(ImageEnhance.Color(im).enhance(1.3)).enhance(1.12)
+        im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=80, threshold=2))
     else:
         im = gfx.vertical_gradient(tw, thh, gfx.BG_TOP, gfx.BG_BOTTOM)
-    # 전체를 어둡게 하지 않고 글자 자리(아래쪽)만 짙게 깐다
-    shade = np.zeros((thh, tw), dtype=np.float32)
-    ys = np.arange(thh, dtype=np.float32)[:, None]
-    shade += np.clip((ys - thh * 0.42) / (thh * 0.58), 0, 1) ** 1.2 * 0.9
-    im = Image.composite(Image.new("RGB", (tw, thh), (0, 0, 0)), im, Image.fromarray((np.clip(shade, 0, 1) * 255).astype(np.uint8)))
-    d = ImageDraw.Draw(im)
+    # 비네트(가장자리) + 글자 자리(아래쪽)만 짙게 — 전체를 어둡게 하지 않는다
+    ys = np.arange(thh, dtype=np.float32)[:, None] / thh
+    xs = np.arange(tw, dtype=np.float32)[None, :] / tw
+    vig = np.clip(((xs - 0.5) ** 2 * 1.6 + (ys - 0.45) ** 2 * 1.2) * 1.1, 0, 0.45)
+    bottom = np.clip((ys - 0.40) / 0.60, 0, 1) ** 1.3 * 0.92
+    shade = np.clip(np.maximum(vig, bottom), 0, 0.95)
+    im = Image.composite(Image.new("RGB", (tw, thh), (0, 0, 0)), im, Image.fromarray((shade * 255).astype(np.uint8)))
+    im = im.convert("RGBA")
+    cols = {"green": (34, 170, 84), "red": (225, 35, 35), "yellow": (245, 190, 0), "navy": (18, 36, 84), "dark": (16, 20, 30)}
     for t in th.get("tags", []):  # 그림 속 팻말(벤치마크의 환율 전광판·숫자 라벨 역할)
-        tf = gfx.font(t.get("size", 44))
-        col = {"green": (40, 170, 90), "red": (220, 40, 40), "yellow": (240, 190, 0), "navy": (20, 40, 90)}.get(t.get("color", "red"), (220, 40, 40))
+        tf = tfont(t.get("size", 52))
+        tmp = ImageDraw.Draw(im)
         x, y = int(t["x"] * tw), int(t["y"] * thh)
-        w = d.textlength(t["text"], font=tf) + 40
-        d.rounded_rectangle([x - w / 2 + 5, y + 6, x + w / 2 + 5, y + tf.size + 34], radius=14, fill=(0, 0, 0))
-        d.rounded_rectangle([x - w / 2, y, x + w / 2, y + tf.size + 28], radius=14, fill=col, outline=(255, 255, 255), width=4)
-        d.text((x, y + 12), t["text"], font=tf, fill=(255, 255, 255), anchor="mt")
+        w = tmp.textlength(t["text"], font=tf) + 48
+        h = tf.size + 30
+        sh = Image.new("RGBA", im.size, (0, 0, 0, 0))
+        ImageDraw.Draw(sh).rounded_rectangle([x - w / 2 + 6, y + 8, x + w / 2 + 6, y + h + 8], radius=16, fill=(0, 0, 0, 200))
+        im = Image.alpha_composite(im, sh.filter(ImageFilter.GaussianBlur(6)))
+        d = ImageDraw.Draw(im)
+        d.rounded_rectangle([x - w / 2, y, x + w / 2, y + h], radius=16, fill=cols.get(t.get("color", "red"), cols["red"]), outline=(255, 255, 255), width=5)
+        d.text((x, y + h / 2 + 2), t["text"], font=tf, fill=(255, 255, 255), anchor="mm")
+    d = ImageDraw.Draw(im)
     lines = th.get("lines", [meta.get("youtube_title", "")[:14]])
-    scale = th.get("line_scale", [0.74, 1.0] if len(lines) == 2 else [1.0] * len(lines))
-    fonts = [fit(d, [ln], tw - 80, int(160 * sc), 50) for ln, sc in zip(lines, scale)]
-    gap = 10
-    y = thh - 52 - sum(f.size + gap for f in fonts)
+    scale = th.get("line_scale", [0.72, 1.0] if len(lines) == 2 else [1.0] * len(lines))
+    fonts = [tfit(d, ln, tw - 96, int(176 * sc)) for ln, sc in zip(lines, scale)]
+    gap = 4
+    y = thh - 40 - sum(f.size + gap for f in fonts)
     if th.get("badge"):
-        bf = gfx.font(44)
+        bf = tfont(46)
         bw = d.textlength(th["badge"], font=bf) + 44
-        d.rounded_rectangle([44, y - 78, 44 + bw, y - 10], radius=10, fill=(226, 36, 36))
-        d.text((66, y - 72), th["badge"], font=bf, fill=(255, 255, 255))
+        d.rounded_rectangle([46, y - 74, 46 + bw, y - 12], radius=8, fill=(226, 30, 30), outline=(255, 255, 255), width=3)
+        d.text((46 + bw / 2, y - 43), th["badge"], font=bf, fill=(255, 255, 255), anchor="mm")
+    hi, warn = th.get("hi", (255, 222, 0)), th.get("warn", (255, 56, 48))
     for ln, f in zip(lines, fonts):
-        for dx, dy in ((7, 8), (4, 5)):  # 진한 그림자
-            draw_rich(d, (44 + dx, y + dy), ln, f, (0, 0, 0), stroke=14, stroke_fill=(0, 0, 0), hi=(0, 0, 0), warn=(0, 0, 0))
-        draw_rich(d, (44, y), ln, f, (255, 255, 255), hi=(255, 214, 0), warn=(255, 64, 64), stroke=12, stroke_fill=(0, 0, 0))
+        # 1) 넓게 흐린 검은 그림자(글자를 배경에서 띄움) 2) 두꺼운 검은 테두리 3) 본 글자
+        sh = _rich_layer(im.size, (48 + 6, y + 9), ln, f, ((0, 0, 0, 255), (0, 0, 0, 255), (0, 0, 0, 255)), 22, (0, 0, 0, 255))
+        im = Image.alpha_composite(im, sh.filter(ImageFilter.GaussianBlur(9)))
+        im = Image.alpha_composite(im, _rich_layer(im.size, (48, y), ln, f, ((255, 255, 255, 255), hi + (255,), warn + (255,)), 13, (0, 0, 0, 255)))
         y += f.size + gap
+    d = ImageDraw.Draw(im)
     if th.get("logo"):
         lf = gfx.font(30)
         lw = d.textlength("daily.factlab", font=lf) + 36
         d.rounded_rectangle([tw - lw - 26, 26, tw - 26, 26 + 52], radius=26, fill=(10, 14, 22), outline=GOLD, width=3)
         d.text((tw - lw - 8, 33), "daily.factlab", font=lf, fill=GOLD)
-    im.save(out)
+    im.convert("RGB").save(out)
 
 
 def make_thumb(meta, img_dir, out):

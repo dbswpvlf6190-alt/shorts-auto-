@@ -376,3 +376,9 @@ Claude Code의 대화 세션·auto-memory는 각 컴퓨터의 로컬 사용자 �
 - 2026-08-30: **복제 목소리 도입, 이제 기본값** — 무료 오픈소스(Supertonic 3 + 커뮤니티 학습 스크립트)로 사용자 목소리 샘플을 학습시켜 `assets/cloned_voice_style.json` 생성, `make_short.py`/`make_platform_variants.py`/`run_queue.py`의 `--voice` 기본값을 "cloned"로 변경(edge-tts는 이제 명시적으로 지정할 때만 씀). ElevenLabs(유료 $5/월)도 검토했으나 무료 방식으로 먼저 검증하기로 함. **알려진 한계**: 복제 결과가 여성 목소리로 나옴(원 목소리 성별과 다름, 무료 방식의 한계로 파악) — 사용자가 확인 후 "이 정도면 만족"하고 그대로 채택. 실제 파이프라인 통합 테스트(자막 동기화 포함) 성공. 노트북에는 `vendor/`가 gitignore 대상이라 별도 설치 필요 — 위 "복제 목소리" 섹션 참고.
 - 2026-09-17: **인스타그램 게시 이틀 연속 실패 원인 규명·수정** — GCM 인증 프롬프트 무한 대기 + saju-app과 공유하던 media_host 토큰 만료가 원인. git 호출에 타임아웃/프롬프트 차단 추가, 새 fine-grained PAT 발급해 3개 저장소(saju-app/saju-media-host/shorts-media-host)에 반영. (데스크톱 컴퓨터의 `credentials/github_token.txt`는 2026-09-19에 교체 완료.)
 - 2026-08-24(월): **유튜브 토큰 만료로 자동 실행 실패 발생, 실제로 겪음** — 이날 저녁 노트북 스케줄러가 (로그인 늦어져서 지연 실행) `09_선순위임차인` 처리 중 `google.auth.exceptions.RefreshError: invalid_grant: Token has been expired or revoked`로 크래시. `youtube_upload.py`의 `get_credentials()`는 refresh 실패 시 인터랙티브 로그인으로 자동 전환하지 않고 그냥 예외를 던지는 구조라(의도된 설계 — 무인 실행 중 브라우저 뜨는 채로 멈추는 것보다 명확히 실패하는 게 나음), 사람이 직접 재인증해야 했음. `credentials/token.json`을 지우고 `youtube_upload.py`를 직접 실행해서 브라우저로 재인증 → 이미 렌더링된 영상(`~\ShortsAutoRender\queue_render\09_선순위임차인\platform\`)으로 유튜브 업로드, 인스타그램 게시, 배송 폴더 정리, `done.txt` 기록까지 수동으로 이어서 완료. **교훈**: 7일 재인증 주기를 사람이 능동적으로 챙기지 않으면 이렇게 큐가 막힘 — 새 세션에서 큐 실패를 발견하면 `output/queue_log.txt`에서 `RefreshError`/`invalid_grant` 여부부터 확인할 것.
+
+## 2026-10-29 — 채널 리브랜딩: "도장찍기전에"
+- 표시 이름을 "데일리.팩트랩"에서 **도장찍기전에**로 바꾼다. 슬로건은 "부동산 세금, 아는 만큼 아낍니다", 서명은 "도장은 천천히, 팩트는 먼저."다. 이름은 심리 지표(유창성·손실 회피·호기심·자기 관련성·후회 회피)를 기준으로 사용자가 골랐다.
+- 프로필은 `assets/branding/pro_B_레드앱아이콘.png`, 배너는 `banner_B.jpg`, 설명과 키워드는 `assets/branding/channel_profile.md`에 있다.
+- 10/29에 API로 설명·키워드·배너를 적용했다. 사주랩 링크는 설명 맨 아래로 옮겼다. **이름·프로필 사진·핸들은 사용자가 스튜디오에서 직접 바꾼다.**
+- 이름 변경이 확인되면 롱폼·쇼츠의 서명(`SIGNATURE`), 기본 해시태그(#데일리팩트랩 → #도장찍기전에), 썸네일·대본 인사말을 새 이름으로 바꾼다.

@@ -32,7 +32,7 @@ import make_short as base  # noqa: E402
 import make_video_v2 as v2  # noqa: E402
 
 W, H, FPS = 1920, 1080, 30
-ENC = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-r", str(FPS)]
+ENC = ["-c:v", "libx264", "-preset", "veryfast", "-crf", "17", "-pix_fmt", "yuv420p", "-r", str(FPS)]  # 10/29: 어두운 그림이 많아 유튜브 변환 후 화질 확보용으로 20→17
 CHAPTER_GAP = 0.6  # 장 사이 쉼(초)
 
 BG = (244, 246, 250)

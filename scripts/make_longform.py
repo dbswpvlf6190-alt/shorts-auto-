@@ -685,7 +685,68 @@ def mix(voice, sr, scene_starts, chapter_starts, out):
     sf.write(out, track[:len(voice)], sr)
 
 
+def make_thumb_v3(meta, img_dir, out):
+    """경제해적단 썸네일 분석(10/29, 상위 16 vs 하위 16) 반영.
+    상위: 어둡고 진한 영화풍 그림이 '이야기'를 보여 주고(그림 속 숫자 팻말·라벨), 아래 1/3에 큰 글자 2줄
+    (1줄 흰색 설정 → 2줄 더 크게 노랑/빨강 결론), 구체 숫자·vs·'이것', 채널 로고 없음, 날짜 등은 글자 위 작은 빨간 라벨.
+    하위: 밝은 낮 배경 + 해적 마스코트(10월 이후) + 막연한 문구. 마스코트는 쓰지 않는다(사용자)."""
+    th = meta.get("thumbnail", {})
+    tw, thh = 1280, 720
+    p = th.get("image_path")
+    if not p and th.get("art_prompt"):
+        p = os.path.join(img_dir, "thumb_art_" + hashlib.md5(th["art_prompt"].encode("utf-8")).hexdigest()[:12] + ".png")
+        if not os.path.exists(p):
+            p = gen_art(th["art_prompt"], p)
+    if not p:
+        p = get_image("thumb", th.get("image_prompt"), img_dir)
+    if p:
+        im = Image.open(p).convert("RGB")
+        s = max(tw / im.width, thh / im.height)
+        im = im.resize((int(im.width * s) + 1, int(im.height * s) + 1), Image.LANCZOS)
+        im = im.crop(((im.width - tw) // 2, (im.height - thh) // 2, (im.width - tw) // 2 + tw, (im.height - thh) // 2 + thh))
+        im = ImageEnhance.Contrast(ImageEnhance.Color(im).enhance(1.2)).enhance(1.08)
+    else:
+        im = gfx.vertical_gradient(tw, thh, gfx.BG_TOP, gfx.BG_BOTTOM)
+    # 전체를 어둡게 하지 않고 글자 자리(아래쪽)만 짙게 깐다
+    shade = np.zeros((thh, tw), dtype=np.float32)
+    ys = np.arange(thh, dtype=np.float32)[:, None]
+    shade += np.clip((ys - thh * 0.42) / (thh * 0.58), 0, 1) ** 1.2 * 0.9
+    im = Image.composite(Image.new("RGB", (tw, thh), (0, 0, 0)), im, Image.fromarray((np.clip(shade, 0, 1) * 255).astype(np.uint8)))
+    d = ImageDraw.Draw(im)
+    for t in th.get("tags", []):  # 그림 속 팻말(벤치마크의 환율 전광판·숫자 라벨 역할)
+        tf = gfx.font(t.get("size", 44))
+        col = {"green": (40, 170, 90), "red": (220, 40, 40), "yellow": (240, 190, 0), "navy": (20, 40, 90)}.get(t.get("color", "red"), (220, 40, 40))
+        x, y = int(t["x"] * tw), int(t["y"] * thh)
+        w = d.textlength(t["text"], font=tf) + 40
+        d.rounded_rectangle([x - w / 2 + 5, y + 6, x + w / 2 + 5, y + tf.size + 34], radius=14, fill=(0, 0, 0))
+        d.rounded_rectangle([x - w / 2, y, x + w / 2, y + tf.size + 28], radius=14, fill=col, outline=(255, 255, 255), width=4)
+        d.text((x, y + 12), t["text"], font=tf, fill=(255, 255, 255), anchor="mt")
+    lines = th.get("lines", [meta.get("youtube_title", "")[:14]])
+    scale = th.get("line_scale", [0.74, 1.0] if len(lines) == 2 else [1.0] * len(lines))
+    fonts = [fit(d, [ln], tw - 80, int(160 * sc), 50) for ln, sc in zip(lines, scale)]
+    gap = 10
+    y = thh - 52 - sum(f.size + gap for f in fonts)
+    if th.get("badge"):
+        bf = gfx.font(44)
+        bw = d.textlength(th["badge"], font=bf) + 44
+        d.rounded_rectangle([44, y - 78, 44 + bw, y - 10], radius=10, fill=(226, 36, 36))
+        d.text((66, y - 72), th["badge"], font=bf, fill=(255, 255, 255))
+    for ln, f in zip(lines, fonts):
+        for dx, dy in ((7, 8), (4, 5)):  # 진한 그림자
+            draw_rich(d, (44 + dx, y + dy), ln, f, (0, 0, 0), stroke=14, stroke_fill=(0, 0, 0), hi=(0, 0, 0), warn=(0, 0, 0))
+        draw_rich(d, (44, y), ln, f, (255, 255, 255), hi=(255, 214, 0), warn=(255, 64, 64), stroke=12, stroke_fill=(0, 0, 0))
+        y += f.size + gap
+    if th.get("logo"):
+        lf = gfx.font(30)
+        lw = d.textlength("daily.factlab", font=lf) + 36
+        d.rounded_rectangle([tw - lw - 26, 26, tw - 26, 26 + 52], radius=26, fill=(10, 14, 22), outline=GOLD, width=3)
+        d.text((tw - lw - 8, 33), "daily.factlab", font=lf, fill=GOLD)
+    im.save(out)
+
+
 def make_thumb(meta, img_dir, out):
+    if str(meta.get("script_version", "")).startswith("v3"):
+        return make_thumb_v3(meta, img_dir, out)
     th = meta.get("thumbnail", {})
     tw, thh = 1280, 720
     p = get_image("thumb", th.get("image_prompt"), img_dir)

@@ -80,12 +80,12 @@ def kicker(d, text, x=64, y=90):
 
 def watermark(d):
     f = font(30, bold=False)
-    text = "daily.factlab"
+    text = "도장찍기전에"  # 10/29 채널 이름 변경(데일리.팩트랩 → 도장찍기전에)
     tw = d.textlength(text, font=f)
     d.text((W - tw - 50, H - 80), text, font=f, fill=(90, 98, 112))
 
 
-def make_logo_badge(out="logo.png", text="daily.factlab"):
+def make_logo_badge(out="logo.png", text="도장찍기전에"):
     """우측 상단 고정용 반투명 로고 배지 (알파 채널 포함 PNG)."""
     pad_x, pad_y = 30, 18
     f = font(42)
@@ -293,7 +293,7 @@ def main():
     p5.add_argument("--out", required=True)
 
     p6 = sub.add_parser("logo")
-    p6.add_argument("--text", default="daily.factlab")
+    p6.add_argument("--text", default="도장찍기전에")
     p6.add_argument("--out", required=True)
 
     args = ap.parse_args()

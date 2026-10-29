@@ -748,9 +748,11 @@ def build_upload(meta, out_dir):
     up = meta.get("upload", {})
     chapters_p = os.path.join(out_dir, "chapters.txt")
     chapters = open(chapters_p, encoding="utf-8").read().strip() if os.path.exists(chapters_p) else ""
+    v3 = str(meta.get("script_version", "")).startswith("v3")
     parts = [up.get("hook", "").strip()]
     if up.get("covers"):
-        parts.append("📌 이번 영상에서 다루는 내용\n" + "\n".join(f"▶ {c}" for c in up["covers"]))
+        head = "" if v3 else "📌 이번 영상에서 다루는 내용\n"  # v3: 경제해적단처럼 머리말 없이 ▶ 목록 자체를 떡밥으로
+        parts.append(head + "\n".join(f"▶ {c}" for c in up["covers"]))
     if chapters:
         parts.append("⏱ 타임라인\n" + chapters)
     if up.get("as_of"):
@@ -759,11 +761,20 @@ def build_upload(meta, out_dir):
         parts.append("📚 출처\n" + "\n".join(f"· {x}" for x in up["sources"]))
     parts.append(DISCLAIMER)
     if up.get("comment_question"):
-        parts.append(f"💬 {up['comment_question']}\n댓글로 남겨 주시면 다음 영상 주제에 반영할게요.")
+        parts.append(f"💬 {up['comment_question']}\n댓글로 남겨 주시면 하나하나 읽어 보겠습니다." if v3 else
+                     f"💬 {up['comment_question']}\n댓글로 남겨 주시면 다음 영상 주제에 반영할게요.")
     parts.append("👍 도움이 되셨다면 좋아요, 🔔 구독과 알림 설정 부탁드려요.\n" + SIGNATURE)
     tags_h = list(dict.fromkeys(up.get("hashtags", []) + BASE_HASHTAGS))[:25]
     parts.append(" ".join(tags_h))
-    desc = "\n\n".join(x for x in parts if x)
+    if v3:  # 경제해적단 설명란: 덩어리 사이를 ━━━ 줄로 나눈다
+        sep = "\n\n━━━\n\n"
+        cq = [p for p in parts if p.startswith("💬")]
+        groups = [parts[0], parts[1] if up.get("covers") else "", "⏱ 타임라인\n" + chapters if chapters else "",
+                  "\n\n".join(p for p in parts if p.startswith(("[", "📚", "⚠️"))),
+                  "\n\n".join(cq + [parts[-2]]), parts[-1]]
+        desc = sep.join(g for g in groups if g)
+    else:
+        desc = "\n\n".join(x for x in parts if x)
     if len(desc) > 4900:  # 유튜브 설명 한도 5,000자
         desc = desc[:4900]
     tags = list(dict.fromkeys(up.get("tags", meta.get("tags", []))))

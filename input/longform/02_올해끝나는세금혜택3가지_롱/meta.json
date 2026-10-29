@@ -1,0 +1,864 @@
+{
+ "format": "long",
+ "rate": "+10%",
+ "fact_check": "2026-10-29 확인: 다주택 중과 유예 종료·토지거래허가 예외(2026.5 국토부·기재부 발표, 5월 초 보도), 중과세율·82.5%, 2026 세제개편안 중과 한시 완화와 정부 예시 세액(파이낸셜뉴스 2026.7.31·경기신문), 상생임대 요건·예외·10월 시행령 양도기한·연장법안(소득세법 시행령 155조의3, 매일신문 2026.10.11, 머니투데이 2026.5), 지방 준공 후 미분양 취득세(행안부 2026 달라지는 지방세제, 경향신문 2026.1.1·한국세정신문)",
+ "youtube_title": "올해 지나면 끝나는 부동산 세금 혜택 3가지 총정리 | 11월 9일·12월 31일 마감, 놓치면 수천만 원 차이 (2026년 10월 기준)",
+ "youtube_description": "올해 마감되는 부동산 세금 혜택 3가지를 사례와 함께 자세히 정리했어요.\n\n① 다주택자 양도세 중과 유예 — 5월 9일까지 토지거래허가를 신청한 서울 21개 구·경기 12개 지역은 11월 9일까지 잔금·등기를 마쳐야 해요.\n② 상생임대 특례 — 직전 계약보다 5% 이내로 올려 12월 31일까지 계약·임대를 시작하고 2년 이상 임대하면 2년 거주 요건을 면제받아요.\n③ 지방 준공 후 미분양 아파트 취득세 최대 50% 감면 — 전용 85㎡·6억 원 이하, 2026년 12월 31일 취득분까지.\n\n※ 2026년 10월 말 기준 정보예요. 세법은 바뀔 수 있으니 실제 거래 전에는 세무서·세무사·시군구청 세무과에 꼭 확인하세요. 영상 속 금액은 이해를 돕기 위한 예시예요(정부 발표 예시는 그대로 인용).\n\n출처: 국토교통부·기획재정부 다주택자 양도세 중과 유예 종료 발표(2026.5), 2026년 세제개편안, 소득세법 시행령 제155조의3, 국세청, 지방세특례제한법·행정안전부 2026년 달라지는 지방세제\n\n#부동산세금 #양도세 #상생임대 #다주택자 #취득세감면 #미분양",
+ "tags": [
+  "부동산세금",
+  "양도소득세",
+  "다주택자 양도세 중과",
+  "상생임대 특례",
+  "취득세 감면",
+  "미분양 아파트",
+  "2026 세제개편안",
+  "부동산 정책"
+ ],
+ "privacy": "private",
+ "thumbnail": {
+  "lines": [
+   "{11월 9일 · 12월 31일}",
+   "지나면 [끝나는] 세금 혜택"
+  ],
+  "badge": "2026 막차",
+  "image_prompt": "photorealistic korean high-rise apartment buildings at sunset, dramatic orange sky, wide angle, shallow depth of field"
+ },
+ "chapters": [
+  {
+   "title": "인트로",
+   "tag": "올해 끝나는 세금 혜택 3가지",
+   "art_title": "올해 끝나는 {세금 혜택 3가지}",
+   "art_en": "3 Tax Breaks Ending This Year",
+   "scenes": [
+    {
+     "kind": "art",
+     "image_prompt": "a long red carpet road leading to a glowing golden door, old calendar pages flying in the wind, korean apartment skyline at dusk",
+     "voice": "올해가 두 달 남짓 남았는데요. 이 기간이 지나면 다시는 받을 수 없을지도 모르는 부동산 세금 혜택이 세 가지 있어요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a giant wall clock with hands near midnight looming over a quiet korean apartment complex, cold blue moonlight",
+     "voice": "문제는 이런 혜택이 대부분 조용히 끝난다는 거예요. 마감일이 지나고 나서야 알게 되는 분들이 정말 많아요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a worried middle-aged korean man seen from behind sitting at a kitchen table at night with scattered papers and a calculator, warm lamp light",
+     "big": "수천만 원\n[차이]",
+     "voice": "그런데 이 날짜 하나 때문에 내야 할 세금이 수천만 원씩 달라질 수 있어요. 그래서 오늘은 올해 끝나는 혜택 세 가지를 하나씩, 실제 사례와 함께 자세히 정리해 볼게요."
+    },
+    {
+     "kind": "timeline",
+     "heading": "마감일이 정해진 세 가지",
+     "points": [
+      {
+       "date": "11월 9일",
+       "label": "다주택자\n양도세 중과 유예",
+       "active": true,
+       "color": "red"
+      },
+      {
+       "date": "12월 31일",
+       "label": "상생임대 특례",
+       "color": "orange"
+      },
+      {
+       "date": "12월 31일",
+       "label": "지방 미분양 아파트\n취득세 감면",
+       "color": "green"
+      }
+     ],
+     "voice": "첫 번째는 11월 9일에 끝나는 다주택자 양도세 중과 유예, 두 번째는 12월 31일에 끝나는 상생임대 특례, 세 번째는 역시 12월 31일에 끝나는 지방 미분양 아파트 취득세 감면이에요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "an old wax-sealed scroll with a burning fuse slowly approaching it on a dark desk",
+     "voice": "그런데 왜 세금 혜택에는 이렇게 마감일이 있을까요? 세금을 깎아 주는 특례는 대부분 처음부터 기한을 정해 두고 시작해요. 기한이 오면 연장할지 끝낼지를 그때 다시 정하는 거죠.",
+     "title": "왜 {마감일}이 있을까",
+     "en": "Why Tax Breaks Expire"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a fork in a mountain road at twilight, one path lit and one path dark with fog",
+     "voice": "그래서 연장될 거라고 믿고 기다렸다가, 그대로 끝나 버리는 경우도 많아요. 확실한 건 지금 정해진 날짜뿐이에요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "three glowing doors standing side by side in a dark hall, each with a different colored light, red, orange and green",
+     "voice": "집을 여러 채 가진 분, 전세나 월세를 주고 있는 집주인, 그리고 집을 새로 사려는 분까지, 각각 해당하는 내용이 달라요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a family of three silhouettes standing on a hill looking at a city of apartments at sunrise, hopeful golden light",
+     "voice": "내 이야기가 아니더라도 부모님이나 가까운 지인에게 해당될 수 있으니, 끝까지 보시고 꼭 알려 드리세요."
+    },
+    {
+     "kind": "quote",
+     "heading": "먼저 알아 둘 점",
+     "text": "이 영상은 {2026년 10월 말 기준}이에요.\n세법은 자주 바뀌니까 실제 거래 전에는\n세무서나 세무사에게 꼭 확인하세요.",
+     "cite": "daily.factlab",
+     "voice": "참고로 이 영상은 2026년 10월 말 기준이에요. 세법은 자주 바뀌니까, 실제 거래 전에는 세무서나 세무사에게 꼭 한 번 확인해 주세요."
+    }
+   ]
+  },
+  {
+   "title": "① 다주택자 양도세 중과 유예 (11월 9일)",
+   "tag": "① 다주택자 양도세 중과 유예",
+   "source": "출처: 국토교통부·기획재정부 발표(2026.5) · 소득세법",
+   "art_title": "[11월 9일], 중과 유예 막차",
+   "art_en": "Last Call for Multi-Home Tax Relief",
+   "scenes": [
+    {
+     "kind": "art",
+     "image_prompt": "a giant golden hourglass with sand almost run out standing over a miniature korean apartment city at night, red and gold light",
+     "voice": "첫 번째, 다주택자 양도세 중과 유예예요. 세 가지 중에 마감이 가장 빠르고, 금액도 가장 커요."
+    },
+    {
+     "kind": "art",
+     "title": "{중과}가 뭐길래",
+     "en": "What Is the Surcharge",
+     "image_prompt": "a heavy iron weight labeled with nothing pressing down on a small model house on a scale, dark dramatic light",
+     "voice": "먼저 중과라는 말부터 짚고 갈게요. 집을 팔아서 이익이 나면 양도소득세를 내는데요. 집을 여러 채 가진 사람이 규제 지역에서 집을 팔면, 기본 세율에 세율을 더 얹어서 매겨요. 이걸 중과라고 해요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a staircase of glowing red bars rising higher and higher into a dark sky, a small house at the bottom step",
+     "voice": "조정대상지역에서 2주택자는 기본세율에 20퍼센트포인트, 3주택 이상은 30퍼센트포인트가 더 붙어요."
+    },
+    {
+     "kind": "number",
+     "heading": "중과가 붙으면 최고 세율",
+     "amount": 82.5,
+     "unit": "%",
+     "label": "3주택 이상 · 지방소득세 포함",
+     "note": "조정대상지역 기준 · 2주택 최고 65%, 3주택 이상 최고 75% (지방소득세 별도)",
+     "voice": "그래서 최고 세율이 2주택자는 65퍼센트, 3주택 이상은 75퍼센트까지 올라가요. 여기에 지방소득세 10퍼센트까지 더하면, 최고 82.5퍼센트예요. 번 돈의 80퍼센트 넘게 세금으로 낼 수도 있다는 뜻이에요."
+    },
+    {
+     "kind": "art",
+     "title": "장기보유특별공제도 [사라져요]",
+     "en": "No Long-Term Holding Deduction",
+     "image_prompt": "a golden shield cracking and shattering into pieces in front of a small house, dark red background",
+     "voice": "그게 끝이 아니에요. 중과 대상이 되면 오래 보유한 집에 주는 장기보유특별공제도 받을 수 없어요. 세율은 올라가고 공제는 사라지니까, 세금이 몇 배로 뛰는 경우가 생겨요."
+    },
+    {
+     "kind": "art",
+     "title": "그동안은 {유예}됐어요",
+     "en": "The Surcharge Was on Hold",
+     "image_prompt": "a huge iron gate held open by golden chains, sunlight pouring through onto a road of small houses",
+     "voice": "그런데 이 무거운 중과는 그동안 유예돼 있었어요. 정부가 한동안 중과를 적용하지 않고, 기본세율로만 세금을 매겨 준 거예요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "golden chains snapping and a huge iron gate beginning to close, sparks flying, dramatic red light",
+     "voice": "그 유예가 올해 5월 9일에 끝났어요. 그래서 5월 10일부터 파는 집은, 원칙적으로는 다시 중과가 붙어요."
+    },
+    {
+     "kind": "art",
+     "title": "그런데 [예외]가 있었어요",
+     "en": "But There Was an Exception",
+     "image_prompt": "a narrow beam of golden light shining through a gap in a closing iron gate onto a single path",
+     "voice": "그런데 예외가 하나 있었어요. 5월 9일까지 토지거래허가를 신청해 둔 집은, 기한을 좀 더 받아서 중과 없이 팔 수 있게 해 준 거예요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a large map table with a glowing outline of a city divided into districts, a magnifying glass on top, dim office light",
+     "voice": "토지거래허가는 일정 지역에서 집을 사고팔 때 미리 허가를 받아야 하는 제도예요. 지금 서울 전역과 경기 일부 지역이 여기에 묶여 있어요. 허가를 받는 데 시간이 걸리다 보니, 신청만 해 두면 기한을 늘려 준 거예요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a row of five glowing stepping stones crossing a dark river toward a lit house",
+     "voice": "순서로 보면 이래요. 먼저 토지거래허가를 신청하고, 허가가 나오면 매매계약을 맺고, 잔금을 치른 뒤 소유권 이전 등기를 해요. 이번 예외는 이 첫 단계, 허가 신청을 5월 9일까지 해 둔 경우에만 해당돼요.",
+     "title": "허가부터 {등기까지}",
+     "en": "From Permit to Registration"
+    },
+    {
+     "kind": "timeline",
+     "heading": "중과 유예, 이렇게 끝났어요",
+     "points": [
+      {
+       "date": "5월 9일",
+       "label": "중과 유예 종료\n토지거래허가 신청 마감",
+       "color": "navy"
+      },
+      {
+       "date": "9월 9일",
+       "label": "강남 3구·용산\n잔금·등기 마감 (지남)",
+       "color": "navy"
+      },
+      {
+       "date": "11월 9일",
+       "label": "서울 21개 구·경기 12곳\n잔금·등기 마감",
+       "active": true,
+       "color": "red"
+      }
+     ],
+     "voice": "지역마다 기한이 달랐어요. 강남 3구와 용산은 9월 9일까지였고, 이미 지났어요. 서울 나머지 21개 구와 경기 12개 지역은 11월 9일까지예요."
+    },
+    {
+     "kind": "art",
+     "title": "11월 9일까지 [모두] 끝내야",
+     "en": "Everything by November 9",
+     "image_prompt": "a heavy wooden judge stamp coming down on a blank document on a desk, dramatic spotlight, dust in the air",
+     "voice": "여기서 정말 중요한 게 있어요. 허가만 받아 두면 끝이 아니에요. 11월 9일까지 잔금을 치르고, 소유권 이전 등기까지 모두 마쳐야 해요."
+    },
+    {
+     "kind": "checklist",
+     "heading": "11월 9일까지 [모두] 끝내야 해요",
+     "items": [
+      {
+       "text": "잔금 지급",
+       "right": "11월 9일까지"
+      },
+      {
+       "text": "소유권 이전 등기",
+       "right": "11월 9일까지"
+      },
+      {
+       "text": "허가만 받아 둔 상태는 [인정 안 돼요]",
+       "color": "red",
+       "mark": "x"
+      }
+     ],
+     "voice": "잔금은 치렀는데 등기가 하루라도 늦어지면, 중과를 피할 수 없을 수 있어요. 등기 서류를 준비하는 데도 며칠이 걸리니까, 날짜를 넉넉하게 잡는 게 안전해요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a man in a coat walking quickly through a rainy city street at night holding a folder, seen from behind",
+     "voice": "가상의 사례로 한번 따라가 볼게요. 서울 마포구에 집 두 채를 가진 김 씨가 있다고 해 볼게요. 김 씨는 5월 초에 한 채를 팔려고 토지거래허가를 신청해 뒀어요.",
+     "title": "사례로 보면",
+     "en": "A Case Study"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a calendar-like grid of glowing tiles with one tile burning red, dark room",
+     "voice": "마포구는 서울 나머지 21개 구에 들어가니까, 김 씨의 기한은 11월 9일이에요. 그런데 매수자의 대출 승인이 늦어져서 잔금이 11월 중순으로 밀렸다면 어떻게 될까요?"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a giant red wave crashing over a small model house on a dark beach",
+     "voice": "그러면 김 씨는 중과를 피할 수 없어요. 기본세율에 20퍼센트포인트가 더해지고, 장기보유특별공제도 받을 수 없게 돼요. 집값이 많이 올랐다면 세금이 수천만 원에서 억 단위까지 늘 수 있어요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a neatly organized desk with a checklist board, a pen and a small house model, early morning light",
+     "voice": "그래서 지금 거래를 진행 중이라면 이번 주에 꼭 확인할 게 있어요. 매수자의 대출 일정, 잔금 날짜, 그리고 등기를 맡길 법무사 일정까지 모두 11월 9일보다 앞으로 잡혀 있는지 보세요.",
+     "title": "이번 주에 {확인할 것}",
+     "en": "Check This Week"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a quiet courthouse corridor on a monday morning with a long line of shadows, cold light",
+     "voice": "참고로 올해 11월 9일은 월요일이에요. 마지막 날에 서류가 몰리면 처리가 늦어질 수 있으니, 그 전 주에 끝내는 걸 목표로 잡는 게 안전해요."
+    },
+    {
+     "kind": "art",
+     "title": "산 사람도 {숨 돌릴 틈}",
+     "en": "Relief for Buyers Too",
+     "image_prompt": "a young couple silhouette looking at an apartment with a soft lit window where tenants live, calm evening",
+     "voice": "사는 쪽을 위한 장치도 있었어요. 무주택자가 세입자가 살고 있는 다주택자의 집을 사는 경우에는, 실거주 의무를 세입자의 임대차 계약이 끝날 때까지 미뤄 줬어요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a single small house standing alone under a spotlight while other houses are in shadow, quiet night",
+     "voice": "다만 파는 사람이 다주택자가 아니라 1주택자라면, 이 실거주 유예는 적용되지 않는다고 안내됐어요. 계약 전에 꼭 확인해 보세요."
+    },
+    {
+     "kind": "art",
+     "title": "정부의 {새 개편안}",
+     "en": "The New Tax Reform Proposal",
+     "image_prompt": "a grand government hall with tall columns at dusk, a single light in the window, rain clearing",
+     "voice": "그런데 여기서 많은 분들이 헷갈려 하는 소식이 하나 있어요. 정부가 올여름 발표한 세제개편안에, 다주택자 중과를 다시 낮추는 내용이 들어 있거든요."
+    },
+    {
+     "kind": "compare",
+     "heading": "정부 개편안: 2027~2028년 한시 완화",
+     "source": "출처: 2026년 세제개편안(정부 발표 · 국회 통과 전)",
+     "left": {
+      "title": "2027년 양도",
+      "lines": [
+       "2주택 {+5%p}",
+       "3주택 이상 {+10%p}"
+      ],
+      "color": "green"
+     },
+     "right": {
+      "title": "2028년 양도",
+      "lines": [
+       "2주택 {+10%p}",
+       "3주택 이상 {+15%p}"
+      ],
+      "color": "orange"
+     },
+     "voice": "내용은 이래요. 조정대상지역 집을 2년 이상 보유하고 팔 때, 2027년에는 2주택 5퍼센트포인트, 3주택 이상 10퍼센트포인트만 더해요. 2028년에는 각각 10퍼센트포인트와 15퍼센트포인트로, 지금의 20, 30퍼센트포인트보다 낮춰 주는 거예요."
+    },
+    {
+     "kind": "art",
+     "title": "정부 예시: 양도차익 {5억 원}",
+     "en": "Government Example: 500M Won Gain",
+     "image_prompt": "three stacks of gold coins of different heights on a dark table, the tallest one glowing red, soft spotlight",
+     "big": "2억 7천만 원\n→ {약 2억 원}",
+     "voice": "정부가 든 예시를 그대로 보면요. 2주택자가 양도차익 5억 원을 낼 때, 지금처럼 중과가 붙으면 세금이 약 2억 7천만 원이에요. 그런데 2027년에 팔면 약 2억 원, 2028년에 팔면 약 2억 2천만 원으로 줄어든다고 설명했어요."
+    },
+    {
+     "kind": "art",
+     "title": "하지만 [아직 확정 아니에요]",
+     "en": "Not Yet Passed",
+     "image_prompt": "a blank document waiting on a large wooden desk in an empty parliament chamber, dim light, tension",
+     "voice": "하지만 이건 아직 국회를 통과하지 않은 정부안이에요. 국회에서 내용이 바뀌거나 늦어질 수도 있어요. 그리고 완화 기간에도 장기보유특별공제는 적용하지 않는다고 발표됐어요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a person standing at a crossroads at night with one road lit brightly and another road foggy and uncertain",
+     "voice": "그러니까 지금 토지거래허가를 받아 놓고 거래를 진행 중이라면, 확실한 길은 11월 9일 기한을 지키는 거예요. 확정되지 않은 내년 완화만 믿고 기한을 넘기는 건 위험할 수 있어요."
+    },
+    {
+     "kind": "art",
+     "title": "자주 묻는 질문",
+     "en": "FAQ",
+     "image_prompt": "a cozy study with a big question mark shaped lamp glowing over a desk, warm and calm",
+     "voice": "자주 묻는 질문 몇 가지를 정리해 볼게요. 첫째, 강남 3구나 용산에 집이 있었는데 9월 9일을 넘겼다면 어떻게 될까요?"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "an hourglass fully run out lying on its side on a dark table, a small house model next to it",
+     "voice": "그 경우엔 유예 기한이 이미 지났기 때문에, 원칙대로 중과가 적용돼요. 지금 남아 있는 기한은 서울 나머지 21개 구와 경기 12개 지역의 11월 9일뿐이에요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "two keys on a table, one golden one silver, under a desk lamp, quiet night",
+     "voice": "둘째, 2주택자인데 조정대상지역이 아닌 곳의 집을 팔면요? 중과는 조정대상지역 주택에 붙는 거라서, 집의 위치와 보유 주택 수를 같이 따져 봐야 해요. 이 부분은 상황마다 달라서 세무사 상담을 꼭 받아 보세요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a tense handshake over a contract on a desk, a calendar on the wall blurred, late afternoon light",
+     "voice": "셋째, 매수자가 잔금을 늦게 주면요? 그러면 매도인이 중과를 맞을 수 있어요. 그래서 이 기간에 계약하신 분들은 잔금과 등기 날짜를 계약서에 분명하게 정해 두는 게 좋아요."
+    },
+    {
+     "kind": "art",
+     "title": "첫 번째 정리",
+     "en": "Recap No. 1",
+     "image_prompt": "a single bright red pin on a calendar-like grid of glowing squares, dark background",
+     "voice": "첫 번째를 정리하면요. 5월 9일까지 토지거래허가를 신청해 둔 서울 21개 구와 경기 12개 지역의 집은, 11월 9일까지 잔금과 등기를 모두 마쳐야 중과를 피할 수 있어요."
+    }
+   ]
+  },
+  {
+   "title": "② 상생임대 특례 (12월 31일)",
+   "tag": "② 상생임대 특례",
+   "source": "출처: 소득세법 시행령 제155조의3 · 국세청",
+   "art_title": "{상생임대} 특례, 문이 닫힌다",
+   "art_en": "Closing Door on 12.31",
+   "scenes": [
+    {
+     "kind": "art",
+     "image_prompt": "a heavy iron vault door slowly closing in front of glowing stacks of gold coins and tiny model houses, red rim light, smoke",
+     "voice": "두 번째는 상생임대 특례예요. 전세나 월세를 주고 있는 집주인이라면 꼭 아셔야 하는 내용이에요."
+    },
+    {
+     "kind": "art",
+     "title": "상생임대가 {뭔가요}",
+     "en": "What Is Co-Prosperity Lease",
+     "image_prompt": "a landlord and a tenant silhouette shaking hands in front of a warm lit apartment door, cozy evening",
+     "voice": "상생임대는 이름 그대로, 세입자와 함께 사는 임대를 하라는 뜻이에요. 집주인이 전세금이나 월세를 많이 올리지 않으면, 나중에 집을 팔 때 세금 혜택을 주는 제도예요."
+    },
+    {
+     "kind": "art",
+     "title": "[2년 거주]가 문제였어요",
+     "en": "The 2-Year Residence Rule",
+     "image_prompt": "a man standing outside his own apartment building at night looking up at a lit window where other people live",
+     "voice": "보통 조정대상지역에서 1세대 1주택 비과세를 받으려면, 그 집에 2년 이상 직접 살아야 해요. 그런데 세입자를 들여서 전세를 주고 있으면, 그 2년을 채우기가 어렵죠."
+    },
+    {
+     "kind": "art",
+     "title": "거주 2년을 {채운 걸로}",
+     "en": "Counted as Lived In",
+     "image_prompt": "a golden key glowing as it turns in the lock of an apartment door, warm light spilling out",
+     "voice": "상생임대 특례를 받으면, 그 2년 거주 요건을 면제해 줘요. 직접 살지 않았어도 거주한 걸로 봐 주는 거예요."
+    },
+    {
+     "kind": "cards",
+     "heading": "상생임대 특례, 한 장 요약",
+     "cards": [
+      {
+       "label": "조건",
+       "title": "임대료\n{5% 이내} 인상",
+       "body": "직전 계약보다\n적게 올려 새로 계약",
+       "color": "orange"
+      },
+      {
+       "label": "기간",
+       "title": "{2년 이상}\n임대",
+       "body": "새 계약으로\n2년 이상 실제 임대",
+       "color": "navy"
+      },
+      {
+       "label": "혜택",
+       "title": "[2년 거주]\n면제",
+       "body": "조정대상지역\n1세대 1주택 비과세",
+       "color": "green"
+      }
+     ],
+     "voice": "조건은 크게 세 가지예요. 직전 계약보다 임대료를 5퍼센트 이내로만 올려서 새로 계약하고, 그 계약으로 2년 이상 임대하면 돼요. 그러면 2년 거주 요건이 면제돼요."
+    },
+    {
+     "kind": "art",
+     "title": "혜택은 {얼마나}",
+     "en": "How Big Is the Benefit",
+     "image_prompt": "a large glowing golden coin stack in front of a modern apartment tower, cinematic warm light",
+     "voice": "혜택이 얼마나 클까요? 1세대 1주택 비과세는 양도가액 12억 원까지는 양도세를 아예 내지 않아요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a tall luxury apartment tower at night with a golden glow on its upper floors, city lights below",
+     "voice": "12억 원이 넘는 고가 주택도 혜택이 있어요. 넘는 부분에는 세금이 붙지만, 장기보유특별공제를 계산할 때 거주 2년을 채운 걸로 봐 줘서, 보유와 거주를 합쳐 최대 80퍼센트까지 공제받을 수 있어요."
+    },
+    {
+     "kind": "art",
+     "title": "기한은 {12월 31일}",
+     "en": "Deadline: December 31",
+     "image_prompt": "a dramatic final calendar page torn in the wind against a dark winter sky with snowflakes",
+     "voice": "그런데 이 특례는 올해 12월 31일까지 상생임대 계약을 맺고, 임대를 시작한 경우에만 받을 수 있어요. 내년 1월 1일 이후에 맺는 계약은, 임대료를 안 올려도 지금으로선 대상이 아니에요."
+    },
+    {
+     "kind": "art",
+     "title": "5% 계산, 이렇게 해요",
+     "en": "How to Calculate 5%",
+     "image_prompt": "a vintage brass calculator and a small model house on a wooden desk under a warm lamp",
+     "big": "3억 원 →\n{3억 1,500만 원}",
+     "voice": "5퍼센트는 이렇게 계산해요. 예를 들어 직전 전세금이 3억 원이었다면, 5퍼센트는 1,500만 원이에요. 그러니까 새 계약은 3억 1,500만 원까지만 올릴 수 있어요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "two glass jars on a table, one filled with coins and one with paper notes, balanced on a scale, soft light",
+     "voice": "보증금과 월세가 섞여 있으면, 법에서 정한 비율로 월세를 보증금으로 환산해서 5퍼센트를 따져요. 계산이 헷갈리면 계약 전에 꼭 세무사에게 확인해 보세요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a warm apartment living room with a young tenant family silhouette at a dinner table, soft evening light",
+     "voice": "가상의 사례로 볼게요. 서울에 집 한 채를 가진 박 씨는, 이 집을 2024년 3월부터 전세 3억 원에 세를 주고 있어요. 박 씨는 나중에 이 집을 팔 생각인데, 직접 살아 본 적이 없어서 2년 거주 요건을 못 채운 상태예요.",
+     "title": "박 씨의 {상생임대}",
+     "en": "Mr. Park's Case"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a pen signing a blank contract on a wooden table, a single golden coin beside it, warm light",
+     "voice": "박 씨가 올해 11월에, 기존 세입자나 새 세입자와 전세금 3억 1천만 원으로 새로 계약했다고 해 볼게요. 1천만 원 올렸으니 3.3퍼센트, 5퍼센트 이내예요. 직전 계약은 2024년 3월부터라 1년 6개월도 훌쩍 넘었고요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a sunrise over a quiet apartment complex with a single golden window glowing",
+     "voice": "이 계약으로 2년 이상 임대하면, 박 씨는 그 집에 살지 않았어도 2년 거주 요건을 채운 걸로 인정받아요. 양도가액이 12억 원 이하라면 양도세를 내지 않을 수 있는 거예요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "an hourglass beside a small house model, with a faint glowing path leading to the year ahead",
+     "voice": "다만 박 씨도 매도 기한은 챙겨야 해요. 임대가 2028년 11월에 끝난다면, 끝난 날부터 1년인 2029년 11월이 2029년 말보다 빠르니까, 2029년 11월까지는 팔아야 특례를 받을 수 있어요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "an older landlord and a tenant sitting across a table, both seen from behind, calm conversation, warm lamp",
+     "voice": "기존 세입자와 다시 계약하는 갱신 계약도 상생임대 계약이 될 수 있어요. 다만 앞에서 말씀드린 것처럼, 직전 계약이 내가 집주인으로서 맺은 계약이어야 하고, 1년 6개월 이상 실제로 유지됐어야 해요.",
+     "title": "갱신 계약도 {될까요}",
+     "en": "Do Renewals Count"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a landlord silhouette standing at a window looking at the street below, rain on the glass, thoughtful mood",
+     "voice": "특히 이런 분들은 올해 안에 꼭 따져 보세요. 집이 한 채인데 직접 살아 보지 못한 분, 그리고 올해나 내년 초에 전세 계약 만기가 돌아오는 분이에요. 만기가 내년 1월이라도, 미리 올해 안에 새 계약을 맺을 수 있는지 확인해 볼 필요가 있어요.",
+     "title": "누가 {특히} 챙겨야 할까",
+     "en": "Who Should Act Now"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a crossroad sign post with blank arrows under a dramatic sky, small house in the distance",
+     "voice": "반대로 이미 2년 이상 그 집에 직접 산 분이라면, 상생임대 특례가 없어도 거주 요건을 채운 거예요. 이런 분은 굳이 서두를 필요가 없어요."
+    },
+    {
+     "kind": "art",
+     "title": "직전 계약 {1년 6개월}",
+     "en": "Previous Lease: 18 Months",
+     "image_prompt": "a long winding road with two glowing milestones far apart, sunset over korean hills",
+     "voice": "여기서 많은 분들이 놓치는 조건이 있어요. 비교 대상이 되는 직전 임대차 계약이, 실제로 1년 6개월 이상 유지됐어야 해요."
+    },
+    {
+     "kind": "timeline",
+     "heading": "직전 계약은 [1년 6개월 이상]",
+     "points": [
+      {
+       "date": "2025년 7월 1일",
+       "label": "직전 계약 시작\n(이날 이전이어야)",
+       "color": "navy"
+      },
+      {
+       "date": "2026년 12월 31일",
+       "label": "상생임대 계약·임대 시작\n마감",
+       "active": true,
+       "color": "red"
+      }
+     ],
+     "voice": "그래서 12월 31일에 상생임대 계약을 하려면, 직전 계약이 작년 7월 1일 이전에 시작됐어야 해요. 국세청은 한 달이 안 되는 기간도 한 달로 보기 때문에, 1년 5개월을 하루라도 넘기면 인정된다고 해요."
+    },
+    {
+     "kind": "art",
+     "title": "이런 경우는 [인정 안 돼요]",
+     "en": "Cases That Don't Count",
+     "image_prompt": "a red stamp with an X mark slammed onto a blank document, dramatic shadows",
+     "voice": "인정되지 않는 경우도 꼭 알아 두세요. 실제 해석 사례에서 여러 분이 이 부분 때문에 특례를 놓쳤어요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a key being passed from one hand to another in a dim hallway, a suitcase on the floor",
+     "voice": "첫째, 기존 전세 계약을 그대로 승계받은 경우예요. 세입자가 있는 집을 사면서 기존 계약을 이어받으면, 직전 임대 기간을 0일로 봐요. 기획재정부가 2022년에 이렇게 해석했어요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "two people signing papers before money has changed hands, an empty briefcase on the table, tense dim light",
+     "voice": "둘째, 잔금을 치르기 전에 아직 집주인이 되지 않은 상태에서 맺은 전세 계약이에요. 이건 인정되지 않았어요. 반면 잔금 당일에 전 주인과 맺은 계약은 인정된 사례가 있어요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a calendar page being pulled forward too early by a hand, clock gears in the background, moody light",
+     "voice": "셋째, 직전 계약 기간이 아직 모자란데 미리 써 둔 갱신 계약서예요. 서명한 시점에 1년 6개월이 안 됐다면 상생 계약으로 인정되지 않아요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a long ribbon being cut into two equal pieces with golden scissors on a dark table",
+     "voice": "넷째, 4년짜리 계약을 2년씩 나눠서 두 번으로 인정받는 것도 안 돼요. 다만 새 세입자와 종전 임대료 이하로 계약한 경우에, 앞선 기간과 합쳐서 인정해 준 사례는 있어요."
+    },
+    {
+     "kind": "checklist",
+     "heading": "이런 경우는 [인정 안 돼요]",
+     "source": "출처: 기획재정부 해석(2022) · 매일신문(2026.10.11)",
+     "items": [
+      {
+       "text": "기존 전세 계약을 승계받은 경우",
+       "color": "red",
+       "mark": "x"
+      },
+      {
+       "text": "잔금 전, 매도인 자격으로 맺은 계약",
+       "color": "red",
+       "mark": "x"
+      },
+      {
+       "text": "직전 기간이 모자랄 때 미리 써 둔 갱신 계약서",
+       "color": "red",
+       "mark": "x"
+      },
+      {
+       "text": "4년 계약을 2년씩 나눠 인정받기",
+       "color": "red",
+       "mark": "x"
+      }
+     ],
+     "voice": "정리하면 승계받은 계약, 잔금 전 계약, 미리 써 둔 갱신 계약서, 그리고 기간 나누기는 인정되지 않는다는 점, 꼭 기억해 두세요."
+    },
+    {
+     "kind": "art",
+     "title": "{증빙}을 남기세요",
+     "en": "Keep the Proof",
+     "image_prompt": "a smartphone glowing on a desk next to a small house model, a bank transfer concept shown with light trails, no screen text",
+     "voice": "그리고 증빙이 중요해요. 계약금을 실제로 주고받았다는 걸 보여 줘야 하니까, 현금보다는 계좌이체로 주고받고 그 내역을 꼭 남겨 두세요."
+    },
+    {
+     "kind": "art",
+     "title": "다주택자여도 {괜찮아요}",
+     "en": "Even With Multiple Homes",
+     "image_prompt": "three small houses on a table, two fading into mist, one remaining bright and golden",
+     "voice": "계약할 때 집이 여러 채여도 괜찮을까요? 국세청 해석에 따르면, 계약 당시에는 다주택자였더라도 나중에 집을 팔 때 1주택이면 특례가 적용돼요."
+    },
+    {
+     "kind": "art",
+     "title": "10월부터 [매도 기한]이 생겼어요",
+     "en": "New Selling Deadline from October",
+     "image_prompt": "a stopwatch hanging over a small house with a long shadow, dark teal background",
+     "voice": "그리고 꼭 아셔야 할 변화가 있어요. 10월 1일부터 시행된 개정 시행령에서, 특례를 받으려면 언제까지 팔아야 하는지 기한이 새로 생겼어요."
+    },
+    {
+     "kind": "quote",
+     "heading": "10월부터 새로 생긴 [매도 기한]",
+     "text": "올해 안에 상생 임대가 끝나면\n→ {내년 12월 31일까지} 팔아야 해요.\n내년 이후에 끝나면\n→ 종료일부터 {1년}과 {2029년 말} 중 빠른 날까지",
+     "cite": "개정 시행령 · 2026년 10월 1일 이후 양도분부터",
+     "voice": "올해 안에 상생 임대 기간이 끝난 집은, 내년 12월 31일까지 팔아야 거주 요건 면제를 받아요. 내년 이후에 임대가 끝나는 집은, 끝난 날부터 1년 안, 그리고 2029년 말 중에 더 빠른 날까지 팔아야 해요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a man looking at a winding road map with a clock face embedded in the road, dusk light",
+     "voice": "예전에는 요건만 갖추면 언제 팔아도 됐는데, 이제는 임대가 끝나는 날을 기준으로 매도 계획까지 같이 세워야 하는 거예요."
+    },
+    {
+     "kind": "art",
+     "title": "연장될까요?",
+     "en": "Will It Be Extended",
+     "image_prompt": "a wooden judge gavel on a dark wooden desk, dim moody light, blurred background",
+     "voice": "그럼 이 특례, 연장될까요? 9월에 특례를 2029년 말까지 3년 연장하는 법안이 국회에 발의됐어요. 하지만 아직 기획재정위원회에 계류 중이에요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a coin spinning in the air above a dark table, half lit in gold and half in shadow",
+     "voice": "반대로 정부는 실거주를 강조하는 흐름과 맞지 않는다며 폐지를 검토한다는 보도도 있었어요. 연장될지, 그대로 끝날지 아직 알 수 없는 거예요."
+    },
+    {
+     "kind": "art",
+     "title": "두 번째 정리",
+     "en": "Recap No. 2",
+     "image_prompt": "a warm lit apartment window in a dark building with a small glowing key hanging in front of it",
+     "voice": "그러니까 상생임대 특례를 생각하고 있다면, 연장을 기다리기보다 12월 31일 기한에 맞추는 게 안전해요. 직전 계약 1년 6개월, 임대료 5퍼센트 이내, 2년 이상 임대, 그리고 매도 기한까지 꼭 챙기세요."
+    }
+   ]
+  },
+  {
+   "title": "③ 지방 미분양 아파트 취득세 감면 (12월 31일)",
+   "tag": "③ 지방 미분양 아파트 취득세 감면",
+   "source": "출처: 지방세특례제한법 · 행정안전부(2026.1)",
+   "art_title": "취득세 {최대 50%} 감면",
+   "art_en": "Up to 50% Off Acquisition Tax",
+   "scenes": [
+    {
+     "kind": "art",
+     "image_prompt": "a newly built apartment complex in a quiet provincial korean town at dusk with most windows dark, a few lights on",
+     "voice": "세 번째는 집을 사려는 분들을 위한 혜택이에요. 지방 미분양 아파트 취득세 감면이에요."
+    },
+    {
+     "kind": "art",
+     "title": "준공 후 미분양이 {뭔가요}",
+     "en": "Unsold After Completion",
+     "image_prompt": "an empty brand new apartment interior with sunlight on a bare floor, dust in the air, no furniture",
+     "voice": "준공 후 미분양은, 아파트를 다 지어서 입주할 수 있는 상태인데도 팔리지 않고 남아 있는 집을 말해요. 이런 집이 특히 지방에 많이 쌓이면서, 정부가 세금을 깎아서라도 거래를 늘리려는 거예요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "an empty new apartment complex parking lot at dusk with only a few cars, quiet and lonely atmosphere",
+     "voice": "지방은 인구가 줄고 새 아파트 공급이 한꺼번에 몰리면서, 다 지은 집이 안 팔리고 남는 곳이 많아졌어요. 집이 안 팔리면 건설사도 어려워지고 지역 경제에도 부담이 되니까, 사는 사람의 세금을 줄여서 거래를 늘리려는 거예요."
+    },
+    {
+     "kind": "art",
+     "title": "누가 {받을 수 있나요}",
+     "en": "Who Qualifies",
+     "image_prompt": "a single person silhouette walking toward a new apartment building entrance at golden hour",
+     "voice": "조건을 볼게요. 수도권이 아닌 지방의 준공 후 미분양 아파트를 개인이 사야 해요. 전용면적은 85제곱미터 이하, 취득가액은 6억 원 이하여야 해요."
+    },
+    {
+     "kind": "cards",
+     "heading": "감면 대상",
+     "cards": [
+      {
+       "label": "어디",
+       "title": "지방\n{준공 후 미분양}",
+       "body": "다 지었는데\n안 팔린 지방 아파트",
+       "color": "navy"
+      },
+      {
+       "label": "크기·가격",
+       "title": "85㎡ 이하\n6억 원 이하",
+       "body": "전용면적과 취득가액\n둘 다 충족",
+       "color": "orange"
+      },
+      {
+       "label": "누가·언제",
+       "title": "{개인}이\n올해 취득",
+       "body": "2026년 12월 31일\n취득분까지",
+       "color": "green"
+      }
+     ],
+     "voice": "그리고 올해 1월 1일부터 시작된 1년 한시 제도라서, 12월 31일까지 취득한 경우에만 적용돼요."
+    },
+    {
+     "kind": "art",
+     "title": "얼마나 {아낄 수 있나요}",
+     "en": "How Much You Save",
+     "image_prompt": "a stack of gold coins being split in half by a beam of light on a dark table",
+     "big": "500만 원 →\n{250만 원}",
+     "voice": "얼마나 아낄 수 있을까요? 예를 들어 5억 원짜리 아파트를 1주택자로 산다면, 취득세율이 1퍼센트라서 취득세가 500만 원이에요. 여기서 최대 절반인 250만 원을 아낄 수 있어요."
+    },
+    {
+     "kind": "art",
+     "title": "다주택자라면 {차이가 더 커요}",
+     "en": "Bigger Gap for Multi-Home Owners",
+     "image_prompt": "a huge red barrier lifting up from a road leading to a new apartment complex, morning light",
+     "voice": "다주택자라면 차이가 훨씬 커요. 원래 다주택자는 집을 더 살 때 주택 수에 따라 8퍼센트나 12퍼센트 같은 중과세율이 붙을 수 있는데요. 이 아파트는 다주택자 취득세 중과에서 빠져요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "two piles of gold coins side by side, one huge and one small, dramatic spotlight on dark table",
+     "voice": "예를 들어 이미 집이 두 채 있는 분이 조정대상지역이 아닌 지방에서 5억 원짜리 아파트를 세 번째로 산다면, 원래는 8퍼센트, 그러니까 4천만 원의 취득세가 나올 수 있어요. 그런데 준공 후 미분양 아파트라면 이 중과에서 빠지는 거예요.",
+     "title": "다주택자 {예시}",
+     "en": "Example for Multi-Home Owners",
+     "big": "4천만 원\n→ {중과 제외}"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a calm man reviewing building blueprints at a table with a model apartment, warm office light, seen from the side, face not visible",
+     "voice": "그래서 지방에 투자용이나 세컨드하우스로 집을 알아보던 다주택자라면, 올해 안에 검토해 볼 만한 혜택이에요."
+    },
+    {
+     "kind": "art",
+     "title": "꼭 [확인할 것]",
+     "en": "Check Before You Buy",
+     "image_prompt": "a magnifying glass over a small model apartment building on a desk, dramatic side light",
+     "voice": "다만 꼭 확인할 게 있어요. 첫째, 그 집이 정말 준공 후 미분양 주택으로 인정되는지예요. 분양 중인 집이라고 다 해당하는 게 아니라서, 사업자나 해당 시청, 구청을 통해 미분양 여부를 확인해야 해요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a row of different city gates at night, each glowing with a different intensity of light",
+     "voice": "둘째, 감면율이에요. 최대 50퍼센트라고 했지만, 지역과 조건에 따라 실제 감면율이 달라질 수 있어요. 사기 전에 시청이나 구청 세무과에 꼭 물어보세요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a quiet provincial town street at evening with a few shops closed, a new apartment tower in the distance",
+     "voice": "셋째, 세금 혜택보다 집 자체가 더 중요해요. 미분양이 쌓인 데는 이유가 있을 수 있으니, 입지와 앞으로의 가격, 실제로 살거나 세를 줄 수 있는지까지 꼼꼼히 따져 보셔야 해요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a family silhouette walking with a moving box toward a new apartment entrance at golden hour",
+     "voice": "그래서 이 혜택은 투자보다는, 원래 그 지역에서 내 집을 마련하려던 분에게 더 잘 맞는 혜택이에요. 어차피 살 집이었다면, 올해 안에 사는 것만으로 취득세를 크게 줄일 수 있으니까요."
+    },
+    {
+     "kind": "checklist",
+     "heading": "사기 전에 꼭 확인하세요",
+     "items": [
+      {
+       "text": "그 아파트가 {준공 후 미분양}으로 인정되는지"
+      },
+      {
+       "text": "우리 지역 감면율이 실제로 얼마인지"
+      },
+      {
+       "text": "입지·가격·임대 수요까지 따져 봤는지"
+      }
+     ],
+     "voice": "세 번째를 정리하면요. 지방의 준공 후 미분양 아파트, 85제곱미터 이하, 6억 원 이하를 올해 12월 31일까지 개인이 사면 취득세를 최대 50퍼센트까지 줄일 수 있어요."
+    }
+   ]
+  },
+  {
+   "title": "보너스: 거래 후 꼭 할 일 (신고·납부)",
+   "tag": "보너스 · 거래 후 꼭 할 일",
+   "source": "출처: 소득세법 · 종합부동산세법 · 국세청 안내",
+   "art_title": "거래 후 {꼭 할 일}",
+   "art_en": "After the Deal",
+   "scenes": [
+    {
+     "kind": "art",
+     "image_prompt": "a stack of neatly arranged documents and a pen on a dark desk under a single warm lamp",
+     "voice": "보너스로, 혜택을 챙긴 다음에 꼭 해야 할 일도 짚고 갈게요. 기한 안에 팔거나 샀다고 끝이 아니에요. 신고와 납부를 놓치면 가산세가 또 붙어요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a calendar-like wall of glowing tiles with two tiles highlighted in gold, dark background",
+     "voice": "먼저 집을 판 분이라면 양도소득세 예정신고를 해야 해요. 기한은 잔금을 받은 날, 그러니까 양도일이 속한 달의 말일부터 2개월이에요.",
+     "title": "양도세 {예정신고}",
+     "en": "Capital Gains Tax Filing",
+     "big": "양도일 달 말일\n+ {2개월}"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a winter night window with snow falling outside and a lamp lit desk inside, calm",
+     "voice": "예를 들어 11월 5일에 잔금을 받았다면, 11월 말일부터 2개월이니까 내년 1월 31일까지 신고해야 해요. 비과세라서 낼 세금이 없을 때도, 상황에 따라 신고가 필요할 수 있으니 확인해 보세요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a red warning light glowing over a pile of coins, dark dramatic background",
+     "voice": "기한을 넘기면 무신고 가산세로 세금의 20퍼센트가 더 붙어요. 거짓으로 꾸며서 신고하면 40퍼센트까지 올라가고요. 여기에 납부가 늦어진 날마다 0.022퍼센트씩 납부지연 가산세가 더 붙어요.",
+     "title": "늦으면 [가산세]",
+     "en": "Late Penalties",
+     "big": "무신고\n[+20%]"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a hand reaching to catch a falling golden coin just in time, dramatic light",
+     "voice": "다만 기한을 넘겼더라도 1개월 안에 스스로 신고하면, 무신고 가산세를 절반으로 줄여 줘요. 늦었다는 걸 알았다면 바로 신고하는 게 좋아요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a cozy home office in december with a decorated window and a stack of envelopes on the desk",
+     "voice": "그리고 12월에는 종합부동산세가 있어요. 종부세 고지서는 보통 11월 말쯤 나오고, 납부 기간은 12월 1일부터 15일까지예요.",
+     "title": "12월엔 {종부세}",
+     "en": "Comprehensive Real Estate Tax",
+     "big": "12월 1일 ~\n{12월 15일}"
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a large golden coin being split into two halves floating apart, soft blue background",
+     "voice": "종부세가 250만 원을 넘으면 나눠서 낼 수도 있어요. 이걸 분납이라고 하는데, 일부를 납부 기한까지 내고 나머지는 6개월 안에 낼 수 있어요. 한꺼번에 내기 부담스러우면 고지서와 함께 꼭 확인해 보세요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a magnifying glass over a blank official-looking envelope on a wooden desk, dim light",
+     "voice": "고지서를 받으면 바로 내기 전에, 주택 수나 공시가격, 공제 내용이 맞게 들어갔는지 한 번 확인하세요. 틀린 게 있으면 세무서에 문의해서 바로잡을 수 있어요."
+    },
+    {
+     "kind": "checklist",
+     "heading": "거래 후 꼭 할 일",
+     "items": [
+      {
+       "text": "집 판 분 · 양도세 예정신고",
+       "right": "양도일 달 말일+2개월"
+      },
+      {
+       "text": "늦었다면 · 1개월 안 자진신고",
+       "right": "가산세 50% 감면"
+      },
+      {
+       "text": "다주택·고가주택 · 종부세 납부",
+       "right": "12월 1일~15일"
+      }
+     ],
+     "voice": "정리하면, 집을 판 분은 양도일이 속한 달 말일부터 2개월 안에 예정신고, 늦었다면 1개월 안에 자진신고, 그리고 종부세 대상이라면 12월 15일까지 납부예요."
+    }
+   ]
+  },
+  {
+   "title": "정리",
+   "tag": "정리",
+   "art_title": "올해 끝나는 {세금 혜택 3가지}",
+   "art_en": "Recap",
+   "scenes": [
+    {
+     "kind": "checklist",
+     "heading": "올해 끝나는 세금 혜택 3가지",
+     "items": [
+      {
+       "text": "다주택자 양도세 중과 유예 · 잔금·등기",
+       "right": "11월 9일"
+      },
+      {
+       "text": "상생임대 특례 · 계약·임대 시작",
+       "right": "12월 31일"
+      },
+      {
+       "text": "지방 미분양 취득세 감면 · 취득",
+       "right": "12월 31일"
+      }
+     ],
+     "voice": "마지막으로 다시 정리해 볼게요. 다주택자 양도세 중과 유예는 11월 9일까지 잔금과 등기를 마쳐야 해요. 상생임대 특례는 12월 31일까지 계약하고 임대를 시작해야 하고요. 지방 미분양 아파트 취득세 감면은 12월 31일까지 취득해야 받을 수 있어요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a warm living room table with two cups of tea and a set of house keys, afternoon light through the window",
+     "voice": "세 가지 모두 날짜가 정해져 있고, 하루만 늦어도 받을 수 없는 혜택이에요. 내 상황에 해당하는지 헷갈리면, 미루지 말고 지금 세무서나 세무사에게 한 번 물어보세요."
+    },
+    {
+     "kind": "art",
+     "title": "{공유}해 주세요",
+     "en": "Share With Someone",
+     "image_prompt": "an elderly couple silhouette sitting on a bench looking at a sunset over apartment buildings, peaceful",
+     "voice": "집을 팔거나 살 계획이 있는 부모님, 가족, 지인께 이 영상을 꼭 보내 주세요. 이런 정보는 아는 사람만 챙기거든요."
+    },
+    {
+     "kind": "art",
+     "title": "여러분은 {어떤 게} 해당되세요",
+     "en": "Which One Applies to You",
+     "image_prompt": "three glowing lanterns on a dark wooden table, red orange and green, cozy atmosphere",
+     "voice": "여러분은 세 가지 중에 어떤 게 해당되세요? 댓글로 알려 주시면, 다음 영상에서 더 자세히 다뤄 볼게요."
+    },
+    {
+     "kind": "title",
+     "title": "다음 영상\n{1주택자 세금, 내년에 바뀌는 것}",
+     "sub": "구독하고 놓치지 마세요 · daily.factlab",
+     "voice": "다음 영상에서는 올해 세제개편안에서 1주택자에게 달라지는 내용을 정리해 드릴게요. 구독하고 기다려 주세요."
+    }
+   ]
+  }
+ ]
+}

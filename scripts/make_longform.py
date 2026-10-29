@@ -1,11 +1,13 @@
 """롱폼(가로 1920x1080) 정보 해설 영상 빌더 (2026-10-29 시제품).
-벤치마크(경제사냥꾼·노후 복지번역기: 밝은 정보 카드 + 하단 자막, 한밤의 한국사: 장면 이미지 + 큰 자막)를 따라
-밝은 배경의 정보 카드 위주로 만들고, 사진 장면(Cloudflare FLUX)은 분위기 전환용으로만 쓴다.
+v1(글자 카드 위주)은 "보는 재미가 없다"는 피드백을 받았다. 그래서 v2는 성적이 가장 좋은 경제해적단형으로 바꿨다:
+영화풍 AI 그림(`art`, FLUX.2 klein 16:9)이 7~10초마다 바뀌고, 그 위에 큰 한글 제목·영어 부제·숫자를 우리가 얹는다(그림 속 글자는 깨지므로).
+그림은 천천히 확대·축소된다. 밝은 정보 카드(cards·checklist 등)는 금액·날짜 정리용으로 일부만 쓴다.
 입력: meta.json의 "chapters"(장마다 scenes). 스키마는 docs/script_template_longform.md.
 출력: out-dir/long.mp4, thumb.png(1280x720), chapters.txt(유튜브 설명용), long_report.json, frames/(장면별 대표 프레임).
 음성은 장(chapter)마다 따로 합성해 캐시한다 — 화면만 고쳐 다시 렌더할 때 음성은 다시 만들지 않는다(--fresh-voice로 강제).
 """
 import argparse
+import hashlib
 import json
 import os
 import shutil
@@ -21,6 +23,9 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter  # noqa: E402
+import base64  # noqa: E402
+import urllib.request  # noqa: E402
+import uuid  # noqa: E402
 import imagegen_cloudflare as cf  # noqa: E402
 import make_graphic as gfx  # noqa: E402
 import make_short as base  # noqa: E402
@@ -41,7 +46,11 @@ RED = (214, 48, 49)      # 밝은 배경용 경고 […]
 GOLD = gfx.ACCENT
 GREEN = (34, 150, 90)
 COLORS = {"orange": ORANGE, "red": RED, "green": GREEN, "navy": NAVY, "gold": GOLD}
-KINDS = ("title", "cards", "number", "checklist", "compare", "timeline", "photo", "quote")
+KINDS = ("art", "title", "cards", "number", "checklist", "compare", "timeline", "photo", "quote")
+ART_W, ART_H = 1280, 720
+KLEIN = "@cf/black-forest-labs/flux-2-klein-4b"
+ART_STYLE = ("dark cinematic digital illustration, dramatic moody lighting, rich detail, epic composition, "
+             "{p}, no text, no letters, no numbers, no signs")
 HEAD_H = 96
 SUB_TOP = 880  # 이 아래는 자막 자리 — 카드가 들어오지 않게 한다
 
@@ -509,6 +518,82 @@ def get_image(key, prompt, img_dir):
     return None
 
 
+def gen_art(prompt, out):
+    """FLUX.2 klein(16:9 바로 생성, 장당 약 6초). 실패하면 None — 그 장면은 그라데이션으로 대체된다."""
+    with open(cf.CRED_PATH, encoding="utf-8") as f:
+        cred = json.load(f)
+    b = uuid.uuid4().hex
+    parts = [f'--{b}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode()
+             for k, v in (("prompt", ART_STYLE.format(p=prompt)), ("width", ART_W), ("height", ART_H))]
+    parts.append(f"--{b}--\r\n".encode())
+    url = f"https://api.cloudflare.com/client/v4/accounts/{cred['account_id']}/ai/run/{KLEIN}"
+    req = urllib.request.Request(url, data=b"".join(parts), headers={
+        "Authorization": "Bearer " + cred["api_token"], "Content-Type": f"multipart/form-data; boundary={b}"})
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                data = json.load(r)
+            with open(out, "wb") as f:
+                f.write(base64.b64decode(data["result"]["image"]))
+            return out
+        except Exception as e:  # 한도·네트워크 — 이 장면만 대체
+            print(f"  그림 생성 실패 (시도 {attempt + 1}/3): {str(e)[:160]}", flush=True)
+            time.sleep(3)
+    return None
+
+
+def art_overlay(sc, title, en):
+    """그림 위에 얹는 글자층(RGBA): 오른쪽 위 큰 제목 + 영어 부제, 왼쪽 큰 숫자, 왼쪽 위 로고."""
+    lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(sh).rectangle([W * 0.42, 0, W, 230], fill=(0, 0, 0, 120))
+    lay = Image.alpha_composite(lay, sh.filter(ImageFilter.GaussianBlur(60)))
+    d = ImageDraw.Draw(lay)
+    hi, warn = (255, 200, 60), (255, 84, 84)
+    if title:
+        f = fit(d, [title], W - 760, 92, 56)
+        draw_rich(d, (W - 70, 56), title, f, (255, 255, 255), anchor="r", stroke=7, stroke_fill=(0, 0, 0), hi=hi, warn=warn)
+        if en:
+            ef = gfx.font(34, bold=False)
+            d.text((W - 70 - d.textlength(en, font=ef), 66 + f.size + 14), en, font=ef, fill=(228, 228, 232),
+                   stroke_width=2, stroke_fill=(0, 0, 0))
+    if sc.get("big"):
+        bf = fit(d, sc["big"].split("\n"), 760, 132, 70)
+        y = 330
+        for ln in sc["big"].split("\n"):
+            draw_rich(d, (90, y), ln, bf, (255, 255, 255), stroke=9, stroke_fill=(0, 0, 0), hi=hi, warn=warn)
+            y += bf.size + 20
+    lf = gfx.font(32)
+    d.rounded_rectangle([40, 36, 80 + d.textlength("daily.factlab", font=lf), 92], radius=28, fill=(10, 14, 22, 170), outline=GOLD + (255,), width=2)
+    d.text((60, 42), "daily.factlab", font=lf, fill=GOLD + (255,))
+    return lay
+
+
+def render_art(work, idx, sc, img_path, dur, title, en):
+    """배경 그림은 ffmpeg zoompan으로 천천히 확대(짝수)·축소(홀수), 글자층은 0.4초 페이드인으로 위에 얹는다."""
+    sdir = os.path.join(work, f"s{idx:03d}")
+    os.makedirs(sdir, exist_ok=True)
+    bg = os.path.join(sdir, "bg.png")
+    if img_path:
+        im = Image.open(img_path).convert("RGB").resize((W, H), Image.LANCZOS)
+        im = ImageEnhance.Brightness(im).enhance(0.9)
+    else:
+        im = gfx.add_glow(gfx.vertical_gradient(W, H, gfx.BG_TOP, gfx.BG_BOTTOM), (W // 2, H // 2), 600, gfx.ACCENT, opacity=40)
+    im.save(bg)
+    ov = os.path.join(sdir, "ov.png")
+    lay = art_overlay(sc, title, en)
+    lay.save(ov)
+    n = max(int(dur * FPS), 2)
+    zoom = f"1+0.07*on/{n}" if idx % 2 == 0 else f"1.07-0.07*on/{n}"
+    out = os.path.join(work, f"scene_{idx:03d}.mp4")
+    flt = (f"[0:v]scale=3840:2160,zoompan=z='{zoom}':d={n}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps={FPS}[bg];"
+           f"[1:v]format=rgba,fade=t=in:st=0:d=0.4:alpha=1[ov];[bg][ov]overlay=0:0:shortest=1,format=yuv420p[v]")
+    run(["ffmpeg", "-y", "-i", bg, "-loop", "1", "-framerate", str(FPS), "-i", ov,
+         "-filter_complex", flt, "-map", "[v]", "-frames:v", str(n), *ENC, out])
+    final = Image.alpha_composite(im.convert("RGBA"), lay).convert("RGB")
+    return out, final
+
+
 def chapter_voice(ci, ch, work, rate, fresh):
     cdir = os.path.join(work, f"voice_ch{ci:02d}")
     os.makedirs(cdir, exist_ok=True)
@@ -537,7 +622,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Sub,Malgun Gothic,58,&H00FFFFFF,&H00FFFFFF,&H40101010,&H40101010,-1,0,0,0,100,100,0,0,3,16,0,2,160,160,48,1
+Style: Sub,Malgun Gothic,56,&H0000E6FF,&H0000E6FF,&H20000000,&H20000000,-1,0,0,0,100,100,0,0,3,14,0,2,160,160,44,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -629,7 +714,7 @@ def validate(meta):
                 raise ValueError(f"{where}: kind는 {KINDS} 중 하나 ({sc.get('kind')})")
             if not str(sc.get("voice", "")).strip():
                 raise ValueError(f"{where}: voice 누락")
-            need = {"title": ["title"], "cards": ["cards"], "number": ["amount"], "checklist": ["items"],
+            need = {"art": ["image_prompt"], "title": ["title"], "cards": ["cards"], "number": ["amount"], "checklist": ["items"],
                     "compare": ["left", "right"], "timeline": ["points"], "photo": ["caption"], "quote": ["text"]}[sc["kind"]]
             for k in need:
                 if k not in sc:
@@ -696,8 +781,21 @@ def main():
     clips, report, k = [], [], 0
     for ci, ch in enumerate(meta["chapters"]):
         ctx = {"tag": ch.get("tag", ch["title"]), "source": ch.get("source", "")}
+        cur_title, cur_en = ch.get("art_title", ""), ch.get("art_en", "")
         for si, sc in enumerate(ch["scenes"]):
             s, e = scene_spans[k]
+            if sc["kind"] == "art":
+                if "title" in sc:  # 제목은 바뀔 때만 적고, 없으면 앞 장면 제목을 이어받는다
+                    cur_title, cur_en = sc["title"], sc.get("en", "")
+                p = os.path.join(img_dir, "art_" + hashlib.md5(sc["image_prompt"].encode("utf-8")).hexdigest()[:12] + ".png")  # 문구 기준 캐시(장면 순서가 바뀌어도 그림 유지)
+                img = p if os.path.exists(p) else gen_art(sc["image_prompt"], p)
+                clip, final = render_art(work, k, sc, img, max(e - s, 0.4), cur_title, cur_en)
+                final.save(os.path.join(frames_dir, f"{k:03d}_art.png"))
+                clips.append(clip)
+                report.append({"i": k, "chapter": ci, "kind": "art", "start": round(s, 2), "end": round(e, 2), "image": bool(img)})
+                print(f"scene {k:>3} ch{ci} art       {s:6.1f}-{e:6.1f}s", flush=True)
+                k += 1
+                continue
             img = get_image(f"c{ci:02d}s{si:02d}", sc.get("image_prompt"), img_dir) if sc["kind"] == "photo" else None
             sctx = {**ctx, "source": sc.get("source", ctx["source"])}
             clip, final = render_scene(work, k, sc, sctx, img, max(e - s, 0.4))

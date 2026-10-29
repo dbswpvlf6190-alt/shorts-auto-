@@ -101,7 +101,8 @@
    "부동산 뉴스",
    "도장찍기전에"
   ],
-  "publish_slot": "평일 18:00 KST"
+  "publish_slot": "평일 18:00 KST",
+  "next": "대출 규제 총정리: 내가 실제로 얼마까지 빌릴 수 있나"
  },
  "chapters": [
   {
@@ -326,6 +327,16 @@
      "voice": "반발이 거셌습니다. 직장 때문에, 아이 학교 때문에, 부모님 모시느라 내 집에 못 사는 사람한테 세금을 더 물리는 게 맞느냐는 거죠. 여당 안에서도 다시 보자는 목소리가 나왔습니다."
     },
     {
+     "kind": "art",
+     "image_prompt": "a korean father in a work suit at a quiet train platform at dawn holding a small bag, looking back toward the city, emotional, cinematic",
+     "voice": "생각해 보면 내 집에 못 사는 이유는 대부분 가족입니다. 아이 학교 때문에 이사한 부모, 지방으로 발령받은 가장, 아픈 부모님 곁으로 내려간 자식."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "an adult child holding the hand of an elderly parent sitting by a hospital window at sunset, warm soft light, tender",
+     "voice": "집을 두고 떠난 게 욕심이 아니라 책임이었던 분들이 많죠. 정부안에도 취학, 근무, 부모님 봉양처럼 어쩔 수 없는 사정을 거주로 인정해 주는 장치가 들어간 이유입니다."
+    },
+    {
      "kind": "timeline",
      "heading": "비거주 1주택 종부세, 29일의 기록",
      "points": [
@@ -383,7 +394,7 @@
     {
      "kind": "art",
      "image_prompt": "a winter calendar month concept shown as snow falling on a quiet seoul skyline at night, cold blue tones, anticipation",
-     "voice": "정리하면 이렇습니다. 정부는 한 번 물러섰고, 국회는 아직 결론을 내지 않았습니다. 세법은 해마다 보통 12월 초에 예산안과 함께 처리돼 왔어요. 앞으로 한 달여가 진짜 승부처라는 뜻입니다."
+     "voice": "정리하면 이렇습니다. 정부는 한 번 물러섰고, 국회는 아직 결론을 내지 않았습니다. 세법은 해마다 보통 12월 초에 예산안과 함께 처리돼 왔어요. 앞으로 한 달여가 진짜 승부처라는 뜻입니다. 세금은 발표가 아니라, 통과로 정해집니다."
     }
    ]
   },
@@ -607,7 +618,7 @@
     {
      "kind": "art",
      "image_prompt": "a night view of seoul from a hill with some apartment windows glowing warm and others dark, wide cinematic panorama",
-     "voice": "정리하면 이렇습니다. 시세 30억 원 아래 집에 실제로 사신다면 줄어드는 쪽, 안 사신다면 늘어나는 쪽. 아주 비싼 집이라면 사셔도 늘어나는 쪽입니다."
+     "voice": "정리하면 이렇습니다. 시세 30억 원 아래 집에 실제로 사신다면 줄어드는 쪽, 안 사신다면 늘어나는 쪽. 아주 비싼 집이라면 사셔도 늘어나는 쪽입니다. 같은 집이라도, 사느냐 안 사느냐가 고지서를 바꿉니다."
     }
    ]
   },
@@ -666,7 +677,7 @@
     {
      "kind": "art",
      "image_prompt": "a calm person sitting on a bench by a lake at dawn, mist rising, patient waiting, serene",
-     "voice": "그래서 지금 할 수 있는 건 하나입니다. 12월에 국회가 어떻게 정하는지 확인하고, 그다음에 파는 시기를 정하는 것. 급하게 먼저 움직일 필요는 없다는 뜻이기도 합니다."
+     "voice": "그래서 지금 할 수 있는 건 하나입니다. 12월에 국회가 어떻게 정하는지 확인하고, 그다음에 파는 시기를 정하는 것. 급하게 먼저 움직일 필요는 없다는 뜻이기도 합니다. 규칙이 바뀔 때는, 먼저 움직이는 사람보다 먼저 아는 사람이 이깁니다."
     }
    ]
   },
@@ -723,7 +734,7 @@
     {
      "kind": "art",
      "image_prompt": "a man looking at a wall calendar in a dim room with one date circled by light, worried expression, back view",
-     "voice": "한 채라고 마음 놓고 있다가 날짜 하나 때문에 비과세를 놓치는 분들이 정말 많습니다. 그러니 팔기 전에 이 조건들은 꼭 직접 확인하세요."
+     "voice": "한 채라고 마음 놓고 있다가 날짜 하나 때문에 비과세를 놓치는 분들이 정말 많습니다. 그러니 팔기 전에 이 조건들은 꼭 직접 확인하세요. 집 한 채는 조건이 아니라, 출발점일 뿐입니다."
     }
    ]
   },
@@ -860,7 +871,18 @@
     {
      "kind": "art",
      "image_prompt": "a cozy apartment window glowing at night among many dark windows, one warm home, closing shot",
-     "voice": "여러분 집은 사는 집인가요, 가진 집인가요? 그 집에 몇 년째 살고 계신지 댓글로 남겨 주시면 하나하나 읽어 보겠습니다."
+     "voice": "오늘 영상이 도움이 됐다면 좋아요 한번 눌러 주세요. 알고리즘에 큰 힘이 됩니다. 그리고 여러분 집은 사는 집인가요, 가진 집인가요? 몇 년째 살고 계신지 댓글로 남겨 주시면 하나하나 읽어 보겠습니다."
+    },
+    {
+     "kind": "title",
+     "title": "다음 영상\n{대출 규제 총정리}",
+     "sub": "구독하고 놓치지 마세요 · 도장찍기전에",
+     "voice": "다음 영상에서는 집을 사려는 분들이 가장 먼저 부딪히는 벽, 대출 규제를 정리해 드립니다. 내가 실제로 얼마까지 빌릴 수 있는지, 숫자로 계산해 보여 드릴게요."
+    },
+    {
+     "kind": "art",
+     "image_prompt": "a red traditional korean seal stamp resting on a wooden desk beside a closed contract folder, warm lamp light, shallow depth of field, no text",
+     "voice": "도장은 천천히, 팩트는 먼저. 도장찍기전에였습니다."
     }
    ]
   }

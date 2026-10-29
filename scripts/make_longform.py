@@ -872,6 +872,8 @@ def build_upload(meta, out_dir):
     if v3:  # 경제해적단 설명란: 덩어리 사이를 ━━━ 줄로 나눈다
         sep = "\n\n━━━\n\n"
         cq = [p for p in parts if p.startswith("💬")]
+        if up.get("next"):  # 경제해적단 "다음 항해는 ~입니다" — 다음 영상 예고
+            cq.append(f"🔔 다음 영상은 '{up['next']}'입니다. 놓치지 않으시려면 구독과 알림 설정 부탁드립니다.")
         groups = [parts[0], parts[1] if up.get("covers") else "", "⏱ 타임라인\n" + chapters if chapters else "",
                   "\n\n".join(p for p in parts if p.startswith(("[", "📚", "⚠️"))),
                   "\n\n".join(cq + [parts[-2]]), parts[-1]]

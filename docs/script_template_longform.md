@@ -1,0 +1,55 @@
+# 롱폼(가로 1920x1080) 정보 해설 영상 — 대본/메타 작성 규칙 (2026-10-29 시제품)
+
+빌더: `scripts/make_longform.py --meta <meta.json> --out-dir <폴더>`
+- 결과물: `long.mp4`, `thumb.png`(1280x720), `chapters.txt`, `long_report.json`, `frames/`(장면별 대표 프레임)
+- 대기열(`input/queue`)과 분리된 `input/longform/NN_이름/meta.json`에 둔다. 아직 자동 업로드는 없다(시제품 단계).
+- 장(chapter)별 음성은 `_work/voice_chXX`에 캐시된다. 화면만 고쳐 다시 렌더하면 음성은 다시 만들지 않는다. 강제로 다시 만들려면 `--fresh-voice`를 쓴다.
+
+## 벤치마크 (2026-10-29 조사)
+- **정보 해설형: 경제사냥꾼(64.8만), 노후 복지번역기(4.8만).** 8~20분, 밝은 바탕 정보 카드/슬라이드 + 하단 자막 + 로고.
+- **몰아보기형: 한밤의 한국사(4.8만, 최고 87만 회).** 50~70분, AI 일러스트 한 장면씩 + 큰 자막.
+- **썸네일 공통:** 사진 배경을 어둡게 깔고 **큰 글자 2줄**을 넣는다. 흰색 + 노랑 강조 + 빨강 경고, 숫자나 날짜를 넣고, 빨간 배지와 로고를 단다.
+
+## 대본 규칙
+- **분량:** 해요체로 8~10분. 공백 포함 약 3,500~4,500자이고 `rate` 기본값은 "+10%"다.
+- **구조:** 인트로(훅 → 결론 요약 → 기준일 고지) → 본론 장 3~5개 → 정리(체크리스트) → 공유·댓글 질문 → 다음 영상 예고.
+- **챕터:** 유튜브 챕터 조건 때문에 장은 3개 이상이어야 한다. 장 제목이 `chapters.txt`에 들어간다.
+- **장면 길이:** 한 장면 voice는 1~4문장이다. 화면은 문장보다 느리게 바뀌어도 되고, 자막이 음성을 따라간다.
+- **출처:** 장마다 `source`로 단다(화면 우상단에 표시). 장면 하나만 출처가 다르면 그 장면에 `source`를 따로 준다.
+  - **확인 안 된 수치·실무 관행은 쓰지 않는다.** 확인한 근거는 `fact_check`에 적는다.
+- **기준일:** 정책은 바뀌므로 인트로에 "○○년 ○월 기준"을 말하고 설명에도 적는다. 국회 통과 전인 개편안은 반드시 "통과 전"이라고 밝힌다.
+- **예시 금액:** `number` 장면 `note`에 "(예시 금액 · 가정)"을 넣는다.
+- **voice의 단어 수가 타이밍 기준이다.** 공백으로 나눈 단어 수가 그대로 쓰이므로 문장을 그대로 적는다. 숫자는 "82.5퍼센트", "20퍼센트포인트"처럼 읽는 대로 쓴다.
+
+## meta.json
+```
+{ "format": "long", "rate": "+10%", "fact_check": "...",
+  "youtube_title", "youtube_description", "tags", "privacy",
+  "thumbnail": { "lines": ["{노랑}", "흰색 [빨강]"], "badge": "2026 막차", "image_prompt": "photorealistic ..." },
+  "chapters": [ { "title": "① ...", "tag": "화면 상단 띠 문구", "source": "출처: ...", "scenes": [ ... ] } ] }
+```
+공통 필드는 `voice`(읽을 문장, 필수)와 선택 `source`다.
+화면 글자 마크업: `{주황/노랑 강조}`, `[빨강 경고]`, `\n` 줄바꿈.
+
+| kind | 필수 | 선택 | 화면 |
+|---|---|---|---|
+| title | `title` | `number`, `sub` | 짙은 남색 장 제목 카드 (장 시작·예고) |
+| cards | `cards:[{title}]` 2~4개 | `heading`, 카드별 `label`, `body`, `color`(red/orange/green/navy) | 흰 카드가 하나씩 나타남 |
+| number | `amount`(숫자) | `unit`, `label`, `note`, `color`, `heading` | 큰 숫자 카운트업 |
+| checklist | `items:[{text}]` | `right`(오른쪽 날짜), `mark:"x"`(안 되는 것), `color` | 줄이 하나씩 체크됨 |
+| compare | `left`, `right`: `{title, lines[], color}` | `heading` | 좌우 비교 |
+| timeline | `points:[{date, label}]` | `active`, `color` | 날짜 연표 |
+| photo | `caption` | `image_prompt` | 사진(Cloudflare) + 큰 자막. **전체의 1/4 이하** |
+| quote | `text` | `cite`, `heading` | 강조 상자(주의·법령 문구) |
+
+단계형 장면(cards·checklist·compare·timeline)은 장면 앞 70% 구간에 하나씩 드러난다. 시각을 직접 정하려면 `reveal_at:[초,…]`, 한 번에 다 보이려면 `reveal:"all"`을 쓴다.
+
+## image_prompt
+쇼츠 v2와 같다(`docs/script_template_v2.md`).
+- 영어로 쓰고 `photorealistic ...`로 시작한다.
+- **글자가 생길 만한 피사체(간판·건물 현판·문서·지폐)는 피한다.** 시제품에서 관공서 건물 사진에 가짜 영문 현판이 생겼다(10/29).
+
+## 검수
+- 렌더 후 `frames/`를 훑어본다: 글자 넘침, 이미지 속 가짜 글자, 빈 공간.
+- `long_report.json`에서 길이와 사진 실패(image:false)를 확인한다.
+- 썸네일 `thumb.png`도 확인한다.

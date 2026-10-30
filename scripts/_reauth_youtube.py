@@ -19,6 +19,8 @@ SCOPES = [
     "https://www.googleapis.com/auth/youtube.readonly",
     "https://www.googleapis.com/auth/youtube",
     "https://www.googleapis.com/auth/yt-analytics.readonly",
+    # 2026-10-30: 롱폼 자막 파일 업로드(captions.insert)는 force-ssl 스코프만 허용.
+    "https://www.googleapis.com/auth/youtube.force-ssl",
 ]
 
 if not os.path.exists(CLIENT_SECRET_PATH):

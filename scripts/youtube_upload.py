@@ -102,6 +102,17 @@ def upload(video_path, title, description, privacy="private", made_for_kids=Fals
     return video_id
 
 
+def upload_captions(video_id, srt_path, language="ko", name="한국어"):
+    """롱폼 자막 파일(captions.srt) 올리기(2026-10-30). 대본 그대로라 자동 자막보다 정확 — 검색·자동 번역·CC 시청자용.
+    화면에 박힌 자막과는 별개(시청자가 CC를 켤 때만 보임). 실패해도 영상에는 영향 없음."""
+    youtube = build("youtube", "v3", credentials=get_credentials())
+    body = {"snippet": {"videoId": video_id, "language": language, "name": name, "isDraft": False}}
+    r = youtube.captions().insert(part="snippet", body=body,
+                                  media_body=MediaFileUpload(srt_path, mimetype="application/octet-stream")).execute()
+    print(f"  자막 업로드 완료: {r['id']} ({language})")
+    return r["id"]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--video", required=True)

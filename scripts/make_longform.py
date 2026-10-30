@@ -666,6 +666,21 @@ def write_subs(words, path):
     return len(groups)
 
 
+def write_srt(words, path):
+    """유튜브 자막 파일(10/30): 화면에 박힌 자막과 같은 묶음·타이밍. 대본 그대로라 자동 자막보다 정확(장특공제·종부세 같은 용어)."""
+    def ts(t):
+        ms = int(round(t * 1000))
+        return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
+    groups = sentence_groups(words)
+    with open(path, "w", encoding="utf-8") as f:
+        for n, g in enumerate(groups, 1):
+            end = g[-1][1] + 0.05
+            if n < len(groups):  # 다음 줄과 겹치면 두 줄이 동시에 떠서 다음 줄 시작에서 끊는다
+                end = min(end, groups[n][0][0])
+            f.write(f"{n}\n{ts(g[0][0])} --> {ts(end)}\n{' '.join(w for _, _, w in g)}\n\n")
+    return len(groups)
+
+
 def mix(voice, sr, scene_starts, chapter_starts, out):
     track = np.zeros(len(voice) + sr)
     track[:len(voice)] += voice
@@ -907,6 +922,7 @@ def main():
     ap.add_argument("--out-dir", required=True)
     ap.add_argument("--fresh-voice", action="store_true")
     ap.add_argument("--only-thumb", action="store_true")
+    ap.add_argument("--only-srt", action="store_true", help="렌더 없이 저장된 음성 타이밍으로 captions.srt만 만든다")
     ap.add_argument("--only-upload-meta", action="store_true", help="렌더 없이 upload.json·description.txt만 다시 만든다(chapters.txt 필요)")
     args = ap.parse_args()
     with open(args.meta, encoding="utf-8") as f:
@@ -922,7 +938,8 @@ def main():
     if args.only_upload_meta:
         print(build_upload(meta, out_dir)["description"])
         return
-    make_thumb(meta, img_dir, os.path.join(out_dir, "thumb.png"))
+    if not args.only_srt:
+        make_thumb(meta, img_dir, os.path.join(out_dir, "thumb.png"))
     if args.only_thumb:
         print("thumb only")
         return
@@ -955,6 +972,10 @@ def main():
     voice = np.concatenate(voices)
     total = len(voice) / sr
     print(f"voice {total:.1f}s ({time.time() - t0:.0f}s)", flush=True)
+    n_srt = write_srt(all_words, os.path.join(out_dir, "captions.srt"))
+    if args.only_srt:
+        print(f"captions.srt {n_srt}개")
+        return
 
     # 2) 장면 렌더
     clips, report, k, used_imgs = [], [], 0, []

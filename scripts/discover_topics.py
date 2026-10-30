@@ -35,6 +35,16 @@ QUERIES = [
 
 RSS_URL = "https://news.google.com/rss/search?q={query}&hl=ko&gl=KR&ceid=KR:ko"
 
+# 롱폼 후보(2026-10-30, 벤치마크: 세금아는동생·두꺼비 세무사의 대박은 전부 '발표 직후' 영상).
+# 시청자(45세 이상 97%)가 공통으로 걱정하는 돈 주제 중 '발표·확정·시행' 뉴스가 48시간 안에 나온 것만 뽑아
+# 쇼츠 후보와 별도 파일(longform_candidates_*.md)로 저장한다 — new_queue_item.py의 쇼츠 후보 형식과 섞지 않기 위해.
+LONG_QUERIES = [
+    "국민연금 개편", "기초연금", "건강보험료 피부양자", "상속세 개편", "증여세",
+    "양도소득세 개정", "종합부동산세 개편", "세법개정안", "대출 규제 발표", "DSR 시행",
+    "주택 공급 대책", "청약 제도 개편", "재산세", "퇴직연금",
+]
+ANNOUNCE_WORDS = ["발표", "확정", "개편", "시행", "통과", "입법예고", "개정안", "정부안", "의결", "대책", "달라진", "바뀐"]
+
 
 def already_covered_keywords():
     """대기열 폴더 이름(번호 제외)에서 키워드를 뽑아 중복 소재를 거른다."""
@@ -118,6 +128,48 @@ def write_report(candidates, out_path):
             f.write(f"- 매칭 키워드: {', '.join(sorted(c['queries']))}\n\n")
 
 
+def discover_longform(hours=48, top=10):
+    """발표 직후 48시간 안의 큰 돈 주제(롱폼 후보). 여러 키워드에 함께 걸린 기사일수록 위로."""
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+    by_norm = {}
+    for query in LONG_QUERIES:
+        try:
+            items = fetch_query(query)
+        except requests.RequestException as e:
+            print(f"  [경고] 롱폼 '{query}' 조회 실패(건너뜀): {e}")
+            continue
+        for it in items:
+            if not it["pub_date"] or it["pub_date"] < cutoff:
+                continue
+            norm = normalize_title(it["title"])
+            if not norm or not any(w in norm for w in ANNOUNCE_WORDS):
+                continue
+            entry = by_norm.setdefault(norm, {**it, "title": norm, "queries": set()})
+            entry["queries"].add(query)
+    out, per_query = [], {}
+    for e in sorted(by_norm.values(), key=lambda e: (len(e["queries"]), e["pub_date"]), reverse=True):
+        key = min(e["queries"])  # 한 주제(예: 공급 대책) 기사가 목록을 다 채우지 않게 키워드당 2개까지
+        if per_query.get(key, 0) >= 2:
+            continue
+        per_query[key] = per_query.get(key, 0) + 1
+        out.append(e)
+    return out[:top]
+
+
+def write_longform_report(candidates, out_path):
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(f"# 롱폼 주제 후보: 발표 후 48시간 ({datetime.now().strftime('%Y-%m-%d')})\n\n")
+        f.write("발표·확정·시행 뉴스가 48시간 안에 나온 큰 돈 주제. 좋은 후보가 있으면 다음 화·금 롱폼 순서를 이 주제로 바꾼다"
+                "(docs/script_template_longform.md '주제 고르기'). 수치는 반드시 원문(정부·국회·기관)으로 다시 확인.\n\n")
+        if not candidates:
+            f.write("이번엔 48시간 안의 발표성 뉴스가 없음.\n")
+        for c in candidates:
+            kst = c["pub_date"].astimezone(timezone(timedelta(hours=9))).strftime("%m-%d %H:%M")
+            f.write(f"- **{c['title']}** — {c['source'] or '미상'} ({kst} KST) · 키워드: {', '.join(sorted(c['queries']))}\n"
+                    f"  {c['link']}\n")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=5, help="최근 며칠치 뉴스만 볼지")
@@ -130,6 +182,10 @@ def main():
     candidates = discover(days=args.days, top=args.top)
     write_report(candidates, out_path)
     print(f"후보 {len(candidates)}개 -> {out_path}")
+    long_path = os.path.join(OUTPUT_DIR, f"longform_candidates_{datetime.now().strftime('%Y-%m-%d')}.md")
+    long_c = discover_longform()
+    write_longform_report(long_c, long_path)
+    print(f"롱폼 후보 {len(long_c)}개 -> {long_path}")
 
 
 if __name__ == "__main__":

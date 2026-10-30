@@ -1,0 +1,799 @@
+{
+  "format": "long",
+  "rate": "+30%",
+  "voice_style": "M1",
+  "script_version": "v3 (v4 1번 적용: 10/29 발표 후 48시간 주제 · 큰 비유 1개(퇴직금 봉투: 회사 서랍 vs 회사 밖 금고) · 2분 안 첫 답(2028·2029·2030) · 반전(가장 많이 떼이는 돈은 퇴직금) · 긴 떡밥(세금 600만 원 계산) · 지금 이야기(수익률 6.47% vs 18.82%) · 약속 회수 · 통념 깨기(퇴직금은 바로 통장으로?) · 반대편 3가지 · 실천 4가지 · 이야기 마무리(2005년 12월))",
+  "fact_check": "2026-10-30 확인: 10/29 고용노동부·재정경제부·금융위·금감원 '퇴직연금 기능 강화 방안'(2월 노사정 공동선언 구체화) — 사외적립 의무화 2028 100인 이상·2029 10~99인·2030 10인 미만, 시행 이후 근속분부터(소급 없음), 미이행 시 푸른씨앗(중소기업퇴직연금기금) 자동 가입·탈퇴 선택권 보장·정기감독 확대·과태료 추진, 30인 미만 조기 도입 시 최저임금 130% 미만 근로자 부담금 10% 지원, 50인 미만 신규 도입 시 경영자금 융자 금리 2%p 지원, 내년 예산 122억 원, 기금형(금융기관 개방형·연합형·공공기관 개방형, DC·IRP 적용, 인가위원회, 2028 도입 목표, 국민연금공단 참여 미정), 계약형 사업자 정량 평가·47개 사업자 수익률 공개 장기 목표, 디폴트옵션 통보를 만기 후→만기 전·당일, IRP 위험자산 한도 70% 단계 완화(내년 판단), 일시금 미신청 시 연금 자동 지급 '검토', 연금 수령 중 일시금 전환 허용, 중도인출·중도해지 현행 유지, 담보대출 압류 허용 법 개정·담보 한도 50→70% 검토, 1년 미만·초단시간 확대 결론 보류, 11월 개정안 마련·연내 국회 통과 목표(경향신문 2026.10.29, 국민일보 2026.10.29, 파이낸셜뉴스 2026.10.29 3건, 뉴스1 2026.10.29, 세계일보 2026.10.29) / 통계: 작년 퇴직금 체불 8,229억 원(임금체불의 41.1%), 퇴직연금 도입 사업장 26.5%, 2024년 도입률 50인 이상 80~90%대·30인 미만 23.2%·5인 미만 10.6%, 10인 미만 176만 7,543곳 중 약 7만 6천 곳 운영, 미도입 1,500곳 조사 52.5% 부담, 작년 적립금 500조 원 돌파·수익률 6.47%(국민연금 18.82%), 작년 일시금 수령 83.5%, 2024년 중도해지·인출 18조 원 / 세법(현행): 퇴직소득을 연금계좌에서 연금수령한도 내 연금 수령 시 연금소득세 = 퇴직소득세의 70%(10년 차까지 30% 감면)·60%(11년 차부터 40% 감면), 한도 초과·연금외수령은 감면 없음, 운용수익은 연금소득세(3.3~5.5%) — 미래에셋투자와연금센터·KB 세무 칼럼 / 2022.4.14 시행 퇴직급여 IRP 이전 의무(예외: 55세 이후 퇴직·300만 원 이하·담보대출 상환) / 2005.12.1 근로자퇴직급여 보장법 시행. 계산 예시(퇴직소득세 2,000만 원 가정 → 10년 이내 연금 수령 시 1,400만 원)는 가정 금액.",
+  "privacy": "private",
+  "thumbnail": {
+    "lines": [
+      "퇴직금, 받는 방법 하나로",
+      "세금 {30~40%} 갈립니다"
+    ],
+    "badge": "정부 퇴직연금 개편안",
+    "tags": [
+      {
+        "text": "한 번에",
+        "x": 0.2,
+        "y": 0.12,
+        "color": "red"
+      },
+      {
+        "text": "나눠서",
+        "x": 0.78,
+        "y": 0.12,
+        "color": "green"
+      }
+    ],
+    "art_prompt": "highly detailed digital painting, a middle-aged korean man in a suit standing at night in front of two paths, on the left a single thick envelope bursting open with banknotes scattering into a cold blue wind, on the right a warm golden path lined with small envelopes leading toward a cozy house at sunrise, strong cold vs warm color contrast, rich detail, cinematic",
+    "image_prompt": "photorealistic thick paper envelope on a dark wooden desk under a single warm lamp, cinematic"
+  },
+  "upload": {
+    "title": "'2030년까지 모든 사업장 의무화' 퇴직금 규칙이 21년 만에 바뀝니다 (정부 퇴직연금 개편안)",
+    "title_c_backup": "같은 퇴직금인데 세금 600만 원 갈립니다…21년 만에 바뀌는 퇴직연금, 받기 전에 꼭 보세요",
+    "hook": "퇴직금, 한 번에 받으실 건가요? 작년엔 100명 중 83명이 그렇게 받았습니다.\n그런데 받는 방법 하나로 퇴직소득세가 30~40% 달라집니다.\n그리고 지난 10월 29일, 정부가 21년 만에 퇴직금 규칙을 크게 바꾸겠다고 발표했습니다.\n\n내 퇴직금이 지금 실제로 어디에 있는지, 언제부터 무엇이 바뀌는지,\n받기 전에 무엇을 확인해야 하는지 정리했습니다.",
+    "covers": [
+      "내 퇴직금은 지금 '회사 서랍'에 있을까, '회사 밖 금고'에 있을까",
+      "2028·2029·2030 — 회사 규모별 사외 적립 의무화 일정",
+      "임금체불 1위는 월급이 아니라 퇴직금 — 작년 8,229억 원",
+      "같은 해 수익률 6.47% vs 18.82% — 그래서 나오는 기금형 퇴직연금",
+      "한 번에 vs 나눠서: 퇴직소득세 30%·40% 감면, 600만 원 계산 예시",
+      "말 안 하면 연금으로? 정부가 검토하는 자동 연금 지급",
+      "봉투를 뜯지 말고 빌린다 — 퇴직연금 담보대출 개편",
+      "퇴직금은 퇴직하면 바로 통장으로? 가장 흔한 착각",
+      "작은 가게 사장님 부담과 아직 남은 쟁점",
+      "지금 해 둘 4가지"
+    ],
+    "as_of": "2026년 10월 말",
+    "sources": [
+      "정부 '퇴직연금 기능 강화 방안'(고용노동부·재정경제부·금융위원회·금융감독원, 2026.10.29 발표 · 법 개정 전)",
+      "보도: 경향신문·국민일보·파이낸셜뉴스·뉴스1·세계일보(2026.10.29)",
+      "소득세법(연금 수령 시 퇴직소득세 감면), 근로자퇴직급여 보장법",
+      "계산 예시는 퇴직소득세 2,000만 원을 가정한 금액"
+    ],
+    "comment_question": "퇴직금, 한 번에 받으셨나요 나눠 받으셨나요? 아직 받기 전이라면 어떻게 받으실 생각인가요?",
+    "hashtags": [
+      "#퇴직연금",
+      "#퇴직금",
+      "#퇴직연금개편",
+      "#사외적립",
+      "#퇴직소득세",
+      "#IRP",
+      "#연금수령",
+      "#일시금",
+      "#기금형퇴직연금",
+      "#디폴트옵션",
+      "#푸른씨앗",
+      "#노후준비",
+      "#은퇴준비",
+      "#연금",
+      "#절세",
+      "#5060"
+    ],
+    "tags": [
+      "퇴직연금 개편",
+      "퇴직연금 기능 강화 방안",
+      "퇴직금",
+      "퇴직급여 사외적립",
+      "사외적립 의무화",
+      "퇴직연금 의무화",
+      "2030 퇴직연금",
+      "퇴직금 체불",
+      "퇴직소득세",
+      "퇴직소득세 감면",
+      "퇴직금 연금 수령",
+      "퇴직금 일시금",
+      "IRP",
+      "개인형퇴직연금",
+      "IRP 이전",
+      "기금형 퇴직연금",
+      "푸른씨앗",
+      "중소기업퇴직연금기금",
+      "디폴트옵션",
+      "퇴직연금 수익률",
+      "퇴직연금 담보대출",
+      "퇴직연금 중도인출",
+      "DB DC 차이",
+      "통합연금포털",
+      "노후 준비",
+      "은퇴 준비",
+      "연금 절세",
+      "도장찍기전에"
+    ],
+    "publish_slot": "18:00 KST",
+    "next": "대출 규제 총정리: 내가 실제로 얼마까지 빌릴 수 있나"
+  },
+  "chapters": [
+    {
+      "title": "인트로",
+      "tag": "퇴직금 규칙, 21년 만에 바뀐다",
+      "art_title": "{퇴직금} 규칙이 바뀐다",
+      "art_en": "The Retirement Money Rules Change",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged korean man in a suit walking out of an office building lobby at dusk carrying a small cardboard box, seen from behind, last day at work, cinematic",
+          "voice": "회사 마지막 날, 짐 상자 하나 들고 나오던 날 기억하시나요? 며칠 뒤 통장에 퇴직금이 찍힙니다. 평생 받아 본 돈 중에 가장 큰 숫자일 겁니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an aged hand resting on a closed bank passbook on a kitchen table at night, warm lamp light, quiet and emotional",
+          "voice": "그런데 그 돈, 어떻게 받으셨나요? 작년에 퇴직금을 받은 계좌 100개 중 83개 이상이 한 번에 통째로 받았습니다. 83.5퍼센트입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a road splitting in two at dusk, on the left one huge pile of coins blowing away in cold wind, on the right small neat stacks of coins lined up along a long warm golden path",
+          "voice": "그런데 같은 퇴직금이라도 받는 방법 하나로, 나라에 내는 세금이 30퍼센트에서 40퍼센트까지 달라집니다. 이걸 아는 분이 생각보다 많지 않습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long conference table in a bright meeting room with closed folders and microphones, empty chairs, no people, morning light",
+          "voice": "그리고 지난 10월 29일, 정부가 이 퇴직금 규칙을 21년 만에 크게 바꾸겠다고 발표했습니다. 2030년까지 모든 회사에 해당하는 이야기입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a desk drawer slightly open in a dark office, a thick envelope inside lit by a thin beam of light, mysterious",
+          "voice": "오늘 영상을 보시면 두 가지를 알게 되십니다. 내 퇴직금이 지금 이 순간 실제로 어디에 있는지, 그리고 퇴직하는 날 어떤 선택 하나가 수백만 원을 가르는지."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older korean couple sitting on a park bench in autumn looking at the path ahead, seen from behind, falling leaves",
+          "voice": "아직 회사에 다니시는 분도, 이미 퇴직하신 분도, 자녀분이 작은 회사에 다니는 분도 해당됩니다. 이 영상이 도움이 될 것 같으면 구독 버튼 한 번 눌러 두세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "three objects on a dark table in a row: an old wooden drawer, a small steel safe, and a paper envelope, dramatic still life lighting",
+          "voice": "회사 서랍, 금고, 그리고 봉투. 오늘은 이 세 가지로 퇴직금 이야기를 풀어 보겠습니다."
+        },
+        {
+          "kind": "quote",
+          "heading": "오늘 영상의 기준",
+          "text": "2026년 10월 29일 정부 '퇴직연금 기능 강화 방안'\n{11월 법 개정안 → 연내 국회 통과 목표}\n[아직 국회 통과 전]",
+          "cite": "고용노동부 · 재정경제부 · 금융위원회 · 금융감독원 (2026.10.29)",
+          "voice": "오늘 내용은 2026년 10월 말 기준, 정부 발표안입니다. 11월에 법 개정안을 만들고 연말까지 국회 통과를 목표로 하고 있어서, 아직 확정된 법은 아닙니다."
+        }
+      ]
+    },
+    {
+      "title": "내 퇴직금은 어디에 있나",
+      "tag": "회사 서랍 vs 회사 밖 금고",
+      "source": "출처: 정부 퇴직연금 기능 강화 방안(2026.10.29) · 근로자퇴직급여 보장법",
+      "art_title": "내 퇴직금은 [어디에] 있나",
+      "art_en": "Where Is My Money",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an old wooden office desk with a closed drawer, dim light, dust in the air, the corner of a single envelope peeking out",
+          "voice": "퇴직금을 봉투 하나라고 생각해 보겠습니다. 일한 해마다 한 달 치 월급만큼씩 봉투에 돈이 쌓입니다. 법이 정한 규칙이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a company owner's desk drawer at night with several envelopes stacked inside, warm desk lamp, nobody in the room",
+          "voice": "문제는 이 봉투가 어디에 있느냐입니다. 많은 회사에서 이 봉투는 사장님 책상 서랍 안에 있습니다. 퇴직하는 날 서랍을 열어 꺼내 주는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a large round steel bank vault door slightly open, clean bright interior with rows of individual safe deposit boxes",
+          "voice": "다른 방법은 봉투를 회사 밖, 은행이나 보험사 금고에 내 이름으로 넣어 두는 겁니다. 이게 퇴직연금입니다. 어려운 말로 사외 적립이라고 하죠."
+        },
+        {
+          "kind": "compare",
+          "heading": "퇴직금 vs 퇴직연금",
+          "left": {
+            "title": "퇴직금 (회사 서랍)",
+            "lines": [
+              "회사 안에 보관",
+              "따로 쌓아 둘 [의무 없음]",
+              "회사가 어려우면 [못 받을 수도]"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "퇴직연금 (회사 밖 금고)",
+            "lines": [
+              "금융회사에 {내 이름으로}",
+              "회사가 망해도 {지켜짐}",
+              "DC형은 {직접 굴림}"
+            ],
+            "color": "green"
+          },
+          "voice": "서랍에 있는 봉투는 회사가 돈을 미리 넣어 둘 의무가 없습니다. 회사 사정이 나빠지면 서랍이 비어 있을 수 있는 거예요. 금고에 있는 봉투는 회사가 망해도 내 몫으로 남습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two different safes side by side in a bright room, one large safe managed by people in suits, one small personal safe with a single hand turning its dial",
+          "voice": "회사 밖 금고에도 두 종류가 있습니다. DB형은 퇴직할 때 받을 금액이 미리 정해져 있고, 돈은 회사가 굴립니다. DC형은 회사가 해마다 한 달 치 정도를 내 계좌에 넣어 주고, 굴리는 건 내가 합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person carefully watering a small potted money tree on a windowsill, morning light, patient care",
+          "voice": "그래서 DB형은 굴린 결과와 상관없이 정해진 금액을 받고, DC형은 잘 굴리면 더 받고 못 굴리면 덜 받습니다. 이 차이는 뒤에서 수익률 이야기를 할 때 다시 나옵니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a narrow alley of small workshops with rolling shutters half open, warm light inside, early evening, no signage",
+          "voice": "그럼 우리나라 회사들은 봉투를 어디에 두고 있을까요? 퇴직연금을 도입한 사업장은 전체 4곳 중 1곳, 26.5퍼센트입니다."
+        },
+        {
+          "kind": "number",
+          "heading": "직원 10인 미만 사업장",
+          "amount": 4,
+          "unit": "%",
+          "label": "퇴직연금 운영 비율 (약 176만 곳 중 7만 6천 곳)",
+          "note": "50인 이상 80~90%대 · 30인 미만 23.2% · 5인 미만 10.6% (2024년 기준)",
+          "color": "red",
+          "voice": "직원 10명이 안 되는 작은 회사는 더 심합니다. 176만 곳 중 7만 6천 곳, 100곳 중 4곳 정도만 회사 밖 금고를 쓰고 있습니다. 나머지는 전부 서랍이라는 뜻입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged korean woman sitting alone in a small restaurant kitchen after closing, looking at her phone, fluorescent light",
+          "voice": "식당, 작은 공장, 동네 학원. 우리 자녀나 가족이 다니는 곳이 여기에 많이 들어 있을 겁니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "close-up of two hands placing a paper envelope into a safe deposit box inside a bank vault, clean cool lighting",
+          "title": "서랍에서 {금고로}",
+          "en": "From Drawer to Vault",
+          "voice": "이번 개편의 첫 번째 핵심이 바로 이겁니다. 서랍에 있는 봉투를 전부 회사 밖 금고로 옮기라는 거죠. 그럼 언제부터일까요?"
+        },
+        {
+          "kind": "timeline",
+          "heading": "퇴직급여 사외 적립 의무화 (정부안 · 국회 통과 전)",
+          "points": [
+            {
+              "date": "2028년",
+              "label": "직원 100인 이상",
+              "color": "orange",
+              "active": true
+            },
+            {
+              "date": "2029년",
+              "label": "10~99인",
+              "color": "orange"
+            },
+            {
+              "date": "2030년",
+              "label": "10인 미만\n전 사업장",
+              "color": "green"
+            }
+          ],
+          "voice": "이게 오늘 영상의 첫 번째 답입니다. 2028년에 직원 100명 이상 회사부터, 2029년에 10명에서 99명, 그리고 2030년에는 10명 미만 작은 회사까지 모든 사업장이 의무가 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long corridor with three doors opening one after another, light spreading further down the hallway with each door",
+          "voice": "다만 한 가지 기억해 두세요. 의무는 시행된 날 이후에 일한 기간부터 적용됩니다. 그 전까지 서랍에 쌓인 봉투를 한꺼번에 금고로 옮기라고 하지는 않았어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old yellowed envelope next to a fresh white envelope on a wooden desk, side light, contrast of old and new",
+          "voice": "퇴직금 자체는 그대로 받을 권리가 있습니다. 다만 옛날 몫은 여전히 서랍에 남는다는 거죠. 이 차이가 왜 중요한지는 바로 다음 이야기에서 보입니다."
+        }
+      ]
+    },
+    {
+      "title": "가장 많이 떼이는 돈",
+      "tag": "임금체불의 41%는 퇴직금",
+      "source": "출처: 고용노동부 발표 보도(경향신문 · 국민일보 · 파이낸셜뉴스 2026.10.29)",
+      "art_title": "가장 많이 [떼이는 돈]",
+      "art_en": "The Most Unpaid Money",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an empty office with chairs stacked on desks and papers scattered on the floor, closed business, gray morning light",
+          "voice": "그런데 여기서 이상한 일이 하나 있습니다. 회사가 직원에게 주지 않은 돈, 임금체불이라고 하죠. 이 중에서 가장 많이 떼이는 돈이 뭘까요? 월급일까요?"
+        },
+        {
+          "kind": "number",
+          "heading": "작년 퇴직금 체불액",
+          "amount": 8229,
+          "unit": "억 원",
+          "label": "전체 임금체불의 41.1%",
+          "note": "고용노동부 집계 (2025년)",
+          "color": "red",
+          "voice": "아닙니다. 퇴직금입니다. 작년 한 해 떼인 퇴직금이 8천 229억 원, 전체 임금체불의 41.1퍼센트입니다. 떼인 돈 10원 중 4원이 퇴직금이라는 뜻이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged korean man standing alone outside a closed factory gate at dusk, a chain on the gate, seen from behind",
+          "voice": "생각해 보면 당연합니다. 월급은 매달 나가지만 퇴직금은 마지막에 한 번에 나갑니다. 회사가 어려워져서 문을 닫을 때, 그때 서랍을 열어 보면 이미 비어 있는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged woman on a phone call at a bus stop at night, worried face, rain on the shelter glass",
+          "voice": "직원들은 대부분 그만두는 날이 돼서야 알게 됩니다. 조금만 기다려 달라는 말을 듣고, 그 기다림이 몇 달이 되고, 몇 년이 되기도 하죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a dark desk drawer pulled fully open and completely empty, a single beam of light falling into it",
+          "voice": "저도 이 숫자를 처음 보고 한참을 다시 봤습니다. 가장 오래 일한 사람이 가장 큰돈을 떼이는 구조였던 겁니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older korean father and his adult son talking seriously at a kitchen table at night, warm light, seen from the side",
+          "voice": "그래서 정부가 꺼낸 카드가 이겁니다. 의무화 이후에도 회사 밖 금고를 만들지 않은 사업장은, 근로복지공단이 운영하는 공적 퇴직연금 푸른씨앗에 자동으로 가입됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a small green seedling growing from a pile of coins in soft morning light, close-up, hopeful",
+          "voice": "푸른씨앗은 근로복지공단이 작은 회사들의 퇴직금을 모아 대신 굴려 주는 공적 기금입니다. 자동으로 가입시키되, 나중에 다른 곳으로 옮기고 싶으면 탈퇴할 수 있는 선택권은 보장한다고 했습니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "작은 회사 지원과 제재 (정부안)",
+          "cards": [
+            {
+              "label": "30인 미만 · 일찍 도입",
+              "title": "부담금 {10%}\n지원",
+              "body": "최저임금 130% 미만 직원 몫",
+              "color": "green"
+            },
+            {
+              "label": "50인 미만 · 새로 도입",
+              "title": "융자 금리\n{2%p} 지원",
+              "body": "경영자금 대출",
+              "color": "navy"
+            },
+            {
+              "label": "끝내 안 하면",
+              "title": "[푸른씨앗]\n자동 가입",
+              "body": "정기 감독 · 과태료 추진",
+              "color": "red"
+            }
+          ],
+          "voice": "작은 회사를 위한 당근도 있습니다. 30명 미만 회사가 일찍 도입하면 형편이 넉넉지 않은 직원분 몫의 부담금 10퍼센트를 지원하고, 새로 도입하는 50명 미만 회사에는 대출 금리를 2퍼센트포인트 지원합니다. 내년 예산에 122억 원이 잡혔어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long road at sunset stretching toward the horizon with a gentle fork far ahead, journey continues",
+          "voice": "그리고 영상 후반에, 같은 퇴직금인데 받는 방법 하나로 세금이 수백만 원 갈리는 계산을 보여 드리겠습니다. 지금 퇴직하시는 분도 바로 쓸 수 있는 이야기라 꼭 끝까지 들어 보세요."
+        }
+      ]
+    },
+    {
+      "title": "금고에 넣으면 끝일까",
+      "tag": "수익률 6.47% vs 18.82%",
+      "source": "출처: 정부 퇴직연금 기능 강화 방안(2026.10.29) · 경향신문 · 파이낸셜뉴스 보도",
+      "art_title": "금고에 넣으면 [끝일까]",
+      "art_en": "Is the Vault Enough",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a bank vault interior with stacks of cash sitting still, cold blue light, dust particles floating in the air, stagnant mood",
+          "voice": "자, 봉투를 금고에 넣었습니다. 이제 안심이죠. 그런데 불편한 이야기를 하나 하고 넘어가야겠습니다. 금고에 넣어 둔 돈이 그동안 얼마나 불었을까요?"
+        },
+        {
+          "kind": "compare",
+          "heading": "작년 수익률 비교",
+          "left": {
+            "title": "퇴직연금",
+            "lines": [
+              "적립금 {500조 원} 돌파",
+              "수익률 [6.47%]"
+            ],
+            "color": "orange"
+          },
+          "right": {
+            "title": "국민연금",
+            "lines": [
+              "같은 해",
+              "수익률 {18.82%}"
+            ],
+            "color": "green"
+          },
+          "voice": "작년에 퇴직연금 적립금이 500조 원을 넘었습니다. 그런데 수익률은 6.47퍼센트. 같은 해 국민연금은 18.82퍼센트였습니다. 거의 세 배 차이입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two identical glass jars of coins side by side, one overflowing with glowing gold coins, the other only partly filled, studio lighting",
+          "voice": "같은 해, 같은 시장인데 왜 이렇게 차이가 날까요? 퇴직연금 돈의 많은 부분이 원금 보장 상품에 머물러 있고, 상품 만기 뒤에 한동안 그냥 대기하는 기간도 있었기 때문입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an enormous pile of coins in a vault with a smaller extra stack glowing warmly beside it",
+          "voice": "500조 원이 1퍼센트만 더 벌어도 1년에 5조 원입니다. 이 돈은 결국 우리 각자의 봉투에 나눠 들어갈 돈이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a team of professionals in a glass meeting room at night seen from outside, city lights reflecting on the glass",
+          "voice": "그래서 두 번째 핵심이 기금형 퇴직연금입니다. 여러 회사의 봉투를 한데 모아 전문가가 크게 굴리는 방식이에요. 국민연금이 돈을 굴리는 방식과 비슷합니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "기금형 퇴직연금 (2028년 도입 목표)",
+          "cards": [
+            {
+              "label": "금융기관 개방형",
+              "title": "금융회사가\n{수탁법인} 설립",
+              "color": "navy"
+            },
+            {
+              "label": "연합형",
+              "title": "여러 회사 · 노사단체\n{함께 운영}",
+              "color": "navy"
+            },
+            {
+              "label": "공공기관 개방형",
+              "title": "공공기관이\n{운용}",
+              "color": "green"
+            }
+          ],
+          "voice": "형태는 세 가지입니다. 금융회사가 따로 법인을 만들어 운용하는 방식, 여러 회사나 노사 단체가 함께 만드는 방식, 그리고 공공기관이 운용하는 방식. 2028년 도입이 목표입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person choosing between two doors in a bright hallway, one modern glass door and one classic wooden door, hand reaching out",
+          "voice": "기금형은 DC형과 개인 퇴직연금 계좌인 IRP에 적용됩니다. 회사 규약에 따라서는 기금형이 싫으면 지금처럼 금융회사 상품을 직접 고르는 방식으로 돌아올 수도 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "runners racing on a stadium track at different positions, sunny day, motion blur, competition",
+          "voice": "금융회사들끼리 경쟁도 붙입니다. 상품을 수익률 숫자 중심으로 평가하고, 장기적으로는 47개 퇴직연금 회사의 수익률을 모두 공개하는 게 목표입니다. 못하는 곳은 자연스럽게 밀려나게 하겠다는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an hourglass on a desk with sand running out beside a jar of coins that sits idle, soft side light",
+          "voice": "자동으로 굴려 주는 디폴트옵션도 손봅니다. 지금은 상품 만기가 지난 뒤에 알려 줘서 돈이 한동안 놀았는데, 앞으로는 만기 전과 만기 당일로 앞당겨 노는 기간을 줄입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person adjusting a dial on a control panel from low to medium, soft studio light, careful",
+          "voice": "개인 퇴직연금 계좌 IRP는 지금 주식 같은 위험 자산에 70퍼센트까지만 넣을 수 있는데, 이 한도도 단계적으로 풀겠다고 했습니다. 얼마까지 풀지는 내년에 정합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a jar of coins with a small green plant sprouting from the top, morning sunlight, hopeful",
+          "title": "금고도 [일]을 해야 한다",
+          "en": "The Vault Must Work",
+          "voice": "봉투를 금고에 넣는 것만으로는 반쪽입니다. 금고 안에서 돈이 일을 해야 하죠. 수익률 1퍼센트 차이도 20년, 30년 쌓이면 노후 생활비가 달라집니다."
+        }
+      ]
+    },
+    {
+      "title": "한 번에 받을까, 나눠 받을까",
+      "tag": "일시금 83.5%",
+      "source": "출처: 소득세법(연금 수령 시 퇴직소득세 감면) · 정부 퇴직연금 기능 강화 방안(2026.10.29)",
+      "art_title": "한 번에? [나눠서?]",
+      "art_en": "All at Once or Over Time",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an old worn work jacket hanging on a hook by a front door at dawn, quiet, emotional, soft blue light",
+          "voice": "그런데 퇴직금 봉투에는 돈만 들어 있는 게 아닙니다. 새벽 출근, 야근, 꾹 참고 버틴 날들이 들어 있죠. 그래서 더 신중하게 열어야 합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a man opening a thick envelope at a table with banknotes spilling out, warm interior, slightly overwhelming feeling",
+          "voice": "이제 처음에 약속드린 이야기를 할 차례입니다. 퇴직하는 날, 봉투를 한 번에 뜯을지 조금씩 나눠 열지 고르게 됩니다. 그리고 100명 중 83명이 한 번에 뜯습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older korean couple looking at a floor plan of a small cafe spread on a table, hopeful but uncertain, warm light",
+          "voice": "이해가 됩니다. 대출도 갚아야 하고, 자녀 결혼도 있고, 가게를 차리고 싶기도 하죠. 목돈이 주는 안심도 큽니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a pair of scissors cutting off a portion of a neat stack of banknotes on a dark table, dramatic lighting",
+          "voice": "그런데 봉투를 뜯을 때 나라가 떼어 가는 몫, 퇴직소득세가 있습니다. 그리고 이 몫이 뜯는 방법에 따라 달라집니다."
+        },
+        {
+          "kind": "checklist",
+          "heading": "퇴직금을 연금으로 받으면 (현행 소득세법)",
+          "items": [
+            {
+              "text": "만 55세 이후 연금 계좌(IRP)에서 {나눠서} 받기"
+            },
+            {
+              "text": "10년 차까지: 퇴직소득세 {30% 감면}"
+            },
+            {
+              "text": "11년 차부터: 퇴직소득세 {40% 감면}"
+            },
+            {
+              "text": "한 해 한도를 넘겨 꺼내면 [감면 없음]",
+              "mark": "x",
+              "color": "red"
+            }
+          ],
+          "voice": "지금 법으로도 이렇습니다. 만 55세 이후에 퇴직금을 연금 계좌에서 나눠 받으면, 10년 차까지는 퇴직소득세를 30퍼센트 깎아 주고, 11년 차부터는 40퍼센트를 깎아 줍니다. 다만 한 해에 꺼낼 수 있는 한도를 넘기면 깎아 주지 않아요."
+        },
+        {
+          "kind": "number",
+          "heading": "퇴직소득세가 2천만 원이라면",
+          "amount": 600,
+          "unit": "만 원",
+          "label": "10년 안에 연금으로 나눠 받을 때 줄어드는 세금",
+          "note": "일시금 2,000만 원 → 연금 수령 1,400만 원 (예시 금액 · 가정)",
+          "color": "green",
+          "voice": "숫자로 보겠습니다. 퇴직소득세가 2천만 원 나오는 퇴직금이라고 해 보죠. 한 번에 받으면 2천만 원을 다 냅니다. 10년 안에 연금으로 나눠 받으면 1천 4백만 원. 600만 원이 내 주머니에 남습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a family dinner table with grandparents and grandchildren celebrating, warm golden light, soft focus",
+          "voice": "기억해 두세요. 600만 원입니다. 봉투를 여는 방법만 바꿨을 뿐인데 그대로 남는 돈이에요. 11년 차부터 받는 몫은 40퍼센트까지 깎아 줍니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older man with reading glasses looking at a small calculator at a desk under a lamp, focused",
+          "voice": "퇴직소득세는 일한 기간과 금액에 따라 사람마다 다릅니다. 내 숫자는 퇴직연금 회사나 홈택스에서 미리 계산해 볼 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calm retired man watering a garden, a small envelope resting on a garden table, peaceful morning routine",
+          "voice": "게다가 나눠 받는 동안 남은 돈은 금고 안에서 계속 굴러갑니다. 물론 굴려서 생긴 수익에는 따로 낮은 세율의 연금소득세가 붙습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an open front door leading to a calm long garden path in the morning, soft light, inviting",
+          "title": "말 안 하면 [연금으로]?",
+          "en": "Pension by Default?",
+          "voice": "그래서 정부가 검토하는 게 이겁니다. 퇴직할 때 일시금으로 받겠다고 따로 말하지 않으면, 자동으로 연금으로 지급하는 방식이요. 지금은 검토 단계입니다."
+        },
+        {
+          "kind": "quote",
+          "heading": "연금 수령 유도 (정부 발표 · 검토 포함)",
+          "text": "일시금을 따로 신청하지 않으면 → {연금으로 자동 지급} [검토]\n연금으로 받다가 → {일시금 전환 허용}\n중도 인출 · 일시금 선택권 → {유지}",
+          "cite": "정부 퇴직연금 기능 강화 방안 (2026.10.29 발표 보도)",
+          "voice": "걱정되실 수도 있습니다. 목돈이 꼭 필요하면 어떡하냐. 그래서 연금으로 받다가 중간에 일시금으로 바꾸는 것도 허용하고, 일시금을 고를 권리도 그대로 둔다는 게 정부 설명입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a printed comparison concept: two glasses of water side by side, one full poured at once, one being filled drop by drop over time, clean background",
+          "voice": "퇴직할 때 한 번에 받으면 얼마, 나눠 받으면 매달 얼마인지 비교해서 보여 주는 안내도 하겠다고 했습니다. 모르고 고르는 일을 줄이겠다는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person standing at a crossroads holding a folded paper map, thoughtful, golden hour",
+          "voice": "결국 선택은 내가 합니다. 다만 아무것도 모르고 한 번에 뜯는 것과, 알고 고르는 건 다르죠."
+        }
+      ]
+    },
+    {
+      "title": "봉투를 뜯지 않고 빌리기",
+      "tag": "중도 인출 18조 원",
+      "source": "출처: 정부 퇴직연금 기능 강화 방안(2026.10.29) · 국민일보 · 파이낸셜뉴스 보도",
+      "art_title": "뜯지 말고 [빌린다]",
+      "art_en": "Borrow, Don't Break",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a young korean couple looking up at an apartment building from outside at night, holding hands, hopeful but anxious",
+          "voice": "퇴직하기 전에 봉투를 미리 뜯는 분들도 많습니다. 집을 사거나 전세금을 마련하거나, 큰 병원비가 생겼을 때요."
+        },
+        {
+          "kind": "number",
+          "heading": "2024년 퇴직연금 중도 해지 · 인출액",
+          "amount": 18,
+          "unit": "조 원",
+          "label": "노후 자금이 미리 빠져나간 돈",
+          "note": "정부 발표 자료 인용 보도 (국민일보 2026.10.29)",
+          "color": "orange",
+          "voice": "2024년 한 해 동안 퇴직연금에서 미리 빠져나간 돈이 18조 원입니다. 노후에 쓰려던 봉투가 그만큼 일찍 비워진 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a hand placing a sealed envelope on a bank counter as collateral while another hand passes back a smaller envelope, soft light",
+          "voice": "그래서 정부는 봉투를 뜯는 대신 봉투를 맡기고 돈을 빌리는 길을 넓히려고 합니다. 퇴직연금 담보대출이에요. 지금도 법에 근거는 있지만, 실제로는 거의 쓰이지 못했습니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "퇴직연금 담보대출 (정부 검토)",
+          "left": {
+            "title": "지금",
+            "lines": [
+              "담보 한도 {50%}",
+              "압류 불가 → [상품 거의 없음]"
+            ],
+            "color": "orange"
+          },
+          "right": {
+            "title": "개편 방향",
+            "lines": [
+              "담보 한도 {70%} 검토",
+              "법 개정으로 {상품 출시} 추진"
+            ],
+            "color": "green"
+          },
+          "voice": "퇴직연금은 법으로 압류가 금지돼 있어서, 금융회사가 담보로 잡아도 실제로 받을 방법이 없었거든요. 이걸 법을 고쳐 풀고, 담보로 맡길 수 있는 한도도 50퍼센트에서 70퍼센트로 늘리는 걸 검토합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person carefully sealing an envelope and putting it back into a small safe, relieved expression, warm light",
+          "voice": "다만 중도 인출 자체를 막는 건 아닙니다. 노사정 합의에 따라 중도 인출과 중도 해지는 지금처럼 허용됩니다. 빌릴 수 있는 길을 하나 더 만든다고 보시면 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a man looking at a loan document folder on a table with a serious face, evening light, careful decision",
+          "voice": "물론 담보대출도 결국 빚입니다. 이자가 붙고, 갚지 못하면 노후 봉투가 줄어듭니다. 급할 때 봉투를 통째로 뜯는 것보다 나은 선택지가 하나 생긴다, 딱 그 정도로 보시면 됩니다."
+        }
+      ]
+    },
+    {
+      "title": "퇴직금에 대한 흔한 착각",
+      "tag": "퇴직하면 바로 통장으로?",
+      "source": "출처: 근로자퇴직급여 보장법(2022.4.14 시행 IRP 이전 의무) · 소득세법",
+      "art_title": "퇴직금, [바로 통장으로]?",
+      "art_en": "Straight to My Account?",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a man looking at his phone in front of an ATM with a confused expression, night street, soft neon glow",
+          "voice": "여기서 많은 분들이 하는 착각을 하나 짚고 가겠습니다. 퇴직금은 퇴직하면 바로 내 월급 통장으로 들어온다. 맞을까요?"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a closed envelope being moved from a large company safe into a small personal safe, close-up of hands, clean light",
+          "voice": "아닙니다. 2022년 4월부터는 만 55세 전에 퇴직하면, 퇴직금은 원칙적으로 개인 퇴직연금 계좌, IRP로 들어갑니다. 회사에 퇴직연금이 없어도 마찬가지예요."
+        },
+        {
+          "kind": "checklist",
+          "heading": "퇴직금이 IRP로 가지 않는 경우 (예외)",
+          "items": [
+            {
+              "text": "만 {55세 이후} 퇴직"
+            },
+            {
+              "text": "퇴직급여 {300만 원} 이하"
+            },
+            {
+              "text": "퇴직급여 담보대출 상환"
+            }
+          ],
+          "voice": "예외는 있습니다. 만 55세 이후에 퇴직하거나, 퇴직금이 300만 원 이하이거나, 퇴직금을 담보로 빌린 돈을 갚을 때입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old forgotten wooden savings box covered in dust in an attic, a beam of light falling on it, rediscovery",
+          "voice": "그래서 퇴직하고 나서 IRP에 들어간 돈을 잊고 지내는 분도 계십니다. 그 돈을 그냥 해지해서 꺼내면 감면 없이 퇴직소득세를 내게 되고요. 55세가 넘었다면 연금으로 나눠 받을 수 있는 돈입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a forgotten potted plant on an office windowsill that has never been watered, dry soil, dusty afternoon light",
+          "voice": "착각이 하나 더 있습니다. 회사에 퇴직연금이 있으니 알아서 잘 굴러가고 있겠지. DC형인데 상품을 한 번도 골라 본 적이 없다면, 내 돈은 처음 정해진 상품이나 디폴트옵션에 그대로 머물러 있을 가능성이 큽니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a hand finally watering a small plant on a windowsill, droplets catching sunlight, renewal",
+          "voice": "1년에 한 번, 내 봉투가 어떤 상품에 들어 있는지 들여다보는 것만으로도 달라집니다. 서랍에서 금고로 옮겼다면, 이제는 금고 안을 들여다볼 차례입니다."
+        }
+      ]
+    },
+    {
+      "title": "반대편 이야기",
+      "tag": "좋은 얘기만 하지 않겠습니다",
+      "source": "출처: 정부 퇴직연금 기능 강화 방안(2026.10.29) · 파이낸셜뉴스 · 국민일보 보도",
+      "art_title": "반대편 [이야기]",
+      "art_en": "The Other Side",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a small business owner alone in a closed shop at night counting receipts at the counter, tired, single hanging bulb",
+          "voice": "좋은 얘기만 하지 않겠습니다. 반대편 이야기 세 가지입니다. 첫째, 작은 가게 사장님들의 부담입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a shop owner rubbing their forehead while looking at a stack of bills on a counter, dim warm light",
+          "voice": "퇴직연금이 없는 사업장 1,500곳에 물었더니 52.5퍼센트가 부담된다고 답했습니다. 서랍에 두던 돈을 미리 밖으로 내보내야 하니, 장사가 빠듯한 곳에는 현금이 묶이는 일이죠. 경영계도 단계적으로 가야 한다고 요구했습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a stormy sea with a sturdy ship sailing through waves, dramatic clouds, resilience",
+          "voice": "기금형도 마법은 아닙니다. 전문가가 굴려도 시장이 나쁜 해에는 손실이 날 수 있습니다. 작년 국민연금 수익률이 높았다고 해서 해마다 그런 건 아니니까요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a large empty assembly hall with curved rows of seats, dramatic overhead light, no people, no flags",
+          "voice": "둘째, 아직 법이 아닙니다. 11월에 개정안을 만들고 연말 국회 통과를 목표로 하지만, 국회에서 내용이 바뀔 수 있습니다. 국민연금공단이 기금형에 참여할지도 아직 정해지지 않았어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young part-time worker wiping a cafe counter late at night, alone, soft light",
+          "voice": "1년이 안 되게 일한 분이나 일주일에 15시간 미만 일하는 분에게 퇴직금을 넓히는 문제는 이번에 결론이 나지 않았습니다. 따로 조사하고 사회적 대화를 거쳐 검토하겠다고만 했습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly man in a supermarket aisle looking at a receipt with a concerned face, bright store lighting",
+          "voice": "셋째, 연금으로 나눠 받는다고 다 좋은 건 아닙니다. 물가가 오르면 매달 받는 돈의 가치는 조금씩 줄어듭니다. 그리고 수익률이 낮은 상품에 그냥 두면, 세금은 아꼈는데 돈은 불지 않을 수 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a balance scale with a big stack of coins on one side and a small growing plant on the other, neutral dark background",
+          "voice": "그래서 연금이냐 일시금이냐는 정답이 없습니다. 이자가 크게 나가는 빚이 있다면 먼저 갚는 게 나을 수도 있고요. 중요한 건 30퍼센트와 40퍼센트 감면을 알고 고르는 겁니다."
+        }
+      ]
+    },
+    {
+      "title": "지금 해 둘 4가지",
+      "tag": "체크리스트",
+      "art_title": "지금 해 둘 [4가지]",
+      "art_en": "Four Things to Do Now",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a person sitting at a kitchen table with a laptop and a cup of tea at night, calm and focused, soft screen glow",
+          "voice": "그럼 지금 무엇을 해 두면 될까요? 네 가지만 기억하세요."
+        },
+        {
+          "kind": "checklist",
+          "heading": "지금 해 둘 4가지",
+          "items": [
+            {
+              "text": "내 회사 퇴직연금 {있는지 · DB인지 DC인지} 확인"
+            },
+            {
+              "text": "금감원 {통합연금포털}에서 내 연금 한눈에 보기"
+            },
+            {
+              "text": "DC · IRP라면 {상품과 수익률} 확인"
+            },
+            {
+              "text": "퇴직 때 {한 번에 받기 전에} 감면 세금 계산"
+            }
+          ],
+          "voice": "첫째, 내 회사에 퇴직연금이 있는지, DB형인지 DC형인지 확인하세요. 둘째, 금융감독원 통합연금포털에 들어가면 내 퇴직연금과 개인연금을 한눈에 볼 수 있습니다. 셋째, DC형이나 IRP라면 내 돈이 어떤 상품에 들어 있는지, 수익률이 얼마인지 보세요. 넷째, 퇴직할 때 한 번에 받기 전에, 연금으로 받으면 줄어드는 세금을 꼭 계산해 보세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a woman checking her phone at a quiet cafe table by the window, afternoon light, relaxed",
+          "voice": "통합연금포털은 회원 가입하고 본인 인증만 하면 됩니다. 내 노후 봉투가 어디에 얼마씩 있는지 한 화면에서 볼 수 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an adult daughter and her elderly father looking at a phone together on a sofa, warm living room light",
+          "voice": "그리고 작은 회사에 다니는 가족이 있다면 이 영상을 한 번 보내 주세요. 퇴직금이 밀렸을 때는 혼자 끙끙 앓지 말고 고용노동부에 진정을 넣을 수 있다는 것도 함께요."
+        }
+      ]
+    },
+    {
+      "title": "마무리",
+      "tag": "마지막 월급이 아니라 첫 번째 연금",
+      "art_title": "첫 번째 [연금]",
+      "art_en": "Your First Pension",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a snowy december city street in the mid 2000s, people in winter coats, nostalgic film look, warm shop lights, no readable signs",
+          "voice": "마지막으로 이야기 하나 하고 끝내겠습니다. 2005년 12월, 우리나라에 퇴직연금 제도가 처음 생겼습니다. 그때도 목표는 같았습니다. 퇴직금을 노후 연금으로 바꾸자."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long winding road through changing seasons from winter to autumn, aerial view, the passing of time",
+          "voice": "그로부터 21년이 지났습니다. 그런데 아직 퇴직금 100개 중 83개는 한 번에 뜯기고, 작은 회사 100곳 중 96곳은 봉투를 서랍에 두고 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old wooden desk drawer being gently closed while bright light from an open vault fills the room, transition",
+          "voice": "서랍에 두면 안심이 아니라 운에 맡기는 겁니다. 금고에 넣고, 일을 시키고, 천천히 여는 것. 오늘 이야기는 결국 이 세 가지였습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old man opening a small envelope by a sunny window with a gentle smile, calm daily routine",
+          "voice": "이번 개편이 국회에서 어떻게 정리될지는 아직 모릅니다. 하지만 봉투를 어떻게 열지는 지금도 우리가 정할 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a retired korean couple walking together on a beach at sunset holding hands, peaceful, golden light",
+          "title": "마지막 월급이 아니라 {첫 번째 연금}",
+          "en": "Not the Last Paycheck, the First Pension",
+          "voice": "오늘 하나만 기억하세요. 퇴직금은 마지막 월급이 아니라, 첫 번째 연금입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy living room at night with a warm lamp and a cup of tea on the table, quiet closing shot",
+          "voice": "오늘 영상이 도움이 됐다면 좋아요 한번 눌러 주세요. 알고리즘에 큰 힘이 됩니다. 그리고 여러분은 퇴직금을 한 번에 받으셨나요, 나눠 받으셨나요? 아직 받기 전이라면 어떻게 받으실 생각인지 댓글로 남겨 주세요."
+        },
+        {
+          "kind": "title",
+          "title": "다음 영상\n{대출 규제 총정리}",
+          "sub": "구독하고 놓치지 마세요 · 도장찍기전에",
+          "voice": "다음 영상에서는 집을 사려는 분들이 가장 먼저 부딪히는 벽, 대출 규제를 정리해 드립니다. 내가 실제로 얼마까지 빌릴 수 있는지, 숫자로 계산해 보여 드릴게요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a red traditional korean seal stamp resting on a wooden desk beside a closed contract folder, warm lamp light, shallow depth of field, no text",
+          "voice": "도장은 천천히, 팩트는 먼저. 도장찍기전에였습니다."
+        }
+      ]
+    }
+  ]
+}

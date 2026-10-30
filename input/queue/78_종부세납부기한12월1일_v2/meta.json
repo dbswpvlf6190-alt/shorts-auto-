@@ -1,0 +1,90 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 종합부동산세법 · 국세청 종합부동산세 안내",
+  "youtube_title": "종부세 하루 늦게 내면 3% 가산세 붙습니다 #종합부동산세 #종부세",
+  "youtube_description": "종합부동산세 고지서는 보통 11월 말에 발송되고, 납부기간은 12월 1일부터 15일까지입니다. 납부기한을 하루라도 넘기면 3% 가산세가 붙어요.\n\n올해도 공정시장가액비율 60%가 유지되고, 기본공제는 1세대 1주택자 12억 원, 그 외 9억 원까지입니다.\n\n세액이 250만 원을 넘으면 6개월 이내로 나눠 낼 수 있습니다. (영상 속 300만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n출처: 종합부동산세법, 국세청 종합부동산세 안내\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#종합부동산세 #종부세 #부동산세금 #보유세 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "종합부동산세,종부세,부동산세금,보유세,부동산정책",
+  "tiktok_caption": "종부세 고지서, 하루 늦게 내면 3% 가산세 붙어요 😱 12월 1일부터 15일 안에 꼭 내세요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 고지서 받으면 며칠 안에 내시나요? #종합부동산세 #종부세 #부동산세금",
+  "instagram_caption": "종부세 고지서, 하루 늦게 내면 3% 가산세 붙어요 😱 12월 1일부터 15일 안에 꼭 내세요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 고지서 받으면 며칠 안에 내시나요? #종합부동산세 #종부세 #부동산세금",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "종부세 하루 늦으면 손해?",
+      "caption": "종부세\n하루 늦으면 {손해}?",
+      "image_prompt": "photorealistic sealed envelope with a red wax seal resting on a dark wooden desk, dramatic warm side light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 납부기한을 하루만 넘겨도 3퍼센트 가산세가 붙어요.",
+      "caption": "결론\n하루만 넘겨도\n{3퍼센트 가산세}",
+      "image_prompt": "photorealistic Korean apartment complex towers against a clear blue sky, bright daylight, high detail, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "종부세 고지서는 보통 11월 말에 나오고, 납부기간은 12월 1일부터 15일까지예요.",
+      "caption": "종부세 납부기간",
+      "big": "12/1 ~ 12/15",
+      "badge": "넘기면 가산세"
+    },
+    {
+      "kind": "big",
+      "voice": "올해도 공정시장가액비율 60퍼센트가 그대로예요.",
+      "caption": "공정시장가액비율\n{60퍼센트} 유지",
+      "big": "공정시장가액 60%"
+    },
+    {
+      "kind": "big",
+      "voice": "1세대 1주택자는 12억 원까지, 나머지는 9억 원까지 공제돼요.",
+      "caption": "기본공제\n1주택 {12억} · 다주택 9억",
+      "big": "12억 / 9억 공제"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 종부세가 300만 원인 집이 있다고 해볼게요.",
+      "caption": "예를 들어\n종부세가",
+      "amount": 300,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "이 중 250만 원을 넘는 금액은 6개월 안에 나눠 낼 수 있어요.",
+      "caption": "{250만 원} 넘으면\n6개월 분납 가능",
+      "big": "250만 원 넘으면 분납",
+      "badge": "6개월 이내"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 하루만 늦게 내면 어떻게 될까요?",
+      "caption": "근데 {하루}만\n늦게 내면?",
+      "image_prompt": "photorealistic antique brass alarm clock on a wooden table at night, warm lamp light glowing, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "3퍼센트 가산세가 그 즉시 붙어요.",
+      "caption": "{3퍼센트} 가산세\n즉시 붙어요",
+      "big": "+3% 가산세",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "11월 말에 고지서를 받으면 미리 날짜를 확인해두세요.",
+      "caption": "고지서 받으면\n{날짜}부터 확인",
+      "image_prompt": "photorealistic wooden desk with a cup of coffee and a pen, soft morning light through a window, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "종부세 내야 하는 가족이나 지인께 꼭 보내주세요.",
+      "caption": "가족·지인께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic small wooden model house next to a stack of coins on a wooden table, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 고지서 받으면 며칠 안에 내시나요?",
+      "caption": "여러분은\n{며칠} 안에 내시나요?",
+      "image_prompt": "photorealistic city skyline at night with warm lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

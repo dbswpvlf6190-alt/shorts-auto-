@@ -19,9 +19,10 @@ import make_longform as L  # noqa: E402
 
 def targets(meta, img_dir):
     out = []
-    art = meta.get("thumbnail", {}).get("art_prompt")
-    if art:
-        out.append((art, os.path.join(img_dir, "thumb_art_" + hashlib.md5(art.encode("utf-8")).hexdigest()[:12] + ".png")))
+    for key in ("thumbnail", "thumbnail_b"):
+        art = meta.get(key, {}).get("art_prompt")
+        if art:
+            out.append((art, os.path.join(img_dir, "thumb_art_" + hashlib.md5(art.encode("utf-8")).hexdigest()[:12] + ".png")))
     for ch in meta["chapters"]:
         for sc in ch["scenes"]:
             if sc["kind"] == "art":

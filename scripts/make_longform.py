@@ -940,6 +940,8 @@ def main():
         return
     if not args.only_srt:
         make_thumb(meta, img_dir, os.path.join(out_dir, "thumb.png"))
+        if meta.get("thumbnail_b"):  # 10/31: 비교용 B안(밝은 전·후 이야기형) — 사용자가 골라서 thumb.png로 바꿔 올린다
+            make_thumb(dict(meta, thumbnail=meta["thumbnail_b"]), img_dir, os.path.join(out_dir, "thumb_b.png"))
     if args.only_thumb:
         print("thumb only")
         return

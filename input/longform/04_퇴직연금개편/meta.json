@@ -33,16 +33,16 @@
     "title_c_backup": "같은 퇴직금인데 세금 600만 원 갈립니다…21년 만에 바뀌는 퇴직연금, 받기 전에 꼭 보세요",
     "hook": "퇴직금, 한 번에 받으실 건가요? 작년엔 100명 중 83명이 그렇게 받았습니다.\n그런데 받는 방법 하나로 퇴직소득세가 30~40% 달라집니다.\n그리고 지난 10월 29일, 정부가 21년 만에 퇴직금 규칙을 크게 바꾸겠다고 발표했습니다.\n\n내 퇴직금이 지금 실제로 어디에 있는지, 언제부터 무엇이 바뀌는지,\n받기 전에 무엇을 확인해야 하는지 정리했습니다.",
     "covers": [
-      "내 퇴직금은 지금 '회사 서랍'에 있을까, '회사 밖 금고'에 있을까",
-      "2028·2029·2030 — 회사 규모별 사외 적립 의무화 일정",
-      "임금체불 1위는 월급이 아니라 퇴직금 — 작년 8,229억 원",
-      "같은 해 수익률 6.47% vs 18.82% — 그래서 나오는 기금형 퇴직연금",
-      "한 번에 vs 나눠서: 퇴직소득세 30%·40% 감면, 600만 원 계산 예시",
-      "말 안 하면 연금으로? 정부가 검토하는 자동 연금 지급",
-      "봉투를 뜯지 말고 빌린다 — 퇴직연금 담보대출 개편",
-      "퇴직금은 퇴직하면 바로 통장으로? 가장 흔한 착각",
-      "작은 가게 사장님 부담과 아직 남은 쟁점",
-      "지금 해 둘 4가지"
+      "'회사 서랍'과 '회사 밖 금고' — 내 퇴직금은 지금 어디에 있을까",
+      "2028·2029·2030, 우리 회사는 언제부터 바뀌나",
+      "떼인 돈 1위는 월급이 아니었다 — 작년 8,229억 원의 정체",
+      "같은 노후 돈인데 같은 해 수익률이 약 3배 차이 — 6.47% vs 18.82%",
+      "100명 중 83명이 한 번에 받는다 — 나눠 받으면 세금 30~40%가 빠진다 (600만 원 계산 예시)",
+      "아무 말 안 하면 연금으로? 아직 '검토' 단계인 자동 연금",
+      "봉투를 뜯지 않고 돈 빌리는 법 — 퇴직연금 담보대출",
+      "'퇴직하면 퇴직금은 내 통장으로' — 가장 흔한 착각",
+      "반대편 이야기 — 사업장 52.5%가 '부담된다'고 답한 이유",
+      "퇴직금 받기 전, 지금 해 둘 4가지"
     ],
     "as_of": "2026년 10월 말",
     "sources": [
@@ -795,5 +795,30 @@
         }
       ]
     }
-  ]
+  ],
+  "thumbnail_b": {
+    "lines": [
+      "퇴직금, 이렇게만 받아도",
+      "세금 {600만 원} 아낍니다"
+    ],
+    "badge": "정부 퇴직연금 개편안",
+    "tags": [
+      {
+        "text": "한 번에 받으면",
+        "x": 0.22,
+        "y": 0.1,
+        "color": "red",
+        "size": 46
+      },
+      {
+        "text": "나눠 받으면",
+        "x": 0.78,
+        "y": 0.1,
+        "color": "green",
+        "size": 46
+      }
+    ],
+    "brightness": 1.2,
+    "art_prompt": "bright warm highly detailed digital painting split into two halves, on the left side a tired middle-aged korean office worker in a white shirt slumped at a gray cluttered desk on a rainy day, holding one thin torn envelope with a sigh, gloomy blue gray tones, on the right side the same man smiling and relaxed in a sunny garden terrace chair with a coffee cup, golden afternoon sunlight, a neat stack of small envelopes on the table beside him, vivid saturated yellow and sky blue colors, cheerful storybook illustration style, rich detail, no text"
+  }
 }

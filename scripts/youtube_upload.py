@@ -105,7 +105,12 @@ def upload(video_path, title, description, privacy="private", made_for_kids=Fals
 def upload_captions(video_id, srt_path, language="ko", name="한국어"):
     """롱폼 자막 파일(captions.srt) 올리기(2026-10-30). 대본 그대로라 자동 자막보다 정확 — 검색·자동 번역·CC 시청자용.
     화면에 박힌 자막과는 별개(시청자가 CC를 켤 때만 보임). 실패해도 영상에는 영향 없음."""
-    youtube = build("youtube", "v3", credentials=get_credentials())
+    # 10/31: get_credentials()는 SCOPES(3개)로 갱신해서 token.json을 저장하므로 force-ssl이 빠진다(04 자막 403).
+    # 자막만 force-ssl을 따로 요청해 갱신하고 저장하지 않는다 — 노트북처럼 이 권한이 없는 토큰은 여기서만 실패.
+    get_credentials()
+    creds = Credentials.from_authorized_user_file(TOKEN_PATH, SCOPES + ["https://www.googleapis.com/auth/youtube.force-ssl"])
+    creds.refresh(Request())
+    youtube = build("youtube", "v3", credentials=creds)
     body = {"snippet": {"videoId": video_id, "language": language, "name": name, "isDraft": False}}
     r = youtube.captions().insert(part="snippet", body=body,
                                   media_body=MediaFileUpload(srt_path, mimetype="application/octet-stream")).execute()

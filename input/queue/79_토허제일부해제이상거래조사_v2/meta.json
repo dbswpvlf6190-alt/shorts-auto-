@@ -1,0 +1,102 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 국토교통부 10월 29일 보도자료(수도권 신규택지 발표)",
+  "youtube_title": "이 땅 거래, 조사 대상이 됩니다 #토지거래허가구역 #신규택지",
+  "youtube_description": "국토교통부가 10월 29일, 김포·구리·하남·의정부·고양 등 수도권 6곳에 신규택지 후보지를 추가로 발표했어요. 기존 물량까지 합치면 수도권 신규택지 공급 규모는 총 10만 3,900가구예요.\n\n그런데 함께 발표된 내용이 하나 더 있어요. 최근 3년간 후보지와 인근의 땅 거래 2,917건 가운데 654건을 투기 의심 거래로 선별해 조사한다는 거예요. 위법이 확인되면 수사까지 의뢰할 방침이에요.\n\n토지거래허가구역도 조정됐어요. 신규택지 영향권은 계속 묶어두고, 나머지 지역은 11월 3일부터 해제돼요. 다만 작년 10월 15일 지정된 서울 전역과 경기 12개 지역 아파트 토지거래허가구역은 이번 해제 대상이 아니고 그대로 유지됩니다.\n\n출처: 국토교통부 10월 29일 보도자료\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#토지거래허가구역 #신규택지 #부동산정책 #그린벨트 #국토교통부 #부동산 #재테크 #shorts",
+  "tags": "토지거래허가구역,신규택지,투기조사,부동산정책,국토교통부",
+  "tiktok_caption": "그 동네 땅 거래했다면 조사 대상일 수 있어요 😳 토지거래허가구역도 11월 3일부터 일부 풀려요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 동네는 풀렸나요, 그대로인가요? #토지거래허가구역 #신규택지 #부동산정책",
+  "instagram_caption": "그 동네 땅 거래했다면 조사 대상일 수 있어요 😳 토지거래허가구역도 11월 3일부터 일부 풀려요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 동네는 풀렸나요, 그대로인가요? #토지거래허가구역 #신규택지 #부동산정책",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "이 땅, 조사 대상이에요?",
+      "caption": "이 땅,\n{조사 대상}이에요?",
+      "image_prompt": "photorealistic aerial view of a vacant rural land plot marked with small wooden survey stakes, golden hour light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "최근 3년 거래했다면, 조사 대상일 수 있어요.",
+      "caption": "최근 {3년} 거래했다면\n조사 대상일 수 있어요",
+      "big": "최근 3년",
+      "badge": "거래 시 조사대상"
+    },
+    {
+      "kind": "big",
+      "voice": "국토부가 10월 29일, 신규택지 6곳을 발표했어요.",
+      "caption": "국토부 발표\n{신규택지 6곳}",
+      "big": "10월 29일",
+      "badge": "신규택지 6곳 발표"
+    },
+    {
+      "kind": "photo",
+      "voice": "김포, 구리, 하남, 의정부, 고양이 대상이에요.",
+      "caption": "{김포·구리·하남}\n{의정부·고양}",
+      "image_prompt": "photorealistic wide view of rolling green farmland with distant low hills under a clear blue sky, open space, no buildings, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "새 물량 더하면 전체 신규택지가 10만 3900가구예요.",
+      "caption": "전체 신규택지\n{10만 3900가구}",
+      "big": "10만 3900가구",
+      "badge": "수도권 신규택지"
+    },
+    {
+      "kind": "big",
+      "voice": "최근 3년, 후보지 주변 땅 거래는 2917건이었어요.",
+      "caption": "후보지 주변 땅 거래\n{2917건}",
+      "big": "2917건",
+      "badge": "최근 3년 거래량"
+    },
+    {
+      "kind": "big",
+      "voice": "이 중 654건이 투기 의심으로 조사 대상에 올랐어요.",
+      "caption": "투기 의심\n{654건} 조사",
+      "big": "654건",
+      "badge": "투기 의심 조사"
+    },
+    {
+      "kind": "photo",
+      "voice": "위법이 확인되면 수사까지 의뢰할 방침이에요.",
+      "caption": "위법 확인되면\n{수사 의뢰}",
+      "image_prompt": "photorealistic yellow warning tape stretched across the entrance of an empty construction site, overcast afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 토지거래허가구역은 어떻게 될까요?",
+      "caption": "근데 {토지거래허가구역}은\n어떻게 될까요?",
+      "image_prompt": "photorealistic small red flag marker planted in bare soil at a construction site, overcast sky, shallow depth of field, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "신규택지 영향권은 유지되고, 나머지는 11월 3일부터 풀려요.",
+      "caption": "{신규택지 영향권}은 유지\n나머지는 {11월 3일} 해제",
+      "sfx": "ding",
+      "active": [1],
+      "cards": [
+        {"date": "신규택지 영향권", "who": "계속 유지", "color": "red"},
+        {"date": "그 외 지역", "who": "11월 3일 해제", "color": "green"},
+        {"date": "서울·경기 12곳(작년 지정)", "who": "그대로 유지", "color": "gold"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "작년에 지정된 서울과 경기 12곳은 그대로예요.",
+      "caption": "작년 지정된\n{서울·경기 12곳}은 그대로",
+      "image_prompt": "photorealistic city skyline at dusk with warm lights glowing in apartment towers, soft bokeh, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "그 동네에 땅 있는 분께 꼭 보내주세요.",
+      "caption": "그 동네에 땅 있는 분께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic small wooden model house sitting on a patch of grass at dusk, warm golden light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 동네는 토허제, 풀렸나요 그대로인가요?",
+      "caption": "여러분 동네는\n{토허제} 풀렸나요, 그대로인가요?",
+      "image_prompt": "photorealistic quiet suburban street with parked cars under glowing streetlights at night, soft ambient light, shallow depth of field, no text"
+    }
+  ]
+}

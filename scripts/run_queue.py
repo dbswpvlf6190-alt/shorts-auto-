@@ -94,10 +94,39 @@ def git(args):
         return subprocess.CompletedProcess(args, returncode=124, stdout="", stderr="git 명령이 120초 내에 끝나지 않아 중단함 (인증 프롬프트 등에서 멈췄을 가능성)")
 
 
+def _rebase_in_progress():
+    git_dir = os.path.join(BASE_DIR, ".git")
+    return os.path.isdir(os.path.join(git_dir, "rebase-merge")) or os.path.isdir(os.path.join(git_dir, "rebase-apply"))
+
+
+def recover_stuck_rebase():
+    """pull --rebase가 충돌로 멈추면 저장소가 브랜치 없는 상태로 남아 이후 push가 조용히 실패한다(2026-10-30 노트북의
+    오래된 processing.lock 커밋이 원격과 부딪혀 그대로 멈춤). 락 충돌이면 이쪽 커밋을 건너뛰고(원격이 최신),
+    그 밖의 충돌이면 rebase를 되돌리고 알린다. 처리했으면 True."""
+    if not _rebase_in_progress():
+        return False
+    for _ in range(100):
+        if not _rebase_in_progress():
+            return True
+        conflicted = [p for p in git(["diff", "--name-only", "--diff-filter=U"]).stdout.splitlines() if p.strip()]
+        if conflicted and all(p.endswith(".lock") for p in conflicted):
+            git(["rebase", "--skip"])
+            continue
+        git(["rebase", "--abort"])
+        notify.notify("⚠️ git 동기화 충돌(shorts_auto)", f"락 파일이 아닌 충돌이라 되돌림 — {', '.join(conflicted[:3]) or '원인 불명'}. 사람 확인 필요",
+                      priority=4, tags=["warning"])
+        return True
+    git(["rebase", "--abort"])
+    return True
+
+
 def git_pull():
+    recover_stuck_rebase()  # 지난 실행이 남긴 멈춘 rebase부터 정리
     result = git(["pull", "--rebase", "origin", "main"])
     if result.returncode != 0:
         log(f"  git pull 실패(무시하고 로컬 상태로 계속): {result.stderr[-500:]}")
+        if recover_stuck_rebase():
+            log("  멈춘 rebase 정리함")
 
 
 def git_commit_push(paths, message):

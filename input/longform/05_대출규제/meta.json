@@ -1,0 +1,698 @@
+{
+  "format": "long",
+  "rate": "+30%",
+  "voice_style": "M1",
+  "script_version": "v3 (v5 첫 적용: 첫 문장 숫자 · 인트로 45초 이내 · 답 목록 미리 안 말함 · 구독 부탁은 첫 답 뒤 · 큰 비유 1개(높이 제한 터널 = 대출의 세 문) · 반전(진짜 벽은 월급 문) · 지금 이야기(지방 유예 12/31) · 통념 깨기 2 · 반대편 3 · 실천 4 · 비유 회수)",
+  "privacy": "private",
+  "fact_check": "2026-11-01 확인: 2025.6.27 가계부채 관리 강화(수도권·규제지역 주담대 최대 6억, 생애최초 LTV 70%·6개월 전입) / 2025.10.15 대책(서울 전역·경기 12곳 규제지역, 규제지역 LTV 70→40%, 시가 15억 이하 6억·15~25억 4억·25억 초과 2억, 수도권·규제지역 주담대 스트레스 금리 하한 1.5→3%p 10/16~, 1주택자 전세대출 이자 DSR 반영 10/29~) — 경향신문 2025.10.15, KB Think, 토스뱅크 / 2026.4.1 가계부채 관리 방안(가계대출 증가율 목표 1.5%(전년 1.7%), 다주택자 수도권·규제지역 아파트 주담대 만기 연장 원칙 불허 4/17~, P2P 규제) — 정책브리핑 korea.kr, 데일리안 / 2026.6.30 긴급 가계부채 점검회의(동탄구·기흥구·구리시 규제지역 지정, LTV 70→40% 7/1~) — 금융위원회 / 2026.6.18 지방 주담대 스트레스 DSR 3단계 유예 6개월 연장(2026.12.31까지 2단계 0.75%p 유지, 3단계면 1.5%p, 연말까지 접수 또는 매매계약·계약금 납부 증명 시 2단계) — 머니투데이 2026.6.18·6.30 / 2027년 이후 미정(Chosunbiz 2026.10.31 '또 유예되나'). 은행 DSR 40%. 계산 예시(가정): 연봉 6천만 원·DSR 40%·30년 원리금균등·변동금리 4% → 4% 계산 약 4억 1,900만 원, +3%p(7%) 약 3억 60만 원, 1.5%p(5.5%) 약 3억 5,200만 원. 연봉 4천 약 2억, 8천 약 4억, 6억에 필요한 연봉 약 1억 1,975만 원. 혼합·주기형은 스트레스 금리 일부만 적용되어 한도가 더 나올 수 있음(상품별 상이, 수치 미제시).",
+  "thumbnail": {
+    "lines": [
+      "10억 집, 연봉 6천이면",
+      "대출 6억? 실제론 [3억]"
+    ],
+    "badge": "2026 대출 규제",
+    "tags": [
+      {
+        "text": "집값 문 4억",
+        "x": 0.22,
+        "y": 0.12,
+        "color": "navy",
+        "size": 44
+      },
+      {
+        "text": "월급 문 3억",
+        "x": 0.78,
+        "y": 0.12,
+        "color": "red",
+        "size": 44
+      }
+    ],
+    "art_prompt": "highly detailed digital painting, a middle-aged korean man in a suit standing at night in a dark tunnel in front of three glowing height limit barriers at different heights, the lowest one glowing red, a seoul apartment skyline visible beyond the tunnel exit, cold blue and red contrast, cinematic, no text"
+  },
+  "thumbnail_b": {
+    "lines": [
+      "대출 한도, 은행 가기 전에",
+      "{3분이면} 계산됩니다"
+    ],
+    "badge": "2026 대출 규제",
+    "brightness": 1.2,
+    "tags": [
+      {
+        "text": "막막한 대출 상담",
+        "x": 0.22,
+        "y": 0.1,
+        "color": "red",
+        "size": 42
+      },
+      {
+        "text": "미리 계산하면",
+        "x": 0.78,
+        "y": 0.1,
+        "color": "green",
+        "size": 42
+      }
+    ],
+    "art_prompt": "bright warm highly detailed digital painting split into two halves, on the left side a worried korean couple in their thirties sitting at a gray bank counter on a rainy day frowning at loan papers, gloomy blue gray tones, on the right side the same couple smiling at a sunny kitchen table with a laptop and a calculator, a small model house on the table, golden sunlight, vivid saturated yellow and sky blue colors, cheerful storybook illustration style, rich detail, no text"
+  },
+  "chapters": [
+    {
+      "title": "인트로",
+      "tag": "10억 집, 대출은 얼마?",
+      "art_title": "대출, [얼마까지]?",
+      "art_en": "How Much Can I Borrow",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a young korean couple in their thirties standing in front of a modern seoul apartment complex at dusk looking up, seen from behind, hopeful but tense, cinematic",
+          "voice": "연봉 6천만 원 직장인이 서울에서 10억 원짜리 아파트를 사려고 합니다. 은행에서 빌릴 수 있는 돈, 얼마일까요?"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a bank loan counter at night with a single desk lamp, empty chair, loan documents and a calculator on the desk, moody",
+          "voice": "6억 원? 4억 원? 실제로 계산해 보면 약 3억 원입니다. 나머지 7억 원은 내 돈으로 채워야 해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "three height limit barriers hanging over a road in a dark tunnel, each at a different height, headlights glowing, mysterious",
+          "voice": "왜 6억이 아니라 3억일까요? 대출에는 문이 세 개 있고, 대부분은 생각지도 못한 문에서 막힙니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a hand holding a pen over a blank loan application form next to a calculator, warm lamp light, close up",
+          "voice": "오늘은 그 세 개의 문을 하나씩 열어 보고, 내 한도를 직접 계산하는 법까지 보여 드리겠습니다."
+        },
+        {
+          "kind": "quote",
+          "heading": "오늘 영상의 기준",
+          "text": "2025.6.27 · 10.15 대책 + 2026년 가계부채 관리 방안\n{수도권·규제지역 주담대 한도 · LTV · 스트레스 DSR}\n[2026년 10월 말 기준 · 은행·상품마다 다를 수 있음]",
+          "cite": "금융위원회 · 국토교통부 발표 (2025.6.27 · 2025.10.15 · 2026.4.1 · 2026.6.30)",
+          "voice": "오늘 내용은 2026년 10월 말 기준입니다. 계산은 이해를 돕기 위한 예시라서, 실제 한도는 은행과 상품마다 조금씩 다를 수 있어요."
+        }
+      ]
+    },
+    {
+      "title": "대출에는 문이 세 개 있다",
+      "tag": "가장 낮은 문이 내 한도",
+      "source": "출처: 금융위원회 주택담보대출 규제(LTV·DSR) 안내",
+      "art_title": "문이 [세 개]",
+      "art_en": "Three Gates",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a large delivery truck stopped in front of a low height barrier at a tunnel entrance, driver looking up worried, night, cinematic",
+          "voice": "높이 제한이 걸린 터널을 떠올려 보세요. 트럭이 아무리 커도, 가장 낮은 바보다 높으면 지나갈 수 없습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "three glowing gates in a row in a dark corridor, each gate a different size, the last one the smallest, symbolic",
+          "voice": "대출도 똑같습니다. 첫 번째 문은 집값, 두 번째 문은 집값 구간별 상한, 세 번째 문은 내 월급입니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "대출 한도를 정하는 세 개의 문",
+          "cards": [
+            {
+              "label": "첫 번째 문",
+              "title": "집값 문\n{LTV}",
+              "body": "집값의 몇 %까지",
+              "color": "navy"
+            },
+            {
+              "label": "두 번째 문",
+              "title": "상한 문\n{6억·4억·2억}",
+              "body": "집값 구간별 최대 금액",
+              "color": "navy"
+            },
+            {
+              "label": "세 번째 문",
+              "title": "월급 문\n[DSR]",
+              "body": "소득으로 갚을 수 있는 만큼",
+              "color": "red"
+            }
+          ],
+          "voice": "은행은 세 문을 각각 계산한 뒤, 그중 가장 낮은 금액만 빌려줍니다. 이게 오늘의 첫 번째 답이에요. 내 한도는 세 문 중 가장 낮은 문의 높이입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person standing at the smallest of three doors, holding a briefcase, light coming through only the small door, metaphor",
+          "voice": "그래서 6억까지 된다는 말을 듣고 집을 보러 갔다가, 은행에서 3억이라는 말을 듣는 일이 생깁니다. 세 번째 문을 계산하지 않았기 때문이죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy home office desk with a laptop showing a blurred chart, a cup of coffee, morning light",
+          "voice": "이 영상이 대출 준비에 도움이 될 것 같다면 구독 한 번 눌러 두세요. 이제 첫 번째 문부터 열어 보겠습니다."
+        }
+      ]
+    },
+    {
+      "title": "첫 번째 문: 집값",
+      "tag": "규제지역 LTV 40%",
+      "source": "출처: 2025.10.15 주택시장 안정화 대책 · 금융위원회 긴급 가계부채 점검회의(2026.6.30)",
+      "art_title": "첫 번째 문 [집값]",
+      "art_en": "Gate One: Home Value",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an aerial view of seoul apartment blocks at dusk with a few districts softly highlighted by light, cinematic",
+          "voice": "첫 번째 문은 LTV, 집값의 몇 퍼센트까지 빌려주느냐입니다. 이 문의 높이는 집이 어디에 있느냐에 따라 달라집니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "주택담보대출 LTV (무주택자 기준)",
+          "left": {
+            "title": "규제지역",
+            "lines": [
+              "서울 전체 · 경기 일부",
+              "LTV [40%]",
+              "10억 집 → 최대 4억"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "비규제지역",
+            "lines": [
+              "그 밖의 지역",
+              "LTV {70%}",
+              "5억 집 → 최대 3.5억"
+            ],
+            "color": "green"
+          },
+          "voice": "규제지역은 40퍼센트, 그 밖의 지역은 70퍼센트입니다. 작년 10월 15일 대책으로 서울 전체와 경기 일부가 규제지역이 되면서, 서울에서는 이 문이 70에서 40으로 확 낮아졌어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "7억 5천만 원 아파트 · 무주택자 (예시)",
+          "left": {
+            "title": "10.15 대책 전 (LTV 70%)",
+            "lines": [
+              "대출 약 {5억 2,500만 원}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "지금 (LTV 40%)",
+            "lines": [
+              "대출 [3억 원]"
+            ],
+            "color": "red"
+          },
+          "voice": "예를 들어 7억 5천만 원짜리 아파트라면, 대책 전에는 집값 문만 보면 5억 2천5백만 원까지 열렸습니다. 지금은 3억 원입니다. 같은 집인데 2억 2천5백만 원을 더 내 돈으로 마련해야 하는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young couple sitting on a sofa counting their savings in a bank book with worried faces, evening, realistic",
+          "voice": "집을 사려던 분들 입장에서는 하루아침에 2억이 넘는 돈이 더 필요해진 셈입니다. 그래서 대책 직후에 계약을 포기하는 분들도 많았어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a quiet new town street in gyeonggi province with new apartments and wide roads, early morning, no readable signs",
+          "voice": "올해 7월에는 화성 동탄구, 용인 기흥구, 구리시가 규제지역에 추가됐습니다. 이 지역도 7월 1일부터 40퍼센트가 적용되고 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person checking a map on a tablet with certain areas shaded, at a cafe, close up, no readable text",
+          "voice": "내가 사려는 집이 규제지역인지는 국토교통부 발표나 구청에서 확인할 수 있습니다. 같은 경기도라도 동네마다 다르니까 꼭 주소 단위로 확인하세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young korean woman holding house keys for the first time in an empty new apartment, sunlight through window, emotional",
+          "voice": "예외가 있습니다. 생애 처음으로 집을 사는 분은 규제지역에서도 70퍼센트까지 가능합니다. 대신 6개월 안에 그 집으로 이사해야 하는 조건이 붙어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a single wooden door slightly open with warm light behind it, in a dark hallway",
+          "voice": "10억 원 아파트라면 일반 무주택자는 4억 원, 생애 첫 집이면 7억 원까지 이 첫 번째 문을 통과합니다. 하지만 아직 문이 두 개 더 남았습니다."
+        }
+      ]
+    },
+    {
+      "title": "두 번째 문: 상한",
+      "tag": "6억 · 4억 · 2억",
+      "source": "출처: 2025.6.27 가계부채 관리 강화 방안 · 2025.10.15 대책",
+      "art_title": "두 번째 문 [상한]",
+      "art_en": "Gate Two: The Cap",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a tall glass ceiling over an expensive apartment lobby, a man looking up at it, symbolic, cool tones",
+          "voice": "두 번째 문은 금액 자체에 걸린 천장입니다. 집값이 아무리 비싸도, 수도권과 규제지역에서는 빌릴 수 있는 최대 금액이 정해져 있어요."
+        },
+        {
+          "kind": "timeline",
+          "heading": "수도권·규제지역 주담대 최대 한도 (집값 구간별)",
+          "points": [
+            {
+              "date": "15억 이하",
+              "label": "최대 6억",
+              "color": "green",
+              "active": true
+            },
+            {
+              "date": "15억~25억",
+              "label": "최대 4억",
+              "color": "orange"
+            },
+            {
+              "date": "25억 초과",
+              "label": "최대 2억",
+              "color": "red"
+            }
+          ],
+          "voice": "집값 15억 원 이하는 최대 6억 원, 15억에서 25억 원은 4억 원, 25억 원을 넘으면 2억 원까지입니다. 비싼 집일수록 오히려 덜 빌려주는 구조예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calculator and a house model on a table, the house partially in shadow, dramatic still life",
+          "voice": "생애 첫 집이라 7억까지 된다던 10억 원 아파트도 여기서 6억으로 잘립니다. 그리고 많은 분이 여기까지만 계산하고 6억이 나온다고 생각하세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long dark corridor ending at a very small door glowing red, ominous",
+          "voice": "하지만 진짜 벽은 세 번째 문입니다. 실제로 대부분의 대출이 여기서 막힙니다."
+        }
+      ]
+    },
+    {
+      "title": "세 번째 문: 월급",
+      "tag": "진짜 벽은 DSR",
+      "source": "출처: 금융위원회 스트레스 DSR · 2025.10.15 대책(수도권·규제지역 스트레스 금리 하한 3%)",
+      "art_title": "세 번째 문 [월급]",
+      "art_en": "Gate Three: Your Income",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a monthly salary pay slip on a kitchen table next to a stack of bills, evening light, realistic",
+          "voice": "세 번째 문은 DSR입니다. 1년에 버는 돈 중에서 빚 갚는 데 쓰는 돈이 몇 퍼센트냐를 봅니다. 은행은 40퍼센트를 넘지 못하게 합니다."
+        },
+        {
+          "kind": "number",
+          "heading": "연봉 6천만 원 · DSR 40%",
+          "amount": 200,
+          "unit": "만 원",
+          "label": "한 달에 빚 갚는 데 쓸 수 있는 최대 금액",
+          "note": "1년 2,400만 원 ÷ 12개월",
+          "color": "navy",
+          "voice": "연봉이 6천만 원이면 40퍼센트는 2천4백만 원입니다. 한 달로 나누면 200만 원. 모든 빚의 원금과 이자를 합쳐서 매달 200만 원을 넘으면 안 된다는 뜻이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a weather vane on a rooftop in strong wind with storm clouds gathering, metaphor for risk",
+          "voice": "그런데 여기에 함정이 하나 있습니다. 은행은 지금 금리로 계산하지 않아요. 앞으로 금리가 오를 수 있다고 보고, 일부러 금리를 더 얹어서 계산합니다. 이걸 스트레스 금리라고 합니다."
+        },
+        {
+          "kind": "number",
+          "heading": "수도권·규제지역 주담대 스트레스 금리 (하한)",
+          "amount": 3,
+          "unit": "%p",
+          "label": "실제 금리에 더해서 계산 (2025.10.15 대책)",
+          "note": "이전 1.5%p → 3%p · 변동금리 기준",
+          "color": "red",
+          "voice": "수도권과 규제지역 주택담보대출은 이 얹는 금리가 최소 3퍼센트포인트입니다. 원래는 1.5퍼센트포인트였는데, 작년 10월 대책으로 두 배가 됐어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "연봉 6천만 원 · 30년 · 변동금리 4% (예시)",
+          "left": {
+            "title": "스트레스 금리 없으면",
+            "lines": [
+              "4%로 계산",
+              "한도 약 {4억 2천만 원}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "지금 (+3%p)",
+            "lines": [
+              "7%로 계산",
+              "한도 약 [3억 원]"
+            ],
+            "color": "red"
+          },
+          "voice": "계산해 보겠습니다. 연봉 6천만 원, 30년 동안 나눠 갚는 변동금리 4퍼센트 대출이라면, 원래는 약 4억 2천만 원까지 됩니다. 그런데 3퍼센트포인트를 얹어 7퍼센트로 계산하면 약 3억 원으로 줄어들어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a man looking at his monthly bank statement on a phone with a puzzled expression, kitchen at night, screen blurred",
+          "voice": "재미있는 건, 실제로 3억 원을 4퍼센트로 빌리면 매달 갚는 돈은 143만 원 정도라는 겁니다. 200만 원까지 여유가 있어 보이죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a magnifying glass over a bank form with numbers blurred, dramatic desk lamp light",
+          "voice": "그런데도 3억에서 멈추는 건, 은행이 7퍼센트로 올랐을 때를 가정해서 그때도 갚을 수 있는지를 보기 때문입니다. 지금 갚을 수 있느냐가 아니라, 금리가 올라도 버틸 수 있느냐를 보는 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean man at a bank window looking surprised at a paper the clerk shows him, soft light",
+          "voice": "이게 아까 그 3억 원의 정체입니다. 집값 문은 4억, 상한 문은 6억까지 열어 줘도, 월급 문이 3억이면 3억입니다. 생애 첫 집이라 70퍼센트를 받아도 결과는 같아요."
+        },
+        {
+          "kind": "checklist",
+          "heading": "연봉별 대출 한도 (스트레스 금리 포함 7%, 30년, 다른 빚 없음, 예시)",
+          "items": [
+            {
+              "text": "연봉 4천만 원 → 약 {2억 원}"
+            },
+            {
+              "text": "연봉 6천만 원 → 약 {3억 원}"
+            },
+            {
+              "text": "연봉 8천만 원 → 약 {4억 원}"
+            },
+            {
+              "text": "6억 원을 다 받으려면 → 연봉 약 [1억 2천만 원]"
+            }
+          ],
+          "voice": "연봉별로 보면 이렇습니다. 연봉 4천이면 약 2억, 6천이면 약 3억, 8천이면 약 4억 원입니다. 상한인 6억 원을 다 받으려면 연봉이 1억 2천만 원 정도는 돼야 해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a family at a dining table at night looking at papers with serious faces, warm lamp, realistic",
+          "voice": "그리고 이건 다른 빚이 하나도 없을 때 얘기입니다. 자동차 할부나 신용대출이 있으면, 그 빚을 갚는 돈만큼 이 문은 더 낮아집니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a road sign pointing in two directions on a country road at sunset, choice",
+          "voice": "다만 고정금리 기간이 긴 상품은 얹는 금리가 줄어서 한도가 조금 더 나올 수 있습니다. 은행에 갈 때 꼭 상품별로 한도를 비교해 보세요."
+        }
+      ]
+    },
+    {
+      "title": "지방은 아직 다르다",
+      "tag": "스트레스 DSR 3단계 유예, 12월 31일까지",
+      "source": "출처: 금융위원회 발표(2026.6.18 · 머니투데이 보도) · Chosunbiz(2026.10.31)",
+      "art_title": "지방은 [다르다]",
+      "art_en": "Outside the Capital",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a quiet provincial city in korea at sunset with low apartment buildings and mountains behind, calm and slightly empty",
+          "voice": "여기까지는 수도권과 규제지역 이야기입니다. 지방은 지금 다른 규칙이 적용되고 있어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "스트레스 금리 (주담대 · 변동금리)",
+          "left": {
+            "title": "수도권·규제지역",
+            "lines": [
+              "최소 [3%p]"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "지방 (2026.12.31까지)",
+            "lines": [
+              "{0.75%p} (2단계 유지)",
+              "3단계면 1.5%p"
+            ],
+            "color": "green"
+          },
+          "voice": "지방 주택담보대출은 스트레스 금리가 0.75퍼센트포인트입니다. 원래는 1.5퍼센트포인트로 올라가야 하는데, 지방 경기가 어려워서 정부가 계속 미뤄 왔어요. 지금 유예는 올해 12월 31일까지입니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "연봉 6천만 원 · 지방 5억 원 아파트 (예시)",
+          "left": {
+            "title": "집값 문 (LTV 70%)",
+            "lines": [
+              "{3억 5천만 원}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "월급 문 (4% + 0.75%p)",
+            "lines": [
+              "약 {3억 8천만 원}"
+            ],
+            "color": "green"
+          },
+          "voice": "같은 연봉 6천만 원으로 지방의 5억 원 아파트를 산다면 어떨까요? 집값 문은 70퍼센트라 3억 5천만 원, 월급 문은 약 3억 8천만 원입니다. 지방에서는 월급 문보다 집값 문이 먼저 닫히는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a quiet provincial apartment with lights on at dusk, a family silhouette in the window, warm and calm",
+          "voice": "3단계가 적용돼 1.5퍼센트포인트가 붙어도 월급 문은 약 3억 5천만 원이라, 이 예시에서는 한도가 거의 같습니다. 하지만 연봉이 더 낮거나 다른 빚이 있다면 차이가 커질 수 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calendar page showing december on a wall with soft winter light, close up, no readable text",
+          "voice": "그 뒤는 아직 정해지지 않았습니다. 10월 말에도 또 미뤄질지가 기사로 나오고 있는데, 정부 발표는 아직 없어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a signed contract and a bank deposit slip on a desk next to a pen, warm light, close up",
+          "voice": "알아 둘 점이 하나 있습니다. 올해 말까지 대출을 신청했거나, 매매 계약을 하고 계약금을 낸 게 증명되면 지금 기준이 적용됩니다. 지방에서 집을 살 계획이 있다면 날짜를 꼭 확인하세요."
+        }
+      ]
+    },
+    {
+      "title": "집이 있는 분, 전세 사는 분",
+      "tag": "다주택자 만기 연장 불가",
+      "source": "출처: 2026년 가계부채 관리 방안(금융위원회 2026.4.1) · 2025.10.15 대책",
+      "art_title": "집이 있다면 [더 좁다]",
+      "art_en": "If You Already Own",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an older korean man looking at two sets of house keys in his palm, contemplative, dim room",
+          "voice": "이미 집이 있는 분은 문이 훨씬 좁습니다. 수도권과 규제지역에서 집을 두 채 이상 가진 분은 집을 더 사기 위한 주택담보대출을 받을 수 없어요."
+        },
+        {
+          "kind": "number",
+          "heading": "다주택자 · 수도권·규제지역 아파트 담보대출",
+          "amount": 0,
+          "unit": "",
+          "label": "만기 연장 원칙적 불가 (2026.4.17부터)",
+          "note": "2026년 가계부채 관리 방안",
+          "color": "red",
+          "voice": "올해 4월 17일부터는 더 강해졌습니다. 다주택자가 가진 수도권과 규제지역 아파트 담보대출은 만기가 와도 원칙적으로 연장해 주지 않습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older couple at a bank desk discussing documents with a clerk, serious but calm, soft light",
+          "voice": "집을 두 채 가진 분이라면, 대출 만기가 언제인지 지금 확인해 두셔야 합니다. 만기에 연장이 안 되면 그때 한꺼번에 갚아야 하니까요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a moving box and a lease contract on the floor of an empty rental apartment, natural light",
+          "voice": "전세 사는 분도 달라진 게 있습니다. 집을 한 채 가진 분이 전세대출을 받으면, 그 전세대출 이자도 DSR에 들어갑니다. 작년 10월 29일부터예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person carefully reading the fine print of a contract with a magnifying glass, desk lamp",
+          "voice": "그래서 1주택자가 전세대출을 끼고 있으면, 나중에 주택담보대출을 받을 때 월급 문이 그만큼 낮아집니다. 대출은 따로따로가 아니라 다 합쳐서 계산된다는 걸 기억하세요."
+        }
+      ]
+    },
+    {
+      "title": "대출에 대한 흔한 착각",
+      "tag": "6억까지 다 나온다?",
+      "source": "출처: 금융위원회 주담대 규제 안내 · 위 계산 예시",
+      "art_title": "대출, [흔한 착각]",
+      "art_en": "Common Myths",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a real estate office window at night with a blurred listing board, a couple walking past, no readable text",
+          "voice": "여기서 흔한 착각 두 가지를 짚고 가겠습니다. 첫 번째, 수도권은 6억까지 대출된다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a measuring tape stretched next to a small door frame, close up, symbolic",
+          "voice": "아닙니다. 6억은 상한일 뿐, 약속이 아니에요. 오늘 계산처럼 연봉 1억 2천만 원 정도가 아니면 월급 문에서 먼저 막힙니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a smiling young couple holding a document in a bright room while their long shadow on the wall looks worried, symbolic, no readable text",
+          "voice": "두 번째, 생애 첫 집이면 70퍼센트니까 넉넉하다. 이것도 절반만 맞습니다. 집값 문은 넓어지지만, 상한 문과 월급 문은 똑같이 적용돼요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old wall clock and a stack of papers on a desk, sense of time and waiting, warm tone",
+          "voice": "덤으로 하나 더. 금리가 내려가면 한도가 늘어날까요? 조금은 늘어납니다. 계산하는 금리도 같이 내려가니까요. 하지만 수도권은 3퍼센트포인트가 그대로 얹히기 때문에, 기대만큼 크게 늘지는 않아요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a notebook with handwritten calculations and a pencil on a wooden desk, warm morning light, no readable text",
+          "voice": "그래서 집을 보러 다니기 전에, 내 월급으로 얼마까지 되는지부터 계산하는 게 순서입니다. 순서를 바꾸면 계약금을 걸고 나서 돈이 모자라는 일이 생겨요."
+        }
+      ]
+    },
+    {
+      "title": "반대편 이야기",
+      "tag": "좋은 얘기만 하지 않겠습니다",
+      "source": "출처: 2026년 가계부채 관리 방안 · 언론 보도",
+      "art_title": "반대편 [이야기]",
+      "art_en": "The Other Side",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a scale balancing a small house model against a stack of coins in a dark room, dramatic light",
+          "voice": "규제에 대한 반대편 이야기도 해 보겠습니다. 첫째, 정부가 왜 이렇게 막을까요? 집값이 오를 때 빚을 크게 내서 사는 흐름을 끊으려는 겁니다."
+        },
+        {
+          "kind": "number",
+          "heading": "2026년 가계대출 증가율 목표",
+          "amount": 1.5,
+          "unit": "%",
+          "label": "경상성장률 전망의 절반 이하 (작년 목표 1.7%)",
+          "note": "2026년 가계부채 관리 방안 (금융위원회 2026.4.1)",
+          "color": "navy",
+          "voice": "올해 가계대출은 1.5퍼센트 넘게 늘지 않게 하는 게 정부 목표입니다. 은행들이 연말로 갈수록 대출을 아끼는 이유도 여기에 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a wealthy man paying with a stack of cash while a young couple watches from a distance, contrast, cinematic",
+          "voice": "둘째, 그래서 현금이 많은 사람만 집을 산다는 비판이 나옵니다. 월급으로 차근차근 사려는 사람에게 문이 더 좁아졌다는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an empty provincial apartment complex with many dark windows at night, a few lights on, melancholy",
+          "voice": "셋째, 지방은 반대로 집이 안 팔려서 고민입니다. 그래서 규칙을 미루고 또 미루다 보니, 내년에 어떻게 될지 예측하기 어려워졌어요. 규칙이 자주 바뀐다는 것 자체가 위험입니다."
+        }
+      ]
+    },
+    {
+      "title": "지금 해 둘 4가지",
+      "tag": "체크리스트",
+      "art_title": "지금 해 둘 [4가지]",
+      "art_en": "Four Things to Do Now",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a man using a smartphone banking app at a cafe table, focused, natural light, screen blurred",
+          "voice": "그럼 지금 무엇을 해 두면 좋을까요? 네 가지만 기억하세요."
+        },
+        {
+          "kind": "checklist",
+          "heading": "지금 해 둘 4가지",
+          "items": [
+            {
+              "text": "은행 앱에서 {내 DSR 한도} 먼저 계산"
+            },
+            {
+              "text": "사려는 집이 {규제지역}인지 확인"
+            },
+            {
+              "text": "자동차 할부·신용대출 등 {다른 빚} 정리 검토"
+            },
+            {
+              "text": "지방 매수 계획이면 {12월 31일} 일정 확인"
+            }
+          ],
+          "voice": "첫째, 집을 보기 전에 은행 앱에서 내 DSR 한도부터 계산하세요. 둘째, 사려는 집이 규제지역인지 확인하세요. 셋째, 할부나 신용대출 같은 다른 빚이 있다면 정리할 수 있는지 보세요. 넷째, 지방에서 살 계획이라면 12월 31일 일정을 확인하세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a woman writing a household budget in a notebook at the kitchen table, sunlight, calm and organized",
+          "voice": "특히 첫 번째가 중요합니다. 은행 앱에서 대출 한도 조회를 해 보면, 내 소득과 다른 빚을 넣은 결과가 나옵니다. 단순 한도 조회는 신용점수에 반영되지 않는 것으로 안내되고 있으니 부담 없이 해 보셔도 돼요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a couple at a kitchen table with a laptop and calculator, smiling with relief, bright warm light",
+          "voice": "이 네 가지만 해 둬도, 은행 창구에서 놀랄 일은 크게 줄어듭니다."
+        }
+      ]
+    },
+    {
+      "title": "마무리",
+      "tag": "가장 낮은 문부터",
+      "art_title": "가장 낮은 [문부터]",
+      "art_en": "Start with the Lowest Gate",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a truck slowly and safely passing under the lowest height barrier in a tunnel, light at the end, hopeful",
+          "voice": "처음에 말씀드린 터널 기억나시죠? 트럭이 터널을 지나려면, 제일 높은 바가 아니라 제일 낮은 바를 봐야 합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young family walking toward an apartment building at sunrise holding hands, seen from behind, hopeful",
+          "voice": "대출도 같습니다. 6억이라는 숫자보다, 내 월급이 여는 문의 높이가 먼저입니다. 그 높이를 알고 시작하면, 집을 고르는 눈도 달라져요.",
+          "title": "6억보다 {내 월급 문}이 먼저",
+          "en": "Know Your Lowest Gate First"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy living room at night with a warm lamp and a cup of tea on the table, quiet closing shot",
+          "voice": "오늘 영상이 도움이 됐다면 좋아요 한번 눌러 주세요. 그리고 여러분은 대출 상담에서 생각보다 한도가 적게 나온 적 있으신가요? 어느 문에서 막혔는지 댓글로 알려 주세요."
+        },
+        {
+          "kind": "title",
+          "title": "다음 영상\n{매주 화·일 저녁 6시}",
+          "sub": "구독하고 놓치지 마세요 · 도장찍기전에",
+          "voice": "도장찍기전에는 매주 화요일과 일요일 저녁 6시에 새 영상으로 찾아옵니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a red traditional korean seal stamp resting on a wooden desk beside a closed contract folder, warm lamp light, shallow depth of field, no text",
+          "voice": "도장은 천천히, 팩트는 먼저. 도장찍기전에였습니다."
+        }
+      ]
+    }
+  ],
+  "upload": {
+    "title": "10억 아파트, 연봉 6천이면 대출은 3억입니다… 6억이 안 나오는 진짜 이유 (2026 대출 규제 총정리)",
+    "hook": "연봉 6천만 원 직장인이 서울 10억 원 아파트를 사려고 하면, 은행에서 빌릴 수 있는 돈은 약 3억 원입니다.\n6억도, 4억도 아닌 이유는 대출에 '문'이 세 개 있기 때문입니다.\n\n집값 문(LTV), 상한 문(6억·4억·2억), 월급 문(DSR) — 내 한도를 직접 계산하는 법까지 정리했습니다.",
+    "covers": [
+      "6억? 4억? 연봉 6천만 원의 실제 대출 한도는 약 3억 원 — 그 정체",
+      "대출에는 문이 세 개 있다 — 가장 낮은 문이 내 한도",
+      "서울 전체가 LTV 40%가 된 이유, 올해 7월 추가된 3곳",
+      "비싼 집일수록 덜 빌려준다 — 15억·25억 구간별 상한",
+      "진짜 벽은 월급 문 — 스트레스 금리 3%p가 깎은 1억 2천만 원",
+      "6억을 다 받으려면 연봉이 얼마여야 할까",
+      "지방은 아직 다르다 — 12월 31일에 끝나는 유예",
+      "집이 있다면 문은 더 좁다 — 다주택자 만기 연장 불가, 1주택자 전세대출",
+      "'생애 첫 집이면 넉넉하다' — 절반만 맞는 착각",
+      "집 보러 가기 전, 지금 해 둘 4가지"
+    ],
+    "as_of": "2026년 10월 말",
+    "sources": [
+      "금융위원회 2025.6.27 가계부채 관리 강화 방안 · 2025.10.15 주택시장 안정화 대책",
+      "금융위원회 「2026년 가계부채 관리 방안」(2026.4.1) · 긴급 가계부채 점검회의(2026.6.30)",
+      "지방 주담대 스트레스 DSR 3단계 유예 연장(2026.6.18, 머니투데이 보도) · Chosunbiz(2026.10.31)",
+      "계산 예시는 연봉 6천만 원·DSR 40%·30년 원리금균등·변동금리 4%(+스트레스 3%p)·다른 대출 없음을 가정한 금액"
+    ],
+    "comment_question": "대출 상담에서 생각보다 한도가 적게 나온 적 있으신가요? 세 개의 문 중 어느 문에서 막혔나요?",
+    "hashtags": [
+      "#대출규제",
+      "#주택담보대출",
+      "#주담대",
+      "#DSR",
+      "#스트레스DSR",
+      "#LTV",
+      "#대출한도",
+      "#규제지역",
+      "#생애최초",
+      "#내집마련",
+      "#전세대출",
+      "#다주택자",
+      "#부동산대책",
+      "#가계부채",
+      "#부동산"
+    ],
+    "tags": [
+      "대출 규제",
+      "주택담보대출",
+      "주담대 한도",
+      "DSR",
+      "스트레스 DSR",
+      "LTV",
+      "대출 한도 계산",
+      "규제지역",
+      "생애최초 대출",
+      "10.15 대책",
+      "6.27 대책",
+      "가계부채 관리 방안",
+      "스트레스 금리",
+      "지방 스트레스 DSR 유예",
+      "다주택자 대출",
+      "전세대출 DSR",
+      "내집마련",
+      "부동산 대출",
+      "주담대 6억",
+      "도장찍기전에"
+    ],
+    "publish_slot": "18:00 KST",
+    "next": "매주 화·일 저녁 6시 새 영상"
+  }
+}

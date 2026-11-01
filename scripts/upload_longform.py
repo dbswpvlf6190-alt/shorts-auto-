@@ -40,6 +40,20 @@ def main():
     with open(done_p, "w", encoding="utf-8") as f:
         json.dump({"video_id": vid, "publish_at_kst": args.publish_at}, f, ensure_ascii=False)
 
+    if info.get("synthetic"):
+        # 11/1: insert 때 넣은 containsSyntheticMedia가 적용되지 않아(04·05 모두 None) status를 한 번 더 갱신한다.
+        try:
+            from googleapiclient.discovery import build
+            yt = build("youtube", "v3", credentials=yu.get_credentials())
+            st = yt.videos().list(part="status", id=vid).execute()["items"][0]["status"]
+            for k in ("uploadStatus", "failureReason", "rejectionReason", "madeForKids"):
+                st.pop(k, None)
+            st["containsSyntheticMedia"] = True
+            r = yt.videos().update(part="status", body={"id": vid, "status": st}).execute()["status"]
+            print(f"  AI 표시 재설정: {r.get('containsSyntheticMedia')} (공개 예정 {r.get('publishAt')})")
+        except Exception as e:
+            print(f"  [경고] AI 표시 재설정 실패: {str(e)[:200]} — 스튜디오에서 확인")
+
     srt = os.path.join(args.out_dir, "captions.srt")
     if os.path.exists(srt):
         try:

@@ -1,0 +1,104 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 주택도시보증공사(HUG) 전세보증금 반환보증 가입 안내",
+  "youtube_title": "전세 보증보험, 반 지나면 가입 못 해요 #전세보증보험 #전세사기예방",
+  "youtube_description": "전세 계약 기간의 반이 지나면 전세보증금 반환보증에 가입할 수 없어요.\n\n이 보증은 집주인이 보증금을 못 돌려줄 때 대신 받을 수 있게 해주는 제도예요. 신규 계약은 잔금을 낸 날과 전입신고한 날 중 늦은 날부터 계산해서, 계약기간의 2분의 1이 지나기 전에 신청해야 해요. 2년 계약이면 1년 안에 끝내야 한다는 뜻이에요.\n\n기한을 넘기면 그 계약 기간에는 다시 가입할 방법이 없어요. 갱신 계약은 기준이 달라서, 만료 한 달 전부터 갱신된 기간의 2분의 1이 지나기 전까지 신청할 수 있어요.\n\n영상 속 3억 원은 이해를 돕기 위한 가정 금액입니다.\n\n출처: 주택도시보증공사(HUG) 전세보증금 반환보증 가입 안내\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#전세보증보험 #전세보증금반환보증 #전세사기예방 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "전세보증보험,전세보증금반환보증,전세사기예방,부동산정책,전세계약",
+  "tiktok_caption": "전세 계약 반 지나면 보증보험 가입 자체가 막혀요 😳 2년 계약이면 1년 안에 신청해야 해요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 가입하셨나요, 아직인가요? #전세보증보험 #전세보증금반환보증 #전세사기예방",
+  "instagram_caption": "전세 계약 반 지나면 보증보험 가입 자체가 막혀요 😳 2년 계약이면 1년 안에 신청해야 해요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 가입하셨나요, 아직인가요? #전세보증보험 #전세보증금반환보증 #전세사기예방",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "보증보험, 반 지나면 끝?",
+      "caption": "보증보험,\n{반 지나면} 끝?",
+      "image_prompt": "photorealistic small brass padlock resting on a wooden door threshold, warm afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "전세 계약기간의 반이 지나면 보증보험 가입이 막혀요.",
+      "caption": "계약기간의 {반}이 지나면\n보증보험 가입이 막혀요",
+      "big": "계약기간의 반",
+      "badge": "가입 마감 기준"
+    },
+    {
+      "kind": "photo",
+      "voice": "집주인이 보증금을 못 돌려줄 때 대신 받는 보험이에요.",
+      "caption": "집주인이 못 돌려줄 때\n대신 받는 {보험}이에요",
+      "image_prompt": "photorealistic stack of silver coins on a dark wooden table, soft window light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "신규 계약은 잔금 내거나 전입신고한 날부터 계산해요.",
+      "caption": "{잔금일}·{전입일} 중\n늦은 날부터 계산해요",
+      "big": "늦은 날부터",
+      "badge": "신규 계약 기준"
+    },
+    {
+      "kind": "timeline",
+      "voice": "2년 계약이면 1년 안에 신청을 끝내야 해요.",
+      "caption": "{2년 계약}이면\n{1년 안}에 신청 끝내야",
+      "active": [1],
+      "cards": [
+        {"date": "계약 시작", "who": "가입 가능 시작", "color": "green"},
+        {"date": "1년 경과", "who": "신청 마감", "color": "gold"},
+        {"date": "그 이후", "who": "가입 불가", "color": "red"}
+      ]
+    },
+    {
+      "kind": "big",
+      "voice": "기한을 넘기면 그 계약 기간엔 다시 가입할 방법이 없어요.",
+      "caption": "기한 넘기면\n그 계약 기간엔 {가입 불가}",
+      "big": "그 계약은 끝",
+      "badge": "기한 놓치면 불가"
+    },
+    {
+      "kind": "photo",
+      "voice": "갱신 계약은 신청 기준이 따로 있어요.",
+      "caption": "{갱신 계약}은\n신청 기준이 따로 있어요",
+      "image_prompt": "photorealistic sand hourglass sitting on a windowsill at sunset, warm golden light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "갱신 계약은 만료 한 달 전부터 신청할 수 있어요.",
+      "caption": "만료 {한 달 전}부터\n신청할 수 있어요",
+      "big": "만료 한 달 전",
+      "badge": "갱신 계약 기준"
+    },
+    {
+      "kind": "money",
+      "voice": "보증금 3억 원을 못 돌려받으면 그대로 날릴 수 있어요.",
+      "caption": "보증금 {3억 원}\n못 돌려받으면 그대로 날려요",
+      "amount": 3,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 갱신 계약도 기한을 넘기면 어떻게 될까요?",
+      "caption": "근데 {갱신 계약}도\n기한 넘기면 어떻게 될까요?",
+      "image_prompt": "photorealistic empty apartment entrance door with a shiny new lock, soft hallway light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "갱신된 기간의 반이 지나면 역시 가입이 막혀요.",
+      "caption": "갱신된 기간의 {반}이 지나면\n역시 가입이 막혀요",
+      "sfx": "ding",
+      "big": "반이 지나면 끝",
+      "badge": "갱신도 동일"
+    },
+    {
+      "kind": "photo",
+      "voice": "전세 계약 앞둔 분께 꼭 보내주세요.",
+      "caption": "전세 계약 앞둔 분께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic small wooden house model placed on green grass, warm evening light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 보증보험 가입하셨나요, 아직인가요?",
+      "caption": "여러분은 {보증보험}\n가입하셨나요, 아직인가요?",
+      "image_prompt": "photorealistic quiet apartment complex courtyard with lamplight at dusk, soft ambient light, shallow depth of field, no text"
+    }
+  ]
+}

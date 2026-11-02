@@ -382,18 +382,50 @@ def process_item(item_dir):
         release_lock(item_dir)
 
 
+EXTRA_FROM_HOUR = 11  # 추가분은 11시 이후 실행에서만(아침 뉴스 쇼츠와 시간 간격)
+
+
+def is_extra(item_dir):
+    """meta.json에 "extra": true인 항목 = 하루 1편 뉴스 쇼츠와 별도로 하루 1편 더 나가는 추가분(2026-11-02 롱폼→쇼츠 재가공)."""
+    try:
+        with open(os.path.join(item_dir, "meta.json"), "r", encoding="utf-8") as f:
+            return bool(json.load(f).get("extra"))
+    except (OSError, ValueError):
+        return False
+
+
+def extra_slot_open(names):
+    """오늘 11시 이후이고, 오늘 끝낸 추가분이 아직 없을 때만 추가분 1편을 허용한다(작업 스케줄러가 30분마다 돌아서
+    이 제한이 없으면 대기 항목을 한 아침에 연달아 올려 버린다)."""
+    now = datetime.now()
+    if now.hour < EXTRA_FROM_HOUR:
+        return False
+    for n in names:
+        item_dir = os.path.join(QUEUE_DIR, n)
+        done = os.path.join(item_dir, "done.txt")
+        if is_extra(item_dir) and os.path.exists(done):
+            with open(done, "r", encoding="utf-8") as f:
+                if f.read().strip()[:10] == now.date().isoformat():
+                    return False
+    return True
+
+
 def main():
     if not os.path.isdir(QUEUE_DIR):
         log("큐 폴더 없음")
         return
     git_pull()  # 다른 컴퓨터가 먼저 처리/락 건 게 있는지 최신 상태부터 받아옴
-    items = sorted(os.listdir(QUEUE_DIR))
+    names = sorted(os.listdir(QUEUE_DIR))
+    # 일반 항목(매일 밤 클라우드가 넣는 뉴스 쇼츠)을 먼저, '추가분'(롱폼 재가공 등)은 그 뒤에 본다
+    items = [n for n in names if not is_extra(os.path.join(QUEUE_DIR, n))] + [n for n in names if is_extra(os.path.join(QUEUE_DIR, n))]
     processed = 0
     for name in items:
         item_dir = os.path.join(QUEUE_DIR, name)
         if not os.path.isdir(item_dir):
             continue
         if os.path.exists(os.path.join(item_dir, "done.txt")):
+            continue
+        if is_extra(item_dir) and not extra_slot_open(names):
             continue
         try:
             status = process_item(item_dir)

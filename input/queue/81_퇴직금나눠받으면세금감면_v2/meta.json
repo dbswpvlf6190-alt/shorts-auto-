@@ -1,0 +1,104 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 소득세법(연금 수령 시 퇴직소득세 감면), 근로자퇴직급여 보장법, 정부 '퇴직연금 기능 강화 방안'(2026.10.29)",
+  "youtube_title": "퇴직금 한 번에 받으면 세금 더 냅니다 #퇴직금 #퇴직소득세",
+  "youtube_description": "작년 퇴직금을 받은 사람 100명 중 83명이 한 번에(일시금) 받았어요. 그런데 퇴직금을 연금계좌(IRP 등)로 옮겨 연금으로 나눠 받으면, 연금 수령 한도 안에서는 퇴직소득세가 줄어요.\n\n연금을 받은 지 10년 차까지는 퇴직소득세의 70%만(30% 감면), 11년 차부터는 60%만(40% 감면) 내요. 한도를 넘거나 연금 외로 받으면 감면이 없어요.\n\n영상 속 퇴직소득세 2,000만 원은 이해를 돕기 위한 가정 금액입니다.\n\n▶ 전체 정리(롱폼): https://youtu.be/QQI9MNBoyds\n\n출처: 소득세법(연금 수령 시 퇴직소득세 감면), 근로자퇴직급여 보장법, 정부 '퇴직연금 기능 강화 방안'(2026.10.29)\n참고: 미래에셋투자와연금센터·KB 세무 칼럼(연금 수령 시 퇴직소득세 감면)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#퇴직금 #퇴직소득세 #퇴직연금 #IRP #연금수령 #절세 #shorts",
+  "tags": "퇴직금,퇴직소득세,퇴직연금,IRP,연금수령,일시금,절세",
+  "tiktok_caption": "퇴직금, 연금으로 나눠 받으면 퇴직소득세 30~40% 감면돼요 💰 작년엔 100명 중 83명이 한 번에 받았대요. 전체 정리는 롱폼에서! 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 한 번에? 나눠서? #퇴직금 #퇴직소득세 #IRP",
+  "instagram_caption": "퇴직금, 연금으로 나눠 받으면 퇴직소득세 30~40% 감면돼요 💰 작년엔 100명 중 83명이 한 번에 받았대요. 전체 정리는 유튜브 '도장찍기전에' 롱폼에서! 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 한 번에? 나눠서? #퇴직금 #퇴직소득세 #IRP",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "퇴직금, 한 번에 받으세요?",
+      "caption": "{퇴직금},\n한 번에 받으세요?",
+      "image_prompt": "photorealistic sealed kraft paper envelope resting on a wooden table, warm lamp light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "연금으로 나눠 받으면 퇴직소득세가 30퍼센트 줄어요.",
+      "caption": "연금으로 나눠 받으면\n세금 {30% 감면}",
+      "big": "세금 30% 감면",
+      "badge": "연금으로 받을 때"
+    },
+    {
+      "kind": "big",
+      "voice": "그런데 작년엔 백 명 중 여든세 명이 한 번에 받았어요.",
+      "caption": "작년엔 100명 중\n[83명]이 한 번에",
+      "big": "100명 중 83명",
+      "badge": "일시금 수령"
+    },
+    {
+      "kind": "money",
+      "voice": "퇴직소득세가 이천만 원이라고 해볼게요.",
+      "caption": "퇴직소득세\n{2,000만 원}이라면",
+      "amount": 2000,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "연금으로 받으면 천사백만 원만 내요.",
+      "caption": "연금으로 받으면\n{1,400만 원}만",
+      "big": "1,400만 원",
+      "badge": "10년 차까지"
+    },
+    {
+      "kind": "photo",
+      "voice": "육백만 원이 그대로 남는 셈이에요.",
+      "caption": "{600만 원}이\n그대로 남는 셈",
+      "image_prompt": "photorealistic ceramic piggy bank on a bright kitchen counter, soft morning light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 연금 받은 지 11년 차부터는 어떻게 될까요?",
+      "caption": "근데 {11년 차}부터는\n어떻게 될까요?",
+      "image_prompt": "photorealistic quiet park bench under autumn trees, golden afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "감면이 40퍼센트로 더 커져요.",
+      "caption": "감면이\n{40%}로 커져요",
+      "big": "40% 감면",
+      "badge": "11년 차부터",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "단, 연금 수령 한도 안에서 받아야 해요.",
+      "caption": "단, {연금 수령 한도}\n안에서만",
+      "big": "수령 한도 안",
+      "badge": "감면 조건"
+    },
+    {
+      "kind": "big",
+      "voice": "한도를 넘기거나 연금 외로 받으면 감면이 없어요.",
+      "caption": "한도 넘기거나 연금 외 수령\n[감면 없음]",
+      "big": "감면 없음",
+      "badge": "주의"
+    },
+    {
+      "kind": "photo",
+      "voice": "퇴직 앞둔 부모님께 꼭 보내주세요.",
+      "caption": "퇴직 앞둔 부모님께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic cozy living room armchair with a reading lamp at night, warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "개편안 전체 정리는 화면 아래 관련 영상에 있어요.",
+      "caption": "개편안 전체 정리는\n{관련 영상}에서",
+      "big": "관련 영상에서",
+      "badge": "롱폼 전체 정리"
+    },
+    {
+      "kind": "big",
+      "voice": "여러분은 한 번에 받으실 건가요, 나눠 받으실 건가요?",
+      "caption": "여러분은 {한 번에}?\n{나눠서}?",
+      "big": "한 번에? 나눠서?",
+      "badge": "댓글로 알려주세요"
+    }
+  ],
+  "extra": true,
+  "repurposed_from": "longform/04_퇴직연금개편 (QQI9MNBoyds)"
+}

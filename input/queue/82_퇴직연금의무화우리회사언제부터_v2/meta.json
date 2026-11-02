@@ -1,0 +1,122 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 고용노동부·재정경제부·금융위원회·금융감독원 '퇴직연금 기능 강화 방안'(2026.10.29 발표, 법 개정 전)",
+  "youtube_title": "퇴직연금 의무화, 우리 회사는 몇 년부터? #퇴직연금 #퇴직금",
+  "youtube_description": "정부가 10월 29일 퇴직연금 개편안을 발표했어요. 회사가 퇴직금을 회사 밖 금융기관에 맡기는 '사외적립'이 단계적으로 의무화돼요.\n\n100인 이상은 2028년, 10~99인은 2029년, 10인 미만은 2030년부터예요. 시행 이후 일한 기간부터 적용되고(소급 없음), 지키지 않으면 공공 퇴직연금 '푸른씨앗'에 자동 가입되는 방안이 추진돼요.\n\n작년 퇴직금 체불액은 8,229억 원으로 전체 임금체불의 41.1%였어요. 아직 법 개정 전이며, 11월 개정안 마련·연내 국회 통과가 목표예요.\n\n▶ 전체 정리(롱폼): https://youtu.be/QQI9MNBoyds\n\n출처: 고용노동부·재정경제부·금융위원회·금융감독원 '퇴직연금 기능 강화 방안'(2026.10.29 발표, 법 개정 전)\n보도: 경향신문·국민일보·파이낸셜뉴스·뉴스1·세계일보(2026.10.29)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#퇴직연금 #퇴직금 #퇴직연금개편 #사외적립 #푸른씨앗 #노후준비 #shorts",
+  "tags": "퇴직연금,퇴직금,퇴직연금개편,사외적립,퇴직연금의무화,푸른씨앗",
+  "tiktok_caption": "퇴직연금 의무화, 100인 이상 2028년 · 10인 이상 2029년 · 10인 미만 2030년이에요 🏢 전체 정리는 롱폼에서! 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 회사는 몇 년부터인가요? #퇴직연금 #퇴직금 #퇴직연금개편",
+  "instagram_caption": "퇴직연금 의무화, 100인 이상 2028년 · 10인 이상 2029년 · 10인 미만 2030년이에요 🏢 전체 정리는 유튜브 '도장찍기전에' 롱폼에서! 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 회사는 몇 년부터인가요? #퇴직연금 #퇴직금 #퇴직연금개편",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "내 퇴직금, 회사 서랍에?",
+      "caption": "내 {퇴직금},\n회사 서랍에?",
+      "image_prompt": "photorealistic half-open wooden office desk drawer in a quiet office, warm evening light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "2030년까지 모든 회사가 퇴직금을 밖에 맡겨야 해요.",
+      "caption": "{2030년}까지 모든 회사가\n퇴직금을 밖에 맡겨야 해요",
+      "big": "2030년 전 사업장",
+      "badge": "정부 개편안"
+    },
+    {
+      "kind": "timeline",
+      "voice": "백 명 이상은 2028년, 열 명 이상은 2029년부터예요.",
+      "caption": "{100인 이상} 2028년\n{10인 이상} 2029년",
+      "active": [
+        0,
+        1
+      ],
+      "cards": [
+        {
+          "date": "2028년",
+          "who": "100인 이상",
+          "color": "green"
+        },
+        {
+          "date": "2029년",
+          "who": "10~99인",
+          "color": "gold"
+        },
+        {
+          "date": "2030년",
+          "who": "10인 미만",
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "kind": "big",
+      "voice": "열 명 미만 작은 회사는 2030년부터예요.",
+      "caption": "{10인 미만}은\n2030년부터",
+      "big": "10인 미만 2030년",
+      "badge": "가장 늦게"
+    },
+    {
+      "kind": "photo",
+      "voice": "왜 바꿀까요? 못 받은 돈 중 퇴직금이 가장 많았거든요.",
+      "caption": "왜? 못 받은 돈 중\n{퇴직금}이 가장 많았어요",
+      "image_prompt": "photorealistic empty office chair beside a window at dusk, soft blue light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "작년 못 받은 퇴직금만 팔천이백이십구억 원이었어요.",
+      "caption": "작년 못 받은 퇴직금\n{8,229억 원}",
+      "big": "8,229억 원",
+      "badge": "작년 퇴직금 체불"
+    },
+    {
+      "kind": "big",
+      "voice": "전체 임금체불의 41.1퍼센트예요.",
+      "caption": "전체 임금체불의\n[41.1%]",
+      "big": "41.1%",
+      "badge": "임금체불 중"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 지금까지 일한 기간도 바뀔까요?",
+      "caption": "근데 {지금까지} 일한 기간도\n바뀔까요?",
+      "image_prompt": "photorealistic old brass key lying on a stack of plain cardboard boxes, warm side light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "아니요, 시행된 뒤 일한 기간부터만 적용돼요.",
+      "caption": "시행된 뒤 일한 기간부터\n{소급 없음}",
+      "big": "시행 이후부터",
+      "badge": "소급 없음",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "안 지키면 공공 퇴직연금 푸른씨앗에 자동 가입돼요.",
+      "caption": "안 지키면\n{푸른씨앗} 자동 가입",
+      "big": "푸른씨앗 자동 가입",
+      "badge": "미이행 시"
+    },
+    {
+      "kind": "photo",
+      "voice": "회사 다니는 가족께 꼭 보내주세요.",
+      "caption": "회사 다니는 가족께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic modern office building at night with warm lit windows, cinematic city light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "전체 정리는 화면 아래 관련 영상에 있어요.",
+      "caption": "전체 정리는\n{관련 영상}에서",
+      "big": "관련 영상에서",
+      "badge": "롱폼 전체 정리"
+    },
+    {
+      "kind": "big",
+      "voice": "여러분 회사는 몇 년부터인가요?",
+      "caption": "여러분 회사는\n{몇 년부터}인가요?",
+      "big": "2028? 2029? 2030?",
+      "badge": "댓글로 알려주세요"
+    }
+  ],
+  "extra": true,
+  "repurposed_from": "longform/04_퇴직연금개편 (QQI9MNBoyds)"
+}

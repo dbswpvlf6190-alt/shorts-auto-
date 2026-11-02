@@ -1,0 +1,102 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 고용노동부·재정경제부·금융위원회·금융감독원 '퇴직연금 기능 강화 방안'(2026.10.29 발표, 법 개정 전)",
+  "youtube_title": "같은 노후 돈인데 수익률 3배 차이 #퇴직연금 #국민연금",
+  "youtube_description": "작년 퇴직연금 수익률은 6.47%, 같은 해 국민연금은 18.82%였어요. 퇴직연금 적립금은 작년 500조 원을 넘었어요.\n\n정부는 10월 29일 개편안에서 여러 회사 돈을 모아 굴리는 '기금형 퇴직연금'을 2028년 도입 목표로 제시했고, 디폴트옵션 통보를 만기 후에서 만기 전·당일로 앞당기는 방안도 담았어요. 아직 법 개정 전이에요.\n\n▶ 전체 정리(롱폼): https://youtu.be/QQI9MNBoyds\n\n출처: 고용노동부·재정경제부·금융위원회·금융감독원 '퇴직연금 기능 강화 방안'(2026.10.29 발표, 법 개정 전)\n보도: 경향신문·국민일보·파이낸셜뉴스·뉴스1·세계일보(2026.10.29)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#퇴직연금 #국민연금 #퇴직연금수익률 #기금형퇴직연금 #디폴트옵션 #노후준비 #shorts",
+  "tags": "퇴직연금,퇴직연금수익률,국민연금,기금형퇴직연금,디폴트옵션,노후준비",
+  "tiktok_caption": "작년 퇴직연금 6.47% vs 국민연금 18.82% 😳 같은 노후 돈인데 3배 가까이 차이예요. 전체 정리는 롱폼에서! 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 내 퇴직연금 수익률 확인해 보셨나요? #퇴직연금 #국민연금 #노후준비",
+  "instagram_caption": "작년 퇴직연금 6.47% vs 국민연금 18.82% 😳 같은 노후 돈인데 3배 가까이 차이예요. 전체 정리는 유튜브 '도장찍기전에' 롱폼에서! 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 내 퇴직연금 수익률 확인해 보셨나요? #퇴직연금 #국민연금 #노후준비",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "퇴직연금, 수익률 6퍼센트?",
+      "caption": "퇴직연금,\n수익률 {6%}?",
+      "image_prompt": "photorealistic small glass jar with a few coins on a sunny windowsill, soft morning light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "작년 퇴직연금 수익률은 6.47퍼센트였어요.",
+      "caption": "작년 퇴직연금 수익률\n{6.47%}",
+      "big": "6.47%",
+      "badge": "작년 퇴직연금"
+    },
+    {
+      "kind": "big",
+      "voice": "같은 해 국민연금은 18.82퍼센트였어요.",
+      "caption": "같은 해 국민연금\n[18.82%]",
+      "big": "18.82%",
+      "badge": "작년 국민연금"
+    },
+    {
+      "kind": "photo",
+      "voice": "같은 노후 돈인데 세 배 가까이 차이가 났어요.",
+      "caption": "같은 노후 돈인데\n{3배} 가까이 차이",
+      "image_prompt": "photorealistic two potted plants of very different sizes on a wooden shelf, natural daylight, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "쌓인 돈은 작년에 오백조 원을 넘었는데도요.",
+      "caption": "쌓인 돈은\n{500조 원} 돌파",
+      "big": "500조 원",
+      "badge": "작년 적립금"
+    },
+    {
+      "kind": "photo",
+      "voice": "그래서 정부가 굴리는 방식을 바꾸겠대요.",
+      "caption": "정부가 {굴리는 방식}을\n바꾸겠대요",
+      "image_prompt": "photorealistic large brass ship steering wheel in soft studio light, dark background, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "여러 회사 돈을 모아 굴리는 기금형을 2028년에 도입하는 게 목표예요.",
+      "caption": "모아서 굴리는 {기금형}\n2028년 도입 목표",
+      "big": "기금형 2028년",
+      "badge": "도입 목표"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 내 퇴직연금, 그냥 방치돼 있진 않나요?",
+      "caption": "근데 내 퇴직연금,\n{방치}돼 있진 않나요?",
+      "image_prompt": "photorealistic dusty closed wooden box on an attic floor, single beam of light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "앞으로는 상품 만기 전에 미리 알려준대요.",
+      "caption": "앞으로는 만기 {전에}\n미리 알려줘요",
+      "big": "만기 전 알림",
+      "badge": "디폴트옵션 통보",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "아직 법 개정 전이라 연내 국회 통과가 목표예요.",
+      "caption": "아직 {법 개정 전}\n연내 국회 통과 목표",
+      "big": "법 개정 전",
+      "badge": "11월 개정안"
+    },
+    {
+      "kind": "photo",
+      "voice": "퇴직연금 있는 동료께 꼭 보내주세요.",
+      "caption": "퇴직연금 있는 동료께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic two coffee cups on a cafe table by a rainy window, cozy warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "전체 정리는 화면 아래 관련 영상에 있어요.",
+      "caption": "전체 정리는\n{관련 영상}에서",
+      "big": "관련 영상에서",
+      "badge": "롱폼 전체 정리"
+    },
+    {
+      "kind": "big",
+      "voice": "내 퇴직연금 수익률, 확인해 보셨나요?",
+      "caption": "내 퇴직연금 수익률,\n{확인}해 보셨나요?",
+      "big": "내 수익률은?",
+      "badge": "댓글로 알려주세요"
+    }
+  ],
+  "extra": true,
+  "repurposed_from": "longform/04_퇴직연금개편 (QQI9MNBoyds)"
+}

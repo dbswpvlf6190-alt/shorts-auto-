@@ -1,0 +1,103 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 한국주택금융공사 보금자리론 제도 개선(2026.9.28 발표, 2026.10.19 신규 신청분부터 적용)",
+  "youtube_title": "맞벌이 신혼부부, 대출 막히던 기준이 10월 19일 바뀌었어요 #보금자리론 #신혼부부대출",
+  "youtube_description": "보금자리론은 그동안 부부 합산 소득 기준으로 신혼부부 자격을 봤어요. 그런데 10월 19일 신규 신청분부터, 부부 중 한 명의 연소득이 7천만 원 이하면 그 배우자를 단독 차주로 보금자리론을 신청할 수 있게 됐어요.\n\n기존 소득 한도는 자녀가 없으면 8천5백만 원, 자녀 1명이면 9천만 원, 자녀 2명 이상이면 1억 원이었어요. 맞벌이로 합산하면 이 한도를 쉽게 넘어서, 혼인신고를 미루는 부부도 있었어요.\n\n10월 19일 이전에 접수한 건에는 기존 기준이 그대로 적용돼요. 주택 가격 6억 원 이하 등 다른 요건은 그대로입니다. (영상 속 1억 1천만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n출처: 한국주택금융공사 보금자리론 제도 개선(2026.9.28 발표, 2026.10.19 신규 신청분부터 적용)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#보금자리론 #신혼부부대출 #결혼페널티 #내집마련 #정책대출 #부동산 #재테크 #shorts",
+  "tags": "보금자리론,신혼부부대출,결혼페널티,내집마련,정책대출",
+  "tiktok_caption": "맞벌이면 대출 막히던 기준, 10월 19일부터 바뀌었어요 😮 배우자 소득 7천만 원 이하면 혼자 이름으로 신청 가능! 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 부부는 합산 소득 얼마예요? #보금자리론 #신혼부부대출 #결혼페널티",
+  "instagram_caption": "맞벌이면 대출 막히던 기준, 10월 19일부터 바뀌었어요 😮 배우자 소득 7천만 원 이하면 혼자 이름으로 신청 가능! 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 부부는 합산 소득 얼마예요? #보금자리론 #신혼부부대출 #결혼페널티",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "결혼하면 대출 끊긴다고요?",
+      "caption": "결혼하면\n{대출}이 끊긴다고요?",
+      "image_prompt": "photorealistic two gold wedding rings resting on a dark wooden table, soft warm candlelight, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "결론부터 말하면, 배우자 소득이 7천만 원 이하면 혼자 이름으로 신청할 수 있어요.",
+      "caption": "결론\n배우자 소득 {7천만 원} 이하면\n혼자 신청 가능",
+      "big": "7천만 원 이하",
+      "badge": "단독 신청 가능"
+    },
+    {
+      "kind": "photo",
+      "voice": "보금자리론은 그동안 부부 합산 소득 기준으로만 자격을 봤어요.",
+      "caption": "보금자리론은\n{부부 합산 소득}으로 봤어요",
+      "image_prompt": "photorealistic small wooden model house beside a calculator on a desk, warm lamp light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "자녀가 없는 신혼부부는 합산 소득 8천5백만 원이 한도였어요.",
+      "caption": "기존 한도(무자녀)\n{8천5백만 원}",
+      "big": "8천5백만 원",
+      "badge": "기존 소득 한도"
+    },
+    {
+      "kind": "big",
+      "voice": "자녀가 둘 이상이면 1억 원까지가 한도였어요.",
+      "caption": "자녀 2명 이상\n{1억 원}까지",
+      "big": "1억 원",
+      "badge": "기존 한도(2자녀 이상)"
+    },
+    {
+      "kind": "photo",
+      "voice": "맞벌이로 합치면 이 한도를 쉽게 넘었어요.",
+      "caption": "맞벌이면\n이 한도를 [쉽게] 넘었어요",
+      "image_prompt": "photorealistic two coffee cups side by side on a cafe table by a rainy window, soft morning light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "그래서 혼인신고를 일부러 미루는 부부도 있었어요.",
+      "caption": "그래서 {혼인신고}를\n미루기도 했어요",
+      "big": "혼인신고 보류",
+      "badge": "결혼 페널티"
+    },
+    {
+      "kind": "timeline",
+      "voice": "10월 19일 신규 신청부터 이 기준이 완화돼요.",
+      "caption": "{10월 19일}\n신규 신청부터 완화",
+      "active": [1],
+      "cards": [
+        {"date": "10월 18일", "who": "기존 기준 그대로", "color": "red"},
+        {"date": "10월 19일", "who": "완화된 기준 적용", "color": "green"}
+      ]
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 부부 합산 소득이 1억 1천만 원인 신혼부부가 있어요.",
+      "caption": "예를 들어 합산 소득이\n{1억 1천만 원}인 부부",
+      "amount": 1.1,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 한 명 소득만 적으면 이제 어떻게 될까요?",
+      "caption": "근데 한 명만 소득이 적으면?\n[이제는] 어떻게 될까요?",
+      "image_prompt": "photorealistic empty wooden park bench under autumn trees, soft afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "그 배우자 혼자 이름으로 신청하면 돼요.",
+      "caption": "{그 배우자} 혼자\n이름으로 신청하면 돼요",
+      "big": "혼자 이름으로",
+      "badge": "단독 신청",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "신혼부부인 친구에게 꼭 보내주세요.",
+      "caption": "신혼부부인 친구에게\n꼭 {보내}주세요",
+      "image_prompt": "photorealistic two house keys tied with a red ribbon on a wooden table, warm soft light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 부부는 합산하면 소득이 얼마인가요?",
+      "caption": "여러분 부부는\n합산하면 {얼마}인가요?",
+      "image_prompt": "photorealistic city skyline at dusk with warm lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

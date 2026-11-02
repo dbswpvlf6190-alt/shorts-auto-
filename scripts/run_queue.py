@@ -14,6 +14,23 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import notify  # noqa: E402
 
+
+def stay_awake_while_running():
+    """처리하는 동안 노트북이 다시 잠들지 않게 한다(프로세스가 끝나면 자동으로 풀림). 작업 스케줄러가 깨워도 아무도 없으면
+    Windows가 약 14초 만에 다시 재워서, 2026-10-29·30 노트북이 76번을 '처리 중'으로 2시간 얼어 있다가 강제 종료됐다
+    (깨어남 08:01:14 → 다시 절전 08:01:28). ES_CONTINUOUS | ES_SYSTEM_REQUIRED는 무인 기상 후 작업을 끝까지 돌리는 Windows 표준 방법."""
+    if os.name != "nt":
+        return False
+    try:
+        import ctypes
+
+        return bool(ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000001))
+    except Exception:
+        return False
+
+
+stay_awake_while_running()
+
 LOCK_STALE_HOURS = 3  # 이 시간이 지난 락은 이전 실행이 비정상 종료된 것으로 보고 무시
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

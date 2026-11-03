@@ -1,0 +1,104 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 금융위원회 2025.10.15 주택시장 안정화 대책·2026년 가계부채 관리 방안(2026.4.1), 은행권 DSR 40% 기준",
+  "youtube_title": "10억 아파트, 연봉 6천이면 대출은 3억 #주택담보대출 #대출규제",
+  "youtube_description": "연봉 6천만 원 직장인이 서울 10억 원 아파트를 살 때 은행에서 빌릴 수 있는 돈은 약 3억 원이에요. 대출에는 문이 세 개 있기 때문이에요.\n\n① 집값 문(LTV): 서울 같은 규제지역은 집값의 40%까지\n② 상한 문: 시가 15억 원 이하 주택은 최대 6억 원(15~25억 4억, 25억 초과 2억)\n③ 월급 문(DSR 40%): 금리 4%로 계산하면 약 4억 1,900만 원이지만, 스트레스 금리 3%p를 더하면 약 3억 60만 원\n\n6억 원을 다 받으려면 연봉이 약 1억 1,975만 원은 돼야 해요.\n\n영상 속 금액은 연봉 6천만 원·DSR 40%·30년 원리금균등·변동금리 4%(+스트레스 3%p)·다른 대출 없음을 가정한 예시입니다. 실제 한도는 상품·은행·개인 조건에 따라 달라요.\n\n▶ 내 한도 계산법 전체 정리(롱폼): https://youtu.be/d3G13rxt-PY\n\n출처: 금융위원회 2025.10.15 주택시장 안정화 대책·2026년 가계부채 관리 방안(2026.4.1), 은행권 DSR 40% 기준\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#주택담보대출 #대출규제 #DSR #LTV #스트레스DSR #shorts",
+  "tags": "주택담보대출,대출규제,DSR,LTV,스트레스DSR,대출한도",
+  "tiktok_caption": "연봉 6천만 원, 서울 10억 아파트면 대출은 약 3억 원이에요 🏠 대출엔 문이 세 개 있거든요. 내 한도 계산법은 롱폼에서! 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 몇 번째 문에서 막혔나요? #주택담보대출 #대출규제 #DSR #LTV #스트레스DSR",
+  "instagram_caption": "연봉 6천만 원, 서울 10억 아파트면 대출은 약 3억 원이에요 🏠 대출엔 문이 세 개 있거든요. 내 한도 계산법은 유튜브 도장찍기전에 롱폼에서! 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 몇 번째 문에서 막혔나요? #주택담보대출 #대출규제 #DSR #LTV #스트레스DSR",
+  "privacy": "public",
+  "extra": true,
+  "repurposed_from": "longform/05_대출규제 (d3G13rxt-PY) — v5 공개일 예고 쇼츠",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "10억 집, 대출 3억?",
+      "caption": "{10억} 집,\n대출 [3억]?",
+      "image_prompt": "photorealistic modern apartment complex at dusk with warm window lights, cinematic, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "연봉 6천이면 10억 아파트 대출은 약 3억 원이에요.",
+      "caption": "연봉 6천, 10억 아파트\n대출은 {약 3억 원}",
+      "big": "약 3억 원",
+      "badge": "연봉 6천 · 10억 아파트"
+    },
+    {
+      "kind": "photo",
+      "voice": "6억도 4억도 아닌 이유는 대출 문이 세 개라서예요.",
+      "caption": "6억도 4억도 아닌 이유\n대출 {문이 세 개}",
+      "image_prompt": "photorealistic three closed wooden doors side by side in a bright hallway, soft daylight, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "첫째 집값 문, 서울은 집값의 40퍼센트까지예요.",
+      "caption": "첫째 {집값 문}\n서울은 집값의 40%",
+      "big": "LTV 40%",
+      "badge": "집값 문"
+    },
+    {
+      "kind": "big",
+      "voice": "둘째 상한 문, 15억 이하 집은 최대 6억이에요.",
+      "caption": "둘째 {상한 문}\n15억 이하 최대 6억",
+      "big": "최대 6억",
+      "badge": "상한 문"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 왜 3억밖에 안 나올까요?",
+      "caption": "근데 왜\n{3억}밖에 안 나올까요?",
+      "image_prompt": "photorealistic narrow doorway with light coming through a slightly open door, dim corridor, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "셋째 월급 문이 제일 낮아서예요.",
+      "caption": "셋째 {월급 문}이\n제일 낮아요",
+      "big": "월급 문 DSR",
+      "badge": "진짜 벽",
+      "sfx": "ding"
+    },
+    {
+      "kind": "money",
+      "voice": "금리 4퍼센트로 계산하면 약 4억 천구백만 원이에요.",
+      "caption": "금리 4%로 계산하면\n{약 4억 1,900만 원}",
+      "amount": 41900,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "스트레스 금리 3퍼센트포인트를 더하면 약 3억 원으로 줄어요.",
+      "caption": "스트레스 금리 +3%p\n[약 3억 원]으로",
+      "big": "약 3억 원",
+      "badge": "스트레스 금리 +3%p"
+    },
+    {
+      "kind": "big",
+      "voice": "6억을 다 받으려면 연봉이 약 1억 2천만 원은 돼야 해요.",
+      "caption": "6억 다 받으려면\n연봉 {약 1억 2천만 원}",
+      "big": "연봉 약 1억 2천",
+      "badge": "6억 받으려면"
+    },
+    {
+      "kind": "photo",
+      "voice": "집 보러 갈 계획인 분께 꼭 보내주세요.",
+      "caption": "집 보러 갈 분께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic small wooden house model on a desk beside a cup of tea, warm lamp light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "내 한도 계산법은 화면 아래 관련 영상에 있어요.",
+      "caption": "내 한도 계산법은\n{관련 영상}에서",
+      "big": "관련 영상에서",
+      "badge": "롱폼 전체 정리"
+    },
+    {
+      "kind": "big",
+      "voice": "여러분은 몇 번째 문에서 막혔나요?",
+      "caption": "여러분은\n{몇 번째 문}에서 막혔나요?",
+      "big": "집값? 상한? 월급?",
+      "badge": "댓글로 알려주세요"
+    }
+  ]
+}

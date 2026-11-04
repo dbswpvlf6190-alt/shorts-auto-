@@ -1,0 +1,86 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 소득세법 시행령 제155조의3 (상생임대주택 특례)",
+  "youtube_title": "2년 안 살아도 양도세 0원... 근데 올해까지만 #상생임대 #양도세비과세",
+  "youtube_description": "상생임대주택 특례는 임대료를 직전 계약보다 5퍼센트 이내로만 올려 새 임대차계약을 맺으면, 1세대 1주택 양도소득세 비과세의 2년 거주 요건을 채우지 않아도 되는 제도예요.\n\n이 계약은 올해 12월 31일까지 체결하고 임대를 시작해야 하고, 직전 임대차계약이 1년 6개월 이상 유지됐어야 해요. (영상 속 5000만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n올해 안에 상생임대 기간이 끝난 주택은 내년 12월 31일까지 팔아야 거주 요건 면제가 유지되고, 그 이후에 끝나면 종료일로부터 1년 안에, 늦어도 2029년 말까지 팔아야 해요.\n\n출처: 소득세법 시행령 제155조의3 (상생임대주택 특례)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#상생임대 #양도세비과세 #부동산세금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "상생임대,양도세비과세,부동산세금,부동산정책,상생임대주택특례",
+  "tiktok_caption": "2년 안 살아도 양도세 0원 되는 방법 있어요 😮 근데 올해 12월 31일까지만이에요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 상생임대 계약하셨어요? #상생임대 #양도세비과세 #부동산세금",
+  "instagram_caption": "2년 안 살아도 양도세 0원 되는 방법 있어요 😮 근데 올해 12월 31일까지만이에요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 상생임대 계약하셨어요? #상생임대 #양도세비과세 #부동산세금",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "2년 안 살아도 세금 0원?",
+      "caption": "2년 안 살아도\n{세금 0원}?",
+      "image_prompt": "photorealistic modern apartment balcony with potted plants in soft morning light, cozy home exterior, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 상생임대 계약을 하면 2년 거주 안 해도 양도세가 비과세예요.",
+      "caption": "결론\n{상생임대 계약}하면\n2년 거주 면제",
+      "image_prompt": "photorealistic two wooden house keys resting on a light wooden table, warm natural light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "이 특례는 올해 12월 31일까지 계약하고 임대를 시작해야 받을 수 있어요.",
+      "caption": "계약 마감",
+      "big": "~12/31",
+      "badge": "올해 안에"
+    },
+    {
+      "kind": "photo",
+      "voice": "직전 계약보다 임대료를 5퍼센트 이내로만 올려야 해요.",
+      "caption": "임대료는\n{5%} 이내로만",
+      "image_prompt": "photorealistic small stack of coins beside a miniature house model on a wooden desk, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "그리고 그 직전 계약이 1년 6개월 이상 유지됐어야 해요.",
+      "caption": "직전 계약\n{1년 6개월} 이상 유지",
+      "big": "1년6개월+",
+      "badge": "직전 계약 조건"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 양도세가 5000만 원인 집이에요.",
+      "caption": "예를 들어\n양도세가",
+      "amount": 5000,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 이미 상생임대 기간이 끝났다면 집은 언제까지 팔아야 할까요?",
+      "caption": "근데 기간이\n{이미 끝났다면}?",
+      "image_prompt": "photorealistic vintage analog clock on a wooden shelf in a bright living room, soft natural light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "올해 안에 끝났다면 내년 12월 31일까지 팔아야 돼요.",
+      "caption": "집 파는 기한",
+      "big": "내년 12/31",
+      "badge": "거주요건 면제 유지",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "내년 이후에 끝나면 끝난 날로부터 1년 안에 팔면 돼요.",
+      "caption": "그 뒤에 끝나면\n{1년 안}에",
+      "big": "+1년",
+      "badge": "늦어도 2029년"
+    },
+    {
+      "kind": "photo",
+      "voice": "집 파실 계획 있는 분께 꼭 보내주세요.",
+      "caption": "{공유}해주세요",
+      "image_prompt": "photorealistic small model house and a golden key on a marble table, warm soft lighting, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 상생임대 계약하셨어요?",
+      "caption": "여러분은\n{상생임대 계약} 하셨어요?",
+      "image_prompt": "photorealistic city skyline at night with illuminated apartment windows, soft bokeh lights, cinematic wide shot, shallow depth of field, no text"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 기획재정부 2026년 세제개편안(월세 세액공제 확대)",
+  "youtube_title": "월세 사는데 내년부터 54만 원 더 돌려받습니다 #월세세액공제 #연말정산",
+  "youtube_description": "월세 세액공제 한도가 연 1000만 원에서 1200만 원으로 늘어나요. 이 확대된 한도는 2027년 1월 1일부터 내는 월세분부터 적용되고, 대상은 총급여 8000만 원 이하 무주택 근로자예요.\n\n특히 15세에서 34세 청년은 소득과 상관없이 2027년부터 2029년까지 3년간 17퍼센트의 공제율을 적용받아요. 예를 들어 월세 100만 원씩 내는 청년은 세액공제가 150만 원에서 204만 원으로, 일반 근로자는 180만 원으로 늘어날 수 있어요. (영상 속 금액은 이해를 돕기 위한 가정입니다.)\n\n출처: 기획재정부 2026년 세제개편안(월세 세액공제 확대)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#월세세액공제 #연말정산 #세액공제 #부동산세금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "월세세액공제,연말정산,세액공제,부동산세금,부동산정책",
+  "tiktok_caption": "월세 세액공제 한도가 200만원 늘어나요 😲 청년은 소득 상관없이 17% 받아요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 월세에 얼마 내세요? #월세세액공제 #연말정산 #세액공제",
+  "instagram_caption": "월세 세액공제 한도가 200만원 늘어나요 😲 청년은 소득 상관없이 17% 받아요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 월세에 얼마 내세요? #월세세액공제 #연말정산 #세액공제",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "월세 사는데 54만 원 더?",
+      "caption": "월세 사는데\n{54만 원} 더?",
+      "image_prompt": "photorealistic cozy studio apartment window with sheer curtains in warm afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면 월세 세액공제 한도가 200만 원 늘어나요.",
+      "caption": "결론\n월세 세액공제 한도가\n{200만 원} 늘어나요",
+      "image_prompt": "photorealistic stack of coins beside a small potted succulent on a bright windowsill, soft natural light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "지금 1000만 원이던 한도가 1200만 원까지 늘어나요.",
+      "caption": "공제 한도",
+      "big": "1200만 원",
+      "badge": "기존 1000만 원"
+    },
+    {
+      "kind": "big",
+      "voice": "이 한도는 2027년 1월 1일 내는 월세분부터 적용돼요.",
+      "caption": "적용 시작",
+      "big": "2027.1.1",
+      "badge": "월세 지급분부터"
+    },
+    {
+      "kind": "photo",
+      "voice": "대상은 총급여 8000만 원 이하 무주택 근로자예요.",
+      "caption": "대상은\n{총급여 8000만 원} 이하\n무주택 근로자",
+      "image_prompt": "photorealistic small house key resting beside a calculator on a wooden desk, warm desk lamp light, shallow depth of field, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 월세 100만 원 내면 지금은 150만 원을 받아요.",
+      "caption": "예를 들어\n지금은 세액공제가",
+      "amount": 150,
+      "unit": "만 원",
+      "note": "(월세 100만 원 기준, 예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "지금은 소득 따라 공제율이 15퍼센트에서 17퍼센트로 갈려요.",
+      "caption": "지금 공제율\n[15~17%]",
+      "big": "15~17%",
+      "badge": "소득별로 달라요"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 내년부터는 누가 가장 많이 돌려받을까요?",
+      "caption": "근데 {누가}\n가장 많이 받을까요?",
+      "image_prompt": "photorealistic vintage brass alarm clock on a bookshelf in a cozy living room, soft morning light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "15살에서 34살 청년은 소득과 상관없이 17퍼센트를 받아요.",
+      "caption": "{청년(15~34세)}는\n소득 상관없이 [17%]",
+      "big": "17%",
+      "badge": "청년, 소득무관",
+      "sfx": "ding"
+    },
+    {
+      "kind": "money",
+      "voice": "그래서 월세 100만 원 내는 청년은 204만 원을 받아요.",
+      "caption": "청년은\n세액공제가",
+      "amount": 204,
+      "unit": "만 원",
+      "note": "(월세 100만 원 기준, 예시 금액)"
+    },
+    {
+      "kind": "money",
+      "voice": "같은 월세를 내는 일반 근로자는 180만 원을 받아요.",
+      "caption": "일반 근로자는",
+      "amount": 180,
+      "unit": "만 원",
+      "note": "(월세 100만 원 기준, 예시 금액)"
+    },
+    {
+      "kind": "photo",
+      "voice": "월세 사는 가족이나 친구에게 꼭 보내주세요.",
+      "caption": "{월세 사는}\n가족·친구에게 보내주세요",
+      "image_prompt": "photorealistic two small house key chains tied together on a wooden table, warm golden hour light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 지금 월세에 얼마를 내고 있나요?",
+      "caption": "여러분은\n월세에 {얼마}를 내나요?",
+      "image_prompt": "photorealistic city skyline at night with warmly lit apartment windows, soft bokeh lights, cinematic wide shot, shallow depth of field, no text"
+    }
+  ]
+}

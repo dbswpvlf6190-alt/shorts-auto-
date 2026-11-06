@@ -411,6 +411,15 @@ def is_extra(item_dir):
         return False
 
 
+def not_before(item_dir):
+    """meta.json의 "not_before"(YYYY-MM-DD). 그날 전에는 처리하지 않는다(2026-11-06, 06 예고 쇼츠를 공개일에 맞추려고)."""
+    try:
+        with open(os.path.join(item_dir, "meta.json"), "r", encoding="utf-8") as f:
+            return str(json.load(f).get("not_before") or "")
+    except (OSError, ValueError):
+        return ""
+
+
 def extra_slot_open(names):
     """오늘 11시 이후이고, 오늘 끝낸 추가분이 아직 없을 때만 추가분 1편을 허용한다(작업 스케줄러가 30분마다 돌아서
     이 제한이 없으면 대기 항목을 한 아침에 연달아 올려 버린다)."""
@@ -444,6 +453,8 @@ def main():
             continue
         if is_extra(item_dir) and not extra_slot_open(names):
             continue
+        if not_before(item_dir) > datetime.now().date().isoformat():
+            continue  # 롱폼 공개일 예고 쇼츠처럼 날짜를 맞춰야 하는 항목(meta "not_before": "YYYY-MM-DD")
         try:
             status = process_item(item_dir)
         except Exception as e:

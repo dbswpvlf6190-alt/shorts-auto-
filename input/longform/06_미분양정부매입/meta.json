@@ -247,7 +247,7 @@
         },
         {
           "kind": "art",
-          "image_prompt": "a sale price tag being lowered on a miniature house model, close up, symbolic",
+          "image_prompt": "a miniature house model sitting lower on a wooden table than its own shadow suggests, dim warm light, symbolic, no text, no labels",
           "voice": "그래서 이 그물은 떨어지는 사람을 원래 높이까지 받쳐 주는 그물이 아닙니다. 한참 아래에 쳐져 있는 그물이에요."
         }
       ]
@@ -297,7 +297,7 @@
         },
         {
           "kind": "art",
-          "image_prompt": "a rejected stamp hovering over a document on a desk, blurred, no readable text, dramatic light",
+          "image_prompt": "a pile of returned documents tied with string on a dark wooden desk under a single lamp, dramatic light, no text",
           "voice": "탈락은 대부분 서류가 아니라 매입심의에서 나왔습니다. 올해 1차는 83퍼센트가 심의에서 떨어졌어요. 정부가 깐깐하게 고르는 겁니다."
         },
         {
@@ -389,7 +389,7 @@
         },
         {
           "kind": "art",
-          "image_prompt": "a calendar on a wall with the last days of december softly lit, winter, close up, no readable text",
+          "image_prompt": "snow falling outside a dark window at night with a single warm lamp inside, quiet year end mood, no text",
           "voice": "그런데 이 혜택은 올해 12월 31일에 끝납니다. 정부는 2027년 말까지 1년 연장하는 법안을 냈는데, 한 가지가 달라집니다."
         },
         {

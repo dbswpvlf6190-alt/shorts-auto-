@@ -1,0 +1,623 @@
+{
+  "format": "long",
+  "rate": "+30%",
+  "voice_style": "M1",
+  "script_version": "v3 (v5 구조 유지 · 사용자 11/6 '롱폼구조는 변경없이': 첫 문장 숫자 · 답은 숨기고 질문으로 시작(05에서 10초 만에 답을 말해 30초 유지 41%) · 인트로 3장면 · 구독 부탁은 첫 답 뒤 · 기준일 안내는 1장 끝 · 큰 비유 1개(서커스 그물) · 반전(1만 6천 가구 중 계약 1,414) · 지금 이야기(취득세 감면 12/31 종료·정부안 한도) · 통념 깨기 2 · 반대편 3 · 실천 4 · 비유 회수)",
+  "privacy": "private",
+  "fact_check": "2026-11-06 확인: 준공 후 미분양 2026년 9월 말 전국 2만 7,549가구·지방 2만 3,067가구(83.7%), 2025년 12월 말 지방 2만 4,398가구(국토교통부 주택통계, 이투데이 2026.11.4) / LH 지방 준공 후 미분양 매입: 비수도권 준공 후(또는 일정 시점까지 준공 예정) 미분양 아파트, 상한가격 = 감정평가액 기준 감정가의 90% ± 조정률, 매도 희망가격 비율 낮은 순, 연내 5,000가구 목표(3차 공고 포함), 매입 주택은 든든전세주택으로 공급(이투데이 2026.8.18, 4차 공고), 3차 공고 2026.4.10 5,000가구·부분매입·3개월 이내 준공 예정 포함·광주 GGM 노동자 공공임대(파이낸셜뉴스 2026.4.10) / 신청·제외(국토교통부 → 김미애 의원 2026.11.5, 연합뉴스·파이낸셜뉴스): 작년 1차 3,536 신청 80%(2,824) 제외, 2차 6,185 신청 63%(3,925) 제외, 올해 1차 6,953 신청 86.3%(6,003) 제외(매입심의 83% 5,784·서류 3% 219), 합계 1만 6,674 중 1만 2,752(76.5%) 제외, 계약 작년 1차 적격 712 중 92(12.9%)·2차 적격 2,260 중 1,322(58.5%), 올해 1차 계약 미제출 / 수도권 공공택지 매입확약: 2027년 말까지 착공 필지 약 1만 8,000가구 대상, 전용 85㎡ 이하 민간 요청 미분양, 분양가 85~92%(인센티브 최대 3%p: 2027 상반기 착공 +2%p, 500세대 이상 +1%p)(서울경제 2026.10.9) / 개인 취득세 감면(현행 2026년 말 종료): 개인이 사업주체로부터 비수도권 준공 후 미분양 아파트 최초 유상취득, 85㎡ 이하·6억 이하, 취득세 25%(조례 추가 25% → 최대 50%), 3년 내 매각·증여 시 추징 / 정부 지방세특례제한법 개정안(2026.10.16 제출, 행안위 심사 중): 2027.12.31까지 연장, 법정 감면 최대 75만·지자체 포함 150만, 근거 다주택자도 대상·실거주 의무 없음, 6억 주택 600만 원 취득세 300만→150만, 3억 주택 변동 없음 / 의원안: 문진석 2028년 말·6억→7억, 주진우 2029년 말(이투데이 2026.11.4). 든든전세 세부 조건(시세 비율·기간)은 이번 출처에 없어 말하지 않음.",
+  "thumbnail": {
+    "lines": [
+      "집값 떨어지면",
+      "정부가 {사 준다}?"
+    ],
+    "badge": "악성 미분양 2만 7천 가구",
+    "tags": [
+      {
+        "text": "1만 6천 가구 신청",
+        "x": 0.22,
+        "y": 0.12,
+        "color": "navy",
+        "size": 42
+      },
+      {
+        "text": "실제로 산 집은?",
+        "x": 0.78,
+        "y": 0.12,
+        "color": "red",
+        "size": 42
+      }
+    ],
+    "art_prompt": "highly detailed digital painting, a middle-aged korean man in a suit standing at night in front of a brand new apartment complex with all windows dark, a large safety net with big holes stretched below the buildings, cold blue tones with a single red warning light, cinematic, no text"
+  },
+  "thumbnail_b": {
+    "lines": [
+      "정부가 사 준다던 미분양",
+      "실제로 {몇 채} 샀을까?"
+    ],
+    "badge": "2026 LH 미분양 매입",
+    "brightness": 1.2,
+    "tags": [
+      {
+        "text": "다 산다?",
+        "x": 0.2,
+        "y": 0.11,
+        "color": "navy",
+        "size": 52
+      },
+      {
+        "text": "절반?",
+        "x": 0.5,
+        "y": 0.11,
+        "color": "navy",
+        "size": 52
+      },
+      {
+        "text": "10채 중 1채?",
+        "x": 0.8,
+        "y": 0.11,
+        "color": "navy",
+        "size": 52
+      }
+    ],
+    "art_prompt": "bright warm highly detailed storybook digital painting, a curious korean couple in their fifties standing in front of a shiny brand new apartment complex on a sunny day, the man scratching his head and the woman pointing at the empty windows, big blue sky, vivid yellow and sky blue colors, cheerful, rich detail, no text"
+  },
+  "chapters": [
+    {
+      "title": "인트로",
+      "tag": "정부가 사 준다?",
+      "art_title": "정부가 [사 준다]?",
+      "art_en": "Will the Government Buy It",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a brand new apartment complex at night in a provincial korean city with almost every window dark, empty parking lot, eerie and quiet, cinematic",
+          "voice": "작년부터 올해까지, 건설사들이 다 지어 놓고도 안 팔린 집을 정부에 사 달라고 내밀었습니다. 1만 6천 가구가 넘습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a hand pushing a stack of house keys across a government office desk toward a clerk, close up, cool office light",
+          "voice": "정부는 이 가운데 몇 채나 샀을까요? 절반? 3분의 1? 실제 숫자는 많은 분들의 생각과 꽤 다릅니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older korean couple watching tv news at night in their living room with worried faces, tv screen glowing blurred, realistic",
+          "voice": "집값이 떨어지면 결국 정부가 사 준다는 말, 한 번쯤 들어 보셨을 거예요. 이 말이 어디까지 사실인지, 내 집과는 무슨 상관이 있는지 따라가 보겠습니다."
+        }
+      ]
+    },
+    {
+      "title": "정부의 그물",
+      "tag": "악성 미분양 2만 7천 가구",
+      "source": "출처: 국토교통부 주택통계(2026년 9월 말, 이투데이 2026.11.4 보도)",
+      "art_title": "정부의 [그물]",
+      "art_en": "The Safety Net",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a circus trapeze artist in mid air high above a safety net in a dim big top tent, spotlight, dramatic",
+          "voice": "서커스 공중그네를 떠올려 보세요. 떨어져도 아래에 그물이 있으니까 안심하고 뛰죠. 많은 분들이 집값에도 이런 그물이 있다고 생각합니다."
+        },
+        {
+          "kind": "number",
+          "heading": "준공 후 미분양 (악성 미분양)",
+          "amount": 27549,
+          "unit": "가구",
+          "label": "다 지었는데도 안 팔린 집 · 2026년 9월 말 전국",
+          "note": "이 중 지방 2만 3,067가구 (83.7%)",
+          "color": "red",
+          "voice": "지금 이 그물이 가장 필요한 곳은 다 지어 놓고도 안 팔린 집, 이른바 악성 미분양입니다. 9월 말 전국에 2만 7천5백49가구가 있고, 그중 84퍼센트가 지방에 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a quiet provincial town main street at dusk with closed shops and a half built building in the background, melancholy",
+          "voice": "줄어들고는 있지만 아주 느립니다. 작년 12월 말 지방에 2만 4천4백 가구였는데, 9개월이 지나도 5.5퍼센트밖에 줄지 않았어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "construction workers sitting idle near a stopped crane at a building site, overcast sky, realistic",
+          "voice": "이게 집을 사지 않을 분에게도 상관이 있는 이유가 있습니다. 미분양이 쌓이면 건설사가 새 공사를 멈추고, 그 지역 일자리와 상가가 함께 흔들리거든요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long row of unlit new apartment buildings with construction fences still around them, overcast sky, desolate",
+          "voice": "건설사 입장에선 집을 다 지었는데 돈이 안 들어오니 버티기 어렵습니다. 그래서 정부가 실제로 그물을 쳤어요. LH가 이런 집을 사들이는 제도입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a safety net seen from below with a few large holes in it, dramatic lighting, symbolic",
+          "voice": "그런데 이 그물에는 조건이 세 개 붙어 있습니다. 누구의 집을 받아 주는지, 얼마에 받아 주는지, 그리고 몇 채나 받아 주는지. 이게 오늘의 첫 번째 답입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy home office desk with a laptop showing a blurred chart, a cup of coffee, morning light",
+          "voice": "이 세 가지를 알면, 정부가 사 준다는 말이 내 집에 해당하는지 바로 보입니다. 도움이 될 것 같다면 구독 한 번 눌러 두세요."
+        },
+        {
+          "kind": "quote",
+          "heading": "오늘 영상의 기준",
+          "text": "LH 지방 준공 후 미분양 매입 · 수도권 공공택지 매입확약\n{개인 구매자 취득세 감면 정부 개정안 (국회 심사 중)}\n[2026년 11월 초 기준]",
+          "cite": "국토교통부 · LH 발표 · 국회 국토교통위 김미애 의원실 자료(2026.11.5) · 언론 보도",
+          "voice": "오늘 숫자는 11월 초까지 나온 정부 발표와 국회 자료 기준입니다."
+        }
+      ]
+    },
+    {
+      "title": "누구의 집을 받아 주나",
+      "tag": "건설사의 새 아파트만",
+      "source": "출처: LH 지방 준공 후 미분양 매입 공고(3차 2026.4 · 4차 2026.8) · LH 수도권 매입확약(2026.10.9)",
+      "art_title": "누구의 [집을]?",
+      "art_en": "Whose Home",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a construction company office with blueprints and a model of an apartment complex on the table, businessman in hard hat, warm light",
+          "voice": "첫 번째 조건, 누구의 집이냐. 이 그물이 받아 주는 집은 건설사가 새로 지었는데 안 팔린 아파트입니다. 이미 누군가 살고 있는 집이 아니에요."
+        },
+        {
+          "kind": "compare",
+          "heading": "LH가 사들이는 집 (2026년)",
+          "left": {
+            "title": "지방",
+            "lines": [
+              "준공 후 미분양 아파트",
+              "{수도권 제외} 전 지역",
+              "연내 5,000가구 목표"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "수도권",
+            "lines": [
+              "LH 공공택지에 짓는 민간 아파트",
+              "전용 {85㎡ 이하} 미분양",
+              "약 1만 8천 가구 대상"
+            ],
+            "color": "navy"
+          },
+          "voice": "지방에서는 다 지었는데 안 팔린 아파트를, 올해 5천 가구 목표로 사들입니다. 수도권은 조금 다릅니다. LH 땅에 민간이 짓는 아파트 중 전용 85제곱미터 이하가 안 팔리면 사 주겠다고 미리 약속하는 방식이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an ordinary older korean man standing in front of his old apartment building looking at it thoughtfully, afternoon light",
+          "voice": "그러니까 내가 살고 있는 집, 이미 누가 한 번 산 집은 이 그물과 관계가 없습니다. 집값이 떨어진다고 정부가 내 집을 사 주는 제도는 아닌 거죠."
+        }
+      ]
+    },
+    {
+      "title": "얼마에 받아 주나",
+      "tag": "감정가 90% 이내",
+      "source": "출처: LH 매입 공고(이투데이 2026.8.18 · 파이낸셜뉴스 2026.11.5) · 서울경제(2026.10.9)",
+      "art_title": "얼마에 [받아 주나]",
+      "art_en": "At What Price",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an appraiser measuring an empty new apartment living room with a laser meter and clipboard, bright window light",
+          "voice": "두 번째 조건, 얼마에 사느냐. 여기가 중요합니다. 정부는 시세대로 사 주지 않아요."
+        },
+        {
+          "kind": "number",
+          "heading": "LH 지방 미분양 매입 상한가격",
+          "amount": 90,
+          "unit": "%",
+          "label": "감정평가액의 90% ± 조정률 이내",
+          "note": "매도 희망가격이 낮은 집부터 차례로 매입",
+          "color": "red",
+          "voice": "지방 미분양은 감정가의 90퍼센트 안팎에서 상한을 정합니다. 그리고 건설사가 써 낸 희망 가격이 낮은 집부터 차례로 삽니다. 싸게 내놓을수록 먼저 팔리는 구조예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an auction paddle and a gavel on a wooden table with house keys, dramatic side light",
+          "voice": "말하자면 일종의 역경매입니다. 정부가 높은 값에 사서 가격을 받쳐 주는 게 아니라, 깎인 값에 사들이는 거예요."
+        },
+        {
+          "kind": "compare",
+          "heading": "감정가 4억 원 지방 아파트 (예시)",
+          "left": {
+            "title": "감정가",
+            "lines": [
+              "{4억 원}"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "LH 매입 상한 (90% 기준)",
+            "lines": [
+              "약 [3억 6천만 원]",
+              "조정률에 따라 달라짐"
+            ],
+            "color": "red"
+          },
+          "voice": "예를 들어 감정가 4억 원짜리 지방 아파트라면, 매입 상한은 90퍼센트 기준으로 약 3억 6천만 원입니다. 조정률에 따라 조금씩 달라지지만, 감정가보다 높게 사는 일은 없어요."
+        },
+        {
+          "kind": "number",
+          "heading": "수도권 공공택지 미분양 매입확약 가격",
+          "amount": 92,
+          "unit": "%",
+          "label": "분양가의 85~92% (인센티브 최대 3%p 포함)",
+          "note": "2027년 상반기 착공 +2%p · 500세대 이상 +1%p",
+          "color": "navy",
+          "voice": "수도권 매입확약도 마찬가지입니다. 분양가의 85에서 92퍼센트 사이에서 삽니다. 분양가보다 최소 8퍼센트는 싸게 사는 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a new apartment sales office with a large model of the complex under spotlights, empty chairs, evening",
+          "voice": "분양가 5억 원짜리라면 4억 2천5백만 원에서 4억 6천만 원 사이입니다. 2027년 상반기 안에 공사를 시작하거나 500세대가 넘는 큰 단지면 조금 더 쳐 주는 방식이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a sale price tag being lowered on a miniature house model, close up, symbolic",
+          "voice": "그래서 이 그물은 떨어지는 사람을 원래 높이까지 받쳐 주는 그물이 아닙니다. 한참 아래에 쳐져 있는 그물이에요."
+        }
+      ]
+    },
+    {
+      "title": "몇 채나 받아 줬나",
+      "tag": "올해 1차 86% 탈락",
+      "source": "출처: 국토교통부 제출 자료(국민의힘 김미애 의원, 2026.11.5 · 연합뉴스)",
+      "art_title": "몇 채나 [받아 줬나]",
+      "art_en": "How Many",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "stacks of application folders piled high on a government office desk, a single desk lamp, late night",
+          "voice": "세 번째 조건, 몇 채나 사 주느냐. 처음에 드린 질문의 답이 여기 있습니다."
+        },
+        {
+          "kind": "checklist",
+          "heading": "LH 지방 미분양 매입 신청 → 제외",
+          "items": [
+            {
+              "text": "작년 1차: 3,536가구 신청 → [80%] 제외"
+            },
+            {
+              "text": "작년 2차: 6,185가구 신청 → [63%] 제외"
+            },
+            {
+              "text": "올해 1차: 6,953가구 신청 → [86%] 제외",
+              "mark": "x",
+              "color": "red"
+            },
+            {
+              "text": "합계 1만 6,674가구 중 {1만 2,752가구} 제외 (76.5%)"
+            }
+          ],
+          "voice": "작년 1차에 3천5백 가구가 신청해서 80퍼센트가 빠졌고, 2차엔 6천 가구가 신청해서 63퍼센트가 빠졌습니다. 그리고 올해 1차엔 7천 가구 가까이 신청했는데 86퍼센트가 탈락했어요. 합치면 1만 6천6백 가구 가운데 1만 2천7백 가구가 빠졌습니다."
+        },
+        {
+          "kind": "number",
+          "heading": "실제 계약까지 간 집 (확인된 것)",
+          "amount": 1414,
+          "unit": "가구",
+          "label": "작년 1차 92가구 + 2차 1,322가구",
+          "note": "올해 1차 계약 물량은 아직 제출 안 됨",
+          "color": "red",
+          "voice": "그럼 실제로 계약까지 간 집은 몇 채일까요? 확인된 것만 작년 두 번을 합쳐 1천4백14가구입니다. 1만 6천 가구를 내밀었는데, 계약은 열 채 중 한 채도 안 되는 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a rejected stamp hovering over a document on a desk, blurred, no readable text, dramatic light",
+          "voice": "탈락은 대부분 서류가 아니라 매입심의에서 나왔습니다. 올해 1차는 83퍼센트가 심의에서 떨어졌어요. 정부가 깐깐하게 고르는 겁니다."
+        },
+        {
+          "kind": "timeline",
+          "heading": "단계별 탈락 비율 변화",
+          "points": [
+            {
+              "date": "작년 1차",
+              "label": "서류 12%\n심의 67%",
+              "color": "orange"
+            },
+            {
+              "date": "작년 2차",
+              "label": "서류 5%\n심의 58%",
+              "color": "orange"
+            },
+            {
+              "date": "올해 1차",
+              "label": "서류 3%\n심의 83%",
+              "color": "red",
+              "active": true
+            }
+          ],
+          "voice": "흐름을 보면 더 분명합니다. 서류에서 떨어지는 비율은 12, 5, 3퍼센트로 줄었는데, 심의에서 떨어지는 비율은 67, 58, 83퍼센트로 오히려 늘었어요. 신청은 쉬워졌는데 문턱은 더 높아진 셈입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older woman looking out of a window at an empty apartment complex across the street, dusk, contemplative",
+          "voice": "정리하면, 그물은 있지만 건설사의 새 집만, 깎인 값으로, 그것도 일부만 받아 줍니다. 그래서 집값이 떨어지면 정부가 사 준다는 말은 절반도 맞지 않아요."
+        }
+      ]
+    },
+    {
+      "title": "산 집은 어디로 가나",
+      "tag": "든든전세주택",
+      "source": "출처: LH 4차 매입공고(이투데이 2026.8.18) · 국토교통부·LH 3차 매입공고(파이낸셜뉴스 2026.4.10)",
+      "art_title": "산 집은 [어디로]",
+      "art_en": "Where the Homes Go",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a young korean couple carrying moving boxes into a bright new apartment, happy, sunlight",
+          "voice": "그럼 정부가 산 집은 어떻게 될까요? 여기엔 우리 가족에게 쓸모 있는 소식이 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a modern apartment entrance with a family checking a rental notice on a phone, bright daytime, screen blurred",
+          "voice": "LH는 사들인 미분양 아파트를 든든전세주택으로 공급하겠다고 했습니다. 무주택 실수요자에게 전세로 내주는 집이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "factory workers in uniform walking toward new apartment buildings near an industrial complex at sunrise, hopeful",
+          "voice": "광주에서는 근처 공장 노동자들에게 공공임대로 공급하는 방안도 추진하고 있어요. 집이 없는 자녀분이 지방에서 일한다면, 이런 공고를 눈여겨볼 만합니다."
+        }
+      ]
+    },
+    {
+      "title": "내가 사면 받는 혜택",
+      "tag": "취득세 감면, 올해 말 종료",
+      "source": "출처: 지방세특례제한법 개정안(정부 2026.10.16 제출 · 이투데이 2026.11.4)",
+      "art_title": "내가 사면 [혜택]?",
+      "art_en": "If You Buy One",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged korean couple touring a bright empty model apartment with a sales agent, hopeful",
+          "voice": "그렇다면 정부가 개인에게 주는 그물은 없을까요? 있습니다. 다만 사 주는 게 아니라, 내가 사면 세금을 깎아 주는 방식이에요."
+        },
+        {
+          "kind": "checklist",
+          "heading": "지방 준공 후 미분양 취득세 감면 (현행, 2026년 말까지)",
+          "items": [
+            {
+              "text": "비수도권 준공 후 미분양 아파트를 {건설사에서 처음} 산 개인"
+            },
+            {
+              "text": "전용 {85㎡ 이하} · 취득가액 {6억 원 이하}"
+            },
+            {
+              "text": "취득세 {25%} 감면 (지자체 조례로 최대 50%)"
+            },
+            {
+              "text": "3년 안에 팔거나 증여하면 [감면 세금 추징]",
+              "mark": "x",
+              "color": "red"
+            }
+          ],
+          "voice": "지방의 준공 후 미분양 아파트를 건설사에서 처음 사는 개인은, 85제곱미터 이하에 6억 원 이하라면 취득세를 25퍼센트 깎아 줍니다. 지자체가 더 깎아 주면 최대 50퍼센트까지요. 대신 3년 안에 팔거나 증여하면 깎아 준 세금을 다시 걷어 갑니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calendar on a wall with the last days of december softly lit, winter, close up, no readable text",
+          "voice": "그런데 이 혜택은 올해 12월 31일에 끝납니다. 정부는 2027년 말까지 1년 연장하는 법안을 냈는데, 한 가지가 달라집니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "6억 원 아파트 · 취득세 600만 원 (예시)",
+          "left": {
+            "title": "지금 (2026년 말까지)",
+            "lines": [
+              "최대 {300만 원} 감면"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "정부안 (2027년)",
+            "lines": [
+              "최대 [150만 원] 감면",
+              "법정 75만 원 + 지자체 75만 원"
+            ],
+            "color": "red"
+          },
+          "voice": "감면 금액에 한도가 생깁니다. 6억 원 아파트라면 취득세가 600만 원인데, 지금은 최대 300만 원까지 깎아 주지만 정부안대로면 150만 원으로 줄어요. 3억 원 아파트는 원래 감면액이 150만 원이라 달라지지 않습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged woman doing calculations on a notepad at a kitchen table next to a calculator, evening lamp",
+          "voice": "계산해 보면 6억 원 아파트를 사는 분은 올해 안에 사면 최대 150만 원을 더 아끼는 셈입니다. 그렇다고 150만 원 때문에 서둘러 집을 사는 건 순서가 뒤바뀐 거예요. 살 집이 맞는지가 먼저입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "the national assembly building in seoul at dusk with lights on, wide shot, no readable text",
+          "voice": "다만 아직 국회 심사 중입니다. 국회에는 2028년이나 2029년 말까지 늘리고 가격 기준도 7억으로 올리자는 의원안도 함께 올라와 있어서, 연말에 결과를 꼭 확인하셔야 해요."
+        }
+      ]
+    },
+    {
+      "title": "미분양에 대한 흔한 착각",
+      "tag": "정부가 내 집도 사 준다?",
+      "source": "출처: 위 제도 공고 · 지방세특례제한법",
+      "art_title": "흔한 [착각]",
+      "art_en": "Common Myths",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a man reading a newspaper headline on a park bench with a hopeful expression, autumn, no readable text",
+          "voice": "흔한 착각 두 가지를 짚고 가겠습니다. 첫 번째, 집값이 많이 떨어지면 정부가 내 집도 사 줄 것이다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a lone house standing in a field under a grey sky with no net beneath, symbolic, wide shot",
+          "voice": "오늘 본 것처럼 정부 매입은 건설사의 새 집, 그것도 깎인 값에 일부만입니다. 정부가 사 줄 거라는 기대로 버티는 건 그물이 없는 곳에서 뛰는 것과 같아요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a couple signing papers at a sales office table with a smiling agent, the man hesitating with pen in hand",
+          "voice": "두 번째, 미분양 아파트를 사면 무조건 세금 혜택이 있다. 아닙니다. 지방이어야 하고, 건설사에서 처음 사야 하고, 85제곱미터와 6억 원 기준을 넘지 않아야 해요. 이미 누가 샀다가 되파는 집이면 해당되지 않습니다."
+        }
+      ]
+    },
+    {
+      "title": "반대편 이야기",
+      "tag": "좋은 얘기만 하지 않겠습니다",
+      "source": "출처: 김미애 의원(2026.11.5) · 정부 개정안 근거(이투데이 2026.11.4) · 언론 보도",
+      "art_title": "반대편 [이야기]",
+      "art_en": "The Other Side",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a scale balancing a stack of tax coins against a miniature construction crane, dark room, dramatic light",
+          "voice": "반대편 이야기도 해 보겠습니다. 첫째, 세금으로 건설사를 구해 주는 거냐는 비판이 있습니다. 반대로 지방 건설 현장이 멈추면 그 지역 일자리가 함께 사라진다는 반론도 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an empty construction site with stacked materials covered by tarps, rain, cold tones",
+          "voice": "실제로 지방에서는 짓다 만 현장과 불 꺼진 새 아파트가 함께 늘고 있습니다. 그래서 정부는 사들인 집을 전세로 돌려 실수요자에게 쓰겠다는 거고요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a frustrated businessman in a hard hat holding rejected documents outside a government building, overcast",
+          "voice": "둘째, 그물이 있다고 해 놓고 대부분 탈락시키면 무슨 소용이냐는 지적입니다. 국회에서는 탈락 원인을 밝히고 더 실효성 있는 대책을 내라는 요구가 나왔어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "multiple house keys on different keyrings spread on a table, one person's hand reaching for them, symbolic",
+          "voice": "셋째, 정부가 개인 감면을 줄이려는 이유도 있습니다. 집이 여러 채인 사람도 받을 수 있고, 실제로 살아야 한다는 조건도 없기 때문이에요. 혜택이 꼭 필요한 사람에게만 가야 한다는 거죠."
+        }
+      ]
+    },
+    {
+      "title": "지금 해 둘 4가지",
+      "tag": "체크리스트",
+      "art_title": "지금 해 둘 [4가지]",
+      "art_en": "Four Things to Do Now",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a man using a smartphone at a cafe table, focused, natural light, screen blurred",
+          "voice": "그럼 지금 무엇을 해 두면 좋을까요? 네 가지입니다."
+        },
+        {
+          "kind": "checklist",
+          "heading": "지금 해 둘 4가지",
+          "items": [
+            {
+              "text": "정부가 사 줄 거라는 기대로 [버티지 않기]",
+              "mark": "x",
+              "color": "red"
+            },
+            {
+              "text": "지방 미분양 살 계획이면 {12월 31일} 전 조건 확인"
+            },
+            {
+              "text": "연말 국회 결과로 {2027년 감면 한도} 확인"
+            },
+            {
+              "text": "무주택 가족은 LH {든든전세} 공고 살펴보기"
+            }
+          ],
+          "voice": "첫째, 정부가 사 줄 거라는 기대로 버티지 마세요. 둘째, 지방 미분양을 살 계획이라면 12월 31일 전에 조건을 확인하세요. 셋째, 연말 국회 결과로 내년 감면 한도를 확인하세요. 넷째, 집이 없는 가족이 있다면 LH 든든전세 공고를 살펴보세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person browsing a housing notice website on a laptop at home, screen blurred, warm evening light",
+          "voice": "LH 청약플러스에서 든든전세나 공공임대 공고를 확인할 수 있습니다. 지역별로 올라오니 알림을 설정해 두시면 편해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a family at a kitchen table looking at a laptop together, smiling, bright warm morning light",
+          "voice": "특히 넷째는 놓치기 쉽습니다. 정부가 산 미분양은 결국 누군가의 전셋집이 되니까요."
+        }
+      ]
+    },
+    {
+      "title": "마무리",
+      "tag": "그물은 어디에 있나",
+      "art_title": "그물은 [어디에]",
+      "art_en": "Where the Net Is",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a trapeze artist landing safely in a net far below, the net placed low near the ground, spotlight, symbolic",
+          "voice": "처음에 말씀드린 서커스 그물 기억나시죠? 정부의 그물은 분명히 있습니다. 하지만 건설사의 새 집만, 한참 아래에서, 일부만 받아 줍니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a couple walking on a steady path toward their home at sunset holding hands, seen from behind, hopeful",
+          "voice": "그래서 내 집을 지키는 그물은 결국 내가 미리 쳐 두는 것입니다. 무리하지 않는 대출, 미리 확인하는 조건, 그리고 제때 챙기는 혜택이요.",
+          "title": "정부 그물보다 {내 그물}이 먼저",
+          "en": "Build Your Own Net First"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy living room at night with a warm lamp and a cup of tea on the table, quiet closing shot",
+          "voice": "오늘 영상이 도움이 됐다면 좋아요 한번 눌러 주세요. 그리고 여러분 동네에도 불 꺼진 새 아파트가 있나요? 어느 지역인지 댓글로 알려 주세요."
+        },
+        {
+          "kind": "title",
+          "title": "다음 영상\n{매주 화·일 저녁 6시}",
+          "sub": "구독하고 놓치지 마세요 · 도장찍기전에",
+          "voice": "도장찍기전에는 매주 화요일과 일요일 저녁 6시에 새 영상으로 찾아옵니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a red traditional korean seal stamp resting on a wooden desk beside a closed contract folder, warm lamp light, shallow depth of field, no text",
+          "voice": "도장은 천천히, 팩트는 먼저. 도장찍기전에였습니다."
+        }
+      ]
+    }
+  ],
+  "upload": {
+    "title": "집값 떨어지면 정부가 사 준다? 1만 6천 가구 중 정부가 실제로 산 집은 (악성 미분양 LH 매입의 진실)",
+    "hook": "건설사들이 다 지어 놓고도 안 팔린 집을 정부에 사 달라고 내민 게 1만 6천 가구가 넘습니다.\n정부는 이 중 몇 채나 샀을까요?\n\n'집값이 떨어지면 정부가 사 준다'는 말이 어디까지 사실인지, 내 집과는 무슨 상관인지, 그리고 올해 12월 31일에 끝나는 미분양 취득세 감면까지 정리했습니다.",
+    "covers": [
+      "건설사가 내민 1만 6천 가구, 정부가 실제로 산 집은 몇 채일까",
+      "악성 미분양 2만 7천 가구 — 84%가 지방에 있다",
+      "정부의 그물에 붙은 세 가지 조건: 누구의 집을, 얼마에, 몇 채나",
+      "정부는 시세대로 사 주지 않는다 — 감정가 90%의 역경매",
+      "올해 1차 86% 탈락 — 심사에서 떨어진 이유",
+      "정부가 산 집은 누군가의 전셋집이 된다 — 든든전세",
+      "지방 미분양 취득세 감면, 12월 31일에 끝난다",
+      "6억 아파트 감면 300만 원 → 150만 원? 정부 개정안",
+      "'정부가 내 집도 사 준다' — 가장 위험한 착각",
+      "지금 해 둘 4가지"
+    ],
+    "as_of": "2026년 11월 초",
+    "sources": [
+      "국토교통부 주택통계(2026년 9월 말 준공 후 미분양) · 이투데이(2026.11.4)",
+      "국토교통부 제출 자료(국회 국토교통위원회 김미애 의원, 2026.11.5) · 연합뉴스·파이낸셜뉴스 보도",
+      "LH 지방 준공 후 미분양 매입 3차(2026.4.10)·4차(2026.8.18) 공고 · LH 수도권 공공택지 매입확약(2026.10.9)",
+      "지방세특례제한법 일부개정법률안(정부, 2026.10.16 제출 · 국회 심사 중)",
+      "계산 예시는 취득가액 6억 원·취득세 600만 원을 가정한 금액"
+    ],
+    "comment_question": "여러분 동네에도 불 꺼진 새 아파트가 있나요? 어느 지역인지 댓글로 알려 주세요.",
+    "hashtags": [
+      "#미분양",
+      "#악성미분양",
+      "#준공후미분양",
+      "#LH",
+      "#미분양매입",
+      "#든든전세",
+      "#취득세감면",
+      "#지방미분양",
+      "#부동산정책",
+      "#집값",
+      "#부동산",
+      "#매입확약",
+      "#지방부동산",
+      "#부동산세금",
+      "#내집마련"
+    ],
+    "tags": [
+      "미분양",
+      "악성 미분양",
+      "준공 후 미분양",
+      "LH 미분양 매입",
+      "미분양 매입",
+      "든든전세주택",
+      "미분양 취득세 감면",
+      "지방세특례제한법",
+      "지방 미분양",
+      "매입확약",
+      "집값 하락",
+      "정부 매입",
+      "부동산 정책",
+      "2027 취득세 감면",
+      "부동산 세금",
+      "도장찍기전에"
+    ],
+    "publish_slot": "18:00 KST",
+    "next": "매주 화·일 저녁 6시 새 영상"
+  }
+}

@@ -1,0 +1,948 @@
+{
+  "format": "long",
+  "rate": "+30%",
+  "voice_style": "M1",
+  "script_version": "v3 (v5 구조 + 11/6 길이 18~22분: 첫 문장 돈 · 답은 질문으로 숨김 · 인트로 3장면 · 구독 부탁은 첫 답 뒤 · 기준일은 1장 끝 · 큰 비유 1개(떡 한 판) · 반전(10년 뒤 빈곤율 역전) · 지금 이야기(예산·국회) · 통념 깨기 3 · 반대편 3 · 실천 4 · 비유 회수)",
+  "privacy": "private",
+  "fact_check": "2026-11-07 확인(서브 조사): 2026 기준연금액 단독 349,700원(2026.1.21 시행 고시, 기초연금 누리집 2026.1.23), 부부 각 20% 감액, 선정기준액 단독 247만·부부 395.2만(복지부 2026.1.1, 기준중위소득 96.3%), 수급자 2025년 말 706.6만 명·24.9조 원(복지부→김선민 의원실, SBS Biz·뉴스1 2026.9) / 국민연금 연계감액: 국민연금 월 524,550원(기준연금액 150%, 부양가족연금 제외) 이하 전액, 초과 시 산식 감액, 최저 기준연금액 10%(34,970원), 소득역전방지 감액(누리집) / 정부안(2027 예산안, 2026.9.1 국무회의, 국회 미통과): 하위 30%(348만) 38만 원(+3만), 30~45%(174만) 35.9만, 45~70%(290만) 35만 동결 — 물가 반영 대비 월 9천·연 10.8만 원 적음(서울신문), 2027.4 시행·직역연금 하위45%는 7월, 장관 '하위45% 1~3월 인상분 4월 소급'(경기일보 10.19), 하위45% 부부(234만) 감액 20→10%, 하위30% 부부 56만→68.4만·30~45% 부부 64.6만, 기존 수급자 탈락·감액 없음(이데일리 9.1), 예산 25.7조(올해 23.1조, +11%), 차등 4,650억 투입·동결 1,700억 절감, 줬다 뺏는 문제 제외, 국회 연금특위 합의 없이 종료 전망(이데일리 11.4) / 비판: 주수정 중앙대 연구원(연금행동 토론회) 빈곤율 2024 현행 35.87→개편 35.41, 2035 현행 38.52 vs 개편 38.89, 2035 수급자 37.1% 덜 받음, 45~70% 실질가치 10년 19.6% 하락(서울신문 11.6), 보사연 김태완 −0.30%p(이데일리 9.22), 한겨레 11.6 70세 수급자 국민연금 33.8만·기초 279,760원 감액, 남찬섭 교수 / 거주 5년: 2026.10.1 국회 통과(19세 이후 국내 5년 미만 제외, 해외 소득·재산 신고), 공포 후 6개월, 보도상 2027.4.21 이후 신청자부터·소급 없음(뉴스퀘스트 11.5, 공포일 원문 미확인), 복수국적 수급자 2021 3,621→2025 8,176(이데일리 11.5) / 신청: 행정복지센터·국민연금공단·복지로, 생일 달 한 달 전부터, 129·1355. 30%/45% 구간의 소득 기준액은 미발표. 지데일리 '치명적 허점' 기사는 확인 못 해 쓰지 않음.",
+  "thumbnail": {
+    "lines": [
+      "내년 4월 기초연금",
+      "{세 가지} 금액으로 갈립니다"
+    ],
+    "badge": "2027 기초연금 개편안",
+    "tags": [
+      {
+        "text": "38만 원?",
+        "x": 0.2,
+        "y": 0.12,
+        "color": "green",
+        "size": 46
+      },
+      {
+        "text": "35만 원?",
+        "x": 0.8,
+        "y": 0.12,
+        "color": "red",
+        "size": 46
+      }
+    ],
+    "art_prompt": "highly detailed digital painting, an elderly korean couple standing at night in front of a road that splits into three paths, each path lit with a different warmth of light, one bright gold, one dim, one cold blue, cinematic, no text"
+  },
+  "thumbnail_b": {
+    "lines": [
+      "우리 부모님 기초연금",
+      "내년에 {얼마} 받을까?"
+    ],
+    "badge": "2027 기초연금 개편안",
+    "brightness": 1.2,
+    "tags": [
+      {
+        "text": "38만?",
+        "x": 0.2,
+        "y": 0.11,
+        "color": "navy",
+        "size": 54
+      },
+      {
+        "text": "35만 9천?",
+        "x": 0.5,
+        "y": 0.11,
+        "color": "navy",
+        "size": 50
+      },
+      {
+        "text": "35만?",
+        "x": 0.8,
+        "y": 0.11,
+        "color": "navy",
+        "size": 54
+      }
+    ],
+    "art_prompt": "bright warm highly detailed storybook digital painting, a curious elderly korean couple in their seventies sitting on a sunny park bench, the man scratching his head and the woman holding a letter, autumn trees, big blue sky, vivid yellow and sky blue colors, cheerful, rich detail, no text"
+  },
+  "chapters": [
+    {
+      "title": "인트로",
+      "tag": "세 가지 금액",
+      "art_title": "기초연금, [세 갈래]",
+      "art_en": "Three Different Amounts",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean mother and her middle-aged son sitting at a kitchen table looking at a letter from the government, warm afternoon light, realistic",
+          "voice": "내년 4월, 기초연금이 처음으로 사람마다 다른 금액이 됩니다. 어떤 분은 한 달에 3만 원을 더 받고, 어떤 분은 사실상 깎입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "three paths splitting from one road in a quiet korean village at dusk, cinematic, no text",
+          "voice": "우리 부모님은 어느 쪽일까요? 그리고 10년 뒤 나는요? 정부가 더 준다고 했는데, 오히려 손해를 보는 사람이 더 많아진다는 분석까지 나왔습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a wooden table with a calculator, reading glasses and a bank passbook, soft lamp light, close up",
+          "voice": "오늘은 이 개편안이 누구에게 얼마를 주고, 누구에게서 덜 주는지 하나씩 따라가 보겠습니다."
+        }
+      ]
+    },
+    {
+      "title": "떡 한 판을 나누는 법",
+      "tag": "기초연금 349,700원",
+      "source": "출처: 보건복지부 기초연금 누리집(2026.1 고시) · 복지부 보도자료(2026.1.1)",
+      "art_title": "떡 한 판을 [나누는 법]",
+      "art_en": "Sharing One Rice Cake",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a large round korean rice cake on a wooden board in the middle of a village festival table, many elderly people around it, warm festive light",
+          "voice": "동네 잔치에서 큰 떡 한 판을 어르신들께 나눈다고 생각해 보세요. 지금까지는 똑같은 크기로 잘라 드렸습니다."
+        },
+        {
+          "kind": "number",
+          "heading": "2026년 기초연금 (1인 단독)",
+          "amount": 349700,
+          "unit": "원",
+          "label": "한 달 최대 금액 (기준연금액)",
+          "note": "2026.1 고시 · 부부가 함께 받으면 각각 20% 감액",
+          "color": "navy",
+          "voice": "그 떡이 바로 기초연금입니다. 올해 혼자 받는 분은 한 달 최대 34만 9천7백 원이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long line of elderly korean people walking slowly into a community center on a sunny morning, seen from behind, realistic",
+          "voice": "만 65세 이상 가운데 소득과 재산이 적은 쪽 70퍼센트가 받습니다. 작년 말 기준으로 7백만 명이 넘어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old photo album open on a table showing faded family pictures from the 2010s, nostalgic warm light, no readable text",
+          "voice": "이 떡이 처음부터 이 크기였던 건 아닙니다. 기초연금이 처음 생긴 2014년 7월에는 한 달 최대 20만 원이었어요."
+        },
+        {
+          "kind": "timeline",
+          "heading": "기초연금 최대 금액 변화 (1인)",
+          "points": [
+            {
+              "date": "2014년 7월",
+              "label": "20만 원",
+              "color": "orange"
+            },
+            {
+              "date": "2018년 9월",
+              "label": "25만 원",
+              "color": "orange"
+            },
+            {
+              "date": "2021년",
+              "label": "30만 원",
+              "color": "orange"
+            },
+            {
+              "date": "2026년",
+              "label": "34만 9,700원",
+              "color": "green",
+              "active": true
+            }
+          ],
+          "voice": "2018년에 25만 원, 2021년에는 모든 수급자가 30만 원이 됐고, 그 뒤로는 해마다 물가만큼 올라 올해 34만 9천7백 원이 됐습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a busy korean traditional market with many elderly shoppers, lively, natural light",
+          "voice": "그동안 원칙은 하나였습니다. 받는 분은 모두 같은 금액, 그리고 해마다 물가만큼 인상. 이번 개편은 이 두 원칙을 처음으로 바꾸는 겁니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "2026년 선정기준액 (소득인정액)",
+          "left": {
+            "title": "혼자 사는 분",
+            "lines": [
+              "월 {247만 원} 이하"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "부부",
+            "lines": [
+              "월 {395만 2천 원} 이하"
+            ],
+            "color": "navy"
+          },
+          "voice": "받을 수 있는지는 소득인정액으로 봅니다. 혼자 사시면 한 달 247만 원, 부부는 395만 2천 원 이하예요. 월급이나 연금만이 아니라 집과 예금 같은 재산도 소득으로 바꿔서 더한 금액입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a hand cutting a round rice cake into three unequal pieces with a knife, overhead shot, warm light",
+          "voice": "그런데 이번 개편안은 이 떡을 처음으로 세 가지 크기로 자릅니다. 이게 오늘의 첫 번째 답입니다. 가장 형편이 어려운 분께 가장 큰 조각을 드리는 방식이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy home office desk with a laptop showing a blurred chart and a cup of coffee, morning light",
+          "voice": "부모님 일이기도 하고, 몇 년 뒤면 우리 일이기도 합니다. 도움이 될 것 같다면 구독 한 번 눌러 두세요."
+        },
+        {
+          "kind": "quote",
+          "heading": "오늘 영상의 기준",
+          "text": "2027년 기초연금 개편 정부안 (2026.9.1 국무회의 의결 예산안)\n{2027년 4월 시행 목표}\n[아직 국회 통과 전 · 금액은 바뀔 수 있음]",
+          "cite": "보건복지부 · 언론 보도(서울신문·이데일리·아시아경제 2026.9.1~2)",
+          "voice": "오늘 개편안 내용은 정부안이고, 아직 국회를 통과하지 않았습니다. 국회에서 금액이나 시기가 바뀔 수 있어요."
+        }
+      ]
+    },
+    {
+      "title": "세 조각의 크기",
+      "tag": "38만 · 35만 9천 · 35만",
+      "source": "출처: 2027년 예산안(2026.9.1) · 서울신문·이데일리·아시아경제 보도",
+      "art_title": "세 조각의 [크기]",
+      "art_en": "Three Slice Sizes",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "three plates with rice cake slices of slightly different sizes lined up on a table, soft light, symbolic",
+          "voice": "그럼 세 조각은 각각 얼마일까요? 소득 순서로 줄을 세웠을 때 아래쪽부터 나눕니다."
+        },
+        {
+          "kind": "timeline",
+          "heading": "2027년 기초연금 정부안 (1인, 월)",
+          "points": [
+            {
+              "date": "하위 30%",
+              "label": "38만 원\n(+3만 원)",
+              "color": "green",
+              "active": true
+            },
+            {
+              "date": "30~45%",
+              "label": "35만 9천 원\n(물가 반영)",
+              "color": "orange"
+            },
+            {
+              "date": "45~70%",
+              "label": "35만 원\n(동결)",
+              "color": "red"
+            }
+          ],
+          "voice": "가장 아래 30퍼센트는 38만 원, 지금보다 3만 원이 늘어납니다. 그 위 30에서 45퍼센트는 물가만큼 올라 35만 9천 원. 나머지 45에서 70퍼센트는 지금 금액에서 멈춥니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "구간별 인원 (정부 추산)",
+          "cards": [
+            {
+              "label": "하위 30%",
+              "title": "{348만 명}",
+              "body": "월 3만 원 더",
+              "color": "green"
+            },
+            {
+              "label": "30~45%",
+              "title": "174만 명",
+              "body": "물가만큼 인상",
+              "color": "navy"
+            },
+            {
+              "label": "45~70%",
+              "title": "[290만 명]",
+              "body": "금액 동결",
+              "color": "red"
+            }
+          ],
+          "voice": "사람 수로 보면 이렇습니다. 3만 원을 더 받는 분이 348만 명, 물가만큼 오르는 분이 174만 명, 그리고 금액이 멈추는 분이 290만 명이에요."
+        },
+        {
+          "kind": "compare",
+          "heading": "1인 가구 1년 금액 비교 (정부안, 예시)",
+          "left": {
+            "title": "하위 30%",
+            "lines": [
+              "월 38만 원",
+              "1년 {456만 원}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "45~70%",
+            "lines": [
+              "월 35만 원(동결)",
+              "1년 [약 420만 원]"
+            ],
+            "color": "red"
+          },
+          "voice": "1년으로 계산하면 차이가 더 잘 보입니다. 하위 30퍼센트는 1년에 456만 원, 45에서 70퍼센트는 약 420만 원입니다. 같은 기초연금인데 1년에 36만 원 가까이 차이가 나요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two elderly neighbors chatting over a low fence between their houses, friendly, afternoon light",
+          "voice": "이웃집 어르신과 우리 부모님의 기초연금이 다를 수 있다는 뜻이기도 합니다. 그래서 내년에는 왜 우리 집은 덜 받느냐는 질문이 많아질 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a frozen thermometer and a wall calendar in a cold apartment, winter light, symbolic, no readable text",
+          "voice": "동결이 왜 손해냐고요? 기초연금은 원래 매년 물가만큼 올라갑니다. 그런데 이분들은 그 인상분을 못 받는 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a grocery receipt and a few vegetables on a kitchen counter, warm light, close up, no readable text",
+          "voice": "장바구니 물가는 오르는데 연금은 그대로라면, 같은 35만 원으로 살 수 있는 물건이 해마다 줄어듭니다. 숫자는 같아도 실제로는 줄어드는 셈이죠."
+        },
+        {
+          "kind": "number",
+          "heading": "45~70% 구간 (동결)",
+          "amount": 108000,
+          "unit": "원",
+          "label": "물가 반영분 대비 1년에 덜 받는 돈",
+          "note": "월 9천 원 × 12개월 (서울신문 2026.9.2 계산)",
+          "color": "red",
+          "voice": "물가가 반영됐다면 받았을 금액보다 한 달에 9천 원, 1년이면 10만 8천 원을 덜 받는 셈입니다. 첫해만 보면 작아 보이지만, 이 차이는 해마다 쌓입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly man counting coins at a small market stall, focused, natural light, realistic",
+          "voice": "그래도 지금 받던 금액에서 깎이는 분은 없습니다. 정부는 기존 수급자 가운데 탈락하거나 금액이 줄어드는 사람은 없다고 설명했어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a retired civil servant in a suit jacket reading documents at a desk, calm, warm light, no readable text",
+          "voice": "공무원연금이나 군인연금 같은 직역연금을 받는 분 가운데 하위 45퍼센트, 약 11만 명은 조금 늦게 2027년 7월부터 적용될 예정입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "three rice cake slices on plates with a small handwritten note card beside them, warm light, no readable text",
+          "voice": "정리하면, 가장 어려운 분은 3만 원 더, 중간은 물가만큼, 나머지는 그대로. 이게 세 조각의 크기입니다."
+        }
+      ]
+    },
+    {
+      "title": "우리 부모님은 어느 조각?",
+      "tag": "소득인정액으로 갈린다",
+      "source": "출처: 보건복지부 기초연금 누리집 · 2027년 예산안 보도",
+      "art_title": "우리 부모님은 [어느 조각]",
+      "art_en": "Which Slice for My Parents",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged korean woman on the phone at a kitchen table with a notepad, talking to her elderly parents, evening light",
+          "voice": "가장 궁금한 건 이거죠. 우리 부모님은 어느 조각일까요?"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a balance scale with a small house model and a stack of bank books on one side, soft light, symbolic",
+          "voice": "기준은 소득인정액입니다. 연금과 이자 같은 소득에, 집과 땅, 예금 같은 재산을 정해진 비율로 소득처럼 바꿔서 더합니다. 그래서 수입이 같아도 집값에 따라 구간이 달라질 수 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a modest apartment living room with an elderly woman reading a newspaper, warm daylight",
+          "voice": "예를 들어 같은 동네에 사는 두 분이 연금 수입이 똑같아도, 한 분은 전세에 살고 한 분은 집을 갖고 있다면 소득인정액이 달라집니다. 재산이 소득처럼 더해지니까요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a bank book and a property document side by side on a table, soft light, close up, no readable text",
+          "voice": "반대로 기본적인 생활에 필요한 만큼은 빼 주는 공제가 있어서, 집이 있다고 바로 기준을 넘는 건 아닙니다. 그래서 짐작보다는 실제로 조회해 보는 게 정확해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a government office counter with forms and a pen, blurred staff in background, neutral light, no readable text",
+          "voice": "다만 30퍼센트와 45퍼센트를 가르는 정확한 금액 기준은 아직 발표되지 않았습니다. 법이 바뀌고 나서 고시로 정해질 예정이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly couple reviewing documents together at home, calm, warm light",
+          "voice": "그래서 지금 할 수 있는 건 부모님의 소득과 재산이 대략 어느 정도인지 미리 알아 두는 것입니다. 기준이 발표되면 바로 비교해 볼 수 있으니까요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a son helping his elderly father use a smartphone at a living room sofa, warm daylight, realistic, screen blurred",
+          "voice": "복지로 누리집이나 보건복지상담센터 129, 국민연금공단 1355에 전화하면 지금 받는 금액과 소득인정액을 확인할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "title": "부부라면 달라지는 것",
+      "tag": "부부감액 20% → 10%",
+      "source": "출처: 2027년 예산안(2026.9.1) · 아시아경제·서울신문 보도",
+      "art_title": "부부라면 [달라진다]",
+      "art_en": "For Married Couples",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean couple holding hands while walking in a park in autumn, seen from behind, warm light",
+          "voice": "부부라면 하나가 더 바뀝니다. 지금은 부부가 둘 다 기초연금을 받으면 각각 20퍼센트씩 깎아서 줍니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "부부감액 (정부안 · 하위 45% 부부)",
+          "left": {
+            "title": "지금",
+            "lines": [
+              "각각 [20%] 감액"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "2027년 정부안",
+            "lines": [
+              "각각 {10%} 감액",
+              "약 234만 명 해당"
+            ],
+            "color": "green"
+          },
+          "voice": "정부안은 하위 45퍼센트 부부에 한해 이 감액을 20에서 10퍼센트로 줄입니다. 약 234만 명이 해당돼요."
+        },
+        {
+          "kind": "compare",
+          "heading": "부부 합산 월 금액 (정부안)",
+          "left": {
+            "title": "하위 30% 부부",
+            "lines": [
+              "56만 원 → {68만 4천 원}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "30~45% 부부",
+            "lines": [
+              "{64만 6천 원}"
+            ],
+            "color": "green"
+          },
+          "voice": "하위 30퍼센트 부부는 합쳐서 56만 원에서 68만 4천 원으로 오르고, 30에서 45퍼센트 부부는 64만 6천 원이 됩니다. 부부에게는 이번 개편에서 가장 큰 변화예요."
+        },
+        {
+          "kind": "number",
+          "heading": "하위 30% 부부 (정부안)",
+          "amount": 124000,
+          "unit": "원",
+          "label": "한 달에 늘어나는 금액 (56만 → 68만 4천 원)",
+          "note": "1년이면 약 148만 8천 원 · 국회 통과 전",
+          "color": "green",
+          "voice": "하위 30퍼센트 부부라면 한 달에 12만 4천 원, 1년이면 약 149만 원이 늘어납니다. 부부 둘이 사시는 부모님이라면 꽤 큰 차이예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly couple preparing dinner together in a small kitchen, smiling, warm light",
+          "voice": "그동안 부부감액은 둘이 살면 생활비가 덜 든다는 이유로 깎아 왔습니다. 하지만 가난한 부부일수록 그 20퍼센트가 크다는 지적이 많았고, 이번에 처음으로 손을 댄 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly couple sitting apart on a bench, one looking at a bill with concern, cool tones",
+          "voice": "하지만 45퍼센트 위의 부부는 감액이 그대로 20퍼센트입니다. 금액 동결에 부부감액까지 그대로라, 이 구간 부부는 상대적으로 가장 덜 오르는 셈이에요."
+        }
+      ]
+    },
+    {
+      "title": "국민연금을 받는 분이라면",
+      "tag": "연계감액 524,550원",
+      "source": "출처: 보건복지부 기초연금 누리집 '기초연금액 산정'(2026 기준)",
+      "art_title": "국민연금을 [받는다면]",
+      "art_en": "If You Get the National Pension",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an elderly man looking at two envelopes on a table, one marked with a national pension symbol shape, no readable text, warm light",
+          "voice": "국민연금을 받는 분은 한 가지를 더 아셔야 합니다. 국민연금을 많이 받으면 기초연금이 줄어들 수 있어요."
+        },
+        {
+          "kind": "number",
+          "heading": "국민연금 월 수령액 기준 (2026)",
+          "amount": 524550,
+          "unit": "원",
+          "label": "이 금액 이하면 기초연금 전액",
+          "note": "기준연금액의 150% · 부양가족연금 제외",
+          "color": "navy",
+          "voice": "기준은 국민연금 한 달 52만 4천5백50원입니다. 이 금액 이하라면 기초연금을 줄이지 않고 다 받습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calculator with a long receipt on a wooden table, dramatic lamp light, close up, no readable text",
+          "voice": "이보다 많이 받으면 정해진 계산식으로 기초연금이 깎입니다. 그래도 아무리 깎여도 기준연금액의 10퍼센트, 3만 4천9백70원은 받을 수 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a weathered elderly woman's hands holding a bank book in a modest home, soft window light, emotional",
+          "voice": "실제 사례도 있습니다. 한 70세 수급자는 국민연금 33만 8천 원을 받으면서 기초연금은 27만 9천7백60원으로 깎여서 받고 있다고 말했습니다. 소득과 재산이 기준에 가까우면 이렇게 줄어들 수 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person writing numbers in a notebook next to a phone, organized, morning light",
+          "voice": "부모님이 국민연금을 받으신다면, 월 수령액이 52만 원을 넘는지부터 확인해 보세요. 기초연금이 왜 이 금액인지 이해하는 출발점입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged man frowning at a pension statement at a table, dim light, realistic, no readable text",
+          "voice": "이 규칙에는 불만도 많습니다. 국민연금을 오래 성실하게 낸 사람이 오히려 기초연금을 덜 받으니, 성실하게 낸 사람이 손해라는 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a scale balancing two jars of coins of different sizes, symbolic, soft light",
+          "voice": "반대로 국민연금이 넉넉한 분까지 기초연금을 다 드리면 정작 어려운 분께 갈 몫이 줄어든다는 반론도 있습니다. 그래서 이 규칙은 계속 논쟁 중이에요."
+        }
+      ]
+    },
+    {
+      "title": "10년 뒤의 반전",
+      "tag": "빈곤율 오히려 상승?",
+      "source": "출처: 주수정 중앙대 연구원 분석(연금행동 토론회) · 이데일리·서울신문 2026.11.6",
+      "art_title": "10년 뒤의 [반전]",
+      "art_en": "The Twist Ten Years Later",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an hourglass on a dark table with sand running, a faint calendar behind it, dramatic, no readable text",
+          "voice": "여기서 반전이 있습니다. 더 가난한 분께 더 준다는 개편인데, 10년 뒤에는 오히려 노인 빈곤이 더 심해질 수 있다는 분석이 나왔어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "노인빈곤율 전망 (주수정 연구원 분석)",
+          "left": {
+            "title": "2024년 기준",
+            "lines": [
+              "현행 35.87%",
+              "개편안 {35.41%}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "2035년",
+            "lines": [
+              "현행 38.52%",
+              "개편안 [38.89%]"
+            ],
+            "color": "red"
+          },
+          "voice": "지금 기준으로는 개편안이 빈곤율을 조금 낮춥니다. 그런데 2035년이 되면 현행 제도보다 개편안의 빈곤율이 더 높아진다는 계산이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a group of elderly people standing on a slowly descending escalator, symbolic, cool tones",
+          "voice": "이유는 동결입니다. 45에서 70퍼센트 구간은 해마다 물가만큼 오르지 않으니, 시간이 지날수록 실제 가치가 줄어듭니다. 이 분석은 10년 동안 19.6퍼센트가 줄어든다고 봤어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a staircase where each step down is slightly lower than the last, symbolic, cool tones, no text",
+          "voice": "동결이 한 해만이면 작지만, 계속되면 계단처럼 차이가 벌어집니다. 해마다 2퍼센트씩 물가가 오르면 10년 뒤에는 처음보다 20퍼센트 가까이 가치가 줄어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "2035년 기초연금 총급여 (같은 분석)",
+          "left": {
+            "title": "현행 유지",
+            "lines": [
+              "{33조 2,400억 원}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "개편안",
+            "lines": [
+              "[28조 6,800억 원]"
+            ],
+            "color": "red"
+          },
+          "voice": "같은 분석은 2035년 기초연금으로 나가는 돈 전체가 현행 제도라면 33조 2천4백억 원인데, 개편안이면 28조 6천8백억 원으로 줄어든다고 봤습니다. 떡 전체가 작아지는 거예요."
+        },
+        {
+          "kind": "number",
+          "heading": "2035년 수급자 중 (개편안 vs 현행)",
+          "amount": 37.1,
+          "unit": "%",
+          "label": "현행 제도보다 덜 받게 되는 사람 비율",
+          "note": "같은 분석 · 정부 공식 추계 아님",
+          "color": "red",
+          "voice": "같은 분석은 2035년 수급자의 37.1퍼센트가 지금 제도를 유지했을 때보다 덜 받게 된다고 했습니다. 셋 중 한 명 넘게요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a researcher presenting charts in a seminar room with an audience, blurred slides, no readable text",
+          "voice": "물론 이건 연구자의 분석이지 정부 추계는 아닙니다. 하지만 국책연구기관 분석에서도 정부안의 빈곤율 개선 효과는 0.3퍼센트포인트 정도에 그친다는 결과가 나왔어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a panel of experts at a long table discussing with microphones, blurred, no readable text",
+          "voice": "그래서 전문가들은 다른 방법도 제안합니다. 소득이 적은 분께 부족한 만큼을 채워 주는 방식이나, 최저 연금을 보장하는 방식이 빈곤율을 더 크게 낮춘다는 분석도 함께 나왔어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a road sign at a fork in a misty road, symbolic, cinematic, no readable text",
+          "voice": "정리하면, 지금 당장은 가난한 분께 도움이 되지만, 동결이 계속되면 10년 뒤에는 오히려 받는 돈 전체가 줄어들 수 있다는 겁니다. 이 개편은 첫해보다 10년 뒤를 봐야 합니다."
+        }
+      ]
+    },
+    {
+      "title": "지금 국회에서는",
+      "tag": "예산 25.7조 · 연내 법 개정 목표",
+      "source": "출처: 2027년 예산안 · 이데일리(2026.11.4) · 경기일보(2026.10.19)",
+      "art_title": "지금 [국회에서는]",
+      "art_en": "Now in the National Assembly",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "the national assembly building in seoul at dusk with lights on, wide shot, no readable text",
+          "voice": "그럼 이 개편안은 지금 어디쯤 와 있을까요?"
+        },
+        {
+          "kind": "number",
+          "heading": "2027년 기초연금 예산 (정부안)",
+          "amount": 25.7,
+          "unit": "조 원",
+          "label": "올해 23.1조 원보다 2.6조 원(11%) 증가",
+          "note": "차등 지급 4,650억 원 투입 · 동결로 1,700억 원 절감",
+          "color": "navy",
+          "voice": "내년 기초연금 예산은 25조 7천억 원으로 올해보다 11퍼센트 늘었습니다. 차등 지급에 4천6백억 원을 더 쓰고, 동결로 1천7백억 원을 아끼는 구조예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calendar page and a pen on a desk with official documents, soft light, close up, no readable text",
+          "voice": "정부 목표는 연말까지 법을 바꾸고 내년 4월부터 지급하는 것입니다. 장관은 하위 45퍼센트에게 1월부터 3월까지의 인상분을 4월에 한꺼번에 소급해 주겠다고도 밝혔어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an empty parliamentary committee room with long tables and microphones, no people, morning light",
+          "voice": "다만 국회 연금개혁 특별위원회는 연말 기한까지 합의안 없이 끝날 거라는 전망이 나옵니다. 예산과 법이 국회를 통과해야 확정이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a document folder marked with a large red cross shape on a desk, symbolic, no readable text",
+          "voice": "원래 검토되던 더 큰 변화는 빠졌습니다. 70퍼센트라는 기준 자체를 없애고 기준중위소득의 80퍼센트로 바꾸는 안이 논의됐는데, 8월 말 발표가 취소되면서 이번 안에는 들어가지 않았어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged korean man in his fifties looking out a window thoughtfully, evening, realistic",
+          "voice": "지금 50대라면 이 부분을 눈여겨보셔야 합니다. 우리가 65세가 될 때는 누가 받는지, 얼마를 받는지의 기준 자체가 바뀌어 있을 수 있으니까요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a retired couple watching evening news on tv in their living room, screen blurred, warm lamp",
+          "voice": "그래서 12월 예산과 법 통과 소식을 꼭 지켜봐야 합니다. 금액이 바뀌거나 시기가 미뤄질 수도 있어요."
+        }
+      ]
+    },
+    {
+      "title": "해외에 오래 산 분이라면",
+      "tag": "국내 거주 5년 요건",
+      "source": "출처: 기초연금법 개정(2026.10.1 국회 통과, 파이낸셜뉴스·뉴시스) · 뉴스퀘스트(2026.11.5) · 이데일리(2026.11.5)",
+      "art_title": "해외에 [오래 살았다면]",
+      "art_en": "If You Lived Abroad",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an airport arrival hall with an elderly traveler pulling a suitcase, soft light, seen from behind",
+          "voice": "또 하나 달라지는 게 있습니다. 해외에서 오래 살다 들어온 분이라면 꼭 알아 두셔야 해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a passport and a residence document on a table next to reading glasses, close up, no readable text",
+          "voice": "지난 10월 국회를 통과한 법에 따라, 19세 이후 국내에 산 기간이 5년이 안 되면 기초연금을 받을 수 없게 됩니다. 해외 소득과 재산도 신고해야 하고요."
+        },
+        {
+          "kind": "number",
+          "heading": "복수국적 기초연금 수급자",
+          "amount": 8176,
+          "unit": "명",
+          "label": "2025년 (2021년 3,621명에서 125.8% 증가)",
+          "note": "국회예산정책처·복지부 자료 (이데일리 2026.11.5)",
+          "color": "navy",
+          "voice": "복수국적 수급자가 4년 사이 3천6백 명에서 8천1백 명으로 두 배 넘게 늘면서 생긴 변화예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calendar on a wall in soft spring light, symbolic, no readable text",
+          "voice": "보도에 따르면 2027년 4월 21일 이후 신청하는 분부터 적용되고, 이미 받고 있는 분에게 거슬러 적용하지는 않습니다. 자세한 예외는 시행령에서 정해질 예정이에요."
+        }
+      ]
+    },
+    {
+      "title": "10년 뒤 나는 받을 수 있을까",
+      "tag": "지금 50대에게",
+      "source": "출처: 2027년 예산안 보도 · 보건복지부 기초연금 누리집 · 이데일리(2026.11.4·11.6)",
+      "art_title": "10년 뒤 [나는]",
+      "art_en": "Will I Get It in Ten Years",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged korean couple walking on a forest trail, seen from behind, autumn, contemplative",
+          "voice": "이번엔 부모님이 아니라 우리 이야기입니다. 지금 50대는 10년쯤 뒤에 기초연금 대상이 됩니다. 그때도 지금처럼 받을 수 있을까요?"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a pair of hands holding a small sapling in soil, hopeful, soft morning light",
+          "voice": "정답은 아무도 모릅니다. 다만 방향은 보입니다. 노인 인구는 늘고 나라 살림은 빠듯하니, 모두에게 같은 금액을 주는 방식은 점점 어려워진다는 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a retired man reading his pension statement at a desk, calm, warm lamp, no readable text",
+          "voice": "그래서 내 국민연금과 퇴직연금, 개인연금이 얼마나 되는지가 중요해집니다. 국민연금을 많이 받으면 기초연금이 줄어드는 구조라, 결국 기초연금은 마지막 안전판이라고 생각하는 게 맞아요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a family calendar on a fridge with notes and magnets, warm kitchen light, no readable text",
+          "voice": "지금 할 일은 단순합니다. 국민연금공단에서 내 예상 연금액을 조회해 보고, 52만 4천 원 기준과 비교해 보는 겁니다. 그래야 기초연금을 얼마나 기대할 수 있는지 감이 와요."
+        }
+      ]
+    },
+    {
+      "title": "기초연금에 대한 흔한 착각",
+      "tag": "65세 되면 저절로?",
+      "source": "출처: 보건복지부 기초연금 누리집 '신청방법'·'기초연금액 산정'",
+      "art_title": "흔한 [착각]",
+      "art_en": "Common Myths",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an elderly man waiting by a mailbox in front of his house, morning, hopeful expression",
+          "voice": "흔한 착각 세 가지를 짚고 가겠습니다. 첫 번째, 만 65세가 되면 기초연금이 저절로 나온다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a community service center front desk with an elderly woman handing over documents, realistic, no readable text",
+          "voice": "아닙니다. 기초연금은 신청해야 받습니다. 만 65세 생일이 있는 달의 한 달 전부터 신청할 수 있어요. 늦게 신청하면 그만큼 못 받은 달이 생깁니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly woman at a phone booth style kiosk in a community center, calling, soft light",
+          "voice": "거동이 불편하시면 국민연금공단에 방문 신청을 요청할 수도 있고, 자녀가 대신 신청하는 것도 됩니다. 신분증과 통장 사본, 배우자 금융정보 동의서 정도면 돼요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a small old house with a garden in a korean village, sunny, peaceful",
+          "voice": "두 번째, 집이 있으면 못 받는다. 이것도 아닙니다. 집은 소득인정액에 일부만 소득처럼 더해질 뿐이에요. 집이 있어도 소득과 재산을 합친 금액이 기준 아래면 받을 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly woman smiling while reading a letter by a window, soft light",
+          "voice": "세 번째, 국민연금을 받으면 기초연금은 못 받는다. 국민연금이 한 달 52만 4천 원 이하라면 기초연금을 줄이지 않고 다 받습니다. 그보다 많아도 깎일 뿐 끊기지는 않아요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a woman checking a website on a laptop at a kitchen table with her elderly father beside her, screen blurred, warm light",
+          "voice": "그리고 한 번 탈락했다고 끝이 아닙니다. 기준은 해마다 바뀝니다. 올해 선정기준액은 작년보다 8.3퍼센트 올랐어요. 작년에 탈락하셨다면 올해 다시 신청해 볼 만합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a son and his elderly mother walking together toward a government building, autumn, seen from behind",
+          "voice": "혹시 부모님이 이런 이유로 신청을 안 하셨다면, 한 번 확인해 보시는 것만으로도 매달 수십만 원이 달라질 수 있습니다."
+        }
+      ]
+    },
+    {
+      "title": "자주 묻는 질문 3가지",
+      "tag": "자녀 소득 · 해외 체류 · 변동 신고",
+      "source": "출처: 보건복지부 기초연금 누리집 · 기초연금법",
+      "art_title": "자주 묻는 [질문]",
+      "art_en": "Frequently Asked Questions",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an adult son in an office suit sitting with his elderly mother in a cafe, talking, warm light",
+          "voice": "댓글로 자주 받는 질문도 세 가지 정리해 보겠습니다. 첫째, 자녀가 돈을 많이 벌면 부모님 기초연금이 깎이나요?"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a family photo frame on a shelf next to a potted plant, soft window light, no readable text",
+          "voice": "아닙니다. 기초연금은 자녀 소득을 보지 않습니다. 부모님 본인과 배우자의 소득과 재산만 봐요. 자녀가 잘 벌어서 신청을 포기하셨다면 다시 확인해 보세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly couple with suitcases at a departure gate looking at the board, blurred, no readable text",
+          "voice": "둘째, 해외에 나가 있어도 받을 수 있나요? 여행처럼 짧게 다녀오는 건 괜찮지만, 해외에 60일 넘게 계속 머물면 그동안은 지급이 멈춥니다. 돌아오면 다시 받을 수 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person filling out a change of information form at a counter, close up, no readable text",
+          "voice": "셋째, 집을 팔거나 소득이 바뀌면 어떻게 하나요? 소득이나 재산이 바뀌면 신고해야 합니다. 신고하지 않고 더 받은 돈은 나중에 돌려줘야 할 수 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly woman nodding while listening to a staff member at a community center desk, warm light, realistic",
+          "voice": "헷갈리면 보건복지상담센터 129나 국민연금공단 1355에 물어보시는 게 가장 정확합니다. 상담은 무료예요."
+        }
+      ]
+    },
+    {
+      "title": "반대편 이야기",
+      "tag": "좋은 얘기만 하지 않겠습니다",
+      "source": "출처: 2027년 예산안 · 한겨레·이데일리(2026.11.6) · 이데일리(2026.9.1)",
+      "art_title": "반대편 [이야기]",
+      "art_en": "The Other Side",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a scale balancing a stack of coins against a crowd of tiny elderly figures, dark room, dramatic light",
+          "voice": "반대편 이야기도 해 보겠습니다. 첫째, 정부가 이렇게 바꾸는 이유가 있습니다. 노인 인구가 빠르게 늘면서 모두에게 똑같이 올려 주는 방식은 돈이 너무 많이 듭니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a hand placing a larger slice of rice cake on a plate in front of a frail elderly woman, warm light, symbolic",
+          "voice": "한정된 돈이라면 가장 어려운 분께 먼저 더 드리자는 것, 이게 하후상박의 논리예요. 이 방향 자체에 찬성하는 목소리도 적지 않습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a protest banner held by elderly citizens in front of a building, blurred, no readable text, overcast",
+          "voice": "둘째, 반대 목소리는 쪼개기라고 비판합니다. 같은 떡을 셋으로 나눠 가난한 노인끼리 나눠 갖게 하는 것일 뿐이라는 거죠. 국민연금과 기초생활보장까지 함께 고쳐야 한다는 주장입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly man looking at two benefit letters with a puzzled face, dim light, no readable text",
+          "voice": "셋째, 이번 안에서 빠진 것도 있습니다. 기초생활수급을 받는 분은 기초연금을 받으면 그만큼 생계급여가 깎이는, 이른바 줬다 뺏는 기초연금 문제는 이번에도 손대지 않았어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a modest elderly man sitting alone at a small kitchen table with a bowl of rice, quiet, soft light",
+          "voice": "구체적으로는 이렇습니다. 기초생활수급자가 기초연금을 받으면, 그 돈이 소득으로 잡혀 생계급여가 그만큼 줄어듭니다. 그래서 가장 가난한 분은 기초연금이 올라도 손에 쥐는 돈이 거의 그대로예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long hallway with many closed doors, one slightly open with light, symbolic",
+          "voice": "가장 어려운 분께 더 드린다는 개편인데, 가장 어려운 분 중 일부는 혜택을 체감하기 어렵다는 모순이 남는 거죠."
+        }
+      ]
+    },
+    {
+      "title": "지금 해 둘 4가지",
+      "tag": "체크리스트",
+      "art_title": "지금 해 둘 [4가지]",
+      "art_en": "Four Things to Do Now",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged man calling his parents on the phone at a cafe table, warm natural light",
+          "voice": "그럼 지금 무엇을 해 두면 좋을까요? 네 가지입니다."
+        },
+        {
+          "kind": "checklist",
+          "heading": "지금 해 둘 4가지",
+          "items": [
+            {
+              "text": "부모님이 {기초연금을 신청}했는지 확인 (129 · 1355)"
+            },
+            {
+              "text": "만 65세 되는 분은 {생일 한 달 전}부터 신청"
+            },
+            {
+              "text": "부모님 {국민연금 월 수령액} 확인 (52만 4천 원 기준)"
+            },
+            {
+              "text": "12월 국회 {예산·법 통과} 결과 확인"
+            }
+          ],
+          "voice": "첫째, 부모님이 기초연금을 신청하셨는지 확인하세요. 둘째, 곧 만 65세가 되는 분은 생일 한 달 전부터 신청하세요. 셋째, 부모님의 국민연금 월 수령액을 확인하세요. 넷째, 12월 국회에서 예산과 법이 통과되는지 지켜보세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a family gathered around a dining table looking at a laptop together, smiling, warm evening light",
+          "voice": "특히 첫째가 중요합니다. 받을 수 있는데 신청을 안 해서 못 받는 분이 여전히 계세요. 이번 주말에 전화 한 통 드려 보세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a checklist on a clipboard with four items ticked, close up, warm light, no readable text",
+          "voice": "네 가지 모두 오늘 할 수 있는 일입니다. 개편안이 확정되기를 기다릴 필요 없이, 지금 받을 수 있는 걸 먼저 챙기는 게 순서예요."
+        }
+      ]
+    },
+    {
+      "title": "마무리",
+      "tag": "떡은 어떻게 나눠야 할까",
+      "art_title": "떡은 [어떻게 나눌까]",
+      "art_en": "How Should We Share",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a village festival table with rice cake slices being handed out to elderly people, warm sunset light, gentle",
+          "voice": "처음에 말씀드린 떡 한 판 기억나시죠? 이번 개편은 그 떡을 처음으로 다른 크기로 자르는 일입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly couple sharing a piece of rice cake on a porch at sunset, peaceful, warm light",
+          "voice": "가장 어려운 분께 큰 조각을 드리는 건 따뜻한 방향입니다. 다만 떡 전체가 해마다 줄어든다면, 결국 모두의 조각이 작아질 수 있다는 걱정도 함께 들어야 해요.",
+          "title": "큰 조각보다 {떡 전체의 크기}",
+          "en": "The Size of the Whole Cake"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly mother and adult daughter laughing together over tea at home, warm golden light",
+          "voice": "오늘 영상을 보고 부모님께 전화 한 통 드리셨으면 좋겠습니다. 기초연금 받고 계신지, 국민연금은 얼마인지. 그 한 통이 1년에 수십만 원을 바꿀 수 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "three small envelopes lined up on a table under warm light, symbolic, no text",
+          "voice": "오늘 내용을 세 줄로 정리하면 이렇습니다. 내년 4월부터 기초연금은 세 가지 금액으로 나뉜다. 부부와 국민연금 수령액에 따라 받는 돈이 또 달라진다. 그리고 10년 뒤를 보면 동결 구간의 손해가 커질 수 있다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy living room at night with a warm lamp and a cup of tea on the table, quiet closing shot",
+          "voice": "오늘 영상이 도움이 됐다면 좋아요 한번 눌러 주세요. 그리고 여러분 생각은 어떠세요? 가장 어려운 분께 더 주는 방식, 찬성하시나요, 반대하시나요? 댓글로 의견을 남겨 주세요."
+        },
+        {
+          "kind": "title",
+          "title": "다음 영상\n{매주 화·일 저녁 6시}",
+          "sub": "구독하고 놓치지 마세요 · 도장찍기전에",
+          "voice": "도장찍기전에는 매주 화요일과 일요일 저녁 6시에 새 영상으로 찾아옵니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a red traditional korean seal stamp resting on a wooden desk beside a closed contract folder, warm lamp light, shallow depth of field, no text",
+          "voice": "도장은 천천히, 팩트는 먼저. 도장찍기전에였습니다."
+        }
+      ]
+    }
+  ],
+  "upload": {
+    "title": "기초연금, 내년 4월부터 처음으로 세 가지 금액이 됩니다… 우리 부모님은 어느 쪽? (2027 기초연금 개편안)",
+    "hook": "내년 4월, 기초연금이 처음으로 사람마다 다른 금액이 됩니다.\n어떤 분은 한 달 3만 원을 더 받고, 어떤 분은 사실상 깎입니다.\n\n정부가 더 준다고 했는데 10년 뒤엔 손해 보는 사람이 더 많아진다는 분석까지 — 우리 부모님은 어느 쪽인지, 지금 무엇을 확인해야 하는지 정리했습니다.",
+    "covers": [
+      "떡 한 판을 처음으로 세 조각으로 — 기초연금이 사람마다 달라진다",
+      "38만 · 35만 9천 · 35만 원, 누가 어느 조각을 받나",
+      "'동결'이 왜 손해일까 — 1년에 10만 8천 원의 정체",
+      "우리 부모님은 어느 구간? 소득인정액 쉽게 보기",
+      "부부라면 달라지는 것 — 부부감액 20% → 10%",
+      "국민연금 52만 4천 원, 이 선을 넘으면 기초연금이 줄어든다",
+      "10년 뒤의 반전 — 빈곤율이 오히려 올라간다는 분석",
+      "해외에 오래 살았다면 — 국내 거주 5년 요건",
+      "'65세 되면 저절로 나온다' — 가장 흔한 착각 3가지",
+      "지금 해 둘 4가지"
+    ],
+    "as_of": "2026년 11월 초",
+    "sources": [
+      "보건복지부 기초연금 누리집(2026 기준연금액·선정기준액·산정 방법) · 복지부 보도자료(2026.1.1)",
+      "2027년 기초연금 개편 정부안(2026.9.1 국무회의 의결 예산안) · 서울신문·이데일리·아시아경제 보도 — 국회 통과 전",
+      "주수정 중앙대 연구원 분석(연금행동 토론회) · 이데일리·서울신문·한겨레(2026.11.6)",
+      "기초연금법 개정(2026.10.1 국회 통과, 국내 거주 5년 요건) · 뉴스퀘스트·이데일리(2026.11.5)"
+    ],
+    "comment_question": "가장 어려운 분께 더 주는 기초연금, 찬성하시나요 반대하시나요? 부모님은 신청하셨나요?",
+    "hashtags": [
+      "#기초연금",
+      "#기초연금개편",
+      "#노후준비",
+      "#부모님",
+      "#국민연금",
+      "#부부감액",
+      "#연금",
+      "#노인복지",
+      "#은퇴",
+      "#2027기초연금",
+      "#복지로",
+      "#5060",
+      "#노후",
+      "#연금개혁",
+      "#도장찍기전에"
+    ],
+    "tags": [
+      "기초연금",
+      "기초연금 개편안",
+      "2027 기초연금",
+      "기초연금 38만원",
+      "기초연금 차등지급",
+      "부부감액",
+      "기초연금 신청",
+      "소득인정액",
+      "선정기준액",
+      "국민연금 연계감액",
+      "노인빈곤율",
+      "하후상박",
+      "기초연금 거주요건",
+      "노후준비",
+      "부모님 연금",
+      "도장찍기전에"
+    ],
+    "publish_slot": "18:00 KST",
+    "next": "매주 화·일 저녁 6시 새 영상"
+  }
+}

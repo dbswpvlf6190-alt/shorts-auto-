@@ -52,6 +52,12 @@ ART_W, ART_H = 1280, 720
 KLEIN = "@cf/black-forest-labs/flux-2-klein-4b"
 ART_STYLE = ("dark cinematic digital illustration, dramatic moody lighting, rich detail, epic composition, "
              "{p}, no text, no letters, no numbers, no signs")
+# 썸네일 v6 그림(11/8): FLUX.2 dev는 숫자 전광판·화살표를 그림 안에 자연스럽게 그린다(klein은 화살표 방향이 틀림).
+# 한글은 못 그리니 그림 속 글자는 숫자·영어만, 한글은 아래 2줄 글자로.
+THUMB_MODEL = "@cf/black-forest-labs/flux-2-dev"
+THUMB_STYLE = ("vibrant highly detailed semi-realistic digital illustration for a youtube finance thumbnail, {p}, "
+               "rich saturated colors, warm golden rim light, dramatic, all important objects in the upper two thirds, "
+               "lower third of the image darker and simpler, no korean text")
 HEAD_H = 96
 SUB_TOP = 880  # 이 아래는 자막 자리 — 카드가 들어오지 않게 한다
 
@@ -519,15 +525,15 @@ def get_image(key, prompt, img_dir):
     return None
 
 
-def gen_art(prompt, out):
+def gen_art(prompt, out, model=None, raw=False):
     """FLUX.2 klein(16:9 바로 생성, 장당 약 6초). 실패하면 None — 그 장면은 그라데이션으로 대체된다."""
     with open(cf.CRED_PATH, encoding="utf-8") as f:
         cred = json.load(f)
     b = uuid.uuid4().hex
     parts = [f'--{b}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode()
-             for k, v in (("prompt", ART_STYLE.format(p=prompt)), ("width", ART_W), ("height", ART_H))]
+             for k, v in (("prompt", prompt if raw else ART_STYLE.format(p=prompt)), ("width", ART_W), ("height", ART_H))]
     parts.append(f"--{b}--\r\n".encode())
-    url = f"https://api.cloudflare.com/client/v4/accounts/{cred['account_id']}/ai/run/{KLEIN}"
+    url = f"https://api.cloudflare.com/client/v4/accounts/{cred['account_id']}/ai/run/{model or KLEIN}"
     req = urllib.request.Request(url, data=b"".join(parts), headers={
         "Authorization": "Bearer " + cred["api_token"], "Content-Type": f"multipart/form-data; boundary={b}"})
     for attempt in range(3):
@@ -835,7 +841,10 @@ def make_thumb_v3(meta, img_dir, out):
     if not p and th.get("art_prompt"):
         p = os.path.join(img_dir, "thumb_art_" + hashlib.md5(th["art_prompt"].encode("utf-8")).hexdigest()[:12] + ".png")
         if not os.path.exists(p):
-            p = gen_art(th["art_prompt"], p)
+            if th.get("style") == "v6":  # 11/8: 숫자 전광판·화살표를 그림 안에 그려 넣는다(덧붙인 상자는 조잡하다는 사용자 의견)
+                p = gen_art(THUMB_STYLE.format(p=th["art_prompt"]), p, model=THUMB_MODEL, raw=True)
+            else:
+                p = gen_art(th["art_prompt"], p)
     if not p:
         p = get_image("thumb", th.get("image_prompt"), img_dir)
     if p:
@@ -843,6 +852,11 @@ def make_thumb_v3(meta, img_dir, out):
         s = max(tw / im.width, thh / im.height)
         im = im.resize((int(im.width * s) + 1, int(im.height * s) + 1), Image.LANCZOS)
         im = im.crop(((im.width - tw) // 2, (im.height - thh) // 2, (im.width - tw) // 2 + tw, (im.height - thh) // 2 + thh))
+        if th.get("shift_up"):  # v6: 그림을 위로 올려 숫자판·얼굴이 아래 2줄 글자에 가리지 않게(빈 아래는 어둡게)
+            sh_px = int(thh * th["shift_up"])
+            canvas = Image.new("RGB", (tw, thh), (8, 10, 16))
+            canvas.paste(im.crop((0, sh_px, tw, thh)), (0, 0))
+            im = canvas
         im = ImageEnhance.Brightness(im).enhance(th.get("brightness", 1.12))
         im = ImageEnhance.Contrast(ImageEnhance.Color(im).enhance(1.3)).enhance(1.12)
         im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=80, threshold=2))
@@ -853,6 +867,9 @@ def make_thumb_v3(meta, img_dir, out):
     xs = np.arange(tw, dtype=np.float32)[None, :] / tw
     vig = np.clip(((xs - 0.5) ** 2 * 1.6 + (ys - 0.45) ** 2 * 1.2) * 1.1, 0, 0.45)
     bottom = np.clip((ys - 0.40) / 0.60, 0, 1) ** 1.3 * 0.92
+    if th.get("style") == "v6":  # 그림을 살린다: 아래쪽만 살짝
+        bottom = np.clip((ys - 0.55) / 0.45, 0, 1) ** 1.5 * 0.75
+        vig = vig * 0.6
     shade = np.clip(np.maximum(vig, bottom), 0, 0.95)
     im = Image.composite(Image.new("RGB", (tw, thh), (0, 0, 0)), im, Image.fromarray((shade * 255).astype(np.uint8)))
     im = im.convert("RGBA")

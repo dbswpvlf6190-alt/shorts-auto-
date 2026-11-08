@@ -1,0 +1,101 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 도시 및 주거환경정비법 제39조(조합원 자격 등) · 국토교통부 6·30·10·15 대책 관련 보도",
+  "youtube_title": "재건축 아파트 있는데, 조합 설립되면 못 팝니다 #재건축 #조합원지위양도",
+  "youtube_description": "투기과열지구에서 재건축 조합이 설립되면, 그 구역 아파트는 조합원 지위를 양도할 수 없어요. 재건축은 조합설립인가, 재개발은 관리처분인가 이후부터 적용돼요.\n\n예외는 있어요. 10년 이상 보유하고 5년 이상 거주했거나, 조합설립인가 후 3년 넘게 사업시행인가를 못 받았거나, 사업시행인가 후 3년 안에 착공하지 못한 경우예요. 상속·이혼·채무불이행 같은 불가피한 사정도 예외로 인정돼요.\n\n올해 7월 화성 동탄, 용인 기흥, 구리시가 투기과열지구·조정대상지역으로 새로 묶이면서 이 지역 재건축 구역도 적용 대상이 됐어요. 서울은 10월 15일 대책 이후 규제 구역이 약 4배로 늘었어요.\n\n출처: 도시 및 주거환경정비법 제39조(조합원 자격 등), 국토교통부 6·30·10·15 대책 관련 보도\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#재건축 #조합원지위양도 #투기과열지구 #재개발 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "재건축,조합원지위양도,투기과열지구,재개발,부동산정책",
+  "tiktok_caption": "재건축 아파트 있는데 조합 설립되면 못 팔아요 😱 예외 조건 아니면 묶여요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 동네는 지위양도 막혀 있나요? #재건축 #조합원지위양도 #투기과열지구",
+  "instagram_caption": "재건축 아파트 있는데 조합 설립되면 못 팔아요 😱 예외 조건 아니면 묶여요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 동네는 지위양도 막혀 있나요? #재건축 #조합원지위양도 #투기과열지구",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "재건축 샀는데 못 팔아요?",
+      "caption": "재건축 샀는데\n{못 팔아요}?",
+      "image_prompt": "photorealistic worn concrete apartment building exterior with faded paint and rusty railings under a cloudy sky, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "결론부터 말하면 조합이 설립된 재건축 구역은 집을 팔 수가 없어요.",
+      "caption": "결론\n{조합 설립} 후엔\n매매 금지",
+      "big": "조합설립 후\n매매 금지",
+      "badge": "투기과열지구"
+    },
+    {
+      "kind": "photo",
+      "voice": "이걸 조합원 지위양도 제한이라고 해요.",
+      "caption": "이걸\n{조합원 지위양도 제한}이라고 해요",
+      "image_prompt": "photorealistic several brass house keys hanging on a wooden pegboard, warm indoor light, close-up, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "재건축은 조합설립인가 재개발은 관리처분인가부터 적용돼요.",
+      "caption": "재건축은 {조합설립인가}\n재개발은 {관리처분인가}",
+      "big": "조합설립 · 관리처분",
+      "badge": "이후부터 금지"
+    },
+    {
+      "kind": "photo",
+      "voice": "올해 7월 동탄과 기흥 구리가 투기과열지구로 묶이면서 그 구역 재건축도 묶였어요.",
+      "caption": "{동탄 · 기흥 · 구리}\n투기과열지구로 묶임",
+      "image_prompt": "photorealistic new apartment towers in a suburban new town skyline at dusk with construction cranes in the distance, golden hour light, shallow depth of field, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "예외도 있어요 10년 보유하고 5년 살았거나 인가가 3년 넘게 안 나오면 팔 수 있어요.",
+      "caption": "예외 조건\n{10년+5년} 또는 {3년}",
+      "active": "all",
+      "cards": [
+        {
+          "date": "10년+5년",
+          "who": "보유+거주",
+          "color": "gold"
+        },
+        {
+          "date": "3년",
+          "who": "사업시행인가 지연",
+          "color": "green"
+        },
+        {
+          "date": "3년",
+          "who": "착공 지연",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 상속받은 집이면 어떻게 될까요?",
+      "caption": "근데 {상속받은 집}이면\n어떻게 될까요?",
+      "image_prompt": "photorealistic quiet traditional korean house entrance gate at dusk with warm light glowing inside, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "상속이나 이혼 채무불이행 때는 예외로 팔 수 있어요.",
+      "caption": "{상속}·{이혼}\n채무불이행도 예외",
+      "big": "상속 · 이혼 · 채무불이행",
+      "badge": "예외 인정",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "서울도 10월 15일 대책 이후 규제 구역이 약 4배로 늘었어요.",
+      "caption": "서울은 {10·15 대책} 이후\n규제 구역 [약 4배]",
+      "big": "규제 구역 약 4배",
+      "badge": "10·15 대책 이후"
+    },
+    {
+      "kind": "photo",
+      "voice": "재건축 아파트 있는 분께 꼭 보내주세요.",
+      "caption": "재건축 아파트 있는 분께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic small wooden model house placed next to a single brass key on a dark wooden table, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 동네는 지위양도가 막혀 있나요?",
+      "caption": "여러분 동네는\n{지위양도}가 막혀 있나요?",
+      "image_prompt": "photorealistic city skyline at night with glowing apartment windows and soft bokeh lights, cinematic, shallow depth of field, no text"
+    }
+  ]
+}

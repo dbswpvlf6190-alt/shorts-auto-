@@ -966,6 +966,11 @@ DISCLAIMER = ("⚠️ 유의사항\n이 영상은 정보 제공을 목적으로 
               "적용이 달라지니, 실제 거래·신고 전에는 세무서·세무사·관할 시군구청에 꼭 확인하세요. 영상 속 금액은 이해를 돕기 위한 예시입니다.")
 SIGNATURE = "도장은 천천히, 팩트는 먼저 🔴 도장찍기전에 — 부동산 세금, 아는 만큼 아낍니다"
 BASE_HASHTAGS = ["#도장찍기전에", "#부동산", "#부동산세금", "#재테크"]
+# 11/8 사용자 "부동산만 하지 말고 경제해적단형처럼 주식 돈 부자 관련 영상" — meta "field": "money"면 아래를 쓴다
+MONEY_DISCLAIMER = ("⚠️ 유의사항\n이 영상은 정보 제공·교육 목적이며 특정 종목·상품의 매수·매도 권유가 아닙니다. 투자 판단과 손실 책임은 "
+                    "본인에게 있고, 과거 수익률이 미래 수익을 보장하지 않습니다. 영상 속 수치는 기준일 시점 자료이며 이후 달라질 수 있습니다.")
+MONEY_SIGNATURE = "도장은 천천히, 팩트는 먼저 🔴 도장찍기전에 — 내 돈 지키는 경제 공부"
+MONEY_HASHTAGS = ["#도장찍기전에", "#재테크", "#주식", "#경제공부"]
 
 
 def build_upload(meta, out_dir):
@@ -986,12 +991,13 @@ def build_upload(meta, out_dir):
         parts.append(f"[{up['as_of']} 기준으로 제작된 영상입니다]")
     if up.get("sources"):
         parts.append("📚 출처\n" + "\n".join(f"· {x}" for x in up["sources"]))
-    parts.append(DISCLAIMER)
+    money = meta.get("field") == "money"
+    parts.append(MONEY_DISCLAIMER if money else DISCLAIMER)
     if up.get("comment_question"):
         parts.append(f"💬 {up['comment_question']}\n댓글로 남겨 주시면 하나하나 읽어 보겠습니다." if v3 else
                      f"💬 {up['comment_question']}\n댓글로 남겨 주시면 다음 영상 주제에 반영할게요.")
-    parts.append("👍 도움이 되셨다면 좋아요, 🔔 구독과 알림 설정 부탁드려요.\n" + SIGNATURE)
-    tags_h = list(dict.fromkeys(up.get("hashtags", []) + BASE_HASHTAGS))[:25]
+    parts.append("👍 도움이 되셨다면 좋아요, 🔔 구독과 알림 설정 부탁드려요.\n" + (MONEY_SIGNATURE if money else SIGNATURE))
+    tags_h = list(dict.fromkeys(up.get("hashtags", []) + (MONEY_HASHTAGS if money else BASE_HASHTAGS)))[:25]
     parts.append(" ".join(tags_h))
     if v3:  # 경제해적단 설명란: 덩어리 사이를 ━━━ 줄로 나눈다
         sep = "\n\n━━━\n\n"

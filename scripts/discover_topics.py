@@ -44,6 +44,15 @@ LONG_QUERIES = [
     "주택 공급 대책", "청약 제도 개편", "재산세", "퇴직연금",
 ]
 ANNOUNCE_WORDS = ["발표", "확정", "개편", "시행", "통과", "입법예고", "개정안", "정부안", "의결", "대책", "달라진", "바뀐"]
+# 주식·돈·부자 주제(2026-11-08 사용자 "부동산만 하지 말고 경제해적단형처럼 주식 돈 부자 관련 영상"):
+# 경제해적단 67편 평균 조회 — 환율·달러·엔화 43만, 예금·금리 22만, 부자 습관 20만, ETF 18만, ISA·연금계좌 17만, 부동산 1.3만.
+# 정책 발표가 아니라 '시장이 크게 움직인' 뉴스(최고치·급락·인하 등)를 48시간 안에서 고른다.
+MONEY_QUERIES = [
+    "원달러 환율", "엔화 환율", "코스피", "S&P500", "나스닥", "금값", "기준금리", "예금 금리",
+    "ISA 계좌", "ETF 출시", "배당소득 분리과세", "미국 주식 세금", "연금저축 IRP", "부자 보고서",
+]
+MOVE_WORDS = ["사상 최고", "최고치", "최저", "돌파", "급등", "급락", "폭락", "폭등", "인하", "인상", "동결", "출시",
+              "시행", "개편", "확정", "발표", "역대", "년 만에", "달라진", "바뀐"]
 
 
 def already_covered_keywords():
@@ -128,11 +137,12 @@ def write_report(candidates, out_path):
             f.write(f"- 매칭 키워드: {', '.join(sorted(c['queries']))}\n\n")
 
 
-def discover_longform(hours=48, top=10):
+def discover_longform(hours=48, top=10, queries=None, words=None):
     """발표 직후 48시간 안의 큰 돈 주제(롱폼 후보). 여러 키워드에 함께 걸린 기사일수록 위로."""
     cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
     by_norm = {}
-    for query in LONG_QUERIES:
+    words = words or ANNOUNCE_WORDS
+    for query in (queries or LONG_QUERIES):
         try:
             items = fetch_query(query)
         except requests.RequestException as e:
@@ -142,7 +152,7 @@ def discover_longform(hours=48, top=10):
             if not it["pub_date"] or it["pub_date"] < cutoff:
                 continue
             norm = normalize_title(it["title"])
-            if not norm or not any(w in norm for w in ANNOUNCE_WORDS):
+            if not norm or not any(w in norm for w in words):
                 continue
             entry = by_norm.setdefault(norm, {**it, "title": norm, "queries": set()})
             entry["queries"].add(query)
@@ -156,7 +166,7 @@ def discover_longform(hours=48, top=10):
     return out[:top]
 
 
-def write_longform_report(candidates, out_path):
+def write_longform_report(candidates, out_path, money=None):
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(f"# 롱폼 주제 후보: 발표 후 48시간 ({datetime.now().strftime('%Y-%m-%d')})\n\n")
@@ -168,6 +178,15 @@ def write_longform_report(candidates, out_path):
             kst = c["pub_date"].astimezone(timezone(timedelta(hours=9))).strftime("%m-%d %H:%M")
             f.write(f"- **{c['title']}** — {c['source'] or '미상'} ({kst} KST) · 키워드: {', '.join(sorted(c['queries']))}\n"
                     f"  {c['link']}\n")
+        if money is not None:
+            f.write("\n## 주식·돈·부자 후보 (시장이 크게 움직인 뉴스, 48시간)\n\n"
+                    "경제해적단형 주제. 종목 추천 금지, 숫자는 한국은행·거래소·금융위 등 원문으로 재확인.\n\n")
+            if not money:
+                f.write("이번엔 없음.\n")
+            for c in money:
+                kst = c["pub_date"].astimezone(timezone(timedelta(hours=9))).strftime("%m-%d %H:%M")
+                f.write(f"- **{c['title']}** — {c['source'] or '미상'} ({kst} KST) · 키워드: {', '.join(sorted(c['queries']))}\n"
+                        f"  {c['link']}\n")
 
 
 def main():
@@ -184,8 +203,9 @@ def main():
     print(f"후보 {len(candidates)}개 -> {out_path}")
     long_path = os.path.join(OUTPUT_DIR, f"longform_candidates_{datetime.now().strftime('%Y-%m-%d')}.md")
     long_c = discover_longform()
-    write_longform_report(long_c, long_path)
-    print(f"롱폼 후보 {len(long_c)}개 -> {long_path}")
+    money_c = discover_longform(queries=MONEY_QUERIES, words=MOVE_WORDS, top=12)
+    write_longform_report(long_c, long_path, money=money_c)
+    print(f"롱폼 후보 {len(long_c)}개 + 주식·돈 {len(money_c)}개 -> {long_path}")
 
 
 if __name__ == "__main__":

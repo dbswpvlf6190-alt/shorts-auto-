@@ -1,0 +1,24 @@
+{
+ "thumbnail": {
+  "style": "v6",
+  "lines": [
+   "서킷브레이커 {다음 1년},",
+   "코스피는 <이렇게> 됐습니다"
+  ],
+  "badge": "역대 폭락장 데이터",
+  "art_prompt": "on the right side a calm wise elderly korean investor in a beige cardigan, head and shoulders, gentle confident smile, whole head visible with space above it, warm brass desk lamp; on the left side a big glowing wall chart with a red line that drops into a deep valley and then climbs steeply to the top, a glowing blue LED box reading 1,457 at the lowest point of the valley, a glowing green LED box reading 3,000 at the top right end of the line, a big glossy green 3D arrow along the rising part, cozy dark study with bookshelves, gold coins and banknotes on the desk",
+  "shift_up": 0.06,
+  "image_path": "input/longform/08_코스피폭락/thumb_b_art.png"
+ },
+ "thumbnail_b": {
+  "style": "v6",
+  "lines": [
+   "{1주일} 만에 [-11.7%]",
+   "지금 <팔까> 버틸까"
+  ],
+  "badge": "11월 6일 서킷브레이커 발동",
+  "art_prompt": "on the left side a shocked korean man in his forties in a suit, head and shoulders, gripping his head with wide eyes and open mouth, his whole head visible with space above it; in the upper right area a huge glowing LED stock board showing the number 5,059 in giant bright blue digits, and in the top center a small white board showing 5,730, a massive glossy red 3D arrow plunging from the 5,730 board down to the 5,059 board, dark trading room full of monitors with falling charts, flying paper bills, warm golden rim light on the man and cool blue screen glow",
+  "image_path": "input/longform/08_코스피폭락/thumb_a_art.png",
+  "shift_up": 0.13
+ }
+}

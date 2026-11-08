@@ -1,0 +1,84 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "extra": true,
+  "not_before": "2026-11-10",
+  "repurposed_from": "longform/07_기초연금개편 (-KSqvp7mjaI, 11/10 18:00 공개) — v5 공개일 예고 쇼츠(신버전: 답을 다 말하지 않고 질문으로 끝냄)",
+  "source_label": "출처: 2027년 기초연금 개편 정부안(2026.9.1 국무회의, 국회 통과 전) · 보건복지부",
+  "youtube_title": "내년 4월 기초연금, 처음으로 세 가지 금액이 됩니다 #기초연금 #노후준비",
+  "youtube_description": "내년 4월부터 기초연금이 처음으로 사람마다 다른 금액이 됩니다(정부안, 국회 통과 전).\n어떤 분은 한 달 3만 원을 더 받고, 어떤 분은 사실상 동결이에요.\n\n우리 부모님은 어느 쪽일까요?\n\n▶ 전체 정리(롱폼): https://youtu.be/-KSqvp7mjaI\n\n출처: 2027년 기초연금 개편 정부안(2026.9.1 국무회의 의결 예산안) · 보건복지부 기초연금 누리집\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#기초연금 #기초연금개편 #노후준비 #부모님 #국민연금 #shorts",
+  "tags": "기초연금,기초연금개편,노후준비,부모님,국민연금,2027기초연금",
+  "tiktok_caption": "내년 4월 기초연금, 처음으로 세 가지 금액이 돼요 👵 우리 부모님은 어느 쪽일까요? 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 부모님은 기초연금 받고 계세요? #기초연금 #기초연금개편 #노후준비 #부모님 #국민연금",
+  "instagram_caption": "내년 4월 기초연금, 처음으로 세 가지 금액이 돼요 👵 우리 부모님은 어느 쪽일까요? 전체 정리는 유튜브 도장찍기전에 롱폼에서! 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 부모님은 기초연금 받고 계세요? #기초연금 #기초연금개편 #노후준비 #부모님 #국민연금",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "기초연금이 세 갈래로?",
+      "caption": "기초연금이\n{세 갈래}로?",
+      "image_prompt": "photorealistic elderly korean couple sitting at a kitchen table reading a letter together, warm afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "내년 4월부터 기초연금이 처음으로 사람마다 다른 금액이 돼요.",
+      "caption": "내년 4월부터\n사람마다 {다른 금액}",
+      "big": "세 가지 금액",
+      "badge": "정부안 · 국회 통과 전"
+    },
+    {
+      "kind": "money",
+      "voice": "지금은 혼자 받는 분이 한 달 최대 34만 9천7백 원이에요.",
+      "caption": "지금은 한 달 최대\n{34만 9,700원}",
+      "amount": 349700,
+      "unit": "원",
+      "note": "(2026년 기준연금액, 예시 금액 아님)"
+    },
+    {
+      "kind": "big",
+      "voice": "가장 어려운 분은 한 달 3만 원을 더 받아요.",
+      "caption": "가장 어려운 분은\n{한 달 3만 원 더}",
+      "big": "+3만 원",
+      "badge": "하위 30%"
+    },
+    {
+      "kind": "photo",
+      "voice": "그런데 290만 명은 금액이 그대로 멈춰요.",
+      "caption": "그런데 290만 명은\n[그대로 멈춰요]",
+      "image_prompt": "photorealistic frozen wall clock in a quiet apartment living room, cold winter light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "금액은 그대로인데, 물가는 오르니까 왜 손해일까요?",
+      "caption": "그대로인데\n왜 {손해}일까요?",
+      "image_prompt": "photorealistic grocery receipt and a few vegetables on a kitchen counter, warm light, close up, shallow depth of field, no text",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "부부라면 바뀌는 것도 하나 더 있어요. 둘 다 받을 때 깎이던 금액이요.",
+      "caption": "부부라면\n{하나 더} 바뀌어요",
+      "big": "부부감액",
+      "badge": "하위 45% 부부"
+    },
+    {
+      "kind": "photo",
+      "voice": "부모님께 꼭 보내드리세요.",
+      "caption": "부모님께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic adult daughter showing a phone screen to her elderly mother on a sofa, warm light, screen blurred, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "전체 금액과 기준은 도장찍기전에 롱폼에서 확인하세요.",
+      "caption": "전체 금액·기준은\n{롱폼}에서",
+      "big": "롱폼에서 공개",
+      "badge": "도장찍기전에"
+    },
+    {
+      "kind": "big",
+      "voice": "여러분 부모님은 세 갈래 중 어디일 것 같나요?",
+      "caption": "우리 부모님은\n{어느 쪽}일까요?",
+      "big": "38만? 35만 9천? 35만?",
+      "badge": "댓글로 알려주세요"
+    }
+  ]
+}

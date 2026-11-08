@@ -728,6 +728,101 @@ def _rich_layer(size, xy, text, f, cols, stroke, stroke_fill):
     return lay
 
 
+TH_COLS = {"white": (255, 255, 255), "yellow": (255, 222, 0), "red": (255, 56, 48), "green": (90, 235, 70),
+           "violet": (176, 160, 255), "sky": (110, 200, 255)}
+
+
+def segs6(text, base="white", yellow="yellow", red="red", green="green"):
+    """썸네일 v6 마크업: {노랑} [빨강] <초록> — 경제해적단처럼 한 장에 3~4색을 섞는다."""
+    opens = {"{": yellow, "[": red, "<": green}
+    segs, col, buf = [], base, ""
+    for ch in text:
+        if ch in opens:
+            if buf:
+                segs.append((buf, col))
+            buf, col = "", opens[ch]
+        elif ch in "}]>":
+            if buf:
+                segs.append((buf, col))
+            buf, col = "", base
+        else:
+            buf += ch
+    if buf:
+        segs.append((buf, col))
+    return [(s, TH_COLS.get(c, c) if isinstance(c, str) else c) for s, c in segs]
+
+
+def plain6(text):
+    return "".join(s for s, _ in segs6(text))
+
+
+def _rich6(size, xy, text, f, stroke, shadow=False, cols=None):
+    lay = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(lay)
+    x, y = xy
+    for seg, col in segs6(text, **(cols or {})):
+        fill = (0, 0, 0, 255) if shadow else tuple(col) + (255,)
+        d.text((x, y), seg, font=f, fill=fill, stroke_width=stroke, stroke_fill=(0, 0, 0, 255))
+        x += d.textlength(seg, font=f)
+    return lay
+
+
+def _thumb_board(b):
+    """그림 속 전광판(경제해적단 '원/달러 환율 1,562원' 판): 작은 제목 + 큰 숫자 + 작은 설명, 살짝 기울임."""
+    vf = tfont(b.get("size", 92))
+    lf = tfont(int(vf.size * 0.36))
+    sf_ = tfont(int(vf.size * 0.3))
+    tmp = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
+    w = int(max(tmp.textlength(b.get("value", ""), font=vf), tmp.textlength(b.get("label", ""), font=lf),
+                tmp.textlength(b.get("sub", ""), font=sf_)) + 70)
+    h = int(vf.size * 1.12 + (lf.size + 14 if b.get("label") else 0) + (sf_.size + 10 if b.get("sub") else 0) + 34)
+    pad = 40
+    lay = Image.new("RGBA", (w + pad * 2, h + pad * 2), (0, 0, 0, 0))
+    sh = Image.new("RGBA", lay.size, (0, 0, 0, 0))
+    ImageDraw.Draw(sh).rounded_rectangle([pad + 8, pad + 12, pad + w + 8, pad + h + 12], radius=14, fill=(0, 0, 0, 210))
+    lay = Image.alpha_composite(lay, sh.filter(ImageFilter.GaussianBlur(10)))
+    d = ImageDraw.Draw(lay)
+    edge = {"gold": (232, 186, 70), "white": (240, 240, 240), "red": (226, 30, 30)}.get(b.get("edge", "gold"), (232, 186, 70))
+    d.rounded_rectangle([pad, pad, pad + w, pad + h], radius=14, fill=(16, 18, 26, 240), outline=edge, width=5)
+    y = pad + 16
+    cx = pad + w / 2
+    if b.get("label"):
+        d.text((cx, y), b["label"], font=lf, fill=(235, 235, 235), anchor="ma")
+        y += lf.size + 14
+    col = TH_COLS.get(b.get("color", "green"), (90, 235, 70))
+    d.text((cx, y), b.get("value", ""), font=vf, fill=col, anchor="ma", stroke_width=3, stroke_fill=(0, 0, 0))
+    y += int(vf.size * 1.12)
+    if b.get("sub"):
+        d.text((cx, y), b["sub"], font=sf_, fill=(190, 190, 190), anchor="ma")
+    if b.get("tilt"):
+        lay = lay.rotate(b["tilt"], resample=Image.BICUBIC, expand=True)
+    return lay
+
+
+def _thumb_arrow(size, a):
+    """큰 추세 화살표(경제해적단 환율 폭락 빨간 화살표). from/to는 0~1 비율 좌표."""
+    import math
+    W_, H_ = size
+    x0, y0 = a["from"][0] * W_, a["from"][1] * H_
+    x1, y1 = a["to"][0] * W_, a["to"][1] * H_
+    ang = math.atan2(y1 - y0, x1 - x0)
+    wd = a.get("width", 46)
+    head = wd * 2.3
+    ux, uy = math.cos(ang), math.sin(ang)
+    px, py = -uy, ux
+    bx, by = x1 - ux * head, y1 - uy * head
+    poly = [(x0 + px * wd / 2, y0 + py * wd / 2), (bx + px * wd / 2, by + py * wd / 2), (bx + px * wd * 1.25, by + py * wd * 1.25),
+            (x1, y1), (bx - px * wd * 1.25, by - py * wd * 1.25), (bx - px * wd / 2, by - py * wd / 2), (x0 - px * wd / 2, y0 - py * wd / 2)]
+    col = TH_COLS.get(a.get("color", "red"), (255, 56, 48))
+    lay = Image.new("RGBA", size, (0, 0, 0, 0))
+    sh = Image.new("RGBA", size, (0, 0, 0, 0))
+    ImageDraw.Draw(sh).polygon([(x + 8, y + 10) for x, y in poly], fill=(0, 0, 0, 200))
+    lay = Image.alpha_composite(lay, sh.filter(ImageFilter.GaussianBlur(8)))
+    d = ImageDraw.Draw(lay)
+    d.polygon(poly, fill=col + (255,), outline=(255, 255, 255, 255), width=6)
+    return lay
+
+
 def make_thumb_v3(meta, img_dir, out):
     """경제해적단 썸네일 분석(10/29, 상위 16 vs 하위 16) 반영.
     상위: 어둡고 진한 영화풍 그림이 '이야기'를 보여 주고(그림 속 숫자 팻말·라벨), 아래 1/3에 큰 글자 2줄
@@ -762,6 +857,12 @@ def make_thumb_v3(meta, img_dir, out):
     im = Image.composite(Image.new("RGB", (tw, thh), (0, 0, 0)), im, Image.fromarray((shade * 255).astype(np.uint8)))
     im = im.convert("RGBA")
     cols = {"green": (34, 170, 84), "red": (225, 35, 35), "yellow": (245, 190, 0), "navy": (18, 36, 84), "dark": (16, 20, 30)}
+    for a in th.get("arrows", []):  # v6: 큰 추세 화살표
+        im = Image.alpha_composite(im, _thumb_arrow(im.size, a))
+    for b in th.get("boards", []):  # v6: 그림 속 전광판(작은 제목 + 큰 숫자)
+        bl = _thumb_board(b)
+        bx, by = int(b["x"] * tw - bl.width / 2), int(b["y"] * thh - bl.height / 2)
+        im.alpha_composite(bl, (max(-40, min(tw - bl.width + 40, bx)), max(-40, by)))
     for t in th.get("tags", []):  # 그림 속 팻말(벤치마크의 환율 전광판·숫자 라벨 역할)
         tf = tfont(t.get("size", 52))
         tmp = ImageDraw.Draw(im)
@@ -776,8 +877,9 @@ def make_thumb_v3(meta, img_dir, out):
         d.text((x, y + h / 2 + 2), t["text"], font=tf, fill=(255, 255, 255), anchor="mm")
     d = ImageDraw.Draw(im)
     lines = th.get("lines", [meta.get("youtube_title", "")[:14]])
-    scale = th.get("line_scale", [0.72, 1.0] if len(lines) == 2 else [1.0] * len(lines))
-    fonts = [tfit(d, ln, tw - 96, int(176 * sc)) for ln, sc in zip(lines, scale)]
+    v6 = th.get("style") == "v6"
+    scale = th.get("line_scale", ([0.9, 1.0] if v6 else [0.72, 1.0]) if len(lines) == 2 else [1.0] * len(lines))
+    fonts = [tfit(d, plain6(ln) if v6 else ln, tw - (56 if v6 else 96), int((196 if v6 else 176) * sc)) for ln, sc in zip(lines, scale)]
     gap = 4
     y = thh - 40 - sum(f.size + gap for f in fonts)
     if th.get("badge"):
@@ -786,6 +888,13 @@ def make_thumb_v3(meta, img_dir, out):
         d.rounded_rectangle([46, y - 74, 46 + bw, y - 12], radius=8, fill=(226, 30, 30), outline=(255, 255, 255), width=3)
         d.text((46 + bw / 2, y - 43), th["badge"], font=bf, fill=(255, 255, 255), anchor="mm")
     hi, warn = th.get("hi", (255, 222, 0)), th.get("warn", (255, 56, 48))
+    if th.get("style") == "v6":  # 11/8 경제해적단 카피: 가로를 꽉 채우는 2줄, {노랑}[빨강]<초록> 3~4색, 가운데 정렬
+        for ln, f in zip(lines, fonts):
+            x = (tw - d.textlength(plain6(ln), font=f)) / 2
+            im = Image.alpha_composite(im, _rich6(im.size, (x + 6, y + 10), ln, f, 24, shadow=True).filter(ImageFilter.GaussianBlur(10)))
+            im = Image.alpha_composite(im, _rich6(im.size, (x, y), ln, f, 14, cols=th.get("cols")))
+            y += f.size + gap
+        lines = []
     for ln, f in zip(lines, fonts):
         # 1) 넓게 흐린 검은 그림자(글자를 배경에서 띄움) 2) 두꺼운 검은 테두리 3) 본 글자
         sh = _rich_layer(im.size, (48 + 6, y + 9), ln, f, ((0, 0, 0, 255), (0, 0, 0, 255), (0, 0, 0, 255)), 22, (0, 0, 0, 255))

@@ -1,0 +1,92 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 개인채무자보호법 제8조·시행령 제7조, 지지옥션 경매동향(연합뉴스·파이낸셜뉴스)",
+  "youtube_title": "대출 연체돼도 집은 6개월 동안 안 넘어갑니다 #경매 #대출연체",
+  "youtube_description": "대출 이자가 2개월 밀리면 기한의 이익이 상실돼 원금 전체를 한꺼번에 갚으라는 통보가 와요. 3개월 넘게 연체되면 은행이 경매를 신청할 수 있고, 경매 신청 10영업일 전에는 반드시 집으로 알려줘야 해요(개인채무자보호법 제8조).\n\n전입신고를 하고 실제 거주하는 집이면서 집값이 6억원 이하라면, 경매 신청 사유가 발생한 날부터 6개월이 지나야 경매를 신청할 수 있어요(같은 법 시행령 제7조). 다만 집값이 6억원을 넘으면 이 유예를 받을 수 없어요.\n\n지지옥션에 따르면 지난달(10월) 전국 아파트 경매 진행 건수는 12년 7개월 만에 가장 많았어요.\n\n출처: 개인채무자보호법 제8조·시행령 제7조, 지지옥션 경매동향(연합뉴스·파이낸셜뉴스)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#경매 #대출연체 #개인채무자보호법 #주택경매 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "경매,대출연체,개인채무자보호법,주택경매,부동산정책",
+  "tiktok_caption": "대출 연체돼도 집이 6개월은 안 넘어가요 😮 근데 집값 6억 넘으면 못 받아요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집은 6억 위인가요 아래인가요? #경매 #대출연체 #부동산정책",
+  "instagram_caption": "대출 연체돼도 집이 6개월은 안 넘어가요 😮 근데 집값 6억 넘으면 못 받아요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집은 6억 위인가요 아래인가요? #경매 #대출연체 #부동산정책",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "집 날아가는 거 시간문제?",
+      "caption": "집 날아가는 거\n{시간문제}?",
+      "image_prompt": "photorealistic small wooden model house on the edge of a cracked wooden table, dramatic shadow, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 대출 연체돼도 집이 당장 넘어가진 않아요.",
+      "caption": "결론\n{당장}은 안 넘어가요",
+      "image_prompt": "photorealistic Korean apartment building exterior at dusk with warm lit windows, calm atmosphere, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "연체 2개월부터 전액 상환 통보가 와요.",
+      "caption": "연체 {2개월}이면\n전액 상환 통보",
+      "big": "연체 2개월",
+      "badge": "전액 상환 통보"
+    },
+    {
+      "kind": "big",
+      "voice": "3개월 넘게 밀리면 은행이 경매를 신청할 수 있어요.",
+      "caption": "{3개월} 넘으면\n경매 신청 가능",
+      "big": "연체 3개월 이상",
+      "badge": "경매 신청 가능"
+    },
+    {
+      "kind": "big",
+      "voice": "경매 신청 10영업일 전엔 반드시 집으로 알려줘야 해요.",
+      "caption": "경매신청 {10영업일 전}\n반드시 통지",
+      "big": "10영업일 전",
+      "badge": "경매 예정 통지"
+    },
+    {
+      "kind": "big",
+      "voice": "전입신고하고 실제 살고 있는 집이면 조건이 붙어요.",
+      "caption": "{전입신고}하고\n{실거주}하는 집이면",
+      "big": "전입신고 실거주",
+      "badge": "조건부 보호"
+    },
+    {
+      "kind": "big",
+      "voice": "집값이 6억원 이하라면 6개월은 경매를 미뤄줘요.",
+      "caption": "{6억원 이하}면\n{6개월} 유예돼요",
+      "big": "6억원 이하",
+      "badge": "6개월 유예"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 집값이 6억원을 넘으면 어떨까요?",
+      "caption": "근데 {6억원}을\n넘으면?",
+      "image_prompt": "photorealistic luxury apartment tower viewed from below at night, glowing windows, dramatic upward angle, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "이 유예를 전혀 못 받아요.",
+      "caption": "{유예 없이}\n곧바로 진행돼요",
+      "big": "유예 0일",
+      "badge": "보호 대상 아님",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "실제로 지난달 전국 아파트 경매가 12년 7개월 만에 가장 많았어요.",
+      "caption": "지난달 아파트 경매\n{12년 7개월} 만에 최다",
+      "image_prompt": "photorealistic courthouse building facade with tall stone columns under an overcast sky, wide angle, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "대출 걱정되는 가족에게 꼭 보내주세요.",
+      "caption": "가족에게\n{공유}해주세요",
+      "image_prompt": "photorealistic warm living room window glowing at dusk viewed from outside, soft bokeh, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 집은 6억원보다 위인가요 아래인가요?",
+      "caption": "여러분 집은\n{6억원}보다 위인가요 아래인가요?",
+      "image_prompt": "photorealistic city skyline at night with scattered lit apartment windows, soft bokeh lights, cinematic, shallow depth of field, no text"
+    }
+  ]
+}

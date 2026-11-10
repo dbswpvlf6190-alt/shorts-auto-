@@ -75,9 +75,42 @@ def get_desktop_path():
 def get_tiktok_delivery_path():
     """틱톡 파일을 가져다 놓을 폴더. 바탕화면 루트로 고정 (2026-09-03: 기존
     정리 폴더(05_영상_SNS/틱톡 영상)로 자동 리디렉션하는 걸 시도했었으나
-    사용자가 명시적으로 바탕화면 루트를 원한다고 확인함 — 그 정리 폴더는
-    이 파이프라인과 무관한 별도 용도로 보임, 건드리지 말 것)."""
+    사용자가 명시적으로 바탕화면 루트를 원한다고 확인함). 그 정리 폴더는 사용자가
+    틱톡에 올린 뒤 옮겨 두는 '업로드 완료' 보관함이다 — 아래 cleanup_uploaded_tiktok 참고."""
     return get_desktop_path()
+
+
+TIKTOK_DONE_SUBDIR = os.path.join("05_영상_SNS", "틱톡 영상")
+VIDEO_EXTS = (".mp4", ".mov", ".m4v", ".webm")
+
+
+def cleanup_uploaded_tiktok():
+    """'틱톡 영상' 폴더(= 사용자가 틱톡에 올린 뒤 옮겨 둔 영상)를 매 실행마다 비운다(2026-11-10 사용자 규칙:
+    "틱톡 올라간 영상은 다 지우자, 데스크톱도 동일"). 무료 OneDrive 5GB가 이 폴더(4.6GB)로 꽉 차서
+    두 컴퓨터 바탕 화면 동기화가 11/9부터 멈췄던 사고 재발 방지. 바탕 화면 루트에 있는 틱톡 파일은
+    아직 안 올린 것이므로 건드리지 않는다. 노트북은 바탕 화면이 OneDrive라 두 경로가 같고,
+    데스크톱은 바탕 화면이 로컬이라 로컬·OneDrive 두 곳을 다 본다. 영상 파일만 지운다."""
+    roots = [get_desktop_path()]
+    if os.environ.get("OneDrive"):
+        roots.append(os.path.join(os.environ["OneDrive"], "바탕 화면"))
+    seen, removed, failed = set(), 0, 0
+    for root in roots:
+        folder = os.path.join(root, TIKTOK_DONE_SUBDIR)
+        key = os.path.normcase(os.path.abspath(folder))
+        if key in seen or not os.path.isdir(folder):
+            continue
+        seen.add(key)
+        long_folder = "\\\\?\\" + os.path.abspath(folder)  # 캡션이 든 긴 파일명(MAX_PATH 초과) 대응
+        for name in os.listdir(long_folder):
+            path = os.path.join(long_folder, name)
+            if os.path.isfile(path) and name.lower().endswith(VIDEO_EXTS):
+                try:
+                    os.remove(path)
+                    removed += 1
+                except OSError:
+                    failed += 1
+    if removed or failed:
+        log(f"틱톡 업로드 완료 영상 정리: {removed}개 삭제" + (f", {failed}개 실패" if failed else ""))
 
 
 class StepFailed(RuntimeError):
@@ -441,6 +474,10 @@ def main():
         log("큐 폴더 없음")
         return
     git_pull()  # 다른 컴퓨터가 먼저 처리/락 건 게 있는지 최신 상태부터 받아옴
+    try:
+        cleanup_uploaded_tiktok()  # 컴퓨터마다 따로 돌아야 하므로 락과 상관없이 매번 실행
+    except Exception as e:
+        log(f"틱톡 정리 건너뜀: {e}")
     names = sorted(os.listdir(QUEUE_DIR))
     # 일반 항목(매일 밤 클라우드가 넣는 뉴스 쇼츠)을 먼저, '추가분'(롱폼 재가공 등)은 그 뒤에 본다
     items = [n for n in names if not is_extra(os.path.join(QUEUE_DIR, n))] + [n for n in names if is_extra(os.path.join(QUEUE_DIR, n))]

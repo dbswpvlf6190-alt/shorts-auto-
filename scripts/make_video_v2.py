@@ -129,11 +129,18 @@ def make_base(scene, image_path, source):
             who = card.get("who", "")
             d.text((150, y0 + 128), who, font=gfx.font(48 if len(who) > 6 else 64), fill=col if on else (110, 120, 140))
     if kind == "big":
+        # 클라우드 대본이 "조합설립 후\n매매 금지"처럼 줄바꿈을 넣기도 한다(11/9 92번). textlength는 여러 줄을 못 재서
+        # 렌더가 멈추고 대기열 전체가 이틀 막혔다 → 줄마다 재고 가운데 정렬로 그린다.
+        lines = [ln for ln in str(scene["big"]).split("\n") if ln.strip()] or [""]
         f = gfx.font(150)
-        while d.textlength(scene["big"], font=f) > 940 and f.size > 70:
+        while max(d.textlength(ln, font=f) for ln in lines) > 940 and f.size > 70:
             f = gfx.font(f.size - 8)
-        tw = d.textlength(scene["big"], font=f)
-        d.text((W / 2 - tw / 2, H * 0.44), scene["big"], font=f, fill=GOLD, stroke_width=7, stroke_fill=(0, 0, 0))
+        lh = int(f.size * 1.2)
+        y = H * 0.44 - (len(lines) - 1) * lh / 2
+        for ln in lines:
+            tw = d.textlength(ln, font=f)
+            d.text((W / 2 - tw / 2, y), ln, font=f, fill=GOLD, stroke_width=7, stroke_fill=(0, 0, 0))
+            y += lh
     return add_source(im, source)
 
 

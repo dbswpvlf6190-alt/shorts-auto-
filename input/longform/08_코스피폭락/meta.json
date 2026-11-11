@@ -161,7 +161,7 @@
         },
         {
           "kind": "art",
-          "image_prompt": "a calendar page for a thursday with a red downward arrow drawn on it, dark desk, dramatic lamp light, no readable text",
+          "image_prompt": "a dark desk with a fallen coffee cup and scattered papers under a single lamp, the night before a storm, ominous mood, no text, no numbers",
           "voice": "사실 전조는 하루 전부터 있었습니다. 11월 5일에도 코스피는 5.3퍼센트 빠졌거든요. 이틀 연속으로 큰 하락이 이어진 겁니다."
         },
         {
@@ -224,6 +224,16 @@
       "art_en": "Eleven Times in One Year",
       "scenes": [
         {
+          "kind": "art",
+          "image_prompt": "a rocket made of stacked gold coins launching into the night sky, sparks, dramatic, cinematic",
+          "voice": "올해 코스피가 어떤 길을 걸어왔는지부터 짧게 볼게요. 작년 마지막 거래일 4천2백14였던 지수가, 반년 만인 6월 22일 9천1백14가 됐습니다. 반년 만에 두 배가 넘었어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two giant chess pieces, one slightly taller overtaking the other, on a glowing board, dramatic lighting, symbolic, no text",
+          "voice": "그날은 SK하이닉스가 처음으로 시가총액에서 삼성전자를 앞지른 날이기도 했습니다. 반도체가 시장 전체를 끌어올린 거죠."
+        },
+        {
           "kind": "timeline",
           "heading": "2026년 코스피 서킷브레이커 11번",
           "points": [
@@ -254,17 +264,7 @@
               "active": true
             }
           ],
-          "voice": "올해 두꺼비집이 내려간 날을 쭉 놓아 보면 이렇습니다. 3월에 두 번, 6월에 세 번, 7월에 네 번, 10월과 11월에 한 번씩. 열한 번 중 여덟 번이 반도체와 기술주 때문이었어요."
-        },
-        {
-          "kind": "art",
-          "image_prompt": "a rocket made of stacked gold coins launching into the night sky, sparks, dramatic, cinematic",
-          "voice": "올해 코스피가 어떤 길을 걸어왔는지부터 짧게 볼게요. 작년 마지막 거래일 4천2백14였던 지수가, 반년 만인 6월 22일 9천1백14가 됐습니다. 반년 만에 두 배가 넘었어요."
-        },
-        {
-          "kind": "art",
-          "image_prompt": "two giant chess pieces, one slightly taller overtaking the other, on a glowing board, dramatic lighting, symbolic, no text",
-          "voice": "그날은 SK하이닉스가 처음으로 시가총액에서 삼성전자를 앞지른 날이기도 했습니다. 반도체가 시장 전체를 끌어올린 거죠."
+          "voice": "그런데 그 길에서 두꺼비집이 내려간 날을 쭉 놓아 보면 이렇습니다. 3월에 두 번, 6월에 세 번, 7월에 네 번, 10월과 11월에 한 번씩. 열한 번 중 여덟 번이 반도체와 기술주 때문이었어요."
         },
         {
           "kind": "art",
@@ -444,7 +444,7 @@
         },
         {
           "kind": "art",
-          "image_prompt": "four golden trophies lined up on a shelf and two empty spaces beside them, dramatic spotlight, cinematic",
+          "image_prompt": "a row of golden trophies glowing on a long shelf, the far end of the shelf in deep shadow, dramatic spotlight, cinematic, no text",
           "title": "남은 [두 번]",
           "en": "The Other Two",
           "voice": "여기까지 네 번은 모두 1년 뒤에 올라 있었습니다. 많게는 두 배. 그래서 서킷브레이커 날은 사는 날이라는 말도 돕니다. 그런데 남은 두 번이 있어요."
@@ -768,7 +768,7 @@
               "color": "red"
             },
             {
-              "date": "2025년 3월 31일",
+              "date": "2025년 3월",
               "label": "전면 재개",
               "color": "green",
               "active": true
@@ -940,7 +940,7 @@
         },
         {
           "kind": "art",
-          "image_prompt": "a cozy korean apartment exterior at dusk with warm lit windows, peaceful neighborhood, cinematic",
+          "image_prompt": "a modern korean high-rise apartment complex at dusk with warm lit windows and a small playground in front, peaceful, cinematic, no text",
           "voice": "다음 영상에서는 다시 집 이야기로 갑니다. 요즘 검색이 늘고 있는 부동산 세제 개편, 우리 집 세금이 어떻게 달라지는지 정리해 드릴게요."
         },
         {

@@ -1,0 +1,1031 @@
+{
+  "format": "long",
+  "rate": "+30%",
+  "voice_style": "M1",
+  "field": "money",
+  "script_version": "v3 (v5 구조 + 11/6 길이 + v6-2 주식·돈: 첫 문장 돈 · 답은 질문으로 숨김 · 인트로 3장면 · 첫 답(17번 중 11번) 뒤 구독 · 기준일은 1장 끝 · 큰 비유 1개(두꺼비집: 과부하 vs 배선) · 떡밥('1년 만에 세 배' 3장→5장 회수) · 반전(같은 해 같은 두꺼비집, 다른 결말) · 좋은 경우 4 + 나쁜 경우 2 함께 · 지금 이야기(반대매매·담보비율 면제·공매도) · 통념 깨기 3 · 실천 4 · 비유 회수. 11/11 사장님 '너 말대로 가보자' = 각도: 폭락 뉴스 → 서킷브레이커 다음 1년 데이터 + 반대매매·공매도)",
+  "privacy": "private",
+  "fact_check": "2026-11-11 확인. 지수 종가는 야후 파이낸스 ^KS11 일별 종가(뉴스 수치와 대조: 11/6 5,059.69·11/9 5,018.85·11/10 5,239.13 일치) / 역대 서킷브레이커(2026년 이전 6번): 2000.4.17 707.72(전일 800.89, -11.63%) → 1년 뒤 2001.4.17 513.97(-27.4%), 1년 안 최저 491.21(2001.4.10), 2년 뒤 2002.4.17 930.51(+31.5%), 다음 날 4.18 +5.59% / 2000.9.18 577.56(-8.06%) → 2001.9.18 484.93(-16.0%) / 2001.9.12 475.60(전일 540.57, -12.0%) → 2002.9.12 739.22(+55.4%) / 2020.3.13 1,771.44 → 2021.3.15 3,045.71(+71.9%), 3.13→3.19 -17.7% / 2020.3.19 1,457.64 → 2021.3.19 3,039.53(+108.5%) / 2024.8.5 2,441.55(-8.77%) → 2025.8.5 3,198.00(+31.0%). 발동 목록·순서: 나무위키 '서킷브레이커', 머니투데이(2026.3.4 '2024년 8월 이후 처음'), 아시아경제(2026.11.6 '올해 11번째, 역대 17번째'). 2008년은 코스피 발동 기록 없음(목록에 없음) → 쓰지 않음 / 2000년 거품: 1998.6.16 280.00 → 2000.1.4 1,059.04(3.78배), 바닥 2001.9.17 468.76(고점 대비 -55.7%) / 2026: 2025.6.23 3,014.47 → 2026.6.22 9,114.55(사상 최고, 3.02배, 뉴시스 7.13·파이낸셜뉴스 10.16), 2025.12.30 4,214.17, 3.4 서킷 5,093.54 → 6.22 +79%, 6.23 서킷 8,203.84 → 11.11 5,375.36(-34.5%), 11.11 고점 대비 -41.0%, 6.22 대비 11.6 = 0.555(1억 → 약 5,550만) / 2026년 서킷 11번 날짜·원인(이투데이 2026.11.6): 3.4 중동 무력 충돌, 3.9 유가 급등, 6.8 미 금리 인상 우려, 6.23·6.26 미 기술주·빅테크, 7.7 반도체 차익 실현, 7.13 중동, 7.28·7.29 반도체, 10.15 미 물가(5,554.22 -7.57%), 11.6 미 중간선거 뒤 데이터센터 규제 우려 — 11번 중 8번 기술주·반도체 / 11.6: 9시3분 1단계(4,924.61, -8.52%), 필라델피아 반도체지수 5일(현지) -12.25%, 삼성전자 장초반 -10.57%, SK하이닉스 -12.50%, 종가 5,059.69(-6.02%, 3.31 5,052.46 이후 최저), 1주일 10.30 5,730.74 → -11.71%, 외국인 1주일 순매도 10조 3,810억(이틀 약 6조, 파이낸셜뉴스 11.8), 11.5 -5.28% / 11.10 +4.39% 5,239.13, 9시6분 매수 사이드카(아시아경제·파이낸셜뉴스 11.10), 11.11 5,375.36 / SK하이닉스 6.22 291만9천 → 10월 중순 126만2천(-56.77%, 파이낸셜뉴스 10.16) / 키움 한지영 '투매 성격이 짙다… 규제 범위·실제 지연·AI 수요 감소 확인 안 됨'(이투데이 11.6), 뉴시스 7.13 '계단 올라서 엘베 타고 내려온 코스피… 쏠림·레버리지가 변동성 키워' / 서킷브레이커 규칙: 8% 1분 → 20분 정지 후 10분 단일가, 15%(1단계보다 1%p 더) → 20분, 20% → 당일 종료; 사이드카 선물 5% 1분 → 프로그램매매 5분 정지 / 반대매매: 미수 반대매매 11.6 70억 → 11.9 379억(5.4배, 미수 대비 4.2%), 11.10 630억4,100만(+66.3%, 뉴스1), 신용융자 11.9 28조 705억(11.2 29조 2,160억 대비 1조 1,455억 감소, 아주경제·서울경제 11.11), 담보비율 140% 유지 의무 11.9부터 3개월 면제(F4, SBS Biz·머니투데이·이투데이 11.6), 개별 계좌 반대매매 자동 중단 아님(증권사별 기준) / 공매도 금지: 2008.10(금융위기)·2011.8(미 신용등급 강등)·2020.3.16(코로나)·2023.11.6(전면) → 2025.3.31 전면 재개(금융위 보도자료). 2020.3.16~19 나흘 하락 1,714.86 → 1,457.64(금융위 '4일간 하락 후 상승'), 2023.11.6 +5.66% 2,502.37 → 11.7 -2.33% 2,443.96(상승분 약 44% 반납). 11.11까지 2026년 공매도 금지 발표 기사 없음(검색 확인) / 2020.3.20 +7.44% 뒤 3.23 -5.3%, 2000.4~2001.9 하루 +4% 넘는 날 20번 이상. 쓰지 않은 것: 연령별 반대매매 통계, 코스피 내 반도체 비중, 2026 기업 이익 전망(원문 미확인).",
+  "thumbnail": {
+    "style": "v6",
+    "lines": [
+      "서킷브레이커 {다음 1년},",
+      "코스피는 <이렇게> 됐습니다"
+    ],
+    "badge": "역대 폭락장 데이터",
+    "art_prompt": "on the right side a calm wise elderly korean investor in a beige cardigan, head and shoulders, gentle confident smile, whole head visible with space above it, warm brass desk lamp; on the left side a big glowing wall chart with a red line that drops into a deep valley and then climbs steeply to the top, a glowing blue LED box reading 1,457 at the lowest point of the valley, a glowing green LED box reading 3,000 at the top right end of the line, a big glossy green 3D arrow along the rising part, cozy dark study with bookshelves, gold coins and banknotes on the desk",
+    "shift_up": 0.06,
+    "image_path": "input/longform/08_코스피폭락/thumb_b_art.png"
+  },
+  "thumbnail_b": {
+    "style": "v6",
+    "lines": [
+      "{1주일} 만에 [-11.7%]",
+      "지금 <팔까> 버틸까"
+    ],
+    "badge": "11월 6일 서킷브레이커 발동",
+    "art_prompt": "on the left side a shocked korean man in his forties in a suit, head and shoulders, gripping his head with wide eyes and open mouth, his whole head visible with space above it; in the upper right area a huge glowing LED stock board showing the number 5,059 in giant bright blue digits, and in the top center a small white board showing 5,730, a massive glossy red 3D arrow plunging from the 5,730 board down to the 5,059 board, dark trading room full of monitors with falling charts, flying paper bills, warm golden rim light on the man and cool blue screen glow",
+    "image_path": "input/longform/08_코스피폭락/thumb_a_art.png",
+    "shift_up": 0.13
+  },
+  "chapters": [
+    {
+      "title": "인트로",
+      "tag": "1억이 5천5백만 원으로",
+      "art_title": "서킷브레이커 [다음 1년]",
+      "art_en": "One Year After the Breaker",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged korean man sitting alone at a kitchen table late at night staring at his smartphone with a worried face, the phone glow lighting his face, dark room, cinematic",
+          "voice": "6월 22일, 코스피를 그대로 따라가는 곳에 1억 원을 넣으셨다면, 11월 6일 그 돈은 약 5천5백만 원이 돼 있었습니다. 넉 달 반 만에 4천5백만 원이 사라진 셈이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a huge empty stock exchange trading floor with all screens frozen and dimmed red, a single clock on the wall, eerie silence, cinematic wide shot, no readable text",
+          "voice": "그리고 그날 아침, 장이 열리고 단 3분 만에 시장 전체가 멈췄습니다. 서킷브레이커. 올해만 벌써 열한 번째였어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a mountain road at dusk that splits into two paths, one climbing up toward a bright golden sunrise and the other going down into a dark foggy valley, cinematic, no text",
+          "voice": "그런데 역사를 보면, 서킷브레이커가 울린 다음 1년은 완전히 둘로 갈렸습니다. 두 배가 된 해가 있고, 거기서 30퍼센트가 더 빠진 해가 있어요. 무엇이 그 둘을 갈랐는지, 지금은 어느 쪽에 더 가까운지, 끝까지 같이 확인해 보시죠."
+        }
+      ]
+    },
+    {
+      "title": "두꺼비집이 내려갔다",
+      "tag": "서킷브레이커란",
+      "source": "출처: 한국거래소 시장운영 규정 · 이투데이·아시아경제(2026.11.6)",
+      "art_title": "주식시장의 [두꺼비집]",
+      "art_en": "The Market's Circuit Breaker",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a hand pushing up the main switch of an old electrical fuse box on a wall in a dark korean apartment hallway, a flashlight beam, dramatic shadows",
+          "voice": "집에서 두꺼비집이 내려간 적 있으시죠? 전자레인지에 헤어드라이어까지 한꺼번에 돌리면, 딸깍 하고 온 집이 깜깜해집니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "close up of an electrical breaker switch snapping to the off position, small sparks, dark background, macro shot",
+          "voice": "두꺼비집이 하는 일은 하나예요. 전기가 한꺼번에 너무 많이 흐르면 일단 끊는다. 불이 나기 전에요."
+        },
+        {
+          "kind": "cards",
+          "heading": "코스피 서킷브레이커 3단계",
+          "cards": [
+            {
+              "title": "1단계 · 8% 하락",
+              "body": "1분 이어지면 20분 매매 정지",
+              "color": "orange"
+            },
+            {
+              "title": "2단계 · 15% 하락",
+              "body": "다시 20분 매매 정지",
+              "color": "red"
+            },
+            {
+              "title": "3단계 · 20% 하락",
+              "body": "그날 장 바로 종료",
+              "color": "navy"
+            }
+          ],
+          "voice": "주식시장의 두꺼비집이 서킷브레이커입니다. 코스피가 전날보다 8퍼센트 넘게 떨어진 상태가 1분 이어지면 20분 동안 모든 거래를 멈춥니다. 15퍼센트면 한 번 더, 20퍼센트면 그날 장을 아예 닫아요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a stopwatch on a desk next to a pile of paper order slips gathered into one bundle, dim light, no readable text",
+          "voice": "20분을 쉬고 나면 바로 평소처럼 돌아가지 않습니다. 10분 동안은 주문을 모아 두었다가 한 번에 체결해요. 한꺼번에 몰리는 걸 한 번 더 걸러 내는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a crowd of korean office workers frozen in place looking at their phones on a busy seoul street, time standing still, cinematic",
+          "voice": "20분 동안 숨을 고르라는 장치예요. 겁에 질려 누르는 매도 버튼을, 잠깐이라도 멈추게 하는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a small secondary breaker switch next to a big main breaker in a fuse box, soft blue light, shallow depth of field",
+          "voice": "두꺼비집보다 작은 차단기도 있습니다. 사이드카라고 해요. 선물 가격이 5퍼센트 넘게 움직이면, 컴퓨터가 자동으로 내는 주문만 5분 동안 멈춥니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a dark apartment living room lit only by a candle, a family sitting quietly waiting for the power to return, cinematic",
+          "voice": "그런데 이 두꺼비집에는 약점이 하나 있어요. 왜 내려갔는지는 알려 주지 않는다는 겁니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "split image, left side a kitchen with many appliances running at once, right side old burnt electrical wires smoking inside a wall, dramatic lighting",
+          "title": "과부하일까, [배선 문제]일까",
+          "en": "Overload or Bad Wiring",
+          "voice": "전기를 잠깐 많이 써서 내려간 건지, 벽 속 배선이 타들어 가고 있어서 내려간 건지. 딸깍 소리는 똑같거든요. 오늘 영상은 이 둘을 구분하는 이야기입니다."
+        },
+        {
+          "kind": "number",
+          "heading": "코스피 서킷브레이커 발동 (2026.11.6 기준)",
+          "amount": 17,
+          "unit": "번",
+          "label": "역대 발동 횟수",
+          "note": "이 중 11번이 2026년 · 2000~2025년은 6번",
+          "color": "red",
+          "voice": "첫 번째 답부터 드릴게요. 코스피 두꺼비집은 지금까지 열일곱 번 내려갔습니다. 그중 열한 번이 올해예요. 2000년부터 작년까지 26년 동안은 여섯 번뿐이었는데요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old korean apartment building at night where the lights in every window flicker off and on, cinematic, moody",
+          "voice": "한 집에서 두꺼비집이 1년에 열한 번 내려간다면 우리는 이렇게 생각하죠. 이 집, 전기를 잠깐 많이 쓴 걸까, 아니면 배선을 들여다봐야 하는 걸까."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy home office desk at night with a laptop showing a blurred line chart and a cup of tea, warm lamp light, no readable text",
+          "voice": "주식을 직접 안 하셔도, 퇴직연금이나 연금저축으로 주식형 펀드를 갖고 계신 분이 많습니다. 도움이 될 것 같으면 구독 한 번 눌러 두세요."
+        },
+        {
+          "kind": "quote",
+          "heading": "오늘 영상의 기준",
+          "text": "코스피 지수 {2026년 11월 11일 종가}까지\n과거 데이터는 앞으로의 수익을 보장하지 않습니다\n[특정 종목·상품 추천이 아닙니다]",
+          "cite": "한국거래소 · 야후 파이낸스 코스피 일별 종가 · 언론 보도",
+          "voice": "오늘 숫자는 11월 11일 종가까지입니다. 과거 데이터는 앞으로를 보장하지 않고, 특정 종목을 권하는 영상도 아니에요."
+        }
+      ]
+    },
+    {
+      "title": "11월 6일 아침 9시 3분",
+      "tag": "1주일에 -11.7%",
+      "source": "출처: 한국거래소 · 이투데이(2026.11.6) · 파이낸셜뉴스(2026.11.8·10) · 아시아경제(2026.11.10)",
+      "art_title": "9시 3분, [딸깍]",
+      "art_en": "9:03 AM, November 6",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a wall clock showing three minutes past nine in a dim trading room, red glow from monitors in the background, tense atmosphere, no readable text",
+          "voice": "11월 6일 금요일 아침 9시 3분. 장이 열리고 3분 만에 코스피가 8.5퍼센트 빠졌습니다. 4천9백24. 딸깍, 두꺼비집이 내려갔어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calendar page for a thursday with a red downward arrow drawn on it, dark desk, dramatic lamp light, no readable text",
+          "voice": "사실 전조는 하루 전부터 있었습니다. 11월 5일에도 코스피는 5.3퍼센트 빠졌거든요. 이틀 연속으로 큰 하락이 이어진 겁니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "huge data center buildings under construction in an american desert at sunset, cranes standing still, cinematic wide shot",
+          "voice": "시작은 바다 건너였습니다. 미국 중간선거가 끝나고, 데이터센터를 새로 짓는 허가가 까다로워질 수 있다는 걱정이 퍼졌어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "rows of computer server racks in a dark data center with blinking lights, a few racks empty, cold blue light",
+          "voice": "데이터센터가 늦게 지어지면, 거기 들어갈 서버와 메모리 주문도 늦어지겠죠. 그 하루 미국 필라델피아 반도체지수는 12퍼센트 넘게 떨어졌습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "close up of a silicon wafer with a crack running through it under dramatic red light, macro photography",
+          "voice": "그 충격이 고스란히 넘어왔습니다. 삼성전자는 장 초반 10퍼센트 넘게, SK하이닉스는 12퍼센트 넘게 떨어졌어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a smaller second trading board turning red right after the first one, dim trading room, cinematic, no readable text",
+          "voice": "코스닥에도 9시 6분에 매도 사이드카가 켜졌고, 코스피에도 9시 34분에 한 번 더 켜졌습니다. 그 주 코스닥도 11퍼센트 넘게 빠졌어요."
+        },
+        {
+          "kind": "number",
+          "heading": "코스피 1주일 (10.30 → 11.6)",
+          "amount": 671,
+          "unit": "포인트",
+          "label": "1주일 하락폭",
+          "note": "5,730.74 → 5,059.69 (-11.71%)",
+          "color": "red",
+          "voice": "10월 30일 5천7백30에서 11월 6일 5천59까지. 딱 1주일 만에 11.7퍼센트가 빠졌습니다. 그날 종가는 3월 말 이후 가장 낮았어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a large flock of birds flying away from a city skyline at dawn, seoul towers in silhouette, cinematic",
+          "voice": "그 1주일 동안 외국인은 코스피에서 10조 3천8백억 원어치를 팔았습니다. 이틀 만에 6조 원 가까이 나왔어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a stack of korean won banknotes next to a stack of us dollar bills on a scale tipping toward the dollar, dramatic light, no readable text",
+          "voice": "외국인이 팔고 나가면 원화를 달러로 바꿔야겠죠. 11월 6일 원 달러 환율은 하루에 14원 넘게 올라 1천3백56원이 됐습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "the same trading room now bright with green glowing screens, people standing up in surprise, warm light, cinematic, no readable text",
+          "voice": "그리고 11월 10일 화요일. 이번엔 반대였습니다. 코스피가 4.4퍼센트 뛰었고, 너무 빨리 올라서 이번엔 사는 쪽 차단기, 매수 사이드카가 켜졌어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a middle-aged korean woman exhaling with relief while looking at her phone on a subway, soft morning light",
+          "voice": "11일에는 5천3백75까지 올라왔습니다. 이제 끝났나 싶으셨을 거예요. 그런데 잠깐만요. 올해 이 장면, 처음이 아닙니다."
+        }
+      ]
+    },
+    {
+      "title": "두꺼비집이 열한 번 내려간 집",
+      "tag": "2026년 서킷브레이커 11번",
+      "source": "출처: 이투데이(2026.11.6) · 뉴시스(2026.7.13) · 파이낸셜뉴스(2026.10.16) · 야후 파이낸스 코스피 종가",
+      "art_title": "1년에 [열한 번]",
+      "art_en": "Eleven Times in One Year",
+      "scenes": [
+        {
+          "kind": "timeline",
+          "heading": "2026년 코스피 서킷브레이커 11번",
+          "points": [
+            {
+              "date": "3월 (2번)",
+              "label": "중동 충돌·유가",
+              "color": "orange"
+            },
+            {
+              "date": "6월 (3번)",
+              "label": "미 금리·기술주",
+              "color": "orange"
+            },
+            {
+              "date": "7월 (4번)",
+              "label": "반도체·중동",
+              "color": "orange"
+            },
+            {
+              "date": "10월 15일",
+              "label": "미 물가",
+              "color": "orange"
+            },
+            {
+              "date": "11월 6일",
+              "label": "미 선거·AI",
+              "color": "red",
+              "active": true
+            }
+          ],
+          "voice": "올해 두꺼비집이 내려간 날을 쭉 놓아 보면 이렇습니다. 3월에 두 번, 6월에 세 번, 7월에 네 번, 10월과 11월에 한 번씩. 열한 번 중 여덟 번이 반도체와 기술주 때문이었어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a rocket made of stacked gold coins launching into the night sky, sparks, dramatic, cinematic",
+          "voice": "올해 코스피가 어떤 길을 걸어왔는지부터 짧게 볼게요. 작년 마지막 거래일 4천2백14였던 지수가, 반년 만인 6월 22일 9천1백14가 됐습니다. 반년 만에 두 배가 넘었어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two giant chess pieces, one slightly taller overtaking the other, on a glowing board, dramatic lighting, symbolic, no text",
+          "voice": "그날은 SK하이닉스가 처음으로 시가총액에서 삼성전자를 앞지른 날이기도 했습니다. 반도체가 시장 전체를 끌어올린 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a detective looking closely at a calendar on a wall with several dates circled in red, dim office, cinematic, no readable text",
+          "voice": "그런데 이 표에는 정말 이상한 점이 하나 있습니다. 3월 4일 두꺼비집이 내려간 다음, 코스피는 어떻게 됐을까요?"
+        },
+        {
+          "kind": "number",
+          "heading": "3월 4일 서킷브레이커 → 6월 22일",
+          "amount": 79,
+          "unit": "%",
+          "label": "석 달 반 동안 상승",
+          "note": "5,093.54 → 9,114.55 (사상 최고치)",
+          "color": "green",
+          "voice": "5천93에서 6월 22일 9천1백14까지. 석 달 반 만에 79퍼센트가 올랐습니다. 사상 최고치였어요."
+        },
+        {
+          "kind": "number",
+          "heading": "6월 23일 서킷브레이커 → 11월 11일",
+          "amount": 34,
+          "unit": "% 하락",
+          "label": "다섯 달 가까이",
+          "note": "8,203.84 → 5,375.36",
+          "color": "red",
+          "voice": "그런데 최고치 바로 다음 날인 6월 23일, 두꺼비집이 또 내려갔습니다. 그리고 거기서부터 지금까지 34퍼센트가 빠졌어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elevator falling fast inside a glass skyscraper shaft at night, motion blur, cinematic",
+          "voice": "그다음은 빨랐습니다. 2주 남짓 뒤인 7월 9일엔 7천2백91, 고점에서 20퍼센트가 빠졌어요. 10월 15일에는 하루에 7.6퍼센트가 빠지며 5천5백54까지 내려왔고요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two identical doors side by side in a long corridor, one opening to bright sunlight and the other to a dark stormy sea, surreal, cinematic",
+          "title": "같은 딸깍, [다른 결말]",
+          "en": "Same Click, Different Ending",
+          "voice": "같은 해, 같은 두꺼비집인데 한 번은 출발 신호였고, 한 번은 긴 내리막의 시작이었습니다. 딸깍 소리만으로는 아무것도 알 수 없다는 증거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a steep staircase made of glowing green blocks rising into the clouds, dramatic sky, cinematic, no text",
+          "voice": "여기서 숫자 하나만 기억해 두세요. 1년 전, 2025년 6월 23일 코스피는 3천14였습니다. 딱 1년 뒤 9천1백14. 정확히 세 배예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a red string tied around a finger as a reminder, close up, warm light, shallow depth of field",
+          "voice": "이 1년 만에 세 배라는 숫자, 조금 뒤에 아주 중요하게 다시 꺼냅니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a semiconductor factory clean room with workers in white suits standing still, dimmed lights, melancholic mood",
+          "voice": "고점에서 가장 많이 빠진 건 반도체였습니다. SK하이닉스는 6월 22일 291만 9천 원에서 10월 중순 126만 2천 원까지, 57퍼센트 가까이 내려왔어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old leather-bound history book opening on a desk with dust in a beam of light, library, cinematic",
+          "voice": "지금 코스피는 고점보다 41퍼센트 낮습니다. 그렇다면 역사 속 다른 두꺼비집들은 그다음 1년에 어떻게 됐을까요? 이제 오늘의 본론입니다."
+        }
+      ]
+    },
+    {
+      "title": "역대 서킷브레이커, 그다음 1년",
+      "tag": "2026년 이전 6번",
+      "source": "출처: 야후 파이낸스 코스피 일별 종가(^KS11) · 한국거래소 · 머니투데이(2026.3.4) · 아시아경제(2026.11.6)",
+      "art_title": "그다음 [1년]",
+      "art_en": "The Following Year",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "six old photographs laid out on a wooden table under a desk lamp, each showing a different era of a city, nostalgic, no readable text",
+          "voice": "2026년 이전, 코스피 두꺼비집은 여섯 번 내려갔습니다. 2000년에 두 번, 2001년에 한 번, 2020년에 두 번, 그리고 2024년에 한 번이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a magnifying glass over two calendar pages exactly one year apart, warm light, no readable text",
+          "voice": "각각 그날 종가와 정확히 1년 뒤 종가를 나란히 놓아 봤습니다. 먼저 좋은 쪽부터 볼게요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a quiet dark trading room in 2001 with old crt monitors, a single man sitting with his head in his hands, somber, cinematic",
+          "voice": "2001년 9월 12일. 미국에서 9.11 테러가 일어난 다음 날입니다. 코스피는 하루에 12퍼센트 빠져 475에서 문을 닫았어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "2001년 9월 12일 (9·11 테러 다음 날)",
+          "left": {
+            "title": "그날 종가",
+            "lines": [
+              "475.60"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "1년 뒤",
+            "lines": [
+              "739.22",
+              "{+55.4%}"
+            ],
+            "color": "green"
+          },
+          "voice": "그리고 1년 뒤에는 739. 55퍼센트가 올라 있었습니다. 충격은 컸지만, 시장은 생각보다 빨리 그 충격을 소화했어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calm sunrise over a city skyline after a storm, wet streets reflecting light, hopeful, cinematic",
+          "voice": "이때는 바닥도 금방 왔습니다. 두꺼비집 사흘 뒤인 9월 17일 468이 바닥이었어요. 그날보다 1.4퍼센트 낮은 곳에서 멈춘 겁니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "empty city streets of seoul in spring with people wearing face masks walking far apart, cherry blossoms, quiet mood",
+          "voice": "2020년 3월. 코로나가 전 세계를 덮쳤을 때는 두꺼비집이 일주일 사이에 두 번 내려갔습니다. 3월 13일, 그리고 3월 19일."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a man reaching for the bottom step of a staircase that keeps going down into darkness, surreal, cinematic",
+          "voice": "13일에 이제 바닥이겠지 하고 사신 분은, 엿새 뒤 18퍼센트를 더 잃었습니다. 첫 번째 두꺼비집은 바닥이 아니었던 거죠."
+        },
+        {
+          "kind": "compare",
+          "heading": "2020년 3월 19일 (코로나)",
+          "left": {
+            "title": "그날 종가",
+            "lines": [
+              "1,457.64"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "1년 뒤",
+            "lines": [
+              "3,039.53",
+              "{+108.5%}"
+            ],
+            "color": "green"
+          },
+          "voice": "3월 19일 종가는 1천4백57. 그리고 1년 뒤 3천39. 두 배가 넘었습니다. 13일에 사신 분도 1년 뒤에는 72퍼센트 올라 있었고요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a stock line chart drawn in chalk on a blackboard showing a sharp v shape with small zigzags at the bottom, classroom, no readable numbers",
+          "voice": "그 바닥 근처도 잔잔하지 않았습니다. 20일에 7.4퍼센트 뛰었다가 23일에 다시 5퍼센트 넘게 빠졌고, 24일엔 또 8.6퍼센트가 올랐어요. 바닥은 그렇게 요동치면서 지나갑니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "many ordinary korean people of different ages looking at stock apps on their phones in a cafe, bright and lively, 2020 atmosphere",
+          "voice": "이때 주변에서 너도나도 주식 계좌를 처음 만들던 거, 기억나시죠? 동학개미라는 말이 생긴 게 바로 이때였어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a stack of japanese yen coins toppling over on a dark table, dramatic lighting, macro shot",
+          "voice": "2024년 8월 5일. 미국 경기가 꺾인다는 걱정에, 싼 엔화를 빌려 투자하던 돈이 한꺼번에 빠져나가면서 하루에 8.8퍼센트가 빠졌습니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "2024년 8월 5일 (엔 캐리 청산)",
+          "left": {
+            "title": "그날 종가",
+            "lines": [
+              "2,441.55"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "1년 뒤",
+            "lines": [
+              "3,198.00",
+              "{+31.0%}"
+            ],
+            "color": "green"
+          },
+          "voice": "그날 2천4백41. 1년 뒤에는 3천1백98. 31퍼센트 위였습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calm sea with one sudden huge wave far away on the horizon, overcast sky, cinematic",
+          "voice": "다만 1년 뒤에 올라 있었다고 그 1년이 편했던 건 아닙니다. 2025년 4월 9일, 미국 관세 충격 때 코스피는 2천2백93까지 다시 빠졌어요. 두꺼비집 날보다 6퍼센트 더 낮은 곳이었습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "four golden trophies lined up on a shelf and two empty spaces beside them, dramatic spotlight, cinematic",
+          "title": "남은 [두 번]",
+          "en": "The Other Two",
+          "voice": "여기까지 네 번은 모두 1년 뒤에 올라 있었습니다. 많게는 두 배. 그래서 서킷브레이커 날은 사는 날이라는 말도 돕니다. 그런데 남은 두 번이 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an office in the year 2000 with bulky crt monitors and a man staring at a falling chart, cigarette smoke in the air, gloomy, cinematic, no readable text",
+          "voice": "2000년 4월 17일. 하루에 11.6퍼센트가 빠졌습니다. 코스피 역사상 처음으로 두꺼비집이 내려간 날이에요. 다음 날엔 5.6퍼센트 반등도 했습니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "2000년 4월 17일 (IT 거품 붕괴)",
+          "left": {
+            "title": "그날 종가",
+            "lines": [
+              "707.72"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "1년 뒤",
+            "lines": [
+              "513.97",
+              "[-27.4%]"
+            ],
+            "color": "red"
+          },
+          "voice": "그날 707. 그리고 1년 뒤엔 513. 27퍼센트가 더 빠져 있었습니다. 1년 사이 가장 낮을 땐 491까지 갔어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "2000년 9월 18일",
+          "left": {
+            "title": "그날 종가",
+            "lines": [
+              "577.56"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "1년 뒤",
+            "lines": [
+              "484.93",
+              "[-16.0%]"
+            ],
+            "color": "red"
+          },
+          "voice": "다섯 달 뒤 9월 18일, 두꺼비집이 또 내려갔습니다. 577. 1년 뒤에는 484. 여기서도 16퍼센트가 더 빠졌어요."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            {
+              "text": "2001.9.12 · 9·11 테러",
+              "right": "+55.4%",
+              "right_color": "green"
+            },
+            {
+              "text": "2020.3.13 · 코로나",
+              "right": "+71.9%",
+              "right_color": "green"
+            },
+            {
+              "text": "2020.3.19 · 코로나",
+              "right": "+108.5%",
+              "right_color": "green"
+            },
+            {
+              "text": "2024.8.5 · 엔 캐리 청산",
+              "right": "+31.0%",
+              "right_color": "green"
+            },
+            {
+              "text": "2000.4.17 · IT 거품 붕괴",
+              "right": "-27.4%",
+              "mark": "x",
+              "color": "red"
+            },
+            {
+              "text": "2000.9.18 · IT 거품 붕괴",
+              "right": "-16.0%",
+              "mark": "x",
+              "color": "red"
+            }
+          ],
+          "voice": "정리하면 여섯 번 중 네 번은 1년 뒤에 올라 있었고, 두 번은 더 떨어져 있었습니다. 떨어진 두 번은 모두 2000년이었고요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a scale balancing four gold coins on one side and two dark stones on the other, dramatic lighting, still life",
+          "voice": "4대 2. 그냥 보면 꽤 괜찮은 승률 같죠. 그런데 진짜 질문은 이겁니다. 지금은 넷 쪽일까요, 둘 쪽일까요? 그걸 가르는 게 처음에 말씀드린 과부하냐, 배선이냐입니다."
+        }
+      ]
+    },
+    {
+      "title": "과부하일까, 배선 문제일까",
+      "tag": "결과를 가른 것",
+      "source": "출처: 야후 파이낸스 코스피 일별 종가(^KS11) · 이투데이(2026.11.6) · 뉴시스(2026.7.13)",
+      "art_title": "과부하일까, [배선]일까",
+      "art_en": "Overload or Wiring",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a storm hitting a strong stone house from outside, lightning in the sky, the house standing firm, cinematic",
+          "voice": "좋게 끝난 네 번을 다시 보면 공통점이 있습니다. 충격이 밖에서 왔어요. 테러, 전염병, 갑작스러운 엔화 움직임."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a kitchen with a microwave, a hair dryer and an electric kettle all running at once, warm cozy light, slightly chaotic",
+          "voice": "전자레인지와 헤어드라이어를 한꺼번에 켠 것과 같습니다. 순간 과부하예요. 플러그 하나 뽑고 스위치를 올리면, 집은 다시 멀쩡하게 돌아갑니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a gentle rolling hill path with a modest slope under a calm blue sky, peaceful, no text",
+          "voice": "그리고 하나 더. 두꺼비집이 내려가기 전 1년 동안, 지수가 그렇게 많이 오르지 않았어요. 2020년엔 고점까지 19퍼센트, 2024년엔 27퍼센트 정도였습니다. 2001년은 이미 거품이 꺼진 뒤였고요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a crowded korean securities office in the late 1990s full of people staring at a big board, excited faces, film photo look, no readable text",
+          "voice": "2000년은 달랐습니다. 1998년 6월, 외환위기 한복판에 코스피는 280이었어요. 그게 2000년 1월 1천59가 됩니다. 1년 반 만에 3.8배."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a tangle of overloaded extension cords and power strips plugged into each other on the floor, glowing hot, dangerous, dramatic",
+          "voice": "인터넷 회사라는 이름만 붙어도 오르던 시절이었죠. 집이 감당할 수 없을 만큼 전기를 끌어다 쓴 겁니다. 이건 과부하가 아니라 배선 문제예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a fuse box switch being pushed up and immediately snapping down again, sparks, dark hallway, cinematic",
+          "voice": "그래서 두꺼비집을 다시 올려도 또 내려갔습니다. 4월에 한 번, 9월에 또 한 번. 바닥은 2001년 9월 468이었어요. 고점보다 56퍼센트 아래였습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a red string around a finger being untied, close up, warm light, shallow depth of field",
+          "voice": "자, 이제 아까 기억해 두시라던 숫자를 꺼낼 차례입니다. 2025년 6월 3천14에서 2026년 6월 9천1백14. 1년 만에 세 배."
+        },
+        {
+          "kind": "compare",
+          "heading": "두꺼비집이 내려가기 전, 오른 속도",
+          "left": {
+            "title": "2000년",
+            "lines": [
+              "1998.6 → 2000.1",
+              "{1년 반에 3.8배}"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "2026년",
+            "lines": [
+              "2025.6 → 2026.6",
+              "{1년에 3배}"
+            ],
+            "color": "orange"
+          },
+          "voice": "솔직히 말씀드리면, 오른 속도만 놓고 보면 지금은 2001년이나 2020년보다 2000년에 더 가깝습니다. 저도 이 숫자를 몇 번이나 다시 확인했어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a fuse box with eleven small burn marks around the main switch, dim flashlight beam, close up, ominous",
+          "voice": "올해 두꺼비집이 한두 번이 아니라 열한 번 내려갔다는 점도 가볍게 넘기기 어렵습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calm analyst in a modern office looking at a screen with a thoughtful expression, evening light, no readable text",
+          "voice": "하지만 반대 이야기도 들어야 공평하죠. 키움증권 한지영 연구원은 이번 미국 AI주 급락을 투매 성격이 짙다고 봤습니다. 규제 범위도, 실제 지연도, AI 수요가 줄었다는 것도 아직 확인된 게 없다는 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person walking slowly up a long staircase next to an elevator rushing down, modern building, cinematic, symbolic",
+          "voice": "반대로 지난 7월에는, 코스피가 계단으로 올라가서 엘리베이터로 내려왔다는 분석도 나왔습니다. 한쪽으로 쏠린 돈과 빚이 흔들림을 키웠다는 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a lighthouse in thick fog at night, its beam barely cutting through, cinematic",
+          "title": "승률보다 [조건]",
+          "en": "Conditions Over Odds",
+          "voice": "그러니까 오늘의 답은 지금은 무조건 2000년이다가 아닙니다. 과부하인지 배선 문제인지는 아직 아무도 모릅니다. 다만 4대 2라는 승률을 그대로 믿기엔 걸리는 조건이 겹쳐 있다는 것, 이건 분명해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a winding road through a dark forest that opens to a bright meadow far in the distance, long journey, cinematic",
+          "voice": "그리고 2000년에도 끝은 있었습니다. 4월 17일에 산 분은 1년 뒤엔 손실이었지만, 2년 뒤에는 31퍼센트 위에 있었어요. 문제는 그 2년을 버틸 수 있느냐였죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an hourglass on a wooden table with sand running out, dramatic side light, symbolic",
+          "voice": "같은 2000년이라도, 버틸 수 있었던 사람과 그렇지 못한 사람의 결과는 완전히 달랐을 겁니다. 지수는 2년을 기다려 주지만, 모든 계좌가 2년을 기다릴 수 있는 건 아니니까요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a heavy iron chain wrapped around a wallet on a dark table, dramatic light, symbolic",
+          "voice": "그 2년을 못 버티게 만드는 게 있습니다. 바로 빚이에요. 지금 검색이 폭발한 단어, 반대매매 이야기입니다."
+        }
+      ]
+    },
+    {
+      "title": "반대매매",
+      "tag": "빚투 28조 원",
+      "source": "출처: 금융투자협회 · 아주경제·서울경제(2026.11.11) · 뉴스1(2026.11.11) · SBS Biz·머니투데이(2026.11.6)",
+      "art_title": "내 허락 없이 [팔리는 주식]",
+      "art_en": "Forced Selling",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an invisible hand pressing a sell button on a smartphone lying on a nightstand while the owner sleeps, dark bedroom, eerie blue light, no readable text",
+          "voice": "반대매매는 쉽게 말해, 빌린 돈으로 산 주식을 증권사가 내 허락 없이 파는 겁니다. 두꺼비집과는 반대예요. 멈추는 장치가 아니라 파는 걸 더 키웁니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "반대매매가 생기는 두 길",
+          "cards": [
+            {
+              "title": "미수 거래",
+              "body": "결제일까지 돈을 못 내면 다음 날 증권사가 강제로 판매",
+              "color": "orange"
+            },
+            {
+              "title": "신용융자",
+              "body": "주식을 맡기고 빌린 돈 · 주가가 떨어져 담보가 모자라면 강제로 판매",
+              "color": "red"
+            }
+          ],
+          "voice": "길은 두 가지예요. 하나는 미수. 돈은 이틀 뒤 결제일에 내기로 하고 주식부터 산 건데, 그날까지 못 내면 다음 날 증권사가 팝니다. 다른 하나는 신용융자. 주식을 맡기고 돈을 빌린 건데, 주가가 떨어져 담보가 모자라면 증권사가 팔아서 돈을 회수해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an auction gavel slamming down on a stack of stock certificates at dawn, dramatic lighting, no readable text",
+          "voice": "문제는 파는 방식입니다. 다음 날 아침 장이 열리자마자, 값을 따지지 않고 팝니다. 나쁜 가격에 팔리기 쉽죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long line of dominoes falling one after another on a dark table, motion blur, dramatic side light",
+          "voice": "그렇게 쏟아진 물량이 주가를 또 누르고, 그러면 다른 사람의 담보가 또 모자라게 됩니다. 도미노예요."
+        },
+        {
+          "kind": "number",
+          "heading": "미수금 반대매매 (하루)",
+          "amount": 379,
+          "unit": "억 원",
+          "label": "11월 9일",
+          "note": "11월 6일 70억 원의 5.4배 · 10일 630억 원 (금융투자협회)",
+          "color": "red",
+          "voice": "실제로 11월 6일 70억 원이던 반대매매가 9일에는 379억 원, 다섯 배 넘게 늘었습니다. 10일에는 630억 원이었어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a stack of unpaid bills growing taller on a desk under a single lamp, tense mood, no readable text",
+          "voice": "갚지 못한 미수금도 9일 기준 1조 1천억 원이 넘었습니다. 미수금 가운데 반대매매로 팔린 비중은 하루 만에 0.8퍼센트에서 4.2퍼센트로 뛰었어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calendar with a two-day gap highlighted between two dates, a clock beside it, dim light, no readable text",
+          "voice": "왜 폭락은 6일인데 반대매매는 9일에 터졌을까요? 미수는 결제일에 돈을 못 내면 그다음 날 팔리거든요. 폭락의 청구서는 이렇게 며칠 늦게 날아옵니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a huge pile of borrowed money bags stacked on a fragile wooden platform, cracks appearing, dramatic light, symbolic",
+          "voice": "빚을 내 주식을 산 돈, 신용융자 잔액은 11월 9일 기준 28조 원이 넘습니다. 한 주 사이에 1조 원 넘게 줄었는데도요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "korean government officials in an emergency meeting around a long table at night, serious faces, warm overhead light, no readable text",
+          "voice": "정부도 급히 움직였습니다. 증권사가 빌려준 돈의 담보를 140퍼센트 이상으로 맞춰야 하는 의무를, 11월 9일부터 석 달 동안 면제했어요. 도미노를 끊으려는 거죠."
+        },
+        {
+          "kind": "quote",
+          "heading": "꼭 알아 둘 점",
+          "text": "담보비율 의무 면제 = {증권사의 의무}를 푼 것\n[내 계좌 반대매매가 자동으로 멈추는 건 아님]\n거래하는 증권사 공지·문자를 꼭 확인",
+          "cite": "금융당국 발표(2026.11.6) · 언론 보도",
+          "voice": "그런데 이건 증권사의 의무를 풀어 준 거지, 내 계좌의 반대매매가 자동으로 멈춘다는 뜻은 아닙니다. 기준은 증권사마다 달라요. 신용을 쓰고 계시다면 거래하는 증권사 공지부터 확인하셔야 합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two people waiting at the same bus stop in the rain, one calm under an umbrella and the other soaked and anxious checking a watch, cinematic",
+          "title": "기다릴 시간을 [누가 정하나]",
+          "en": "Who Decides How Long You Wait",
+          "voice": "빚이 없으면 2년을 기다릴 수 있습니다. 빚이 있으면, 기다릴 시간을 증권사가 정해요. 같은 폭락장인데 결과가 전혀 달라지는 이유입니다."
+        }
+      ]
+    },
+    {
+      "title": "공매도를 막으면 오를까",
+      "tag": "공매도 금지, 네 번의 기록",
+      "source": "출처: 금융위원회 보도자료(2020.3 · 2023.11 · 2025.3) · 야후 파이낸스 코스피 종가",
+      "art_title": "공매도 [금지]의 기록",
+      "art_en": "Short-Selling Bans",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a crowd of small investors holding up blank protest signs in front of a modern glass financial building, overcast sky, no readable text",
+          "voice": "요즘 반대매매만큼 많이 찾는 말이 또 있습니다. 공매도 금지. 공매도를 막으면 주가가 오르지 않을까 하는 기대예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a hand borrowing a gold bar from another hand across a table, then selling it, two-panel symbolic illustration, dramatic light, no text",
+          "voice": "공매도는 주식을 빌려서 먼저 팔고, 나중에 싸게 사서 갚는 거래입니다. 주가가 떨어질수록 돈을 벌죠. 그러니 폭락장에서는 미움을 받습니다."
+        },
+        {
+          "kind": "timeline",
+          "heading": "우리나라 공매도 금지",
+          "points": [
+            {
+              "date": "2008년 10월",
+              "label": "금융위기",
+              "color": "orange"
+            },
+            {
+              "date": "2011년 8월",
+              "label": "미 신용등급 강등",
+              "color": "orange"
+            },
+            {
+              "date": "2020년 3월",
+              "label": "코로나",
+              "color": "orange"
+            },
+            {
+              "date": "2023년 11월",
+              "label": "전면 금지",
+              "color": "red"
+            },
+            {
+              "date": "2025년 3월 31일",
+              "label": "전면 재개",
+              "color": "green",
+              "active": true
+            }
+          ],
+          "voice": "우리나라는 지금까지 공매도를 네 번 막았습니다. 2008년 금융위기, 2011년 미국 신용등급 강등, 2020년 코로나, 그리고 2023년 11월. 그리고 작년 3월 말에 다시 전부 풀었어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a car brake pedal being pressed hard while the car keeps sliding down a wet hill, dramatic rain, cinematic",
+          "voice": "결과는 어땠을까요? 2020년 3월 16일 공매도를 막았는데, 그날부터 나흘 동안 코스피는 계속 떨어졌습니다. 1천7백14에서 1천4백57까지요. 오르기 시작한 건 그다음이었어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "2023년 11월 공매도 전면 금지",
+          "left": {
+            "title": "금지 첫날 (11.6)",
+            "lines": [
+              "2,502.37",
+              "{+5.66%}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "다음 날 (11.7)",
+            "lines": [
+              "2,443.96",
+              "[-2.33%]"
+            ],
+            "color": "red"
+          },
+          "voice": "2023년 11월 6일, 전면 금지 첫날에는 5.7퍼센트가 뛰었습니다. 그런데 바로 다음 날 2.3퍼센트가 빠지면서, 오른 것의 절반 가까이를 돌려줬어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long upward mountain trail with hikers climbing under a clear sky, sunlight, cinematic",
+          "voice": "반대 기록도 있습니다. 작년 3월 31일 공매도를 다시 전부 풀던 날, 코스피는 2천4백대였어요. 공매도가 허용된 채로 올해 6월 9천1백까지 올라갔습니다. 공매도가 있어도 오를 땐 오르고, 막아도 빠질 땐 빠진 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a ship captain holding a wheel while a huge ocean current pushes the ship sideways, stormy sea, cinematic",
+          "voice": "두 번의 기록만 보면, 공매도 금지가 시장의 방향을 정하지는 못했습니다. 브레이크를 잠깐 밟을 수는 있어도 길 자체를 바꾸진 못한 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calendar page on a desk with a pen resting on it next to a cup of coffee, morning light, no readable text",
+          "voice": "그리고 제가 확인한 11월 11일까지, 정부는 공매도 금지 대신 반대매매를 줄이는 쪽을 먼저 택했습니다."
+        }
+      ]
+    },
+    {
+      "title": "폭락장에서 가장 흔한 착각 3가지",
+      "tag": "통념 깨기",
+      "source": "출처: 야후 파이낸스 코스피 일별 종가(^KS11) · 한국거래소",
+      "art_title": "흔한 [착각 3가지]",
+      "art_en": "Three Common Myths",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "three paper lanterns floating in a dark sky, one by one, symbolic, cinematic, no text",
+          "voice": "여기까지 보셨으면, 많이들 하시는 착각 세 가지를 짚고 넘어갈게요. 첫 번째, 서킷브레이커가 울린 날이 바닥이다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a deep well with a ladder going down, the bottom not visible, flashlight beam into darkness, ominous",
+          "voice": "아닙니다. 2020년엔 첫 두꺼비집 엿새 뒤에 18퍼센트가 더 빠졌고, 2000년엔 1년 반 가까이 바닥이 오지 않았어요. 올해도 3월부터 열한 번이나 울렸고요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a single bright firework bursting over a dark city then fading, night sky, cinematic",
+          "voice": "두 번째, 크게 반등했으니 끝났다. 11월 10일처럼 하루에 4퍼센트 넘게 오르는 날 말이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a roller coaster on a long downward track with small upward bumps along the way, dusk sky, cinematic wide shot",
+          "voice": "그런데 2000년 4월부터 이듬해 9월까지, 지수는 계속 내려가는 동안에도 하루 4퍼센트 넘게 오른 날이 스무 번이 넘었습니다. 하루 반등은 바닥의 증거가 아니에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old man sitting on a bench holding a faded stock certificate of a company that no longer exists, autumn leaves, melancholic, no readable text",
+          "voice": "세 번째, 오래 들고 있으면 결국 오른다. 2000년 4월에 산 분도 2년 뒤엔 올라 있었으니 맞는 말 같죠. 하지만 그건 지수 이야기입니다. 그때 날아올랐던 회사 중엔 다시는 그 가격을 못 본 곳이 많아요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a hand replacing an old dim light bulb with a new bright one in a row of bulbs, warm light, symbolic",
+          "title": "지수는 [갈아 끼워진다]",
+          "en": "The Index Replaces Itself",
+          "voice": "지수는 무너진 회사를 빼고 새 회사를 넣으면서 다시 올라갑니다. 내 계좌는 그렇게 알아서 갈아 끼워지지 않아요."
+        }
+      ]
+    },
+    {
+      "title": "지금 해 둘 4가지",
+      "tag": "체크리스트",
+      "source": "출처: 금융당국 발표(2026.11.6) · 도장찍기전에 정리 (투자 권유 아님)",
+      "art_title": "지금 해 둘 [4가지]",
+      "art_en": "Four Things To Do Now",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a person calmly checking the wiring of a fuse box with a flashlight and a notebook, safe and organized, warm light",
+          "voice": "그럼 지금 무엇을 해야 할까요? 사라, 팔라는 이야기는 드리지 않겠습니다. 대신 두꺼비집이 또 내려가도 우리 집이 타지 않게 하는 방법 네 가지입니다."
+        },
+        {
+          "kind": "checklist",
+          "items": [
+            {
+              "text": "빚부터 확인 · 신용·미수가 있으면 증권사 담보 기준 공지 보기"
+            },
+            {
+              "text": "1~2년 안에 쓸 돈은 주식 밖에 두기"
+            },
+            {
+              "text": "사더라도 한 번에 말고 나눠서"
+            },
+            {
+              "text": "퇴직연금·연금저축 안의 주식 비중 한 번 열어 보기"
+            }
+          ],
+          "voice": "먼저 네 가지를 한눈에 보여 드리고 하나씩 짚어 볼게요. 빚, 가까운 시기에 쓸 돈, 나눠서 사기, 그리고 연금계좌입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person reading a text message notification from a securities company on their phone at a kitchen table, morning light, no readable text",
+          "voice": "첫째 빚. 담보비율 면제는 석 달짜리입니다. 내년 2월이면 끝나요. 그 전에 신용을 줄일지, 증권사 기준은 얼마인지 미리 알아 두셔야 다시 흔들릴 때 당황하지 않습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a glass jar labeled with nothing, filled with coins and banknotes, sitting separately from a stock chart on a laptop, warm light, no readable text",
+          "voice": "둘째, 가까운 시기에 쓸 돈. 자녀 결혼 자금, 전세 보증금, 1, 2년 안에 나갈 돈이 주식에 들어 있으면, 시장이 아니라 날짜가 팔 때를 정합니다. 반대매매랑 똑같은 구조예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two baskets of apples bought on different days at a market stall, warm afternoon light, symbolic",
+          "voice": "셋째, 나눠서. 2020년에 3월 13일 한 번에 산 분은 엿새 뒤 18퍼센트를 잃었습니다. 13일과 19일에 반씩 나눠 산 분은, 1년 뒤 같은 날 기준으로 90퍼센트 위에 있었어요. 언제가 바닥인지 몰라도 되는 방법입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older korean couple looking at a retirement account statement together on a tablet at a dining table, calm warm light, no readable text",
+          "voice": "넷째, 연금계좌. 퇴직연금이나 연금저축을 아예 안 열어 보신 분이 많습니다. 주식형 펀드가 얼마나 들어 있는지, 은퇴가 몇 년 남았는지. 이 두 가지만 같이 놓고 봐도 충분합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a well organized home with a new modern fuse box, everything glowing safely, calm family in the background, warm evening light",
+          "voice": "이 네 가지의 공통점은 하나예요. 지금이 과부하인지 배선 문제인지 몰라도 지킬 수 있는 원칙이라는 겁니다."
+        }
+      ]
+    },
+    {
+      "title": "마무리",
+      "tag": "딸깍 다음에 할 일",
+      "art_title": "딸깍, [그다음]",
+      "art_en": "After the Click",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a hand holding a flashlight pointed at an open fuse box, examining calmly instead of flipping the switch, warm and cinematic",
+          "voice": "처음에 두꺼비집 이야기를 드렸죠. 딸깍 내려갔을 때 제일 먼저 할 일은, 스위치를 다시 올리는 게 아닙니다. 왜 내려갔는지를 보는 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "three small glowing lamps on a wooden table in a dark room, warm, symbolic, no text",
+          "voice": "오늘 내용을 세 줄로 정리할게요. 역대 서킷브레이커 여섯 번 중 네 번은 1년 뒤 올라 있었다. 하지만 1년 반에 3.8배 오른 뒤였던 2000년에는 더 떨어졌다. 그리고 내 계좌의 결과를 가르는 건 지수보다 빚이다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy living room at night with a warm lamp and a cup of tea on the table, quiet closing shot",
+          "voice": "영상이 도움이 됐다면 좋아요 한번 눌러 주세요. 알고리즘에 큰 힘이 됩니다. 그리고 여러분 생각은 어떠세요? 지금 코스피, 순간 과부하일까요, 배선 문제일까요? 댓글로 남겨 주세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy korean apartment exterior at dusk with warm lit windows, peaceful neighborhood, cinematic",
+          "voice": "다음 영상에서는 다시 집 이야기로 갑니다. 요즘 검색이 늘고 있는 부동산 세제 개편, 우리 집 세금이 어떻게 달라지는지 정리해 드릴게요."
+        },
+        {
+          "kind": "title",
+          "title": "다음 영상\n{매주 화·일 저녁 6시}",
+          "sub": "구독하고 놓치지 마세요 · 도장찍기전에",
+          "voice": "도장찍기전에는 매주 화요일과 일요일 저녁 6시에 새 영상으로 찾아옵니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a red traditional korean seal stamp resting on a wooden desk beside a closed contract folder, warm lamp light, shallow depth of field, no text",
+          "voice": "도장은 천천히, 팩트는 먼저. 도장찍기전에였습니다."
+        }
+      ]
+    }
+  ],
+  "upload": {
+    "title": "서킷브레이커 다음 1년, 코스피는 이렇게 됐습니다. 이걸 알아야 지금이 보입니다",
+    "hook": "코스피 서킷브레이커, 올해만 열한 번째입니다.\n역대 여섯 번의 서킷브레이커 다음 1년을 그날 종가와 1년 뒤 종가로 나란히 놓아 봤습니다. 네 번은 1년 뒤 31~108% 올라 있었고, 두 번은 16~27% 더 빠져 있었습니다.\n\n무엇이 그 둘을 갈랐는지, 지금은 어느 쪽에 더 가까운지, 그리고 지금 검색이 폭발한 반대매매와 공매도 금지까지 데이터로 정리했습니다.",
+    "covers": [
+      "11월 6일 아침 9시 3분, 올해 열한 번째 딸깍",
+      "서킷브레이커는 두꺼비집이다 — 그런데 이유는 알려 주지 않는다",
+      "같은 해 같은 두꺼비집, 한 번은 +79% 한 번은 -34%",
+      "9·11 다음 날 475 → 1년 뒤 739",
+      "코로나 1,457 → 1년 뒤 3,039, 두 배가 넘었다",
+      "2000년 707 → 1년 뒤 513, 더 떨어진 두 번",
+      "과부하냐 배선이냐 — 1년 만에 세 배 오른 뒤였는가",
+      "반대매매 하루 379억 → 630억, 담보비율 면제의 진짜 의미",
+      "공매도 금지 네 번의 기록 — 시장의 방향을 바꿨을까",
+      "폭락장에서 가장 흔한 착각 3가지",
+      "지금 해 둘 4가지"
+    ],
+    "as_of": "2026년 11월 11일 종가",
+    "sources": [
+      "코스피 일별 종가: 야후 파이낸스(^KS11) — 언론 보도 수치와 대조",
+      "한국거래소 서킷브레이커 발동 기록 · 이투데이·아시아경제(2026.11.6) · 머니투데이(2026.3.4)",
+      "파이낸셜뉴스(2026.10.16·11.8·11.10) · 뉴시스(2026.7.13)",
+      "금융투자협회 반대매매·신용융자 통계 · 아주경제·서울경제·뉴스1(2026.11.11)",
+      "신용융자 담보비율 유지 의무 3개월 면제 — SBS Biz·머니투데이·이투데이(2026.11.6)",
+      "금융위원회 공매도 관련 보도자료(2020.3 · 2023.11 · 2025.3)"
+    ],
+    "comment_question": "지금 코스피, 순간 과부하일까요, 배선 문제일까요? 신용이나 미수 쓰고 계신 분은 증권사 공지 꼭 확인하세요.",
+    "hashtags": [
+      "#코스피",
+      "#서킷브레이커",
+      "#반대매매",
+      "#공매도",
+      "#주식",
+      "#재테크",
+      "#경제공부",
+      "#폭락장",
+      "#빚투",
+      "#신용융자",
+      "#코스피폭락",
+      "#주식초보",
+      "#연금저축",
+      "#퇴직연금",
+      "#도장찍기전에"
+    ],
+    "tags": [
+      "코스피",
+      "코스피 폭락",
+      "서킷브레이커",
+      "코스피 서킷브레이커",
+      "서킷브레이커 이후",
+      "반대매매",
+      "미수 반대매매",
+      "신용융자",
+      "담보비율 면제",
+      "공매도",
+      "공매도 금지",
+      "사이드카",
+      "매수 사이드카",
+      "폭락장",
+      "주식 폭락",
+      "2000년 IT 버블",
+      "코로나 폭락",
+      "8월 5일 폭락",
+      "빚투",
+      "주식 초보",
+      "연금저축",
+      "퇴직연금",
+      "도장찍기전에"
+    ],
+    "publish_slot": "18:00 KST",
+    "next": "부동산 세제 개편"
+  }
+}

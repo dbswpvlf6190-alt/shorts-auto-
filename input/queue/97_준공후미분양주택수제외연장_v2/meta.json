@@ -1,0 +1,95 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 기획재정부 소득세법·종합부동산세법 시행령 개정(2026년 9월 29일 국무회의 의결)",
+  "youtube_title": "지방 미분양 아파트 사면 집이 있어도 1주택자입니다 #준공후미분양 #종합부동산세",
+  "youtube_description": "지방(비수도권)에 있는 준공 후 미분양 아파트를 사면, 원래 살던 집이 있어도 양도소득세·종합부동산세를 계산할 때 주택 수에서 빼줘요.\n\n이 특례의 취득 기한이 2026년 말에서 2027년 12월 31일까지 1년 더 연장됐어요. 대상은 비수도권에 있는 전용면적 85제곱미터 이하 아파트이고, 올해 2월 27일 전에 샀다면 6억 원 이하, 그 이후에 샀다면 7억 원 이하여야 해요.\n\n이 특례가 없으면 종합부동산세가 크게 늘어날 수 있어요. (영상 속 300만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n출처: 기획재정부 2026년 9월 29일 국무회의 의결(소득세법·종합부동산세법 시행령 개정)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#준공후미분양 #종합부동산세 #양도소득세 #비수도권 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "준공후미분양,종합부동산세,양도소득세,비수도권,부동산정책",
+  "tiktok_caption": "지방 미분양 아파트 사면 집 있어도 1주택자 혜택 그대로예요 😲 2027년 말까지 연장됐어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 지방 아파트 투자 고민해보셨어요? #준공후미분양 #종합부동산세 #비수도권",
+  "instagram_caption": "지방 미분양 아파트 사면 집 있어도 1주택자 혜택 그대로예요 😲 2027년 말까지 연장됐어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 지방 아파트 투자 고민해보셨어요? #준공후미분양 #종합부동산세 #비수도권",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "집 샀는데 1주택자 그대로?",
+      "caption": "집 샀는데\n{1주택자} 그대로?",
+      "image_prompt": "photorealistic small wooden model house sitting on top of a stack of Korean won coins on a wooden desk, soft window light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 지방 준공 후 미분양 아파트 사면 집 있어도 다주택자 아니에요.",
+      "caption": "결론: 지방 준공후미분양\n사도 {다주택자} 아니에요",
+      "image_prompt": "photorealistic newly built apartment complex in a small Korean provincial city at dusk, warm lights in windows, wide street view, high detail, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "이번 시행령 개정으로 이 혜택이 1년 더 연장됐어요.",
+      "caption": "이 혜택이\n{1년} 더 연장",
+      "big": "1년 연장",
+      "badge": "준공후미분양특례"
+    },
+    {
+      "kind": "big",
+      "voice": "취득 기한이 2027년 12월 31일까지로 늘었어요.",
+      "caption": "취득기한\n{2027년 12월 31일}까지",
+      "big": "2027.12.31까지",
+      "badge": "취득 기한"
+    },
+    {
+      "kind": "photo",
+      "voice": "대상은 서울과 경기를 뺀 지방에 있는 아파트예요.",
+      "caption": "대상은\n{서울·경기 제외} 지방",
+      "image_prompt": "photorealistic rural Korean countryside town with low-rise apartment buildings surrounded by rice fields, golden hour lighting, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "전용면적은 85제곱미터 이하여야 돼요.",
+      "caption": "전용면적\n{85제곱미터} 이하",
+      "big": "85제곱미터 이하",
+      "badge": "면적 기준"
+    },
+    {
+      "kind": "big",
+      "voice": "근데 집값 기준은 언제 샀는지에 따라 달라요. 얼마일까요?",
+      "caption": "집값 기준은\n언제 샀는지에 따라?",
+      "big": "얼마일까요?"
+    },
+    {
+      "kind": "timeline",
+      "voice": "2월 27일 전에 샀으면 6억 원, 그 이후에 샀으면 7억 원 이하여야 해요.",
+      "caption": "{2월 27일 전} 6억 원\n[2월 27일 후] 7억 원",
+      "sfx": "ding",
+      "active": "all",
+      "cards": [
+        {"date": "2월 27일 전 취득", "who": "6억원 이하", "color": "gold"},
+        {"date": "2월 27일 후 취득", "who": "7억원 이하", "color": "green"}
+      ]
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 이 특례가 없으면 종합부동산세가 300만 원까지 늘어날 수 있어요.",
+      "caption": "특례 없으면\n종부세 {300만원}까지",
+      "amount": 300,
+      "unit": "만원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "photo",
+      "voice": "이 결정은 기획재정부가 9월 29일 국무회의에서 확정했어요.",
+      "caption": "{기획재정부}\n9월 29일 국무회의 확정",
+      "image_prompt": "photorealistic modern government office building exterior with glass facade, clear blue sky, low angle, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "지방에 집 알아보는 가족이나 지인께 꼭 보내주세요.",
+      "caption": "지방 집 알아보는\n가족·지인께 {꼭 보내주세요}",
+      "image_prompt": "photorealistic smartphone resting on a wooden table in a warm cafe, soft natural light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 지방 미분양 아파트, 투자로 고민해보신 적 있으세요?",
+      "caption": "지방 미분양 아파트,\n투자로 고민해보셨나요?",
+      "image_prompt": "photorealistic calculator and a small notebook on a wooden table beside a cup of tea, soft morning light, shallow depth of field, no text"
+    }
+  ]
+}

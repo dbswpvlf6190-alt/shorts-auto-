@@ -1,0 +1,90 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "extra": true,
+  "not_before": "2026-11-13",
+  "repurposed_from": "longform/08_코스피폭락 (aKNlgB1tA1E, 11/13 18:00 공개) — v5 공개일 예고 쇼츠(질문으로 끝남)",
+  "source_label": "출처: 한국거래소·야후 파이낸스 코스피 종가(^KS11), 아시아경제 2026.11.6",
+  "youtube_title": "서킷브레이커 1년 뒤, 코스피는 6번 중 4번 올랐습니다 #코스피 #서킷브레이커",
+  "youtube_description": "11월 6일 코스피 서킷브레이커는 올해만 11번째였습니다.\n2000년부터 2025년까지 있었던 6번은 1년 뒤 어떻게 됐을까요?\n4번은 올라 있었고, 2번은 더 빠져 있었습니다.\n\n무엇이 둘을 갈랐을까요?\n\n▶ 전체 정리(롱폼): https://youtu.be/aKNlgB1tA1E\n\n출처: 한국거래소·야후 파이낸스 코스피 종가(^KS11), 아시아경제(2026.11.6)\n※ 과거 데이터 정리이며 투자 권유가 아닙니다. 투자 판단과 책임은 본인에게 있습니다.\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#코스피 #서킷브레이커 #주식 #재테크 #폭락장 #shorts",
+  "tags": "코스피,서킷브레이커,코스피폭락,주식,재테크,폭락장,반대매매",
+  "tiktok_caption": "서킷브레이커 1년 뒤, 코스피는 6번 중 4번 올랐어요 📈 나머지 2번은 왜 더 빠졌을까요? 과거 데이터 정리이며 투자 권유가 아니에요. 팔로우하면 매일 새로운 부동산·재테크 정보 받아보실 수 있어요 🔔 댓글👇 이번엔 어느 쪽일 것 같나요? #코스피 #서킷브레이커 #주식 #재테크 #폭락장",
+  "instagram_caption": "서킷브레이커 1년 뒤, 코스피는 6번 중 4번 올랐어요 📈 나머지 2번은 왜 더 빠졌을까요? 전체 정리는 유튜브 도장찍기전에 롱폼에서! 과거 데이터 정리이며 투자 권유가 아니에요. 팔로우하면 매일 새로운 부동산·재테크 정보 받아보실 수 있어요 🔔 댓글👇 이번엔 어느 쪽일 것 같나요? #코스피 #서킷브레이커 #주식 #재테크 #폭락장",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "코스피가 또 멈췄어요.",
+      "caption": "코스피가\n[또 멈췄어요]",
+      "image_prompt": "photorealistic stock trading screen glowing red in a dark office, blurred charts, dramatic light, shallow depth of field, no numbers, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "11월 6일 서킷브레이커, 올해만 열한 번째예요.",
+      "caption": "11월 6일 서킷브레이커\n올해만 {11번째}",
+      "big": "11번째",
+      "badge": "2026년"
+    },
+    {
+      "kind": "big",
+      "voice": "하루에 8퍼센트 넘게 빠지면 20분 동안 거래가 멈추는 장치예요.",
+      "caption": "8% 넘게 빠지면\n{20분 거래 정지}",
+      "big": "-8% → 20분",
+      "badge": "서킷브레이커 1단계"
+    },
+    {
+      "kind": "big",
+      "voice": "2000년부터 작년까지는 여섯 번뿐이었어요.",
+      "caption": "2000년~2025년엔\n{6번}뿐",
+      "big": "6번",
+      "badge": "2000~2025"
+    },
+    {
+      "kind": "big",
+      "voice": "그 여섯 번, 1년 뒤에는 네 번이 올라 있었어요.",
+      "caption": "1년 뒤\n{4번은 올라 있었어요}",
+      "big": "+31% ~ +108%",
+      "badge": "6번 중 4번"
+    },
+    {
+      "kind": "big",
+      "voice": "그런데 두 번은 오히려 더 빠져 있었어요.",
+      "caption": "그런데 2번은\n[더 빠졌어요]",
+      "big": "-16% ~ -27%",
+      "badge": "2000년 두 번"
+    },
+    {
+      "kind": "photo",
+      "voice": "같은 폭락인데 왜 결과가 갈렸을까요?",
+      "caption": "같은 폭락인데\n왜 {갈렸을까요}?",
+      "image_prompt": "photorealistic fork in a road at dusk, one path lit by warm light and the other in shadow, cinematic, no text",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "과거 데이터 정리일 뿐, 투자 권유는 아니에요.",
+      "caption": "과거 데이터 정리\n{투자 권유 아님}",
+      "image_prompt": "photorealistic old ledger book and reading glasses on a wooden desk, soft lamp light, close up, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "여섯 번을 가른 기준은 도장찍기전에 롱폼에서 확인하세요.",
+      "caption": "갈린 기준은\n{롱폼}에서",
+      "big": "롱폼에서 공개",
+      "badge": "도장찍기전에"
+    },
+    {
+      "kind": "photo",
+      "voice": "주식 하는 가족이 있다면 꼭 보내 주세요.",
+      "caption": "주식 하는 가족에게\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic middle aged korean man showing a phone screen to his elderly father at a dining table, warm light, screen blurred, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "이번 열한 번째는 어느 쪽일 것 같나요?",
+      "caption": "이번엔\n{어느 쪽}일까요?",
+      "big": "4번 쪽? 2번 쪽?",
+      "badge": "댓글로 알려주세요"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 주택임대차보호법 시행령 · 법원 경매 실무",
+  "youtube_title": "전세금 5500만원, 이 날짜 하나로 못 받을 수도 있어요 #전세사기 #최우선변제",
+  "youtube_description": "전세금 보호 제도인 '소액임차인 최우선변제'는 계약일이나 전입일이 아니라, 그 집에 최초로 잡힌 근저당권의 설정일을 기준으로 적용 법령이 결정됩니다.\n\n현재(2023년 2월 21일 개정 시행령) 기준으로는 서울의 경우 전세금 1억6500만원 이하이면 경매가 진행돼도 최대 5500만원까지 다른 채권자보다 먼저 돌려받을 수 있습니다. 하지만 집에 그보다 오래된 근저당이 잡혀 있다면, 그 근저당이 설정될 당시 시행되던 더 낮은 기준(예: 2021년 5월 기준 서울 1억5000만원 이하·최대 5000만원)이 적용됩니다. (영상 속 1억6500만원은 이해를 돕기 위한 가정 금액입니다.)\n\n전세 계약 전에는 등기부등본으로 근저당 설정일을 꼭 확인하세요.\n\n출처: 주택임대차보호법 시행령, 법원 경매 실무\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#전세사기 #최우선변제 #소액임차인 #전세보증금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "최우선변제,전세사기,소액임차인,전세보증금,부동산정책",
+  "tiktok_caption": "전세금 5500만원 보장된다고 철석같이 믿었는데, 근저당 날짜 하나로 확 줄어들 수도 있어요 😱 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집 근저당은 언제 잡혔는지 확인해보셨어요? #전세사기 #최우선변제 #소액임차인",
+  "instagram_caption": "전세금 5500만원 보장된다고 철석같이 믿었는데, 근저당 날짜 하나로 확 줄어들 수도 있어요 😱 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집 근저당은 언제 잡혔는지 확인해보셨어요? #전세사기 #최우선변제 #소액임차인",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "전세금 5500만원 보장?",
+      "caption": "전세금\n{5500만원} 보장?",
+      "image_prompt": "photorealistic small wooden model house sitting on a pile of coins on a dark table, dramatic warm light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 근저당 설정일이 기준이에요.",
+      "caption": "결론\n{근저당 설정일}이 기준",
+      "image_prompt": "photorealistic Korean apartment complex exterior on a bright sunny day, tall residential towers, blue sky, high detail, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "다른 빚보다 먼저 돌려받는 제도가 최우선변제예요.",
+      "caption": "경매로 넘어가도\n{먼저 받는} 제도",
+      "big": "소액임차인\n최우선변제"
+    },
+    {
+      "kind": "big",
+      "voice": "서울은 1억6500만원 이하면 최대 5500만원까지 보장돼요.",
+      "caption": "서울 전세\n{1억6500만원} 이하",
+      "big": "최대 5500만원",
+      "badge": "서울 기준"
+    },
+    {
+      "kind": "money",
+      "voice": "전세금 1억6500만원인 집으로 예를 들게요.",
+      "caption": "예를 들어\n전세금이",
+      "amount": 16500,
+      "unit": "만원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 기준은 전입일이 아니라 근저당 날짜예요.",
+      "caption": "기준은 {전입일}이 아니라\n[근저당 날짜]",
+      "image_prompt": "photorealistic close-up of an old iron padlock on a rusty metal gate, soft afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "2023년 2월 21일 이후면 5500만원이 나와요.",
+      "caption": "{2023.2.21} 이후면\n[5500만원]",
+      "active": [1],
+      "cards": [
+        { "date": "2021년 5월 기준", "who": "최대 5000만원", "color": "gold" },
+        { "date": "2023년 2월 21일 이후", "who": "최대 5500만원", "color": "green" }
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "2021년 5월 기준이면 5000만원까지만 나와요.",
+      "caption": "{2021.5} 기준이면\n[5000만원]까지",
+      "active": [0],
+      "cards": [
+        { "date": "2021년 5월 기준", "who": "최대 5000만원", "color": "gold" },
+        { "date": "2023년 2월 21일 이후", "who": "최대 5500만원", "color": "green" }
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "같은 전세금인데 근저당 날짜 하나로 보장액이 갈리는 거예요.",
+      "caption": "같은 전세금인데\n{보장액}이 갈려요",
+      "active": "all",
+      "cards": [
+        { "date": "2021년 5월 기준", "who": "최대 5000만원", "color": "gold" },
+        { "date": "2023년 2월 21일 이후", "who": "최대 5500만원", "color": "green" }
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 근저당을 나중에 새로 잡으면 보장액도 바뀔까요?",
+      "caption": "근데 근저당을\n{새로} 잡으면?",
+      "image_prompt": "photorealistic city skyline at dusk with glowing apartment windows, soft bokeh lights, cinematic wide shot, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "아니요, 처음 잡힌 근저당 날짜 기준 그대로 유지돼요.",
+      "caption": "{처음 날짜} 그대로예요",
+      "sfx": "ding",
+      "image_prompt": "photorealistic golden house key resting on a wooden table next to a small model house, warm soft light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "계약 전엔 등기부등본으로 근저당 날짜를 확인하고, 가족께 보내주세요.",
+      "caption": "{등기부등본}으로 확인하고\n가족께 보내주세요",
+      "image_prompt": "photorealistic magnifying glass resting on a wooden desk under warm lamp light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 집은 근저당이 언제 잡혔는지 확인해보셨나요?",
+      "caption": "여러분 집\n{근저당 날짜}는?",
+      "image_prompt": "photorealistic quiet residential street at night with lit windows, soft ambient glow, cinematic wide shot, no text"
+    }
+  ]
+}

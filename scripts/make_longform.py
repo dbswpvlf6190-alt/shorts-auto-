@@ -58,6 +58,12 @@ THUMB_MODEL = "@cf/black-forest-labs/flux-2-dev"
 THUMB_STYLE = ("vibrant highly detailed semi-realistic digital illustration for a youtube finance thumbnail, {p}, "
                "rich saturated colors, warm golden rim light, dramatic, all important objects in the upper two thirds, "
                "lower third of the image darker and simpler, no korean text")
+# 썸네일 v7(11/16 사장님 "후킹 확실하게"): 우리 롱폼 7편 클릭률 1.8~5.6% vs 잘 되는 경제 채널 상위 15편 비교 →
+# 실사 인물 얼굴을 크게, 요소 3개(얼굴·장면·글자 2줄)만. 진행자는 매번 같은 인물(V7_HOST)로 채널 얼굴을 만든다.
+V7_HOST = "a korean man in his early sixties with short gray hair, rimless glasses, navy cardigan over a white shirt"
+THUMB_STYLE_V7 = ("photorealistic youtube thumbnail photograph, {p}, sharp focus on the face, bright key light on the face, "
+                  "high contrast, vivid saturated colors, shallow depth of field, all important elements in the upper two thirds, "
+                  "lower third of the image darker and simpler, no korean text, no watermark")
 HEAD_H = 96
 SUB_TOP = 880  # 이 아래는 자막 자리 — 카드가 들어오지 않게 한다
 
@@ -841,7 +847,9 @@ def make_thumb_v3(meta, img_dir, out):
     if not p and th.get("art_prompt"):
         p = os.path.join(img_dir, "thumb_art_" + hashlib.md5(th["art_prompt"].encode("utf-8")).hexdigest()[:12] + ".png")
         if not os.path.exists(p):
-            if th.get("style") == "v6":  # 11/8: 숫자 전광판·화살표를 그림 안에 그려 넣는다(덧붙인 상자는 조잡하다는 사용자 의견)
+            if th.get("style") == "v7":  # 11/16: 실사 진행자 얼굴(화면 1/3) + 장면 하나 + 글자 2줄(라벨·칩 없음)
+                p = gen_art(THUMB_STYLE_V7.format(p=th["art_prompt"]), p, model=THUMB_MODEL, raw=True)
+            elif th.get("style") == "v6":  # 11/8: 숫자 전광판·화살표를 그림 안에 그려 넣는다(덧붙인 상자는 조잡하다는 사용자 의견)
                 p = gen_art(THUMB_STYLE.format(p=th["art_prompt"]), p, model=THUMB_MODEL, raw=True)
             else:
                 p = gen_art(th["art_prompt"], p)
@@ -867,7 +875,7 @@ def make_thumb_v3(meta, img_dir, out):
     xs = np.arange(tw, dtype=np.float32)[None, :] / tw
     vig = np.clip(((xs - 0.5) ** 2 * 1.6 + (ys - 0.45) ** 2 * 1.2) * 1.1, 0, 0.45)
     bottom = np.clip((ys - 0.40) / 0.60, 0, 1) ** 1.3 * 0.92
-    if th.get("style") == "v6":  # 그림을 살린다: 아래쪽만 살짝
+    if th.get("style") in ("v6", "v7"):  # 그림을 살린다: 아래쪽만 살짝
         bottom = np.clip((ys - 0.55) / 0.45, 0, 1) ** 1.5 * 0.75
         vig = vig * 0.6
     shade = np.clip(np.maximum(vig, bottom), 0, 0.95)
@@ -894,7 +902,7 @@ def make_thumb_v3(meta, img_dir, out):
         d.text((x, y + h / 2 + 2), t["text"], font=tf, fill=(255, 255, 255), anchor="mm")
     d = ImageDraw.Draw(im)
     lines = th.get("lines", [meta.get("youtube_title", "")[:14]])
-    v6 = th.get("style") == "v6"
+    v6 = th.get("style") in ("v6", "v7")
     scale = th.get("line_scale", ([0.9, 1.0] if v6 else [0.72, 1.0]) if len(lines) == 2 else [1.0] * len(lines))
     fonts = [tfit(d, plain6(ln) if v6 else ln, tw - (56 if v6 else 96), int((196 if v6 else 176) * sc)) for ln, sc in zip(lines, scale)]
     gap = 4
@@ -905,7 +913,7 @@ def make_thumb_v3(meta, img_dir, out):
         d.rounded_rectangle([46, y - 74, 46 + bw, y - 12], radius=8, fill=(226, 30, 30), outline=(255, 255, 255), width=3)
         d.text((46 + bw / 2, y - 43), th["badge"], font=bf, fill=(255, 255, 255), anchor="mm")
     hi, warn = th.get("hi", (255, 222, 0)), th.get("warn", (255, 56, 48))
-    if th.get("style") == "v6":  # 11/8 경제해적단 카피: 가로를 꽉 채우는 2줄, {노랑}[빨강]<초록> 3~4색, 가운데 정렬
+    if th.get("style") in ("v6", "v7"):  # 11/8 경제해적단 카피: 가로를 꽉 채우는 2줄, {노랑}[빨강]<초록> 3~4색, 가운데 정렬
         for ln, f in zip(lines, fonts):
             x = (tw - d.textlength(plain6(ln), font=f)) / 2
             im = Image.alpha_composite(im, _rich6(im.size, (x + 6, y + 10), ln, f, 24, shadow=True).filter(ImageFilter.GaussianBlur(10)))

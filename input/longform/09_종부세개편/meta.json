@@ -6,24 +6,26 @@
   "privacy": "private",
   "fact_check": "2026-11-13·11-16 확인. [현행·올해 고지분] 1세대 1주택 기본공제 12억·그 외 9억, 공정시장가액비율 60%, 세부담 상한 150%(9/1 수정안에서 200% 인상 철회), 1주택 세액공제 고령자 60세 20%·65세 30%·70세 40% + 장기보유 5년 20%·10년 40%·15년 50%, 합산 한도 80%(이투데이 세무톡·국세청 안내 정리 자료 일치). 2026 공동주택 공시가격 전국 +9.13%·서울 +18.60%·현실화율 69% 동결(국토부 2026.4.30 확정, 파이낸셜뉴스 4.29·korea.kr). 2025년분 주택분 54만 명·1조 7천억 원 고지, 11/24 발송(한국세정신문·SBS Biz). 2026년 고지서 '11월 22일경 발송 예정'은 국세청 9/10 자료를 인용한 2차 자료뿐 → 대본엔 '11월 하순'만. 납부 12/1~12/15, 신고납부 선택 가능. 납부유예: 1세대 1주택·60세 이상 또는 5년 이상 보유·세액 100만 원 초과 등(이투데이). 분납 기준액은 자료마다 달라 숫자 안 씀. [정부 세제개편안, 국회 통과 전] 8/3 발표 → 9/1 국무회의 수정 → 9/3 국회 제출. 실거주 1주택 공제 12억→14억(2027년분~). 비거주 1주택 원안 9억 → 9/1 철회, 12억 유지(헤럴드경제·파이낸셜뉴스·프레시안 9/1). 공정시장가액비율 60→70%(1주택·지방 1·2주택, 2027~), 3주택 이상·조정지역 다주택 2027 70%·2028~ 80%(머니투데이 8/4, 수정안 변경 항목 아님). 1주택 세액공제 2027 보유·거주 중 선택, 2028~ 거주공제 전환, 금액 한도 2027 800만·2028~ 600만(한국경제·이투데이 칼럼). 세율 주택 수→주택가액 기준 일원화(구체 세율은 미확인 → 안 씀). 고령자 공제 처리 미확인 → 안 씀. [국회] 재정경제기획위원회 조세소위 심사 중(11/2·11/11 회의), 11/8 고위당정에서 여당이 비거주도 14억 건의(파이낸셜뉴스 11/9·머니투데이 11/9), 청와대·정부 '거주 14억·비거주 12억 차등 유지'(이슈온 11/11·헤럴드경제), 비거주 14억 적용 시 정부안보다 부담 주는 비거주 1주택 약 4만 7천 호 추정(이슈온 11/11 보도). 예정처: 보유세 강화는 권고 부합, 양도세까지 강화는 배치(헤럴드경제 11/2). [계산] 과세표준 = (공시가 - 공제) × 공정시장가액비율. 실거주: (P-12)×0.6 = (P-14)×0.7 → P = 26억. 예시 13억: 0.6억→0; 20억: 4.8억→4.2억; 30억: 10.8억→11.2억. 비거주 13억: 0.6억→0.7억, 20억: 4.8억→5.6억(+16.7%). 세액은 세율 개편·재산세 중복분 공제 때문에 계산하지 않음.",
   "thumbnail": {
-    "style": "v6",
+    "style": "v7",
     "lines": [
-      "{실거주 14억} vs [비거주 12억]",
-      "우리 집 종부세 <갈리는 선>"
+      "\"고지서 오기 전에\"",
+      "우리 집 종부세 [꼭 확인]"
     ],
-    "badge": "2027 정부안 (국회 심사 중)",
-    "art_prompt": "on the left side a worried korean couple in their sixties, head and shoulders, the woman holding a closed white envelope, their whole heads visible with space above them, warm brass lamp light on their faces; in the upper right area a huge glowing green LED board showing the number 14 and below it a smaller glowing red LED board showing the number 12, a big glossy 3D staircase rising toward the green board, cozy dark korean apartment living room at night, calculator and reading glasses on a wooden table, deep shadows, cinematic",
-    "shift_up": 0.08
+    "art_prompt": "on the right third a korean man in his early sixties with short gray hair, rimless glasses, navy cardigan over a white shirt, head and shoulders, serious expression pointing his index finger at the viewer, his whole head visible with space above it; on the left side a mailbox with a white envelope sticking out and a wall calendar page, warm evening light, dark background",
+    "image_path": "input/longform/09_종부세개편/thumb_c_art.png",
+    "shift_up": 0.06,
+    "brightness": 1.08
   },
   "thumbnail_b": {
-    "style": "v6",
+    "style": "v7",
     "lines": [
-      "올해 종부세 고지서,",
-      "내년엔 <이 선>에서 갈립니다"
+      "{공시가 26억}, 이 선 넘으면",
+      "종부세 [오히려 더 냅니다]"
     ],
-    "badge": "2026년 11월 기준 · 정부안",
-    "art_prompt": "on the right side a surprised korean man in his sixties in a cardigan, head and shoulders, raising his eyebrows and holding reading glasses, whole head visible with space above it; on the left side a big glowing wall graph with two lines crossing each other, a glowing yellow LED box reading 26 exactly at the crossing point, a big glossy 3D arrow pointing at the crossing, cozy dark study with bookshelves, a stack of envelopes and a calculator on the desk, warm amber light and deep shadows, cinematic",
-    "shift_up": 0.08
+    "art_prompt": "on the right third a korean man in his early sixties with short gray hair, rimless glasses, navy cardigan over a white shirt, head and shoulders, shocked expression with wide eyes and open mouth, his whole head visible with space above it; on the left side a huge glowing yellow LED display showing the number 26 in giant digits, a big glossy red 3D arrow pointing up past the display, dark modern office background with city lights",
+    "image_path": "input/longform/09_종부세개편/thumb_b_art.png",
+    "shift_up": 0.06,
+    "brightness": 1.08
   },
   "upload": {
     "title": "같은 집인데 종부세가 갈립니다. 실거주 14억 vs 비거주 12억, 우리 집은 어느 쪽일까 (2027 정부안·국회 심사 중)",
@@ -923,5 +925,16 @@
         }
       ]
     }
-  ]
+  ],
+  "thumbnail_test_a": {
+    "style": "v7",
+    "lines": [
+      "\"같은 집, 다른 종부세\"",
+      "안 살면 [더 냅니다]"
+    ],
+    "image_path": "input/longform/09_종부세개편/thumb_a_art.png",
+    "shift_up": 0.06,
+    "brightness": 1.08,
+    "note": "스튜디오 테스트 및 비교용 3번째 안(빌더는 만들지 않음)"
+  }
 }

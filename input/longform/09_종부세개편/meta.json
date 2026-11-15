@@ -672,8 +672,26 @@
       "art_en": "What Lawmakers Are Debating",
       "scenes": [
         {
-          "kind": "art",
-          "image_prompt": "the dome of the korean national assembly building at dusk seen from a distance across a lawn, cinematic, no text, no signs",
+          "kind": "timeline",
+          "heading": "세제 개편안 국회 진행 (2026)",
+          "points": [
+            {
+              "date": "9월 3일",
+              "label": "정부안 국회 제출",
+              "color": "navy"
+            },
+            {
+              "date": "11월",
+              "label": "조세소위 심사 중",
+              "color": "orange",
+              "active": true
+            },
+            {
+              "date": "12월",
+              "label": "결론 (예산과 함께)",
+              "color": "red"
+            }
+          ],
           "voice": "이 개편안은 9월 3일 국회로 넘어갔고, 지금 세금 법을 다루는 소위원회에서 심사 중입니다. 그런데 여기서 다툼이 생겼어요."
         },
         {

@@ -1,0 +1,927 @@
+{
+  "format": "long",
+  "rate": "+30%",
+  "voice_style": "M1",
+  "script_version": "v3 (v5 구조 + 11/16 그림 약 60장 압축판: 첫 문장 내 돈 · 답은 질문으로 숨김 · 인트로 3장면 · 구독 부탁은 첫 답 뒤 · 기준일은 1장 끝 · 큰 비유 1개(문턱과 기울기) · 반전(26억 갈림길) · 지금 이야기(조세소위 비거주 14억 논의) · 반대편 · 착각 3 · 실천 4 · 비유 회수)",
+  "privacy": "private",
+  "fact_check": "2026-11-13·11-16 확인. [현행·올해 고지분] 1세대 1주택 기본공제 12억·그 외 9억, 공정시장가액비율 60%, 세부담 상한 150%(9/1 수정안에서 200% 인상 철회), 1주택 세액공제 고령자 60세 20%·65세 30%·70세 40% + 장기보유 5년 20%·10년 40%·15년 50%, 합산 한도 80%(이투데이 세무톡·국세청 안내 정리 자료 일치). 2026 공동주택 공시가격 전국 +9.13%·서울 +18.60%·현실화율 69% 동결(국토부 2026.4.30 확정, 파이낸셜뉴스 4.29·korea.kr). 2025년분 주택분 54만 명·1조 7천억 원 고지, 11/24 발송(한국세정신문·SBS Biz). 2026년 고지서 '11월 22일경 발송 예정'은 국세청 9/10 자료를 인용한 2차 자료뿐 → 대본엔 '11월 하순'만. 납부 12/1~12/15, 신고납부 선택 가능. 납부유예: 1세대 1주택·60세 이상 또는 5년 이상 보유·세액 100만 원 초과 등(이투데이). 분납 기준액은 자료마다 달라 숫자 안 씀. [정부 세제개편안, 국회 통과 전] 8/3 발표 → 9/1 국무회의 수정 → 9/3 국회 제출. 실거주 1주택 공제 12억→14억(2027년분~). 비거주 1주택 원안 9억 → 9/1 철회, 12억 유지(헤럴드경제·파이낸셜뉴스·프레시안 9/1). 공정시장가액비율 60→70%(1주택·지방 1·2주택, 2027~), 3주택 이상·조정지역 다주택 2027 70%·2028~ 80%(머니투데이 8/4, 수정안 변경 항목 아님). 1주택 세액공제 2027 보유·거주 중 선택, 2028~ 거주공제 전환, 금액 한도 2027 800만·2028~ 600만(한국경제·이투데이 칼럼). 세율 주택 수→주택가액 기준 일원화(구체 세율은 미확인 → 안 씀). 고령자 공제 처리 미확인 → 안 씀. [국회] 재정경제기획위원회 조세소위 심사 중(11/2·11/11 회의), 11/8 고위당정에서 여당이 비거주도 14억 건의(파이낸셜뉴스 11/9·머니투데이 11/9), 청와대·정부 '거주 14억·비거주 12억 차등 유지'(이슈온 11/11·헤럴드경제), 비거주 14억 적용 시 정부안보다 부담 주는 비거주 1주택 약 4만 7천 호 추정(이슈온 11/11 보도). 예정처: 보유세 강화는 권고 부합, 양도세까지 강화는 배치(헤럴드경제 11/2). [계산] 과세표준 = (공시가 - 공제) × 공정시장가액비율. 실거주: (P-12)×0.6 = (P-14)×0.7 → P = 26억. 예시 13억: 0.6억→0; 20억: 4.8억→4.2억; 30억: 10.8억→11.2억. 비거주 13억: 0.6억→0.7억, 20억: 4.8억→5.6억(+16.7%). 세액은 세율 개편·재산세 중복분 공제 때문에 계산하지 않음.",
+  "thumbnail": {
+    "style": "v6",
+    "lines": [
+      "{실거주 14억} vs [비거주 12억]",
+      "우리 집 종부세 <갈리는 선>"
+    ],
+    "badge": "2027 정부안 (국회 심사 중)",
+    "art_prompt": "on the left side a worried korean couple in their sixties, head and shoulders, the woman holding a closed white envelope, their whole heads visible with space above them, warm brass lamp light on their faces; in the upper right area a huge glowing green LED board showing the number 14 and below it a smaller glowing red LED board showing the number 12, a big glossy 3D staircase rising toward the green board, cozy dark korean apartment living room at night, calculator and reading glasses on a wooden table, deep shadows, cinematic",
+    "shift_up": 0.08
+  },
+  "thumbnail_b": {
+    "style": "v6",
+    "lines": [
+      "올해 종부세 고지서,",
+      "내년엔 <이 선>에서 갈립니다"
+    ],
+    "badge": "2026년 11월 기준 · 정부안",
+    "art_prompt": "on the right side a surprised korean man in his sixties in a cardigan, head and shoulders, raising his eyebrows and holding reading glasses, whole head visible with space above it; on the left side a big glowing wall graph with two lines crossing each other, a glowing yellow LED box reading 26 exactly at the crossing point, a big glossy 3D arrow pointing at the crossing, cozy dark study with bookshelves, a stack of envelopes and a calculator on the desk, warm amber light and deep shadows, cinematic",
+    "shift_up": 0.08
+  },
+  "upload": {
+    "title": "같은 집인데 종부세가 갈립니다. 실거주 14억 vs 비거주 12억, 우리 집은 어느 쪽일까 (2027 정부안·국회 심사 중)",
+    "hook": "올해 종부세 고지서가 11월 하순에 나옵니다. 서울 아파트 공시가격이 18.6% 오른 해라, 처음 고지서를 받는 분도 있을 거예요.\n그런데 진짜 큰 변화는 내년입니다. 같은 집이라도 내가 사느냐, 안 사느냐로 종부세가 갈리는 개편안이 지금 국회에 있어요.\n\n공제선은 올라가는데 계산 비율도 함께 올라갑니다. 그래서 어떤 집은 덜 내고 어떤 집은 더 냅니다. 그 갈림길이 어디인지, 우리 집은 어느 쪽인지, 고지서를 받으면 무엇부터 확인해야 하는지 정리했습니다.",
+    "covers": [
+      "올해 고지서가 유난히 두꺼운 이유 — 서울 공시가격 18.6%",
+      "종부세는 문턱과 기울기다 — 계산을 1분 만에",
+      "내년 문턱, 사는 집은 14억 · 안 사는 집은 12억",
+      "문턱은 높아지는데 기울기가 가팔라진다 — 60%에서 70%로",
+      "두 선이 만나는 곳, 공시가 26억",
+      "안 사는 집 한 채라면 — 기울기만 가팔라진다",
+      "2028년부터 '오래 가진 공제'가 '오래 산 공제'로",
+      "우리 집은 어느 쪽일까 — 질문 세 개로 확인",
+      "지금 국회에서 다투는 것 — 비거주도 14억으로?",
+      "종부세에 대한 흔한 착각 3가지",
+      "고지서 받으면 해 둘 4가지"
+    ],
+    "as_of": "2026년 11월 16일",
+    "sources": [
+      "국토교통부 2026년 공동주택 공시가격 결정·공시(2026.4.30) · 파이낸셜뉴스(2026.4.29)",
+      "기획재정부 2026년 세제개편안(2026.8.3) · 국무회의 수정(2026.9.1) — 국회 통과 전 정부안",
+      "헤럴드경제·파이낸셜뉴스·프레시안(2026.9.1) · 머니투데이(2026.8.4)",
+      "파이낸셜뉴스·머니투데이(2026.11.9) · 이슈온(2026.11.11) · 헤럴드경제(2026.11.2)",
+      "국세청 종합부동산세 안내 · 한국세정신문·SBS Biz(2025년분 고지)"
+    ],
+    "comment_question": "실거주 14억, 비거주 12억. 사는 집과 안 사는 집을 나누는 것, 찬성하시나요 반대하시나요? 올해 고지서 받으셨다면 작년보다 얼마나 달라졌는지도 알려 주세요.",
+    "hashtags": [
+      "#종부세",
+      "#종합부동산세",
+      "#세제개편",
+      "#보유세",
+      "#1주택자",
+      "#실거주",
+      "#공시가격",
+      "#부동산세금",
+      "#종부세고지서",
+      "#공정시장가액비율",
+      "#장기보유공제",
+      "#고령자공제",
+      "#5060",
+      "#부동산",
+      "#도장찍기전에"
+    ],
+    "tags": [
+      "종부세",
+      "종합부동산세",
+      "종부세 개편",
+      "2027 종부세",
+      "종부세 고지서",
+      "종부세 14억",
+      "비거주 1주택",
+      "실거주 1주택",
+      "공정시장가액비율",
+      "세제개편안",
+      "보유세",
+      "1주택자 종부세",
+      "장기보유 세액공제",
+      "고령자 세액공제",
+      "거주공제",
+      "세부담 상한",
+      "공시가격 상승",
+      "종부세 납부유예",
+      "종부세 분납",
+      "도장찍기전에"
+    ],
+    "publish_slot": "18:00 KST",
+    "next": "2027년부터 달라지는 노후 돈"
+  },
+  "chapters": [
+    {
+      "title": "인트로",
+      "tag": "같은 집, 다른 종부세",
+      "art_title": "같은 집, [다른 세금]",
+      "art_en": "Same House, Different Tax",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a korean couple in their sixties sitting at a kitchen table at night, the wife holding a closed white envelope and looking at her husband with concern, warm lamp light, realistic",
+          "voice": "이번 달 말, 종부세 고지서가 나옵니다. 그런데 내년부터는 같은 값의 집이라도, 내가 거기 사느냐 안 사느냐에 따라 세금이 달라질 수 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two identical apartment buildings side by side at dusk in seoul, one with warm lights in the windows and one with dark empty windows, cinematic, no text",
+          "voice": "어떤 집은 내년에 종부세가 아예 사라지고, 어떤 집은 오히려 더 냅니다. 공제는 늘어나는데 더 내는 집이 생긴다니, 이상하죠?"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calculator, reading glasses and a cup of barley tea on a wooden table under a warm lamp, close up, shallow depth of field",
+          "voice": "그 갈림길이 어디인지, 우리 집은 어느 쪽인지. 계산기 없이 따라오실 수 있게 하나씩 짚어 보겠습니다."
+        }
+      ]
+    },
+    {
+      "title": "올해 고지서가 두꺼운 이유",
+      "tag": "서울 공시가격 18.6%",
+      "source": "출처: 국토교통부 공동주택 공시가격(2026.4.30) · 파이낸셜뉴스(2026.4.29) · 한국세정신문·SBS Biz",
+      "art_title": "올해 고지서가 [두꺼운] 이유",
+      "art_en": "Why This Year Is Different",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a mailbox in a korean apartment lobby with a few white envelopes inside, soft morning light, no readable text",
+          "voice": "먼저 올해 이야기부터 할게요. 고지서는 보통 11월 하순에 나오고, 12월 1일부터 15일까지 냅니다. 작년엔 11월 24일부터 보냈어요. 고지서는 우편으로도 오고, 홈택스와 손택스에서도 볼 수 있어요."
+        },
+        {
+          "kind": "number",
+          "heading": "2026년 공동주택 공시가격 변동률",
+          "amount": 18.6,
+          "unit": "%",
+          "label": "서울 (전국 평균 9.13%)",
+          "note": "국토교통부 2026.4.30 확정 · 현실화율 69% 동결",
+          "color": "red",
+          "voice": "그런데 올해는 출발점이 다릅니다. 서울 아파트 공시가격이 18.6퍼센트 올랐어요. 전국 평균도 9퍼센트가 넘습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a tall seoul apartment complex at sunset with warm golden light on the facades, wide shot, cinematic, no text",
+          "voice": "공시가격은 세금을 매길 때 쓰는 정부의 집값입니다. 이게 오르면, 같은 집에 사는데도 세금 계산의 출발점이 올라가요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean woman sitting at a desk with a laptop at night, her son pointing at the screen beside her, the screen facing away from the camera, warm lamp light",
+          "voice": "우리 집 공시가격은 부동산 공시가격 알리미에서 주소만 넣으면 바로 볼 수 있어요. 오늘 영상을 보시면서 우리 집 숫자 하나를 옆에 적어 두시면, 뒤에 나오는 갈림길이 훨씬 잘 보이실 겁니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "공시가격이 18.6% 오른 집 (예시 · 가정)",
+          "left": {
+            "title": "작년 공시가격",
+            "lines": [
+              "11억",
+              "1주택 공제 12억 아래"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "올해 공시가격",
+            "lines": [
+              "약 13억",
+              "[공제 12억 넘음]"
+            ],
+            "color": "red"
+          },
+          "voice": "예를 들어 작년 공시가격이 11억이던 집이 18.6퍼센트 오르면 약 13억이 됩니다. 1주택자 공제선 12억을 넘는 거죠. 작년엔 없던 고지서가 올해 처음 올 수 있다는 뜻이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean man standing at the window of his apartment looking out at the city at dusk, thoughtful expression, warm interior light",
+          "voice": "작년에는 주택분 종부세가 54만 명에게 고지됐습니다. 올해는 서울을 중심으로 처음 받는 분이 꽤 나올 수 있어요. 특히 공시가격이 11억에서 12억 사이였던 집들이 올해 문턱을 넘었을 가능성이 커요."
+        },
+        {
+          "kind": "quote",
+          "heading": "오늘 영상의 기준",
+          "text": "{2026년 11월 16일} 기준\n올해 고지서 = 지금 법 그대로\n내년 이야기 = [국회 통과 전 정부안]",
+          "cite": "국토교통부 · 기획재정부 세제개편안(2026.8.3, 9.1 수정) · 언론 보도",
+          "voice": "오늘 내용은 11월 16일 기준입니다. 올해 고지서는 지금 법 그대로 계산되고, 내년 이야기는 아직 국회를 통과하지 않은 정부안이에요."
+        }
+      ]
+    },
+    {
+      "title": "종부세는 문턱과 기울기",
+      "tag": "계산을 1분 만에",
+      "source": "출처: 국세청 종합부동산세 안내 · 종합부동산세법",
+      "art_title": "종부세는 [문턱과 기울기]",
+      "art_en": "A Threshold and a Slope",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a stone threshold step at the entrance of a traditional korean house, a gentle slope path rising behind it toward a hill, morning light, wide shot",
+          "voice": "종부세 계산은 복잡해 보이지만, 그림 하나로 정리됩니다. 문턱과 기울기예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "close up of an old wooden door threshold of a korean house, an elderly person's slippers resting just before it, soft warm light",
+          "voice": "먼저 문턱. 공시가격이 이 선을 넘기 전까지는 종부세가 없습니다. 이게 공제예요. 지금 집이 한 채뿐인 분은 12억, 그 밖의 분은 9억입니다. 문턱이 높을수록 세금을 안 내는 집이 많아지는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a winding mountain path that becomes steeper as it climbs, hikers walking up slowly, autumn trees, cinematic wide shot",
+          "voice": "다음은 기울기. 문턱을 넘은 금액을 전부 세금 매기는 데 쓰지 않아요. 그중 일정 비율만 씁니다. 지금은 60퍼센트예요. 이걸 공정시장가액비율이라고 합니다. 기울기가 완만하면 문턱을 넘어도 천천히 오르고, 가파르면 같은 금액을 넘어도 세금 매기는 금액이 빨리 커집니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "종부세 계산 순서 (지금 법)",
+          "cards": [
+            {
+              "title": "① 문턱 넘은 금액",
+              "body": "공시가격 - 공제(1주택 12억)",
+              "color": "navy"
+            },
+            {
+              "title": "② 기울기 곱하기",
+              "body": "× 공정시장가액비율 60%",
+              "color": "orange"
+            },
+            {
+              "title": "③ 세율 곱하기",
+              "body": "= 과세표준 × 세율",
+              "color": "red"
+            },
+            {
+              "title": "④ 공제 빼기",
+              "body": "나이·보유기간 세액공제 최대 80%",
+              "color": "green"
+            }
+          ],
+          "voice": "순서로 보면 이렇습니다. 문턱 넘은 금액에, 기울기를 곱하고, 세율을 곱하고, 마지막에 나이와 보유기간에 따른 공제를 뺍니다. 오늘은 이 중에서 앞의 두 단계, 문턱과 기울기에 집중할게요. 내년에 바뀌는 게 바로 여기거든요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean couple in their seventies walking together slowly through a quiet apartment park in autumn, warm afternoon light",
+          "voice": "마지막 공제가 꽤 큽니다. 한 채만 가진 분은 60세가 넘으면 20퍼센트, 70세가 넘으면 40퍼센트. 5년 넘게 가지고 있었으면 20퍼센트, 15년이 넘으면 50퍼센트. 둘을 합쳐 최대 80퍼센트까지 빠져요. 그래서 오래 사신 어르신 댁은 고지서 금액이 생각보다 작게 나오기도 해요. 이 공제도 내년에 바뀌는데, 뒤에서 따로 말씀드릴게요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a sturdy wooden fence along a path protecting walkers from a steep drop, soft evening light, symbolic",
+          "voice": "그리고 안전장치가 하나 더 있어요. 재산세와 합친 보유세가 작년의 1.5배를 넘지 않게 막는 세부담 상한입니다. 공시가격이 많이 올라도 한 해에 확 뛰지는 않게 하는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a stone threshold and a sloping path at a korean hillside house, a carpenter measuring the height of the step with a ruler, morning light",
+          "title": "문턱의 높이, [기울기의 각도]",
+          "en": "Height and Angle",
+          "voice": "내년 개편안은 이 그림에서 두 가지를 동시에 바꿉니다. 문턱의 높이, 그리고 기울기의 각도. 이 둘이 반대 방향으로 움직여요."
+        }
+      ]
+    },
+    {
+      "title": "내년 문턱",
+      "tag": "실거주 14억 · 비거주 12억",
+      "source": "출처: 기획재정부 2026년 세제개편안(2026.8.3) · 9.1 국무회의 수정 · 헤럴드경제·파이낸셜뉴스(2026.9.1)",
+      "art_title": "사는 집은 [14억]",
+      "art_en": "Live There, Higher Threshold",
+      "scenes": [
+        {
+          "kind": "compare",
+          "heading": "1주택자 종부세 문턱 (정부안 · 2027년분부터)",
+          "left": {
+            "title": "내가 사는 집",
+            "lines": [
+              "12억 → {14억}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "안 사는 집",
+            "lines": [
+              "12억 그대로"
+            ],
+            "color": "orange"
+          },
+          "voice": "첫 번째 답입니다. 집이 한 채인데 그 집에 직접 살면, 문턱이 12억에서 14억으로 올라갑니다. 안 살고 세를 준 집이면 12억 그대로예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean grandmother watering plants on the balcony of her apartment in the morning, peaceful, warm sunlight",
+          "voice": "그러니까 공시가격 13억짜리 집에 직접 사는 분은, 올해는 고지서를 받아도 내년엔 종부세가 없어질 수 있습니다. 14억 문턱 아래니까요."
+        },
+        {
+          "kind": "compare",
+          "heading": "공시가 13억 · 1주택 (예시 · 단순 계산)",
+          "left": {
+            "title": "내가 사는 집",
+            "lines": [
+              "올해 과세표준 6천만",
+              "내년 {0원} · 대상 아님"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "안 사는 집",
+            "lines": [
+              "올해 과세표준 6천만",
+              "내년 [7천만]"
+            ],
+            "color": "red"
+          },
+          "voice": "숫자로 보면 더 분명해요. 공시가격 13억, 똑같은 집 두 채가 있습니다. 올해는 둘 다 세금 매기는 금액이 6천만 원이에요. 그런데 내년엔 직접 사는 집은 0원, 안 사는 집은 7천만 원으로 오히려 늘어납니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an empty apartment interior with boxes and a single chair near a window, a young tenant family's shoes at the door, soft daylight",
+          "voice": "반대로 같은 13억 집이라도 내가 안 살고 세를 줬다면, 문턱은 12억 그대로라 내년에도 대상입니다. 집값도 같고 가진 기간도 같은데, 거기 사느냐 하나로 갈리는 겁니다."
+        },
+        {
+          "kind": "timeline",
+          "heading": "비거주 1주택 문턱, 한 달 사이 바뀐 것",
+          "points": [
+            {
+              "date": "8월 3일",
+              "label": "정부안 · 9억으로 낮춤",
+              "color": "red"
+            },
+            {
+              "date": "8월",
+              "label": "반발 여론",
+              "color": "orange"
+            },
+            {
+              "date": "9월 1일",
+              "label": "철회 · 12억 유지",
+              "color": "green",
+              "active": true
+            }
+          ],
+          "voice": "사실 처음 안은 더 셌어요. 8월 정부안은 안 사는 집의 문턱을 9억까지 낮추려 했습니다. 반발이 커지자 29일 만에 철회하고 12억으로 되돌렸어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a middle aged korean man in a suit working abroad, standing at a window of a foreign hotel room at night, looking at a photo of his family on his phone, warm light",
+          "voice": "그때 함께 철회된 게 하나 더 있습니다. 세부담 상한을 1.5배에서 2배로 올리려던 것도 없던 일이 됐어요. 그래서 지금 국회에 간 안은 1.5배 그대로입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a smiling korean woman in her fifties nodding while watching a tablet on her sofa, the screen facing away from the camera, warm evening light",
+          "voice": "여기까지가 첫 번째 답이었습니다. 이런 정리가 도움이 되신다면 구독 한 번 눌러 주세요. 다음 답이 더 중요합니다."
+        }
+      ]
+    },
+    {
+      "title": "기울기도 가팔라진다",
+      "tag": "60% → 70%",
+      "source": "출처: 기획재정부 2026년 세제개편안(2026.8.3) · 머니투데이(2026.8.4)",
+      "art_title": "기울기가 [가팔라진다]",
+      "art_en": "The Slope Gets Steeper",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a mountain trail where the slope suddenly becomes steeper, a hiker pausing and looking up, dramatic clouds, cinematic",
+          "voice": "문턱만 바뀌면 좋은 소식이겠죠. 그런데 개편안은 기울기도 바꿉니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "공정시장가액비율 (정부안)",
+          "left": {
+            "title": "지금",
+            "lines": [
+              "60%"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "2027년부터",
+            "lines": [
+              "[70%]",
+              "1주택 · 지방 1·2주택"
+            ],
+            "color": "red"
+          },
+          "voice": "문턱을 넘은 금액 중 세금 매기는 데 쓰는 비율, 지금 60퍼센트가 내년부터 70퍼센트로 올라갑니다. 집이 한 채인 분도 마찬가지예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a wooden ramp being rebuilt at a steeper angle by workers, measuring tools on the ground, late afternoon light",
+          "voice": "60에서 70이면 10퍼센트포인트지만, 비율로 따지면 세금 매기는 금액이 6분의 1, 약 17퍼센트 늘어나는 셈입니다. 문턱을 넘은 금액이 3억이면, 세금 매기는 금액이 1억 8천에서 2억 1천으로 늘어나는 식이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "several apartment buildings of different heights in a dense seoul neighborhood at dusk, aerial view, lights turning on",
+          "voice": "집이 세 채 이상이거나 조정지역에 여러 채를 가진 분은 더 가팔라요. 내년 70퍼센트, 2028년부터는 80퍼센트입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a threshold step being raised higher while the path behind it is tilted steeper, symbolic construction scene, warm light",
+          "title": "문턱은 높게, [경사는 가파르게]",
+          "en": "Higher Step, Steeper Slope",
+          "voice": "정리하면, 사는 집 기준으로 문턱은 2억 높아지고, 기울기는 가팔라집니다. 그럼 결국 덜 내는 걸까요, 더 내는 걸까요?"
+        }
+      ]
+    },
+    {
+      "title": "두 선이 만나는 곳",
+      "tag": "공시가 26억",
+      "source": "출처: 기획재정부 세제개편안 기준 단순 계산(과세표준) · 세율·세액공제 제외",
+      "art_title": "두 선이 [만나는 곳]",
+      "art_en": "Where Two Lines Cross",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "two hiking paths crossing each other on a hillside, one gentle and one steep, a signpost without text at the crossing, golden hour",
+          "voice": "답은 집값에 따라 다릅니다. 그리고 그 갈림길이 생각보다 또렷해요."
+        },
+        {
+          "kind": "compare",
+          "heading": "내가 사는 1주택 · 과세표준 비교 (예시 · 단순 계산)",
+          "left": {
+            "title": "공시가 20억",
+            "lines": [
+              "지금 4억 8천",
+              "정부안 {4억 2천}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "공시가 30억",
+            "lines": [
+              "지금 10억 8천",
+              "정부안 [11억 2천]"
+            ],
+            "color": "red"
+          },
+          "voice": "직접 사는 집으로 계산해 볼게요. 공시가격 20억이면, 세금 매기는 금액이 지금 4억 8천에서 4억 2천으로 줄어듭니다. 그런데 30억이면 10억 8천에서 11억 2천으로 늘어나요."
+        },
+        {
+          "kind": "number",
+          "heading": "내가 사는 1주택, 과세표준이 같아지는 공시가격",
+          "amount": 26,
+          "unit": "억",
+          "label": "이 아래는 줄고, 위는 늘어남",
+          "note": "(공시가-12억)×60% = (공시가-14억)×70% · 단순 계산 · 세율 개편 제외",
+          "color": "orange",
+          "voice": "두 선이 만나는 곳이 공시가격 26억입니다. 26억보다 싼 집은 세금 매기는 금액이 줄고, 26억보다 비싼 집은 오히려 늘어요. 계산은 간단해요. 지금은 12억을 빼고 60퍼센트, 내년엔 14억을 빼고 70퍼센트. 문턱이 높아져서 줄어드는 몫과, 기울기가 가팔라져서 늘어나는 몫이 정확히 같아지는 지점이 26억입니다."
+        },
+        {
+          "kind": "checklist",
+          "heading": "내가 사는 1주택 · 공시가격별 과세표준 (예시 · 단순 계산)",
+          "items": [
+            {
+              "text": "공시가 13억 · 지금 6천만",
+              "right": "내년 0원",
+              "right_color": "green"
+            },
+            {
+              "text": "공시가 16억 · 지금 2억 4천만",
+              "right": "내년 1억 4천만",
+              "right_color": "green"
+            },
+            {
+              "text": "공시가 20억 · 지금 4억 8천만",
+              "right": "내년 4억 2천만",
+              "right_color": "green"
+            },
+            {
+              "text": "공시가 26억 · 지금 8억 4천만",
+              "right": "내년 8억 4천만",
+              "right_color": "orange"
+            },
+            {
+              "text": "공시가 30억 · 지금 10억 8천만",
+              "right": "내년 11억 2천만",
+              "right_color": "red"
+            }
+          ],
+          "voice": "표로 한 번에 보면 이렇습니다. 13억은 0원으로, 16억은 2억 4천에서 1억 4천으로, 20억은 4억 8천에서 4억 2천으로 줄어요. 26억에서 같아지고, 30억부터는 늘어납니다. 집값이 낮을수록 줄어드는 폭이 크다는 것도 보이시죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a luxury riverside apartment tower in seoul at night with the han river reflecting city lights, cinematic, no text",
+          "voice": "공시가격은 시세의 약 69퍼센트라서, 공시가격 26억이면 시세로 37억 안팎인 집입니다. 서울에서도 아주 비싼 집들이죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an ordinary mid rise apartment complex in a seoul suburb on a sunny afternoon, children playing in the courtyard, warm light",
+          "voice": "그러니까 대부분의 직접 사는 1주택자에게는, 내년 개편이 세금 매기는 금액을 줄이는 쪽입니다. 특히 공시가격 12억에서 14억 사이는 아예 대상에서 빠질 수 있고요. 반대로 공시가격이 아주 높은 집은 문턱 2억이 주는 혜택보다 기울기 10퍼센트포인트가 더 크게 작용합니다."
+        },
+        {
+          "kind": "quote",
+          "heading": "꼭 알아 둘 점",
+          "text": "26억은 {과세표준} 기준 단순 계산\n세율표도 [주택가액 기준]으로 바뀌는 중\n실제 세액은 확정 뒤 다시 계산해야 함",
+          "cite": "기획재정부 세제개편안 · 국회 심사 중",
+          "voice": "다만 조심할 게 있어요. 이건 세금 매기는 금액까지만 계산한 겁니다. 세율표도 주택 수 기준에서 집값 기준으로 바뀌는 중이라, 실제 세액은 국회에서 확정된 뒤 다시 계산해 봐야 해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a hand placing a small stone marker at the exact point where two forest paths cross, soft morning mist, close up",
+          "voice": "그래도 방향은 분명합니다. 직접 사는 집은 덜 내는 쪽, 아주 비싼 집은 더 내는 쪽. 그럼 안 사는 집은 어떨까요?"
+        }
+      ]
+    },
+    {
+      "title": "안 사는 집 한 채라면",
+      "tag": "문턱 그대로, 기울기만",
+      "source": "출처: 기획재정부 세제개편안(2026.8.3, 9.1 수정) · 단순 계산(과세표준)",
+      "art_title": "안 사는 집은 [기울기만]",
+      "art_en": "Only the Slope Changes",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean couple living in a small rural house with a vegetable garden, looking at a photo of a seoul apartment on a tablet, warm afternoon light",
+          "voice": "이런 분들이 있어요. 서울에 아파트 한 채가 있는데, 은퇴하고 고향으로 내려가 세를 주고 계신 분. 직장 때문에 다른 도시에 살면서 내 집은 세를 준 분."
+        },
+        {
+          "kind": "compare",
+          "heading": "안 사는 1주택 · 과세표준 (예시 · 단순 계산)",
+          "left": {
+            "title": "공시가 13억",
+            "lines": [
+              "지금 6천만",
+              "정부안 [7천만]"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "공시가 20억",
+            "lines": [
+              "지금 4억 8천",
+              "정부안 [5억 6천]"
+            ],
+            "color": "red"
+          },
+          "voice": "이분들은 문턱이 12억 그대로인데 기울기만 60에서 70으로 올라갑니다. 그래서 집값과 상관없이 세금 매기는 금액이 약 17퍼센트씩 늘어나요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two keys on a wooden table, one shiny new and one old, beside a cup of coffee, soft window light, close up",
+          "voice": "같은 20억 집이라도, 직접 사는 사람은 4억 2천, 안 사는 사람은 5억 6천. 같은 집에서 세금 매기는 금액이 1억 4천만 원 차이가 납니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a retired korean man tending a small vegetable garden in front of a countryside house, a distant view of mountains, warm late afternoon light",
+          "voice": "은퇴 후 고향에 내려간 분을 예로 들어 볼게요. 고향 집은 부모님 명의라 본인 집은 서울 아파트 한 채뿐이고, 그 집은 세를 주고 계십니다. 이분은 내년부터 안 사는 1주택이 됩니다. 문턱은 그대로인데 기울기만 가팔라지는 쪽이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a quiet seoul apartment hallway at night with one door slightly open and light spilling out, cinematic, no text",
+          "voice": "정부 생각은 이렇습니다. 집은 사는 곳이다. 직접 사는 한 채는 보호하고, 안 사는 한 채는 그만큼 덜 보호하겠다. 투기 목적이 아니라 생활 때문에 떨어져 사는 경우까지 똑같이 볼 거냐가, 지금 국회 논쟁의 핵심이기도 해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a worried middle aged korean woman reading a letter in a small office, her face lit by a desk lamp, the paper seen from behind, no text",
+          "voice": "그런데 사정이 있는 분들도 많아요. 부모님 간병 때문에, 직장 발령 때문에, 아이 학교 때문에 잠시 다른 데 사는 분들. 어디까지를 실거주로 볼지는 아직 세부 기준이 확정되지 않았습니다. 확정되면 다시 정리해 드릴게요."
+        }
+      ]
+    },
+    {
+      "title": "오래 가진 공제가 오래 산 공제로",
+      "tag": "2028년부터 · 한도 600만 원",
+      "source": "출처: 기획재정부 2026년 세제개편안 · 한국경제·이투데이 보도 · 뉴시스(2026.7.26)",
+      "art_title": "오래 가진 것보다 [오래 산 것]",
+      "art_en": "Years Lived, Not Years Owned",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an old photo album open on a table showing family photos taken in the same apartment over many years, soft nostalgic light, no text",
+          "voice": "이번엔 아까 말씀드린 마지막 단계, 세금에서 빼 주는 공제 이야기입니다. 여기도 큰 변화가 있어요. 나이와 보유기간에 따라 세금에서 직접 빼 주는 공제였죠."
+        },
+        {
+          "kind": "timeline",
+          "heading": "1주택 보유기간 세액공제 (정부안)",
+          "points": [
+            {
+              "date": "지금",
+              "label": "보유기간 공제 (최대 50%)",
+              "color": "green"
+            },
+            {
+              "date": "2027년",
+              "label": "보유·거주 중 유리한 쪽 선택",
+              "color": "orange"
+            },
+            {
+              "date": "2028년부터",
+              "label": "거주기간 공제로 전환",
+              "color": "red",
+              "active": true
+            }
+          ],
+          "voice": "지금은 집을 오래 가지고 있기만 해도 최대 50퍼센트를 빼 줍니다. 정부안은 내년에 보유와 거주 중 유리한 쪽을 고르게 하고, 2028년부터는 거주기간 공제로 바꿉니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean man sitting alone on a bench in front of an apartment he no longer lives in, autumn leaves, melancholic warm light",
+          "voice": "쉽게 말해, 오래 가졌다고 빼 주던 것을 오래 살았다고 빼 주는 것으로 바꾸는 거예요. 15년을 가지고 있었어도 그 집에 산 적이 없다면, 2028년부터는 이 공제를 받기 어려워집니다. 반대로 같은 집에 20년을 직접 사신 분은 지금처럼 공제를 받을 수 있는 구조예요."
+        },
+        {
+          "kind": "compare",
+          "heading": "1주택 세액공제 금액 한도 신설 (정부안)",
+          "left": {
+            "title": "2027년",
+            "lines": [
+              "최대 {800만 원}"
+            ],
+            "color": "orange"
+          },
+          "right": {
+            "title": "2028년부터",
+            "lines": [
+              "최대 [600만 원]"
+            ],
+            "color": "red"
+          },
+          "voice": "그리고 처음으로 금액 한도가 생깁니다. 공제율이 80퍼센트여도, 빼 주는 금액은 내년 800만 원, 2028년부터 600만 원까지만이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a large glass jar of coins with a lid being screwed on tightly, a hand holding the lid, warm kitchen light, close up",
+          "voice": "이 한도는 아주 비싼 집을 겨냥한 겁니다. 고가 1주택자가 받는 세액공제 금액이 몇 년째 커졌다는 지적이 있었거든요. 보통 집이라면 공제 금액이 이 한도까지 가지 않아요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a wooden bridge with a sturdy railing over a calm river, an elderly couple crossing it holding hands, sunset, peaceful",
+          "voice": "나이에 따른 고령자 공제를 어떻게 할지는 지금 나온 자료로 확인하지 못했습니다. 확인되지 않은 건 말씀드리지 않을게요."
+        }
+      ]
+    },
+    {
+      "title": "우리 집은 어느 쪽일까",
+      "tag": "3단계로 확인",
+      "source": "출처: 기획재정부 2026년 세제개편안 기준 · 국회 심사 중",
+      "art_title": "우리 집은 [어느 쪽]일까",
+      "art_en": "Find Your Side in Three Steps",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean couple sitting side by side on a sofa with a notepad and a pen, the woman counting on her fingers, warm living room light, the notepad seen from the side",
+          "voice": "이제 우리 집이 어느 쪽인지 직접 확인해 볼 차례입니다. 질문 세 개면 돼요."
+        },
+        {
+          "kind": "checklist",
+          "heading": "내년 종부세, 우리 집은 어느 쪽? (정부안 기준)",
+          "items": [
+            {
+              "text": "① 집이 한 채인가?",
+              "right": "아니면 9억 · 기울기 70~80%"
+            },
+            {
+              "text": "② 그 집에 직접 사는가?",
+              "right": "아니면 12억 · 기울기만 70%"
+            },
+            {
+              "text": "③ 공시가격이 얼마인가?",
+              "right": "14억 이하 0 · 26억 미만 감소"
+            }
+          ],
+          "voice": "첫째, 집이 한 채인가. 둘째, 그 집에 직접 사는가. 셋째, 공시가격이 얼마인가."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a hand holding a pencil drawing a simple path with three forks on a blank sheet of paper on a wooden desk, warm lamp light, close up, no text",
+          "voice": "집이 한 채이고 직접 살며 공시가격이 14억 이하라면, 내년엔 종부세가 없을 가능성이 큽니다. 14억에서 26억 사이라면 세금 매기는 금액이 줄어드는 쪽이고요. 26억이 넘으면 늘어나는 쪽입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a middle aged korean man looking thoughtfully out of a train window at the countryside, holding a cup of coffee, soft morning light",
+          "voice": "한 채인데 직접 살지 않는다면, 집값과 상관없이 세금 매기는 금액이 늘어나는 쪽입니다. 그리고 2028년부터 보유기간 공제를 받기 어려워져요. 국회 결론을 가장 눈여겨보셔야 할 분들입니다."
+        }
+      ]
+    },
+    {
+      "title": "지금 국회에서는",
+      "tag": "비거주도 14억으로?",
+      "source": "출처: 파이낸셜뉴스·머니투데이(2026.11.9) · 이슈온(2026.11.11) · 헤럴드경제",
+      "art_title": "지금 국회에서는 [무엇을]",
+      "art_en": "What Lawmakers Are Debating",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "the dome of the korean national assembly building at dusk seen from a distance across a lawn, cinematic, no text, no signs",
+          "voice": "이 개편안은 9월 3일 국회로 넘어갔고, 지금 세금 법을 다루는 소위원회에서 심사 중입니다. 그런데 여기서 다툼이 생겼어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "비거주 1주택 문턱을 둘러싼 입장 (11월 중순)",
+          "left": {
+            "title": "정부",
+            "lines": [
+              "실거주 14억",
+              "비거주 12억",
+              "차등 유지"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "여당",
+            "lines": [
+              "실거주 14억",
+              "비거주도 {14억}",
+              "통일하자"
+            ],
+            "color": "orange"
+          },
+          "voice": "11월 8일 당정 회의에서 여당이 안 사는 집도 14억으로 올리자고 건의했습니다. 정부와 청와대는 사는 집 14억, 안 사는 집 12억으로 나누는 원칙을 지키겠다는 입장이고요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long wooden meeting table with empty chairs and scattered blank papers after a heated discussion, evening light through tall windows, no text",
+          "voice": "보도에 따르면 이번 주 소위원회에서 이 통일안을 논의할 예정입니다. 안 사는 집도 14억이 되면, 정부안보다 부담이 줄어드는 집이 약 4만 7천 호로 추정됐어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "안 사는 1주택 · 공시가 13억 (예시 · 단순 계산)",
+          "left": {
+            "title": "정부안 (비거주 12억)",
+            "lines": [
+              "과세표준 [7천만]",
+              "내년에도 대상"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "여당안 (비거주 14억)",
+            "lines": [
+              "과세표준 {0원}",
+              "대상에서 빠짐"
+            ],
+            "color": "green"
+          },
+          "voice": "만약 여당 안대로 안 사는 집도 14억이 되면, 아까 그 13억 집은 내년에 대상에서 빠집니다. 다만 기울기 70퍼센트와 2028년 공제 전환은 그대로라, 사는 집과 안 사는 집의 차이가 완전히 사라지지는 않아요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calendar on a wall turned to december with a pen hanging next to it, soft morning light, no readable text",
+          "voice": "세금 법은 보통 예산과 함께 연말에 결론이 납니다. 그러니까 오늘 말씀드린 내년 숫자는, 12월에 바뀔 수 있어요. 그리고 국회를 통과해도 실거주를 어떻게 인정할지 같은 세부 기준은 그 뒤에 정해집니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a man in a suit standing at a crossroads in a city at night, looking at two directions, cinematic rim light",
+          "voice": "그래서 지금 할 일은 결론을 미리 걱정하는 게 아니라, 우리 집이 어느 쪽 이야기에 해당하는지 알아 두는 겁니다. 그래야 결과가 나왔을 때 바로 판단할 수 있으니까요."
+        }
+      ]
+    },
+    {
+      "title": "반대편 이야기",
+      "tag": "좋은 얘기만 하지 않겠습니다",
+      "source": "출처: 헤럴드경제(2026.11.2, 국회예산정책처 평가) · 머니투데이(2026.11.9)",
+      "art_title": "반대편 [이야기]",
+      "art_en": "The Other Side",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a balance scale on a wooden desk with a small house model on one side and a stack of coins on the other, warm lamp light, close up",
+          "voice": "이 개편이 좋기만 한 건 아닙니다. 반대쪽 이야기도 들어 보셔야 해요."
+        },
+        {
+          "kind": "cards",
+          "heading": "개편안을 두고 나오는 지적",
+          "cards": [
+            {
+              "title": "실거주 판정",
+              "body": "간병·발령·학교 등 사정 있는 비거주를 어떻게 볼지",
+              "color": "orange"
+            },
+            {
+              "title": "세입자 영향",
+              "body": "비거주 집주인 세금이 전월세로 옮겨 갈 수 있다는 우려",
+              "color": "red"
+            },
+            {
+              "title": "예측 가능성",
+              "body": "8월 안 → 9월 수정 → 국회 추가 수정 논의",
+              "color": "navy"
+            }
+          ],
+          "voice": "첫째, 실거주를 어떻게 판단할지. 둘째, 안 사는 집주인의 세금이 세입자에게 옮겨 갈 수 있다는 우려. 셋째, 한 달 만에 바뀌고 또 바뀌는 정책을 믿고 계획을 세울 수 있느냐는 비판입니다. 어느 쪽 말도 일리가 있어서, 국회에서 쉽게 결론이 나지 않는 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young korean couple carrying boxes into a small rental apartment, slightly tired but hopeful, soft daylight",
+          "voice": "특히 세입자 이야기가 나오는 이유가 있어요. 전셋값이 오른다는 보도가 이어지는 상황이라, 집주인 세금이 늘면 전월세로 넘어갈 수 있다는 걱정이죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an analyst reading thick reports at a desk late at night in a government office, the papers seen from the side, no readable text",
+          "voice": "국회예산정책처는 보유세를 강화하는 건 권고 방향에 맞지만, 팔 때 내는 양도세까지 강화하는 건 맞지 않는다고 평가했습니다. 집을 팔라면서 팔 때 세금을 더 받는 셈이라는 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a quiet korean neighborhood street in the early morning with shops still closed and a lone cyclist, soft blue light",
+          "voice": "양도세 이야기는 지난 영상에서 따로 정리해 두었으니, 집을 팔 계획이 있는 분은 그 영상도 함께 보시면 좋겠습니다."
+        }
+      ]
+    },
+    {
+      "title": "종부세에 대한 흔한 착각",
+      "tag": "착각 3가지",
+      "source": "출처: 국세청 종합부동산세 안내 · 종합부동산세법",
+      "art_title": "흔한 [착각] 3가지",
+      "art_en": "Three Common Mistakes",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean man shaking his head with a gentle smile while talking to his son at a cafe table, warm afternoon light",
+          "voice": "종부세 이야기가 나오면 꼭 나오는 착각이 세 가지 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a rubber band stretched between two fingers but stopped by a small wooden block, macro shot, soft light",
+          "title": "착각 ① [공시가격만큼 오른다]",
+          "en": "Not in Proportion",
+          "voice": "첫째, 공시가격이 18퍼센트 올랐으니 종부세도 18퍼센트 오른다. 아닙니다. 문턱을 넘은 부분에만 붙고, 재산세와 합친 보유세가 작년의 1.5배를 넘지 못하게 막혀 있어요. 다만 작년에 문턱 아래라 0원이던 집은 올해 고지서가 새로 생기는 거라 느낌이 다를 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two wedding rings resting on a closed white envelope on a wooden table, warm light, close up, no text",
+          "title": "착각 ② [공동명의면 무조건 유리]",
+          "en": "Joint Ownership Isn't Always Better",
+          "voice": "둘째, 부부 공동명의면 무조건 유리하다. 공동명의는 각자 9억씩 18억까지 빼 주지만, 나이와 보유기간 공제를 못 받아요. 그래서 공동명의도 한 명이 가진 것처럼 계산하는 특례를 고를 수 있습니다. 어느 쪽이 나은지는 집마다 달라요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a pair of reading glasses resting on top of a closed notebook next to a cup of tea, early morning light through a window",
+          "title": "착각 ③ [올해부터 바뀐다]",
+          "en": "This Year's Bill Is Unchanged",
+          "voice": "셋째, 개편안 때문에 올해 고지서도 달라진다. 아닙니다. 올해 고지서는 지금 법 그대로예요. 오늘 말씀드린 변화는 국회를 통과하면 내년, 2027년분부터입니다. 그러니 올해 고지서를 보고 내년 걱정을 미리 하실 필요는 없어요. 내년 계획은 12월 국회 결론을 보고 세우시면 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean woman smiling while talking on the phone in her bright living room, autumn light through the window",
+          "voice": "이 세 가지만 알아도, 주변에서 들리는 종부세 이야기에 덜 흔들리실 거예요."
+        }
+      ]
+    },
+    {
+      "title": "고지서 받으면 해 둘 4가지",
+      "tag": "체크리스트",
+      "source": "출처: 국세청 종합부동산세 안내 · 이투데이(납부유예 요건)",
+      "art_title": "고지서 받으면 [해 둘 것]",
+      "art_en": "When the Bill Arrives",
+      "scenes": [
+        {
+          "kind": "checklist",
+          "items": [
+            {
+              "text": "1주택 특례·나이·보유기간 공제가 제대로 들어갔는지",
+              "right": "고지서"
+            },
+            {
+              "text": "틀렸다면 직접 신고해서 바로잡기",
+              "right": "12.1~15"
+            },
+            {
+              "text": "금액이 크면 나눠 내기(분납) 확인",
+              "right": "12.15까지"
+            },
+            {
+              "text": "60세 이상·5년 이상 보유면 납부유예 확인",
+              "right": "기한 전 신청"
+            }
+          ],
+          "voice": "고지서를 받으시면 이 네 가지만 챙기세요. 먼저 한눈에 보여 드리고 하나씩 짚을게요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean man carefully checking a tablet screen at his dining table with reading glasses, the screen facing away from the camera, warm light",
+          "voice": "첫째, 1주택 특례와 나이, 보유기간 공제가 제대로 들어갔는지 보세요. 홈택스나 손택스에서도 볼 수 있어요. 특히 공동명의라면 1주택 특례가 들어갔는지, 나이와 보유기간이 맞게 적혔는지 꼭 보세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a woman's hands writing on a blank form with a pen at a desk, a calculator beside it, soft daylight, no readable text",
+          "voice": "둘째, 틀린 게 있으면 12월 1일부터 15일 사이에 직접 신고해서 바로잡을 수 있습니다. 신고하면 그 금액이 고지서를 대신해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a stack of coins split into two neat piles on a wooden table, one larger and one smaller, soft window light, close up",
+          "voice": "셋째, 금액이 크면 일부를 6개월 안에 나눠 낼 수 있습니다. 분납이라고 해요. 기준 금액은 고지서 안내문에서 꼭 확인하세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a retired korean couple looking at a monthly budget notebook together at their kitchen table, the notebook seen from the side, warm evening light",
+          "voice": "넷째, 집 한 채뿐이고 60세가 넘었거나 5년 넘게 가지고 있다면, 세금이 100만 원을 넘을 때 납부유예를 신청할 수 있어요. 소득 조건도 있으니 기한 안에 세무서에 확인해 보세요. 나중에 집을 팔거나 물려줄 때 내는 방식이고, 대신 이자 성격의 돈이 붙어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a son helping his elderly mother with something on her smartphone on a sofa, both smiling, warm afternoon light",
+          "voice": "부모님이 고지서를 받으셨다면, 이 네 가지를 같이 봐 드리는 것만으로도 큰 도움이 될 거예요."
+        }
+      ]
+    },
+    {
+      "title": "마무리",
+      "tag": "문턱과 기울기",
+      "art_title": "우리 집은 [어느 쪽]",
+      "art_en": "Which Side Is Your Home",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a traditional korean house threshold at sunset with a gentle path behind it, warm golden light, peaceful wide shot",
+          "voice": "처음에 말씀드린 문턱과 기울기, 기억나시죠? 내년 개편안은 직접 사는 집의 문턱을 높이고, 모든 집의 기울기를 가파르게 합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two paths diverging from a single stone step, one leading to a lit home and one to a dark empty house, dusk, symbolic",
+          "title": "문턱은 [사는 집]에, 기울기는 [모두]에게",
+          "en": "Threshold for Residents, Slope for All",
+          "voice": "그래서 직접 사는 대부분의 1주택자는 덜 내고, 안 사는 집과 아주 비싼 집은 더 내는 구조예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "three small stones lined up on a wooden table under warm light, symbolic, close up, no text",
+          "voice": "세 줄로 정리할게요. 올해 고지서는 지금 법 그대로지만, 서울 공시가격이 18.6퍼센트 올라 처음 받는 분이 늘 수 있다. 내년엔 사는 집 문턱 14억, 안 사는 집 12억, 기울기는 70퍼센트. 그리고 직접 사는 집은 공시가 26억이 덜 내느냐 더 내느냐의 갈림길이다. 결론은 아직 국회에 있습니다. 12월에 결과가 나오면 우리 집 기준으로 다시 정리해 드릴게요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy living room at night with a warm lamp and a cup of tea on the table, quiet closing shot",
+          "voice": "오늘 영상이 도움이 됐다면 좋아요 한번 눌러 주세요. 그리고 여러분 생각은 어떠세요? 사는 집과 안 사는 집을 나누는 것, 찬성하시나요, 반대하시나요? 댓글로 남겨 주시면 국회 결론이 나왔을 때 함께 정리해 드릴게요."
+        },
+        {
+          "kind": "title",
+          "title": "다음 영상\n{매주 화·금 저녁 6시}",
+          "sub": "구독하고 놓치지 마세요 · 도장찍기전에",
+          "voice": "도장찍기전에는 매주 화요일과 금요일 저녁 6시에 새 영상으로 찾아옵니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a red traditional korean seal stamp resting on a wooden desk beside a closed contract folder, warm lamp light, shallow depth of field, no text",
+          "voice": "도장은 천천히, 팩트는 먼저. 도장찍기전에였습니다."
+        }
+      ]
+    }
+  ]
+}

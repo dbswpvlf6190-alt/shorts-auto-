@@ -1,0 +1,103 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "extra": true,
+  "not_before": "2026-11-17",
+  "repurposed_from": "longform/09_종부세개편 (72gf46PDbnA, 11/17 18:00 공개) — v5 공개일 예고 쇼츠(답 숨기고 질문으로 끝남)",
+  "source_label": "출처: 국토교통부 공시가격(2026.4.30) · 기획재정부 세제개편안(2026.8.3·9.1 수정, 국회 심사 중)",
+  "youtube_title": "같은 집인데 내년 종부세가 갈립니다 #종부세 #세제개편",
+  "youtube_description": "종부세 고지서가 11월 하순에 나옵니다.\n서울 공시가격은 올해 18.6% 올랐고, 내년엔 직접 사는 집과 안 사는 집의 공제선이 달라집니다(정부안·국회 심사 중).\n\n공제선은 오르는데 계산 비율도 오릅니다. 그래서 덜 내는 집과 더 내는 집이 갈립니다.\n그 갈림길은 어디일까요?\n\n▶ 전체 정리(롱폼): https://youtu.be/72gf46PDbnA\n\n출처: 국토교통부 공동주택 공시가격(2026.4.30), 기획재정부 2026년 세제개편안(2026.8.3, 9.1 수정)\n※ 국회 통과 전 정부안 기준입니다. 정보 제공 목적이며 세무 자문이 아닙니다.\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#종부세 #종합부동산세 #세제개편 #보유세 #1주택자 #shorts",
+  "tags": "종부세,종합부동산세,세제개편,종부세고지서,1주택자,실거주,보유세",
+  "tiktok_caption": "같은 집인데 내년 종부세가 갈려요 😮 직접 사는 집은 공제 14억, 안 사는 집은 12억 그대로(정부안). 그런데 덜 내는 집과 더 내는 집이 갈리는 선이 따로 있어요. 국회 통과 전 정부안 기준이에요. 팔로우하면 매일 새로운 부동산·재테크 정보 받아보실 수 있어요 🔔 댓글👇 우리 집은 어느 쪽일까요? #종부세 #세제개편 #부동산 #1주택자 #보유세",
+  "instagram_caption": "같은 집인데 내년 종부세가 갈려요 😮 직접 사는 집은 공제 14억, 안 사는 집은 12억 그대로(정부안). 덜 내는 집과 더 내는 집이 갈리는 선은 유튜브 도장찍기전에 롱폼에서! 국회 통과 전 정부안 기준이에요. 팔로우하면 매일 새로운 부동산·재테크 정보 받아보실 수 있어요 🔔 댓글👇 우리 집은 어느 쪽일까요? #종부세 #세제개편 #부동산 #1주택자 #보유세",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "종부세 고지서, 곧 도착해요.",
+      "caption": "종부세 고지서\n{곧 도착}",
+      "image_prompt": "photorealistic white envelope sticking out of an apartment mailbox in a korean apartment lobby, warm evening light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "서울 아파트 공시가격이 올해 18.6퍼센트 올랐어요.",
+      "caption": "서울 공시가격\n올해 {18.6%} 상승",
+      "big": "+18.6%",
+      "badge": "2026 서울 공시가격"
+    },
+    {
+      "kind": "big",
+      "voice": "작년 11억이던 집이 13억이 되면, 올해 처음 고지서를 받을 수 있어요.",
+      "caption": "작년 11억 → 올해 13억\n{처음 고지서}",
+      "big": "11억 → 13억",
+      "badge": "예시"
+    },
+    {
+      "kind": "photo",
+      "voice": "그런데 진짜 큰 변화는 내년이에요.",
+      "caption": "진짜 변화는\n{내년}",
+      "image_prompt": "photorealistic seoul apartment complex at dusk with warm lights in some windows, cinematic, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "직접 사는 집은 공제가 14억으로 올라가요.",
+      "caption": "직접 사는 집\n공제 {14억}",
+      "big": "12억 → 14억",
+      "badge": "실거주 1주택 · 정부안"
+    },
+    {
+      "kind": "big",
+      "voice": "안 사는 집은 12억 그대로예요.",
+      "caption": "안 사는 집\n[12억 그대로]",
+      "big": "12억 그대로",
+      "badge": "비거주 1주택 · 정부안"
+    },
+    {
+      "kind": "big",
+      "voice": "대신 계산 비율은 60에서 70퍼센트로 올라가요.",
+      "caption": "계산 비율\n{60% → 70%}",
+      "big": "60% → 70%",
+      "badge": "공정시장가액비율"
+    },
+    {
+      "kind": "photo",
+      "voice": "그런데 공제가 오르는데 더 내는 집이 생긴다고요?",
+      "caption": "공제는 오르는데\n[더 내는 집]?",
+      "image_prompt": "photorealistic two identical apartment doors side by side in a hallway, one with warm light and one dark, cinematic, no text",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "그 갈림길은 공시가격 한 지점에 있어요.",
+      "caption": "갈림길은\n공시가 {한 지점}",
+      "big": "공시가 ??억",
+      "badge": "갈림길"
+    },
+    {
+      "kind": "photo",
+      "voice": "아직 국회 통과 전인 정부안이에요.",
+      "caption": "국회 통과 전\n{정부안}",
+      "image_prompt": "photorealistic wooden gavel on a desk in a large empty meeting hall, warm evening light, shallow depth of field, no flags, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "그 숫자는 도장찍기전에 롱폼에서 확인하세요.",
+      "caption": "갈림길 숫자는\n{롱폼}에서",
+      "big": "롱폼에서 공개",
+      "badge": "도장찍기전에"
+    },
+    {
+      "kind": "photo",
+      "voice": "집 가진 부모님께 꼭 보내 주세요.",
+      "caption": "부모님께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic middle aged korean woman showing a phone to her elderly mother on a sofa, warm light, screen blurred, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "우리 집은 덜 내는 쪽일까요, 더 내는 쪽일까요?",
+      "caption": "우리 집은\n{어느 쪽}일까요?",
+      "big": "덜 낼까? 더 낼까?",
+      "badge": "댓글로 알려주세요"
+    }
+  ]
+}

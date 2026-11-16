@@ -1,0 +1,99 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 상속세및증여세법 시행령 제49조 · 대법원 2026.4.2. 선고 2025두35499, 2026.5.8. 선고 2024두54348 판결",
+  "youtube_title": "상속세 신고 끝났는데, 국세청이 또 세금을 매길 수 있어요 #상속세 #꼬마빌딩",
+  "youtube_description": "꼬마빌딩이나 상가처럼 기준시가와 실거래가 차이가 큰 비주거용 부동산을 상속받으면, 신고가 끝난 뒤에도 세금이 늘어날 수 있어요.\n\n국세청은 상속세 신고기한이 지난 뒤에도 9개월 안에는 직접 감정평가를 받아 재산가액을 다시 매길 수 있어요(상속세및증여세법 시행령 제49조 제1항 단서). 하급심에서 이 규정이 무효라는 판단이 나왔지만, 대법원이 2026년 4월과 5월 잇따라 이를 뒤집고 적법하다고 최종 판단했습니다.\n\n기준시가로 신고했던 건물이 국세청 감정으로 더 높게 매겨지면, 그 차이만큼 상속세 과세표준이 늘어나요. (영상 속 10억 원·15억 원은 이해를 돕기 위한 가정 금액입니다.)\n\n출처: 상속세및증여세법 시행령 제49조, 대법원 2026.4.2. 선고 2025두35499 판결, 2026.5.8. 선고 2024두54348 판결\n※ 정보 제공 목적이며 세무·법률 자문이 아닙니다. 개별 사안은 세무사·변호사와 상담하세요.\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#상속세 #꼬마빌딩 #국세청감정평가 #상속세신고 #비주거용부동산 #부동산 #재테크 #shorts",
+  "tags": "상속세,꼬마빌딩,국세청감정평가,상속세신고,비주거용부동산",
+  "tiktok_caption": "상속세 신고 끝났는데 세금이 또 나올 수 있어요 😱 국세청이 신고 후 9개월 안에 직접 감정평가를 받아서 세금을 다시 매길 수 있대요. 대법원도 적법하다고 최종 판단했어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분이라면 이 건물을 어떻게 신고하시겠어요? #상속세 #꼬마빌딩 #국세청감정평가",
+  "instagram_caption": "상속세 신고 끝났는데 세금이 또 나올 수 있어요 😱 국세청이 신고 후 9개월 안에 직접 감정평가를 받아서 세금을 다시 매길 수 있대요. 대법원도 적법하다고 최종 판단했어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분이라면 이 건물을 어떻게 신고하시겠어요? #상속세 #꼬마빌딩 #국세청감정평가",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "신고 끝났는데 세금이 또?",
+      "caption": "신고 끝났는데\n{세금이 또}?",
+      "image_prompt": "photorealistic small multi-story commercial building exterior on a quiet korean city street, soft overcast daylight, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 국세청이 다시 감정해서 세금을 더 매길 수 있어요.",
+      "caption": "결론\n국세청이 {다시 감정}해서\n세금을 더 매겨요",
+      "image_prompt": "photorealistic modern office building facade in a korean city, daytime, high detail, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "그 기간은 신고기한이 지난 뒤에도 9개월까지예요.",
+      "caption": "신고기한 이후\n{9개월}까지",
+      "big": "+9개월",
+      "badge": "국세청 재감정 가능 기간"
+    },
+    {
+      "kind": "photo",
+      "voice": "꼬마빌딩이나 상가처럼 기준시가 차이가 큰 건물이 주로 해당돼요.",
+      "caption": "{꼬마빌딩·상가}처럼\n차이 큰 건물이 대상",
+      "image_prompt": "photorealistic small three-story commercial building with shops on the ground floor, warm afternoon light, shallow depth of field, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 기준시가로 10억 원에 신고한 건물이에요.",
+      "caption": "예를 들어\n기준시가로 신고한 건물",
+      "amount": 10,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "timeline",
+      "voice": "국세청이 감정평가를 의뢰하면 15억 원으로 오를 수 있어요.",
+      "caption": "국세청 감정 의뢰하면\n{15억 원}으로",
+      "active": [1],
+      "cards": [
+        {"date": "기준시가 신고", "who": "10억 원", "color": "green"},
+        {"date": "국세청 재감정", "who": "15억 원", "color": "red"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "오른 5억 원만큼 상속세 과세표준이 늘어나는 거예요.",
+      "caption": "늘어난 {5억 원}만큼\n세금도 늘어나요",
+      "active": "all",
+      "cards": [
+        {"date": "기준시가 신고", "who": "10억 원", "color": "green"},
+        {"date": "국세청 재감정", "who": "15억 원", "color": "red"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 이렇게 다시 매기는 게 정당할까요?",
+      "caption": "근데 이렇게\n{다시 매기는 게} 정당할까요?",
+      "image_prompt": "photorealistic wooden gavel resting on a desk in an empty courtroom, warm ambient light, shallow depth of field, no text, no flags"
+    },
+    {
+      "kind": "big",
+      "voice": "대법원이 4월과 5월, 정당하다고 최종 판단했어요.",
+      "caption": "대법원\n{적법} 최종 판단",
+      "big": "적법 (대법원)",
+      "badge": "2026년 4·5월 선고",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "기준시가로 성실하게 신고했어도 사후 감정 대상이 될 수 있어요.",
+      "caption": "{기준시가}로 신고해도\n사후 감정 대상",
+      "big": "성실 신고도 대상",
+      "badge": "주의"
+    },
+    {
+      "kind": "photo",
+      "voice": "건물 상속받은 가족이 있다면 꼭 보내주세요.",
+      "caption": "건물 상속받은\n가족에게 {공유}해주세요",
+      "image_prompt": "photorealistic small architectural model building and a magnifying glass on a wooden desk, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분이라면 이 건물을 어떻게 신고하시겠어요?",
+      "caption": "여러분이라면\n{어떻게} 신고하시겠어요?",
+      "image_prompt": "photorealistic city skyline at dusk with warm lit building windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

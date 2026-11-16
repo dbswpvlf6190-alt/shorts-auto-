@@ -1,0 +1,964 @@
+{
+  "format": "long",
+  "rate": "+30%",
+  "voice_style": "M1",
+  "field": "money",
+  "script_version": "v3 (v5 구조 + v6-2 주식·돈 + 그림 약 60장: 첫 문장 내 돈(연금 속 엔비디아) · 답은 질문으로 숨김 · 인트로 3장면 · 구독 부탁은 첫 답 뒤 · 기준일은 1장 끝 · 큰 비유 1개(선장과 엔진) · 좋은 경우 4 + 나쁜 경우 4 함께 · 반전(애플 1985: 1년 뒤 +129%, 12년 뒤 위기) · 지금 이야기(실적 발표·12/1 하원) · 착각 3 · 실천 4 · 비유 회수. 사생활·의혹은 보도 인용과 본인 부인만, 실존 인물 얼굴 그림 없음)",
+  "privacy": "private",
+  "fact_check": "2026-11-16 확인. [사건] 11/8 황 임직원 메시지로 사생활 문제 인정·사과, 이사회 독립 조사 착수 / 11/11 이사회 사임 수리 / 11/12 발표: 사장·CEO·이사 즉시 사임, 33년 만, 콜레트 크레스 CFO 임시 CEO(경향신문 11/12·토큰포스트·CNBC 11/12). 상대 여성 관련 안보 의혹은 황 본인 전면 부인, 미 법무부 수출통제 우회 관련 조사(CNN·Yahoo Finance). 미 하원 3개 위원회 12/1 비공개 면담 요청(CNN). 대주주 2명(알티미터·아트레이드) 이사회 서한 '복귀 포함 검토' — 즉각 복직 요구는 아님(CNBC 11/14). 온라인 청원 약 14만 명(파이낸셜뉴스 11/15). FT '복귀 논의' 보도(Yahoo·글로벌이코노믹 11/16). 베센트 재무장관 '대대적 쇄신' 언급(Yahoo Finance). [주가, 야후 파이낸스 종가] NVDA 11/3 206.69 → 11/13 162.85(-21.2%), 11/12 -4.34%(장전 -10%↑, 경향·뉴스1). AMD 11/3 483.90 → 11/12 585.30(+21.0%). SK하이닉스 11/2 1,472,000 → 11/16 1,202,000(-18.3%), 11/13 -3.03% 121.6만·외국인 4천억 원↑ 매도(이투데이). 같은 기간 11/5~6 코스피 폭락(서킷브레이커) 겹침. [서학개미] 11/6~12 엔비디아 순매수 7,948만 달러(약 1,061억 원, 5위), SOXL 약 7,791억 원, 반대매매 1,345억 원 전주 3.7배(서울경제TV·서울경제 11/14). [비중] S&P500 내 엔비디아 약 6.1~6.3%(11/10~13, Trefis·CalculatorAI) — 10/8 8.34%(토큰포스트). 퇴직연금 ETF 중 해외주식형 55.1%·나스닥100 25.8%·S&P500 23.9%(한국투자증권, 스마트투데이), 40·50대 퇴직연금 상위 ETF 10개 중 8개 AI 노출·S&P500 상위 10개 비중 37.3%(파이낸셜뉴스 11/8). [HBM] SK하이닉스 엔비디아 HBM4 물량 약 60~70% 추정, IDC '즉각 주문 중단 가능성 낮음'(이투데이·톱스타뉴스). [창업자·CEO 퇴진 후 1년, 야후 파이낸스 수정주가 기준 직접 계산, 기준 = 발표 직전 종가] 애플 1985.9.16 → +128.7%(S&P500 +26.7%) / MS 2000.1.13 → -51.2%(S&P -8.5%, 1년 중 최저 -61.5%) / 애플 2011.8.24 → +77.1%(S&P +19.8%) / 인텔 2018.6.20 → -9.5%(S&P +6.8%, 최저 -20.2%) / 파파존스 2018.7.11 → -3.7%(S&P +8.1%, 첫날 +11.0%) / 맥도날드 2019.11.1 → +12.4%(S&P +7.9%, 코로나 최저 -28.4%) / 알파벳 2019.12.3 → +40.7%(S&P +18.5%) / 아마존 2021.2.2 → -10.9%(S&P +19.9%). 잡스 1997년 복귀(애플 NeXT 인수 1996.12, 임시 CEO 1997). [실적] 엔비디아 3분기 실적 발표 11/17(미국) 또는 11/19 06:00 KST로 자료마다 다름, 매출 전망 약 1,090억 달러 — 결과는 11/19 확인 후 8장 갱신. [예시] 연금 1,000만 원 × 엔비디아 약 6% = 약 60만 원, -21% = 약 13만 원(전체의 약 1.3%) — 예시·가정.",
+  "thumbnail": {
+    "style": "v7",
+    "lines": [
+      "\"젠슨 황 떠났다\"",
+      "내 연금 속 엔비디아 [괜찮을까]"
+    ],
+    "art_prompt": "on the right third a korean man in his early sixties with short gray hair, rimless glasses, navy cardigan over a white shirt, head and shoulders, very worried expression looking at a smartphone in his hand, his whole head visible with space above it; on the left side a big glowing stock chart on a dark screen with a sharp red line falling down, a black leather jacket hanging on an empty office chair in front of it, dark office background with cool blue light",
+    "shift_up": 0.06,
+    "brightness": 1.08
+  },
+  "thumbnail_b": {
+    "style": "v7",
+    "lines": [
+      "선장 떠난 회사, 1년 뒤",
+      "{+77%} 아니면 [-51%]"
+    ],
+    "art_prompt": "on the right third a korean man in his early sixties with short gray hair, rimless glasses, navy cardigan over a white shirt, head and shoulders, surprised expression with raised eyebrows, his whole head visible with space above it; on the left side a huge ship's steering wheel with no captain on a dark ship bridge, stormy sea through the window, one glowing green LED box reading +77% and one glowing red LED box reading -51% above the wheel",
+    "shift_up": 0.06,
+    "brightness": 1.08
+  },
+  "upload": {
+    "title": "젠슨 황 없는 엔비디아, 내 연금은 괜찮을까. 선장이 떠난 회사들의 1년 뒤",
+    "hook": "엔비디아 젠슨 황이 33년 만에 회사를 떠났습니다. 엔비디아 주가는 2주 만에 21% 빠졌습니다.\n엔비디아를 직접 사지 않았어도, 미국 지수 ETF로 굴리는 퇴직연금·연금저축에는 이미 엔비디아가 들어 있습니다.\n\n창업자나 간판 CEO가 떠난 회사 여덟 곳의 1년 뒤를 실제 주가로 따라가 봤습니다. 네 곳은 시장보다 더 올랐고, 네 곳은 시장보다 못했습니다. 무엇이 둘을 갈랐는지, 그리고 지금 내 연금에서 무엇을 확인해야 하는지 정리했습니다.",
+    "covers": [
+      "33년 만의 퇴장 — 지난 일주일에 일어난 일",
+      "엔비디아 안 샀는데 왜 내 돈일까 — 연금 속 6%",
+      "2주 만에 -21%, 같은 기간 AMD는 +21%",
+      "선장과 엔진 — 회사의 두 가지 힘",
+      "선장이 떠나도 더 오른 회사 4곳",
+      "선장이 떠난 뒤 시장보다 못한 회사 4곳",
+      "1년 뒤 +129%, 그런데 12년 뒤에 벌어진 일",
+      "이번 주 실적 발표가 말해 준 것",
+      "젠슨 황은 돌아올까 — 복귀를 둘러싼 두 목소리",
+      "SK하이닉스·삼성전자는 괜찮을까",
+      "젠슨 황 리스크에 대한 흔한 착각 3가지",
+      "지금 내 연금에서 확인할 4가지"
+    ],
+    "as_of": "2026년 11월 16일 (주가는 11월 13일 종가, 실적은 발표 후 반영)",
+    "sources": [
+      "CNBC(2026.11.12·11.14) · CNN(2026.11.11) · Yahoo Finance · 경향신문(2026.11.12) · 파이낸셜뉴스(2026.11.15)",
+      "주가: 야후 파이낸스 종가·수정주가(NVDA·AMD·SK하이닉스·S&P500, 과거 사례 직접 계산)",
+      "서울경제TV·서울경제(2026.11.14) · 이투데이(2026.11.13) · 톱스타뉴스",
+      "S&P500 내 엔비디아 비중: Trefis·CalculatorAI(2026.11) · 파이낸셜뉴스(2026.11.8) · 스마트투데이(한국투자증권 퇴직연금)"
+    ],
+    "comment_question": "젠슨 황, 다시 돌아와야 할까요? 그리고 내 연금 ETF 상위 종목, 열어 보신 적 있으신가요?",
+    "hashtags": [
+      "#엔비디아",
+      "#젠슨황",
+      "#퇴직연금",
+      "#연금저축",
+      "#S&P500",
+      "#나스닥",
+      "#SK하이닉스",
+      "#반도체",
+      "#미국주식",
+      "#ETF",
+      "#주식",
+      "#재테크",
+      "#경제공부",
+      "#5060",
+      "#도장찍기전에"
+    ],
+    "tags": [
+      "엔비디아",
+      "젠슨 황",
+      "젠슨황 사임",
+      "엔비디아 CEO",
+      "엔비디아 주가",
+      "젠슨황 리스크",
+      "퇴직연금 ETF",
+      "연금저축 ETF",
+      "S&P500 ETF",
+      "나스닥100 ETF",
+      "SK하이닉스",
+      "HBM",
+      "AMD",
+      "CEO 사임 주가",
+      "스티브 잡스",
+      "빌 게이츠",
+      "서학개미",
+      "반대매매",
+      "AI 반도체",
+      "도장찍기전에"
+    ],
+    "publish_slot": "18:00 KST",
+    "next": "2027년부터 달라지는 노후 돈"
+  },
+  "chapters": [
+    {
+      "title": "인트로",
+      "tag": "연금 속 엔비디아",
+      "art_title": "선장이 [떠났다]",
+      "art_en": "The Captain Has Left",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his sixties sitting at his kitchen table at night looking at a falling chart on his tablet, the screen facing away from the camera, worried expression, warm lamp light",
+          "voice": "퇴직연금에 미국 지수 ETF 1천만 원을 넣어 두셨다면, 그 안에 엔비디아가 약 60만 원어치 들어 있습니다. 지난 2주, 그 60만 원에서 13만 원 가까이가 빠졌어요. 엔비디아 주식을 한 주도 사지 않았는데도요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an empty captain's chair on the bridge of a large ship at dusk, the steering wheel unattended, stormy sea through the windows, cinematic",
+          "voice": "엔비디아를 세계에서 가장 비싼 회사로 키운 젠슨 황이 33년 만에 회사를 떠났습니다. 그럼 선장이 떠난 회사는 1년 뒤에 어떻게 될까요?"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a row of old ship logbooks on a wooden shelf in a dim cabin, a brass compass beside them, warm lamp light, no readable text",
+          "voice": "과거에 창업자나 간판 CEO가 떠난 회사 여덟 곳의 1년 뒤를, 실제 주가로 하나씩 따라가 보겠습니다."
+        }
+      ]
+    },
+    {
+      "title": "지난 일주일에 일어난 일",
+      "tag": "33년 만의 퇴장",
+      "source": "출처: CNBC(2026.11.12·11.14) · CNN(2026.11.11) · 경향신문(2026.11.12) · 파이낸셜뉴스(2026.11.15)",
+      "art_title": "33년 만의 [퇴장]",
+      "art_en": "Thirty-Three Years",
+      "scenes": [
+        {
+          "kind": "timeline",
+          "heading": "젠슨 황 퇴진 (2026년 11월)",
+          "points": [
+            {
+              "date": "11월 8일",
+              "label": "사생활 문제 인정·사과",
+              "color": "orange"
+            },
+            {
+              "date": "11월 11일",
+              "label": "이사회 사임 수리",
+              "color": "red"
+            },
+            {
+              "date": "11월 12일",
+              "label": "CEO·이사직 사임 발표",
+              "color": "red",
+              "active": true
+            }
+          ],
+          "voice": "먼저 무슨 일이 있었는지 짧게 정리할게요. 11월 8일 젠슨 황이 직원들에게 사생활 문제를 인정하고 사과했고, 이사회가 조사를 시작했습니다. 그리고 12일, CEO와 이사 자리에서 모두 물러난다고 발표됐어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a black leather jacket hanging on an empty office chair in a dark modern office, city lights through the window, cinematic, no logos",
+          "voice": "회사는 재무 책임자였던 콜레트 크레스를 임시 CEO로 세웠습니다. 새 CEO는 아직 정해지지 않았어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a giant glowing computer chip standing like a monument in the middle of a dark city square at night, crowds looking up at it, cinematic, no logos, no text",
+          "voice": "왜 이렇게 큰 뉴스일까요? 엔비디아는 AI 시대의 상징 같은 회사입니다. 챗GPT 같은 AI가 돌아가는 칩의 대부분을 만들고, 미국 S&P500 안에서도 시가총액 두 번째로 큰 회사예요. 그 회사를 33년 동안 이끈 창업자가 하루아침에 떠난 겁니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long corridor of a government building with tall columns at night, a single figure walking away in the distance, cinematic, no text, no flags",
+          "voice": "상대 여성과 관련된 안보 의혹도 보도됐지만, 젠슨 황 본인은 국가 안보나 회사 기밀을 해쳤다는 의혹을 전면 부인했습니다. 미국 하원은 12월 1일 비공개 면담을 요청한 상태예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a crowd of office workers holding phones in a tech campus courtyard at dusk, many screens glowing, concerned faces, cinematic, screens blurred",
+          "voice": "반대로 돌아와야 한다는 목소리도 큽니다. 복귀를 요구하는 온라인 청원에 약 14만 명이 이름을 올렸고, 큰 주주 두 곳은 이사회에 복귀까지 포함해 검토해 달라는 편지를 보냈어요. 복귀 이야기는 뒤에서 따로 다룰게요."
+        },
+        {
+          "kind": "quote",
+          "heading": "오늘 영상의 기준",
+          "text": "주가는 {2026년 11월 13일 종가}까지\n사생활·의혹은 다루지 않고 [보도 사실만]\n특정 종목·상품 추천이 아닙니다",
+          "cite": "야후 파이낸스 종가 · CNBC · CNN · 국내 언론 보도",
+          "voice": "오늘 주가는 11월 13일 종가까지입니다. 사생활 이야기는 더 다루지 않고, 내 돈과 관련된 사실만 보겠습니다. 특정 종목을 권하는 영상도 아니에요."
+        }
+      ]
+    },
+    {
+      "title": "엔비디아 안 샀는데 왜 내 돈일까",
+      "tag": "연금 속 6%",
+      "source": "출처: Trefis·CalculatorAI(2026.11) · 파이낸셜뉴스(2026.11.8) · 스마트투데이(한국투자증권 퇴직연금)",
+      "art_title": "내 연금 속 [엔비디아]",
+      "art_en": "Nvidia in Your Pension",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean couple looking at a pension statement envelope at their dining table, the paper seen from behind, puzzled expressions, warm light",
+          "voice": "엔비디아 주식은 한 주도 안 샀는데 왜 내 돈 이야기냐고 하실 수 있어요. 답은 연금 계좌 안에 있습니다."
+        },
+        {
+          "kind": "number",
+          "heading": "S&P500 지수 안 엔비디아 비중 (2026년 11월 중순)",
+          "amount": 6,
+          "unit": "%",
+          "label": "100만 원 넣으면 약 6만 원",
+          "note": "집계 기관마다 6.1~6.3% · 10월 초에는 8.34%",
+          "color": "orange",
+          "voice": "미국을 대표하는 S&P500 지수에서 엔비디아가 차지하는 비중이 약 6퍼센트입니다. 10월 초에는 8퍼센트가 넘었어요. 이 지수를 따라가는 ETF에 100만 원을 넣으면, 약 6만 원이 엔비디아에 들어가는 셈이죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a pie chart made of real coins on a wooden table, one slice highlighted with gold coins, soft light, close up, no text",
+          "voice": "그런데 퇴직연금에서 ETF로 굴리는 돈의 절반 넘게가 해외 주식형이고, 그중 가장 많이 담는 게 나스닥100과 S&P500입니다. 연금저축 계좌도 비슷합니다. 미국 지수 ETF는 이제 노후 계좌의 기본 메뉴가 됐어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "several different glass jars of coins on a shelf that all contain the same shiny golden coin at the top, symbolic, warm light, close up",
+          "voice": "더 놓치기 쉬운 게 있어요. 40대와 50대가 퇴직연금에 많이 담는 ETF 10개 중 8개가 AI 관련 주식에 걸려 있다는 분석이 나왔습니다. 이름은 달라도 안을 열어 보면 같은 회사가 겹쳐 있는 거죠."
+        },
+        {
+          "kind": "compare",
+          "heading": "연금 속 엔비디아 (예시 · 가정)",
+          "left": {
+            "title": "S&P500 ETF 1,000만 원",
+            "lines": [
+              "엔비디아 약 {60만 원}"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "엔비디아 2주 -21%",
+            "lines": [
+              "약 [13만 원] 감소",
+              "전체의 약 1.3%"
+            ],
+            "color": "red"
+          },
+          "voice": "1천만 원 기준으로 다시 볼게요. 엔비디아 몫이 약 60만 원이고, 2주 동안 21퍼센트가 빠졌으니 약 13만 원이 줄었습니다. 전체로 보면 1.3퍼센트 정도예요. 생각보다 작다고 느끼실 수도 있고요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a magnifying glass over a stack of coins on a desk, revealing that each coin is slightly different, warm lamp light, macro shot",
+          "voice": "그런데 이건 S&P500 하나만 가진 경우입니다. 반도체 ETF나 AI ETF를 함께 가지고 계시면, 엔비디아 몫은 훨씬 커져요. 반도체만 모은 ETF는 엔비디아 비중이 지수 ETF보다 훨씬 높은 경우가 많아요. 그래서 내 연금에 무엇이 들어 있는지부터 아는 게 중요합니다."
+        }
+      ]
+    },
+    {
+      "title": "2주 만에 -21%",
+      "tag": "같은 기간 AMD +21%",
+      "source": "출처: 야후 파이낸스 종가(NVDA·AMD·S&P500) · 경향신문·뉴스1(2026.11.12~13)",
+      "art_title": "2주 만에 [-21%]",
+      "art_en": "Down 21% in Two Weeks",
+      "scenes": [
+        {
+          "kind": "compare",
+          "heading": "엔비디아 주가 (미국 종가)",
+          "left": {
+            "title": "11월 3일",
+            "lines": [
+              "206.69달러"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "11월 13일",
+            "lines": [
+              "162.85달러",
+              "[-21.2%]"
+            ],
+            "color": "red"
+          },
+          "voice": "엔비디아 주가는 11월 3일 206달러에서 13일 162달러까지, 2주도 안 돼 21퍼센트가 빠졌습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a dark trading floor at night with red numbers glowing on wall screens, a lone trader holding his head, cinematic, numbers blurred",
+          "voice": "흥미로운 건 사임이 발표된 날입니다. 장이 열리기 전에는 10퍼센트 넘게 빠졌는데, 그날 종가는 4.3퍼센트 하락으로 줄었어요. 시장이 생각보다 빨리 숨을 골랐다는 뜻이죠."
+        },
+        {
+          "kind": "compare",
+          "heading": "같은 기간 경쟁사 AMD (미국 종가)",
+          "left": {
+            "title": "11월 3일",
+            "lines": [
+              "483.90달러"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "11월 12일",
+            "lines": [
+              "585.30달러",
+              "{+21.0%}"
+            ],
+            "color": "green"
+          },
+          "voice": "반대로 경쟁사 AMD는 같은 기간 21퍼센트가 올랐습니다. 엔비디아에서 빠진 돈이 일부는 경쟁사로 옮겨 간 거예요."
+        },
+        {
+          "kind": "compare",
+          "heading": "엔비디아 하락, 나눠서 보면 (미국 종가)",
+          "left": {
+            "title": "11월 5일 하루",
+            "lines": [
+              "[-9.3%]",
+              "AI 규제 우려 · AMD도 -17.3%"
+            ],
+            "color": "orange"
+          },
+          "right": {
+            "title": "사과 뒤 (11.6 → 11.13)",
+            "lines": [
+              "[-12.7%]",
+              "같은 기간 AMD +30%대"
+            ],
+            "color": "red"
+          },
+          "voice": "그런데 21퍼센트를 나눠 보면 이야기가 달라집니다. 11월 5일 하루 9퍼센트는 AI 규제 우려로 반도체가 다 같이 빠진 날이었어요. AMD도 그날 17퍼센트 빠졌습니다. 젠슨 황 문제가 알려진 뒤로만 보면 엔비디아는 13퍼센트 가까이 빠졌고, AMD는 오히려 30퍼센트 넘게 올랐어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old sailor at a harbor at dusk watching one ship leave and another ship arrive, thoughtful expression, warm golden light, cinematic",
+          "voice": "같은 기간 미국 S&P500 지수는 거의 그대로였습니다. 시장 전체가 아니라 엔비디아에서 돈이 빠져나가 경쟁사로 옮겨 간 거죠. 그래서 이번 일은 시장의 폭풍이라기보다, 이 배 한 척의 선장 문제에 가깝습니다."
+        }
+      ]
+    },
+    {
+      "title": "선장과 엔진",
+      "tag": "회사의 두 가지 힘",
+      "art_title": "선장과 [엔진]",
+      "art_en": "The Captain and the Engine",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a large cargo ship sailing at sea at dawn seen from above, its wake trailing behind, cinematic wide shot",
+          "voice": "여기서 그림 하나를 같이 보면 좋겠습니다. 회사를 큰 배라고 해 볼게요. 배를 움직이는 힘은 두 가지입니다. 선장, 그리고 엔진."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "the inside of a huge ship engine room with massive pistons running, warm orange light, engineers working, cinematic",
+          "voice": "엔진은 회사가 실제로 버는 돈이에요. 제품이 팔리고, 주문이 들어오고, 이익이 남는 구조. 선장이 바뀌어도 엔진은 당분간 계속 돌아갑니다. 엔비디아로 치면 데이터센터에 들어가는 AI 칩이 엔진이에요. 이 칩을 사려고 줄 선 회사들이 있는 한, 엔진은 돌아갑니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a ship captain's hand on a steering wheel turning sharply, rough sea ahead visible through the window, dramatic light, close up",
+          "voice": "선장은 방향입니다. 어디로 갈지, 폭풍을 피할지 뚫을지 정하는 사람이죠. 선장이 떠나면 당장 배가 멈추지는 않지만, 몇 년 뒤의 방향이 달라질 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a ship's bridge with a new officer nervously taking the wheel while the crew watches, stormy evening, cinematic",
+          "title": "엔진은 돌고, [방향]은 바뀐다",
+          "en": "The Engine Runs, the Course Changes",
+          "voice": "그래서 선장이 떠난 회사를 볼 때는 두 가지를 같이 봐야 합니다. 엔진이 아직 힘차게 도는지, 그리고 다음 선장이 준비돼 있었는지."
+        }
+      ]
+    },
+    {
+      "title": "선장이 떠나도 더 오른 회사",
+      "tag": "좋은 경우 4곳",
+      "source": "출처: 야후 파이낸스 수정주가로 직접 계산(발표 직전 종가 → 1년 뒤) · S&P500 같은 기간 비교",
+      "art_title": "떠나도 [더 오른] 회사",
+      "art_en": "Rose After the Captain Left",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a calm sea at sunrise with a ship sailing steadily toward a bright horizon, hopeful, cinematic wide shot",
+          "voice": "첫 번째 답입니다. 선장이 떠났는데도 1년 뒤 시장보다 더 오른 회사부터 볼게요."
+        },
+        {
+          "kind": "compare",
+          "heading": "애플 · 스티브 잡스 CEO 사임 (2011년 8월)",
+          "left": {
+            "title": "1년 뒤 애플",
+            "lines": [
+              "{+77.1%}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "같은 기간 S&P500",
+            "lines": [
+              "+19.8%"
+            ],
+            "color": "navy"
+          },
+          "voice": "2011년 8월, 스티브 잡스가 건강 문제로 애플 CEO에서 물러났습니다. 1년 뒤 애플 주가는 77퍼센트 올라 있었어요. 같은 기간 시장 전체는 20퍼센트였습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a quiet modern office at dawn with an orderly desk and a neatly prepared handover folder, calm warm light, no text",
+          "voice": "애플은 다음 선장을 오래전부터 준비해 왔고, 아이폰이라는 엔진이 가장 힘차게 돌던 때였습니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "알파벳(구글) · 창업자 두 명 퇴진 (2019년 12월)",
+          "left": {
+            "title": "1년 뒤 알파벳",
+            "lines": [
+              "{+40.7%}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "같은 기간 S&P500",
+            "lines": [
+              "+18.5%"
+            ],
+            "color": "navy"
+          },
+          "voice": "구글을 만든 래리 페이지와 세르게이 브린이 2019년 12월 경영에서 물러났을 때도, 1년 뒤 주가는 41퍼센트 올라 있었습니다. 시장의 두 배가 넘었죠. 검색 광고라는 엔진이 워낙 튼튼했고, 이미 회사를 맡고 있던 사람이 그대로 선장이 됐기 때문이에요."
+        },
+        {
+          "kind": "compare",
+          "heading": "맥도날드 · CEO 해임, 직원과의 관계 (2019년 11월)",
+          "left": {
+            "title": "1년 뒤 맥도날드",
+            "lines": [
+              "{+12.4%}",
+              "중간 최저 -28.4%"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "같은 기간 S&P500",
+            "lines": [
+              "+7.9%"
+            ],
+            "color": "navy"
+          },
+          "voice": "이번 일과 비슷한 경우도 있어요. 2019년 맥도날드 CEO가 직원과의 관계 때문에 해임됐습니다. 중간에 코로나로 28퍼센트까지 빠지기도 했지만, 1년 뒤에는 12퍼센트 올라 시장보다 나았어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a busy family restaurant counter with staff serving customers efficiently, warm light, motion blur, no logos, no text",
+          "voice": "가게는 그대로 문을 열었고, 햄버거는 그대로 팔렸습니다. 선장이 바뀌어도 엔진이 그대로였던 거죠."
+        },
+        {
+          "kind": "compare",
+          "heading": "애플 · 스티브 잡스 축출 후 사임 (1985년 9월)",
+          "left": {
+            "title": "1년 뒤 애플",
+            "lines": [
+              "{+128.7%}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "같은 기간 S&P500",
+            "lines": [
+              "+26.7%"
+            ],
+            "color": "navy"
+          },
+          "voice": "그리고 가장 유명한 사례. 1985년, 스티브 잡스는 자기가 만든 애플에서 사실상 쫓겨났습니다. 그런데 1년 뒤 애플 주가는 두 배 넘게 올라 있었어요. 선장이 떠났다고 배가 바로 가라앉지는 않았던 거죠. 이 이야기는 뒤에서 한 번 더 나옵니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a smiling korean woman in her fifties nodding while watching a tablet on her sofa, the screen facing away from the camera, warm evening light",
+          "voice": "이런 정리가 도움이 되신다면 구독 한 번 눌러 주세요. 이제 반대쪽 이야기입니다."
+        }
+      ]
+    },
+    {
+      "title": "선장이 떠난 뒤 시장보다 못한 회사",
+      "tag": "나쁜 경우 4곳",
+      "source": "출처: 야후 파이낸스 수정주가로 직접 계산(발표 직전 종가 → 1년 뒤) · S&P500 같은 기간 비교",
+      "art_title": "떠난 뒤 [더 약해진] 회사",
+      "art_en": "Fell Behind After the Exit",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a ship struggling through a dark storm with huge waves crashing over the deck, dramatic lightning, cinematic",
+          "voice": "선장이 떠난 뒤 시장보다 못했던 회사도 네 곳입니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "마이크로소프트 · 빌 게이츠 CEO 사임 (2000년 1월)",
+          "left": {
+            "title": "1년 뒤 MS",
+            "lines": [
+              "[-51.2%]",
+              "중간 최저 -61.5%"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "같은 기간 S&P500",
+            "lines": [
+              "-8.5%"
+            ],
+            "color": "navy"
+          },
+          "voice": "2000년 1월, 빌 게이츠가 마이크로소프트 CEO에서 물러났습니다. 1년 뒤 주가는 절반이 됐어요. 중간에는 62퍼센트까지 빠졌습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an abandoned office in the early 2000s with old computer monitors and empty desks, dust in the light beams, melancholic",
+          "voice": "그런데 이때는 닷컴 거품이 꺼지던 해였습니다. 시장 전체가 빠졌고, 게이츠가 떠났기 때문만은 아니었어요. 바다 전체에 폭풍이 온 거죠."
+        },
+        {
+          "kind": "compare",
+          "heading": "인텔 · CEO 사임, 직원과의 관계 (2018년 6월)",
+          "left": {
+            "title": "1년 뒤 인텔",
+            "lines": [
+              "[-9.5%]",
+              "중간 최저 -20.2%"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "같은 기간 S&P500",
+            "lines": [
+              "+6.8%"
+            ],
+            "color": "navy"
+          },
+          "voice": "2018년 인텔 CEO도 직원과의 관계 때문에 물러났습니다. 1년 뒤 주가는 10퍼센트 빠졌고, 시장은 7퍼센트 올랐어요. 인텔은 그때 이미 기술 경쟁에서 밀리고 있던 회사였습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old factory with idle machines and a newer brightly lit factory across the river at night, symbolic of falling behind, cinematic",
+          "voice": "선장이 떠나기 전부터 엔진이 약해지고 있었던 겁니다. 이럴 땐 선장 교체가 문제를 더 크게 보이게 만들어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "아마존 · 제프 베이조스 CEO 사임 발표 (2021년 2월)",
+          "left": {
+            "title": "1년 뒤 아마존",
+            "lines": [
+              "[-10.9%]"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "같은 기간 S&P500",
+            "lines": [
+              "+19.9%"
+            ],
+            "color": "navy"
+          },
+          "voice": "아마존을 세운 베이조스가 물러난다고 발표했을 때도 1년 뒤 주가는 11퍼센트 빠졌습니다. 시장은 20퍼센트 올랐는데요. 코로나 때 크게 늘었던 온라인 쇼핑이 한풀 꺾이던 시기였어요. 이미 회사를 맡을 사람이 정해져 있었는데도, 엔진의 속도가 느려지자 주가가 먼저 반응했습니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "파파존스 · 창업자 사임, 부적절한 발언 (2018년 7월)",
+          "left": {
+            "title": "1년 뒤 파파존스",
+            "lines": [
+              "[-3.7%]",
+              "첫날은 +11.0%"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "같은 기간 S&P500",
+            "lines": [
+              "+8.1%"
+            ],
+            "color": "navy"
+          },
+          "voice": "피자 회사 파파존스는 창업자가 부적절한 발언으로 물러나자 첫날 오히려 11퍼센트 올랐습니다. 그런데 1년 뒤에는 4퍼센트 빠져 있었어요. 첫날 반응이 1년을 말해 주지는 않는다는 거죠."
+        },
+        {
+          "kind": "checklist",
+          "heading": "선장이 떠난 뒤 1년 (발표 직전 종가 기준)",
+          "items": [
+            {
+              "text": "애플 1985 · 잡스 축출",
+              "right": "+128.7%",
+              "right_color": "green"
+            },
+            {
+              "text": "애플 2011 · 잡스 사임",
+              "right": "+77.1%",
+              "right_color": "green"
+            },
+            {
+              "text": "알파벳 2019 · 창업자 퇴진",
+              "right": "+40.7%",
+              "right_color": "green"
+            },
+            {
+              "text": "맥도날드 2019 · CEO 해임",
+              "right": "+12.4%",
+              "right_color": "green"
+            },
+            {
+              "text": "파파존스 2018 · 창업자 사임",
+              "right": "-3.7%",
+              "mark": "x",
+              "right_color": "red"
+            },
+            {
+              "text": "인텔 2018 · CEO 사임",
+              "right": "-9.5%",
+              "mark": "x",
+              "right_color": "red"
+            },
+            {
+              "text": "아마존 2021 · 베이조스 사임",
+              "right": "-10.9%",
+              "mark": "x",
+              "right_color": "red"
+            },
+            {
+              "text": "MS 2000 · 게이츠 사임",
+              "right": "-51.2%",
+              "mark": "x",
+              "right_color": "red"
+            }
+          ],
+          "voice": "여덟 곳을 한눈에 보면 이렇습니다. 네 곳은 시장보다 더 올랐고, 네 곳은 시장보다 못했어요. 선장이 떠났다는 사실 하나로는 1년 뒤를 맞힐 수 없다는 뜻입니다."
+        }
+      ]
+    },
+    {
+      "title": "무엇이 둘을 갈랐나",
+      "tag": "엔진과 바다",
+      "art_title": "무엇이 [갈랐나]",
+      "art_en": "What Made the Difference",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "two ships on the same sea, one sailing in sunlight and one caught in a storm cloud, aerial view, cinematic",
+          "voice": "그럼 무엇이 둘을 갈랐을까요? 여덟 곳을 다시 보면 공통점이 보입니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "1년 뒤를 가른 것",
+          "cards": [
+            {
+              "title": "엔진",
+              "body": "회사가 버는 돈이 여전히 늘고 있었나",
+              "color": "green"
+            },
+            {
+              "title": "다음 선장",
+              "body": "후계자가 미리 준비돼 있었나",
+              "color": "navy"
+            },
+            {
+              "title": "바다",
+              "body": "시장 전체가 좋았나, 폭풍이었나",
+              "color": "orange"
+            }
+          ],
+          "voice": "세 가지예요. 엔진, 즉 회사가 버는 돈이 여전히 늘고 있었는지. 다음 선장이 미리 준비돼 있었는지. 그리고 바다, 시장 전체의 날씨가 어땠는지."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old wooden sailing ship stranded on rocks near a foggy coast, decades of weathering, melancholic, cinematic",
+          "voice": "그런데 반전이 하나 있습니다. 1985년 잡스가 쫓겨난 뒤 1년 만에 두 배가 넘게 오른 애플, 12년 뒤에는 어떻게 됐을까요?"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a weathered captain returning to an old ship at a harbor at dawn, the crew lining up on the deck, hopeful warm light, cinematic",
+          "title": "1년 뒤 [+129%], 12년 뒤 위기",
+          "en": "Up 129%, Then Crisis",
+          "voice": "1990년대 중반, 애플은 망하기 직전까지 갔습니다. 그리고 1997년, 잡스가 돌아오고 나서야 다시 살아났어요. 선장의 빈자리는 1년이 아니라 10년 뒤에 보일 수도 있다는 겁니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "엔비디아에 대입해 보면 (11월 16일 기준)",
+          "cards": [
+            {
+              "title": "엔진",
+              "body": "AI 칩 수요 · 실적 발표로 확인",
+              "color": "green"
+            },
+            {
+              "title": "다음 선장",
+              "body": "임시 CEO · 정식 후계자 미정",
+              "color": "red"
+            },
+            {
+              "title": "바다",
+              "body": "AI 규제 우려 · 반도체 변동성",
+              "color": "orange"
+            }
+          ],
+          "voice": "이 틀로 엔비디아를 보면 이렇습니다. 엔진은 아직 확인 중이고, 다음 선장은 임시 CEO만 있고 정식 후계자는 정해지지 않았어요. 바다는 AI 규제 우려로 출렁이고 있고요. 2011년 애플처럼 후계자가 미리 준비된 경우와는 다릅니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a ship's engine room with gauges glowing, an engineer checking the pressure dials carefully, warm light, close up",
+          "voice": "그래서 엔비디아를 볼 때 지금 가장 먼저 볼 것은 엔진입니다. AI 칩 주문이 그대로인지. 그 답이 이번 주 실적 발표에 있었습니다."
+        }
+      ]
+    },
+    {
+      "title": "이번 주 실적 발표",
+      "tag": "엔진은 그대로 도나",
+      "source": "출처: 엔비디아 실적 발표(2026.11) · 언론 보도 — 발표 후 갱신",
+      "art_title": "엔진은 [그대로] 도나",
+      "art_en": "Is the Engine Still Running",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a large data center hall with rows of glowing server racks and blue light, an engineer walking between them, cinematic, no logos",
+          "voice": "엔비디아는 이번 주, 젠슨 황 없이 첫 실적 발표를 했습니다. 시장이 가장 궁금해한 건 하나였어요. AI 칩 주문이 그대로 들어오느냐."
+        },
+        {
+          "kind": "cards",
+          "heading": "실적 발표에서 볼 세 가지",
+          "cards": [
+            {
+              "title": "이번 분기 매출",
+              "body": "시장 예상과 비교",
+              "color": "navy"
+            },
+            {
+              "title": "다음 분기 전망",
+              "body": "주문이 이어지는지",
+              "color": "green"
+            },
+            {
+              "title": "새 CEO 계획",
+              "body": "다음 선장은 누구인가",
+              "color": "orange"
+            }
+          ],
+          "voice": "볼 것은 세 가지입니다. 이번 분기 매출이 예상만큼 나왔는지, 다음 분기 전망이 줄지 않았는지, 그리고 다음 선장에 대한 계획이 나왔는지."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a conference room at night with a large blank screen glowing and executives seated around a table, seen from behind, cinematic, no text",
+          "voice": "실적 결과는 발표 직후 이 자리에 정리해 넣겠습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a ship engine room with all pistons still running steadily, warm orange glow, wide shot, cinematic",
+          "voice": "결과가 어떻든 하나는 기억해 두세요. 한 분기 실적은 엔진의 오늘을 보여 줄 뿐, 다음 선장이 정할 방향까지 말해 주지는 않습니다."
+        }
+      ]
+    },
+    {
+      "title": "젠슨 황은 돌아올까",
+      "tag": "복귀 논쟁",
+      "source": "출처: CNBC(2026.11.14) · Yahoo Finance(FT 보도 인용) · 파이낸셜뉴스(2026.11.15) · CNN(2026.11.11)",
+      "art_title": "선장은 [돌아올까]",
+      "art_en": "Will the Captain Return",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a lone figure standing on a pier at night looking at a large ship docked in the harbor, fog, cinematic, figure seen from behind",
+          "voice": "이제 많은 분이 궁금해하시는 질문입니다. 젠슨 황은 돌아올까요?"
+        },
+        {
+          "kind": "compare",
+          "heading": "복귀를 둘러싼 두 목소리 (11월 중순)",
+          "left": {
+            "title": "돌아와야 한다",
+            "lines": [
+              "청원 약 14만 명",
+              "큰 주주 2곳 '복귀도 검토'",
+              "본인도 복귀 논의(FT 보도)"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "새 출발해야 한다",
+            "lines": [
+              "미 재무장관 '대대적 쇄신'",
+              "하원 12월 1일 면담",
+              "법무부 조사 진행"
+            ],
+            "color": "red"
+          },
+          "voice": "돌아와야 한다는 쪽에는 14만 명의 청원과 큰 주주들, 그리고 본인도 복귀를 논의했다는 영국 파이낸셜타임스 보도가 있습니다. 반대쪽에는 미국 재무장관의 대대적인 쇄신 발언과, 아직 끝나지 않은 하원과 법무부 조사가 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old captain's hat resting on a ship's wheel in an empty bridge at dawn, soft light, symbolic, close up",
+          "voice": "역사에는 돌아온 선장도 있습니다. 앞에서 본 1997년의 잡스처럼요. 하지만 그건 12년이 걸렸고, 회사가 무너지기 직전이었기 때문에 가능했던 일이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a fork in a mountain road at dusk with two paths lit differently, a car stopped at the junction, cinematic wide shot",
+          "voice": "복귀 여부는 지금 누구도 장담할 수 없습니다. 그래서 내 돈은 복귀 뉴스가 아니라, 엔진과 다음 선장이라는 확인 가능한 것에 맞춰 판단하시는 게 안전해요."
+        }
+      ]
+    },
+    {
+      "title": "SK하이닉스·삼성전자는",
+      "tag": "한국 반도체",
+      "source": "출처: 야후 파이낸스 종가(SK하이닉스) · 이투데이(2026.11.13) · 톱스타뉴스 · 머니투데이(2026.11.13)",
+      "art_title": "한국 반도체는 [괜찮을까]",
+      "art_en": "What About Korean Chips",
+      "scenes": [
+        {
+          "kind": "compare",
+          "heading": "SK하이닉스 주가 (종가)",
+          "left": {
+            "title": "11월 2일",
+            "lines": [
+              "147만 2천 원"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "11월 16일",
+            "lines": [
+              "120만 2천 원",
+              "[-18.3%]"
+            ],
+            "color": "red"
+          },
+          "voice": "한국도 남의 일이 아닙니다. SK하이닉스는 11월 2일 147만 원에서 16일 120만 원까지 18퍼센트가 빠졌어요. 13일 하루에만 외국인이 4천억 원 넘게 팔았습니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "삼성전자 주가 (종가)",
+          "left": {
+            "title": "11월 2일",
+            "lines": [
+              "22만 9천 원"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "11월 16일",
+            "lines": [
+              "20만 6천 250원",
+              "[-9.9%]"
+            ],
+            "color": "red"
+          },
+          "voice": "같은 기간 삼성전자는 약 10퍼센트 빠졌습니다. SK하이닉스의 절반 정도죠. 엔비디아에 얼마나 기대고 있느냐가 낙폭의 차이로 나타난 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a clean room inside a semiconductor factory with workers in white suits inspecting silicon wafers under yellow light, cinematic, no logos",
+          "voice": "SK하이닉스는 엔비디아 AI 칩에 들어가는 고대역폭 메모리, HBM을 가장 많이 대는 회사입니다. 차세대 제품 물량의 60에서 70퍼센트를 맡은 것으로 추정돼요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a long line of delivery trucks waiting at a factory gate at dawn, orderly, warm light, wide shot, no text",
+          "voice": "다만 증권가와 시장조사 회사들은 당장 주문이 끊길 가능성은 낮다고 봅니다. 앞으로 몇 분기 물량은 이미 계약돼 있다는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a single large basket full of eggs on a wooden table next to several smaller empty baskets, symbolic, soft light, close up",
+          "voice": "진짜 숙제는 한 바구니에 담긴 달걀입니다. 고객 한 곳에 너무 기대고 있다는 지적이죠. 삼성전자가 다른 고객사와 협력을 넓히는 것도 이 때문이에요. 우리 연금에 국내 반도체 ETF가 있다면, 미국 쪽과 같은 이야기에 두 번 걸려 있는 셈이기도 합니다."
+        }
+      ]
+    },
+    {
+      "title": "젠슨 황 리스크에 대한 흔한 착각",
+      "tag": "착각 3가지",
+      "source": "출처: 서울경제TV·서울경제(2026.11.14) · 야후 파이낸스 수정주가 직접 계산",
+      "art_title": "흔한 [착각] 3가지",
+      "art_en": "Three Common Mistakes",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean man shaking his head with a gentle smile while talking to his son at a cafe table, warm afternoon light",
+          "voice": "이런 일이 생기면 꼭 나오는 착각이 세 가지 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a ship still sailing smoothly at sunset with an empty captain's chair visible through the bridge window, calm sea, cinematic",
+          "title": "착각 ① [선장 떠나면 끝]",
+          "en": "Not the End",
+          "voice": "첫째, 간판 CEO가 떠나면 회사는 끝이다. 오늘 본 여덟 곳 중 네 곳은 오히려 시장보다 더 올랐습니다. 엔진과 다음 선장이 더 중요해요. 반대로 네 곳은 시장보다 못했으니, 무조건 괜찮다고 볼 수도 없고요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a hand reaching for a shiny coin placed on the edge of a cliff, dramatic sky, symbolic, cinematic",
+          "title": "착각 ② [싸졌으니 기회]",
+          "en": "Cheaper Is Not Always a Bargain",
+          "voice": "둘째, 많이 빠졌으니 지금이 기회다. 실제로 사임 소식이 나온 주에 우리나라 투자자들은 엔비디아를 1천억 원 넘게 샀고, 반도체 주가를 세 배로 따라가는 상품은 7천억 원 넘게 샀습니다. 그런데 같은 주 반대매매도 전주의 3.7배였어요. 빌린 돈으로 산 주식이 강제로 팔린 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean woman opening a drawer full of old bank books and finding one she forgot, surprised expression, warm light",
+          "title": "착각 ③ [나는 상관없다]",
+          "en": "You May Already Own It",
+          "voice": "셋째, 나는 엔비디아를 안 샀으니 상관없다. 앞에서 보셨듯이 연금 속 미국 ETF를 통해 이미 가지고 계실 가능성이 큽니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean couple in their fifties talking calmly over tea at their kitchen table, relaxed expressions, warm evening light",
+          "voice": "이 세 가지만 기억하셔도, 뉴스가 쏟아질 때 덜 흔들리실 거예요."
+        }
+      ]
+    },
+    {
+      "title": "지금 내 연금에서 확인할 4가지",
+      "tag": "체크리스트",
+      "art_title": "지금 [확인할 것]",
+      "art_en": "What to Check Now",
+      "scenes": [
+        {
+          "kind": "checklist",
+          "items": [
+            {
+              "text": "연금 속 ETF 상위 10종목 열어 보기",
+              "right": "운용사 누리집"
+            },
+            {
+              "text": "ETF끼리 같은 종목이 겹치는지 확인",
+              "right": "AI·반도체 쏠림"
+            },
+            {
+              "text": "빚내서 사기·3배 상품은 피하기",
+              "right": "반대매매"
+            },
+            {
+              "text": "실적·새 CEO·12월 1일 일정 보기",
+              "right": "나눠서 판단"
+            }
+          ],
+          "voice": "오늘 내 연금에서 이 네 가지만 확인해 보세요. 먼저 한눈에 보여 드리고 하나씩 짚을게요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean man carefully checking a tablet screen at his dining table with reading glasses, the screen facing away from the camera, warm light",
+          "voice": "첫째, 연금 속 ETF 이름만 보지 말고, 상위 10개 종목을 열어 보세요. 운용사 누리집이나 증권사 앱에서 바로 볼 수 있어요. 엔비디아가 몇 퍼센트 들어 있는지, 숫자 하나만 적어 두셔도 충분해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "several transparent glass jars on a shelf, each containing the same golden coin and a few different coins, symbolic, soft light",
+          "voice": "둘째, 가진 ETF끼리 같은 종목이 겹치는지 보세요. 이름이 다른 ETF 세 개가 모두 같은 회사를 많이 담고 있다면, 분산이 아니라 쏠림입니다. 특히 미국 지수 ETF와 반도체 ETF, 국내 반도체 ETF를 함께 가지고 계시면 겹침이 큽니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a broken piggy bank on a table with a few coins scattered and a warning light reflecting on it, dramatic, close up",
+          "voice": "셋째, 빠졌을 때 만회하겠다고 빚을 내거나 세 배 상품에 손대지 마세요. 노후 자금에서는 한 번의 큰 손실이 가장 무섭습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a wall calendar with a few dates circled in red pen and a cup of coffee on the desk below, morning light, no readable text",
+          "voice": "넷째, 결정은 한 번에 하지 마세요. 실적 발표, 새 CEO 발표, 12월 1일 하원 면담. 일정이 하나씩 지날 때마다 엔진과 방향을 다시 보시면 됩니다."
+        }
+      ]
+    },
+    {
+      "title": "마무리",
+      "tag": "선장과 엔진",
+      "art_title": "선장과 [엔진]",
+      "art_en": "The Captain and the Engine",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a large ship sailing into a calm golden sunset with a new captain at the wheel, hopeful, cinematic wide shot",
+          "voice": "처음에 말씀드린 선장과 엔진, 기억나시죠? 선장이 떠나도 엔진은 당분간 돕니다. 하지만 배가 어디로 갈지는 다음 선장이 정해요. 그래서 지금 우리가 할 일은, 내 연금이라는 배에 이 엔진이 얼마나 실려 있는지부터 아는 겁니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "three small paper boats lined up on a wooden table under warm light, symbolic, close up, no text",
+          "voice": "세 줄로 정리할게요. 엔비디아를 직접 안 샀어도, 미국 지수 ETF로 굴리는 연금에는 약 6퍼센트가 들어 있다. 선장이 떠난 회사 여덟 곳 중 네 곳은 1년 뒤 시장보다 더 올랐고, 네 곳은 못했다. 그리고 그 차이는 엔진과 다음 선장, 바다에서 갈렸다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a cozy living room at night with a warm lamp and a cup of tea on the table, quiet closing shot",
+          "voice": "오늘 영상이 도움이 됐다면 좋아요 한번 눌러 주세요. 여러분 생각은 어떠세요? 젠슨 황, 다시 돌아와야 할까요? 그리고 연금 ETF 상위 종목, 열어 보신 적 있으신가요? 댓글로 남겨 주세요."
+        },
+        {
+          "kind": "title",
+          "title": "다음 영상\n{매주 화·금 저녁 6시}",
+          "sub": "구독하고 놓치지 마세요 · 도장찍기전에",
+          "voice": "도장찍기전에는 매주 화요일과 금요일 저녁 6시에 새 영상으로 찾아옵니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a red traditional korean seal stamp resting on a wooden desk beside a closed contract folder, warm lamp light, shallow depth of field, no text",
+          "voice": "도장은 천천히, 팩트는 먼저. 도장찍기전에였습니다."
+        }
+      ]
+    }
+  ]
+}

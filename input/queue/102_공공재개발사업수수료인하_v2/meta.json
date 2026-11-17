@@ -1,0 +1,102 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 국토교통부·LH 공공재개발 사업수수료 한시 인하 발표(2026-11-12)",
+  "youtube_title": "재개발 조합원이면 사업비 수수료가 3분의 1로 줍니다 #공공재개발 #재개발분담금",
+  "youtube_description": "국토교통부와 LH가 2026년 11월 12일, 공공재개발 사업수수료율을 한시적으로 낮추는 방안을 발표했어요.\n\n2027년 12월 31일까지 새로 공공재개발 후보지 선정을 신청하는 구역은 사업수수료율이 총사업비의 3%에서 1%로 낮아져요. 민간 방식으로 추진하던 구역도 이 기간 안에 신청하면 혜택을 받을 수 있어요. LH는 구역당 평균 약 120억 원의 사업비 절감 효과를 예상한다고 밝혔어요.\n\n수수료의 최대 15% 국비 지원도 그대로 유지돼서, 둘을 더하면 주민이 실제로 부담하는 수수료는 총사업비의 0.85%까지 낮아질 수 있어요. (영상 속 400억 원은 이해를 돕기 위한 가정 금액입니다.)\n\n이번 인하는 2026년 8월 13일 발표된 주택 신속공급 방안의 공공재개발 활성화 방안 중 하나예요.\n\n출처: 국토교통부·LH 공공재개발 사업수수료 한시 인하 발표(2026-11-12)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#공공재개발 #재개발분담금 #재개발사업수수료 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "공공재개발,재개발분담금,재개발사업수수료,부동산정책,부동산",
+  "tiktok_caption": "재개발 조합원이면 사업비 수수료가 3분의 1로 줄어요 😮 2027년 말까지 신청하는 구역만 해당돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 동네는 공공재개발로 신청할까요? #공공재개발 #재개발분담금 #부동산정책",
+  "instagram_caption": "재개발 조합원이면 사업비 수수료가 3분의 1로 줄어요 😮 2027년 말까지 신청하는 구역만 해당돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 동네는 공공재개발로 신청할까요? #공공재개발 #재개발분담금 #부동산정책",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "재개발 수수료 3분의 1로?",
+      "caption": "재개발 수수료\n{3분의 1}로?",
+      "image_prompt": "photorealistic urban redevelopment construction site with tower cranes at dusk, warm sunset light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 공공재개발 사업수수료가 3퍼센트에서 1퍼센트로 줄어요.",
+      "caption": "결론\n사업수수료\n{3%에서 1%}로",
+      "image_prompt": "photorealistic old low-rise residential building exterior in a dense korean city, clear daytime sky, high detail, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "이 인하는 2027년 12월 31일까지 새로 신청하는 구역에만 적용돼요.",
+      "caption": "적용 기한",
+      "big": "~2027.12.31",
+      "badge": "신규 신청 구역만"
+    },
+    {
+      "kind": "photo",
+      "voice": "민간으로 추진하던 구역도 이 기간에 신청하면 혜택을 받을 수 있어요.",
+      "caption": "{민간 추진 구역}도\n이 기간에 신청 가능",
+      "image_prompt": "photorealistic narrow alley lined with small low-rise houses in an old korean neighborhood, soft morning light, shallow depth of field, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 총사업비가 400억 원인 구역이에요.",
+      "caption": "예를 들어\n총사업비가",
+      "amount": 400,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "timeline",
+      "voice": "기존 수수료율 3퍼센트면 12억 원을 내야 해요.",
+      "caption": "기존 {3%}면\n{12억 원}",
+      "active": [0],
+      "cards": [
+        {"date": "기존 3%", "who": "12억 원", "color": "red"},
+        {"date": "인하 1%", "who": "4억 원", "color": "green"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "인하된 1퍼센트면 4억 원만 내면 돼요.",
+      "caption": "인하된 {1%}면\n{4억 원}만",
+      "active": [1],
+      "cards": [
+        {"date": "기존 3%", "who": "12억 원", "color": "red"},
+        {"date": "인하 1%", "who": "4억 원", "color": "green"}
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "8억 원 차이가 조합원 분담금을 줄이는 데 쓰이는 거예요.",
+      "caption": "{8억 원} 차이가\n분담금을 줄여요",
+      "active": "all",
+      "cards": [
+        {"date": "기존 3%", "who": "12억 원", "color": "red"},
+        {"date": "인하 1%", "who": "4억 원", "color": "green"}
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 국비 지원까지 더하면 수수료가 얼마까지 떨어질까요?",
+      "caption": "근데 {국비 지원}까지\n더하면?",
+      "image_prompt": "photorealistic calculator and a small notebook on a wooden desk, warm office lighting, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "최대 십오퍼센트 국비 지원을 더하면 영점팔오퍼센트까지 떨어져요.",
+      "caption": "국비 지원 더하면",
+      "big": "0.85%까지",
+      "badge": "최대 15% 국비 지원",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "재개발 구역 조합원이신 분께 꼭 보내주세요.",
+      "caption": "조합원이신 분께\n{꼭 보내}주세요",
+      "image_prompt": "photorealistic miniature architectural model of apartment buildings on a wooden table, soft studio light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 동네는 공공재개발로 신청할까요?",
+      "caption": "여러분 동네는\n{공공재개발}로 신청할까요?",
+      "image_prompt": "photorealistic city skyline at night with illuminated apartment windows, soft bokeh lights, cinematic wide shot, no text"
+    }
+  ]
+}

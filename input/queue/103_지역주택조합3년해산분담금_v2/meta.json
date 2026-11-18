@@ -1,0 +1,105 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 주택법 제14조의2",
+  "youtube_title": "지역주택조합 가입 3년 지나면 조합이 없어질 수 있어요 #지역주택조합 #분담금",
+  "youtube_description": "지역주택조합은 조합설립인가일로부터 3년 안에 사업계획승인을 받지 못하면, 총회 의결로 해산할 수 있어요.\n\n문제는 해산하더라도 조합원이 낸 분담금을 돌려받기가 쉽지 않다는 점이에요. 조합 재산이 신탁회사에 묶여 있거나 남은 돈이 부족하면, 소송에서 이겨도 바로 돌려받지 못하는 경우가 많아요. (영상 속 3천만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n그래서 가입하기 전에 조합설립인가 날짜와 사업 진행 상황을 꼭 확인하는 게 좋아요.\n\n출처: 주택법 제14조의2\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#지역주택조합 #분담금 #지주택 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "지역주택조합,분담금,지주택,부동산정책,부동산",
+  "tiktok_caption": "지역주택조합 가입했는데 3년 지나면 조합이 없어질 수도 있어요 😱 그래도 낸 분담금은 거의 못 돌려받아요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 지역주택조합 가입해보셨나요? #지역주택조합 #분담금 #지주택",
+  "instagram_caption": "지역주택조합 가입했는데 3년 지나면 조합이 없어질 수도 있어요 😱 그래도 낸 분담금은 거의 못 돌려받아요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 지역주택조합 가입해보셨나요? #지역주택조합 #분담금 #지주택",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "가입 3년 지나면 해산?",
+      "caption": "가입 {3년} 지나면\n해산?",
+      "image_prompt": "photorealistic construction crane silhouetted against an orange sunset sky, dramatic lighting, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 3년 안에 사업계획승인을 못 받으면 조합이 해산될 수 있어요.",
+      "caption": "결론\n{3년} 안에 승인 못 받으면\n해산 가능",
+      "image_prompt": "photorealistic empty dirt construction lot with scattered rebar stakes under an overcast sky, wide shot, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "이건 주택법에 있는 규정이에요, 조합설립인가일로부터 3년이 기준이에요.",
+      "caption": "주택법 제14조의2",
+      "big": "설립인가 + 3년",
+      "badge": "해산 가능"
+    },
+    {
+      "kind": "timeline",
+      "voice": "가입하고 설립인가를 받은 뒤, 3년이 지나는 순서예요.",
+      "caption": "가입 → 설립인가 → {3년}",
+      "active": "all",
+      "cards": [
+        { "date": "가입", "who": "분담금 납부", "color": "gold" },
+        { "date": "설립인가", "who": "사업 추진", "color": "green" },
+        { "date": "3년 경과", "who": "승인 못 받으면 해산", "color": "red" }
+      ]
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 조합원 한 명이 분담금을 3천만 원 냈다고 해요.",
+      "caption": "예를 들어\n분담금이",
+      "amount": 3000,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "photo",
+      "voice": "그 사이 조합이 받은 분담금은 이미 사업비로 많이 쓰였어요.",
+      "caption": "그 사이\n{분담금}은 이미 썼어요",
+      "image_prompt": "photorealistic stack of thick ring binders on an office shelf, warm ambient light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "소송에서 이겨도 당장 돈을 받지 못하는 경우도 많아요.",
+      "caption": "소송에서 이겨도\n{당장은} 못 받아요",
+      "big": "승소해도",
+      "badge": "당장 못 받음"
+    },
+    {
+      "kind": "timeline",
+      "voice": "그럼 조합이 해산되면, 분담금 3천만 원을 다 돌려받을 수 있을까요?",
+      "caption": "해산되면\n[3천만 원]을 다 돌려받을까요?",
+      "active": [2],
+      "cards": [
+        { "date": "가입", "who": "분담금 납부", "color": "gold" },
+        { "date": "설립인가", "who": "사업 추진", "color": "green" },
+        { "date": "3년 경과", "who": "승인 못 받으면 해산", "color": "red" }
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "대부분 전액은 돌려받지 못해요.",
+      "caption": "{대부분} 전액은\n못 돌려받아요",
+      "active": [2],
+      "sfx": "ding",
+      "cards": [
+        { "date": "가입", "who": "분담금 납부", "color": "gold" },
+        { "date": "설립인가", "who": "사업 추진", "color": "green" },
+        { "date": "3년 경과", "who": "승인 못 받으면 해산", "color": "red" }
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "조합 재산이 신탁회사에 묶여 있거나, 남은 돈이 모자르기 때문이에요.",
+      "caption": "재산이 {신탁}에 묶이거나\n남은 돈이 부족해서",
+      "image_prompt": "photorealistic worn leather wallet lying open and empty on a wooden table, soft window light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "지역주택조합에 가입한 지인께 꼭 보내주세요.",
+      "caption": "가입한 지인께\n{공유}해주세요",
+      "image_prompt": "photorealistic brass house key resting on a small stack of coins on a wooden table, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 지역주택조합에 가입해보신 적 있나요?",
+      "caption": "여러분은\n{지역주택조합}\n가입해보셨나요?",
+      "image_prompt": "photorealistic city skyline at dusk with construction cranes silhouetted against the sky, cinematic lighting, shallow depth of field, no text"
+    }
+  ]
+}

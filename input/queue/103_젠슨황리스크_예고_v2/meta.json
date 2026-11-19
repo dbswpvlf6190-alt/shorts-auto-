@@ -1,0 +1,103 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "extra": true,
+  "not_before": "2026-11-20",
+  "repurposed_from": "longform/10_젠슨황리스크 (rTJStYiQ6do, 11/20 18:00 공개) — v5 공개일 예고 쇼츠(답 숨기고 질문으로 끝남, 숫자는 화면·목소리는 비유)",
+  "source_label": "출처: 야후 파이낸스 종가(2026.11.3·11.13) · 엔비디아 실적 발표(2026.11.17) · CNN·NPR(2026.11.17)",
+  "youtube_title": "젠슨 황이 떠났는데 왜 내 연금이 흔들릴까 #엔비디아 #젠슨황",
+  "youtube_description": "엔비디아 젠슨 황이 33년 만에 회사를 떠났습니다. 주가는 2주 만에 21% 빠졌습니다(11/3→11/13 종가).\n엔비디아를 직접 사지 않았어도, 미국 지수에 투자하는 연금에는 이미 엔비디아가 약 6% 들어 있습니다.\n\n선장이 떠난 회사들, 1년 뒤엔 크게 갈렸습니다. 무엇이 둘을 갈랐을까요?\n\n▶ 전체 정리(롱폼): https://youtu.be/rTJStYiQ6do\n\n출처: 야후 파이낸스 종가, 엔비디아 2027 회계연도 3분기 실적 발표(2026.11.17), CNN·NPR(2026.11.17)\n※ 정보 제공 목적이며 투자 권유가 아닙니다. 특정 종목의 매수·매도를 추천하지 않습니다.\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#엔비디아 #젠슨황 #퇴직연금 #연금저축 #미국주식 #shorts",
+  "tags": "엔비디아,젠슨황,퇴직연금,연금저축,S&P500,미국주식,엔비디아실적",
+  "tiktok_caption": "젠슨 황이 떠나고 엔비디아가 2주 만에 21% 빠졌어요 😮 안 샀어도 미국 지수 연금엔 이미 들어 있어요. 선장이 떠난 회사들, 1년 뒤엔 크게 갈렸는데 무엇이 갈랐을까요? 정보 제공 목적이며 투자 권유가 아니에요. 팔로우하면 매일 새로운 부동산·재테크 정보 받아보실 수 있어요 🔔 댓글👇 젠슨 황, 다시 돌아와야 할까요? #엔비디아 #젠슨황 #퇴직연금 #연금저축 #미국주식",
+  "instagram_caption": "젠슨 황이 떠나고 엔비디아가 2주 만에 21% 빠졌어요 😮 안 샀어도 미국 지수 연금엔 이미 들어 있어요. 선장이 떠난 회사들이 1년 뒤 어떻게 갈렸는지는 유튜브 도장찍기전에 롱폼에서! 정보 제공 목적이며 투자 권유가 아니에요. 팔로우하면 매일 새로운 부동산·재테크 정보 받아보실 수 있어요 🔔 댓글👇 젠슨 황, 다시 돌아와야 할까요? #엔비디아 #젠슨황 #퇴직연금 #연금저축 #미국주식",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "엔비디아의 선장이 33년 만에 배에서 내렸어요.",
+      "caption": "엔비디아 선장\n{33년 만에} 하차",
+      "image_prompt": "photorealistic empty captain's chair on the bridge of a large modern ship at dusk, the ship's wheel unattended, moody cinematic light, shallow depth of field, no people, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "만 원짜리 주식이 2주 만에 7,900원이 됐어요.",
+      "caption": "2주 만에\n[-21%]",
+      "big": "-21%",
+      "badge": "엔비디아 주가 11/3→11/13"
+    },
+    {
+      "kind": "photo",
+      "voice": "엔비디아 안 샀다고요? 내 연금 안에 이미 들어 있어요.",
+      "caption": "안 샀어도\n내 연금 {안에}",
+      "image_prompt": "photorealistic korean man in his fifties at a kitchen table at night looking worried at a pension statement and a smartphone, warm lamp light, screen blurred, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "미국 지수 연금에 만 원을 넣으면, 600원 정도가 엔비디아예요.",
+      "caption": "만 원 중\n{600원}",
+      "big": "약 6%",
+      "badge": "S&P500 속 엔비디아 비중"
+    },
+    {
+      "kind": "photo",
+      "voice": "그럼 선장이 떠난 회사들, 1년 뒤엔 어땠을까요?",
+      "caption": "선장 떠난 회사\n{1년 뒤}는?",
+      "image_prompt": "photorealistic two ships leaving a harbor in different directions at sunrise, one in calm golden water and one heading into dark storm clouds, cinematic wide shot, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "어떤 회사는 거의 두 배가 됐고,",
+      "caption": "어떤 회사는\n{거의 두 배}",
+      "big": "+77%",
+      "badge": "선장 떠난 회사 A · 1년 뒤"
+    },
+    {
+      "kind": "big",
+      "voice": "어떤 회사는 반 토막이 났어요.",
+      "caption": "어떤 회사는\n[반 토막]",
+      "big": "-51%",
+      "badge": "선장 떠난 회사 B · 1년 뒤"
+    },
+    {
+      "kind": "photo",
+      "voice": "둘을 가른 건 딱 두 가지였어요.",
+      "caption": "둘을 가른 건\n{두 가지}",
+      "image_prompt": "photorealistic fork in a mountain road at dusk, one path lit warmly and the other dark, a car stopped at the junction with headlights on, cinematic, no text",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "이번 주 실적 발표에서, 엔비디아가 버는 돈은 1년 전의 두 배였어요.",
+      "caption": "버는 돈은\n{1년 전의 2배}",
+      "big": "매출 2배",
+      "badge": "11/17 실적 발표"
+    },
+    {
+      "kind": "big",
+      "voice": "그런데 이사회는 선장을 다시 부르지 않겠다고 했어요.",
+      "caption": "선장 복귀\n[계획 없음]",
+      "big": "복귀 계획 없음",
+      "badge": "이사회 의장 · 11/17"
+    },
+    {
+      "kind": "big",
+      "voice": "엔비디아는 어느 쪽을 닮을까요? 도장찍기전에 롱폼에서 확인하세요.",
+      "caption": "어느 쪽을 닮을지\n{롱폼}에서",
+      "big": "롱폼에서 공개",
+      "badge": "도장찍기전에"
+    },
+    {
+      "kind": "photo",
+      "voice": "연금 넣고 계신 부모님께 꼭 보내 주세요.",
+      "caption": "부모님께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic middle aged korean woman showing a phone to her elderly father on a sofa, warm light, screen blurred, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "젠슨 황, 다시 돌아와야 할까요?",
+      "caption": "젠슨 황\n{돌아와야} 할까요?",
+      "big": "돌아와야 할까?",
+      "badge": "댓글로 알려주세요"
+    }
+  ]
+}

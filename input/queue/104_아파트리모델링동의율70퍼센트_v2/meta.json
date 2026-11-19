@@ -1,0 +1,95 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 국토교통부 보도자료(2026-11-17), 주택법 시행령 개정안",
+  "youtube_title": "아파트 리모델링 반대 25%면 막았는데, 이제는 30% 넘어야 막아요 #리모델링 #아파트리모델링",
+  "youtube_description": "국토교통부가 아파트 리모델링 동의율 기준을 낮췄어요. 지금까지는 단지 전체·개별 동 리모델링 모두 구분소유자와 의결권의 75% 이상 동의가 필요했는데, 2026년 11월 17일 국무회의에서 이 기준을 70% 이상으로 낮추는 주택법 시행령 개정안이 통과됐어요.\n\n반대로 말하면, 예전엔 25%만 반대해도 사업을 막을 수 있었지만 이제는 30%를 넘게 반대해야 막을 수 있어요. 다만 동별 50% 이상 동의 요건은 그대로 유지돼요.\n\n새 기준은 2027년 1월 1일 이후 리모델링 허가를 신청하는 단지부터 적용돼요.\n\n출처: 국토교통부 보도자료(2026-11-17), 주택법 시행령 개정안\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#리모델링 #아파트리모델링 #주택법 #부동산정책 #재건축 #부동산 #재테크 #shorts",
+  "tags": "리모델링,아파트리모델링,주택법,부동산정책,재건축",
+  "tiktok_caption": "아파트 리모델링, 반대 25%면 막았는데 이제는 30% 넘어야 막아요 😮 2027년 1월 1일부터 새 기준이 적용돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 아파트는 지금 동의율이 몇 퍼센트예요? #리모델링 #아파트리모델링 #부동산정책",
+  "instagram_caption": "아파트 리모델링, 반대 25%면 막았는데 이제는 30% 넘어야 막아요 😮 2027년 1월 1일부터 새 기준이 적용돼요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 아파트는 지금 동의율이 몇 퍼센트예요? #리모델링 #아파트리모델링 #부동산정책",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "반대 25퍼센트면 막았는데",
+      "caption": "반대 {25%}면\n막았는데",
+      "image_prompt": "photorealistic tall apartment complex buildings with construction scaffolding, golden hour light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 이제는 반대가 30퍼센트를 넘어야 막을 수 있어요.",
+      "caption": "결론\n이제 반대 {30%}는 넘어야\n막을 수 있어요",
+      "image_prompt": "photorealistic construction crane against a clear blue sky near apartment towers, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "국토교통부가 아파트 리모델링 동의율을 75퍼센트에서 70퍼센트로 낮췄어요.",
+      "caption": "리모델링 동의율",
+      "big": "75% → 70%",
+      "badge": "주택법 시행령 개정"
+    },
+    {
+      "kind": "big",
+      "voice": "단지 전체를 고치든 한 동만 고치든 똑같이 완화돼요.",
+      "caption": "단지 전체·개별 동\n{모두 완화}",
+      "big": "전체 + 개별 동",
+      "badge": "둘 다 70%"
+    },
+    {
+      "kind": "big",
+      "voice": "다만 한 동 안에서는 50퍼센트 이상 동의가 그대로 필요해요.",
+      "caption": "동별 {50%}\n동의는 그대로",
+      "big": "동별 50% 유지"
+    },
+    {
+      "kind": "timeline",
+      "voice": "새 기준은 2027년 1월 1일 이후 허가를 신청하는 단지부터 적용돼요.",
+      "caption": "{2027년 1월 1일} 이후\n신청하는 단지부터",
+      "active": "all",
+      "cards": [
+        {
+          "date": "2026년까지",
+          "who": "동의 75% 필요",
+          "color": "red"
+        },
+        {
+          "date": "2027.1.1 이후",
+          "who": "동의 70%면 가능",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 반대하는 사람들은 몇 퍼센트를 모아야 막을 수 있을까요?",
+      "caption": "근데 {반대하는 쪽}은\n몇 퍼센트 모아야 막을까요?",
+      "image_prompt": "photorealistic quiet apartment courtyard at dusk with warm lit windows, soft bokeh, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "31퍼센트 넘게 반대해야 막을 수 있어요.",
+      "caption": "{반대 31%} 넘어야\n막을 수 있어요",
+      "big": "반대 31%+",
+      "badge": "그래야 막아요",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "동의 절차가 짧아진 만큼 사업 속도는 더 빨라질 걸로 보여요.",
+      "caption": "절차가 짧아져\n{사업 속도}가 빨라져요",
+      "image_prompt": "photorealistic newly renovated apartment balcony with potted plants, bright daylight, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "리모델링 추진하는 단지 주민께 꼭 보내주세요.",
+      "caption": "추진 중인 단지 주민께\n{공유}해주세요",
+      "image_prompt": "photorealistic brass house key resting on a wooden table next to a small model apartment building, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 아파트는 지금 동의율이 몇 퍼센트예요?",
+      "caption": "여러분 아파트는\n지금 {동의율}이 몇 퍼센트예요?",
+      "image_prompt": "photorealistic city skyline at night with many lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

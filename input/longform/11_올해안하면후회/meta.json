@@ -339,7 +339,9 @@
           "image_prompt": "a large glass jar filling up with gold coins being poured in from above, warm golden light, dark background",
           "voice": "반대로 결정세액이 넉넉하다면, 남은 쿠폰을 채우는 만큼 그대로 돌아온다고 보시면 돼요."
         }
-      ]
+      ],
+      "art_title": "내 쿠폰 [잔액]",
+      "art_en": "How Much Is Left"
     },
     {
       "title": "얼마를 넣어야 하나",
@@ -427,8 +429,8 @@
       "title": "네 사람의 연말",
       "tag": "예시 · 가정",
       "source": "출처: 소득세법(연금계좌세액공제) · 신한투자증권·미래에셋 연금 안내 · 토스뱅크(2026)",
-      "art_title": "세 사람의 [연말]",
-      "art_en": "Three People, One December",
+      "art_title": "네 사람의 [연말]",
+      "art_en": "Four People, One December",
       "scenes": [
         {
           "kind": "art",
@@ -617,7 +619,9 @@
           "image_prompt": "a korean man in his fifties talking on the phone at his desk with a calm expression, morning light, the desk surface clear",
           "voice": "혹시 자료에 빠져 있다면, 금융사에서 연금 납입 증명서를 받아 회사에 내면 돼요. 12월 말에 넣은 돈은 특히 한 번 확인해 보세요."
         }
-      ]
+      ],
+      "art_title": "연말정산은 [자동]",
+      "art_en": "After You Put It In"
     },
     {
       "title": "세금을 토해낸 사람들",
@@ -813,7 +817,9 @@
           "image_prompt": "a busy bank lobby at the end of the year with many people waiting, warm interior light, people seen from behind, no signs",
           "voice": "12월 말에는 창구와 앱이 붐벼요. 계좌가 없다면 이번 주 안에 먼저 만들어 두세요."
         }
-      ]
+      ],
+      "art_title": "계좌 [만들기]",
+      "art_en": "Opening an Account"
     },
     {
       "title": "넣고 끝이 아니다",
@@ -872,7 +878,9 @@
           "image_prompt": "a korean man in his fifties at a kitchen table at the end of the year with a cup of tea, calmly reviewing something on a tablet whose screen faces away, warm light",
           "voice": "1년에 한 번, 연말에 쿠폰을 채울 때 계좌 안도 같이 들여다보세요. 어디에 담겨 있는지, 수수료는 얼마인지. 이 두 가지만 봐도 충분합니다."
         }
-      ]
+      ],
+      "art_title": "넣고 [끝]이 아니다",
+      "art_en": "It Does Not End There"
     },
     {
       "title": "퇴직금이 IRP에 들어왔다면",
@@ -915,7 +923,9 @@
           "image_prompt": "a korean couple in their sixties walking slowly along a seaside path holding hands, bright calm day, seen from behind",
           "voice": "그래서 퇴직금이 들어왔다고 바로 찾아 쓰기보다, 은퇴 후 생활비로 나눠 쓸 계획부터 세워 보세요. 자세한 이야기는 이전 영상, 퇴직연금 편에서 다뤘습니다."
         }
-      ]
+      ],
+      "art_title": "퇴직금 세금 [할인]",
+      "art_en": "Severance Pay in IRP"
     },
     {
       "title": "55세 이후, 꺼낼 때",
@@ -1027,8 +1037,10 @@
       "source": "출처: 소득세법(연금계좌세액공제·연금수령 요건) · 금융사 연금 안내",
       "scenes": [
         {
-          "kind": "art",
-          "image_prompt": "a korean man in his early sixties working as a building manager, smiling while holding a clipboard seen from the back, bright morning light",
+          "kind": "quote",
+          "heading": "60대에도 받을 수 있을까",
+          "text": "쿠폰에는 {나이 제한이 없어요}\n조건은 하나: [올해 낼 세금]이 있을 것\n재취업·가게 운영 소득도 포함",
+          "cite": "소득세법(연금계좌세액공제)",
           "voice": "60대에도 일하고 계신 분이 많죠. 재취업을 했거나 가게를 하고 계시다면, 쿠폰은 나이와 상관없이 받을 수 있어요. 낼 세금만 있으면 됩니다."
         },
         {
@@ -1056,7 +1068,9 @@
           "image_prompt": "a korean woman in her thirties visiting her parents' home, sitting together at the living room table talking warmly, soft afternoon light",
           "voice": "부모님이 아직 일을 하고 계시다면, 이 내용을 한 번 알려 드리세요. 쿠폰은 계좌 주인의 세금에서 깎아 주는 거라, 부모님 본인 이름의 계좌여야 합니다."
         }
-      ]
+      ],
+      "art_title": "60대도 [쿠폰]",
+      "art_en": "Still Working at Sixty"
     },
     {
       "title": "숨은 추가 쿠폰",
@@ -1100,8 +1114,8 @@
     {
       "title": "흔한 착각 4가지",
       "tag": "착각 4",
-      "art_title": "흔한 [착각] 3가지",
-      "art_en": "Three Common Mistakes",
+      "art_title": "흔한 [착각] 4가지",
+      "art_en": "Four Common Mistakes",
       "scenes": [
         {
           "kind": "art",

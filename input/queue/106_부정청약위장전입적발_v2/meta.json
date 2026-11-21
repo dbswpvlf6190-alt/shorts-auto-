@@ -1,0 +1,92 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 국토교통부·국무조정실 부동산 불법행위 대응협의회(2026-11-10 발표)",
+  "youtube_title": "위장전입으로 청약 당첨되면 계약금 5000만 원 몰수당합니다 #청약 #부정청약",
+  "youtube_description": "정부가 서울 등 43개 단지, 2만 5천 가구 당첨자를 조사해 부정청약 의심 사례 354건을 적발했습니다. 유형별로는 위장전입이 334건으로 가장 많았고, 위장미혼 18건, 청약자격 매매와 위장퇴사가 각 1건이었습니다.\n\n부정청약으로 확정되면 계약이 취소되고 주택이 환수됩니다. 분양가의 10%에 해당하는 계약금도 몰수당하고, 3년 이하 징역 또는 3000만 원 이하 벌금을 받을 수 있습니다. 청약 자격도 10년간 제한됩니다. (영상 속 5억 원·5000만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n출처: 국토교통부·국무조정실 부동산 불법행위 대응협의회 발표(2026년 11월 10일)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#부정청약 #위장전입 #청약 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "부정청약,위장전입,청약,부동산정책,부동산",
+  "tiktok_caption": "위장전입으로 청약 당첨되면 계약금 5000만 원을 몰수당해요 😱 집도 다시 뺏기고 10년간 청약도 막혀요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 청약 서류 꼼꼼히 보셨나요? #부정청약 #위장전입 #청약",
+  "instagram_caption": "위장전입으로 청약 당첨되면 계약금 5000만 원을 몰수당해요 😱 집도 다시 뺏기고 10년간 청약도 막혀요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 청약 서류 꼼꼼히 보셨나요? #부정청약 #위장전입 #청약",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "위장전입 청약 걸리면?",
+      "caption": "위장전입 청약\n{걸리면}?",
+      "image_prompt": "photorealistic exterior of a bright modern apartment complex under a clear blue sky, tall residential towers, wide angle, natural daylight, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 계약금까지 다 몰수당해요.",
+      "caption": "결론\n{계약금}까지 몰수돼요",
+      "image_prompt": "photorealistic stack of golden coins glowing under warm dramatic light on a dark wooden table, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "이번 점검에서 부정청약 354건이 적발됐어요.",
+      "caption": "부정청약 적발",
+      "big": "354건",
+      "badge": "위장전입 334건"
+    },
+    {
+      "kind": "photo",
+      "voice": "전입신고를 허위로 꾸며서 무주택자처럼 넣는 방식이에요.",
+      "caption": "{전입신고}를 허위로\n꾸미는 방식",
+      "image_prompt": "photorealistic cardboard moving boxes and a suitcase inside an empty sunlit apartment room, soft natural window light, shallow depth of field, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 분양가 5억 원짜리 집에 당첨됐다고 해볼게요.",
+      "caption": "예를 들어\n분양가가",
+      "amount": 5,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "money",
+      "voice": "부정청약이면 계약금 5000만 원을 몰수당해요.",
+      "caption": "계약금\n{5000만 원} 몰수",
+      "amount": 5000,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "거기에 3년 이하 징역이나 3000만 원 벌금까지 받을 수 있어요.",
+      "caption": "형사처벌",
+      "big": "징역 3년\n또는 벌금 3000만원",
+      "badge": "수사 의뢰"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 이미 입주해서 살고 있으면 어떻게 될까요?",
+      "caption": "근데 {이미 입주}해서\n살고 있으면?",
+      "image_prompt": "photorealistic cozy living room interior with a sofa and a warm lamp glowing in the evening, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "그래도 집을 다시 환수당해요.",
+      "caption": "{집도} 환수돼요",
+      "big": "주택 환수",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "게다가 10년 동안 청약 자격까지 막혀요.",
+      "caption": "청약 자격\n{10년간} 제한",
+      "big": "10년간\n청약 금지"
+    },
+    {
+      "kind": "photo",
+      "voice": "청약 준비하는 지인께 꼭 보내주세요.",
+      "caption": "청약 준비하는 지인께\n{공유}해주세요",
+      "image_prompt": "photorealistic brass house key resting on a small wooden model house, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 청약 넣을 때 서류를 꼼꼼히 보셨나요?",
+      "caption": "여러분은\n{서류}를 꼼꼼히 보셨나요?",
+      "image_prompt": "photorealistic city skyline at night with glowing apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

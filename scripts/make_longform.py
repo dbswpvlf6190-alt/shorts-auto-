@@ -936,7 +936,8 @@ def make_thumb_v3(meta, img_dir, out):
 
 
 def make_thumb(meta, img_dir, out):
-    if str(meta.get("script_version", "")).startswith("v3"):
+    # 11/21: script_version이 "v3"로 시작하지 않아도 v6·v7 썸네일이면 새 방식(11 초안이 "v1 ..."이라 그림 없는 옛 썸네일이 나왔음)
+    if str(meta.get("script_version", "")).startswith("v3") or meta.get("thumbnail", {}).get("style") in ("v6", "v7"):
         return make_thumb_v3(meta, img_dir, out)
     th = meta.get("thumbnail", {})
     tw, thh = 1280, 720

@@ -3,9 +3,9 @@
   "rate": "+30%",
   "voice_style": "M1",
   "field": "money",
-  "script_version": "v1 (v5 구조 + 숫자는 비유(만 원·6분의 1·8분의 1·3분의 1) · 큰 비유 1개(나라가 주는 쿠폰: 유통기한·한도·쓰는 곳) · 인트로 3장면 · 구독 부탁은 첫 답 뒤 · 기준일은 1장 첫 장면 · 반전(해지하면 토해냄, 13.2% 구간은 받은 것보다 더 냄) · 착각 3 · 실천 4 · 비유 회수. 상품 추천 없음)",
+  "script_version": "v3 (11/21 대본 2차 보강: 18분 목표 · v5 구조 그대로 · 숫자는 카드, 목소리는 비유 · 새 장 4개(내 쿠폰 확인·계좌 만들기·계좌 안에서 할 일·퇴직금 IRP) · 맞벌이 부부 예시 · 인출 순서 · 건보료 · 착각 4가지)",
   "privacy": "private",
-  "fact_check": "2026-11-20 확인. [공제] 연금계좌세액공제: 연금저축 연 600만 원, IRP 합산 900만 원(IRP 단독 900만 원 가능), 세액공제율 15%/12%(지방소득세 포함 16.5%/13.2%), 기준 총급여 5,500만 원(근로소득만) — 최대 148.5만/118.8만 원 (토스뱅크·PENGSU·로시컴·우먼센스·재경일보·뱅크샐러드·신한투자증권). 연금계좌 총 납입한도 연 1,800만 원(미래에셋·신한). 공제는 결정세액 한도(낼 세금이 없으면 환급 없음). 맞벌이는 각자 한도. [기한] 해당 연도 1/1~12/31 납입분, 2027년 1월 연말정산 → 보통 2~3월 급여 환급(회사마다 다름). 마지막 날 마감 시간은 금융사마다 다름 → '12월 중순까지' 권고. 공개 11/24 → 12/31까지 37일. [해지] 연금외수령(중도해지 등) 시 세액공제 받은 납입액+운용수익에 기타소득세 16.5%, 부득이한 사유(천재지변·사망·해외이주·파산·개인회생·장기 요양 등)는 연금소득세 저율(로시컴·신한·미래에셋). 예시: 900만 원 납입 수익 0 가정 → 16.5% 구간 148.5 받고 148.5 냄(본전), 13.2% 구간 118.8 받고 148.5 냄(29.7만 원 더 냄). [IRP] 법정 사유(무주택자 주택 구입·6개월 이상 요양·파산 등) 외 중도 일부 인출 불가, 위험자산 70% 한도(근로자퇴직급여보장법) — 연금저축은 일부 인출 가능(세금 부과). [수령] 만 55세 이후 + 가입 5년 경과, 연간 연금수령한도 내. 연금소득세 55~69세 5.5%, 70~79세 4.4%, 80세 이상 3.3%(지방세 포함). 사적연금 연 1,500만 원 초과 시 종합과세 또는 16.5% 분리과세 선택(신한·미래에셋·Daum 2025.12). [ISA] 만기 후 60일 내 연금계좌 이전 시 이전액의 10%, 최대 300만 원 추가 공제 대상 → 합계 1,200만 원(디지털데일리 2024.3·금융사·여러 안내). [비유] 16.5% ≈ 6분의 1(16.7%), 13.2% ≈ 8분의 1(12.5%), 5.5% = 16.5%의 3분의 1. 만 원 → 1,650원. 300만 원 = 만 원 300번. 100만 원 → 약 16.5만 원(6분의 1쯤). [세 사람·8년 예시] 김 과장 4,800만 원·300 납입 → 남은 600 × 16.5% = 99만 원(총 148.5) / 박 부장 8,000만 원·연금저축만 900 → 300 × 13.2% = 39.6만 원 놓침, 600+300이면 118.8 / 은퇴 소득 0 → 0원. 52~59세 8년 × 600 × 16.5% = 99 × 8 = 792만 원(낼 세금 충분·수익 제외). 모두 가상 인물. [예시] 낼 세금 50만 원 사례·52세 가입 → 57세 수령은 가정 예시. 2026 세제개편안(2027 적용, 국회 심사 중)의 청년·퇴직연금 변경은 다루지 않음.",
+  "fact_check": "2026-11-20 확인. [공제] 연금계좌세액공제: 연금저축 연 600만 원, IRP 합산 900만 원(IRP 단독 900만 원 가능), 세액공제율 15%/12%(지방소득세 포함 16.5%/13.2%), 기준 총급여 5,500만 원(근로소득만) — 최대 148.5만/118.8만 원 (토스뱅크·PENGSU·로시컴·우먼센스·재경일보·뱅크샐러드·신한투자증권). 연금계좌 총 납입한도 연 1,800만 원(미래에셋·신한). 공제는 결정세액 한도(낼 세금이 없으면 환급 없음). 맞벌이는 각자 한도. [기한] 해당 연도 1/1~12/31 납입분, 2027년 1월 연말정산 → 보통 2~3월 급여 환급(회사마다 다름). 마지막 날 마감 시간은 금융사마다 다름 → '12월 중순까지' 권고. 공개 11/24 → 12/31까지 37일. [해지] 연금외수령(중도해지 등) 시 세액공제 받은 납입액+운용수익에 기타소득세 16.5%, 부득이한 사유(천재지변·사망·해외이주·파산·개인회생·장기 요양 등)는 연금소득세 저율(로시컴·신한·미래에셋). 예시: 900만 원 납입 수익 0 가정 → 16.5% 구간 148.5 받고 148.5 냄(본전), 13.2% 구간 118.8 받고 148.5 냄(29.7만 원 더 냄). [IRP] 법정 사유(무주택자 주택 구입·6개월 이상 요양·파산 등) 외 중도 일부 인출 불가, 위험자산 70% 한도(근로자퇴직급여보장법) — 연금저축은 일부 인출 가능(세금 부과). [수령] 만 55세 이후 + 가입 5년 경과, 연간 연금수령한도 내. 연금소득세 55~69세 5.5%, 70~79세 4.4%, 80세 이상 3.3%(지방세 포함). 사적연금 연 1,500만 원 초과 시 종합과세 또는 16.5% 분리과세 선택(신한·미래에셋·Daum 2025.12). [ISA] 만기 후 60일 내 연금계좌 이전 시 이전액의 10%, 최대 300만 원 추가 공제 대상 → 합계 1,200만 원(디지털데일리 2024.3·금융사·여러 안내). [비유] 16.5% ≈ 6분의 1(16.7%), 13.2% ≈ 8분의 1(12.5%), 5.5% = 16.5%의 3분의 1. 만 원 → 1,650원. 300만 원 = 만 원 300번. 100만 원 → 약 16.5만 원(6분의 1쯤). [세 사람·8년 예시] 김 과장 4,800만 원·300 납입 → 남은 600 × 16.5% = 99만 원(총 148.5) / 박 부장 8,000만 원·연금저축만 900 → 300 × 13.2% = 39.6만 원 놓침, 600+300이면 118.8 / 은퇴 소득 0 → 0원. 52~59세 8년 × 600 × 16.5% = 99 × 8 = 792만 원(낼 세금 충분·수익 제외). 모두 가상 인물. [예시] 낼 세금 50만 원 사례·52세 가입 → 57세 수령은 가정 예시. 2026 세제개편안(2027 적용, 국회 심사 중)의 청년·퇴직연금 변경은 다루지 않음. [11/21 보강] 자영업자: 종합소득금액 4,500만 원 이하 15%(지방세 포함 16.5%), 초과 12% — 다음 해 5월 종합소득세 신고 때 반영(뉴시스 2025.1·삼쩜삼·신한). 연금계좌 납입 한도 연 1,800만 원(쿠폰 대상 900만 원). 50세 이상 추가 200만 원 한도는 2020~2022년 3년 한시, 2023년부터 나이 무관 900만 원(토스·KB·미래에셋 2023 개정세법). 인출 순서: 과세제외금액(세액공제 안 받은 납입액, 비과세) → 이연퇴직소득 → 공제받은 납입액·수익(소득세법 시행령 제40조의3, 공제확인서 절차 제201조의10). 퇴직금 IRP 연금수령: 퇴직소득세 연금 10년 차까지 30%, 11년 차부터 40% 감면(신한·미래에셋·한국경제 2025.2) → 만 원 기준 7천 원·6천 원. 건보료: 사적연금(연금저축·IRP)은 현재 건보료 소득 산정에서 제외, 공적연금은 포함, 정부 부과 검토 중(이코노미스트 2026.11·국민일보·SBS Biz). 홈택스 연말정산 미리보기(편리한 연말정산 메뉴, 카드 사용액 등으로 예상 세액·추가 공제 시뮬레이션) — 2026년 개통일은 공식 공지 미확인이라 날짜는 말하지 않음. 연금계좌 이전 제도(금융사 간 이전 시 과세 이연), 한도는 사람 기준 합산. IRP 사전지정운용(디폴트옵션). 연금저축보험 초기 해지 손실(사업비). 비유: 김 과장 49.5 → 148.5 = 세 배, 박 부장 900 중 300 = 3분의 1, 1,650원 × 300번 = 49.5만 원, ISA 10% = 10분의 1, 8년 × 99 = 792만 원. 모든 인물 가상. [11/21 보강2] 연금저축 가입 연령 제한 없음, IRP는 소득 있는 자·퇴직급여 수령자(금융사 안내). 61세 가입 → 만 55세 이후 + 5년 → 66세(예시). 부득이한 사유(6개월 이상 요양·파산·개인회생·천재지변 등)는 연금소득세 3.3~5.5%. 연금계좌 납입액은 연말정산 간소화 자료에 자동 제공, 누락 시 금융사 납입증명서. 세액공제는 계좌 명의자(본인) 기준.",
   "thumbnail": {
     "style": "v7",
     "lines": [
@@ -33,22 +33,29 @@
     "covers": [
       "나라가 주는 연말 쿠폰 — 넣은 돈의 6분의 1이 돌아온다",
       "나도 받을 수 있을까 — 이게 없으면 900만 원을 넣어도 0원",
+      "내 쿠폰이 얼마나 남았는지 확인하는 두 곳",
       "900만 원은 한 통이 아니라 두 칸 — 가장 흔한 실수",
-      "세 사람의 연말 — 같은 900만 원, 다른 결과",
+      "네 사람의 연말 — 같은 돈, 다른 결과(맞벌이 부부 포함)",
       "12월 31일 밤에 넣으면 안 되는 이유",
-      "받은 것보다 더 토해낸 사람들 — 연봉이 높을수록 위험한 함정",
+      "넣은 뒤 연말정산 — 회사에 따로 낼 서류가 있을까",
+      "받은 것보다 더 토해낸 사람들 — 그리고 세금 없이 꺼내지는 돈",
       "연금저축과 IRP, 같은 쿠폰 다른 성격",
-      "52세에 가입하면 언제 꺼낼 수 있을까",
-      "50대에 시작해도 늦지 않을까 — 8년 치 쿠폰",
+      "계좌가 없다면 — 어디서, 어떻게",
+      "넣고 끝이 아니다 — 계좌 안에서 돈이 놀고 있다면",
+      "퇴직금이 IRP에 들어왔다면 — 세금이 최대 40% 줄어드는 방법",
+      "55세 이후 꺼낼 때 — 세금과 건강보험료",
+      "50대에 시작해도 늦지 않을까 — 쿠폰이 쿠폰을 낳는 구조",
+      "60대에 일하고 있다면 — 나이 제한은 없다, 대신 5년",
       "900만 원을 넘는 숨은 추가 쿠폰",
-      "흔한 착각 3가지",
-      "올해 안에 할 4가지"
+      "흔한 착각 4가지",
+      "올해 안에 할 5가지"
     ],
     "as_of": "2026년 11월 20일 (2026년 귀속 세법 기준)",
     "sources": [
-      "소득세법(연금계좌세액공제·연금외수령 과세) · 조세특례제한법(ISA 만기자금 연금계좌 전환)",
+      "소득세법(연금계좌세액공제·연금외수령 과세·연금수령 시 퇴직소득세 감면) · 소득세법 시행령 제40조의3(인출 순서) · 조세특례제한법(ISA 만기자금 연금계좌 전환)",
+      "국세청 홈택스(연말정산 미리보기) · 국민건강보험공단 부과 기준",
       "금융사 연금 안내: 신한투자증권 · 미래에셋 · 토스뱅크(2026)",
-      "로시컴 법률정보 · 디지털데일리(2024.3) · 우먼센스 · 재경일보"
+      "이코노미스트(2026.11) · 뉴시스(2025.1) · 디지털데일리(2024.3) · 로시컴 법률정보 · 우먼센스 · 재경일보"
     ],
     "comment_question": "올해 연금 계좌에 얼마나 넣으셨나요? 아직이라면 얼마를 넣을 생각이세요?",
     "hashtags": [
@@ -137,6 +144,11 @@
           "voice": "나라는 노후 준비를 스스로 하는 사람에게 쿠폰을 하나 줍니다. 이 계좌에 돈을 넣으면, 넣은 돈의 일부를 세금에서 깎아 주는 쿠폰이에요."
         },
         {
+          "kind": "art",
+          "image_prompt": "an elderly korean couple walking in a sunny park in autumn, holding hands, seen from behind, warm golden light",
+          "voice": "나라가 왜 이런 쿠폰을 줄까요? 노후를 국민연금 하나로만 버티기는 어렵기 때문이에요. 스스로 준비하는 사람에게, 세금으로 조금 보태 주는 겁니다."
+        },
+        {
           "kind": "number",
           "heading": "세금에서 돌려받는 비율",
           "amount": 16.5,
@@ -144,7 +156,12 @@
           "label": "만 원 넣으면 1,650원",
           "note": "총급여 5,500만 원 이하 · 지방소득세 포함 · 넘으면 13.2%",
           "color": "orange",
-          "voice": "돌려받는 비율은 16.5퍼센트. 만 원을 넣으면 1,650원, 넣은 돈의 약 6분의 1이 돌아오는 셈이에요. 요즘 적금 이자와는 비교가 안 되는 숫자죠."
+          "voice": "돌려받는 비율은 이만큼이에요. 만 원을 넣으면 1,650원, 넣은 돈의 약 6분의 1이 돌아오는 셈이죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a glass piggy bank with only a few small coins inside next to a tall neat stack of gold coins on a wooden table, soft morning light, shallow depth of field",
+          "voice": "적금과 비교해 볼까요. 만 원을 1년 동안 적금에 묶어 둬도, 이자는 몇백 원이에요. 이 쿠폰은 넣는 순간 돌려받을 몫이 정해집니다. 물론 조건을 지킨다면요."
         },
         {
           "kind": "number",
@@ -154,7 +171,7 @@
           "label": "900만 원 꽉 채웠을 때",
           "note": "총급여 5,500만 원 이하 기준 · 초과면 최대 118.8만 원",
           "color": "green",
-          "voice": "쿠폰은 1년에 900만 원까지 붙어요. 꽉 채우면 최대 148만 5천 원이 내년 초 연말정산 때 돌아옵니다."
+          "voice": "쿠폰이 붙는 한도를 꽉 채우면, 내년 초 연말정산 때 화면의 금액이 돌아옵니다. 이 숫자, 기억해 두세요."
         },
         {
           "kind": "art",
@@ -223,7 +240,7 @@
         {
           "kind": "art",
           "image_prompt": "a small glass piggy bank with only a few coins inside on a kitchen counter, morning light, shallow depth of field",
-          "voice": "그리고 돌려받는 돈은 내가 낼 세금보다 많을 수 없어요. 올해 낼 세금이 50만 원이라면, 900만 원을 넣어도 50만 원까지만 돌아옵니다."
+          "voice": "그리고 돌려받는 돈은 내가 낼 세금보다 많을 수 없어요. 낼 세금이 쿠폰보다 작으면, 낼 세금만큼까지만 돌아옵니다. 그릇보다 많이 담을 수는 없으니까요."
         },
         {
           "kind": "art",
@@ -249,7 +266,19 @@
             ],
             "color": "navy"
           },
-          "voice": "돌려받는 비율은 연봉에 따라 두 칸이에요. 1년 총급여 5,500만 원이 경계선입니다. 그 아래는 넣은 돈의 약 6분의 1, 그 위는 약 8분의 1이 돌아와요."
+          "voice": "돌려받는 비율은 연봉에 따라 두 칸이에요. 화면의 연봉 경계선 아래는 넣은 돈의 약 6분의 1, 그 위는 약 8분의 1이 돌아옵니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her fifties running a small bakery, wiping the counter after closing time, warm evening light through the window, calm expression",
+          "voice": "자영업자나 프리랜서라면 기준이 조금 달라요. 월급 대신 1년 동안 번 종합소득으로 경계선을 봅니다."
+        },
+        {
+          "kind": "quote",
+          "heading": "자영업자·프리랜서라면",
+          "text": "{종합소득금액 4,500만 원} 이하 → 16.5%\n넘으면 → 13.2%\n쿠폰은 [다음 해 5월 종합소득세 신고] 때",
+          "cite": "소득세법 · 금융사 연금 안내",
+          "voice": "그리고 쿠폰은 연말정산이 아니라, 다음 해 5월 종합소득세를 신고할 때 받아요. 신고서에 연금 계좌 납입액을 꼭 넣으셔야 합니다."
         },
         {
           "kind": "art",
@@ -264,6 +293,55 @@
       ]
     },
     {
+      "title": "내 쿠폰, 얼마나 남았을까",
+      "tag": "내 쿠폰 확인",
+      "source": "출처: 국세청 홈택스(연말정산 미리보기) · 소득세법(연금계좌세액공제)",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his fifties sitting on a sofa at home in the evening with reading glasses, thinking with his hand on his chin, warm lamp light",
+          "voice": "그럼 나는 올해 쿠폰을 얼마나 쓸 수 있을까요? 확인할 곳은 딱 두 군데예요."
+        },
+        {
+          "kind": "cards",
+          "heading": "내 쿠폰 확인하는 곳 두 군데",
+          "cards": [
+            {
+              "title": "작년 원천징수영수증",
+              "body": "결정세액 = 쿠폰의 천장",
+              "color": "navy"
+            },
+            {
+              "title": "홈택스 연말정산 미리보기",
+              "body": "올해 예상 세금·환급 계산",
+              "color": "green"
+            }
+          ],
+          "voice": "하나는 회사에서 받는 작년 원천징수영수증, 다른 하나는 국세청 홈택스의 연말정산 미리보기예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his fifties at an office desk holding a single sheet of paper seen from the back so nothing on it is visible, focused expression, bright office light",
+          "voice": "원천징수영수증에서 볼 칸은 결정세액이에요. 작년에 내가 실제로 낸 세금이죠. 올해 받을 쿠폰의 천장이라고 보시면 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean couple in their fifties sitting side by side at a dining table looking at a laptop whose screen faces away from the camera, curious expressions, cozy home",
+          "voice": "홈택스 미리보기에서는 올해 쓴 카드값 같은 자료를 바탕으로, 올해 세금을 미리 계산해 볼 수 있어요. 연금 계좌에 더 넣으면 환급이 얼마나 늘어나는지도 넣어 볼 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an empty glass jar on a kitchen counter next to a few scattered coins, soft side light, quiet mood",
+          "voice": "결정세액이 아주 적다면, 이미 다른 공제로 세금을 거의 안 내는 분이에요. 이 경우엔 연금 계좌에 더 넣어도 돌아올 쿠폰이 적습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a large glass jar filling up with gold coins being poured in from above, warm golden light, dark background",
+          "voice": "반대로 결정세액이 넉넉하다면, 남은 쿠폰을 채우는 만큼 그대로 돌아온다고 보시면 돼요."
+        }
+      ]
+    },
+    {
       "title": "얼마를 넣어야 하나",
       "tag": "한도 900만 원",
       "source": "출처: 소득세법(연금계좌세액공제) · 신한투자증권·미래에셋 연금 안내 · 토스뱅크(2026)",
@@ -273,7 +351,7 @@
         {
           "kind": "art",
           "image_prompt": "two empty glass jars of different sizes on a wooden shelf, one larger than the other, soft window light, minimal composition",
-          "voice": "두 번째 조건, 한도입니다. 1년에 900만 원이라고 했죠. 그런데 여기서 많은 분이 실수를 해요."
+          "voice": "두 번째 조건, 한도입니다. 쿠폰이 붙는 돈은 1년에 정해져 있어요. 그런데 여기서 많은 분이 실수를 합니다."
         },
         {
           "kind": "cards",
@@ -295,7 +373,7 @@
               "color": "orange"
             }
           ],
-          "voice": "900만 원은 한 통이 아니라 두 칸이에요. 연금저축은 600만 원까지만 쿠폰이 붙고, 나머지는 아이알피라는 개인형 퇴직연금 계좌에 넣어야 900만 원이 채워집니다."
+          "voice": "한도는 한 통이 아니라 두 칸이에요. 연금저축 칸은 작고, 남은 자리는 아이알피라는 개인형 퇴직연금 계좌로 채워야 꽉 찹니다."
         },
         {
           "kind": "compare",
@@ -316,27 +394,37 @@
             ],
             "color": "green"
           },
-          "voice": "연금저축 하나에 900만 원을 다 넣으면, 300만 원어치는 쿠폰이 안 붙어요. 만 원 넣고 1,650원 받을 기회를, 300번이나 놓치는 셈이죠."
+          "voice": "연금저축 하나에 한도를 다 넣으면, 3분의 1은 쿠폰이 안 붙어요. 만 원 넣고 1,650원 받을 기회를, 300번이나 놓치는 셈이죠."
         },
         {
           "kind": "art",
           "image_prompt": "a single large sturdy wooden chest in an empty attic with warm light falling on it, cinematic",
-          "voice": "반대로 아이알피 하나에 900만 원을 다 넣는 건 괜찮습니다. 아이알피는 혼자서도 900만 원까지 쿠폰이 붙거든요."
+          "voice": "반대로 아이알피 하나에 다 넣는 건 괜찮습니다. 아이알피는 혼자서도 한도를 꽉 채울 수 있거든요."
         },
         {
           "kind": "art",
           "image_prompt": "a handful of coins being dropped one by one into a ceramic jar on a kitchen table, morning light, shallow depth of field",
-          "voice": "꼭 900만 원을 꽉 채울 필요도 없어요. 넣은 만큼만 돌려받는 구조라서, 100만 원을 넣으면 그 6분의 1쯤이 돌아옵니다. 형편에 맞게 넣으면 돼요."
+          "voice": "꼭 한도를 꽉 채울 필요도 없어요. 넣은 만큼만 돌려받는 구조라서, 100만 원을 넣으면 그 6분의 1쯤이 돌아옵니다. 형편에 맞게 넣으면 돼요."
+        },
+        {
+          "kind": "number",
+          "heading": "1년에 연금 계좌에 넣을 수 있는 돈",
+          "amount": 1800,
+          "unit": "만 원",
+          "label": "연금저축 + IRP 합산 납입 한도",
+          "note": "쿠폰(세액공제)은 이 중 900만 원까지만",
+          "color": "navy",
+          "voice": "참고로 연금 계좌에 넣을 수 있는 돈 자체는 쿠폰 한도의 두 배예요. 다만 쿠폰은 한도까지만 붙으니, 그 위로 넣는 돈은 노후 저축으로 보셔야 합니다."
         },
         {
           "kind": "art",
           "image_prompt": "a calculator and a cup of tea on a wooden table beside a window with falling autumn leaves outside, calm warm light",
-          "voice": "이미 올해 연금 계좌에 넣고 계신 분이라면, 지금까지 넣은 금액부터 확인하세요. 900만 원에서 그만큼을 뺀 것이 올해 남은 쿠폰입니다."
+          "voice": "이미 올해 연금 계좌에 넣고 계신 분이라면, 지금까지 넣은 금액부터 확인하세요. 한도에서 그만큼을 뺀 것이 올해 남은 쿠폰입니다."
         }
       ]
     },
     {
-      "title": "세 사람의 연말",
+      "title": "네 사람의 연말",
       "tag": "예시 · 가정",
       "source": "출처: 소득세법(연금계좌세액공제) · 신한투자증권·미래에셋 연금 안내 · 토스뱅크(2026)",
       "art_title": "세 사람의 [연말]",
@@ -345,12 +433,12 @@
         {
           "kind": "art",
           "image_prompt": "three different front doors of korean apartments in a row along an outdoor corridor at dusk, warm lights behind two of them, cinematic, no text",
-          "voice": "숫자만 들으면 어렵죠. 세 사람의 연말로 바꿔서 볼게요. 모두 예시로 만든 가상의 인물입니다."
+          "voice": "숫자만 들으면 어렵죠. 네 사람의 연말로 바꿔서 볼게요. 모두 예시로 만든 가상의 인물입니다."
         },
         {
           "kind": "art",
           "image_prompt": "a korean office worker in his early fifties at his desk in the evening checking an app on his phone with a relieved expression, screen blurred, warm office light",
-          "voice": "첫 번째, 연봉 4,800만 원인 52세 김 과장. 올해 연금저축에 300만 원을 넣어 뒀어요. 그럼 남은 쿠폰은 600만 원어치입니다."
+          "voice": "첫 번째, 52세 김 과장. 연봉은 경계선 아래고, 올해 연금저축에 한도의 3분의 1만 넣어 뒀어요. 그럼 남은 쿠폰은 3분의 2입니다."
         },
         {
           "kind": "compare",
@@ -371,12 +459,17 @@
             ],
             "color": "green"
           },
-          "voice": "남은 600만 원을 연금저축과 아이알피에 나눠 채우면, 지금보다 약 99만 원을 더 돌려받아요. 물론 낼 세금이 그만큼 있다는 전제입니다."
+          "voice": "남은 칸을 연금저축과 아이알피에 나눠 채우면, 지금 받는 쿠폰의 세 배가 돌아와요. 물론 낼 세금이 그만큼 있다는 전제입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his fifties in a white shirt at his office desk in the evening, nodding with a relieved small smile, warm light",
+          "voice": "김 과장에게 남은 일은 단순해요. 남은 칸이 얼마인지 확인하고, 12월 중순 전에 채우는 것. 그게 전부입니다."
         },
         {
           "kind": "art",
           "image_prompt": "a korean manager in his late fifties in a suit standing by a high office window at night looking down at the city, contemplative, cinematic",
-          "voice": "두 번째, 연봉 8,000만 원인 56세 박 부장. 성실하게 연금저축 하나에만 900만 원을 꽉 채웠어요."
+          "voice": "두 번째, 연봉이 경계선 위인 56세 박 부장. 성실하게 연금저축 하나에만 한도를 꽉 채웠어요."
         },
         {
           "kind": "compare",
@@ -397,7 +490,12 @@
             ],
             "color": "green"
           },
-          "voice": "그런데 300만 원어치에는 쿠폰이 안 붙어요. 연봉이 높아 8분의 1 비율이니, 약 39만 6천 원을 놓친 셈입니다. 칸만 나눴어도 받을 수 있던 돈이에요."
+          "voice": "그런데 3분의 1에는 쿠폰이 안 붙어요. 연봉이 높아 8분의 1 비율이니, 화면의 금액을 놓친 셈입니다. 칸만 나눴어도 받을 수 있던 돈이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his late fifties in a dark suit at his office window in the evening, looking at the city lights with a determined expression",
+          "voice": "박 부장은 내년부터 칸만 나누면 돼요. 연금저축이 다 찼다면, 그 위로는 아이알피에 넣는 것. 이 순서 하나로 해마다 놓치던 쿠폰을 되찾습니다."
         },
         {
           "kind": "art",
@@ -408,6 +506,37 @@
           "kind": "art",
           "image_prompt": "a calm lake at sunrise with mist over the water and a wooden pier, peaceful, cinematic wide shot",
           "voice": "이 경우엔 쿠폰 때문에 서둘러 넣을 이유가 없습니다. 노후 자금을 어디에 둘지는 쿠폰이 아니라 다른 기준으로 따져 보셔야 해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean married couple in their mid fifties both in office clothes walking side by side on a city sidewalk in the evening, warm street lights",
+          "voice": "네 번째, 맞벌이인 54세 정 씨 부부. 남편 계좌는 꽉 채웠는데, 아내는 아직 연금 계좌가 없어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "정 씨 부부 (각자 총급여 5,500만 원 이하 · 낼 세금 충분 · 예시)",
+          "left": {
+            "title": "남편만 900만 원",
+            "lines": [
+              "남편 쿠폰 148.5만 원",
+              "[아내 쿠폰 0원]"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "아내도 900만 원 넣으면",
+            "lines": [
+              "아내 쿠폰 최대 148.5만 원",
+              "{부부 합계 최대 297만 원}"
+            ],
+            "color": "green"
+          },
+          "voice": "한도는 사람마다 따로라서, 아내 몫의 쿠폰은 통째로 비어 있어요. 아내 계좌에도 채우면 부부가 받는 쿠폰이 두 배가 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her fifties at home holding a cup of tea looking out the window, thoughtful expression, soft afternoon light",
+          "voice": "단, 각자 낼 세금이 있어야 해요. 소득이 없는 배우자 이름으로 넣으면, 그 계좌엔 쿠폰이 하나도 안 붙습니다. 부부라면 세금을 내는 사람 이름으로 넣는 게 먼저예요."
         }
       ]
     },
@@ -458,8 +587,35 @@
         },
         {
           "kind": "art",
+          "image_prompt": "a korean man in his fifties setting up an automatic bank transfer on his phone whose screen faces away from the camera, morning light in a kitchen",
+          "voice": "올해가 처음이라면, 내년부터는 매달 자동이체로 나눠 넣는 방법도 있어요. 연말에 한꺼번에 넣는 부담이 줄고, 1월부터 쿠폰을 차곡차곡 채워 갈 수 있죠."
+        },
+        {
+          "kind": "art",
           "image_prompt": "an hourglass with golden sand running low on a dark desk, warm rim light, close up",
           "voice": "그래서 지금이에요. 남은 시간은 37일. 그런데 서두르기 전에, 꼭 알아야 할 함정이 하나 있습니다."
+        }
+      ]
+    },
+    {
+      "title": "넣은 뒤 연말정산은",
+      "tag": "서류는?",
+      "source": "출처: 국세청 연말정산 간소화 서비스 · 금융사 연금 안내",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her fifties at an office desk in january, relaxed, a cup of coffee beside her, bright winter daylight through the window",
+          "voice": "넣고 나면 회사에 따로 서류를 내야 할까요? 대부분은 아니에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a laptop on an office desk with its screen facing away from the camera, a hand resting on the keyboard, soft winter light, shallow depth of field",
+          "voice": "연금 계좌에 넣은 돈은 국세청 연말정산 간소화 자료에 자동으로 잡혀요. 1월에 회사에서 연말정산을 할 때 그 자료를 불러오면 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his fifties talking on the phone at his desk with a calm expression, morning light, the desk surface clear",
+          "voice": "혹시 자료에 빠져 있다면, 금융사에서 연금 납입 증명서를 받아 회사에 내면 돼요. 12월 말에 넣은 돈은 특히 한 번 확인해 보세요."
         }
       ]
     },
@@ -486,6 +642,11 @@
           "text": "쿠폰 받은 원금 + 그동안 불어난 수익에\n[기타소득세 16.5%]\n큰 병·파산 같은 부득이한 사유는 예외(낮은 세율)",
           "cite": "소득세법 · 금융사 연금 안내",
           "voice": "중간에 해지하면, 쿠폰을 받은 원금과 그동안 불어난 수익에 16.5퍼센트 세금이 붙습니다. 큰 병이나 파산 같은 부득이한 사유가 아니라면요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his fifties in a hospital corridor sitting on a bench, his wife's hand on his shoulder, soft natural light, hopeful mood",
+          "voice": "다행히 큰 병으로 오래 치료를 받거나, 파산이나 개인회생처럼 피할 수 없는 사정이라면 훨씬 낮은 세금만 내요. 법에 정해진 예외입니다."
         },
         {
           "kind": "compare",
@@ -519,6 +680,42 @@
           "kind": "art",
           "image_prompt": "a moving box half packed in a bright apartment living room, a wedding invitation shaped blank card on top, warm daylight, no text",
           "voice": "자녀 결혼 자금이나 내년 이사 비용처럼, 몇 년 안에 쓸 돈이라면 쿠폰이 아무리 커 보여도 넣지 마세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a heavy old safe with its door slightly open and soft light coming out, a few coins on the shelf inside, dark room",
+          "voice": "그런데 여기서 반가운 사실이 하나 있어요. 쿠폰을 받지 않은 돈은 다르게 취급됩니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "연금 계좌에서 꺼내지는 순서",
+          "cards": [
+            {
+              "label": "1",
+              "title": "쿠폰 안 받은 돈",
+              "body": "세금 없이 먼저 나옴",
+              "color": "green"
+            },
+            {
+              "label": "2",
+              "title": "퇴직금",
+              "body": "퇴직소득세",
+              "color": "navy"
+            },
+            {
+              "label": "3",
+              "title": "쿠폰 받은 돈 + 수익",
+              "body": "[중간 해지 시 16.5%]",
+              "color": "red"
+            }
+          ],
+          "voice": "연금 계좌에서 돈을 꺼내면, 쿠폰을 안 받은 돈부터 먼저 나온 걸로 쳐 줘요. 이 돈엔 세금이 없습니다. 쿠폰을 받은 돈과 그 수익은 맨 마지막이에요.",
+          "source": "출처: 소득세법 시행령 제40조의3(연금계좌 인출 순서)"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his fifties talking with a bank teller across a counter, both seen from the side, calm bright bank interior, no signs",
+          "voice": "그래서 한도보다 더 넣은 돈은, 쿠폰은 없지만 꺼낼 때 세금도 없는 돈이 됩니다. 다만 쿠폰을 안 받았다는 확인 절차가 필요할 수 있으니, 꺼내기 전에 금융사에 먼저 물어보세요."
         }
       ]
     },
@@ -555,7 +752,7 @@
             ],
             "color": "green"
           },
-          "voice": "연금저축은 600만 원까지 쿠폰이 붙고, 급하면 일부를 꺼낼 수는 있어요. 물론 세금은 붙고요. 아이알피는 900만 원까지 쿠폰이 붙지만, 집을 사거나 큰 병 같은 법이 정한 사유가 아니면 일부만 꺼낼 수가 없어요."
+          "voice": "연금저축은 쿠폰 칸이 작은 대신, 급하면 일부를 꺼낼 수는 있어요. 물론 세금은 붙고요. 아이알피는 칸이 큰 대신, 집을 사거나 큰 병 같은 법이 정한 사유가 아니면 일부만 꺼낼 수가 없어요."
         },
         {
           "kind": "art",
@@ -566,6 +763,157 @@
           "kind": "art",
           "image_prompt": "a person's reading glasses resting on two folded paper brochures on a table, soft daylight, the brochures blank with no text",
           "voice": "어느 쪽이 정답이라기보다, 내 돈의 성격에 맞추는 거예요. 꺼낼 일이 조금이라도 있으면 연금저축 먼저, 정말 노후까지 안 건드릴 돈이면 아이알피까지. 이렇게 나누시는 분이 많습니다."
+        }
+      ]
+    },
+    {
+      "title": "계좌가 없다면",
+      "tag": "계좌 만들기",
+      "source": "출처: 금융사 연금 안내(신한투자증권·미래에셋) · 소득세법(연금계좌세액공제)",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her fifties sitting at a cafe table using her smartphone whose screen faces away from the camera, relaxed smile, bright daylight",
+          "voice": "아직 계좌가 없다면, 여는 건 생각보다 간단해요. 은행이나 증권사, 보험사에서 만들 수 있고, 요즘은 휴대폰 앱으로도 금방 끝납니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "어디서 만들까 (특정 회사 추천 아님)",
+          "cards": [
+            {
+              "title": "증권사",
+              "body": "펀드·ETF를 직접 고름",
+              "color": "navy"
+            },
+            {
+              "title": "은행",
+              "body": "IRP · 예금·펀드 담기",
+              "color": "green"
+            },
+            {
+              "title": "보험사",
+              "body": "연금저축보험 · [초기 해지 시 손해 큼]",
+              "color": "red"
+            }
+          ],
+          "voice": "증권사에서 만들면 펀드 같은 상품을 직접 고르고, 보험사의 연금저축보험은 초기에 해지하면 손해가 클 수 있어요. 어디가 낫다기보다, 내가 직접 고를지 맡길지를 먼저 정하세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two separate small wooden boxes side by side on a table with gold coins in both, soft warm light, minimal background",
+          "voice": "이미 다른 금융사에 계좌가 있어도 새로 만들 수 있어요. 쿠폰 한도는 계좌 수가 아니라, 사람 한 명 기준으로 합쳐서 계산됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a small wooden box being carried by two hands from one shelf to another shelf, warm light, simple background",
+          "voice": "옮기는 것도 됩니다. 연금 계좌를 다른 금융사로 옮겨도, 그동안 받은 쿠폰은 취소되지 않아요. 계좌를 통째로 옮기는 이전 제도가 있으니까요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a busy bank lobby at the end of the year with many people waiting, warm interior light, people seen from behind, no signs",
+          "voice": "12월 말에는 창구와 앱이 붐벼요. 계좌가 없다면 이번 주 안에 먼저 만들어 두세요."
+        }
+      ]
+    },
+    {
+      "title": "넣고 끝이 아니다",
+      "tag": "계좌 안에서 할 일",
+      "source": "출처: 금융사 연금 안내(신한투자증권·미래에셋) · 근로자퇴직급여보장법(위험자산 70% 한도·사전지정운용)",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a leather wallet lying open on a wooden table with a few gold coins inside, soft window light, shallow depth of field",
+          "voice": "계좌에 돈을 넣었다고 끝이 아니에요. 연금 계좌는 지갑이고, 그 안에서 어떤 상품에 담을지는 따로 골라야 합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a single gold coin lying still on a dusty shelf in a quiet room, thin sunlight beam, sense of time passing",
+          "voice": "특히 증권사 연금저축 계좌는, 상품을 고르지 않으면 돈이 현금 그대로 머물러요. 쿠폰은 받았는데 돈은 몇 년째 제자리인 경우죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his fifties sitting at a desk with reading glasses, looking carefully, warm desk lamp light, the desk surface clear",
+          "voice": "아이알피는 일정 기간 고르지 않으면 미리 정해 둔 상품으로 굴러가는 디폴트옵션이 있어요. 그래도 그게 무엇인지는 한 번 확인해 두세요."
+        },
+        {
+          "kind": "cards",
+          "heading": "계좌 안에서 고를 수 있는 것 (예시 · 추천 아님)",
+          "cards": [
+            {
+              "title": "원리금 보장형",
+              "body": "예금처럼 안정 · 수익 낮음",
+              "color": "navy"
+            },
+            {
+              "title": "채권형",
+              "body": "중간 정도",
+              "color": "green"
+            },
+            {
+              "title": "주식형·ETF",
+              "body": "[원금 손실 가능] · IRP는 70%까지",
+              "color": "red"
+            }
+          ],
+          "voice": "크게 보면 예금처럼 안정적인 것부터, 원금이 줄 수도 있는 주식형까지 있어요. 무엇이 맞는지는 꺼낼 때까지 남은 시간에 따라 달라집니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his late fifties standing at a crossroads on a quiet country road at dusk, looking ahead, seen from behind",
+          "voice": "은퇴까지 몇 년 안 남았다면, 큰 손실이 났을 때 회복할 시간이 짧다는 점을 꼭 생각하세요. 쿠폰으로 앞에서 받고, 손실로 뒤에서 잃으면 안 되니까요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a few coins slowly dripping out of a small hole at the bottom of a glass jar, soft light, dark background",
+          "voice": "수수료도 확인하세요. 금융사와 상품마다 해마다 떼는 수수료가 달라서, 오래 묶어 둘수록 그 차이가 커집니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his fifties at a kitchen table at the end of the year with a cup of tea, calmly reviewing something on a tablet whose screen faces away, warm light",
+          "voice": "1년에 한 번, 연말에 쿠폰을 채울 때 계좌 안도 같이 들여다보세요. 어디에 담겨 있는지, 수수료는 얼마인지. 이 두 가지만 봐도 충분합니다."
+        }
+      ]
+    },
+    {
+      "title": "퇴직금이 IRP에 들어왔다면",
+      "tag": "퇴직금 세금 할인",
+      "source": "출처: 소득세법(연금수령 시 퇴직소득세 감면) · 신한투자증권·미래에셋 퇴직연금 안내",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his late fifties carrying a small cardboard box out of an office building on his last day, mixed emotions, golden hour light, no signs",
+          "voice": "50대라면 회사를 옮기거나 퇴직하면서, 퇴직금이 아이알피 계좌로 들어온 분도 많으실 거예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his fifties sitting on a park bench with his hands folded, thinking, autumn leaves, soft afternoon light",
+          "voice": "이 돈은 쿠폰과는 다른 돈이에요. 넣을 때 돌려받는 쿠폰은 없지만, 꺼내는 방식에 따라 세금이 크게 달라집니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "IRP 속 퇴직금을 꺼낼 때",
+          "left": {
+            "title": "한꺼번에 찾으면",
+            "lines": [
+              "퇴직소득세 그대로",
+              "[할인 없음]"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "55세 이후 연금으로 나눠 받으면",
+            "lines": [
+              "연금 10년 차까지 {30% 할인}",
+              "11년 차부터 {40% 할인}"
+            ],
+            "color": "green"
+          },
+          "voice": "한꺼번에 찾으면 퇴직소득세를 그대로 내요. 그런데 55세 이후 연금으로 나눠 받으면, 만 원 낼 세금을 7천 원만 내고, 오래 받을수록 6천 원까지 내려갑니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean couple in their sixties walking slowly along a seaside path holding hands, bright calm day, seen from behind",
+          "voice": "그래서 퇴직금이 들어왔다고 바로 찾아 쓰기보다, 은퇴 후 생활비로 나눠 쓸 계획부터 세워 보세요. 자세한 이야기는 이전 영상, 퇴직연금 편에서 다뤘습니다."
         }
       ]
     },
@@ -589,7 +937,7 @@
           "label": "연금으로 꺼낼 수 있는 나이",
           "note": "만 55세 이후 + 가입 5년 경과 · 둘 다 필요",
           "color": "navy",
-          "voice": "예를 들어 52세에 처음 가입하면, 55세가 아니라 57세부터 연금으로 받을 수 있어요. 가입 5년을 채워야 하니까요. 50대라면 계좌를 여는 시점이 중요한 이유입니다."
+          "voice": "예를 들어 52세에 처음 가입하면, 55세가 아니라 가입 5년을 채운 화면의 나이부터 연금으로 받을 수 있어요. 50대라면 계좌를 여는 시점이 중요한 이유입니다."
         },
         {
           "kind": "checklist",
@@ -616,7 +964,21 @@
         {
           "kind": "art",
           "image_prompt": "a wooden bowl of autumn apples being shared out evenly into smaller bowls on a farmhouse table, warm light, close up",
-          "voice": "다만 한 해에 연금으로 1,500만 원 넘게 꺼내면, 다른 소득과 합쳐 세금을 내거나 16.5퍼센트를 따로 내는 것 중에 골라야 해요. 그래서 한꺼번에보다 나눠 받는 쪽이 유리한 경우가 많습니다."
+          "voice": "다만 한 해에 연금으로 꺼내는 돈이 화면의 선을 넘으면, 다른 소득과 합쳐 세금을 내거나 16.5퍼센트를 따로 내는 것 중에 골라야 해요. 그래서 한꺼번에보다 나눠 받는 쪽이 유리한 경우가 많습니다.",
+          "big": "1,500만 원"
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean couple in their sixties sitting at a kitchen table with a cup of tea, the husband looking a little worried, warm morning light",
+          "voice": "꺼낼 때 하나 더 궁금한 게 건강보험료죠. 지금 기준으로는, 연금저축과 아이알피에서 받는 연금은 건보료 계산에 넣지 않아요."
+        },
+        {
+          "kind": "quote",
+          "heading": "건강보험료는?",
+          "text": "현재: 연금저축·IRP 연금은 {건보료 계산에서 빠짐}\n국민연금 같은 공적연금은 포함\n[정부가 부과를 검토 중 — 바뀔 수 있음]",
+          "cite": "국민건강보험공단 기준 · 이코노미스트(2026.11)·국민일보 보도",
+          "source": "출처: 국민건강보험공단 부과 기준 · 이코노미스트(2026.11) 등 보도",
+          "voice": "국민연금 같은 공적연금은 건보료 계산에 들어가지만, 스스로 모은 연금은 아직 빠져 있습니다. 다만 정부가 여기에도 건보료를 매기는 방안을 검토 중이라, 앞으로 바뀔 수 있다는 점은 알아 두세요."
         }
       ]
     },
@@ -640,7 +1002,12 @@
           "label": "쿠폰만 모은 금액",
           "note": "총급여 5,500만 원 이하 · 낼 세금 충분 가정 · 운용 수익 제외",
           "color": "green",
-          "voice": "52세부터 60세 전까지 8년 동안 매년 600만 원씩 넣는다고 해 볼게요. 1년 쿠폰이 99만 원이니, 8년이면 쿠폰만 800만 원 가까이 쌓여요. 운용 수익은 빼고요."
+          "voice": "52세부터 8년 동안, 해마다 연금저축 칸만 꽉 채운다고 해 볼게요. 1년에 한 번 받는 쿠폰이 여덟 번 쌓이면, 쿠폰만으로 화면의 금액이 모입니다. 운용 수익은 빼고요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a small tree growing out of a pile of gold coins, the coins at its roots multiplying, warm golden sunrise light",
+          "voice": "그리고 돌려받은 쿠폰을 그냥 쓰지 말고, 다음 해 계좌에 다시 넣어 보세요. 그 돈에 또 쿠폰이 붙으니, 쿠폰이 쿠폰을 낳는 셈이죠."
         },
         {
           "kind": "art",
@@ -651,6 +1018,43 @@
           "kind": "art",
           "image_prompt": "a small wooden boat tied safely at a harbor with a second boat heading out to sea at dawn, calm water, cinematic",
           "voice": "다만 은퇴가 가까울수록 해지 함정은 더 조심하세요. 은퇴 직후 몇 년 동안 쓸 돈은 따로 떼어 두고, 그다음 돈만 연금 계좌에 넣는 게 순서입니다."
+        }
+      ]
+    },
+    {
+      "title": "60대에 일하고 있다면",
+      "tag": "나이 제한은?",
+      "source": "출처: 소득세법(연금계좌세액공제·연금수령 요건) · 금융사 연금 안내",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his early sixties working as a building manager, smiling while holding a clipboard seen from the back, bright morning light",
+          "voice": "60대에도 일하고 계신 분이 많죠. 재취업을 했거나 가게를 하고 계시다면, 쿠폰은 나이와 상관없이 받을 수 있어요. 낼 세금만 있으면 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her early sixties at a small flower shop arranging flowers, cheerful expression, soft daylight",
+          "voice": "연금저축은 나이 제한 없이 가입할 수 있고, 아이알피는 소득이 있는 분이면 만들 수 있어요."
+        },
+        {
+          "kind": "number",
+          "heading": "61세에 처음 가입하면 (예시)",
+          "amount": 66,
+          "unit": "세",
+          "label": "연금으로 꺼낼 수 있는 나이",
+          "note": "만 55세 이후 + 가입 5년 경과 · 둘 다 필요",
+          "color": "navy",
+          "voice": "61세에 처음 넣었다면, 5년을 채운 뒤부터 연금으로 받을 수 있어요. 그 전에 꺼내면 중간 해지가 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his sixties tending a small vegetable garden on a sunny day, peaceful expression",
+          "voice": "그래서 60대라면 더더욱, 5년 안에 쓸 일이 없는 돈인지가 먼저예요. 받는 나이가 늦어질수록 세금은 더 가벼워지고요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her thirties visiting her parents' home, sitting together at the living room table talking warmly, soft afternoon light",
+          "voice": "부모님이 아직 일을 하고 계시다면, 이 내용을 한 번 알려 드리세요. 쿠폰은 계좌 주인의 세금에서 깎아 주는 거라, 부모님 본인 이름의 계좌여야 합니다."
         }
       ]
     },
@@ -679,30 +1083,35 @@
           "label": "추가 쿠폰 대상 (옮긴 돈의 10%)",
           "note": "만기 후 60일 안에 · 900만 원과 합쳐 최대 1,200만 원",
           "color": "orange",
-          "voice": "옮긴 돈의 10퍼센트, 최대 300만 원까지 쿠폰 대상이 늘어나요. 원래 900만 원과 합치면 1,200만 원까지 됩니다."
+          "voice": "옮긴 돈의 10분의 1만큼, 쿠폰 대상이 더 늘어나요. 최대 금액은 화면과 같습니다. 원래 한도에 이만큼이 얹히는 거죠."
         },
         {
           "kind": "art",
           "image_prompt": "a basket of fresh fruit left forgotten on a doorstep as evening falls, the fruit starting to wilt, melancholic light",
           "voice": "조건은 만기 후 60일 안에 옮기는 것. 이걸 모르고 만기 자금을 그냥 찾아 쓰면, 이 추가 쿠폰은 사라집니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her fifties at home putting a small sticky note on her refrigerator door, the note blank, bright kitchen light",
+          "voice": "아이에스에이 만기가 내년이라면, 지금부터 만기일을 적어 두세요. 60일은 생각보다 금방 지나갑니다."
         }
       ]
     },
     {
-      "title": "흔한 착각 3가지",
-      "tag": "착각 3",
+      "title": "흔한 착각 4가지",
+      "tag": "착각 4",
       "art_title": "흔한 [착각] 3가지",
       "art_en": "Three Common Mistakes",
       "scenes": [
         {
           "kind": "art",
           "image_prompt": "a foggy forest path splitting into three directions at dawn, a lone signpost without any writing, cinematic",
-          "voice": "이제 많은 분이 빠지는 착각 세 가지를 볼게요."
+          "voice": "이제 많은 분이 빠지는 착각 네 가지를 볼게요."
         },
         {
           "kind": "art",
           "image_prompt": "an overflowing glass of water on a table with water spilling onto the wood, close up, soft light",
-          "voice": "첫째, 많이 넣을수록 많이 돌려받는다. 아니에요. 쿠폰은 900만 원까지만 붙고, 내가 낼 세금보다 많이 돌려받을 수도 없어요."
+          "voice": "첫째, 많이 넣을수록 많이 돌려받는다. 아니에요. 쿠폰은 한도까지만 붙고, 내가 낼 세금보다 많이 돌려받을 수도 없어요."
         },
         {
           "kind": "art",
@@ -715,8 +1124,13 @@
           "voice": "셋째, 손해 볼 일은 없다. 이것도 아니에요. 계좌 안에서 고른 상품에 따라 원금이 줄어들 수도 있어요. 쿠폰은 세금 혜택이지, 원금 보장이 아닙니다."
         },
         {
+          "kind": "art",
+          "image_prompt": "a korean man in his fifties looking at an old photo album on a sofa, nostalgic expression, warm lamp light",
+          "voice": "넷째, 50대는 한도가 더 있다. 예전에 50세 이상에게 한도를 얹어 주던 시절이 3년 동안 있었어요. 지금은 없어졌고, 나이와 상관없이 모두 같은 한도입니다."
+        },
+        {
           "kind": "checklist",
-          "heading": "흔한 착각 3가지",
+          "heading": "흔한 착각 4가지",
           "items": [
             {
               "text": "많이 넣을수록 많이 돌려받는다",
@@ -729,21 +1143,25 @@
             {
               "text": "손해 볼 일은 없다",
               "mark": "x"
+            },
+            {
+              "text": "50대는 한도가 더 있다",
+              "mark": "x"
             }
           ],
-          "voice": "많이 넣는다고, 기다린다고, 무조건 이득은 아니라는 것. 이 세 가지만 기억하세요."
+          "voice": "많이 넣는다고, 회사에 맡긴다고, 나이가 많다고 무조건 이득은 아니라는 것. 이 네 가지만 기억하세요."
         }
       ]
     },
     {
-      "title": "올해 안에 할 4가지",
+      "title": "올해 안에 할 5가지",
       "tag": "체크리스트",
       "art_title": "올해 안에 [할 것]",
       "art_en": "Before December 31",
       "scenes": [
         {
           "kind": "checklist",
-          "heading": "올해 안에 할 4가지",
+          "heading": "올해 안에 할 5가지",
           "items": [
             {
               "text": "작년 원천징수영수증 결정세액 확인",
@@ -760,14 +1178,18 @@
             {
               "text": "12월 중순까지 입금",
               "right": "마감 여유"
+            },
+            {
+              "text": "넣어 둔 돈이 놀고 있지 않은지 확인",
+              "right": "상품 선택"
             }
           ],
-          "voice": "정리하면 올해 안에 할 일은 네 가지입니다. 첫째, 작년 원천징수영수증에서 내가 낸 세금 확인하기. 둘째, 올해 이미 넣은 금액을 보고 남은 한도 계산하기."
+          "voice": "정리하면 올해 안에 할 일은 다섯 가지입니다. 첫째, 작년 원천징수영수증에서 내가 낸 세금 확인하기. 둘째, 올해 이미 넣은 금액을 보고 남은 한도 계산하기."
         },
         {
           "kind": "art",
           "image_prompt": "a korean man in his fifties putting a small envelope into a wooden drawer, calm determined expression, warm home light",
-          "voice": "셋째, 몇 년 안에 쓸 돈은 빼고, 정말 노후까지 묶어 둘 수 있는 돈만 넣기. 넷째, 12월 31일이 아니라 12월 중순까지 입금하기."
+          "voice": "셋째, 몇 년 안에 쓸 돈은 빼고, 정말 노후까지 묶어 둘 수 있는 돈만 넣기. 넷째, 12월 31일이 아니라 12월 중순까지 입금하기. 다섯째, 이미 넣어 둔 돈이 계좌 안에서 놀고 있지 않은지 한 번 들여다보기."
         },
         {
           "kind": "art",
@@ -785,12 +1207,17 @@
         {
           "kind": "art",
           "image_prompt": "a golden coupon shaped ticket resting on a windowsill at sunrise with snow outside, warm hopeful light, no readable text",
-          "voice": "오늘 이야기를 쿠폰 하나로 정리할게요. 나라가 주는 16.5퍼센트 쿠폰. 유통기한은 12월 31일, 한도는 900만 원, 쓰는 곳은 55세 이후 연금."
+          "voice": "오늘 이야기를 쿠폰 하나로 정리할게요. 나라가 주는 6분의 1 쿠폰. 유통기한은 12월 31일, 한도는 1년 단위, 쓰는 곳은 55세 이후 연금."
         },
         {
           "kind": "art",
           "image_prompt": "an elderly korean couple having tea on a sunny balcony with plants, smiling at each other, warm morning light",
           "voice": "조건을 지키면 넣은 돈의 6분의 1이 돌아오는 쿠폰이고, 조건을 어기면 벌금이 되는 쿠폰입니다. 그래서 얼마를 넣느냐보다, 끝까지 묶어 둘 수 있는 돈인지가 먼저예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his fifties standing at a window on a winter evening looking at the first snow, hopeful calm expression, warm room light behind him",
+          "voice": "올해 쿠폰은 올해만 쓸 수 있어요. 이 영상을 보신 지금이, 남은 쿠폰을 확인하기 가장 좋은 때입니다."
         },
         {
           "kind": "art",

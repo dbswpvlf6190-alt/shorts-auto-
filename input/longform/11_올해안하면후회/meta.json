@@ -12,7 +12,7 @@
       "올해 안 하면",
       "[무조건 후회]"
     ],
-    "badge": "월급 받는 50대라면",
+    "badge": "월급 받는 분이라면",
     "art_prompt": "on the right third a korean man in his early sixties with short gray hair, rimless glasses, navy cardigan over a white shirt, head and shoulders, shocked expression with wide eyes and mouth slightly open, his whole head visible with space above it; on the left side a big glowing golden hourglass with gold coins instead of sand running out fast, a few coins spilling onto a dark table, dark room background with warm golden light",
     "shift_up": 0.06,
     "brightness": 1.08
@@ -29,7 +29,7 @@
   },
   "upload": {
     "title": "올해 안 하면 무조건 후회하는 것",
-    "hook": "월급 받는 50대라면 12월 31일 전에 꼭 해야 할 일이 하나 있습니다. 하면 내년 초 최대 148만 5천 원이 돌아오고, 안 하면 올해 몫은 다시 받을 수 없습니다.\n그런데 잘못 하면 돌려받은 돈보다 더 많은 세금을 토해낼 수도 있습니다.\n\n나라가 주는 연말 쿠폰의 조건 세 가지(유통기한·한도·쓰는 곳)와, 받은 쿠폰이 벌금으로 바뀌는 순간을 정리했습니다.",
+    "hook": "월급 받는 분이라면 12월 31일 전에 꼭 해야 할 일이 하나 있습니다. 하면 내년 초 최대 148만 5천 원이 돌아오고, 안 하면 올해 몫은 다시 받을 수 없습니다.\n그런데 잘못 하면 돌려받은 돈보다 더 많은 세금을 토해낼 수도 있습니다.\n\n나라가 주는 연말 쿠폰의 조건 세 가지(유통기한·한도·쓰는 곳)와, 받은 쿠폰이 벌금으로 바뀌는 순간을 정리했습니다.",
     "covers": [
       "나라가 주는 연말 쿠폰 — 넣은 돈의 6분의 1이 돌아온다",
       "나도 받을 수 있을까 — 이게 없으면 900만 원을 넣어도 0원",

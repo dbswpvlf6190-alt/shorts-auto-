@@ -119,6 +119,18 @@ def check(meta):
         E(f"훅(첫 장면 voice) {len(first)}자: 20자 이내(권장 15자)")
     elif len(first) > 15:
         W(f"훅 {len(first)}자: 15자 이내 권장")
+    # 2026-11-22 스튜디오 '계속 시청함' 분석: 혜택 단어 훅 20% vs 38%, 첫 그림 작은 물건 30% vs 건물·현장 40%
+    hook_text = first + " " + str(scenes[0].get("caption", ""))
+    good = sorted(set(re.findall(r"감면|보장|연장|공제|돌려받|돌려줘|환급|3분의 ?1|받는다", hook_text)))
+    if good:
+        W(f"훅에 혜택·좋은 소식 단어 {good} — 놓치면 생기는 손해로 뒤집을 것(예: '오피스텔도 취득세 감면?' → '오피스텔 샀는데 세금 더 냈다고요?')")
+    if scenes[0].get("kind") == "photo":
+        ip0 = str(scenes[0].get("image_prompt", "")).lower()
+        if re.search(r"\b(keys?|envelopes?|padlock|lock|magnifying|drawer|piggy|jar|coins?|box|boxes|pen|wax seal|mailbox|calculator|rings?)\b", ip0) and \
+                not re.search(r"\b(apartments?|buildings?|towers?|complex|skyline|construction|farmland|countryside|street)\b|house exterior", ip0):
+            W("첫 장면 그림이 작은 물건 — 주제의 실제 장소(아파트 단지·건물 외관·땅·공사장)로 바꿀 것")
+    else:
+        W("첫 장면이 photo가 아님 — 첫 장면은 실제 장소 사진 + 훅 자막 권장")
     if not 250 <= total <= 380:
         E(f"voice 총 {total}자: 250~380자여야 함(약 30~40초)")
     if photo > n / 2 + 0.5:

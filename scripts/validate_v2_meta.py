@@ -86,9 +86,9 @@ def check(meta):
                     W(f"{p}: image_prompt는 ', no text'로 끝내는 것을 권장(빌더가 자동으로 붙임)")
                 if re.search(r"[가-힣]", ip):
                     E(f"{p}: image_prompt는 영어여야 함")
-                scrub = re.sub(r"no (text|signs?|logos?|people|words)", "", low)
+                scrub = re.sub(r"\bno (text|signs?|logos?|people|words)\b", "", low)
                 for bad in BANNED_IMG:
-                    if re.search(rf"{bad}", scrub):
+                    if re.search(rf"\b{bad}\b", scrub):
                         E(f"{p}: image_prompt에 금지 소재 '{bad}' (얼굴·손·간판·문서·지폐·달력 등은 가짜 글자/기형 발생)")
         if kind == "big" and not sc.get("big"):
             E(f"{p}: big 누락")

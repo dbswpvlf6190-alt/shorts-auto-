@@ -6,7 +6,7 @@
 - 썸네일 v7: A "자녀에게 주기 전에 / 모르면 [세금 폭탄]"(선물 상자 폭발 + 놀란 진행자), B "\"그냥 보냈는데\" / 세금에 [벌금]까지?"(빨간 도장 봉투 + 걱정하는 진행자). 답은 숨김.
 
 ## 그림 일정 (무료 한도 = 최근 24시간 약 80장, 쇼츠와 공유)
-- 11/22 11:4x: 첫 55장 pregen(`--max-new 55`) — 11/23 08:00 쇼츠 몫을 남기려고 제한.
-- 11/23 12시 이후: 나머지 약 34장 pregen(`python scripts/pregen_longform_art.py --meta input/longform/12_자녀증여세금폭탄/meta.json --out-dir ~/ShortsAutoRender/longform/12_자녀증여세금폭탄`).
+- 11/22 11:40~11:45: 31장 만들고 한도(썸네일 2장이 FLUX.2 dev라 한 장이 klein 약 20장 몫을 씀). 남은 58장.
+- 11/23 11:50: 데스크톱 1회용 작업 스케줄러 'Longform12Render'(`output/run_longform12.py`, git 제외)가 남은 그림 → 렌더까지 하고 ntfy로 알림. 업로드는 안 함. 수동으로 할 때:(`python scripts/pregen_longform_art.py --meta input/longform/12_자녀증여세금폭탄/meta.json --out-dir ~/ShortsAutoRender/longform/12_자녀증여세금폭탄`).
 - 11/24~25: 렌더 → 검수(자막·장 제목·가짜 글자) → 사장님 확인(완성본·썸네일 A/B·제목·설명) → 예약 11/27 18:00.
 - 예고 쇼츠: 11/28(토) 11시대(not_before 2026-11-28, 롱폼 링크가 열린 뒤). 첫 장면 규칙(손실 훅·실제 장소) 적용.

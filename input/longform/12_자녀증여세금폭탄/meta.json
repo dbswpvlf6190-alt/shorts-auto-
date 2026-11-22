@@ -1,0 +1,1660 @@
+{
+  "format": "long",
+  "rate": "+30%",
+  "voice_style": "M1",
+  "field": "realestate",
+  "script_version": "v3 (11/22 사장님 '1번 가자' — 연말 증여, v5 구조·숫자는 카드/목소리는 비유·11/22 첫 장면 손실형)",
+  "privacy": "private",
+  "fact_check": "2026-11-22 확인. [증여재산공제] 상증법 제53조: 배우자 6억, 직계존속→수증자 5천만(미성년 2천만), 직계비속 5천만, 기타친족 1천만, 10년 누적·증여자 그룹별(직계존속은 배우자 포함 그룹). [혼인·출산] 제53조의2: 혼인신고일 전후 2년, 출생·입양일부터 2년, 합산 1억, 직계존속 전체 1억, 2024.1.1 이후 증여분. [10년 합산] 제47조②: 증여일 전 10년 이내 동일인(직계존속이면 그 배우자 포함) 증여 합계 1천만 이상이면 합산. 날짜 기준. [세율] 1억 이하 10%, 5억 이하 20%(누진공제 1천만), 10억 이하 30%(6천만), 30억 이하 40%(1.6억), 초과 50%(4.6억). [예시] 성인 자녀 2억(10년 내 첫 증여): 과표 1.5억 → 1.5억×20%-1천만=2,000만, 신고세액공제 3% → 1,940만. [신고] 증여일이 속한 달 말일부터 3개월(국세청), 신고세액공제 3%(2019년 이후). 무신고 가산세 20%(부정 40%), 과소 10%. 납부지연가산세 1일 0.022%(국세기본법 47조의4) → 1년 약 8.0%, 3년(1,095일) 약 24.1%. [예시] 무신고 3년 뒤: 2,000만 + 400만 + 2,000만×0.022%×1,095≈482만 → 약 2,882만(신고 1,940만 대비 약 1.49배 → '만 원이 만 오천 원 가까이'). 기한후신고 시 무신고가산세 감면(국세기본법 48조②, 1개월 50%·3개월 30%·6개월 20%). [차용] 상증법 41조의4·시행령 31조의4: 적정이자율 4.6%, 차이 1년 1천만 원 미만은 과세 제외, 1년마다 재계산. 2억×4.6%=920만(제외), 3억×4.6%=1,380만(과세). 무이자 한계 약 2억 1,739만. 가족 간 대여는 계약서·이자·상환 기록으로 입증. [생활비] 상증법 46조5호 비과세(사회통념상 생활비·교육비 등), 시행령 35조④ 생활비·교육비 명목으로 받아 예·적금, 주식, 토지·주택 매입 등에 쓰면 비과세 아님. [취득세] 무상취득 주택 기본 3.5%, 조정대상지역 공시가 3억 이상 주택 증여 12%(1세대1주택자가 배우자·직계존비속에게 증여 시 3.5% 예외, 지방세법 13조의2). 2025.10.15 대책: 서울 25개구 전역+경기 12곳 조정대상지역(10.16 고시). '만 원어치 집에 350원', 12%는 약 3.4배('거의 네 배'). [이월과세] 소득세법 97조의2: 배우자·직계존비속에게 증여받은 부동산 2023.1.1 이후 증여분 10년(이전 5년) 내 양도 시 증여자 취득가액 적용, 비교과세, 1세대1주택 비과세 등 예외. [세대생략] 상증법 57조: 산출세액의 30% 가산, 미성년자·20억 초과 40%, 대습증여 제외. [개편] 상속세 유산취득세 전환은 논의 중·미확정(2026-11 기준) → 숫자 언급 안 함. 2026 세제개편안(정부안)의 증여 관련 항목은 넣지 않음. [보강] 분납: 납부세액 1천만 원 초과 시 2개월 내 분할(상증법 70조②), 연부연납: 2천만 원 초과·세무서 허가·최장 5년(국세청 2026.9 Q&A). 평가: 시가 원칙(상증법 60조), 평가기간 증여일 전 6개월~후 3개월(시행령 49조), 아파트는 유사매매사례가액. 기한후신고 감면: 1개월 50%·3개월 30%·6개월 20%, 경정 통지 후 제외, 납부지연가산세는 감면 대상 아님(국세기본법 48조②). 직계비속(자녀→부모) 증여재산공제 5천만(상증법 53조2호). 손주 1억(미성년): 과표 8천만×10%=800만, ×1.3=1,040만, 신고 3% 공제 → 약 1,009만('약 1,000만 원'). 자녀 주택 수 증가 → 1세대1주택 비과세 판단에 영향(일반 원칙). [보강2] 금액별(성인 자녀, 10년 첫 증여, 신고 3%): 1억 → 과표 5천만×10%=500만→485만(약 5%), 2억 → 1,940만(약 10%), 3억 → 과표 2.5억×20%-1천만=4,000만→3,880만(약 13%). 생활비 비과세는 피부양자 대상: 자력 있는(소득 있는) 성인 자녀의 생활비 대납은 증여로 볼 수 있음(상증법 46조5호 '피부양자'). 배우자 6억(상증법 53조1호), 부부 간 부동산 증여도 이월과세 10년. [보강3] 10년 날짜 예시: 2016.12.20 5천만 → 2026.12.15 5천만이면 합산 1억(공제 5천)→과표 5천×10%=500만→485만, 2026.12.21이면 10년 경과(증여일 전 10년 이내 아님)로 합산 제외·새 공제 5천→0원. 증여 취득세 과세표준은 시가인정액(2023.1.1~, 지방세법 10조의2): 시세 5억 → 3.5% 1,750만 / 12% 6,000만(차이 4,250만). 지방교육세 등 부가세는 제외한 표면세율 기준. 1억 한 번(485만) vs 10년 간격 5천×2(0원). 세대생략 할증 예외: 대습(자녀 사망) 상증법 57조 단서. [보강4] 혼인·출산 공제는 직계존속 전체 합산 평생 1억(53조의2③). 금전 무상대여 1년 단위 재계산(41조의4②). 상속 시 사전증여 합산: 상속개시일 전 10년 이내 상속인에게 증여한 재산 합산(상증법 13조) — '상속 정리할 때 다시 확인'으로만 표현.",
+  "thumbnail": {
+    "style": "v7",
+    "lines": [
+      "자녀에게 주기 전에",
+      "모르면 [세금 폭탄]"
+    ],
+    "art_prompt": "on the right third a korean man in his early sixties with short gray hair, rimless glasses, navy cardigan over a white shirt, head and shoulders, shocked expression with wide eyes and mouth slightly open, his whole head visible with space above it; on the left side a beautifully wrapped gift box bursting open with red smoke and sparks like a small explosion on a dark table, dark room background with warm golden and red light",
+    "shift_up": 0.06,
+    "brightness": 1.08
+  },
+  "thumbnail_b": {
+    "style": "v7",
+    "lines": [
+      "\"그냥 보냈는데\"",
+      "세금에 [벌금]까지?"
+    ],
+    "art_prompt": "on the right third a korean man in his early sixties with short gray hair, rimless glasses, navy cardigan over a white shirt, head and shoulders, worried expression looking down at a smartphone in his hand, his whole head visible with space above it; on the left side a young man's hand holding an opened white envelope with a red stamp, a stack of gold coins beside it on a dark wooden table, dark living room with warm lamp light",
+    "shift_up": 0.06,
+    "brightness": 1.08
+  },
+  "upload": {
+    "title": "자녀에게 돈 주기 전에 모르면 세금 폭탄 맞는 것",
+    "hook": "아들 집 살 때 보태 준 2억 원, 그냥 계좌로 보냈다면 몇 년 뒤 세금과 벌금이 한꺼번에 날아올 수 있습니다.\n같은 2억 원인데 어떻게 주느냐에 따라 세금이 0원에 가까워지기도, 몇천만 원이 되기도 합니다.\n\n세금 없이 줄 수 있는 '그릇'의 크기, 10년을 날짜로 세는 이유, 결혼·출산 1억, 빌려준 돈이 인정받는 조건, 집으로 줄 때 따로 따져야 할 두 가지까지 정리했습니다.",
+    "covers": [
+      "증여세는 누가 낼까 — 고지서는 부모가 아니라 자녀에게 간다",
+      "세금 없는 그릇 — 사위 이름으로 보내면 5분의 1로 줄어드는 이유",
+      "아빠 5천, 엄마 5천이면 1억? — 그릇은 하나다",
+      "10년은 날짜로 센다 — 며칠 차이로 그릇이 바뀐다",
+      "결혼·출산이면 1억 더 — 기한을 넘기면 사라지는 그릇",
+      "세율은 계단 — 2억을 받으면 얼마를 낼까",
+      "언제 주는 게 유리할까 — 그릇을 세 번 쓰는 법",
+      "신고 안 하고 3년 — 만 원이 만 오천 원이 되는 과정",
+      "신고는 이렇게 — 세금이 크게 나와도 나눠 낼 수 있다",
+      "빌려준 돈으로 인정받는 조건 — 종이보다 계좌 기록",
+      "생활비는 괜찮다? — 모아 두면 증여가 되는 순간",
+      "집으로 줄 때 — 서울 다주택자 취득세 12%, 그리고 10년",
+      "부부 사이는 6억 — 그래도 10년 규칙은 똑같다",
+      "손주에게 바로 주면 30% 더 — 그래도 하는 이유",
+      "네 가족의 연말 — 같은 마음, 다른 결과",
+      "흔한 착각 5가지",
+      "주고 나서 후회하지 않으려면 — 세금보다 먼저 정할 세 가지",
+      "주기 전에 할 5가지"
+    ],
+    "as_of": "2026년 11월 22일 (현행 상속세 및 증여세법 기준)",
+    "sources": [
+      "상속세 및 증여세법 제47조·제53조·제53조의2·제56조·제57조·제41조의4·제46조",
+      "국세청 증여세 안내(신고납부기한·가산세)",
+      "국세기본법 제47조의2·제47조의4·제48조",
+      "지방세법 제13조의2",
+      "소득세법 제97조의2",
+      "국토교통부 10·15 주택시장 안정화 대책(2025)"
+    ],
+    "comment_question": "자녀나 손주에게 돈을 줄 계획이 있으신가요? 예전에 줬는데 신고를 안 한 돈이 있다면 상황을 남겨 주세요.",
+    "hashtags": [
+      "#증여세",
+      "#증여",
+      "#자녀증여",
+      "#증여세면제한도",
+      "#혼인증여공제",
+      "#상속세",
+      "#절세",
+      "#부동산증여",
+      "#취득세",
+      "#5060",
+      "#도장찍기전에"
+    ],
+    "tags": [
+      "증여세",
+      "자녀 증여",
+      "증여세 면제 한도",
+      "증여재산공제",
+      "혼인 출산 증여공제",
+      "증여세 10년 합산",
+      "증여세 신고기한",
+      "증여세 가산세",
+      "부모 자녀 차용증",
+      "가족 간 차용 이자",
+      "생활비 증여세",
+      "부동산 증여 취득세",
+      "증여 이월과세",
+      "세대생략 할증",
+      "손주 증여",
+      "상속세",
+      "절세",
+      "도장찍기전에"
+    ],
+    "publish_slot": "18:00 KST"
+  },
+  "chapters": [
+    {
+      "title": "인트로",
+      "tag": "주기 전에",
+      "art_title": "주기 전에 [모르면]",
+      "art_en": "Before You Give",
+      "source": "출처: 상속세 및 증여세법 · 국세청 증여세 안내",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a korean couple in their sixties at a bank counter, the husband signing a transfer slip for their son, the slip facing away from camera, warm afternoon light",
+          "voice": "아들이 집을 살 때 2억 원을 보태 주셨나요? 그냥 계좌로 보냈다면, 몇 년 뒤 세금과 벌금이 한꺼번에 날아올 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two identical gift boxes on a dark wooden table, one glowing warm gold and the other wrapped in red warning light, dramatic contrast",
+          "voice": "같은 2억 원인데, 어떻게 주느냐에 따라 세금이 0원에 가까워지기도 하고, 몇천만 원이 되기도 해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old wooden desk at night with a stack of family bank passbooks and reading glasses, a desk lamp casting a warm circle of light",
+          "voice": "얼마까지는 세금 없이 줄 수 있는지, 언제 줘야 덜 내는지, 그리고 부모님들이 가장 많이 하는 실수가 뭔지 차례로 보겠습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a desk calendar showing december with one date circled in red, the numbers blurred and unreadable, a cup of tea beside it, warm lamp light",
+          "voice": "특히 올해 12월에 주실 계획이라면 끝까지 보세요. 날짜 하나로 결과가 달라집니다."
+        },
+        {
+          "kind": "quote",
+          "heading": "오늘 영상의 기준",
+          "text": "{2026년 11월} 현행 세법 기준\n사례 금액은 [이해를 돕는 가정]\n개인 상황은 세무서·세무사 확인",
+          "cite": "상속세 및 증여세법 · 국세청",
+          "voice": "오늘 내용은 2026년 11월 현행 세법 기준이고, 사례에 나오는 금액은 이해를 돕기 위한 가정이에요. 내 상황에 딱 맞는 계산은 세무서나 세무사에게 꼭 확인하세요."
+        }
+      ]
+    },
+    {
+      "title": "증여세, 누가 내나",
+      "tag": "누가 내나",
+      "art_title": "세금은 [받는 사람]이",
+      "art_en": "Who Pays the Gift Tax",
+      "source": "출처: 상속세 및 증여세법 제4조의2 · 국세청",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a young korean man in his thirties opening a tax notice envelope at a small apartment table, surprised expression, cold morning light",
+          "voice": "먼저 많이들 헷갈리시는 것부터요. 증여세는 주는 부모님이 아니라, 받는 자녀가 냅니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "증여세는 누가 낼까",
+          "left": {
+            "title": "주는 사람",
+            "lines": [
+              "부모님",
+              "원칙적으로 [세금 없음]"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "받는 사람",
+            "lines": [
+              "자녀",
+              "{신고·납부 의무}"
+            ],
+            "color": "red"
+          },
+          "voice": "돈을 준 쪽이 아니라 받은 쪽이 신고하고 세금을 내는 구조예요. 그래서 부모님이 잘 몰라서 그냥 주시면, 나중에 고지서는 자녀에게 갑니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her sixties looking worried at a phone call at home, the phone held to her ear, soft window light",
+          "voice": "자녀가 세금을 못 내면, 준 부모님이 대신 내야 하는 경우도 있어요. 결국 가족 전체의 돈이 새는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a modern government tax office building exterior in seoul on a clear day, wide angle, no people",
+          "voice": "그럼 국세청은 가족끼리 준 돈을 어떻게 알까요? 특히 집을 살 때는 그 돈이 어디서 왔는지 자금 출처를 확인합니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "가족 돈이 드러나는 순간",
+          "cards": [
+            {
+              "title": "집 살 때",
+              "body": "자금 조달 계획·자금 출처",
+              "color": "red"
+            },
+            {
+              "title": "큰 예금·투자",
+              "body": "소득에 비해 큰 자산",
+              "color": "orange"
+            },
+            {
+              "title": "상속할 때",
+              "body": "10년 안에 준 돈 다시 확인",
+              "color": "navy"
+            }
+          ],
+          "voice": "특히 이런 때 드러나요. 자녀가 집을 살 때, 소득에 비해 큰 자산이 생겼을 때, 그리고 나중에 부모님이 돌아가셔서 상속을 정리할 때예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young korean couple signing a home purchase contract at a real estate office, the papers facing away from camera, bright daylight",
+          "voice": "자녀가 집을 사면서 부모님께 받은 돈을 썼다면, 그 기록이 남아요. 그래서 '현금으로 줬으니 모를 거야'는 통하지 않는 경우가 많습니다."
+        }
+      ]
+    },
+    {
+      "title": "세금 없이 줄 수 있는 한도",
+      "tag": "한도는?",
+      "art_title": "세금 없는 [그릇]",
+      "art_en": "The Tax-Free Bowl",
+      "source": "출처: 상속세 및 증여세법 제53조(증여재산 공제)",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a large empty ceramic bowl on a wooden table being filled with gold coins from above, soft warm light, cinematic close up",
+          "voice": "나라는 가족끼리 주고받는 돈에 세금 없는 그릇을 하나 줘요. 이 그릇 안에 들어가는 만큼은 세금이 없습니다."
+        },
+        {
+          "kind": "number",
+          "heading": "성인 자녀가 부모에게 받을 때",
+          "amount": 5000,
+          "unit": "만 원",
+          "label": "10년 동안 세금 없는 한도",
+          "note": "미성년 자녀는 2,000만 원",
+          "color": "green",
+          "voice": "성인 자녀라면 10년 동안 이만큼까지는 세금이 없어요. 미성년 자녀는 그릇이 더 작습니다."
+        },
+        {
+          "kind": "checklist",
+          "heading": "누구에게 받느냐에 따라 (10년 기준)",
+          "items": [
+            {
+              "text": "배우자",
+              "right": "6억 원",
+              "right_color": "green"
+            },
+            {
+              "text": "부모·조부모 → 성인 자녀",
+              "right": "5,000만 원",
+              "right_color": "green"
+            },
+            {
+              "text": "부모·조부모 → 미성년 자녀",
+              "right": "2,000만 원",
+              "right_color": "orange"
+            },
+            {
+              "text": "자녀 → 부모",
+              "right": "5,000만 원",
+              "right_color": "green"
+            },
+            {
+              "text": "사위·며느리 등 기타 친족",
+              "right": "1,000만 원",
+              "right_color": "red"
+            }
+          ],
+          "voice": "그릇의 크기는 누구에게 받느냐에 따라 달라요. 부부 사이가 가장 크고, 사위나 며느리처럼 피가 섞이지 않은 가족은 가장 작습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean family of three generations sitting around a dining table at a holiday dinner, seen from a distance, warm festive light",
+          "voice": "반대로 자녀가 부모님께 드리는 돈도 같은 그릇이 있어요. 성인 자녀가 부모님께 드릴 때도 10년에 같은 크기의 그릇이 생깁니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older korean woman receiving a red envelope from her adult son at the front door during a holiday, both smiling, soft daylight",
+          "voice": "명절에 드리는 용돈처럼 그때그때 쓰시는 돈은 문제없지만, 큰돈을 부모님 통장에 몰아 드리면 이 그릇을 따져 봐야 해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean wedding hall entrance with flowers, an older couple walking toward it seen from behind, soft daylight",
+          "voice": "여기서 실수가 많이 나와요. 딸 대신 사위 이름으로 보내면, 그릇이 다섯 분의 일로 줄어듭니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean grandmother and grandfather in their seventies smiling on a sofa, seen from the side, warm afternoon light",
+          "voice": "그리고 이 그릇은 사람마다 따로가 아니에요. 아버지, 어머니, 할아버지, 할머니가 모두 같은 그릇 하나를 나눠 씁니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "그릇은 몇 개일까",
+          "left": {
+            "title": "흔한 생각",
+            "lines": [
+              "아빠 5천",
+              "엄마 5천",
+              "[합쳐서 1억]"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "실제 규칙",
+            "lines": [
+              "부모·조부모 전부",
+              "{합쳐서 5천}",
+              "10년 동안"
+            ],
+            "color": "green"
+          },
+          "voice": "아빠가 5천, 엄마가 5천을 주면 1억까지 괜찮을 거라고 생각하기 쉬운데요, 부모님과 조부모님을 모두 합쳐서 하나의 그릇입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a glass bowl already half filled with coins on a dark table and more coins about to overflow its rim, dramatic side light",
+          "voice": "그래서 예전에 할머니가 손주 대학 등록금 하라고 큰돈을 주셨다면, 그릇이 이미 일부 차 있을 수 있어요."
+        }
+      ]
+    },
+    {
+      "title": "10년, 날짜로 센다",
+      "tag": "10년",
+      "art_title": "10년은 [날짜]로",
+      "art_en": "Ten Years, Counted by Date",
+      "source": "출처: 상속세 및 증여세법 제47조 · 국세청 증여세 안내",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an old wall calendar flipping pages in a dim room with a beam of light, pages flying, cinematic",
+          "voice": "이 그릇은 10년마다 비워져요. 그런데 이 10년을 해가 바뀌는 걸로 세면 안 됩니다."
+        },
+        {
+          "kind": "timeline",
+          "heading": "10년은 증여한 날짜 기준",
+          "points": [
+            {
+              "date": "2016년 12월 20일",
+              "label": "첫 증여",
+              "color": "navy"
+            },
+            {
+              "date": "2026년 12월 20일",
+              "label": "여기까지는 [같은 그릇]",
+              "color": "red",
+              "active": true
+            },
+            {
+              "date": "2026년 12월 21일 이후",
+              "label": "{새 그릇}",
+              "color": "green"
+            }
+          ],
+          "voice": "기준은 증여한 날짜예요. 10년 전 12월 20일에 줬다면, 올해 12월 20일까지는 아직 같은 그릇이고, 그 다음 날부터 새 그릇이 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a man's hand holding an old bank passbook open under a desk lamp, the pages blurred and unreadable, warm light",
+          "voice": "그래서 연말에 주실 계획이라면, 10년 전 이맘때 준 돈이 있었는지 통장 기록부터 찾아보세요. 며칠 차이로 그릇이 바뀝니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "10년 전 12월 20일에 5,000만 원을 줬다면 (예시)",
+          "left": {
+            "title": "올해 12월 15일에 또 5,000만 원",
+            "lines": [
+              "같은 그릇 → 합쳐 1억",
+              "[넘친 5,000만 원에 세금]",
+              "약 485만 원"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "올해 12월 21일에 주면",
+            "lines": [
+              "{새 그릇}",
+              "세금 0원"
+            ],
+            "color": "green"
+          },
+          "voice": "10년 전 12월 20일에 한 번 줬다면, 올해 12월 15일에 주면 세금이 붙고, 12월 21일에 주면 세금이 없어요. 단 6일 차이입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a stack of gold coins slowly growing taller on a dark table, time lapse feeling, warm spotlight",
+          "voice": "10년 안에 같은 사람에게 여러 번 받은 돈은 모두 더해서 계산해요. 이번에 받은 돈만 보는 게 아닙니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "합쳐서 계산하는 기준",
+          "cards": [
+            {
+              "title": "같은 사람",
+              "body": "아버지와 어머니는 한 사람으로",
+              "color": "navy"
+            },
+            {
+              "title": "10년 안",
+              "body": "증여한 날짜부터 거꾸로",
+              "color": "orange"
+            },
+            {
+              "title": "1,000만 원 이상",
+              "body": "합친 금액이 넘으면 더한다",
+              "color": "red"
+            }
+          ],
+          "voice": "세금을 계산할 때는 아버지와 어머니를 한 사람으로 봐요. 10년 안에 받은 돈을 더해서, 더 높은 계단의 세율이 붙을 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a man walking up a dim stone staircase that gets steeper toward the top, dramatic light from above, cinematic",
+          "voice": "조금씩 나눠 주면 괜찮겠지 하시는데요, 10년 안에 나눠 준 건 결국 한 번에 준 것과 똑같이 계산됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her sixties writing a family money note in a small diary at a desk, the page blurred, soft window light",
+          "voice": "그래서 저는 가족 증여 장부를 하나 만들어 두시길 권해요. 언제, 누구에게, 얼마를 줬는지 한 줄씩만 적어 두면 10년 계산이 쉬워집니다."
+        }
+      ]
+    },
+    {
+      "title": "결혼·출산이면 1억 더",
+      "tag": "결혼하면",
+      "art_title": "결혼하면 [1억] 더",
+      "art_en": "Marriage and Birth Bonus",
+      "source": "출처: 상속세 및 증여세법 제53조의2(혼인·출산 증여재산 공제)",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a young korean bride and groom holding hands outside a wedding hall, seen from behind, soft spring sunlight",
+          "voice": "그런데 그릇이 하나 더 생기는 때가 있어요. 자녀가 결혼하거나 아이를 낳을 때입니다."
+        },
+        {
+          "kind": "number",
+          "heading": "혼인·출산 증여재산 공제",
+          "amount": 1,
+          "unit": "억 원",
+          "label": "기본 그릇과 별도로 하나 더",
+          "note": "2024년 1월 1일 이후 증여분부터 · 평생 합쳐 1억",
+          "color": "green",
+          "voice": "기본 그릇과는 따로, 이만큼짜리 그릇을 하나 더 줘요. 2024년부터 새로 생긴 제도입니다."
+        },
+        {
+          "kind": "timeline",
+          "heading": "언제 받아야 할까",
+          "points": [
+            {
+              "date": "혼인신고 2년 전",
+              "label": "여기부터",
+              "color": "navy"
+            },
+            {
+              "date": "혼인신고일",
+              "label": "결혼",
+              "color": "green",
+              "active": true
+            },
+            {
+              "date": "혼인신고 2년 후",
+              "label": "여기까지",
+              "color": "red"
+            }
+          ],
+          "voice": "결혼은 혼인신고한 날을 기준으로 앞뒤 2년 안에 받아야 하고, 출산은 아이가 태어난 날부터 2년 안이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean couple in their thirties holding a newborn baby wrapped in a white blanket by a window, soft morning light, faces turned toward the baby",
+          "voice": "결혼하면서 한 번, 아이를 낳으면서 또 한 번 받을 수 있을 것 같지만, 둘을 합쳐서 평생 이만큼이 끝이에요."
+        },
+        {
+          "kind": "compare",
+          "heading": "결혼 그릇도 하나뿐",
+          "left": {
+            "title": "흔한 생각",
+            "lines": [
+              "부모님 1억",
+              "할머니 1억",
+              "[합쳐 2억]"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "실제 규칙",
+            "lines": [
+              "부모·조부모 전부",
+              "결혼·출산 합쳐",
+              "{평생 1억}"
+            ],
+            "color": "green"
+          },
+          "voice": "부모님이 1억, 할머니가 또 1억을 주시면 두 그릇일 것 같지만, 결혼 그릇도 집안 어른들 전부 합쳐서 하나예요."
+        },
+        {
+          "kind": "compare",
+          "heading": "결혼하는 성인 자녀라면",
+          "left": {
+            "title": "기본 그릇",
+            "lines": [
+              "10년 5,000만 원"
+            ],
+            "color": "navy"
+          },
+          "right": {
+            "title": "결혼 그릇",
+            "lines": [
+              "평생 1억 원",
+              "{합치면 1억 5천만 원}"
+            ],
+            "color": "green"
+          },
+          "voice": "그래서 결혼하는 성인 자녀라면, 기본 그릇과 결혼 그릇을 합쳐 꽤 큰 금액을 세금 없이 받을 수 있어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an old couple at a dining table counting days on a small desk calendar with a pen, the calendar out of focus, warm lamp light",
+          "voice": "주의할 점은 기한이에요. 결혼한 지 2년이 넘어서 주시면 이 그릇은 사라집니다. 자녀가 결혼한 날짜부터 확인해 보세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a quiet korean apartment living room at dusk with an empty sofa and a framed wedding photo on the shelf turned slightly away, warm light",
+          "voice": "그리고 이 그릇도 부모님과 조부모님이 함께 나눠 씁니다. 할머니가 먼저 쓰셨다면 부모님 몫은 그만큼 줄어요."
+        }
+      ]
+    },
+    {
+      "title": "세율은 계단처럼",
+      "tag": "얼마나",
+      "art_title": "세율은 [계단]",
+      "art_en": "The Tax Staircase",
+      "source": "출처: 상속세 및 증여세법 제56조·제26조(세율)",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a dramatic stone staircase in a dark hall with five clearly separated flights, each lit brighter toward the top, cinematic wide shot",
+          "voice": "그릇을 넘친 돈에는 세금이 붙어요. 세율은 계단처럼 올라갑니다. 넘친 돈이 많을수록 위쪽 계단이 더 비싸요."
+        },
+        {
+          "kind": "checklist",
+          "heading": "증여세 세율 (그릇을 넘친 금액 기준)",
+          "items": [
+            {
+              "text": "1억 원 이하",
+              "right": "10%",
+              "right_color": "green"
+            },
+            {
+              "text": "1억 ~ 5억 원",
+              "right": "20%",
+              "right_color": "orange"
+            },
+            {
+              "text": "5억 ~ 10억 원",
+              "right": "30%",
+              "right_color": "orange"
+            },
+            {
+              "text": "10억 ~ 30억 원",
+              "right": "40%",
+              "right_color": "red"
+            },
+            {
+              "text": "30억 원 초과",
+              "right": "50%",
+              "right_color": "red"
+            }
+          ],
+          "voice": "첫 계단은 만 원을 넘치면 천 원, 그 다음 계단은 이천 원, 맨 위 계단은 오천 원이에요. 넘친 금액 전체가 아니라, 계단마다 따로 계산합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his thirties at a desk at night calculating on a calculator with a worried look, the calculator display not visible, warm lamp",
+          "voice": "예를 들어 볼게요. 성인 아들이 10년 만에 처음으로 2억 원을 받았다고 해 볼게요."
+        },
+        {
+          "kind": "cards",
+          "heading": "2억 원을 받으면 (예시)",
+          "cards": [
+            {
+              "title": "그릇",
+              "body": "5,000만 원은 세금 없음",
+              "color": "green"
+            },
+            {
+              "title": "넘친 돈",
+              "body": "1억 5,000만 원",
+              "color": "orange"
+            },
+            {
+              "title": "세금",
+              "body": "약 2,000만 원",
+              "color": "red"
+            }
+          ],
+          "voice": "그릇만큼은 빼고, 넘친 돈에 계단 세율을 붙이면 세금은 이 정도가 나와요. 받은 돈의 10분의 1 정도입니다."
+        },
+        {
+          "kind": "checklist",
+          "heading": "성인 자녀가 처음 받을 때 세금 (기한 안 신고, 예시)",
+          "items": [
+            {
+              "text": "5,000만 원",
+              "right": "0원",
+              "right_color": "green"
+            },
+            {
+              "text": "1억 원",
+              "right": "약 485만 원",
+              "right_color": "orange"
+            },
+            {
+              "text": "2억 원",
+              "right": "약 1,940만 원",
+              "right_color": "orange"
+            },
+            {
+              "text": "3억 원",
+              "right": "약 3,880만 원",
+              "right_color": "red"
+            }
+          ],
+          "voice": "금액을 바꿔 보면 계단이 보여요. 만 원을 받았을 때 세금이 1억이면 약 500원, 2억이면 약 천 원, 3억이면 약 천삼백 원으로 점점 무거워집니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a man carrying an increasingly heavy sack of coins up a staircase, each step darker, dramatic chiaroscuro lighting",
+          "voice": "그래서 큰돈을 한 번에 주는 것보다, 그릇을 여러 번 쓰도록 나눠 주는 게 유리한 경우가 많아요. 그 방법은 조금 뒤에 볼게요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a pile of gold coins on a table with a small portion being swept away by a hand into shadow, dramatic light",
+          "voice": "2억 원을 받아서 10분의 1을 세금으로 내는 거죠. 그런데 이게 끝이 아니에요. 신고를 했느냐 안 했느냐에 따라 이 금액이 또 달라집니다."
+        }
+      ]
+    },
+    {
+      "title": "언제 주는 게 유리할까",
+      "tag": "언제?",
+      "art_title": "그릇은 [10년마다]",
+      "art_en": "Timing the Gift",
+      "source": "출처: 상속세 및 증여세법 제47조·제53조 (사례 금액은 가정)",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a row of five empty ceramic bowls on a long wooden table, each slightly larger and lit by a separate beam of light, cinematic",
+          "voice": "그릇이 10년마다 새로 생긴다는 건, 일찍 시작할수록 그릇을 여러 번 쓸 수 있다는 뜻이에요."
+        },
+        {
+          "kind": "timeline",
+          "heading": "같은 자녀, 그릇을 세 번 쓰면 (예시)",
+          "points": [
+            {
+              "date": "자녀 20세",
+              "label": "첫 그릇",
+              "color": "green"
+            },
+            {
+              "date": "30세",
+              "label": "두 번째 그릇",
+              "color": "green"
+            },
+            {
+              "date": "40세",
+              "label": "세 번째 그릇",
+              "color": "green",
+              "active": true
+            }
+          ],
+          "voice": "자녀가 스무 살일 때 한 번, 서른에 한 번, 마흔에 한 번. 같은 금액을 한 번에 주는 것보다 세 번에 나눠 그릇을 다 쓰면 세금이 크게 줄어요."
+        },
+        {
+          "kind": "compare",
+          "heading": "1억 원을 주는 두 가지 방법 (예시)",
+          "left": {
+            "title": "한 번에 1억",
+            "lines": [
+              "그릇 5,000만 원",
+              "[약 485만 원]"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "10년 간격으로 5,000만 원씩 두 번",
+            "lines": [
+              "그릇 두 번 사용",
+              "{0원}"
+            ],
+            "color": "green"
+          },
+          "voice": "같은 1억 원도 한 번에 주면 세금이 붙고, 10년 간격으로 나눠 주면 그릇을 두 번 써서 세금이 없어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young tree being planted in a garden by an older man's hands, then a tall tree in the background, symbolic, soft morning light",
+          "voice": "어릴 때 미리 주는 돈은 그 자체로 불어나기도 하죠. 불어난 부분은 자녀의 돈이라 나중에 다시 세금이 붙지 않습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his sixties in a hospital corridor looking out a window, contemplative, soft natural light",
+          "voice": "반대로 미루기만 하다 보면, 결국 한꺼번에 상속으로 넘어가요. 그때는 그릇을 나눠 쓸 기회가 없습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a seoul apartment complex under a gray cloudy sky in late autumn, wide shot, subdued tones",
+          "voice": "집으로 주실 때는 시세도 봐야 해요. 세금은 준 날의 집값으로 계산하니까, 같은 집이라도 값이 낮을 때 주면 세금이 줄어듭니다."
+        },
+        {
+          "kind": "quote",
+          "heading": "집값은 무엇으로 볼까",
+          "text": "원칙은 {시가}\n아파트는 [같은 단지 비슷한 집 거래가]\n증여일 전 6개월 ~ 후 3개월 거래",
+          "cite": "상속세 및 증여세법 제60조 · 시행령 제49조",
+          "voice": "아파트는 같은 단지에서 비슷한 집이 얼마에 팔렸는지를 봐요. 준 날 앞뒤로 몇 달 사이의 거래가 기준이 됩니다."
+        }
+      ]
+    },
+    {
+      "title": "신고 안 하면 생기는 일",
+      "tag": "신고 안 하면",
+      "art_title": "신고 안 하면 [벌금]",
+      "art_en": "When You Don't Report",
+      "source": "출처: 상속세 및 증여세법 제68조·제69조 · 국세기본법 제47조의2·제47조의4",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a white envelope with a red stamp sliding under an apartment door into a dark hallway, dramatic light from the gap",
+          "voice": "증여세는 받은 사람이 스스로 신고하는 세금이에요. 기한이 있습니다."
+        },
+        {
+          "kind": "timeline",
+          "heading": "신고 기한",
+          "points": [
+            {
+              "date": "증여한 날",
+              "label": "예: 12월 10일",
+              "color": "navy"
+            },
+            {
+              "date": "그 달 말일",
+              "label": "12월 31일",
+              "color": "orange"
+            },
+            {
+              "date": "3개월 뒤 말일",
+              "label": "[다음 해 3월 31일까지]",
+              "color": "red",
+              "active": true
+            }
+          ],
+          "voice": "증여한 달의 마지막 날부터 3개월 안에 신고해야 해요. 12월에 줬다면 내년 3월 말까지입니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "기한 안에 신고하면 vs 안 하면",
+          "left": {
+            "title": "기한 안에 신고",
+            "lines": [
+              "세금에서 {3% 할인}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "신고 안 함",
+            "lines": [
+              "무신고 가산세 [20%]",
+              "늦은 날마다 [이자]"
+            ],
+            "color": "red"
+          },
+          "voice": "기한 안에 신고하면 세금을 조금 깎아 줘요. 반대로 신고를 안 하면, 세금에 벌금이 붙고, 늦은 날만큼 이자까지 붙습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his thirties sitting on the edge of a bed holding a letter with both hands, head lowered, dim morning light",
+          "voice": "아까 2억 원 사례로 다시 볼게요. 3년 뒤에 국세청이 알게 됐다고 해 볼게요."
+        },
+        {
+          "kind": "compare",
+          "heading": "같은 2억 원, 3년 뒤 (예시)",
+          "left": {
+            "title": "기한 안에 신고",
+            "lines": [
+              "약 1,940만 원"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "신고 안 하고 들킴",
+            "lines": [
+              "본세 2,000만 원",
+              "+ 가산세 약 400만 원",
+              "+ 지연 이자 약 480만 원",
+              "[약 2,880만 원]"
+            ],
+            "color": "red"
+          },
+          "voice": "같은 돈인데, 만 원 낼 걸 만 오천 원 가까이 내게 되는 셈이에요. 시간이 길어질수록 이자는 계속 쌓입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an hourglass with gold sand running out on a dark wooden desk next to a stack of papers, cinematic close up",
+          "voice": "늦게 낸 이자는 하루하루 붙어요. 1년이면 세금의 약 8퍼센트, 3년이면 4분의 1 가까이가 됩니다."
+        },
+        {
+          "kind": "checklist",
+          "heading": "기한이 지났다면 — 빨리 낼수록 벌금 할인",
+          "items": [
+            {
+              "text": "기한 후 1개월 안에 신고",
+              "right": "벌금 50% 할인",
+              "right_color": "green"
+            },
+            {
+              "text": "3개월 안에 신고",
+              "right": "30% 할인",
+              "right_color": "green"
+            },
+            {
+              "text": "6개월 안에 신고",
+              "right": "20% 할인",
+              "right_color": "orange"
+            },
+            {
+              "text": "6개월이 지나면",
+              "right": "할인 없음",
+              "right_color": "red"
+            }
+          ],
+          "voice": "이미 기한을 놓쳤다면, 빨리 스스로 신고할수록 벌금을 깎아 줘요. 다만 6개월이 지나면 그 할인은 없어지고, 세무서에서 먼저 연락이 온 뒤에는 할인이 안 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his thirties at night typing on a laptop at a kitchen table, relieved expression, the screen facing away, warm lamp",
+          "voice": "그래도 늦게라도 신고하면 하루하루 붙는 이자는 그날부터 멈춰요. 모른 척 기다리는 것보다는 언제나 낫습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calm korean woman in her fifties at a home desk with a laptop open, the screen facing away from the camera, bright daylight",
+          "voice": "그리고 하나 더. 그릇 안의 금액이라 세금이 0원이어도, 신고해 두면 나중에 자녀가 집을 살 때 이 돈의 출처를 설명하기가 훨씬 쉬워요."
+        },
+        {
+          "kind": "quote",
+          "heading": "세금이 0원이어도",
+          "text": "그릇 안이면 신고 의무는 없지만\n{신고 기록}이 [자금 출처 증빙]이 된다",
+          "cite": "국세청 증여세 안내 · 홈택스 신고",
+          "voice": "세금이 없으면 꼭 신고해야 하는 건 아니에요. 하지만 신고 기록은 나중에 이 돈이 어디서 왔는지 보여 주는 영수증 역할을 합니다."
+        }
+      ]
+    },
+    {
+      "title": "신고는 이렇게",
+      "tag": "신고 방법",
+      "art_title": "신고는 [이렇게]",
+      "art_en": "How to Report It",
+      "source": "출처: 국세청 홈택스 증여세 신고 안내 · 상속세 및 증여세법 제70조·제71조",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a bright modern korean living room with a laptop on a coffee table and a cup of tea, the screen facing away, morning sunlight",
+          "voice": "신고는 생각보다 어렵지 않아요. 받은 자녀가 홈택스에서 직접 할 수 있습니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "신고할 때 필요한 것",
+          "cards": [
+            {
+              "title": "언제",
+              "body": "돈이 들어온 날짜",
+              "color": "navy"
+            },
+            {
+              "title": "누가",
+              "body": "주는 사람과의 관계",
+              "color": "orange"
+            },
+            {
+              "title": "얼마",
+              "body": "현금은 이체 금액 그대로",
+              "color": "green"
+            }
+          ],
+          "voice": "언제, 누구에게서, 얼마를 받았는지 세 가지가 핵심이에요. 현금은 이체한 기록이 곧 증거가 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his thirties sitting on a sofa at night with a laptop, nodding with a small smile, the screen facing away, warm lamp",
+          "voice": "세금이 0원인 그릇 안의 금액도 똑같이 신고할 수 있어요. 오 분이면 끝나는 일이 나중에 몇 년치 증빙이 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young korean woman in her thirties at a bank window receiving a printed account statement, seen from behind, bright clean interior",
+          "voice": "현금은 은행 이체로 주시는 게 가장 깔끔해요. 봉투에 현금으로 주시면, 나중에 언제 얼마였는지 증명하기가 오히려 어렵습니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "세금이 크게 나왔다면",
+          "left": {
+            "title": "1,000만 원 넘으면",
+            "lines": [
+              "두 번에 나눠 내기",
+              "2개월 안에"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "2,000만 원 넘으면",
+            "lines": [
+              "세무서 허가 받아",
+              "{최대 5년} 나눠 내기"
+            ],
+            "color": "navy"
+          },
+          "voice": "세금이 크게 나와도 한 번에 다 낼 필요는 없어요. 금액에 따라 두 번에 나눠 내거나, 허가를 받아 몇 년에 걸쳐 나눠 낼 수도 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a calm korean couple in their sixties sitting at a tax consultant's desk, the consultant's face out of frame, documents facing away, soft office light",
+          "voice": "집이나 땅처럼 금액이 크거나 복잡한 경우에는, 신고 전에 세무사와 한 번 상의하시는 걸 권해요. 상담 비용보다 아끼는 세금이 훨씬 큰 경우가 많습니다."
+        }
+      ]
+    },
+    {
+      "title": "준 돈 vs 빌려준 돈",
+      "tag": "빌려준 거면",
+      "art_title": "빌려준 건 [증거]로",
+      "art_en": "A Loan Needs Proof",
+      "source": "출처: 상속세 및 증여세법 제41조의4 · 시행령 제31조의4",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "two hands shaking over a kitchen table between an older man and a younger man, faces out of frame, warm evening light",
+          "voice": "'주는 게 아니라 빌려주는 거면 괜찮지 않나요?' 많이 받는 질문이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a quiet tax office meeting room with two empty chairs and a closed folder on the table, cold daylight",
+          "voice": "가족끼리 빌려줬다고 하면, 세무서는 일단 준 돈으로 봐요. 진짜 빌려준 거라는 걸 가족이 증명해야 합니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "빌려준 돈으로 인정받으려면",
+          "cards": [
+            {
+              "title": "차용증",
+              "body": "금액·이자·갚는 날짜",
+              "color": "navy"
+            },
+            {
+              "title": "이자",
+              "body": "실제로 계좌로 주고받기",
+              "color": "orange"
+            },
+            {
+              "title": "원금 상환",
+              "body": "조금씩이라도 갚은 기록",
+              "color": "green"
+            }
+          ],
+          "voice": "종이 한 장만으로는 부족해요. 이자를 실제로 주고받고, 원금을 조금씩이라도 갚은 기록이 계좌에 남아 있어야 합니다."
+        },
+        {
+          "kind": "number",
+          "heading": "세법이 보는 이자율",
+          "amount": 4.6,
+          "unit": "%",
+          "label": "만 원 빌리면 1년에 460원",
+          "note": "이 이자보다 덜 받은 차이가 1년 1,000만 원 이상이면 그 차이를 증여로 봄",
+          "color": "orange",
+          "voice": "이자는 세법이 정한 기준이 있어요. 만 원을 빌리면 1년에 460원 정도는 받아야 한다고 봅니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "이자 없이 빌려주면 (예시)",
+          "left": {
+            "title": "2억 원",
+            "lines": [
+              "덜 받은 이자 920만 원",
+              "{1,000만 원 미만 → 증여세 없음}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "3억 원",
+            "lines": [
+              "덜 받은 이자 1,380만 원",
+              "[그 차이에 증여세]"
+            ],
+            "color": "red"
+          },
+          "voice": "그래서 이자 없이 빌려줘도, 금액이 일정 선 아래면 덜 받은 이자에는 세금이 없어요. 대략 2억 원을 조금 넘는 정도가 그 선입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his thirties transferring money on a phone at a cafe table, the screen facing away, natural daylight",
+          "voice": "이자를 아예 안 받는 게 불안하시면, 조금이라도 받으세요. 세법 기준보다 낮게 받아도, 덜 받은 차이가 일정 선 아래면 세금이 없습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a desk calendar with a small red circle drawn on one date each month, blurred numbers, warm light, shallow depth of field",
+          "voice": "중요한 건 매달 같은 날, 같은 계좌로 꾸준히 주고받는 거예요. 이 반복이 빌려준 돈이라는 가장 강한 증거가 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a man's hand writing in a small notebook at a kitchen table under a pendant lamp, the page blurred, warm light",
+          "voice": "다만 이건 이자에 대한 이야기예요. 원금을 갚지 않고 그냥 두면, 결국 원금 자체를 준 돈으로 볼 수 있습니다. 갚는 기록이 핵심이에요."
+        },
+        {
+          "kind": "timeline",
+          "heading": "이자 계산은 1년마다 새로",
+          "points": [
+            {
+              "date": "빌려준 날",
+              "label": "첫 1년 계산",
+              "color": "navy"
+            },
+            {
+              "date": "1년 뒤",
+              "label": "다시 새로 빌린 것으로 계산",
+              "color": "orange",
+              "active": true
+            },
+            {
+              "date": "2년 뒤",
+              "label": "또 다시 계산",
+              "color": "orange"
+            }
+          ],
+          "voice": "그리고 이 계산은 1년마다 새로 해요. 몇 년째 빌려주고 있다면, 해마다 같은 선을 넘는지 다시 보셔야 합니다."
+        }
+      ]
+    },
+    {
+      "title": "생활비·교육비는 괜찮을까",
+      "tag": "생활비는?",
+      "art_title": "생활비는 [괜찮다]?",
+      "art_en": "Living Costs and Tuition",
+      "source": "출처: 상속세 및 증여세법 제46조 · 시행령 제35조",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a korean mother in her fifties handing a lunch box to her college student daughter at the front door, morning light, both smiling",
+          "voice": "그럼 자녀에게 주는 용돈, 학비, 생활비도 전부 증여일까요? 다행히 그건 아니에요."
+        },
+        {
+          "kind": "compare",
+          "heading": "세금이 없는 돈 vs 있는 돈",
+          "left": {
+            "title": "세금 없음",
+            "lines": [
+              "그때그때 쓰는 생활비",
+              "학비·병원비",
+              "사회통념상 범위"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "세금 있음",
+            "lines": [
+              "생활비로 받아 [적금·주식]",
+              "[집·땅 사는 데] 사용",
+              "한꺼번에 몇 년치"
+            ],
+            "color": "red"
+          },
+          "voice": "필요할 때 그때그때 쓰는 생활비와 학비는 세금이 없어요. 그런데 그 돈을 모아서 적금을 들거나, 주식이나 집을 사는 데 쓰면 증여가 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a glass jar slowly filling with coins on a windowsill over many days, light changing from morning to evening, symbolic",
+          "voice": "생활비라는 이름으로 매달 보내 주신 돈이 자녀 통장에 고스란히 쌓여 있다면, 그건 생활비가 아니라 모아 준 돈으로 봐요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean grandfather walking with his grandson to a school gate in autumn, seen from behind, warm sunlight",
+          "voice": "손주 학비도 마찬가지예요. 학교에 직접 내주시면 문제가 적지만, 큰돈을 손주 통장에 넣어 두시면 이야기가 달라집니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "같은 생활비라도",
+          "left": {
+            "title": "부양이 필요한 자녀",
+            "lines": [
+              "학생·소득 없음",
+              "{생활비 비과세}"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "스스로 벌고 있는 자녀",
+            "lines": [
+              "직장·소득 있음",
+              "[생활비도 증여로 볼 수 있음]"
+            ],
+            "color": "red"
+          },
+          "voice": "생활비가 비과세인 건 부양이 필요한 가족일 때예요. 이미 돈을 잘 벌고 있는 자녀의 카드값이나 월세를 계속 대신 내주시면, 그것도 증여로 볼 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young korean professional woman in her thirties paying at a cafe counter with a card, seen from behind, bright daylight",
+          "voice": "직장 다니는 자녀에게 매달 보내 주시는 돈이 있다면, 그 돈이 어디에 쓰이는지 한 번 생각해 보세요."
+        }
+      ]
+    },
+    {
+      "title": "집으로 줄 때",
+      "tag": "집이라면",
+      "art_title": "집은 [두 번] 따져야",
+      "art_en": "When the Gift Is a Home",
+      "source": "출처: 지방세법 제13조의2 · 소득세법 제97조의2 · 국토교통부 10·15 대책",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a seoul apartment complex at golden hour with warm lights in windows, wide establishing shot",
+          "voice": "현금이 아니라 집을 물려주시는 경우도 많죠. 집은 증여세 말고도 두 가지를 더 따져야 합니다."
+        },
+        {
+          "kind": "number",
+          "heading": "집을 증여받을 때 취득세 (기본)",
+          "amount": 3.5,
+          "unit": "%",
+          "label": "만 원어치 집이면 350원",
+          "note": "조정대상지역 · 공시가격 3억 원 이상 · 다주택자가 주면 12%",
+          "color": "orange",
+          "voice": "첫째는 취득세예요. 집을 받는 자녀가 내는데, 보통은 만 원어치 집에 350원 정도입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a dense seoul cityscape at dusk under heavy clouds, many apartment towers, a shadow passing over the city, cinematic",
+          "voice": "그런데 집이 여러 채인 부모님이 규제지역에 있는 공시가격 3억 원 넘는 집을 주시면, 이게 거의 네 배로 뜁니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "시세 5억 원 집을 자녀에게 줄 때 취득세 (예시)",
+          "left": {
+            "title": "기본 세율",
+            "lines": [
+              "3.5%",
+              "약 1,750만 원"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "서울 다주택자가 주면",
+            "lines": [
+              "[12%]",
+              "약 6,000만 원"
+            ],
+            "color": "red"
+          },
+          "voice": "만 원어치 집에 350원이던 취득세가 1,200원이 되는 거예요. 같은 집인데 세금이 4천만 원 넘게 차이 납니다."
+        },
+        {
+          "kind": "quote",
+          "heading": "2025년 10·15 대책 이후",
+          "text": "{서울 25개 구 전체}가 조정대상지역\n다주택자 증여 → 취득세 [12%]\n1세대 1주택자가 주면 3.5%",
+          "cite": "국토교통부 10·15 주택시장 안정화 대책 · 지방세법",
+          "voice": "작년 10월 대책 이후 서울은 전부 규제지역이 됐어요. 그래서 서울 집을 가진 다주택 부모님이라면 취득세부터 확인하셔야 합니다. 집이 한 채뿐인 부모님이 주실 때는 기본 세율이에요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an empty apartment with moving boxes and a set of keys on the floor, afternoon light through bare windows",
+          "voice": "둘째는 나중에 팔 때예요. 증여받은 집을 10년 안에 팔면, 자녀가 받은 가격이 아니라 부모님이 처음 산 가격으로 양도세를 계산합니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "받은 집을 언제 파느냐 (2023년 이후 증여분)",
+          "left": {
+            "title": "10년 안에 팔면",
+            "lines": [
+              "부모님이 [처음 산 가격] 기준",
+              "양도세 크게 늘 수 있음"
+            ],
+            "color": "red"
+          },
+          "right": {
+            "title": "10년 지나서 팔면",
+            "lines": [
+              "{증여받은 가격} 기준"
+            ],
+            "color": "green"
+          },
+          "voice": "부모님의 오래된 영수증으로 계산한다고 생각하시면 돼요. 그래서 받은 집을 금방 팔 계획이라면, 증여로 세금을 줄이려던 계산이 거꾸로 될 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older korean couple standing on the balcony of their apartment looking out at the city at sunset, seen from behind",
+          "voice": "예전엔 이 기간이 5년이었는데, 2023년부터 받은 집은 10년으로 늘었어요. 옛날 이야기만 듣고 결정하시면 안 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two apartment buildings side by side at dusk, one with lights turning off and the other with lights turning on, symbolic, cinematic",
+          "voice": "하나 더 있어요. 집을 받으면 자녀의 집이 한 채 늘어요. 자녀가 이미 집이 있다면, 2주택이 돼서 나중에 팔 때 세금 혜택이 사라질 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young korean couple in their thirties looking at their own small apartment from the street at night, seen from behind",
+          "voice": "그래서 집을 주시기 전에는, 받는 자녀가 지금 집이 몇 채인지, 앞으로 어떻게 할 건지 같이 이야기해 보셔야 해요."
+        }
+      ]
+    },
+    {
+      "title": "부부 사이는 6억",
+      "tag": "부부라면",
+      "art_title": "부부는 [6억]",
+      "art_en": "Between Spouses",
+      "source": "출처: 상속세 및 증여세법 제53조 · 소득세법 제97조의2",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an older korean couple holding hands at a kitchen table in the morning, close up on their hands with wedding rings, soft light",
+          "voice": "부부 사이는 그릇이 가장 커요. 10년에 6억 원까지는 세금이 없습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an apartment building at dusk with exactly one window glowing in two halves of different warm colors, symbolic",
+          "voice": "그래서 남편 이름으로만 된 집을 아내와 반씩 나누는 경우가 많아요. 나중에 세금을 계산할 때 한 사람에게 몰리지 않게 하려는 거죠."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her sixties at a government office counter submitting papers, seen from behind, bright interior",
+          "voice": "다만 부부 사이에도 신고는 해야 하고, 집이라면 받는 사람이 취득세를 내요. 세금이 0원이라고 비용이 0원인 건 아닙니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean man looking at a 'for sale' style empty apartment from outside, no signs or text visible, autumn evening",
+          "voice": "그리고 아까 본 10년 규칙은 부부 사이에도 똑같아요. 아내에게 준 집을 아내가 10년 안에 팔면, 남편이 처음 산 가격으로 다시 계산합니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a quiet riverside at sunset with two benches side by side, calm water reflecting orange light, no people",
+          "voice": "부부 사이 증여는 세금을 줄이려는 목적보다, 두 분의 노후를 어떻게 나눌지부터 정하고 하시는 게 순서예요."
+        }
+      ]
+    },
+    {
+      "title": "손주에게 바로 주면",
+      "tag": "손주에게",
+      "art_title": "손주에게 주면 [30%] 더",
+      "art_en": "Skipping a Generation",
+      "source": "출처: 상속세 및 증여세법 제57조(세대를 건너뛴 증여)",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a korean grandmother knitting by a window while her young grandchild sleeps on the sofa, soft afternoon light",
+          "voice": "자녀를 건너뛰고 손주에게 바로 주시는 분도 늘고 있어요. 이때는 세금이 더 붙습니다."
+        },
+        {
+          "kind": "number",
+          "heading": "세대를 건너뛴 증여",
+          "amount": 30,
+          "unit": "%",
+          "label": "계산된 세금에 더 붙는 비율",
+          "note": "미성년 손주가 20억 원 넘게 받으면 40%",
+          "color": "red",
+          "voice": "계산된 세금에, 만 원이면 3천 원이 더 붙는다고 보시면 돼요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "two paths in an autumn forest, one longer winding road and one shorter steep path, viewed from above, golden light",
+          "voice": "그런데도 이렇게 하시는 이유가 있어요. 자녀에게 줬다가 나중에 자녀가 다시 손주에게 주면 세금을 두 번 내야 하잖아요. 한 번에 건너뛰면 한 번만 냅니다."
+        },
+        {
+          "kind": "quote",
+          "heading": "할증이 없는 경우",
+          "text": "손주의 부모(자녀)가 [먼저 세상을 떠나]\n손주가 대신 받는 경우는\n{할증 없음}",
+          "cite": "상속세 및 증여세법 제57조 단서",
+          "voice": "예외도 있어요. 손주의 부모, 그러니까 자녀가 먼저 세상을 떠나서 손주가 대신 받는 경우에는 더 붙는 세금이 없습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a small child's savings piggy bank on a desk beside a stack of picture books, warm lamp light, shallow depth of field",
+          "voice": "다만 손주가 미성년자면 그릇이 작아서 금방 넘쳐요. 그리고 그 돈으로 손주가 크게 쓸 일이 생길 때까지 기다릴 수 있는지도 같이 보셔야 합니다."
+        },
+        {
+          "kind": "compare",
+          "heading": "손주에게 1억 원 (미성년, 예시)",
+          "left": {
+            "title": "그릇",
+            "lines": [
+              "2,000만 원"
+            ],
+            "color": "green"
+          },
+          "right": {
+            "title": "세금",
+            "lines": [
+              "넘친 8,000만 원에 10%",
+              "+ [30% 더]",
+              "약 1,000만 원"
+            ],
+            "color": "red"
+          },
+          "voice": "미성년 손주에게 1억 원을 주시면, 그릇을 넘친 돈에 세금이 붙고 거기에 30퍼센트가 더 얹혀요. 받은 돈의 10분의 1 정도가 세금입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a grandfather and his adult son talking on a porch of a countryside house in autumn, seen from a distance, warm sunset",
+          "voice": "그래서 손주에게 주실 때는, 자녀에게 주는 것과 손주에게 주는 것 둘 다 계산해 보고 비교해 보시는 게 좋아요."
+        }
+      ]
+    },
+    {
+      "title": "네 가족의 연말",
+      "tag": "사례",
+      "art_title": "네 가족의 [연말]",
+      "art_en": "Four Families, One December",
+      "source": "출처: 상속세 및 증여세법 · 국세청 (사례 금액은 가정)",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a korean father in his sixties and his daughter in her late twenties looking at wedding invitations at a cafe table, warm light, faces in profile",
+          "voice": "이제 네 가족을 볼게요. 먼저 김 씨 부부예요. 내년 봄 결혼하는 딸에게 1억 5천만 원을 주려고 합니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "김 씨: 결혼하는 딸에게 1억 5천만 원",
+          "cards": [
+            {
+              "title": "기본 그릇",
+              "body": "5,000만 원",
+              "color": "green"
+            },
+            {
+              "title": "결혼 그릇",
+              "body": "1억 원",
+              "color": "green"
+            },
+            {
+              "title": "세금",
+              "body": "{0원} (기한 안 신고)",
+              "color": "navy"
+            }
+          ],
+          "voice": "딸이 10년 안에 받은 돈이 없다면, 두 그릇을 합쳐 세금이 없어요. 혼인신고 전후 2년 안에 주고, 신고해서 기록을 남기면 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young korean couple at a district office counter submitting a marriage registration form, seen from behind, bright interior",
+          "voice": "김 씨가 꼭 확인할 건 날짜예요. 딸이 혼인신고를 언제 했는지, 아니면 언제 할 예정인지에 따라 결혼 그릇을 쓸 수 있는 기간이 정해집니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his sixties staring at his phone in a dark living room, the screen facing away, the light from the phone on his worried face",
+          "voice": "두 번째 박 씨예요. 3년 전 아들이 집을 살 때 2억 원을 그냥 보내 줬고, 신고는 하지 않았어요."
+        },
+        {
+          "kind": "cards",
+          "heading": "박 씨: 3년 전 2억 원, 신고 안 함",
+          "cards": [
+            {
+              "title": "그릇",
+              "body": "5,000만 원",
+              "color": "green"
+            },
+            {
+              "title": "세금",
+              "body": "약 2,000만 원",
+              "color": "orange"
+            },
+            {
+              "title": "벌금·이자",
+              "body": "[약 880만 원 더]",
+              "color": "red"
+            }
+          ],
+          "voice": "앞에서 본 것처럼 세금에 벌금과 이자가 얹혀요. 3년이 지나서 벌금 할인은 없지만, 지금이라도 신고하면 이자가 더 쌓이는 건 막을 수 있습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her late fifties and her son in his thirties sitting together at a dining table reviewing a notebook, warm evening light",
+          "voice": "세 번째 이 씨는 아들에게 2억 원을 빌려줬어요. 차용증을 쓰고, 매달 이자를 받고, 1년에 한 번씩 원금도 조금씩 받고 있죠."
+        },
+        {
+          "kind": "cards",
+          "heading": "이 씨: 2억 원을 빌려줌",
+          "cards": [
+            {
+              "title": "차용증",
+              "body": "작성",
+              "color": "green"
+            },
+            {
+              "title": "이자·상환",
+              "body": "계좌 기록 있음",
+              "color": "green"
+            },
+            {
+              "title": "결과",
+              "body": "{빌려준 돈으로 인정 가능성 높음}",
+              "color": "navy"
+            }
+          ],
+          "voice": "기록이 다 남아 있으니 빌려준 돈으로 인정받을 가능성이 높아요. 핵심은 종이보다 계좌 기록입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean man handing a small envelope to his teenage grandson at the front door of a house, both smiling, autumn daylight",
+          "voice": "마지막 최 씨 할아버지예요. 손주 통장에 매년 수백만 원씩 넣어 주셨어요. 학비가 아니라 그냥 모아 두라고요."
+        },
+        {
+          "kind": "cards",
+          "heading": "최 씨: 손주 통장에 매년 적립",
+          "cards": [
+            {
+              "title": "10년 합계",
+              "body": "그릇(2,000만 원)을 넘기면",
+              "color": "orange"
+            },
+            {
+              "title": "세금",
+              "body": "넘친 돈에 세율",
+              "color": "red"
+            },
+            {
+              "title": "그리고",
+              "body": "[30% 더]",
+              "color": "red"
+            }
+          ],
+          "voice": "모아 둔 돈은 생활비가 아니라 증여예요. 그릇을 넘치면 세금이 붙고, 할아버지가 바로 준 거라 30퍼센트가 더 붙습니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "four different korean homes at night seen from outside, each window glowing warmly, a quiet residential street",
+          "voice": "네 가족 모두 자녀를 위해 주신 돈이에요. 그런데 결과는 이렇게 다릅니다. 차이는 금액이 아니라 순서와 기록이었어요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older korean couple and their adult children laughing together at a kitchen table on a winter evening, seen from a distance, warm light",
+          "voice": "똑같은 마음으로 주신 돈이 세금으로 새지 않으려면, 금액보다 먼저 순서를 정하고, 그 순서를 기록으로 남겨 두시면 됩니다."
+        }
+      ]
+    },
+    {
+      "title": "흔한 착각 5가지",
+      "tag": "착각",
+      "art_title": "흔한 [착각] 5가지",
+      "art_en": "Four Common Myths",
+      "source": "출처: 상속세 및 증여세법 · 국세청 증여세 안내",
+      "scenes": [
+        {
+          "kind": "checklist",
+          "heading": "부모님들이 가장 많이 하는 착각 5가지",
+          "items": [
+            {
+              "text": "조금씩 나눠 보내면 괜찮다",
+              "right": "10년 합산",
+              "right_color": "red"
+            },
+            {
+              "text": "현금으로 주면 모른다",
+              "right": "자금 출처 확인",
+              "right_color": "red"
+            },
+            {
+              "text": "엄마 아빠 따로 5천씩",
+              "right": "합쳐서 한 그릇",
+              "right_color": "red"
+            },
+            {
+              "text": "부부는 6억이니 다 괜찮다",
+              "right": "팔 때 10년",
+              "right_color": "red"
+            },
+            {
+              "text": "그릇 안이면 아무것도 안 해도 된다",
+              "right": "기록이 증빙",
+              "right_color": "orange"
+            }
+          ],
+          "voice": "정리하면 이 다섯 가지예요. 하나씩 짧게 다시 볼게요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a man dropping coins one by one into a tall glass jar on a dark table, the jar nearly full, dramatic side light",
+          "voice": "첫째, 조금씩 나눠 보내면 괜찮다. 10년 안에 보낸 건 모두 더해서 봅니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a closed metal safe in a dim room with a beam of light falling on it, cinematic",
+          "voice": "둘째, 현금으로 주면 모른다. 그 돈이 집이나 큰 자산으로 바뀌는 순간, 어디서 왔는지 물어봅니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a single ceramic bowl on a table with two pairs of hands, an older man's and woman's, both pouring coins into it, warm light, faces out of frame",
+          "voice": "셋째, 아빠 엄마가 따로따로 주면 두 배. 부모님과 조부모님은 하나의 그릇을 나눠 씁니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older korean couple walking on a riverside path at sunset, seen from behind, peaceful",
+          "voice": "넷째, 부부 사이는 그릇이 크니 다 괜찮다. 그릇은 크지만, 받은 집을 10년 안에 팔면 처음 산 가격으로 양도세를 다시 계산해요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a neatly organized folder of family documents on a desk next to a pair of reading glasses, the papers blurred, warm lamp light",
+          "voice": "다섯째, 그릇 안이니까 아무것도 안 해도 된다. 세금은 없어도, 신고하거나 기록을 남겨 두면 나중에 자녀가 집을 살 때 큰 도움이 됩니다."
+        }
+      ]
+    },
+    {
+      "title": "주고 나서 후회하지 않으려면",
+      "tag": "주기 전에",
+      "art_title": "노후가 [먼저]",
+      "art_en": "Your Retirement Comes First",
+      "source": "출처: 상속세 및 증여세법 · 국세청 (일반 안내)",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "an elderly korean couple in their seventies counting a small amount of money at a kitchen table in a modest home, worried expression, dim light",
+          "voice": "세금보다 먼저 생각하셔야 할 게 있어요. 주고 나면 그 돈은 자녀의 돈이 됩니다. 다시 돌려받기가 쉽지 않아요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean man in his sixties sitting alone on a park bench in winter, breath visible in the cold air, seen from the side",
+          "voice": "자녀를 돕고 싶은 마음에 노후 자금까지 다 주셨다가, 나중에 병원비나 생활비가 모자라서 힘들어지시는 분들이 적지 않습니다."
+        },
+        {
+          "kind": "cards",
+          "heading": "주기 전에 먼저 정할 것",
+          "cards": [
+            {
+              "title": "내 노후",
+              "body": "앞으로 쓸 돈부터 남기기",
+              "color": "navy"
+            },
+            {
+              "title": "형제 사이",
+              "body": "누구에게 얼마, 미리 이야기",
+              "color": "orange"
+            },
+            {
+              "title": "기록",
+              "body": "언제 누구에게 얼마",
+              "color": "green"
+            }
+          ],
+          "voice": "내 노후에 쓸 돈을 먼저 남기고, 자녀가 여럿이라면 형제 사이에 서운함이 없도록 미리 이야기하고, 그리고 기록을 남기는 것. 이 세 가지가 먼저예요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an adult brother and sister in their thirties talking seriously at a cafe table, faces in soft focus, warm afternoon light",
+          "voice": "형제 중 한 명에게만 몰래 준 돈은, 나중에 부모님이 안 계실 때 가족 사이의 다툼이 되기도 해요. 세금보다 더 큰 비용입니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a multi-generation korean family taking a walk together in a park in autumn, seen from behind, golden light",
+          "voice": "결국 증여는 숫자보다 순서예요. 내 노후, 가족의 합의, 그리고 세금. 이 순서로 정하시면 후회할 일이 줄어듭니다."
+        }
+      ]
+    },
+    {
+      "title": "주기 전에 할 5가지",
+      "tag": "할 일",
+      "art_title": "주기 전에 할 [5가지]",
+      "art_en": "Five Things Before You Give",
+      "source": "출처: 상속세 및 증여세법 · 국세청 홈택스",
+      "scenes": [
+        {
+          "kind": "checklist",
+          "heading": "주기 전에 할 5가지",
+          "items": [
+            {
+              "text": "지난 10년 준 돈, 통장으로 확인",
+              "right": "날짜까지"
+            },
+            {
+              "text": "결혼·출산 2년 기한 확인",
+              "right": "1억 더"
+            },
+            {
+              "text": "받는 사람 이름 확인",
+              "right": "사위·며느리 X"
+            },
+            {
+              "text": "줬다면 3개월 안에 신고",
+              "right": "3% 할인"
+            },
+            {
+              "text": "빌려주면 이자·상환 기록",
+              "right": "계좌로"
+            }
+          ],
+          "voice": "주시기 전에 이 다섯 가지만 확인하세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean woman in her sixties looking through old bank passbooks at a dining table with reading glasses, warm lamp light, the pages blurred",
+          "voice": "첫째, 지난 10년 동안 준 돈을 통장으로 날짜까지 확인하세요. 둘째, 자녀가 결혼하거나 아이를 낳은 지 2년이 안 됐는지 보세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a young korean couple opening a bank account at a counter, seen from behind, bright clean bank interior",
+          "voice": "셋째, 받는 사람 이름이 내 자녀인지 확인하세요. 넷째, 주셨다면 3개월 안에 홈택스로 신고하세요. 세금이 0원이어도 기록이 됩니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "an older man and a younger man sitting side by side at a table looking at the same notebook, faces in soft focus, warm afternoon light",
+          "voice": "다섯째, 빌려주시는 거라면 이자와 상환 기록을 계좌로 남기세요. 이 다섯 가지만 지켜도 같은 돈이 훨씬 온전하게 자녀에게 갑니다."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a government building in seoul at dusk with lights on, wide shot, calm",
+          "voice": "참고로 상속세를 받는 사람 기준으로 바꾸는 개편이 논의되고 있지만 아직 확정되지 않았어요. 확정되면 다시 정리해 드릴게요."
+        }
+      ]
+    },
+    {
+      "title": "마무리",
+      "tag": "마무리",
+      "art_title": "도장은 [천천히]",
+      "art_en": "Facts First",
+      "source": "출처: 상속세 및 증여세법 · 국세청",
+      "scenes": [
+        {
+          "kind": "art",
+          "image_prompt": "a warm family dinner table seen from above with dishes and hands passing food, faces out of frame, cozy evening light",
+          "voice": "자녀에게 주는 돈은 마음이에요. 그 마음이 세금으로 새지 않으려면, 주기 전에 한 번만 확인하시면 됩니다."
+        },
+        {
+          "kind": "checklist",
+          "heading": "다시 보는 세금 없는 그릇 (10년)",
+          "items": [
+            {
+              "text": "배우자",
+              "right": "6억 원",
+              "right_color": "green"
+            },
+            {
+              "text": "성인 자녀",
+              "right": "5,000만 원",
+              "right_color": "green"
+            },
+            {
+              "text": "미성년 자녀·손주",
+              "right": "2,000만 원",
+              "right_color": "orange"
+            },
+            {
+              "text": "결혼·출산 (평생)",
+              "right": "+1억 원",
+              "right_color": "green"
+            },
+            {
+              "text": "사위·며느리",
+              "right": "1,000만 원",
+              "right_color": "red"
+            }
+          ],
+          "voice": "마지막으로 그릇 크기만 한 번 더 볼게요. 화면을 캡처해 두셨다가 주시기 전에 꺼내 보세요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a korean couple in their sixties sitting on a bench in a park in late autumn looking at falling leaves, seen from behind",
+          "voice": "여러분은 자녀나 손주에게 돈을 줄 계획이 있으신가요? 혹시 예전에 줬는데 신고를 안 한 돈이 있다면, 댓글로 상황을 남겨 주세요. 다음 영상 주제로 정리해 볼게요."
+        },
+        {
+          "kind": "art",
+          "image_prompt": "a person handing a smartphone to another person at a kitchen table, the screen facing away, warm light, hands only",
+          "voice": "자녀에게 돈을 보태 주실 계획인 부모님께 이 영상을 꼭 보내 주세요."
+        },
+        {
+          "kind": "title",
+          "title": "다음 영상\n{매주 화·금 저녁 6시}",
+          "sub": "구독하고 놓치지 마세요 · 도장찍기전에",
+          "voice": "도장찍기전에는 매주 화요일과 금요일 저녁 6시에 새 영상으로 찾아옵니다. 도장은 천천히, 팩트는 먼저."
+        }
+      ]
+    }
+  ]
+}

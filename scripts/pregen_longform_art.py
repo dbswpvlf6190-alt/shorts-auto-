@@ -20,16 +20,27 @@ import make_longform as L  # noqa: E402
 def targets(meta, img_dir):
     out = []
     for key in ("thumbnail", "thumbnail_b"):
-        art = meta.get(key, {}).get("art_prompt")
-        if art:
-            out.append((art, os.path.join(img_dir, "thumb_art_" + hashlib.md5(art.encode("utf-8")).hexdigest()[:12] + ".png")))
+        th = meta.get(key, {})
+        art = th.get("art_prompt")
+        if art and not th.get("image_path"):
+            out.append((art, os.path.join(img_dir, "thumb_art_" + hashlib.md5(art.encode("utf-8")).hexdigest()[:12] + ".png"), th.get("style")))
     for ch in meta["chapters"]:
         for sc in ch["scenes"]:
             if sc["kind"] == "art":
                 p = os.path.join(img_dir, "art_" + hashlib.md5(sc["image_prompt"].encode("utf-8")).hexdigest()[:12] + ".png")
-                if all(p != q for _, q in out):
-                    out.append((sc["image_prompt"], p))
+                if all(p != q for _, q, _ in out):
+                    out.append((sc["image_prompt"], p, None))
     return out
+
+
+def gen(prompt, p, style):
+    """썸네일은 make_thumb_v3와 같은 모델·스타일로 만든다(11/22: 예전엔 장면용 klein으로 만들어 같은 파일 이름에 저장해서
+    렌더 때 v7·v6 썸네일 생성이 건너뛰어졌다)."""
+    if style == "v7":
+        return L.gen_art(L.THUMB_STYLE_V7.format(p=prompt), p, model=L.THUMB_MODEL, raw=True)
+    if style == "v6":
+        return L.gen_art(L.THUMB_STYLE.format(p=prompt), p, model=L.THUMB_MODEL, raw=True)
+    return L.gen_art(prompt, p)
 
 
 def main():
@@ -38,19 +49,26 @@ def main():
     ap.add_argument("--out-dir", required=True)
     ap.add_argument("--max-hours", type=float, default=6)
     ap.add_argument("--wait-min", type=float, default=5, help="한도에 걸렸을 때 다시 시도하기 전 기다리는 분")
+    ap.add_argument("--max-new", type=int, default=0,
+                    help="이번 실행에서 새로 만들 최대 장수(0=제한 없음). 다음 날 아침 쇼츠 몫의 무료 한도를 남기려고 쓴다(11/22)")
     args = ap.parse_args()
 
     meta = json.load(open(args.meta, encoding="utf-8"))
     img_dir = os.path.join(args.out_dir, "_work", "images")
     os.makedirs(img_dir, exist_ok=True)
-    todo = [(pr, p) for pr, p in targets(meta, img_dir) if not os.path.exists(p)]
+    todo = [(pr, p, st) for pr, p, st in targets(meta, img_dir) if not os.path.exists(p)]
     total = len(targets(meta, img_dir))
     print(f"그림 {total}장 중 {total - len(todo)}장 이미 있음, {len(todo)}장 생성", flush=True)
     deadline = time.time() + args.max_hours * 3600
+    made = 0
     while todo:
-        prompt, p = todo[0]
-        if L.gen_art(prompt, p):
+        if args.max_new and made >= args.max_new:
+            print(f"이번 실행 몫 {made}장 완료: {len(todo)}장 남음(나중에 다시 실행)", flush=True)
+            sys.exit(2)
+        prompt, p, style = todo[0]
+        if gen(prompt, p, style):
             todo.pop(0)
+            made += 1
             print(f"  {time.strftime('%H:%M:%S')} {total - len(todo)}/{total}", flush=True)
             continue
         if time.time() > deadline:

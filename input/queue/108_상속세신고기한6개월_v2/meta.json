@@ -1,0 +1,93 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 상속세 및 증여세법 제67조 · 국세기본법 제47조의2·47조의4",
+  "youtube_title": "상속세 신고 안 하면 가산세 20%, 공제 3%도 날아갑니다 #상속세 #상속세신고기한",
+  "youtube_description": "상속세는 상속이 시작된 달의 말일부터 6개월 안에 신고하고 납부해야 해요(상속인 중 해외 거주자가 있으면 9개월).\n\n기한을 넘기면 세액의 20%가 무신고 가산세로 붙고(부정행위면 40%), 제때 신고하면 받는 3% 신고세액공제도 받을 수 없어요. 여기에 하루 0.022%씩 납부지연가산세가 더 쌓여요. (영상 속 1000만 원·200만 원은 이해를 돕기 위한 가정 금액입니다.)\n\n상속세가 0원이어도 신고 의무는 있어요. 배우자가 실제 받은 몫대로 배우자공제를 받으려면 기한 내 신고가 필요하기 때문이에요.\n\n늦었더라도 기한후신고를 하면 무신고 가산세가 줄어들어요(1개월 이내 50%, 3개월 이내 30%, 6개월 이내 20% 감면).\n\n출처: 상속세 및 증여세법, 국세기본법\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#상속세 #상속세신고기한 #가산세 #상속세공제 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "상속세,상속세신고기한,가산세,상속세공제,부동산정책",
+  "tiktok_caption": "상속세 신고 안 하면 가산세 20%에 공제 3%도 날아가요 😱 상속세가 0원이어도 신고는 해야 해요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 상속 신고를 언제 하셨어요? #상속세 #상속세신고기한 #가산세",
+  "instagram_caption": "상속세 신고 안 하면 가산세 20%에 공제 3%도 날아가요 😱 상속세가 0원이어도 신고는 해야 해요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분은 상속 신고를 언제 하셨어요? #상속세 #상속세신고기한 #가산세",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "안 신고했더니 가산세까지?",
+      "caption": "안 신고했더니\n{가산세}까지?",
+      "image_prompt": "photorealistic traditional Korean hanok house exterior in soft morning light, quiet empty street, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 상속받고 6개월 안에 신고해야 해요.",
+      "caption": "결론\n{6개월} 안에 신고해요",
+      "image_prompt": "photorealistic modern Korean apartment complex exterior under a clear blue sky, wide shot, high detail, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "정확히는 상속이 시작된 달의 말일부터 6개월이에요.",
+      "caption": "신고기한\n{말일부터 6개월}",
+      "big": "말일부터 6개월",
+      "badge": "해외거주 9개월"
+    },
+    {
+      "kind": "photo",
+      "voice": "이 기한을 넘기면 세금의 20퍼센트를 가산세로 더 내요.",
+      "caption": "기한 넘기면\n{가산세 20%} 추가",
+      "image_prompt": "photorealistic hourglass with golden sand on a dark wooden desk, dramatic warm light, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 상속세가 1000만 원인 경우예요.",
+      "caption": "예를 들어\n상속세가",
+      "amount": 1000,
+      "unit": "만 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "big",
+      "voice": "가산세 20퍼센트가 붙으면 200만 원을 더 내는 거예요.",
+      "caption": "가산세 20%면\n{200만 원} 추가",
+      "big": "+200만원",
+      "badge": "가산세 20%"
+    },
+    {
+      "kind": "big",
+      "voice": "제때 신고하면 받는 3퍼센트 공제도 같이 못 받아요.",
+      "caption": "제때 신고 시\n받는 {3% 공제}도 놓쳐요",
+      "big": "3% 공제 놓침",
+      "badge": "제때 신고해야"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 상속세가 0원이면 신고 안 해도 될까요?",
+      "caption": "근데 {세금 0원}이면\n신고 안 해도?",
+      "image_prompt": "photorealistic quiet countryside house at dusk, warm light glowing from windows, empty road, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "아니에요, 배우자가 실제 받은 몫대로 공제받으려면 신고해야 해요.",
+      "caption": "{신고}해야\n배우자 몫대로 공제돼요",
+      "big": "0원도 신고하세요",
+      "badge": "배우자공제",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "늦었어도 한 달 안에 신고하면 가산세를 절반으로 줄여줘요.",
+      "caption": "한 달 안에 늦게 신고해도\n가산세 {절반} 감면",
+      "big": "가산세 절반 감면",
+      "badge": "1개월 이내 신고"
+    },
+    {
+      "kind": "photo",
+      "voice": "상속 정리 중인 가족께 꼭 보내주세요.",
+      "caption": "가족께\n{공유}해주세요",
+      "image_prompt": "photorealistic brass house key resting on a wooden table beside a small potted plant, warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분은 상속 신고를 언제 하셨나요?",
+      "caption": "여러분은\n상속 신고를\n언제 하셨나요?",
+      "image_prompt": "photorealistic city skyline at dusk with warm lit apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

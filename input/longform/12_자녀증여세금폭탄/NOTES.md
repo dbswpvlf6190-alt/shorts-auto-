@@ -10,7 +10,6 @@
 - **11/23(월) 기숙사 노트북에서 진행**(사장님 11/22: 데스크톱 예약 작업은 지움). 데스크톱에서 만든 31장은 `_art_cache/`로 git에 넘김.
   노트북 PowerShell에서 **아침 쇼츠가 끝난 뒤(08:30 이후) 한 번만** 실행:
   ```powershell
-  cd C:\shorts_auto; git pull; python scripts
   cd C:\shorts_auto; git pull; python scripts\run_longform_job.py 12_자녀증여세금폭탄 --start-after 11:50
   ```
   → 11:50까지 기다렸다가 넘겨받은 31장을 렌더 폴더 캐시로 복사 → 남은 58장 생성(한도면 5분마다 재시도, 최대 8시간) → 렌더 → 폰 알림(ntfy). 업로드는 안 함.

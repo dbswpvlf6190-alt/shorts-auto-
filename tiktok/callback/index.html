@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>틱톡 연결 중 · 도장찍기전에</title>
+<style>body{font:18px/1.7 -apple-system,"Malgun Gothic",sans-serif;max-width:640px;margin:60px auto;padding:0 20px}</style></head><body>
+<p id="m">틱톡 연결을 마무리하는 중이에요…</p>
+<script>
+// 틱톡은 https 콜백만 허용 → 받은 값을 운영자 컴퓨터에서 기다리는 업로더(127.0.0.1:8765)로 그대로 넘긴다.
+var q = location.search;
+if (q && q.length > 1) { location.replace("http://127.0.0.1:8765/callback" + q); }
+else { document.getElementById("m").textContent = "받은 값이 없어요. 업로더에서 다시 시작해 주세요."; }
+</script>
+<noscript>자바스크립트를 켜야 연결할 수 있어요.</noscript>
+</body></html>

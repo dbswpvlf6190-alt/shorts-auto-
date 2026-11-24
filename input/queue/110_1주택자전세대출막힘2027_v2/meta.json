@@ -1,0 +1,120 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 금융위원회 '부동산 시장 안정을 위한 금융 종합대책'(2026-08-13)",
+  "youtube_title": "내년부터 1주택자 전세대출, 세주고 안 살면 막힙니다 #전세대출 #1주택자",
+  "youtube_description": "금융위원회가 2026년 8월 13일 발표한 '부동산 시장 안정을 위한 금융 종합대책'에 따라, 2027년 1월 1일부터 1주택자의 전세대출 보증 규정이 바뀌어요.\n\n세 가지 조건—①수도권·규제지역 아파트를 가진 1주택자(부부합산) ②그 집을 임대 중(직계존비속에게 임대한 경우는 제외) ③본인과 배우자 모두 그 집에 실거주한 적 없음—을 모두 충족하면 전세대출을 새로 받거나 만기연장을 할 수 없어요.\n\n이 조건에 해당하지 않아도 1주택자 전체의 전세대출 보증비율이 수도권·규제지역은 80%에서 70%로, 그 외 지역은 90%에서 80%로 10%포인트씩 낮아져요. (영상 속 3억 원은 이해를 돕기 위한 가정 금액입니다.)\n\n출처: 금융위원회 '부동산 시장 안정을 위한 금융 종합대책'(2026년 8월 13일)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#전세대출 #1주택자 #전세대출보증 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "전세대출,1주택자,전세대출보증,부동산정책,전세대출규제",
+  "tiktok_caption": "내년부터 세주고 안 사는 1주택자는 전세대출이 막혀요 😮 보증비율도 10%포인트 줄어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집은 실거주 요건 채우고 있나요? #전세대출 #1주택자 #전세대출보증",
+  "instagram_caption": "내년부터 세주고 안 사는 1주택자는 전세대출이 막혀요 😮 보증비율도 10%포인트 줄어요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 집은 실거주 요건 채우고 있나요? #전세대출 #1주택자 #전세대출보증",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "1주택인데 전세대출 막혀요?",
+      "caption": "1주택인데\n{전세대출} 막혀요?",
+      "image_prompt": "photorealistic high-rise apartment complex at dusk with many lit windows, quiet street view, overcast sky, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 집 안 살고 세준 1주택자는 못 받아요.",
+      "caption": "결론\n집 안 살고 세준\n{1주택자}는 못 받아요",
+      "image_prompt": "photorealistic Korean apartment complex entrance plaza in daylight, multiple residential towers, clear blue sky, high detail, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "2027년 1월 1일부터 금융위 새 규제가 시행돼요.",
+      "caption": "{2027년 1월 1일}부터\n새 규제 시행",
+      "big": "2027.1.1~",
+      "badge": "전세대출 새 규제"
+    },
+    {
+      "kind": "big",
+      "voice": "수도권이나 규제지역에 아파트를 가진 1주택자 얘기예요.",
+      "caption": "수도권·규제지역\n{1주택자} 얘기예요",
+      "big": "수도권·규제지역",
+      "badge": "1주택자 한정"
+    },
+    {
+      "kind": "timeline",
+      "voice": "집을 가졌는데 세주고, 살아본 적도 없으면 다 해당돼요.",
+      "caption": "세 조건 모두면\n{해당}돼요",
+      "active": "all",
+      "cards": [
+        {
+          "date": "조건1",
+          "who": "수도권·규제지역 1주택",
+          "color": "gold"
+        },
+        {
+          "date": "조건2",
+          "who": "그 집에 임대 중",
+          "color": "gold"
+        },
+        {
+          "date": "조건3",
+          "who": "본인·배우자 실거주 無",
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "kind": "big",
+      "voice": "이 세 조건을 다 채우면 신규나 연장이 막혀요.",
+      "caption": "세 조건 다 채우면\n{신규·연장} 금지",
+      "big": "신규·연장 금지",
+      "badge": "세 조건 모두"
+    },
+    {
+      "kind": "photo",
+      "voice": "실거주는 안 하고 세주면서 대출로 돈을 굴리던 경우가 겨냥됐어요.",
+      "caption": "안 살고 세주며\n대출로 [돈 굴리던] 경우",
+      "image_prompt": "photorealistic empty rental apartment living room with bare walls and sunlight through a window, no furniture, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 세주지 않은 1주택자는 괜찮을까요?",
+      "caption": "근데 세주지 않은\n1주택자는 {괜찮을까요}?",
+      "image_prompt": "photorealistic quiet suburban apartment complex at night with a few lit windows, calm empty street, shallow depth of field, cinematic, no text"
+    },
+    {
+      "kind": "timeline",
+      "voice": "아니요, 수도권은 80퍼센트에서 70퍼센트로 줄어요.",
+      "caption": "아니요, {전체가}\n보증비율 줄어요",
+      "active": "all",
+      "sfx": "ding",
+      "cards": [
+        {
+          "date": "수도권·규제지역",
+          "who": "80퍼센트 → 70퍼센트",
+          "color": "red"
+        },
+        {
+          "date": "그 외 지역",
+          "who": "90퍼센트 → 80퍼센트",
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "kind": "money",
+      "voice": "예를 들어 보증비율로 전세금 3억 원을 보증받던 분이 있어요.",
+      "caption": "예를 들어\n보증받던 돈이",
+      "amount": 3,
+      "unit": "억 원",
+      "note": "(예시 금액)"
+    },
+    {
+      "kind": "photo",
+      "voice": "실거주를 앞둔 지인께 꼭 보내주세요.",
+      "caption": "실거주 앞둔 분께\n{공유}해주세요",
+      "image_prompt": "photorealistic brass house key resting beside a small architectural model of an apartment building, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 집은 실거주 요건을 채우고 있나요?",
+      "caption": "여러분 집은\n{실거주 요건} 채웠나요?",
+      "image_prompt": "photorealistic city skyline at night with illuminated apartment windows, soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

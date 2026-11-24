@@ -25,6 +25,7 @@
    - 제품 Login Kit(Redirect URI `https://dbswpvlf6190-alt.github.io/shorts-auto-/tiktok/callback/`) + Content Posting API (**Direct Post 끔**)
    - 권한 user.info.basic, video.upload
 2. **시연 영상 녹화** (계정을 잠깐 비공개로 바꾼 상태에서, 끝나면 바로 공개로 되돌리기)
+   - **사용자 요청(11/24): 데스크톱 컴퓨터로 진행.** 녹화는 Windows 캡처 도구(Win+Shift+R) 또는 Xbox Game Bar(Win+Alt+R). 마지막 '도착' 장면은 PC 브라우저 tiktok.com 알림에 보이면 그걸로 찍고, 안 보이면 폰 화면 녹화 한 컷만 추가.
    1. 브라우저로 안내 사이트 첫 화면을 보여 준다 (주소창 도메인이 보이게).
    2. 터미널에서 `python scripts/tiktok_upload.py auth` → 틱톡 허용 화면 → 허용 → "연결됐어요" 화면.
    3. `python scripts/tiktok_upload.py upload --video <영상>` → `TIKTOK_OK ... SEND_TO_USER_INBOX` 출력.

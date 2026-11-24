@@ -138,6 +138,7 @@ Claude Code의 대화 세션·auto-memory는 각 컴퓨터의 로컬 사용자 �
   - **2026-11-24 임시 저장함 방식 추가**(사용자 "그렇게 진행하자"): `scripts/tiktok_upload.py`가 Upload(inbox) API로 영상을 틱톡 앱 임시 저장함에 보낸다 → 사용자는 앱 알림을 눌러 '게시'만. 캡션은 API에 칸이 없어 ntfy 알림 본문에 실어 보냄(길게 눌러 복사). `run_queue.py`의 `send_tiktok_inbox()`가 바탕 화면 복사 뒤에 호출 — 연결 전(키·토큰 없음, 종료코드 2)이면 조용히 건너뛰고, 실패해도 바탕 화면 파일이 그대로라 파이프라인은 계속 간다. 중복 전송 방지 표시는 렌더 폴더 `platform/.tiktok_inbox_sent`(git 밖).
   - 키·토큰은 **`%OneDrive%\shorts_auto_secrets\`** (`tiktok_app.json` 사용자 입력, `tiktok_token.json` 자동). 리프레시 토큰이 쓸 때마다 바뀌어(옛것 즉시 무효) 컴퓨터마다 따로 두면 깨지므로 OneDrive 한 곳을 공유한다(두 대 동시 가동 안 함 전제). access 2시간·refresh 180일, 14일 남으면 알림에 재연결 안내.
   - 콜백은 https만 허용 → GitHub Pages(`shorts-auto-` 저장소 gh-pages 브랜치)의 `/tiktok/callback/`이 받은 값을 `127.0.0.1:8765`로 넘긴다. 같은 사이트에 개인정보처리방침·약관 페이지(틱톡 앱 등록 필수 항목). 앱은 Sandbox(심사 불필요, 본인 계정을 target user로) 우선.
+  - **11/24 시험 결과**: Sandbox 앱 "도장찍기전에 업로더"(daily-upload, target user daily.factlab)로 전송 → API는 SEND_TO_USER_INBOX인데 **공개 계정엔 알림이 안 옴**, 계정을 비공개로 바꾼 뒤 재전송하니 **도착 확인**. 즉 Sandbox는 비공개 계정 전용 → 매일 운영하려면 Production 앱 심사(설명+시연 영상) 통과가 필요. 그 전까지는 매일 전송돼도 알림이 안 오니 바탕 화면 파일로 올린다.
 - **클라우드 완전 무인화는 보류** — 인증 토큰을 깃허브 등에 올리는 보안 위험 때문에 거부, 로컬 예약작업(Task Scheduler)만 사용.
 - **유튜브 토큰은 테스트 앱이라 7일마다 재인증 필요**. 인스타그램 토큰은 60일.
 - **인스타그램 파일명은 반드시 ASCII(영문/숫자)만 사용** — 2026-08-17에 한글 파일명 때문에 Meta 서버가 영상 URL을 못 읽어 게시 실패한 적 있음 (`run_queue.py`에서 이미 수정됨, `re.sub(r'[^A-Za-z0-9_-]', '', name)`).

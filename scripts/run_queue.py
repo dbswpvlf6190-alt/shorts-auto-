@@ -254,7 +254,41 @@ def extract_closing_question(script_path):
     return None
 
 
-def report_upload(name, meta, video_id, ig_status, ig_err):
+def send_tiktok_inbox(tiktok_video, platform_dir):
+    """틱톡 앱 임시 저장함으로 보내기(2026-11-24). 연결 전이면 '연결 전'으로 조용히 넘어가고,
+    실패해도 바탕 화면 파일이 그대로 있으니 파이프라인은 계속 간다. 재시도 때 중복 전송을 막는 표시는
+    렌더 폴더(git 밖)에 둔다 — 저장소에 파일을 남기면 스케줄러 pull이 막힐 수 있음."""
+    if not os.path.exists(tiktok_video):
+        return "건너뜀", ""
+    sent_marker = os.path.join(platform_dir, ".tiktok_inbox_sent")
+    if os.path.exists(sent_marker):
+        return "성공", ""
+    try:
+        result = subprocess.run(
+            [sys.executable, os.path.join(BASE_DIR, "scripts", "tiktok_upload.py"), "upload", "--video", tiktok_video],
+            capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=900,
+        )
+    except subprocess.TimeoutExpired:
+        log("  틱톡 임시 저장함 전송 시간 초과(건너뜀, 바탕 화면 파일로 올리면 됨)")
+        return "실패", "틱톡 전송 시간 초과"
+    out = (result.stdout or "") + (result.stderr or "")
+    if result.returncode == 2:
+        log("  틱톡 연결 전 — 임시 저장함 전송 건너뜀")
+        return "연결 전", ""
+    if result.returncode != 0 or "TIKTOK_OK" not in out:
+        log(f"  틱톡 임시 저장함 전송 실패(건너뜀, 바탕 화면 파일로 올리면 됨):\n{out[-1500:]}")
+        return "실패", notify.summarize_error(out[-800:])
+    with open(sent_marker, "w", encoding="utf-8") as f:
+        f.write(datetime.now().isoformat())
+    ok_line = next((l for l in out.splitlines() if "TIKTOK_OK" in l), "")
+    log(f"  틱톡 임시 저장함 전송 완료 — 앱 알림을 눌러 게시하면 됨 ({ok_line})")
+    m = re.search(r"days_left=(\d+)", ok_line)
+    if m and int(m.group(1)) <= 14:
+        return "성공", f"틱톡 연결이 {m.group(1)}일 뒤 만료 — tiktok_upload.py auth 다시 실행"
+    return "성공", ""
+
+
+def report_upload(name, meta, video_id, ig_status, ig_err, tt_status="건너뜀", tt_err=""):
     """업로드 결과를 사용자 폰으로 푸시(2026-09-21). 실패해도 파이프라인엔 영향 없음."""
     privacy = meta.get("privacy", "private")
     url = f"https://youtube.com/shorts/{video_id}" if video_id and video_id != "unknown" else None
@@ -266,12 +300,19 @@ def report_upload(name, meta, video_id, ig_status, ig_err):
         result = "유튜브 성공 · 인스타 실패"
     else:
         result = "유튜브 성공"
+    if tt_status == "성공":
+        result += " · 틱톡 임시저장 도착"
+    elif tt_status == "실패":
+        result += " · 틱톡 전송 실패"
     if privacy != "public":
         result += " (⚠️비공개)"
-    bad = ig_status == "실패" or privacy != "public"
+    bad = ig_status == "실패" or tt_status == "실패" or privacy != "public"
+    errs = "\n".join(e for e in (ig_err, tt_err) if e)
+    # 임시 저장함 영상엔 캡션이 안 붙는다(API에 캡션 칸 없음) → 폰 알림에 캡션을 실어 길게 눌러 복사하게.
+    tt_caption = meta.get("tiktok_caption", "") if tt_status == "성공" else ""
     notify.notify(
         f"{'⚠️' if bad else '✅'} daily.factlab {result}",
-        short_title + (f"\n{ig_err}" if ig_err else ""),
+        short_title + (f"\n{errs}" if errs else "") + (f"\n\n[틱톡 캡션]\n{tt_caption}" if tt_caption else ""),
         priority=4 if bad else 3, tags=["warning" if bad else "white_check_mark"], click=url,
     )
 
@@ -403,6 +444,8 @@ def process_item(item_dir):
                 log(f"  바탕화면 복사 실패(건너뜀): {e}")
         log(f"  정리 완료: {day_dir}")
 
+        tt_status, tt_err = send_tiktok_inbox(tiktok_video, platform_dir)
+
         ig_status, ig_err = "건너뜀", ""
         if meta.get("instagram", True) and os.path.exists(tiktok_video):
             ig_caption = meta.get("instagram_caption", meta.get("tiktok_caption", ""))
@@ -423,7 +466,7 @@ def process_item(item_dir):
         with open(done_marker, "w", encoding="utf-8") as f:
             f.write(datetime.now().isoformat())
         log(f"done: {name}")
-        report_upload(name, meta, video_id, ig_status, ig_err)
+        report_upload(name, meta, video_id, ig_status, ig_err, tt_status, tt_err)
         rel_done = os.path.relpath(done_marker, BASE_DIR)
         rel_log = os.path.relpath(LOG_PATH, BASE_DIR)
         git_commit_push([rel_done, rel_log], f"done: {name}")

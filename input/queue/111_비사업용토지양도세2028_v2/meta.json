@@ -1,0 +1,117 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 기획재정부 2026년 세제개편안 · 소득세법 비사업용 토지 규정",
+  "youtube_title": "놀리는 땅, 2028년부터 양도세 공제가 없어집니다 #비사업용토지 #양도소득세",
+  "youtube_description": "비사업용 토지(농사나 사업에 쓰지 않고 그냥 놀리는 땅)의 양도소득세가 2028년 1월 1일 이후 양도분부터 달라져요.\n\n지금은 장기보유특별공제를 최대 30퍼센트까지 받을 수 있지만, 2028년부터는 이 공제가 없어지고 중과 가산세율도 10퍼센트포인트에서 20퍼센트포인트로 두 배가 돼요.\n\n2027년 말까지는 현행 제도가 그대로 유지돼서, 처분을 고민 중이라면 이 기간이 기회가 될 수 있어요.\n\n다만 법으로 사용이 금지된 경우처럼 부득이한 사유가 있으면 비사업용 토지에서 제외될 수 있으니, 본인 땅이 해당되는지는 꼭 확인해보세요.\n\n(이 내용은 2026년 8월 발표된 정부 세제개편안 기준으로, 국회 심의·시행령 개정을 거쳐 최종 확정됩니다. 확정 전까지 내용이 바뀔 수 있습니다.)\n\n출처: 기획재정부 2026년 세제개편안\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#비사업용토지 #양도소득세 #장기보유특별공제 #세제개편안 #부동산세금 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "비사업용토지,양도소득세,장기보유특별공제,세제개편안,부동산세금",
+  "tiktok_caption": "놀리는 땅, 2028년부터 양도세 혜택이 없어져요 😱 2027년 말까지는 지금 그대로예요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 주변엔 놀리는 땅이 있나요? #비사업용토지 #양도소득세 #세제개편안",
+  "instagram_caption": "놀리는 땅, 2028년부터 양도세 혜택이 없어져요 😱 2027년 말까지는 지금 그대로예요. 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 주변엔 놀리는 땅이 있나요? #비사업용토지 #양도소득세 #세제개편안",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "땅 놀렸는데 세금이 2배?",
+      "caption": "땅 놀렸는데\n{세금이 2배}?",
+      "image_prompt": "photorealistic overgrown vacant farmland plot with tall dry weeds under a hazy overcast sky, wide empty countryside field, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "결론부터 말하면, 비사업용 토지 양도세가 2028년부터 더 올라요.",
+      "caption": "결론\n{2028년부터} 더 올라요",
+      "image_prompt": "photorealistic narrow dirt path cutting through an empty rural field at golden hour, warm low sunlight, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "비사업용 토지는 농사나 사업에 쓰지 않고 그냥 놀리는 땅이에요.",
+      "caption": "농사·사업 안 쓰면\n{비사업용 토지}",
+      "big": "비사업용 토지"
+    },
+    {
+      "kind": "big",
+      "voice": "2027년 말까지는 지금 혜택이 그대로 유지돼요.",
+      "caption": "{2027년까지}\n현행 유지",
+      "big": "2027년까지",
+      "badge": "현행 유지"
+    },
+    {
+      "kind": "big",
+      "voice": "지금은 장기보유공제를 최대 30퍼센트까지 받고, 가산세율은 10퍼센트포인트예요.",
+      "caption": "지금 혜택\n{최대 30%} · [+10%p]",
+      "big": "30% · +10%p",
+      "badge": "지금 혜택"
+    },
+    {
+      "kind": "timeline",
+      "voice": "지금 팔면 이 혜택을 그대로 받아요.",
+      "caption": "{2027년까지}\n혜택 그대로",
+      "active": [
+        0
+      ],
+      "cards": [
+        {
+          "date": "2027년까지",
+          "who": "공제 유지 · 가산 +10%p",
+          "color": "green"
+        },
+        {
+          "date": "2028년부터",
+          "who": "공제 폐지 · 가산 +20%p",
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "kind": "timeline",
+      "voice": "2028년부터 팔면 공제가 없어지고 가산세율도 두 배가 돼요.",
+      "caption": "{2028년부터}\n공제 폐지 가산 2배",
+      "active": [
+        1
+      ],
+      "cards": [
+        {
+          "date": "2027년까지",
+          "who": "공제 유지 · 가산 +10%p",
+          "color": "green"
+        },
+        {
+          "date": "2028년부터",
+          "who": "공제 폐지 · 가산 +20%p",
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 상속받아서 어쩔 수 없이 묵혀둔 땅도 똑같이 적용될까요?",
+      "caption": "근데 {어쩔 수 없이}\n묵힌 땅도?",
+      "image_prompt": "photorealistic abandoned small stone foundation overgrown with grass in a quiet countryside field, soft overcast light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "아니요, 어쩔 수 없이 묵힌 땅이면 빠질 수 있어요.",
+      "caption": "{부득이한 사유}면\n제외 가능",
+      "big": "부득이한 사유면",
+      "badge": "제외 가능",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "그래도 보유 기간 내내 기준을 따지니까 미리 확인하는 게 좋아요.",
+      "caption": "{보유 기간 내내}\n확인이 필요해요",
+      "image_prompt": "photorealistic wooden survey stake with a small flag standing in an empty grassy field, soft morning light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "땅 가진 지인께 꼭 보내주세요.",
+      "caption": "땅 가진 지인께\n{공유}해주세요",
+      "image_prompt": "photorealistic brass house key resting on a small mound of soil beside a tiny model house, warm soft light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 주변엔 놀리는 땅이 있나요?",
+      "caption": "여러분 주변엔\n{놀리는 땅}이 있나요?",
+      "image_prompt": "photorealistic wide view of rolling green hills and empty farmland at dusk, soft fading light, cinematic, shallow depth of field, no text"
+    }
+  ]
+}

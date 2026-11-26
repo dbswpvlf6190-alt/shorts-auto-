@@ -518,6 +518,11 @@ def main():
         return
     git_pull()  # 다른 컴퓨터가 먼저 처리/락 건 게 있는지 최신 상태부터 받아옴
     try:
+        import quiet_window  # 조용한 시간(사장님이 Claude를 꺼 둬야 하는 구간) 예약·멈춤·되살림, scripts/quiet_windows.json
+        quiet_window.ensure(log)
+    except Exception as e:
+        log(f"조용한 시간 점검 건너뜀: {e}")
+    try:
         cleanup_uploaded_tiktok()  # 컴퓨터마다 따로 돌아야 하므로 락과 상관없이 매번 실행
     except Exception as e:
         log(f"틱톡 정리 건너뜀: {e}")

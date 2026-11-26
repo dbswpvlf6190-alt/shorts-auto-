@@ -456,6 +456,11 @@ Claude Code의 대화 세션·auto-memory는 각 컴퓨터의 로컬 사용자 �
 - **클라우드 루틴 프롬프트에 주제 우선순위 반영은 보류됨:** RemoteTrigger update가 자동 승인 검사에 차단(사용자 명시 승인 필요). 승인 시 프롬프트 2번 단계에 "먼저 docs/topic_priority.md를 읽고 따른다"를 추가하고 1번에 양도세·보유세·상속증여·재건축 키워드를 넣을 것. 그 전까지 `topic_priority.md`는 어디에도 연결 안 됨.
 - 롱폼 11 "올해 안 하면 후회" 그림 50장 pregen 시작(11/20 23:25), 렌더·검수 후 화 11/24 18:00 예약 예정.
 
+## 2026-11-26 — 조용한 시간(토 11/28 10:55~14:05, 사장님 검사로 Claude 꺼 둠)
+- `scripts/quiet_window.py` + `scripts/quiet_windows.json` 추가. run_queue.py가 git pull 직후 `ensure()`를 불러, 그 컴퓨터에 1회용 윈도우 작업 `QuietWindow_<id>_start/_end`를 등록 → 구간 동안 `Saju*` 예약 작업(카드뉴스 11:00·쓰레드 12:30 등 Claude API 사용)을 멈췄다가 14:05에 되살림. 멈춘 목록은 `temp/quiet_window_state.json`(컴퓨터별). ShortsAutoQueue는 안 멈춤(Claude 안 씀·되살리기 안전망).
+- 노트북에서 가짜 작업으로 멈춤→되살림 시험 통과(관리자 권한 불필요). 노트북은 등록 완료, **본가 데스크톱은 run_queue가 처음 돌 때(토 08:00, 또는 켜진 뒤 첫 30분 주기) 자동 등록.** 금요일 저녁 "변경내용 가져와" 때 `python scripts\quiet_window.py ensure` 한 번 실행해 두면 확실(그 뒤 `status`로 확인).
+- 다음에 또 필요하면 quiet_windows.json에 구간만 추가. 12번 예고 쇼츠 `VYnpdTutMzs`는 11/26 미리 렌더·유튜브 11/28 11:00 예약(서버가 공개) → 토요일에 컴퓨터가 할 일 없음. 인스타는 미게시(사장님 결정 대기).
+
 ## 2026-11-22 — 쇼츠 첫 장면 규칙 강화 (스튜디오 '계속 시청함' 분석, 상세 `docs/hashtag_keyword_check_2026-11-22.md`)
 - 해시태그·키워드는 조회 원인이 아님(쇼츠 유입 96%가 피드, 해시태그 유입 0.006%). 조회를 가르는 건 스튜디오의 **'계속 시청함' 비율**(피드에서 안 넘기고 본 비율, 7일 조회와 상관 0.62, 기준선 약 35~40%) — API로 안 나오고 스튜디오 화면(영상별 분석 > 개요 > 시청자 참여도)에서만 보임.
 - 사장님 승인(11/22 "세군대 다 적용해")으로 세 곳 반영: `docs/script_template_v2.md` 훅 규칙, `scripts/validate_v2_meta.py` 경고 2종(훅 혜택 단어, 첫 그림 작은 물건/첫 장면 photo 아님), 클라우드 루틴 프롬프트(위 WARN은 반드시 고치도록). 사본은 `docs/routine_prompt_v2.md`.

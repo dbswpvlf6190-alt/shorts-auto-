@@ -1,0 +1,401 @@
+import json, os, sys
+sys.stdout.reconfigure(encoding='utf-8')
+OUT = r'C:\shorts_auto\input\longform\13_금리인상대출이자'
+os.makedirs(OUT, exist_ok=True)
+
+
+def A(p, v, **k):
+    return dict(kind='art', image_prompt=p, voice=v, **k)
+
+
+def Q(h, t, c, v):
+    return dict(kind='quote', heading=h, text=t, cite=c, voice=v)
+
+
+def N(h, amt, unit, label, note, color, v):
+    return dict(kind='number', heading=h, amount=amt, unit=unit, label=label, note=note, color=color, voice=v)
+
+
+def C(h, cards, v):
+    return dict(kind='cards', heading=h, cards=[dict(title=t, body=b, color=c) for t, b, c in cards], voice=v)
+
+
+def CMP(h, l, r, v):
+    return dict(kind='compare', heading=h, left=dict(title=l[0], lines=l[1], color=l[2]),
+                right=dict(title=r[0], lines=r[1], color=r[2]), voice=v)
+
+
+def TL(h, pts, v):
+    out = []
+    for p in pts:
+        d = dict(date=p[0], label=p[1], color=p[2])
+        if len(p) > 3 and p[3]:
+            d['active'] = True
+        out.append(d)
+    return dict(kind='timeline', heading=h, points=out, voice=v)
+
+
+def CL(h, items, v):
+    return dict(kind='checklist', heading=h, items=items, voice=v)
+
+
+def ch(title, tag, art_title, en, source, scenes):
+    return dict(title=title, tag=tag, art_title=art_title, art_en=en, source=source, scenes=scenes)
+
+
+SRC_BOK = '출처: 한국은행 금융통화위원회(2026.11.26) · 언론 보도 종합'
+chapters = [
+    ch('인트로', '또 올랐다', '또 [올랐다]', 'Another Hike', SRC_BOK, [
+        A('a korean couple in their fifties sitting at a kitchen table at night looking worried at a smartphone, the screen facing away from camera, warm lamp light',
+          '3억 원을 빌려서 집을 사신 분이라면, 어제 결정 하나로 1년 이자가 75만 원 더 붙을 수 있습니다. 올해만 벌써 세 번째예요.'),
+        A('two neighboring apartment windows at dusk in a korean apartment complex, one window dim and cold blue, the other bright and warm gold',
+          '그런데 같은 날, 오히려 웃은 사람들도 있어요. 같은 소식인데 누구는 손해를 보고, 누구는 돈을 더 받습니다.'),
+        A('a quiet bank branch interior in seoul in the morning, an older korean man waiting in a chair seen from the side, soft daylight',
+          '내 대출은 정확히 언제부터 오르는지, 그리고 은행이 먼저 알려 주지 않는 날짜 하나가 뭔지, 오늘 차례로 짚어 볼게요.'),
+        Q('오늘 영상의 기준', '{2026년 11월 26일} 한국은행 결정 기준\n사례 금액은 [이해를 돕는 가정]\n대출·예금 상품 권유가 아닙니다', '한국은행 · 은행연합회',
+          '오늘 내용은 11월 26일 한국은행 결정 기준이고, 사례 금액은 이해를 돕기 위한 가정이에요. 특정 대출이나 예금 상품을 권하는 영상은 아닙니다.'),
+    ]),
+    ch('어제 무슨 일이', '11월 26일', '기준금리 [3.25%]', 'What Happened on Nov 26', SRC_BOK, [
+        A('a large modern central bank meeting room with a long empty table and seven empty chairs, morning light through tall windows, no people',
+          '11월 26일 아침, 한국은행에서 일곱 명이 모여 우리나라 돈의 값을 정했어요.'),
+        N('한국은행 기준금리', 3.25, '%', '연 3.00%에서 3.25%로', '2026년 11월 26일 결정', 'red',
+          '결론은 인상이었습니다. 지금까지보다 한 계단 더 올렸어요.'),
+        TL('올해만 세 번째', [('올해 상반기', '연 2.50%', 'navy'), ('7월', '2.75% {인상}', 'orange'), ('8월', '3.00% {인상}', 'orange'),
+                          ('10월', '3.00% 동결', 'navy'), ('11월 26일', '[3.25%] 인상', 'red', True)],
+           '올해 여름까지만 해도 지금보다 한참 낮았는데, 7월과 8월에 연달아 올리고, 10월에 한 번 쉬었다가 이번에 또 올렸어요. 넉 달 사이에 세 번입니다.'),
+        A('a korean economist in his sixties looking out over the seoul skyline from an office window at dusk, seen from behind',
+          '이 높이는 2년 만에 처음이에요. 2024년 가을 이후로 이렇게 높았던 적이 없습니다.'),
+        C('왜 올렸을까', [('경기가 뜨겁다', '반도체 수출 호조 · 올해 성장 전망 3.9%', 'orange'),
+                         ('물가가 높다', '소비자물가·근원물가 2.8% · 목표 2%', 'red'),
+                         ('반대도 있었다', '7명 중 2명은 동결 의견', 'navy')],
+          '이유는 두 가지예요. 반도체 수출이 잘 돼서 경기가 뜨겁고, 물가가 목표보다 높게 오르고 있다는 거죠. 다만 일곱 명 중 두 명은 그대로 두자고 했어요.'),
+        A('a powerful car engine glowing hot red under an open hood at night, a hand gently pulling a brake lever in the foreground, cinematic',
+          '쉽게 말해 엔진이 너무 뜨거우니 브레이크를 살짝 밟은 거예요. 문제는 그 브레이크가 우리 집 가계부에도 걸린다는 겁니다.'),
+        A('a korean grocery market aisle with fresh fruit and vegetables, an older woman reaching for apples, warm light',
+          '물가가 목표보다 높다는 건, 만 원어치 장바구니가 1년 사이에 280원쯤 비싸졌다는 뜻이에요. 한국은행은 이걸 200원 수준으로 낮추고 싶어 합니다.'),
+    ]),
+    ch('금리는 돈의 월세', '돈의 월세', '금리는 [돈의 월세]', 'Interest Is Rent on Money', '출처: 한국은행', [
+        A('a cozy small korean apartment with a set of keys on a wooden table, warm morning light',
+          '오늘 영상 내내 쓸 비유가 하나 있어요. 금리는 돈의 월세입니다.'),
+        A('an older korean couple sitting on a sofa in a bright living room, relaxed, seen from the side',
+          '집을 빌려 쓰면 월세를 내죠. 돈도 똑같아요. 남의 돈을 빌려 쓰면 그 돈의 월세, 이자를 냅니다.'),
+        CMP('같은 소식, 반대 결과', ('돈을 빌린 사람', ['대출 있는 집', '월세 [오름]'], 'red'),
+            ('돈을 맡긴 사람', ['예금 있는 집', '월세 {더 받음}'], 'green'),
+            '반대로 은행에 돈을 맡기면, 내가 은행에 돈을 빌려준 거예요. 그래서 금리가 오르면 빌린 사람은 월세가 오르고, 맡긴 사람은 월세를 더 받습니다.'),
+        A('a wide view of a seoul residential neighborhood from a hill at sunset, many apartment buildings, soft golden light',
+          '기준금리는 동네 월세 시세표 같은 거예요. 한국은행이 시세를 올리면, 은행들도 따라서 돈의 월세를 다시 매깁니다.'),
+        A('a bank counter seen from behind the customer, two hands passing a pen across the counter, soft focus, warm light',
+          '다만 은행은 그 시세 위에 자기 몫을 얹어요. 그래서 실제로 내는 월세는 기준금리보다 꽤 높습니다.'),
+        A('a brass balance scale on a dark wooden table with a small wooden house model on one side and a glass jar of gold coins on the other, dramatic side light',
+          '오늘 이 비유를 계속 꺼낼게요. 빌린 쪽과 맡긴 쪽, 여러분은 어느 쪽이 더 크신가요?'),
+    ]),
+    ch('내 이자는 얼마나', '내 이자', '1년에 [얼마] 더?', 'How Much More You Pay', '출처: 한국은행 · 언론 보도 종합 (잔액별 금액은 가정 계산)', [
+        A('a middle-aged korean man sitting alone at a desk at night with a calculator and reading glasses, desk lamp on, face in shadow',
+          '그럼 이번 결정으로 이자가 얼마나 늘까요? 가장 흔한 경우로 계산해 볼게요.'),
+        N('3억 원 대출, 이번 인상분만', 75, '만 원', '1년 이자 증가', '(예시 금액 · 가정) 0.25%포인트가 그대로 반영될 때 · 월 약 6만 2천 원', 'red',
+          '3억 원을 빌렸다면, 이번에 오른 만큼이 그대로 반영될 때 1년 이자가 이만큼 늘어요. 한 달로 치면 치킨 세 마리 값쯤입니다.'),
+        A('a korean family of three having a simple dinner at a small apartment table, warm light, seen from a distance',
+          '그런데 올해는 이게 세 번이었죠.'),
+        N('3억 원 대출, 올해 세 번 인상분', 225, '만 원', '1년 이자 증가', '(예시 금액 · 가정) 0.75%포인트 · 월 약 18만 7천 원', 'red',
+          '세 번을 합치면 1년에 이만큼이에요. 휴대폰 요금 서너 달 치가 매달 더 나가는 셈입니다.'),
+        A('an older korean woman at a kitchen table holding a closed wallet with both hands, thoughtful, soft window light',
+          '만 원으로 바꿔 보면 쉬워요. 만 원을 빌렸다면, 올해 들어 1년 이자가 75원씩 늘었습니다. 빌린 돈이 클수록 이 75원이 몇만 개로 불어나죠.'),
+        C('대출 잔액별 1년 이자 증가 (이번 0.25%포인트)', [('1억 원', '약 25만 원', 'orange'), ('3억 원', '약 75만 원', 'red'), ('5억 원', '약 125만 원', 'red')],
+          '1억이면 약 25만 원, 5억이면 125만 원이에요. 빌린 돈에 비례해서 그대로 늘어납니다.'),
+        A('a long row of korean apartment buildings at night with many lit windows, wide view, cool blue tones',
+          '나라 전체로 보면 더 커요. 한국은행은 기준금리가 이만큼 오르면 가계가 내는 이자가 1년에 3조 원 넘게 늘어난다고 봅니다.'),
+        N('기준금리 0.25%포인트 오를 때', 3.3, '조 원', '가계 이자 부담 증가 (1년)', '한국은행 추산', 'red',
+          '우리나라 모든 가계가 함께 내는 돈의 월세가, 한 번에 이만큼 오르는 거예요.'),
+        A('a korean office worker on a subway platform in the early morning, looking tired, seen from the side, cool light',
+          '다만 여기서 중요한 단서가 있어요. 이 계산은 오른 만큼이 바로 내 대출에 붙는다고 가정한 거예요. 실제로는 날짜가 따로 있습니다.'),
+    ]),
+    ch('전세·신용대출도', '다른 대출', '전세·신용대출도 [같다]', 'Other Loans Too', '출처: 가정 계산 (인상폭이 그대로 반영될 때)', [
+        A('a young korean couple unpacking moving boxes in a small rented apartment, evening light',
+          '집을 산 분만의 이야기가 아니에요. 전세 사는 분, 신용대출을 쓰는 분도 변동금리라면 똑같이 월세가 다시 계산됩니다.'),
+        C('변동금리라면 1년 이자 증가 (이번 0.25%포인트 · 가정)', [('전세대출 2억 원', '약 50만 원', 'orange'), ('신용대출 5천만 원', '약 12만 5천 원', 'orange'),
+                                                         ('마이너스통장 3천만 원 사용', '약 7만 5천 원', 'orange')],
+          '전세대출 2억 원이면 1년에 약 50만 원, 신용대출 5천만 원이면 12만 원 남짓이 늘어요. 금리가 그대로 반영된다고 가정한 계산이에요.'),
+        A('a korean office worker in his thirties looking at his phone on a city bus at night, the screen not visible, blurred city lights outside',
+          '마이너스통장도 쓴 만큼 이자가 붙어요. 오래 꺼내 쓰고 있다면, 금리가 바뀔 때마다 부담이 같이 커집니다.'),
+        A('an older korean father and his adult son talking on a park bench in autumn, seen from behind',
+          '부모님 세대라면 자녀의 대출도 한 번 물어봐 주세요. 자녀가 전세대출이나 신용대출을 변동금리로 쓰고 있을 수 있으니까요.'),
+        A('a korean mother in her sixties and her daughter in her thirties drinking tea and talking in a bright cafe, seen from the side',
+          '이 영상을 같이 보시면서, 재계산 날짜를 서로 확인해 보시는 것도 좋아요. 가족 전체의 돈의 월세를 한 번에 점검하는 거죠.'),
+    ]),
+    ch('내 대출은 언제 오르나', '언제부터', '내 대출은 [언제] 오를까', 'When It Hits Your Loan', '출처: 은행연합회 코픽스 공시(11/16) · 언론 보도 종합', [
+        A('a korean man in his fifties at a home desk holding a thick bound loan agreement, the pages facing away from camera and blurred, lamp light',
+          '기준금리가 오른 날, 내 대출 이자가 바로 그날 오르는 건 아니에요. 이게 오늘 첫 번째 답입니다.'),
+        CMP('고정금리 vs 변동금리', ('고정금리', ['정한 기간 동안', '월세 {그대로}'], 'green'),
+            ('변동금리', ['정해진 날마다', '월세 [다시 계산]'], 'red'),
+            '고정금리는 계약할 때 정한 월세가 정한 기간 동안 그대로예요. 변동금리는 정해진 날마다 월세를 다시 계산합니다.'),
+        A('close-up of an apartment door with a key in the lock, warm hallway light',
+          '집 월세로 치면, 고정은 긴 계약이고 변동은 재계약 날이 자주 돌아오는 거예요. 그 재계약 날에 그동안 오른 시세가 한꺼번에 붙습니다.'),
+        A('a quiet bank back office at night with rows of empty desks and dark monitors, cool blue light',
+          '그럼 변동금리는 무엇을 보고 다시 정할까요? 은행이 돈을 구해 오는 값, 코픽스라는 숫자를 많이 씁니다.'),
+        N('코픽스 (10월, 신규취급액 기준)', 3.62, '%', '전달보다 0.19%포인트 상승', '2년 8개월 만에 최고 · 은행연합회 발표(11/16)', 'red',
+          '은행이 돈을 구해 오는 값이 지난달 이만큼까지 올랐어요. 2년 8개월 만에 가장 높습니다.'),
+        A('a modern bank interior with a customer and a teller seen from behind, bright daylight, soft focus',
+          '이 숫자가 발표되자 큰 은행 두 곳은 바로 다음 날부터 새로 빌리는 사람의 변동금리를 그만큼 올렸어요.'),
+        C('어제 인상이 내 대출에 닿는 순서', [('① 기준금리 인상', '11월 26일', 'navy'), ('② 은행 예금금리 오름', '은행이 돈 구하는 값이 오름', 'orange'),
+                                       ('③ 코픽스 오름', '매달 중순 발표', 'orange'), ('④ 내 금리 재계산일', '대출마다 다름 · 6개월, 1년 등', 'red')],
+          '순서는 이래요. 기준금리가 오르고, 은행이 예금금리를 올리면, 은행이 돈 구하는 값이 오르고, 마지막으로 내 대출의 재계산일에 반영됩니다.'),
+        A('an hourglass on a dark wooden table with sand running, dramatic warm light',
+          '그래서 어제 인상분은 빠르면 몇 주, 늦으면 몇 달 뒤에야 내 이자에 닿아요. 시간차가 있다는 거죠.'),
+        Q('내 대출 재계산일 확인하는 법', '은행 앱 · 대출 약정서의 {금리 변동 주기}\n6개월 변동이면 [6개월마다] 다시 계산\n고정 기간이 끝나는 날도 함께 확인', '대출 상품마다 다름',
+          '은행이 먼저 알려 주지 않는 날짜가 바로 이거예요. 내 대출 금리가 다시 계산되는 날. 은행 앱이나 약정서에서 꼭 찾아 두세요.'),
+        A('a korean woman in her fifties holding reading glasses and looking at a smartphone at a cafe window seat, the screen facing away, daylight',
+          '이 날짜를 알면 준비할 시간이 생기고, 모르면 통장에서 빠져나간 다음에야 알게 됩니다. 여기까지 도움이 되셨다면 구독 부탁드려요.'),
+    ]),
+    ch('이상한 차이', '이상한 일', '2년 vs [15년]', 'A Strange Gap', '출처: 한국은행 금융기관 가중평균금리(10월) · 언론 보도 종합', [
+        A('two staircases side by side in a dark hall, one short and one very tall reaching up into darkness, dramatic light',
+          '그런데 여기서 이상한 일이 하나 있어요.'),
+        CMP('같은 시기, 다른 높이', ('기준금리', ['연 3.25%', '{2년 만에} 최고'], 'navy'),
+            ('주택담보대출 평균 금리', ['연 4.98% (10월 신규)', '[약 15년 만에] 최고'], 'red'),
+            '기준금리는 2년 만에 가장 높은 정도인데, 주택담보대출 평균 금리는 거의 15년 만에 가장 높아요. 대출 금리가 기준금리보다 훨씬 높은 곳까지 먼저 올라가 있었던 거죠.'),
+        A('a glass office tower in seoul at night with warm lit windows, no signs, wide angle',
+          '기준금리는 동네 시세표일 뿐이고, 실제 월세는 은행이 돈을 구해 오는 값과 은행 몫을 더해서 정해지기 때문이에요.'),
+        N('은행 가계대출 평균 금리 (10월 신규)', 5.02, '%', '예금은행 신규취급액 기준', '한국은행 발표 · 언론 보도', 'red',
+          '가계대출 전체로 보면 이미 5퍼센트를 넘었어요. 만 원을 빌리면 1년에 500원이 넘는 월세를 내는 셈입니다.'),
+        A('a korean couple in their thirties carrying moving boxes into a new apartment, bright daylight, seen from behind',
+          '그래서 요즘 새로 집을 사는 분들은 이미 꽤 비싼 월세로 출발하고 있어요. 여기에 어제 인상분이 더 얹히는 겁니다.'),
+        A('an older korean man standing on a balcony at dusk with a cup of tea, looking at the city, contemplative',
+          '기억해 두세요. 기준금리 숫자만 보면 안 되고, 내 통장에서 실제로 나가는 금리를 봐야 합니다.'),
+    ]),
+    ch('내 금리표 읽는 법', '금리표', '내 금리는 [세 덩어리]', 'Reading Your Rate', '출처: 은행연합회 대출금리 공시 기준', [
+        A('a korean woman in her fifties at a dining table with reading glasses pushed up on her head, thinking, a closed folder beside her, soft lamp light',
+          '그럼 내 대출 금리는 어떻게 정해질까요? 은행이 알려 주는 금리는 사실 세 덩어리를 더하고 뺀 값이에요.'),
+        C('대출 금리는 세 덩어리', [('기준이 되는 금리', '코픽스·금융채 등 · 시장 따라 움직임', 'navy'), ('가산금리', '은행 몫 · 신용도 따라 다름', 'orange'),
+                              ('우대금리', '급여이체·카드 등 조건 채우면 빼 줌', 'green')],
+          '첫째는 시장을 따라 움직이는 기준이 되는 금리, 둘째는 은행이 얹는 몫인 가산금리, 셋째는 조건을 채우면 빼 주는 우대금리예요.'),
+        A('a quiet korean apartment hallway with a row of identical doors, soft evening light',
+          '월세로 치면 시세에 관리비를 얹고, 조건을 채우면 조금 깎아 주는 것과 같아요.'),
+        A('a korean man in his forties at a bank desk listening to an employee, both seen from the side, bright daylight',
+          '기준금리가 오르면 첫째 덩어리가 움직여요. 그런데 셋째 덩어리도 꼭 보셔야 합니다.'),
+        A('close-up of a hand putting a plain bank card into a leather wallet on a wooden table, warm light',
+          '우대금리는 월급 이체나 카드 사용 같은 조건을 채울 때만 빼 줘요. 회사를 옮기거나 카드를 바꿔서 조건이 끊기면, 기준금리와 상관없이 내 금리가 올라갈 수 있습니다.'),
+        Q('내 금리표에서 볼 것', '{기준이 되는 금리}의 종류와 바뀌는 주기\n가산금리\n[우대 조건]을 지금도 채우고 있는지', '대출 약정서 · 은행 앱',
+          '은행 앱이나 약정서에서 이 세 가지를 한 번 보세요. 특히 우대 조건을 지금도 채우고 있는지가 중요합니다.'),
+    ]),
+    ch('3년 전엔 어땠나', '그때는', '그때는 [일곱 배]', 'Back in 2022', '출처: 한국은행 기준금리 추이', [
+        A('a quiet seoul street in autumn with fallen leaves and apartment buildings, nostalgic soft light',
+          '많은 분들이 3년 전을 떠올리세요. 그때는 정말 무서웠죠.'),
+        TL('그때의 기준금리', [('2021년 8월', '0.50%에서 {첫 인상}', 'navy'), ('2022년', '한 해에 [일곱 번] 인상', 'red'),
+                           ('2023년 1월', '[3.50%] 꼭대기', 'red', True), ('2024년 10월 이후', '내리기 시작', 'green')],
+           '2021년 여름 0.5퍼센트였던 기준금리가, 1년 반 만에 3.5퍼센트까지 올랐어요. 시세표가 일곱 배가 된 거예요.'),
+        A('a young korean couple sitting on the floor of an empty apartment at night, looking anxious, dim light',
+          '그때 변동금리로 크게 빌린 분들은 몇 달 사이에 월세가 확 뛰는 걸 겪으셨어요. 그해 집값도 크게 내려갔던 걸 기억하실 거예요.'),
+        CMP('그때와 지금', ('2021~2023년', ['0.50% → 3.50%', '[3.00%포인트] 상승'], 'red'),
+            ('2026년', ['2.50% → 3.25%', '{0.75%포인트} 상승'], 'orange'),
+            '지금은 어떨까요? 올해 오른 폭은 그때의 4분의 1이에요. 그때가 열두 계단이었다면, 지금은 세 계단 올라온 겁니다.'),
+        A('a mountain trail with a hiker seen from behind, standing at a resting point and looking up at the remaining path, morning mist',
+          '그러니 지나치게 겁먹을 필요는 없어요. 다만 대출 금리는 이미 높은 곳에 있어서, 한 계단의 무게가 그때보다 가볍지 않습니다.'),
+    ]),
+    ch('예금하는 분은', '맡긴 돈', '맡긴 돈은 [더] 받는다', 'The Savers\' Side', '출처: 은행연합회 예금금리 공시 · 언론 보도 · 소득세법 · 예금자보호법', [
+        A('a korean grandmother in her seventies at a bank counter smiling slightly, seen from the side, bright daylight',
+          '이제 반대쪽, 웃은 사람들 이야기예요. 은행에 돈을 맡긴 분들입니다.'),
+        N('큰 은행 5곳 1년 정기예금 최고금리', 3.65, '%', '연 3.60~3.65%', '은행연합회 공시 · 언론 보도(11/26) · 특판은 연 3.9%도', 'green',
+          '큰 은행 다섯 곳의 1년 예금이 이 정도예요. 특별 판매 상품은 4퍼센트 가까운 것도 나왔습니다.'),
+        A('a glass jar slowly filling with gold coins on a sunny windowsill, soft focus background',
+          '만 원을 맡기면 1년 뒤 360원쯤 붙는다는 뜻이에요. 돈의 월세를 받는 쪽이 된 거죠.'),
+        C('만 원을 1년 맡기면 (연 3.6% 가정)', [('이자', '360원', 'green'), ('세금 15.4%', '약 55원', 'orange'), ('손에 남는 돈', '약 305원', 'green')],
+          '다만 이자에는 세금이 붙어요. 360원에서 55원쯤 떼고 손에 남는 건 305원 정도입니다.'),
+        A('a shopping basket full of groceries on a kitchen counter, warm light',
+          '그런데 아까 물가 기억하시죠? 장바구니는 만 원어치가 280원 올랐어요.'),
+        CMP('만 원 기준, 1년 뒤', ('예금으로 늘어난 돈', ['약 305원', '{세금 뗀 뒤}'], 'green'),
+            ('물가로 오른 값', ['약 280원', '[물가 2.8%가 이어지면]'], 'orange'),
+            '지금 물가 오름세가 그대로라면, 실제로 형편이 나아지는 건 만 원당 25원 정도예요. 예금이 이득인 건 맞지만, 생각만큼 크지는 않습니다.'),
+        Q('예금 넣기 전에 확인', '한 은행 {1억 원}까지 예금자 보호\n높은 특판은 [가입 조건·기간] 확인\n만기 전에 깨면 이자가 크게 줄어듦', '예금자보호법 (2025년 9월부터 1억 원)',
+          '예금을 넣으실 때는 이것만 보세요. 한 은행에 1억 원까지는 나라가 보호해 줘요. 그리고 금리가 높은 특판은 조건과 기간을 꼭 확인하세요.'),
+        A('an older korean couple walking in a park in late autumn with fallen leaves, seen from behind, soft light',
+          '금리는 다시 내려가기도 해요. 그래서 만기를 한 날짜에 몰지 않고 나눠 두면, 금리가 어느 쪽으로 가든 대응하기 쉬워요.'),
+    ]),
+    ch('대출 있다면 지금', '대출 대처', '대출 있다면 [지금]', 'If You Have a Loan', '출처: 은행법 제30조의2(금리인하요구권) · 언론 보도 종합', [
+        A('a korean man in his fifties at a kitchen table early in the morning writing on a small notepad, the writing not visible, a coffee mug, soft light',
+          '그럼 대출이 있는 분은 지금 뭘 하면 될까요? 네 가지만 기억하세요.'),
+        A('close-up of a hand holding a smartphone in a cozy living room, the screen dark, warm lamp light',
+          '첫째, 앞에서 말씀드린 재계산 날짜. 그리고 지금 내 금리가 고정인지 변동인지부터 확인하세요.'),
+        A('a korean woman in her forties confidently talking to a bank employee across a desk, both seen from the side, bright office',
+          '둘째, 금리를 낮춰 달라고 요구할 수 있어요. 월급이 올랐거나 신용 점수가 좋아졌다면, 은행에 금리 인하를 요구할 권리가 법에 있습니다.'),
+        Q('금리인하요구권', '취업·승진·소득 증가·신용 개선 등\n은행에 {금리 인하}를 요구할 수 있는 권리\n받아들일지는 [은행 심사]', '은행법 제30조의2',
+          '법에 있는 권리라서 눈치 볼 필요가 없어요. 받아들일지는 은행이 심사하지만, 신청한다고 돈이 드는 건 아닙니다.'),
+        A('two doorways side by side in a bright hallway, one old wooden door and one new white door, soft light',
+          '셋째, 갈아타기예요. 다른 은행 금리가 더 낮다면, 대출을 옮기는 방법도 있어요.'),
+        C('갈아타기 전에 따질 것', [('중도상환수수료', '3년 안에 갚으면 생길 수 있음', 'orange'), ('새 대출 한도', '지금 규제로 줄 수 있음', 'red'),
+                                ('금리 차이', '수수료보다 커야 이득', 'green')],
+          '다만 옮기기 전에 따질 게 있어요. 일찍 갚을 때 내는 수수료, 지금 규제 아래서 새로 받을 수 있는 한도, 그리고 금리 차이가 수수료보다 큰지입니다.'),
+        A('two glass jars on a wooden table, a hand moving gold coins from one jar to the other, warm light',
+          '넷째, 여윳돈이 있다면 갚을지, 예금에 둘지 비교해 보세요.'),
+        CMP('만 원 기준, 1년', ('예금에 두면', ['약 305원 받음', '{세금 뗀 뒤}'], 'green'),
+            ('대출을 갚으면', ['약 500원 아낌', '[대출금리 5% 가정]'], 'navy'),
+            '대출 금리가 5퍼센트라면, 만 원을 갚는 순간 1년에 500원의 월세가 사라져요. 예금에 두면 세금 떼고 305원이고요. 갚는 쪽이 200원쯤 앞서는 거죠.'),
+        A('a cozy korean living room at night with a cat sleeping on the sofa, warm lamp light',
+          '물론 비상금은 꼭 남겨 두세요. 다 갚았다가 급할 때 다시 빌리면, 그때 월세가 더 비쌀 수 있습니다.'),
+    ]),
+    ch('지금 새로 빌린다면', '새로 빌릴 때', '고정이냐 [변동]이냐', 'Fixed or Floating', '출처: 언론 보도 종합 · 은행연합회', [
+        A('a young korean couple sitting across from a bank loan officer, all seen from the side, bright modern office, papers facing away',
+          '이제 막 대출을 알아보는 분들은 고민이 하나 더 있죠. 고정으로 할까, 변동으로 할까.'),
+        A('an umbrella hanging by an apartment front door on a cloudy day, soft light',
+          '고정금리는 보험이라고 생각하시면 돼요. 앞으로 금리가 오를 위험을 은행이 대신 지는 대신, 그 값이 처음 금리에 붙어 있어요.'),
+        CMP('고르는 기준', ('고정이 맞는 집', ['매달 같은 돈이 편함', '[더 오를까] 걱정됨'], 'green'),
+            ('변동이 맞는 집', ['몇 년 안에 갚을 계획', '{금리 내리면} 바로 이득'], 'orange'),
+            '매달 같은 돈이 나가야 마음이 편하고 더 오를까 걱정된다면 고정이, 몇 년 안에 갚을 계획이라면 변동이 맞을 수 있어요.'),
+        A('a korean man in his forties looking at two paths splitting in a forest in autumn, seen from behind',
+          '정답은 없어요. 다만 내 월급에서 이자가 한 번 더 올라도 버틸 수 있는지, 그걸 먼저 계산해 보세요.'),
+        A('a small notebook and a pen on a wooden table beside a cup of tea, the notebook closed, morning light',
+          '그리고 고정이라도 몇 년 뒤 변동으로 바뀌는 상품이라면, 그 날짜를 계약하는 날 바로 적어 두세요.'),
+    ]),
+    ch('네 집의 연말', '네 집', '같은 날, [다른] 결과', 'Four Families, One Decision', '출처: 사례는 이해를 돕기 위한 가정', [
+        A('four different apartment windows at night in one korean apartment building, each with different warm and cold light, wide view',
+          '이제 네 집을 볼게요. 모두 이해를 돕기 위한 가정이에요.'),
+        A('a korean man in his forties sitting at a dining table late at night looking stressed, his wife\'s hand on his shoulder, dim warm light',
+          '첫 번째 김 씨네. 3억 원을 6개월 변동금리로 빌렸어요. 다음 재계산일이 내년 2월입니다.'),
+        C('김 씨네 (변동금리 3억 원 · 가정)', [('재계산일', '내년 2월', 'orange'), ('올해 인상분이 다 붙으면', '1년 최대 약 225만 원 증가', 'red'),
+                                       ('지금 할 일', '금리 인하 요구 · 갈아타기 비교', 'green')],
+          '김 씨네는 그날 그동안 오른 값이 한꺼번에 붙을 수 있어요. 남은 두 달 동안 금리 인하 요구와 갈아타기부터 알아보면 됩니다.'),
+        A('an older korean woman in her late sixties at a bank counter smiling, seen from the side, bright daylight',
+          '두 번째 박 씨 할머니. 예금 1억 원이 다음 달 만기예요.'),
+        C('박 씨 할머니 (예금 1억 원 · 가정)', [('1년 이자', '약 360만 원 (연 3.6%)', 'green'), ('세금 뗀 뒤', '약 305만 원', 'green'),
+                                        ('할 일', '만기 나눠 두기 · 보호 한도 확인', 'navy')],
+          '박 씨 할머니에게는 오히려 기회예요. 다만 금리가 다시 내려갈 때를 대비해 만기를 나눠 두면 마음이 편합니다.'),
+        A('a young korean couple in their thirties in a sparsely furnished new apartment living room, looking at each other with concern, daylight',
+          '세 번째 이 씨 부부. 2년 전에 5년 고정 뒤 변동으로 바뀌는 대출을 받았어요.'),
+        C('이 씨 부부 (5년 고정 뒤 변동 · 가정)', [('앞으로 3년', '월세 그대로', 'green'), ('고정 끝나는 날', '그때 시세로 [다시 계산]', 'red'),
+                                          ('할 일', '끝나는 날 적어 두기', 'navy')],
+          '이 씨 부부는 당장은 괜찮아요. 하지만 고정 기간이 끝나는 날, 그때 시세로 다시 계산돼요. 그 날짜를 지금 적어 두세요.'),
+        A('an older korean man in his seventies watering plants on a sunny apartment balcony, peaceful morning light',
+          '마지막 최 씨 할아버지. 대출은 없고, 연금과 예금으로 생활하세요.'),
+        C('최 씨 할아버지 (대출 없음 · 가정)', [('대출', '없음 · 직접 영향 없음', 'green'), ('예금', '이자 조금 더', 'green'),
+                                         ('주의', '[물가]가 이자를 갉아먹음', 'orange')],
+          '최 씨 할아버지는 직접 손해는 없어요. 다만 물가가 오르는 만큼 생활비가 늘어서, 예금 이자 일부는 그걸 메우는 데 쓰입니다.'),
+        A('three generations of a korean family having dinner together at a table, seen from a distance, soft warm light',
+          '같은 날 같은 결정인데, 네 집의 결과가 다 달라요. 차이는 금액보다, 내 쪽 날짜를 알고 있느냐였습니다.'),
+    ]),
+    ch('집값은 어디로', '집값', '집값은 [어디로]', 'What About Home Prices', '출처: 한국은행 소비자동향조사 · 국토교통부 10·15 대책(2025)', [
+        A('a panoramic view of seoul apartment complexes along the han river at dusk, cinematic',
+          '많이 궁금해하시는 집값 이야기도 해야겠죠. 미리 말씀드리면, 금리만으로 집값을 맞히는 건 불가능해요.'),
+        A('a young korean couple looking at a scale model of an apartment complex in a bright empty showroom, seen from behind',
+          '금리가 오르면 집을 사려는 사람의 월세 부담이 커져요. 같은 월급으로 빌릴 수 있는 돈이 줄어드니, 사려는 힘을 약하게 하는 쪽으로 작용합니다.'),
+        Q('이미 걸려 있는 대출 규제', '서울 전역·경기 12곳 {규제지역}\n15억 원 넘는 집 주택담보대출 한도 [2~4억 원]\n2025년 10·15 대책', '국토교통부',
+          '여기에 작년 10월 대책으로 서울 전체가 규제지역이 됐고, 비싼 집은 빌릴 수 있는 돈 자체가 크게 줄었어요.'),
+        TL('집값이 오를 거라는 기대 (주택가격전망지수)', [('2026년 7월', '127 · {4년 10개월 만에 최고}', 'orange'), ('2026년 10월', '124 · 조금 내려옴', 'navy', True)],
+           '그런데 사람들의 기대는 아직 높아요. 오를 거라고 보는 사람이 내릴 거라고 보는 사람보다 훨씬 많습니다. 다만 여름 꼭대기에서 조금씩 내려오는 중이에요.'),
+        CMP('집값을 두고 엇갈리는 두 힘', ('누르는 힘', ['이자 부담 증가', '[대출 한도] 축소'], 'red'),
+            ('받치는 힘', ['높은 성장 전망', '{수출 호조}'], 'green'),
+            '누르는 힘과 받치는 힘이 함께 있어요. 이자와 규제는 누르고, 경기가 좋다는 전망은 받칩니다. 그래서 어느 한쪽으로 단정하는 말은 조심하셔야 해요.'),
+        A('an older korean man standing alone in front of a large window overlooking apartment buildings at dusk, thoughtful',
+          '집값 예측보다 확실한 건 하나예요. 지금 집을 사신다면, 이자가 한 번 더 올라도 버틸 수 있는지부터 계산해 보시는 겁니다.'),
+    ]),
+    ch('다음은', '다음 인상', '한 번 [더]?', 'What Comes Next', '출처: 한국은행 · 언론 보도 종합 (시장 전망은 확정 아님)', [
+        A('a long empty country road stretching into fog at dawn in korea, cinematic',
+          '그럼 앞으로는 어떨까요?'),
+        TL('다음 금리 결정', [('11월 26일', '3.25% {인상}', 'red'), ('12월', '회의 없음', 'navy'), ('내년 1월', '[다음 결정]', 'orange', True)],
+           '올해 회의는 이번이 마지막이었어요. 다음 결정은 내년 1월이라, 그때까지는 지금 금리가 이어집니다.'),
+        A('financial analysts in a modern office looking at large wall monitors with blurred line charts, seen from behind',
+          '시장에서는 내년 상반기에 한 번 더 올릴 거라는 전망이 많아요. 다만 이건 한국은행이 약속한 게 아니라 시장의 예상입니다.'),
+        C('한국은행이 보는 것', [('물가', '목표 2%보다 높음', 'red'), ('성장', '올해 3.9% · 내년 4.1% 전망', 'green'), ('미국과 금리 차', '0.75%포인트로 좁혀짐', 'navy')],
+          '한국은행이 보는 건 세 가지예요. 물가가 목표보다 얼마나 높은지, 경기가 얼마나 뜨거운지, 그리고 미국과의 금리 차이입니다.'),
+        A('a small boat on a calm sea at sunrise with a distant storm cloud on the horizon, cinematic',
+          '그래서 내년 계획을 세우실 때는, 금리가 한 번 더 오르는 경우까지 넣어서 계산해 두시면 마음이 편해요. 오르지 않으면 그만큼 남는 거니까요.'),
+    ]),
+    ch('흔한 착각 4가지', '착각', '흔한 [착각] 4가지', 'Four Common Myths', '출처: 한국은행 · 은행연합회 · 언론 보도 종합', [
+        CL('금리 오를 때 흔한 착각', [dict(text='기준금리 오른 날, 내 이자도 바로 오른다', mark='x'), dict(text='고정금리면 끝까지 그대로다', mark='x'),
+                                  dict(text='대출금리는 기준금리만큼만 오른다', mark='x'), dict(text='금리 오르면 예금만 하면 크게 이득', mark='x')],
+           '정리하면 이 네 가지가 흔한 착각이에요. 짧게 다시 볼게요.'),
+        A('an old open pocket watch on a dark wooden table, warm light',
+          '첫째, 오른 날 바로 오른다. 아니에요. 내 대출의 재계산일에 반영됩니다.'),
+        A('an old wooden door slowly opening with a closed padlock hanging loose on the latch, close up, soft light',
+          '둘째, 고정이면 끝까지 그대로다. 고정 기간이 끝나면 변동으로 바뀌는 대출도 있어요. 끝나는 날을 확인하세요.'),
+        A('a steep stone staircase with a person climbing far ahead, dramatic shadows',
+          '셋째, 기준금리만큼만 오른다. 대출 금리는 이미 15년 가까이 만에 가장 높은 곳까지 먼저 올라가 있었어요.'),
+        A('a glass jar of gold coins on a windowsill beside a shopping basket of groceries, soft morning light',
+          '넷째, 예금이면 크게 이득. 세금과 물가를 빼면 만 원당 25원 남짓이에요. 이득은 맞지만 생각보다 작습니다.'),
+    ]),
+    ch('마무리', '마무리', '도장은 [천천히]', 'Facts First', '출처: 한국은행 · 은행법', [
+        CL('오늘 바로 할 일 5가지', [dict(text='내 대출이 고정인지 변동인지 확인', right='은행 앱', right_color='navy'),
+                                dict(text='금리 재계산일·고정 끝나는 날 적기', right='약정서', right_color='red'),
+                                dict(text='소득·신용 좋아졌으면 금리 인하 요구', right='무료', right_color='green'),
+                                dict(text='다른 은행 금리·수수료 비교', right='갈아타기', right_color='orange'),
+                                dict(text='여윳돈은 갚기와 예금 비교', right='비상금 먼저', right_color='orange')],
+           '마지막으로 다섯 가지만 정리할게요. 내 대출이 고정인지 변동인지, 다시 계산되는 날짜, 금리 인하 요구, 갈아타기 비교, 그리고 여윳돈은 갚을지 둘지 비교하기.'),
+        A('an older korean couple smiling at a dining table with cups of tea, a sense of relief, warm evening light',
+          '금리는 우리가 정할 수 없어요. 하지만 내 대출의 날짜는 내가 알 수 있습니다. 그 날짜를 아는 집과 모르는 집의 차이가, 1년에 몇십만 원이 됩니다.'),
+        A('a korean family living room at night with warm light and a smartphone lying face down on the coffee table',
+          '여러분은 어느 쪽이세요? 대출부터 갚으실 건가요, 아니면 예금을 늘리실 건가요? 댓글로 남겨 주세요.'),
+        A('a korean grandmother holding her grandchild\'s hand walking out of a building into bright sunlight, seen from behind',
+          '변동금리로 대출을 갖고 계신 가족이 있다면 이 영상을 꼭 보내 주세요. 날짜 하나만 알아도 준비가 달라집니다. 도움이 되셨다면 좋아요 한 번 눌러 주세요, 알고리즘에 큰 힘이 됩니다.'),
+        dict(kind='title', title='다음 영상\n{매주 화·금 저녁 6시}', sub='구독하고 놓치지 마세요 · 도장찍기전에',
+             voice='도장찍기전에는 매주 화요일과 금요일 저녁 6시에 새 영상으로 찾아옵니다. 도장은 천천히, 팩트는 먼저.'),
+    ]),
+]
+
+HOST = 'a korean man in his early sixties with short gray hair, rimless glasses, navy cardigan over a white shirt'
+meta = {
+    'format': 'long', 'rate': '+30%', 'voice_style': 'M1', 'field': 'money',
+    'script_version': 'v3 (11/27 사장님 \'1번 가자\' — 기준금리 인상, v5 구조·숫자는 카드/목소리는 비유·큰 비유 \'돈의 월세\')',
+    'privacy': 'private',
+    'fact_check': (
+        '2026-11-27 확인. [기준금리] 11/26 금통위 3.00→3.25%(0.25%p), 올해 3번째 인상(7·8월 인상, 10월 동결), 넉 달 새 0.75%p, 2024년 가을(10월 3.25%) 이후 최고 — '
+        '이투데이 2653240·2652786, 서울신문, 뉴스1, 한국은행 기준금리 추이 페이지(11/26 3.25). 총재 신현송, 7명 참석, 황건일·이수형 동결 의견. '
+        '성장 전망 2026 3.9%(3.3→)·2027 4.1%, 10월 소비자물가·근원물가 2.8%, 목표 2%, 한미 금리차 0.75%p, 다음 회의 내년 1월, 상반기 추가 인상은 시장 관측(이투데이). '
+        '상반기 2.50%는 0.75%p 역산(한국경제 \'넉 달 새 0.75%P\', currentq 전년비 +0.75%p). '
+        '[이자 계산] 3억×0.25%=75만(월 62,500), ×0.75%=225만(월 187,500), 1억 25만, 5억 125만(인상폭 그대로 반영 가정 — 매일일보 등 같은 계산). '
+        '만 원당 0.75%p=75원. 가계 이자 0.25%p당 연 3.3조(한은 9월 금융안정 설명회 추산, 보도). '
+        '[코픽스] 10월 신규 3.62%(+0.19%p), 2024년 2월 이후 최고(2년 8개월), 은행연합회 11/16 — 세계일보·디지털타임스, KB·우리 17일부터 반영. '
+        '[대출금리] 10월 주담대 4.98%(14년 7개월 만 최고 — 한경, 머니투데이는 \'15년 만\' → 대본은 \'약 15년\'), 가계대출 5.02%(뉴스1), 5대 은행 변동형 4.51~6.51%(머니투데이 11/26). '
+        '[예금] 5대 은행 1년 정기예금 최고 3.60~3.65%, 특판 최고 3.9%(아시아투데이 11/26). 만 원×3.6%=360원, 이자소득세 15.4%=55.4원 → 304.6원. 1억 → 360만/305만. '
+        '물가 2.8% → 만 원당 280원, 실질 약 25원. 대출 5% vs 예금 세후 305원 → 차이 약 195원(\'200원쯤\'). 예금자보호 1억(2025.9.1 시행). '
+        '[과거] 0.50%(2021.8 첫 인상)→3.50%(2023.1), 2022년 7회 인상, 2024.10 인하 시작 — 한국은행 기준금리 추이. 지금 2.50→3.25(0.75%p) = 그때 3.00%p의 4분의 1. '
+        '[규제] 10·15 대책: 서울 전역·경기 12곳 규제지역, 15억 초과 주담대 한도 2~4억(국토교통부). '
+        '[심리] 주택가격전망지수 2026.7 127(4년 10개월 만 최고), 10월 124(KDI 경제정보센터). 11월 수치는 원문 미확인이라 안 씀. '
+        '[권리] 금리인하요구권 은행법 30조의2. 중도상환수수료 최대 3년. 4개 가정 사례는 계산용 가정(실존 인물 아님).'),
+    'thumbnail': {
+        'style': 'v7', 'lines': ['"또 올랐다"', '내 대출 [언제] 오를까?'],
+        'art_prompt': f'on the right third {HOST}, head and shoulders, shocked expression with wide eyes and mouth slightly open, his whole head visible with space above it; '
+                      'on the left side a small house model on a dark table under a huge glowing red 3D arrow pointing upward, a large red LED sign showing 3.25%, dark room with warm golden and red light',
+        'shift_up': 0.06, 'brightness': 1.08},
+    'thumbnail_b': {
+        'style': 'v7', 'lines': ['"3억 빌렸는데"', '이자가 [얼마나] 더?'],
+        'art_prompt': f'on the right third {HOST}, head and shoulders, worried expression looking down at a smartphone in his hand, his whole head visible with space above it; '
+                      'on the left side a korean couple in their forties at a kitchen table at night looking stressed, a calculator on the table, warm dim lamp light',
+        'shift_up': 0.06, 'brightness': 1.08},
+    'upload': {
+        'title': "'올해만 세 번째' 금리 또 올랐다… 대출 있다면 이 날짜부터 확인하세요",
+        'hook': ('3억 원을 빌려 집을 사신 분이라면, 11월 26일 결정 하나로 1년 이자가 75만 원 더 붙을 수 있습니다. 올해만 세 번째 인상입니다.\n'
+                 '그런데 같은 날 웃은 사람도 있습니다. 내 대출은 정확히 언제부터 오르는지, 은행이 먼저 알려 주지 않는 날짜 하나를 정리했습니다.'),
+        'covers': ['한국은행이 브레이크를 밟은 이유 — 엔진이 너무 뜨겁다',
+                   '금리는 돈의 월세 — 빌린 집과 맡긴 집의 결과가 반대인 이유',
+                   '3억 원 대출이면 1년에 얼마 더 — 올해 세 번을 합치면',
+                   '기준금리가 오른 날 내 이자가 바로 오르지 않는 이유 — 재계산일',
+                   '기준금리는 2년, 대출금리는 15년 — 이상한 차이',
+                   '3년 전 일곱 배 인상과 지금 — 몇 계단 올라왔나',
+                   '예금 3.6%의 진짜 몫 — 세금과 물가를 빼면 만 원당 얼마',
+                   '대출 있다면 지금 할 네 가지 — 금리인하요구권부터',
+                   '고정이냐 변동이냐 — 보험료처럼 생각하기',
+                   '네 집의 연말 — 같은 날, 다른 결과',
+                   '집값은 어디로 — 누르는 힘과 받치는 힘',
+                   '다음 인상은 언제 — 약속과 예상의 차이',
+                   '흔한 착각 4가지'],
+        'as_of': '2026년 11월 26일 한국은행 금융통화위원회 결정 기준',
+        'sources': ['한국은행 금융통화위원회 통화정책방향(2026.11.26) · 기준금리 추이',
+                    '은행연합회 코픽스 공시(2026.11.16) · 예금금리 공시',
+                    '한국은행 금융기관 가중평균금리(2026년 10월) · 소비자동향조사',
+                    '은행법 제30조의2(금리인하요구권) · 예금자보호법',
+                    '국토교통부 10·15 주택시장 안정화 대책(2025)',
+                    '이투데이 · 서울신문 · 뉴스1 · 머니투데이 · 한국경제 · 아시아투데이 보도(2026.11)'],
+        'comment_question': '대출부터 갚으실 건가요, 예금을 늘리실 건가요? 내 대출이 고정인지 변동인지, 다음 재계산일이 언제인지도 댓글로 남겨 주세요.',
+        'hashtags': ['#기준금리', '#금리인상', '#기준금리인상', '#대출이자', '#주담대', '#주택담보대출', '#변동금리', '#고정금리',
+                     '#코픽스', '#예금금리', '#정기예금', '#금리인하요구권', '#대출갈아타기', '#한국은행', '#5060', '#내집마련'],
+        'tags': ['기준금리', '기준금리 인상', '금리 인상', '한국은행 기준금리', '11월 금통위', '기준금리 3.25', '대출이자', '대출 이자 계산',
+                 '주담대 금리', '주택담보대출 금리', '변동금리', '고정금리', '고정 변동 선택', '코픽스', '코픽스 금리', '예금금리', '정기예금 금리',
+                 '예금자보호 1억', '금리인하요구권', '대출 갈아타기', '중도상환수수료', '대출 상환 vs 예금', '집값 전망', '금리 집값',
+                 '2026 금리', '내년 금리 전망', '5060 재테크', '도장찍기전에'],
+        'publish_slot': '18:00 KST'},
+    'chapters': chapters,
+}
+json.dump(meta, open(os.path.join(OUT, 'meta.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+scenes = [s for c in chapters for s in c['scenes']]
+chars = sum(len(s['voice']) for s in scenes)
+arts = sum(1 for s in scenes if s['kind'] == 'art')
+print(f'chapters {len(chapters)} scenes {len(scenes)} art {arts} chars {chars} (~{chars/8.1/60:.1f}분 @8.1자/초)')
+hs = list(dict.fromkeys(meta['upload']['hashtags'] + ['#도장찍기전에', '#재테크', '#주식', '#경제공부']))
+print('hashtags', len(hs), hs)

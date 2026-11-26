@@ -1,0 +1,101 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "source_label": "출처: 재건축초과이익환수에 관한 법률 · 국토교통부·서초구 발표(2026-11-19)",
+  "youtube_title": "2029년까지라던 재건축 부담금 기한, 갑자기 12월 30일로 당겨졌습니다 #재초환 #재건축부담금",
+  "youtube_description": "서초구의 한 재건축 아파트(2021년 7월 준공)에 적용되는 재건축초과이익환수제(재초환) 부담금 부과 기한이 처음 해석이던 2029년 8월에서 올해 12월 30일로 바뀌었습니다.\n\n국토교통부는 원래 2023년 개정법 부칙을 근거로 2029년 8월까지 부과할 수 있다고 봤지만, 서초구가 \"부과 제척기간의 기산점을 개정 법률 시행일로 다시 정하는 건 법 문언의 범위를 벗어난 해석\"이라고 반발하자 이 의견을 받아들여 기한을 다시 정했습니다. 재초환 부과 기한은 준공인가일로부터 5개월이 지난 날부터 5년이라는 원칙대로, 2021년 7월 준공 기준 2026년 12월 30일이 시한이 됐습니다.\n\n실제 돈을 내는 시점은 부과일로부터 6개월 뒤인 내년 상반기입니다.\n\n서초구 주민 8222명은 두 차례에 걸쳐 재초환 제도 자체를 폐지해달라는 탄원서를 국토부에 제출했습니다.\n\n출처: 재건축초과이익환수에 관한 법률, 국토교통부·서초구 발표(2026년 11월 19일)\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#재초환 #재건축부담금 #재건축초과이익환수제 #서초구 #강남재건축 #부동산정책 #부동산 #재테크 #shorts",
+  "tags": "재초환,재건축부담금,재건축초과이익환수제,서초구,부동산정책",
+  "tiktok_caption": "2029년까지라던 재건축 부담금 기한이 갑자기 12월 30일로 당겨졌어요 😲 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 동네 재건축은 몇 년 차인가요? #재초환 #재건축부담금 #서초구",
+  "instagram_caption": "2029년까지라던 재건축 부담금 기한이 갑자기 12월 30일로 당겨졌어요 😲 팔로우하면 매일 새로운 부동산·세금 정보 받아보실 수 있어요 🔔 댓글👇 여러분 동네 재건축은 몇 년 차인가요? #재초환 #재건축부담금 #서초구",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "기한이 갑자기 당겨졌다고요?",
+      "caption": "기한이\n{갑자기} 당겨졌다고요?",
+      "image_prompt": "photorealistic apartment complex exterior at dusk with warm lights in windows, construction cranes visible in the background, cinematic wide shot, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "결론부터 말하면, 국토부가 부과 기한을 올해 12월 30일로 확정했어요.",
+      "caption": "결론\n부과 기한 {12월 30일} 확정",
+      "big": "12월 30일",
+      "badge": "부과기한 확정"
+    },
+    {
+      "kind": "timeline",
+      "voice": "처음엔 2029년 8월까지도 가능하다고 봤는데, 이번에 날짜가 바뀌었어요.",
+      "caption": "{2029년}이라던 기한이\n{2026년 12월}로",
+      "active": "all",
+      "cards": [
+        {
+          "date": "2021년 7월",
+          "who": "준공 인가",
+          "color": "white"
+        },
+        {
+          "date": "처음 해석",
+          "who": "2029년 8월까지도 가능",
+          "color": "red"
+        },
+        {
+          "date": "바뀐 해석",
+          "who": "2026년 12월 30일까지",
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "kind": "photo",
+      "voice": "준공 후 5개월이 지난 날부터 5년이 부과할 수 있는 기한이에요.",
+      "caption": "준공 후 {5개월 + 5년}\n부과 기한이에요",
+      "image_prompt": "photorealistic apartment building construction site with a crane and scaffolding under an overcast sky, high detail, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "서초구 주민 8222명은 이 제도를 없애달라고 국토부에 탄원했어요.",
+      "caption": "주민 {8222명}\n제도 폐지 탄원",
+      "big": "8222명",
+      "badge": "폐지 탄원"
+    },
+    {
+      "kind": "photo",
+      "voice": "서초구도 재건축초과이익환수제 자체를 폐지해달라고 요청했어요.",
+      "caption": "서초구도\n{제도 폐지}를 요청",
+      "image_prompt": "photorealistic modern government building exterior with a glass facade, daytime, wide angle, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "근데 국토부는 왜 입장을 갑자기 바꿨을까요?",
+      "caption": "근데 국토부는 왜\n{입장을 바꿨을까요}?",
+      "image_prompt": "photorealistic empty modern office meeting room with large windows and a city view, soft daylight, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "법을 나중에 바꾼 날짜를 기준으로 다시 계산하면 안 된다고 봤어요.",
+      "caption": "{법 문언 그대로}\n해석했어요",
+      "big": "문언 그대로",
+      "badge": "국토부 결론",
+      "sfx": "ding"
+    },
+    {
+      "kind": "big",
+      "voice": "실제로 돈을 내는 시점은 부과일로부터 6개월 뒤인 내년 상반기예요.",
+      "caption": "실제 납부는\n{내년 상반기}",
+      "big": "내년 상반기",
+      "badge": "실제 납부 시점"
+    },
+    {
+      "kind": "photo",
+      "voice": "재건축 조합원이신 지인께 꼭 보내주세요.",
+      "caption": "재건축 조합원\n지인께 {공유}해주세요",
+      "image_prompt": "photorealistic brass house key resting beside a small architectural model of an apartment tower on a wooden table, soft warm light, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "여러분 동네 재건축 단지는 지금 몇 년 차인가요?",
+      "caption": "여러분 동네 재건축은\n{몇 년 차}인가요?",
+      "image_prompt": "photorealistic city skyline at dusk with glowing apartment windows and soft bokeh lights, cinematic, no text"
+    }
+  ]
+}

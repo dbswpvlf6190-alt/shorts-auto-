@@ -29,14 +29,14 @@
       "kind": "photo",
       "voice": "고지서는 주는 부모가 아니라, 받은 자녀에게 날아와요.",
       "caption": "고지서는\n[자녀에게] 갑니다",
-      "image_prompt": "photorealistic row of metal mailboxes in a Korean apartment building lobby with one envelope sticking out, cool daylight, shallow depth of field, no text"
+      "image_prompt": "photorealistic small empty studio apartment at dusk with a single bed and a large window over city lights, cool blue light, shallow depth of field, no text"
     },
     {
       "kind": "big",
       "voice": "아들 집값에 보태 준 큰돈, 제때 신고했다면 이 정도예요.",
       "caption": "제때 신고했다면\n{이 정도}",
       "big": "약 1,940만 원",
-      "badge": "성인 자녀 2억 (예시)"
+      "badge": "2억 받은 예시"
     },
     {
       "kind": "money",

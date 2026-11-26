@@ -1,0 +1,102 @@
+{
+  "format": "v2",
+  "rate": "+15%",
+  "extra": true,
+  "not_before": "2026-11-28",
+  "repurposed_from": "longform/12_자녀증여세금폭탄 (JbVBt-SBCDI, 11/27 18:00 공개) — 예고 쇼츠, 11/22 첫 장면 규칙(손실 훅·실제 장소) 적용",
+  "source_label": "출처: 상속세 및 증여세법 · 국세기본법(가산세) · 국세청 증여세 안내",
+  "youtube_title": "그냥 보냈는데 벌금까지? 자녀에게 돈 주기 전에 #증여세 #증여",
+  "youtube_description": "아들 집 살 때 보태 준 돈, 그냥 계좌로 보냈다면 몇 년 뒤 세금과 벌금이 한꺼번에 날아올 수 있습니다. 성인 자녀가 2억 원을 받고 신고했다면 약 1,940만 원, 신고 없이 3년이 지나면 약 2,880만 원입니다(10년 안 첫 증여 가정, 예시 금액).\n아빠 따로, 엄마 따로 주면 두 배까지 괜찮을까요? 얼마까지 세금 없이 줄 수 있는지, 언제 줘야 덜 내는지는 롱폼에서 차례로 정리했습니다.\n\n▶ 전체 정리(롱폼): 「자녀에게 돈 주기 전에 모르면 세금 폭탄 맞는 것」 https://youtu.be/JbVBt-SBCDI\n\n출처: 상속세 및 증여세법 제47조·제53조, 국세기본법 제47조의2·제47조의4, 국세청 증여세 안내\n※ 2026년 11월 현행 세법 기준입니다. 금액은 이해를 돕기 위한 가정이며, 상황에 따라 결과가 달라질 수 있습니다.\n\n매일 부동산·재테크·정책 정보 정리해드립니다. 구독하고 놓치지 마세요.\n\n#증여세 #증여 #자녀증여 #증여세면제한도 #5060 #shorts",
+  "tags": "증여세,증여,자녀증여,증여세면제한도,증여세신고,가산세,5060,절세",
+  "tiktok_caption": "자녀에게 그냥 보낸 돈, 몇 년 뒤 세금에 벌금까지 날아올 수 있어요 😮 만 원 낼 세금이 만 오천 원 가까이 불어나는 이유! 아빠 따로 엄마 따로 주면 두 배일까요? 팔로우하면 매일 새로운 부동산·재테크 정보 받아보실 수 있어요 🔔 댓글👇 자녀에게 돈 줄 계획 있으신가요? #증여세 #증여 #자녀증여 #절세 #5060",
+  "instagram_caption": "자녀에게 그냥 보낸 돈, 몇 년 뒤 세금에 벌금까지 날아올 수 있어요 😮 만 원 낼 세금이 만 오천 원 가까이 불어나는 이유! 아빠 따로 엄마 따로 주면 두 배일까요? 얼마까지 세금 없이 줄 수 있는지는 유튜브 도장찍기전에 롱폼에서! 팔로우하면 매일 새로운 부동산·재테크 정보 받아보실 수 있어요 🔔 댓글👇 자녀에게 돈 줄 계획 있으신가요? #증여세 #증여 #자녀증여 #절세 #5060",
+  "privacy": "public",
+  "scenes": [
+    {
+      "kind": "photo",
+      "voice": "그냥 보냈는데, 벌금까지?",
+      "caption": "그냥 보냈는데\n[벌금]까지?",
+      "image_prompt": "photorealistic new Korean high-rise apartment complex on a cold early winter afternoon, clear pale sky, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "결론부터, 자녀에게 준 돈은 3개월 안에 신고해야 해요.",
+      "caption": "결론\n{3개월} 안에 신고",
+      "big": "3개월 안에 신고",
+      "badge": "준 달의 말일부터"
+    },
+    {
+      "kind": "photo",
+      "voice": "고지서는 주는 부모가 아니라, 받은 자녀에게 날아와요.",
+      "caption": "고지서는\n[자녀에게] 갑니다",
+      "image_prompt": "photorealistic row of metal mailboxes in a Korean apartment building lobby with one envelope sticking out, cool daylight, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "아들 집값에 보태 준 큰돈, 제때 신고했다면 이 정도예요.",
+      "caption": "제때 신고했다면\n{이 정도}",
+      "big": "약 1,940만 원",
+      "badge": "성인 자녀 2억 (예시)"
+    },
+    {
+      "kind": "money",
+      "voice": "그런데 신고 없이 3년이 지나면, 만 원 낼 세금이 만 오천 원 가까이 돼요.",
+      "caption": "3년 그냥 두면\n[만 오천 원] 가까이",
+      "amount": 2880,
+      "unit": "만 원",
+      "note": "(예시 금액) 3년 무신고"
+    },
+    {
+      "kind": "photo",
+      "voice": "벌금에, 늦은 날만큼 이자가 하루하루 붙거든요.",
+      "caption": "벌금에\n하루하루 [이자]까지",
+      "image_prompt": "photorealistic old wall clock in a dim Korean apartment living room with pale winter light from the window, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "그럼 아빠 따로, 엄마 따로 주면 두 배로 괜찮을까요?",
+      "caption": "아빠 따로 엄마 따로\n{두 배}일까?",
+      "image_prompt": "photorealistic Korean couple in their sixties sitting at a dining table seen from behind, warm evening lamp light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "아니에요. 부모님과 조부모님 모두 합쳐서 그릇 하나예요.",
+      "caption": "부모·조부모 합쳐\n[그릇은 하나]",
+      "big": "합쳐서 5천만 원",
+      "badge": "성인 자녀 · 10년",
+      "sfx": "ding"
+    },
+    {
+      "kind": "photo",
+      "voice": "게다가 날짜 며칠 차이로, 세금이 붙기도 하고 사라지기도 해요.",
+      "caption": "며칠 차이로\n{세금}이 갈려요",
+      "image_prompt": "photorealistic snowy Korean apartment street on a December evening with warm glowing windows, shallow depth of field, no text"
+    },
+    {
+      "kind": "photo",
+      "voice": "얼마까지 세금 없이 줄 수 있을까요? 언제 줘야 덜 낼까요?",
+      "caption": "얼마까지 괜찮을까?\n{언제} 줘야 할까?",
+      "image_prompt": "photorealistic warm dining table at night with an open family photo album and two cups of tea, soft lamp light, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "전체 정리는 화면 아래 관련 영상에 있어요.",
+      "caption": "전체 정리는\n{관련 영상}에서",
+      "big": "관련 영상",
+      "badge": "도장찍기전에"
+    },
+    {
+      "kind": "photo",
+      "voice": "자녀에게 돈 보태 주실 부모님께 꼭 보내 주세요.",
+      "caption": "자녀 도와주실 부모님께\n꼭 {공유}해주세요",
+      "image_prompt": "photorealistic cozy Korean apartment living room at night with a warm floor lamp beside an empty sofa, shallow depth of field, no text"
+    },
+    {
+      "kind": "big",
+      "voice": "여러분은 자녀에게 돈 줄 계획이 있으신가요?",
+      "caption": "자녀에게 돈 줄 계획\n{있으신가요}?",
+      "big": "줄 계획 있다?",
+      "badge": "댓글로 알려주세요"
+    }
+  ]
+}

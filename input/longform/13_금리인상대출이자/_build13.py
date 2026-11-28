@@ -47,7 +47,7 @@ SRC_BOK = '출처: 한국은행 금융통화위원회(2026.11.26) · 언론 보�
 chapters = [
     ch('인트로', '또 올랐다', '또 [올랐다]', 'Another Hike', SRC_BOK, [
         A('a korean couple in their fifties sitting at a kitchen table at night looking worried at a smartphone, the screen facing away from camera, warm lamp light',
-          '3억 원을 빌려서 집을 사신 분이라면, 어제 결정 하나로 1년 이자가 75만 원 더 붙을 수 있습니다. 올해만 벌써 세 번째예요.'),
+          '3억 원을 빌려서 집을 사신 분이라면, 지난주 결정 하나로 1년 이자가 75만 원 더 붙을 수 있습니다. 올해만 벌써 세 번째예요.'),
         A('two neighboring apartment windows at dusk in a korean apartment complex, one window dim and cold blue, the other bright and warm gold',
           '그런데 같은 날, 오히려 웃은 사람들도 있어요. 같은 소식인데 누구는 손해를 보고, 누구는 돈을 더 받습니다.'),
         A('a quiet bank branch interior in seoul in the morning, an older korean man waiting in a chair seen from the side, soft daylight',
@@ -55,7 +55,7 @@ chapters = [
         Q('오늘 영상의 기준', '{2026년 11월 26일} 한국은행 결정 기준\n사례 금액은 [이해를 돕는 가정]\n대출·예금 상품 권유가 아닙니다', '한국은행 · 은행연합회',
           '오늘 내용은 11월 26일 한국은행 결정 기준이고, 사례 금액은 이해를 돕기 위한 가정이에요. 특정 대출이나 예금 상품을 권하는 영상은 아닙니다.'),
     ]),
-    ch('어제 무슨 일이', '11월 26일', '기준금리 [3.25%]', 'What Happened on Nov 26', SRC_BOK, [
+    ch('11월 26일, 무슨 일이', '11월 26일', '기준금리 [3.25%]', 'What Happened on Nov 26', SRC_BOK, [
         A('a large modern central bank meeting room with a long empty table and seven empty chairs, morning light through tall windows, no people',
           '11월 26일 아침, 한국은행에서 일곱 명이 모여 우리나라 돈의 값을 정했어요.'),
         N('한국은행 기준금리', 3.25, '%', '연 3.00%에서 3.25%로', '2026년 11월 26일 결정', 'red',
@@ -136,11 +136,11 @@ chapters = [
           '은행이 돈을 구해 오는 값이 지난달 이만큼까지 올랐어요. 2년 8개월 만에 가장 높습니다.'),
         A('a modern bank interior with a customer and a teller seen from behind, bright daylight, soft focus',
           '이 숫자가 발표되자 큰 은행 두 곳은 바로 다음 날부터 새로 빌리는 사람의 변동금리를 그만큼 올렸어요.'),
-        C('어제 인상이 내 대출에 닿는 순서', [('① 기준금리 인상', '11월 26일', 'navy'), ('② 은행 예금금리 오름', '은행이 돈 구하는 값이 오름', 'orange'),
+        C('이번 인상이 내 대출에 닿는 순서', [('① 기준금리 인상', '11월 26일', 'navy'), ('② 은행 예금금리 오름', '은행이 돈 구하는 값이 오름', 'orange'),
                                        ('③ 코픽스 오름', '매달 중순 발표', 'orange'), ('④ 내 금리 재계산일', '대출마다 다름 · 6개월, 1년 등', 'red')],
           '순서는 이래요. 기준금리가 오르고, 은행이 예금금리를 올리면, 은행이 돈 구하는 값이 오르고, 마지막으로 내 대출의 재계산일에 반영됩니다.'),
         A('an hourglass on a dark wooden table with sand running, dramatic warm light',
-          '그래서 어제 인상분은 빠르면 몇 주, 늦으면 몇 달 뒤에야 내 이자에 닿아요. 시간차가 있다는 거죠.'),
+          '그래서 이번 인상분은 빠르면 몇 주, 늦으면 몇 달 뒤에야 내 이자에 닿아요. 시간차가 있다는 거죠.'),
         Q('내 대출 재계산일 확인하는 법', '은행 앱 · 대출 약정서의 {금리 변동 주기}\n6개월 변동이면 [6개월마다] 다시 계산\n고정 기간이 끝나는 날도 함께 확인', '대출 상품마다 다름',
           '은행이 먼저 알려 주지 않는 날짜가 바로 이거예요. 내 대출 금리가 다시 계산되는 날. 은행 앱이나 약정서에서 꼭 찾아 두세요.'),
         A('a korean woman in her fifties holding reading glasses and looking at a smartphone at a cafe window seat, the screen facing away, daylight',
@@ -157,7 +157,7 @@ chapters = [
         N('은행 가계대출 평균 금리 (10월 신규)', 5.02, '%', '예금은행 신규취급액 기준', '한국은행 발표 · 언론 보도', 'red',
           '가계대출 전체로 보면 이미 5퍼센트를 넘었어요. 만 원을 빌리면 1년에 500원이 넘는 월세를 내는 셈입니다.'),
         A('a korean couple in their thirties carrying moving boxes into a new apartment, bright daylight, seen from behind',
-          '그래서 요즘 새로 집을 사는 분들은 이미 꽤 비싼 월세로 출발하고 있어요. 여기에 어제 인상분이 더 얹히는 겁니다.'),
+          '그래서 요즘 새로 집을 사는 분들은 이미 꽤 비싼 월세로 출발하고 있어요. 여기에 이번 인상분이 더 얹히는 겁니다.'),
         A('an older korean man standing on a balcony at dusk with a cup of tea, looking at the city, contemplative',
           '기억해 두세요. 기준금리 숫자만 보면 안 되고, 내 통장에서 실제로 나가는 금리를 봐야 합니다.'),
     ]),
@@ -359,7 +359,7 @@ meta = {
                       'on the left side a korean couple in their forties at a kitchen table at night looking stressed, a calculator on the table, warm dim lamp light',
         'shift_up': 0.06, 'brightness': 1.08},
     'upload': {
-        'title': "'올해만 세 번째' 금리 또 올랐다… 대출 있다면 이 날짜부터 확인하세요",
+        'title': "기준금리 3.25% 올해 세 번째 인상, 내 대출이자 얼마나 오르나 (변동금리 금리 재계산일 확인법)",
         'hook': ('3억 원을 빌려 집을 사신 분이라면, 11월 26일 결정 하나로 1년 이자가 75만 원 더 붙을 수 있습니다. 올해만 세 번째 인상입니다.\n'
                  '그런데 같은 날 웃은 사람도 있습니다. 내 대출은 정확히 언제부터 오르는지, 은행이 먼저 알려 주지 않는 날짜 하나를 정리했습니다.'),
         'covers': ['한국은행이 브레이크를 밟은 이유 — 엔진이 너무 뜨겁다',
